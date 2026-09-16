@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;600&family=PT+Serif:wght@400;700&family=Fira+Code&display=swap');
+
+:root {
+  --color-bg: #F7F5F0;
+  --color-ink: #1B1836;
+  --color-accent: #D85A30;
+  --color-accent-2: #8B85C4;
+  --color-border: #D9D5C8;
+  --color-secondary-text: #6A6658;
+
+  --font-heading: 'Zilla Slab', serif;
+  --font-body: 'PT Serif', serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}

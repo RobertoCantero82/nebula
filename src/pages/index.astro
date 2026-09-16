@@ -1,17 +1,41 @@
 ---
-
+import '../styles/global.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nebula</title>
+  </head>
+  <body>
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem;">
+      <svg width="110" height="32" viewBox="0 0 110 32">
+        <circle cx="7" cy="8" r="3" fill="#D85A30" />
+        <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
+      </svg>
+      <nav style="display: flex; gap: 20px; font-family: var(--font-body); font-size: 14px;">
+        <a href="/articulos" style="color: var(--color-ink); text-decoration: none;">Artículos</a>
+        <a href="/archivo" style="color: var(--color-ink); text-decoration: none;">Archivo</a>
+        <a href="/metodo" style="color: var(--color-ink); text-decoration: none;">El método</a>
+      </nav>
+    </header>
+
+    <main style="max-width: 700px; margin: 0 auto; padding: 1rem 1.5rem 3rem;">
+      <section style="margin-bottom: 2.5rem;">
+        <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent); letter-spacing: 0.5px; margin: 0 0 8px;">EL DATO DE LA SEMANA</p>
+        <h1 style="font-size: 28px; line-height: 1.25; margin: 0 0 10px;">Las secuelas de Matrix no bajaron de calidad, bajó la comprensión del público</h1>
+        <p style="color: var(--color-secondary-text); font-size: 15px; line-height: 1.6;">Un análisis de reseñas y menciones en cultura popular contradice el relato extendido sobre la trilogía.</p>
+      </section>
+
+      <section>
+        <h2 style="font-size: 16px; margin: 0 0 12px;">Artículos recientes</h2>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <article style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 16px;">
+            <p style="font-family: var(--font-mono); font-size: 11px; color: var(--color-accent-2); margin: 0 0 4px;">CINE</p>
+            <p style="margin: 0;">¿Realmente decayó la trilogía de Matrix?</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

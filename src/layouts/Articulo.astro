@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+
+const { titulo, tema, cifraDestacada, etiquetaCifra } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{titulo} | Nebula</title>
+  </head>
+  <body>
+    <header style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem;">
+      <a href="/" style="text-decoration: none;">
+        <svg width="110" height="32" viewBox="0 0 110 32">
+          <circle cx="7" cy="8" r="3" fill="#D85A30" />
+          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
+        </svg>
+      </a>
+    </header>
+
+    <main style="max-width: 680px; margin: 0 auto; padding: 1rem 1.5rem 3rem;">
+      <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; margin: 0 0 8px;">{tema}</p>
+      <h1 style="font-size: 30px; line-height: 1.25; margin: 0 0 16px;">{titulo}</h1>
+
+      {cifraDestacada && (
+        <div style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; display: inline-block;">
+          <p style="font-family: var(--font-mono); font-size: 22px; margin: 0; color: var(--color-ink);">{cifraDestacada}</p>
+          <p style="font-size: 11px; color: var(--color-secondary-text); margin: 2px 0 0;">{etiquetaCifra}</p>
+        </div>
+      )}
+
+      <article style="font-size: 16px; line-height: 1.7;">
+        <slot />
+      </article>
+
+      <details style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 16px;">
+        <summary style="font-family: var(--font-mono); font-size: 12px; color: var(--color-secondary-text); cursor: pointer;">Metodología</summary>
+        <div style="font-size: 14px; color: var(--color-secondary-text); margin-top: 10px;">
+          <slot name="metodologia" />
+        </div>
+      </details>
+    </main>
+  </body>
+</html>
