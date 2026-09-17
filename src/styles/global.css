@@ -82,3 +82,8 @@ h1, h2, h3 {
   padding: 20px;
   margin: 28px 0;
 }
+
+.cuerpo-articulo strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
