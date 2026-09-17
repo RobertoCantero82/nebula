@@ -1,17 +1,18 @@
 ---
 import '../styles/global.css';
 
-const { titulo, tema, cifraDestacada, etiquetaCifra } = Astro.props;
+const { titulo, tema, cifraDestacada, etiquetaCifra, metodologia, imagenPortada } = Astro.props;
 ---
 
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <title>{titulo} | Nebula</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   </head>
   <body>
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem;">
-      <a href="/" style="text-decoration: none;">
+    <header class="contenedor" style="display: flex; align-items: center; justify-content: space-between; padding-top: 1.5rem; padding-bottom: 1.5rem;">
+      <a href="/nebula/" style="text-decoration: none;">
         <svg width="110" height="32" viewBox="0 0 110 32">
           <circle cx="7" cy="8" r="3" fill="#D85A30" />
           <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
@@ -19,27 +20,49 @@ const { titulo, tema, cifraDestacada, etiquetaCifra } = Astro.props;
       </a>
     </header>
 
-    <main style="max-width: 680px; margin: 0 auto; padding: 1rem 1.5rem 3rem;">
-      <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; margin: 0 0 8px;">{tema}</p>
-      <h1 style="font-size: 30px; line-height: 1.25; margin: 0 0 16px;">{titulo}</h1>
-
-      {cifraDestacada && (
-        <div style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; display: inline-block;">
-          <p style="font-family: var(--font-mono); font-size: 22px; margin: 0; color: var(--color-ink);">{cifraDestacada}</p>
-          <p style="font-size: 11px; color: var(--color-secondary-text); margin: 2px 0 0;">{etiquetaCifra}</p>
-        </div>
+    <div class="portada-articulo">
+      {imagenPortada ? (
+        <img src={imagenPortada} alt={titulo} style="width: 100%; height: 100%; object-fit: cover; display: block;" />
+      ) : (
+        <svg viewBox="0 0 1200 260" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true">
+          <rect width="1200" height="260" fill="#1B1836" />
+          {Array.from({ length: 40 }).map((_, i) => (
+            <line x1={i * 32} y1="0" x2={i * 32} y2="260" stroke={i % 3 === 0 ? '#D85A30' : '#8B85C4'} stroke-width="1" opacity={0.15 + (i % 5) * 0.05} />
+          ))}
+          <circle cx="120" cy="70" r="3" fill="#D85A30" />
+          <circle cx="950" cy="180" r="4" fill="#8B85C4" />
+          <circle cx="600" cy="40" r="2" fill="#D85A30" />
+        </svg>
       )}
+    </div>
 
-      <article style="font-size: 16px; line-height: 1.7;">
-        <slot />
-      </article>
+    <main class="contenedor" style="padding-top: 2rem; padding-bottom: 3rem;">
+      <div class="contenido-articulo">
+        <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; margin: 0 0 8px;">{tema}</p>
+        <h1 style="font-size: clamp(28px, 4vw, 34px); line-height: 1.25; margin: 0 0 16px;">{titulo}</h1>
 
-      <details style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 16px;">
-        <summary style="font-family: var(--font-mono); font-size: 12px; color: var(--color-secondary-text); cursor: pointer;">Metodología</summary>
-        <div style="font-size: 14px; color: var(--color-secondary-text); margin-top: 10px;">
-          <slot name="metodologia" />
-        </div>
-      </details>
+        {cifraDestacada && (
+          <div style="text-align: center; margin-bottom: 24px;">
+            <div style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 18px; display: inline-block;">
+              <p style="font-family: var(--font-mono); font-size: 20px; margin: 0; color: var(--color-ink);">{cifraDestacada}</p>
+              <p style="font-size: 11px; color: var(--color-secondary-text); margin: 2px 0 0;">{etiquetaCifra}</p>
+            </div>
+          </div>
+        )}
+
+        <article class="cuerpo-articulo" style="font-size: 16px; line-height: 1.7;">
+          <slot />
+        </article>
+
+        {metodologia && (
+          <details style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 16px;">
+            <summary style="font-family: var(--font-mono); font-size: 12px; color: var(--color-secondary-text); cursor: pointer;">Metodología</summary>
+            <div style="font-size: 14px; color: var(--color-secondary-text); margin-top: 10px; line-height: 1.6;">
+              {metodologia}
+            </div>
+          </details>
+        )}
+      </div>
     </main>
   </body>
 </html>

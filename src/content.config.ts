@@ -9,6 +9,8 @@ const articulos = defineCollection({
     fecha: z.date(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
+    metodologia: z.string().optional(),
+    imagenPortada: z.string().optional(),
   }),
 });
 

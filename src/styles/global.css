@@ -24,3 +24,61 @@ h1, h2, h3 {
   font-family: var(--font-heading);
   font-weight: 600;
 }
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 5vw, 3rem);
+}
+
+.contenido-articulo {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.grid-articulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .dato-semana {
+    max-width: 760px;
+  }
+}
+
+.portada-articulo {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.cuerpo-articulo table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.cuerpo-articulo th, .cuerpo-articulo td {
+  border: 1px solid var(--color-border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.cuerpo-articulo th {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-secondary-text);
+  background: #F0EDE4;
+}
+
+.grafico-interactivo {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 28px 0;
+}

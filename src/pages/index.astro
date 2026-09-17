@@ -8,7 +8,7 @@ import '../styles/global.css';
     <title>Nebula</title>
   </head>
   <body>
-    <header style="display: flex; align-items: center; justify-content: space-between; padding: 1.5rem;">
+    <header class="contenedor" style="display: flex; align-items: center; justify-content: space-between; padding-top: 1.5rem; padding-bottom: 1.5rem;">
       <svg width="110" height="32" viewBox="0 0 110 32">
         <circle cx="7" cy="8" r="3" fill="#D85A30" />
         <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
@@ -20,20 +20,22 @@ import '../styles/global.css';
       </nav>
     </header>
 
-    <main style="max-width: 700px; margin: 0 auto; padding: 1rem 1.5rem 3rem;">
-      <section style="margin-bottom: 2.5rem;">
+    <main class="contenedor" style="padding-top: 1rem; padding-bottom: 3rem;">
+      <section class="dato-semana" style="margin-bottom: 3rem;">
         <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent); letter-spacing: 0.5px; margin: 0 0 8px;">EL DATO DE LA SEMANA</p>
-        <h1 style="font-size: 28px; line-height: 1.25; margin: 0 0 10px;">Las secuelas de Matrix no bajaron de calidad, bajó la comprensión del público</h1>
-        <p style="color: var(--color-secondary-text); font-size: 15px; line-height: 1.6;">Un análisis de reseñas y menciones en cultura popular contradice el relato extendido sobre la trilogía.</p>
+        <h1 style="font-size: clamp(28px, 4vw, 38px); line-height: 1.25; margin: 0 0 10px;">Las secuelas de Matrix no bajaron de calidad, bajó la comprensión del público</h1>
+        <p style="color: var(--color-secondary-text); font-size: 16px; line-height: 1.6;">Un análisis de reseñas y menciones en cultura popular contradice el relato extendido sobre la trilogía.</p>
       </section>
 
       <section>
-        <h2 style="font-size: 16px; margin: 0 0 12px;">Artículos recientes</h2>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-          <article style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 14px 16px;">
-            <p style="font-family: var(--font-mono); font-size: 11px; color: var(--color-accent-2); margin: 0 0 4px;">CINE</p>
-            <p style="margin: 0;">¿Realmente decayó la trilogía de Matrix?</p>
-          </article>
+        <h2 style="font-size: 16px; margin: 0 0 16px;">Artículos recientes</h2>
+        <div class="grid-articulos">
+          <a href="/articulos/matrix-secuelas" style="text-decoration: none;">
+            <article style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 16px; height: 100%;">
+              <p style="font-family: var(--font-mono); font-size: 10px; color: #8B85C4; margin: 0 0 6px;">CINE</p>
+              <p style="margin: 0; color: var(--color-ink); font-size: 15px;">¿Realmente decayó la trilogía de Matrix?</p>
+            </article>
+          </a>
         </div>
       </section>
     </main>
