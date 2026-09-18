@@ -1,5 +1,5 @@
 ---
-titulo: "Baskonia cambia medio equipo cada verano, pero los datos señalan otro problema"
+titulo: "Las reconstrucciones en el Baskonia se suceden cada verano, pero ¿son el verdadero problema de su inconsistencia en Euroliga?"
 tema: "BALONCESTO"
 fecha: 2026-09-18
 imagenPortada: "/nebula/imagenes/baskonia_portada.png"
@@ -16,7 +16,7 @@ He analizado las diez temporadas disputadas desde el cambio de formato de 2016-1
 
 En cuatro de las nueve transiciones analizadas desapareció más de la mitad de la producción anotadora. El caso más extremo llegó en el verano de 2020: los jugadores que salieron habían generado el 66,3% de los puntos del curso anterior. Un año después volvió a ocurrir casi lo mismo, con una pérdida del 65,7%.
 
-Solo la plantilla de 2018-19 conservó más de dos tercios de la anotación previa. En el resto de los casos, Baskonia tuvo que reemplazar entre el 44% y el 66% de los puntos. La rotación tampoco afecta únicamente a jugadores secundarios. El máximo anotador dejó el club en cinco de las nueve transiciones, el 55,6% del total.
+**Solo la plantilla de 2018-19 conservó más de dos tercios de la anotación previa**. En el resto de los casos, Baskonia tuvo que reemplazar entre el 44% y el 66% de los puntos. La rotación tampoco afecta únicamente a jugadores secundarios. El máximo anotador dejó el club en cinco de las nueve transiciones, el 55,6% del total.
 
 <div class="grafico-interactivo">
   <canvas id="grafico-produccion-perdida" height="300"></canvas>
@@ -48,7 +48,7 @@ Solo la plantilla de 2018-19 conservó más de dos tercios de la anotación prev
   });
 </script>
 
-El ejemplo más reconocible es el de Shengelia. En 2019-20 concentró el 21,6% de la anotación y se marchó al terminar el curso. Sin embargo, Baskonia pasó de ganar el 42,9% de sus partidos a alcanzar el 52,9% en 2020-21. La pérdida de la estrella no impidió que el equipo mejorara.
+El **ejemplo** más reconocible es el de **Shengelia**. En 2019-20 concentró el 21,6% de la anotación y se marchó al terminar el curso. Sin embargo, **Baskonia pasó de ganar el 42,9% de sus partidos a alcanzar el 52,9% en 2020-21**. La pérdida de la estrella no impidió que el equipo mejorara.
 
 ## 2. Perder al líder no cambia las victorias
 
@@ -56,11 +56,11 @@ Las temporadas en las que continuó el máximo anotador anterior terminaron con 
 
 La comparación de toda la producción ofrece la misma respuesta. La correlación entre el porcentaje de puntos perdidos y el porcentaje de victorias es de 0,078, prácticamente cero. Baskonia ha ganado y perdido con niveles de renovación muy parecidos. En 2020-21 reemplazó dos tercios de la anotación y consiguió 18 victorias. En 2021-22 afrontó una reconstrucción casi idéntica y solo logró 12.
 
-Esto no convierte la rotación en algo irrelevante. Reconstruir cada verano obliga a acertar repetidamente en los fichajes, dificulta consolidar automatismos y aumenta el riesgo. Los datos indican, sin embargo, que el club ha sido capaz de reemplazar suficiente producción como para que la fuga de talento no determine por sí sola su balance final.
+Esto no convierte la rotación en algo irrelevante. **Reconstruir cada verano obliga a acertar repetidamente en los fichajes, dificulta consolidar automatismos y aumenta el riesgo**. Los datos indican, sin embargo, que el club ha sido capaz de reemplazar suficiente producción como para que la fuga de talento no determine por sí sola su balance final.
 
 ## 3. El verdadero límite aparece al otro lado de la pista
 
-La anotación tampoco explica las victorias. Su correlación con el porcentaje de triunfos vuelve a ser de 0,078. La temporada 2025-26 es el mejor ejemplo: Baskonia firmó su mayor media ofensiva del periodo, 87,4 puntos, pero terminó con 13 victorias, 25 derrotas y la 18.ª posición.
+**La anotación tampoco explica las victorias**. Su correlación con el porcentaje de triunfos vuelve a ser de 0,078. La temporada 2025-26 es el mejor ejemplo: Baskonia firmó su mayor media ofensiva del periodo, 87,4 puntos, pero terminó con 13 victorias, 25 derrotas y la 18.ª posición.
 
 El problema estaba en los 91,7 puntos recibidos por partido. La diferencia entre anotación y puntos encajados cayó hasta -4,3, el peor registro de las diez temporadas. Esa diferencia presenta una correlación de 0,863 con el porcentaje de victorias, muy superior a la continuidad, la anotación o la permanencia del líder.
 
@@ -114,4 +114,4 @@ Las cinco temporadas con diferencia positiva acabaron con al menos un 50% de vic
 
 Los datos confirman la intuición del aficionado y corrigen su diagnóstico. Baskonia vive en una reconstrucción permanente, pierde a su máximo anotador más de la mitad de los veranos y reemplaza, de media, uno de cada dos puntos. Aun así, esa inestabilidad no explica sus victorias.
 
-La capacidad histórica del club para detectar y desarrollar talento ha compensado muchas salidas. El límite aparece cuando esa reinvención produce equipos capaces de anotar, pero no de contener al rival. El reto no consiste únicamente en conservar estrellas. Consiste en reconstruir sin perder el equilibrio.
+La capacidad histórica del club para detectar y desarrollar talento ha compensado muchas salidas. El límite aparece cuando esa reinvención produce equipos capaces de anotar, pero no de contener al rival. **El reto** no consiste únicamente en conservar estrellas. **Consiste en reconstruir sin perder el equilibrio**.
