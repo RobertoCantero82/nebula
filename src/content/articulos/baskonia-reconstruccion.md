@@ -2,6 +2,7 @@
 titulo: "Baskonia cambia medio equipo cada verano, pero los datos señalan otro problema"
 tema: "BALONCESTO"
 fecha: 2026-09-18
+imagenPortada: "/nebula/imagenes/baskonia_portada.png"
 cifraDestacada: "51,3%"
 etiquetaCifra: "porcentaje medio de la anotación anterior que Baskonia pierde cada verano"
 metodologia: "Análisis de las estadísticas oficiales de la Euroliga entre las temporadas 2016-17 y 2025-26. Se estudiaron 153 registros de jugadores, nueve transiciones de plantilla y los resultados finales de diez fases regulares. La continuidad se midió como el porcentaje de puntos de una temporada producido por jugadores que no aparecieron en la plantilla del curso siguiente. Las correlaciones describen asociaciones y no demuestran causalidad."
