@@ -10,13 +10,13 @@ metodologia: "Análisis de las especificaciones oficiales de Apple, Samsung y Go
 
 Un teléfono de 1.999 dólares que se abre hasta las 7,58 pulgadas invita a una comparación inevitable. ¿Es el **iPhone Duo** un móvil con una pantalla excepcionalmente grande o un intento de guardar un iPad mini en el bolsillo?
 
-He comparado sus dimensiones, peso, pantalla y precio con los iPhone 18 Pro y Pro Max, el iPad mini y dos rivales plegables: el Samsung Galaxy Z Fold8 y el Google Pixel 11 Pro Fold. Los datos ofrecen una respuesta menos binaria que la pregunta. **Cerrado, el Duo es un teléfono extraño; abierto, no tiene el cuerpo de un iPad mini, pero sí gran parte de su experiencia visual**.
+He comparado sus dimensiones, peso, pantalla y precio con los iPhone 18 Pro y Pro Max, el iPad mini y dos rivales plegables: el Samsung Galaxy Z Fold8 y el Google Pixel 11 Pro Fold. Los datos, a primera vista, ofrecen una respuesta curiosa. **Cerrado**, el Duo es un **teléfono extraño**. **Abierto**, no tiene el cuerpo de un iPad mini, pero sí gran parte de su **experiencia visual**.
 
 ## 1. Cerrado: menos móvil por delante, más móvil en el bolsillo
 
-El iPhone Duo ocupa 99,1 cm² cuando está cerrado, un 15,8% menos que el promedio del iPhone 18 Pro y el Pro Max. Esa reducción, sin embargo, no produce un teléfono más ligero ni más fino. El Duo pesa 254 gramos, un 10,4% más que ambos modelos de referencia, y sus 11,3 milímetros de grosor superan la media de los iPhone convencionales en un 29,1%.
+El iPhone Duo ocupa 99,1 cm² cuando está cerrado, un 15,8% menos que el promedio del iPhone 18 Pro y el Pro Max. Esa reducción, sin embargo, no consigue un teléfono más ligero ni más fino. La nueva creación de Apple pesa 254 gramos, un 10,4% más que los mencionados modelos de referencia, y sus 11,3 milímetros de grosor superan la media de los iPhone convencionales en un 29,1%.
 
-La explicación está en sus proporciones. El Duo es un 24,8% más bajo que un iPhone Pro medio, pero un 12,2% más ancho. Su pantalla exterior también es un 18,2% menor. **No parece un móvil normal doblado por la mitad: parece un objeto distinto, corto, ancho y grueso**, pensado para cambiar de identidad al abrirse.
+Entonces, ¿cuál es la explicación? El iPhone Duo es un 24,8% más bajo que un iPhone Pro, pero un 12,2% más ancho. Su pantalla exterior también es un 18,2% menor. **No parece un móvil normal doblado por la mitad**: parece un objeto distinto, corto, ancho y grueso, pensado para cambiar de identidad al abrirse.
 
 | Métrica | iPhone Duo | Media iPhone 18 Pro y Pro Max | Diferencia |
 |---|---:|---:|---:|
@@ -77,15 +77,15 @@ La diagonal, por sí sola, oculta parte de la historia. El iPad mini mide 8,3 pu
   });
 </script>
 
-La densidad de píxeles devuelve parte de la identidad de teléfono. La pantalla interior alcanza 430,7 píxeles por pulgada, un 31,9% más que el iPad mini y también por encima de los plegables de Samsung y Google. El Duo ofrece una pantalla con forma de tableta y nitidez de móvil de gama alta.
+La densidad de píxeles devuelve parte de la identidad de teléfono. La pantalla interior alcanza 430,7 píxeles por pulgada, un 31,9% más que el iPad mini y también por encima de los plegables de Samsung y Google. El iPhone Duo ofrece una pantalla con forma de tablet y una nitidez de móvil de gama alta.
 
-Pero no es un iPad mini partido en dos. Abierto, el Duo es un 39,7% más bajo, un 22,1% más ancho y un 26,4% menor en superficie física. Su pantalla también sigue siendo un 14,5% más pequeña. **Se parece al iPad en la forma de mostrar contenido, no en la forma de ocupar una mesa**.
+Pero no es un iPad mini partido en dos. Abierto, el excepcional dispositivo es un 39,7% más bajo, un 22,1% más ancho y un 26,4% menor en superficie física. Su pantalla también sigue siendo un 14,5% más pequeña. **Se parece al iPad Mini en la forma de mostrar contenido, pero no en la forma de ocupar una mesa**.
 
 ## 3. La pantalla se acerca; el precio, no
 
-El iPhone Duo cuesta 11,46 dólares por cada centímetro cuadrado de pantalla interior. Es una medida imperfecta —un dispositivo también se paga por sus cámaras, procesador, materiales y software—, pero resulta útil para poner el tamaño en contexto.
+El iPhone Duo cuesta 11,46 dólares por cada centímetro cuadrado de pantalla interior. Sí, hablamos de una medida de evaluación imperfecta, pero es que un dispositivo también se paga por sus cámaras, procesador, materiales y software. Sin embargo, resulta útil para poner el tamaño en contexto.
 
-Dentro de los plegables, el Galaxy Z Fold8 baja a 10,60 dólares por cm² y el Pixel 11 Pro Fold a 9,20. El Duo es, por tanto, el que más cobra por cada unidad de superficie y, al mismo tiempo, el que ofrece la pantalla interior más pequeña de los tres.
+Dentro de los plegables, el Galaxy Z Fold8 baja a 10,60 dólares por cm² y el Pixel 11 Pro Fold a 9,20. El iPhone Duo es, por tanto, el que más cobra por cada unidad de superficie y, al mismo tiempo, el que ofrece la pantalla interior más pequeña de los tres.
 
 <div class="grafico-interactivo">
   <canvas id="grafico-precio-superficie" height="280"></canvas>
@@ -116,11 +116,11 @@ Dentro de los plegables, el Galaxy Z Fold8 baja a 10,60 dólares por cm² y el P
   });
 </script>
 
-El contraste con el iPad mini es extremo: 2,94 dólares por cm². La tableta parte de 128 GB, frente a los 256 GB del resto, y carece del mecanismo de plegado y de las mismas funciones telefónicas. Aun así, el Duo cuesta casi cuatro veces más por la superficie visual disponible. **Lo que se paga no es una pantalla grande, sino la posibilidad de doblarla y llevarla encima**.
+El contraste con el iPad mini es extremo: 2,94 dólares por cm². La tableta parte de 128 GB, frente a los 256 GB del resto, y carece del mecanismo de plegado y de las mismas funciones telefónicas. Aun así, el iPhone Duo cuesta casi cuatro veces más por la superficie visual disponible. **Lo que se paga no es una pantalla grande, sino la posibilidad de doblarla y llevarla encima**.
 
 ## Conclusión
 
-El iPhone Duo sigue siendo, ante todo, un móvil. Tiene conectividad telefónica, se cierra para transportarse y pesa prácticamente lo mismo que un iPhone 18 Pro Max. Pero no se comporta como un teléfono convencional: cerrado es más corto, ancho y grueso, y su pantalla exterior es menor.
+El iPhone Duo sigue siendo, ante todo, un teléfono móvil. Tiene su conectividad habitual, se cierra para transportarse y pesa prácticamente lo mismo que un iPhone 18 Pro Max. Eso sí, no se comporta como un teléfono convencional: cerrado es más corto, ancho y grueso, y su pantalla exterior es más pequeña.
 
 Al abrirse aparece la razón de esa incomodidad. El Duo entrega el 85,5% de la pantalla de un iPad mini, una proporción casi idéntica y una densidad muy superior, en un cuerpo más compacto y ligero. No convierte iOS en iPadOS ni sustituye automáticamente la experiencia de una tableta, pero sí invade su territorio visual.
 
