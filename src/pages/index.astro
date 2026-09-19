@@ -1,43 +1,116 @@
 ---
+import { getCollection } from 'astro:content';
 import '../styles/global.css';
+
+const articulos = (await getCollection('articulos')).sort(
+  (a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()
+);
+
+const destacado = articulos[0];
+
+const formatearFecha = (fecha: Date) =>
+  new Intl.DateTimeFormat('es-ES', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  }).format(fecha);
 ---
 
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Nebula</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Nebula une periodismo y ciencia de datos para contar historias sobre cultura, deporte, ciencia y tecnología." />
+    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
+    <meta name="theme-color" content="#1B1836" />
+    <title>Nebula | Historias contadas con datos</title>
   </head>
   <body>
-    <header class="contenedor" style="display: flex; align-items: center; justify-content: space-between; padding-top: 1.5rem; padding-bottom: 1.5rem;">
-      <svg width="110" height="32" viewBox="0 0 110 32">
-        <circle cx="7" cy="8" r="3" fill="#D85A30" />
-        <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
-      </svg>
-      <nav style="display: flex; gap: 20px; font-family: var(--font-body); font-size: 14px;">
-        <a href="/articulos" style="color: var(--color-ink); text-decoration: none;">Artículos</a>
-        <a href="/archivo" style="color: var(--color-ink); text-decoration: none;">Archivo</a>
-        <a href="/metodo" style="color: var(--color-ink); text-decoration: none;">El método</a>
+    <header class="cabecera contenedor">
+      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
+        <svg width="110" height="32" viewBox="0 0 110 32" aria-hidden="true">
+          <circle cx="7" cy="8" r="3" fill="#D85A30" />
+          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
+        </svg>
+      </a>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="#articulos">Artículos</a>
+        <a href="#sobre-nebula">Sobre Nebula</a>
       </nav>
     </header>
 
-    <main class="contenedor" style="padding-top: 1rem; padding-bottom: 3rem;">
-      <section class="dato-semana" style="margin-bottom: 3rem;">
-        <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent); letter-spacing: 0.5px; margin: 0 0 8px;">EL DATO DE LA SEMANA</p>
-        <h1 style="font-size: clamp(28px, 4vw, 38px); line-height: 1.25; margin: 0 0 10px;">Las secuelas de Matrix no bajaron de calidad, bajó la comprensión del público</h1>
-        <p style="color: var(--color-secondary-text); font-size: 16px; line-height: 1.6;">Un análisis de reseñas y menciones en cultura popular contradice el relato extendido sobre la trilogía.</p>
+    <main>
+      {destacado && (
+        <section class="hero contenedor" aria-labelledby="titular-destacado">
+          <a class="hero-imagen" href={`/nebula/articulos/${destacado.id}/`} tabindex="-1" aria-hidden="true">
+            {destacado.data.imagenPortada ? <img src={destacado.data.imagenPortada} alt="" /> : <div class="imagen-placeholder"></div>}
+          </a>
+
+          <div class="hero-contenido">
+            <p class="sobretitulo">ÚLTIMO ANÁLISIS · {destacado.data.tema}</p>
+            <h1 id="titular-destacado"><a href={`/nebula/articulos/${destacado.id}/`}>{destacado.data.titulo}</a></h1>
+            <div class="hero-pie">
+              <span>{formatearFecha(destacado.data.fecha)}</span>
+              <a class="enlace-lectura" href={`/nebula/articulos/${destacado.id}/`}>Leer el análisis <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          {destacado.data.cifraDestacada && (
+            <aside class="hero-dato" aria-label="Dato destacado">
+              <strong>{destacado.data.cifraDestacada}</strong>
+              <span>{destacado.data.etiquetaCifra}</span>
+            </aside>
+          )}
+        </section>
+      )}
+
+      <section class="seccion-articulos contenedor" id="articulos" aria-labelledby="titulo-articulos">
+        <div class="cabecera-seccion">
+          <div>
+            <p class="indice-seccion">01 · ARCHIVO</p>
+            <h2 id="titulo-articulos">Todos los artículos</h2>
+          </div>
+          <p>{articulos.length} {articulos.length === 1 ? 'historia publicada' : 'historias publicadas'}</p>
+        </div>
+
+        <div class="grid-articulos">
+          {articulos.map((articulo) => (
+            <a class="tarjeta-articulo" href={`/nebula/articulos/${articulo.id}/`}>
+              <div class="tarjeta-imagen">
+                {articulo.data.imagenPortada ? <img src={articulo.data.imagenPortada} alt="" loading="lazy" /> : <div class="imagen-placeholder"></div>}
+              </div>
+              <article>
+                <div class="tarjeta-meta">
+                  <span>{articulo.data.tema}</span>
+                  <time datetime={articulo.data.fecha.toISOString()}>{formatearFecha(articulo.data.fecha)}</time>
+                </div>
+                <h3>{articulo.data.titulo}</h3>
+                {articulo.data.cifraDestacada && (
+                  <div class="tarjeta-dato">
+                    <strong>{articulo.data.cifraDestacada}</strong>
+                    <span>{articulo.data.etiquetaCifra}</span>
+                  </div>
+                )}
+              </article>
+            </a>
+          ))}
+        </div>
       </section>
 
-      <section>
-        <h2 style="font-size: 16px; margin: 0 0 16px;">Artículos recientes</h2>
-        <div class="grid-articulos">
-          <a href="/articulos/matrix-secuelas" style="text-decoration: none;">
-            <article style="background: white; border: 1px solid var(--color-border); border-radius: 8px; padding: 16px; height: 100%;">
-              <p style="font-family: var(--font-mono); font-size: 10px; color: #8B85C4; margin: 0 0 6px;">CINE</p>
-              <p style="margin: 0; color: var(--color-ink); font-size: 15px;">¿Realmente decayó la trilogía de Matrix?</p>
-            </article>
-          </a>
+      <section class="sobre-nebula" id="sobre-nebula">
+        <div class="contenedor sobre-grid">
+          <div>
+            <h2>Periodismo para entender los datos, no solo mirarlos</h2>
+            <p>Nebula es un proyecto de Roberto Cantero que combina análisis de datos y narración periodística. Cada historia parte de una pregunta, explica su método y convierte las cifras en contexto.</p>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="pie-pagina contenedor">
+      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
+      <p>Periodismo y ciencia de datos</p>
+    </footer>
   </body>
 </html>
