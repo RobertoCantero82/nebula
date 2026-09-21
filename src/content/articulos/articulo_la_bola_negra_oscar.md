@@ -1,6 +1,12 @@
-# ¿Llegará *La bola negra* a los Oscar? Mi modelo le da un 75 % de opciones de entrar en la preselección
-
-![Estatuilla de los Oscar ilustrada sobre fondo de papel](bolanegra_portada.png)
+---
+imagenPortada: "/nebula/imagenes/bolanegra_portada.png"
+titulo: "¿Llegará La bola negra a los Oscar? Mi modelo le da un 75 % de opciones de entrar en la preselección"
+tema: "CINE"
+fecha: 2026-09-21
+cifraDestacada: "74,7 %"
+etiquetaCifra: "probabilidad estimada de alcanzar la preselección"
+metodologia: "Modelo de machine learning basado en 1.264 candidaturas al Oscar internacional de las ediciones 84 a 98. Se utilizó una regresión logística con historial reciente del país y premios en Cannes, validación temporal y 500 remuestreos para estimar la incertidumbre."
+---
 
 *La película de Javier Calvo y Javier Ambrossi podría representar a España en los Oscar 2027 después de triunfar en Cannes y conquistar el premio del público de Toronto. Un modelo entrenado con 1.264 candidaturas internacionales estima que tiene un 74,7 % de probabilidades de superar el primer corte y un 62 % de conseguir la nominación.*
 
