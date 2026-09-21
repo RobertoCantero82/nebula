@@ -1,6 +1,6 @@
 ---
 imagenPortada: "/nebula/imagenes/bolanegra_portada.png"
-titulo: "¿Llegará La bola negra a los Oscar? Mi modelo le da un 75 % de opciones de entrar en la preselección"
+titulo: "¿Llegará _La bola negra_ a los Oscar? Mi modelo le da un 75 % de opciones de entrar en la preselección"
 tema: "CINE"
 fecha: 2026-09-21
 cifraDestacada: "74,7 %"
