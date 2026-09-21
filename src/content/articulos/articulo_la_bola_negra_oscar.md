@@ -1,6 +1,6 @@
 ---
 imagenPortada: "/nebula/imagenes/bolanegra_portada.png"
-titulo: "¿Llegará 'La bola negra' a los Oscar? Mi modelo le da muchas opciones de entrar en la preselección"
+titulo: "¿Llegará 'La bola negra a los Oscar? Mi modelo le da muchas opciones de entrar en la preselección"
 tema: "CINE"
 fecha: 2026-09-21
 cifraDestacada: "74,7 %"
@@ -55,7 +55,56 @@ El resultado central es el siguiente:
 - **Probabilidad de alcanzar la preselección: 74,7 %.**
 - **Probabilidad de conseguir la nominación: 62 %.**
 
-![Probabilidades estimadas para La bola negra y sus intervalos de incertidumbre](/nebula/imagenes/prediccion_la_bola_negra.png)
+<div class="grafico-interactivo">
+  <canvas id="grafico-prediccion-bola-negra" height="300"></canvas>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const ctx = document.getElementById('grafico-prediccion-bola-negra');
+    if (!ctx || !window.Chart) return;
+    const intervalos = ['44,6 % – 92,9 %', '31,8 % – 82,2 %'];
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Preselección', 'Nominación'],
+        datasets: [
+          {
+            label: 'Frecuencia histórica',
+            data: [13.6, 5.9],
+            backgroundColor: '#B8BEC9',
+          },
+          {
+            label: 'Estimación para La bola negra',
+            data: [74.7, 62.0],
+            backgroundColor: '#446DDF',
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        interaction: { mode: 'index', intersect: false },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: { display: true, text: 'Probabilidad estimada (%)' },
+          },
+        },
+        plugins: {
+          legend: { position: 'bottom' },
+          tooltip: {
+            callbacks: {
+              afterLabel: (context) => context.datasetIndex === 1
+                ? `Intervalo del 95 %: ${intervalos[context.dataIndex]}`
+                : '',
+            },
+          },
+        },
+      },
+    });
+  });
+</script>
 
 Los porcentajes están muy por encima de la frecuencia histórica, pero el margen de incertidumbre obliga a rebajar cualquier lectura triunfalista. Al repetir el entrenamiento 500 veces con distintas muestras de ediciones, el intervalo del 95 % para la preselección se situó entre el **44,6 % y el 92,9 %**. Para la nominación fue del **31,8 % al 82,2 %**.
 
@@ -65,7 +114,58 @@ La señal favorable se mantiene, pero su intensidad varía considerablemente. El
 
 La forma más directa de entender el resultado es repetir la predicción manteniendo España y su historial, pero retirando el premio de Cannes. En ese escenario, la probabilidad de entrar en la preselección cae del 74,7 % al **16,8 %**. La de conseguir la nominación baja del 62 % al **8,5 %**. El efecto asociado a Cannes es de 57,9 y 53,5 puntos porcentuales, respectivamente.
 
-![Comparación de las estimaciones con y sin el premio de Cannes](/nebula/imagenes/impacto_cannes_la_bola_negra.
+<div class="grafico-interactivo">
+  <canvas id="grafico-impacto-cannes" height="300"></canvas>
+</div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const ctx = document.getElementById('grafico-impacto-cannes');
+    if (!ctx || !window.Chart) return;
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Preselección', 'Nominación'],
+        datasets: [
+          {
+            label: 'Frecuencia histórica',
+            data: [13.6, 5.9],
+            backgroundColor: '#B8BEC9',
+          },
+          {
+            label: 'La bola negra sin Cannes',
+            data: [16.8, 8.5],
+            backgroundColor: '#D8B98E',
+          },
+          {
+            label: 'La bola negra con Cannes',
+            data: [74.7, 62.0],
+            backgroundColor: '#446DDF',
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        interaction: { mode: 'index', intersect: false },
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            title: { display: true, text: 'Probabilidad estimada (%)' },
+          },
+        },
+        plugins: {
+          legend: { position: 'bottom' },
+          tooltip: {
+            callbacks: {
+              label: (context) => `${context.dataset.label}: ${context.parsed.y.toFixed(1)} %`,
+            },
+          },
+        },
+      },
+    });
+  });
+</script>
 
 El ejercicio no significa que un premio produzca por sí mismo semejante aumento. Es una comparación dentro del modelo: muestra cómo cambia su respuesta cuando se modifica una única variable. También expone su principal debilidad. Una parte enorme de la predicción descansa sobre una señal que solo aparece en 54 de las 1.264 películas analizadas y que agrupa galardones de distinta naturaleza.
 
