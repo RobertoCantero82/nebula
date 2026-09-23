@@ -140,7 +140,7 @@ La publicación de NASA permite ver ese comportamiento, no solo leerlo:
 
 ## 2. A 63 °C vive, pero no cómodamente
 
-He analizado los datos de crecimiento publicados por los investigadores. El archivo contiene 924 observaciones tomadas en 116 cultivos individuales y 17 temperaturas. Sesenta registros no tienen un recuento celular válido, por lo que el análisis utiliza las 864 mediciones restantes.
+**He analizado los datos de crecimiento publicados por los investigadores**. El archivo contiene 924 observaciones tomadas en 116 cultivos individuales y 17 temperaturas. Sesenta registros no tienen un recuento celular válido, por lo que el análisis utiliza las 864 mediciones restantes.
 
 Los cultivos no empezaban siempre con la misma cantidad de células. Para compararlos, dividí cada recuento por la densidad de ese mismo cultivo en el día 0. Un resultado de 1 significa que termina igual que comenzó; por encima de 1 hay crecimiento neto y por debajo de 1 hay pérdida.
 
@@ -272,7 +272,7 @@ Por eso el hallazgo importa. El calor desestabiliza proteínas, membranas y mate
 
 Decir 'vida compleja' no es falso si se explica así. Sin esa explicación, puede sugerir algo que el estudio no ha encontrado: **un organismo multicelular viviendo alegremente a 63 °C**.
 
-## 5. NASA explica mejor el récord y tropieza con el termómetro
+## 5. La NASA explica mejor el récord y tropieza con el termómetro
 
 La [publicación de NASA en español](https://x.com/NASA_es/status/2102480581103681568) conduce a un artículo mucho más preciso que el titular de Live Science. NASA distingue la reproducción a 63 °C del movimiento a 64 °C, la actividad parcial a 66 °C y la recuperación tras cinco minutos a 70 °C.
 
@@ -309,12 +309,3 @@ Esa es una historia más precisa que 'la vida compleja sobrevive a una temperatu
 Fuentes: [estudio original en *Cell*](https://doi.org/10.1016/j.cell.2026.08.043), [versión de acceso abierto en PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC12697723/), [datos y código de los autores](https://github.com/hbrappaport/incendiamoeba_manuscript), [NASA Science](https://science.nasa.gov/earth/nasa-funded-research-finds-complex-life-defying-record-heat/), [NASA Ciencia](https://ciencia.nasa.gov/ciencias-terrestres/investigacion-financiada-por-la-nasa-descubre-vida-compleja-que-desafia-un-calor-record/) y [Live Science](https://www.livescience.com/planet-earth/evolution/newfound-fire-amoeba-from-the-cascades-sets-record-for-the-hottest-temperature-complex-life-can-survive-at).
 
 ---
-
-### Metodología
-
-- **Muestra de crecimiento:** 924 observaciones, 864 recuentos válidos, 116 cultivos y 17 temperaturas entre 30 y 64 °C.
-- **Normalización:** cada recuento se dividió por la densidad del mismo cultivo en el día 0.
-- **Comparación final:** mediana del factor de crecimiento de las réplicas disponibles en el día 7. La temperatura de 61 °C no aparece en ese gráfico porque su ensayo no llegó al séptimo día.
-- **Duplicación:** tiempos medios de los lotes marcados como `Best_batch` por los autores, seleccionados con apoyo de sondas térmicas.
-- **Otros límites:** los resultados de movimiento, actividad parcial y recuperación proceden del estudio; sus observaciones individuales no forman parte de los CSV de crecimiento analizados.
-- **Alcance:** el EDA describe los datos publicados y no reemplaza los modelos estadísticos ni las pruebas biológicas del artículo científico.
