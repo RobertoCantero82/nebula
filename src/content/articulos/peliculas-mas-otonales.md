@@ -4,11 +4,11 @@ titulo: "¿Cuál es la película más otoñal? Un índice entre hojas, lluvia y 
 tema: "CINE"
 fecha: 2026-09-24
 cifraDestacada: "96,7"
-etiquetaCifra: "puntos sobre 100: empate entre La tormenta de hielo y Las normas de la casa de la sidra"
+etiquetaCifra: "puntos sobre 100: un empate entre dos películas inesperadas"
 metodologia: "Índice construido a partir de 265 películas candidatas y cinco dimensiones puntuadas entre 0 y 3: presencia del otoño, paisaje y paleta, clima y vestuario, rituales y espacios, y tono emocional. Se excluyeron las películas en las que Halloween era central, se realizó un cribado inicial de 264 títulos y una revisión individual con incrementos de medio punto de 112 candidatas. Las cinco dimensiones tienen el mismo peso y el resultado se transforma a una escala de 0 a 100."
 ---
 
-Hay películas que parecen otoñales antes incluso de que caiga la primera hoja. Basta una librería, un abrigo, una carretera húmeda o una conversación ligeramente melancólica para que la estación se instale en la pantalla. Pero ¿cuánto hay de otoño real y cuánto de asociación aprendida?
+Hay películas que parecen otoñales antes incluso de que caiga la primera hoja. Basta una librería, un abrigo, una carretera húmeda o una conversación ligeramente melancólica para que la estación se instale en la pantalla. Pero ¿cuánto hay de otoño real y cuánto de prejuicio cinematográfico?
 
 Para responder he construido un índice de otoñalidad y lo he aplicado a una lista inicial de **265 películas**. La condición era importante: buscar cine de otoño **sin convertir la selección en otra lista de Halloween**. El resultado tiene dos ganadoras, un empate enorme en el tercer puesto y una conclusión inesperada: el otoño cinematográfico depende menos del frío que de cómo se siente una película.
 
@@ -32,7 +32,7 @@ Es un proceso parecido al que utilicé en [el análisis de las secuelas de *Matr
 
 ***La tormenta de hielo*** y ***Las normas de la casa de la sidra*** encabezan el índice con **96,7 puntos**. La primera convierte Acción de Gracias, el clima y la crisis de una familia en la estructura misma del relato. La segunda se apoya en el huerto, la sidra, la cosecha y el paisaje de Maine.
 
-Justo después aparece ***Cuando cae el otoño***, con 93,3 puntos. A partir de ahí llega el gran empate: **quince películas comparten los 90 puntos**. El orden alfabético dentro de ese grupo sirve únicamente para mostrar los títulos; no existe diferencia de posición entre ellos.
+Justo después aparece ***Cuando cae el otoño***, con 93,3 puntos. A partir de ahí llega el gran empate: **quince películas comparten los 90 puntos**. El orden alfabético dentro de ese grupo sirve únicamente para mostrar los títulos, pero no existe diferencia de posición entre ellos.
 
 <div class="grafico-interactivo" style="overflow-x: auto;">
   <div style="height: 720px; min-width: 675px;">
@@ -313,17 +313,17 @@ Para comprobar cuánto dependía el resultado de las decisiones del índice, rep
 
 La frontera de los 90 puntos lo es menos. Quince películas están exactamente en ese valor, de modo que pequeños cambios en la definición pueden hacerlas entrar o salir del grupo superior. Los 90 puntos deben leerse como **un umbral editorial**, no como una ley natural.
 
-El índice tampoco dice si una película es buena ni si te va a gustar. Mide una característica concreta. Para la otra pregunta está [Indy](https://robertocantero-agente-indy.hf.space/), mi agente de recomendación cinematográfica: allí puedes consultar si una película encaja contigo antes de decidir la sesión.
+El índice tampoco dice si una película es buena ni si te va a gustar. Mide una característica concreta. Para la otra pregunta está [Indy](https://robertocantero-agente-indy.hf.space/), mi agente de recomendación cinematográfica: allí puedes consultar si una película encaja contigo antes de decidir la sesión. Si aún no lo has probado, no sé a qué estás esperando.
 
 ## El análisis, abierto
 
-Todo el proceso está disponible para quien quiera revisar las decisiones, reproducir los cálculos o proponer otros pesos. Puedes [descargar el notebook de Jupyter](/nebula/analisis/indice-otonalidad-peliculas.ipynb) y consultar también el [CSV con las evaluaciones refinadas](/nebula/analisis/evaluaciones-otonalidad-refinadas.csv).
+**Todo el proceso está disponible** para quien quiera revisar las decisiones, reproducir los cálculos o proponer otros pesos. Puedes [descargar el notebook de Jupyter](/nebula/analisis/indice-otonalidad-peliculas.ipynb) y consultar también el [CSV con las evaluaciones refinadas](/nebula/analisis/evaluaciones-otonalidad-refinadas.csv).
 
 El cuaderno documenta el cribado inicial, la revisión de posibles falsos negativos, la construcción del ranking y el análisis de sensibilidad. La codificación incluye inevitablemente juicio humano; hacerla visible permite discutirla en lugar de esconderla detrás de una cifra.
 
 ## Las 18 películas más otoñales y dónde verlas
 
-La disponibilidad cambia con frecuencia. Cada enlace abre la ficha o la búsqueda actualizada de JustWatch para España. Dentro del empate a 90 puntos, los títulos aparecen en orden alfabético.
+La disponibilidad cambia con frecuencia. Cada enlace abre la ficha actualizada en la plataforma JustWatch. Dentro del empate a 90 puntos, como te comentaba anteriormente, los títulos aparecen en orden alfabético. Esta es la lista definitiva de películas más otoñales. ¡Disfútala!
 
 - **La tormenta de hielo** (1997) — **96,7 puntos**. Acción de Gracias, tormenta y crisis familiar. [Dónde verla en España](https://www.justwatch.com/es/pelicula/la-tormenta-de-hielo).
 - **Las normas de la casa de la sidra** (1999) — **96,7 puntos**. Huerto, sidra, cosecha y paisaje de Maine. [Dónde verla en España](https://www.justwatch.com/es/pelicula/the-cider-house-rules).
