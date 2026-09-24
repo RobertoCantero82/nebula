@@ -1,7 +1,32 @@
 ---
 import '../styles/global.css';
+import Seo from '../components/Seo.astro';
 
-const { titulo, tema, cifraDestacada, etiquetaCifra, metodologia, imagenPortada } = Astro.props;
+const { titulo, descripcion, tema, fecha, cifraDestacada, etiquetaCifra, metodologia, imagenPortada } = Astro.props;
+
+const origen = Astro.site ?? Astro.url.origin;
+const canonical = new URL(Astro.url.pathname, origen);
+const imagenSocial = imagenPortada ? new URL(imagenPortada, origen) : undefined;
+const datosEstructurados = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: titulo,
+  description: descripcion,
+  datePublished: fecha.toISOString(),
+  dateModified: fecha.toISOString(),
+  inLanguage: 'es-ES',
+  mainEntityOfPage: canonical.href,
+  ...(imagenSocial ? { image: [imagenSocial.href] } : {}),
+  author: {
+    '@type': 'Person',
+    name: 'Roberto Cantero',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Nebula',
+    url: new URL('/nebula/', origen).href,
+  },
+};
 ---
 
 <html lang="es">
@@ -10,7 +35,14 @@ const { titulo, tema, cifraDestacada, etiquetaCifra, metodologia, imagenPortada 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
     <meta name="theme-color" content="#1B1836" />
-    <title>{titulo} | Nebula</title>
+    <Seo
+      titulo={`${titulo} | Nebula`}
+      descripcion={descripcion}
+      imagen={imagenPortada}
+      tipo="article"
+      fecha={fecha}
+    />
+    <script type="application/ld+json" set:html={JSON.stringify(datosEstructurados)} />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   </head>
   <body>
@@ -57,6 +89,18 @@ const { titulo, tema, cifraDestacada, etiquetaCifra, metodologia, imagenPortada 
           <slot />
         </article>
 
+        <aside class="compartir-articulo" aria-labelledby="titulo-compartir">
+          <div>
+            <p class="compartir-etiqueta">AYUDA A QUE ESTA HISTORIA VIAJE</p>
+            <h2 id="titulo-compartir">¿Te ha parecido interesante?</h2>
+          </div>
+          <div class="compartir-acciones">
+            <button type="button" data-share>Compartir</button>
+            <button type="button" data-copy-link>Copiar enlace</button>
+          </div>
+          <p class="compartir-estado" data-share-status aria-live="polite"></p>
+        </aside>
+
         {metodologia && (
           <details style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 16px;">
             <summary style="font-family: var(--font-mono); font-size: 12px; color: var(--color-secondary-text); cursor: pointer;">Metodología</summary>
@@ -67,5 +111,39 @@ const { titulo, tema, cifraDestacada, etiquetaCifra, metodologia, imagenPortada 
         )}
       </div>
     </main>
+
+    <script>
+      const copiarEnlace = async () => {
+        const estado = document.querySelector('[data-share-status]');
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          if (estado) estado.textContent = 'Enlace copiado.';
+        } catch {
+          const campo = document.createElement('textarea');
+          campo.value = window.location.href;
+          campo.style.position = 'fixed';
+          campo.style.opacity = '0';
+          document.body.appendChild(campo);
+          campo.select();
+          document.execCommand('copy');
+          campo.remove();
+          if (estado) estado.textContent = 'Enlace copiado.';
+        }
+      };
+
+      document.querySelector('[data-copy-link]')?.addEventListener('click', copiarEnlace);
+      document.querySelector('[data-share]')?.addEventListener('click', async () => {
+        if (navigator.share) {
+          try {
+            await navigator.share({ title: document.title, url: window.location.href });
+          } catch (error) {
+            if (error instanceof DOMException && error.name === 'AbortError') return;
+            await copiarEnlace();
+          }
+          return;
+        }
+        await copiarEnlace();
+      });
+    </script>
   </body>
 </html>

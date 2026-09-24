@@ -1,6 +1,7 @@
 ---
 imagenPortada: "/nebula/imagenes/ameba_portada.png"
 titulo: "Esta ameba resiste 70 °C, se reproduce a 63 °C y ha hecho tropezar a la propia NASA"
+descripcion: "Los datos de la ameba de fuego muestran cómo pierde capacidades a medida que sube la temperatura y aclaran un error de NASA en español."
 tema: "CIENCIA"
 fecha: 2026-09-23
 cifraDestacada: "3,25 veces"

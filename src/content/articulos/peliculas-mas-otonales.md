@@ -1,6 +1,7 @@
 ---
 imagenPortada: "/nebula/imagenes/pelis_otono_portada.png"
 titulo: "¿Cuál es la película más otoñal? Un índice entre hojas, lluvia y melancolía"
+descripcion: "Un índice aplicado a 265 películas revela cuáles capturan mejor el paisaje, los rituales y la melancolía del otoño."
 tema: "CINE"
 fecha: 2026-09-24
 cifraDestacada: "96,7"

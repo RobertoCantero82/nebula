@@ -1,6 +1,7 @@
 ---
 imagenPortada: "/nebula/imagenes/lanzamientoschina_portada.png"
 titulo: "China lanza cuatro cohetes en 45 horas: analizo los datos para saber si el país va camino de un récord"
+descripcion: "El análisis de 802 lanzamientos orbitales estima si la aceleración espacial de China puede terminar 2026 con un nuevo récord."
 tema: "TECNOLOGÍA"
 fecha: 2026-09-22
 cifraDestacada: "110"

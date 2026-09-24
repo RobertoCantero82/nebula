@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import '../styles/global.css';
+import Seo from '../components/Seo.astro';
 
 const articulos = (await getCollection('articulos')).sort(
   (a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()
@@ -20,10 +21,13 @@ const formatearFecha = (fecha: Date) =>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Nebula une periodismo y ciencia de datos para contar historias sobre cultura, deporte, ciencia y tecnología." />
     <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
     <meta name="theme-color" content="#1B1836" />
-    <title>Nebula | Historias contadas con datos</title>
+    <Seo
+      titulo="Nebula | Historias contadas con datos"
+      descripcion="Nebula une periodismo y ciencia de datos para contar historias sobre cultura, deporte, ciencia y tecnología."
+      imagen={destacado?.data.imagenPortada}
+    />
   </head>
   <body>
     <header class="cabecera contenedor">

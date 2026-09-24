@@ -1,6 +1,7 @@
 ---
 imagenPortada: "/nebula/imagenes/matrix_portada.png"
 titulo: "'The Matrix' a examen: tres mitos de la saga contrastados con datos"
+descripcion: "Presupuestos, efectos visuales, lenguaje y diálogos permiten comprobar tres creencias sobre The Matrix y sus secuelas."
 tema: "CINE"
 fecha: 2026-09-16
 cifraDestacada: "27.3% → 15.2%"

@@ -1,6 +1,7 @@
 ---
 imagenPortada: "/nebula/imagenes/iphone_duo_portada.png"
 titulo: "¿Es el iPhone Duo un móvil o un iPad mini plegable?"
+descripcion: "Una comparación de dimensiones, pantalla, peso y precio sitúa al iPhone Duo entre un teléfono plegable y la experiencia de un iPad mini."
 tema: "TECNOLOGÍA"
 fecha: 2026-09-19
 cifraDestacada: "85,5%"

@@ -1,6 +1,7 @@
 ---
 imagenPortada: "/nebula/imagenes/bolanegra_portada.png"
-titulo: "¿Llegará 'La bola negra a los Oscar? Mi modelo le da muchas opciones de entrar en la preselección"
+titulo: "¿Llegará 'La bola negra' a los Oscar? Mi modelo le da muchas opciones de entrar en la preselección"
+descripcion: "Un modelo entrenado con 1.264 candidaturas estima las opciones de La bola negra de alcanzar la preselección y la nominación al Oscar."
 tema: "CINE"
 fecha: 2026-09-21
 cifraDestacada: "74,7 %"

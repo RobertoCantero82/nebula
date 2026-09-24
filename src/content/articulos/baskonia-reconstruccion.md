@@ -1,5 +1,6 @@
 ---
 titulo: "Las reconstrucciones en el Baskonia se suceden cada verano, pero ¿son el verdadero problema de su inconsistencia en Euroliga?"
+descripcion: "Diez temporadas de Euroliga permiten medir cuánto talento pierde Baskonia cada verano y si esa rotación explica realmente sus resultados."
 tema: "BALONCESTO"
 fecha: 2026-09-18
 imagenPortada: "/nebula/imagenes/baskonia_portada.png"
