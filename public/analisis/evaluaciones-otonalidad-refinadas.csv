@@ -1,0 +1,113 @@
+﻿posicion,candidate_id,titulo_castellano,titulo_original,release_year,presencia_otono_refinada,paisaje_paleta_refinada,clima_vestuario_refinada,rituales_espacios_refinada,tono_otonal_refinada,indice_otonalidad_refinado,confianza_refinada,notas_revision
+1,38,La tormenta de hielo,The Ice Storm,1997,3.0,2.5,3.0,3.0,3.0,96.7,alta,"Acción de Gracias, el clima y la crisis familiar convierten el otoño en estructura narrativa."
+1,13,Las normas de la casa de la sidra,The Cider House Rules,1999,3.0,3.0,2.5,3.0,3.0,96.7,alta,"El huerto, la sidra, la cosecha y el paisaje de Maine son centrales."
+2,138,Cuando cae el otoño,When Fall Is Coming,2024,3.0,3.0,2.5,2.5,3.0,93.3,alta,El otoño rural francés es explícito y decisivo en la narración y la imagen.
+3,108,Ana de las Tejas Verdes,Anne of Green Gables,1985,2.5,3.0,2.5,2.5,3.0,90.0,alta,"Los paisajes, la vida rural y la sensibilidad de Anne producen una asociación otoñal muy fuerte."
+3,30,Beneath the Harvest Sky,Beneath the Harvest Sky,2013,3.0,2.5,2.5,3.0,2.5,90.0,alta,La cosecha y el paisaje rural sitúan claramente la historia en otoño.
+3,50,Cuento de otoño,A Tale of Autumn,1998,3.0,3.0,2.0,3.0,2.5,90.0,alta,"El viñedo, la vendimia y el paisaje rural construyen un otoño explícito."
+3,143,El mito de las huellas dactilares,The Myth of Fingerprints,1997,3.0,2.0,2.5,3.0,3.0,90.0,alta,La reunión de Acción de Gracias estructura el drama familiar.
+3,29,Esencia de mujer,Scent of a Woman,1992,3.0,2.0,2.5,3.0,3.0,90.0,alta,"La historia transcurre durante Acción de Gracias y combina campus, ciudad y nostalgia."
+3,36,Hannah y sus hermanas,Hannah and Her Sisters,1986,3.0,2.0,2.5,3.0,3.0,90.0,alta,"Acción de Gracias estructura la narración y se combina con clima fresco, reuniones familiares y un tono melancólico."
+3,154,La casa del sí,The House of Yes,1997,3.0,1.5,3.0,3.0,3.0,90.0,alta,"Acción de Gracias, la tormenta y el espacio doméstico dominan el relato."
+3,15,Lejos del cielo,Far from Heaven,2002,3.0,3.0,2.5,2.0,3.0,90.0,alta,El follaje de Connecticut y la paleta cálida articulan el melodrama.
+3,94,Mejor solo que mal acompañado,"Planes, Trains and Automobiles",1987,3.0,2.0,3.0,3.0,2.5,90.0,alta,"El viaje de Acción de Gracias combina clima tardío, desplazamiento y calidez emocional."
+3,3,Otoño en Nueva York,Autumn in New York,2000,3.0,3.0,2.5,2.0,3.0,90.0,alta,El otoño neoyorquino domina la ambientación romántica y visual.
+3,40,Petite maman,Petite Maman,2021,3.0,3.0,2.5,2.0,3.0,90.0,alta,El bosque otoñal y el tono íntimo dominan la experiencia de la película.
+3,51,Prácticamente magia,Practical Magic,1998,2.5,3.0,2.5,2.5,3.0,90.0,alta,"La Nueva Inglaterra otoñal, la botánica, los interiores y el tono familiar construyen una identidad estacional muy fuerte."
+3,4,Quédate a mi lado,Stepmom,1998,2.5,3.0,2.5,2.5,3.0,90.0,alta,"El paisaje, el vestuario, la vida familiar y la melancolía hacen del otoño una presencia visual y emocional decisiva."
+3,19,Sólo el cielo lo sabe,All That Heaven Allows,1955,3.0,3.0,2.5,2.0,3.0,90.0,alta,El paisaje suburbano de Nueva Inglaterra presenta un otoño dominante.
+3,2,Tienes un e-mail,You've Got Mail,1998,2.5,3.0,2.5,2.5,3.0,90.0,alta,"Nueva York, las librerías, el vestuario y el romance convierten el otoño en una parte central de su identidad."
+4,74,Acción de Gracias con Charlie Brown,A Charlie Brown Thanksgiving,1973,3.0,2.5,2.0,3.0,2.5,86.7,alta,Acción de Gracias y los motivos estacionales son el centro del relato.
+4,11,Como la vida misma,Dan in Real Life,2007,2.5,2.5,2.5,2.5,3.0,86.7,alta,"La reunión familiar, el paisaje de Rhode Island y el tono íntimo construyen una ambientación otoñal muy consistente."
+4,91,El erizo en la niebla,Hedgehog in the Fog,1975,2.5,3.0,3.0,1.5,3.0,86.7,alta,"La niebla, el bosque y el tono contemplativo crean una atmósfera plenamente otoñal."
+4,18,El lado bueno de las cosas,Silver Linings Playbook,2012,2.5,2.0,2.5,3.0,3.0,86.7,alta,"La temporada de fútbol, Acción de Gracias, el vestuario y el tono emocional refuerzan claramente el otoño."
+4,98,Pero... ¿quién mató a Harry?,The Trouble with Harry,1955,3.0,3.0,2.5,2.0,2.5,86.7,alta,El follaje de Vermont es constante y esencial para la comedia macabra.
+5,144,A casa por vacaciones,Home for the Holidays,1995,3.0,1.5,2.0,3.0,3.0,83.3,alta,Acción de Gracias y el regreso al hogar dominan la historia.
+5,195,Country,Country,1984,2.5,2.5,2.0,3.0,2.5,83.3,media,La granja y los ciclos agrícolas sostienen la presencia estacional.
+5,8,El indomable Will Hunting,Good Will Hunting,1997,2.5,2.5,2.5,2.0,3.0,83.3,alta,"Boston, el campus, el vestuario y la introspección crean una identidad otoñal fuerte y recurrente."
+5,194,En un lugar del corazón,Places in the Heart,1984,2.0,2.5,2.0,3.0,3.0,83.3,media,"La vida agrícola, la cosecha y el drama rural aportan una asociación sólida."
+5,148,Krisha,Krisha,2015,3.0,1.5,2.0,3.0,3.0,83.3,alta,La reunión de Acción de Gracias concentra el espacio y el conflicto familiar.
+5,155,Los Daytrippers,The Daytrippers,1996,3.0,1.5,2.5,3.0,2.5,83.3,alta,La jornada de Acción de Gracias organiza el viaje y el encuentro familiar.
+5,145,Retrato de April,Pieces of April,2003,3.0,1.5,2.0,3.0,3.0,83.3,alta,La preparación de Acción de Gracias estructura la acción y el tono emocional.
+5,209,Wallace y Gromit: La maldición de las verduras,Wallace & Gromit: The Curse of the Were-Rabbit,2005,3.0,2.5,2.0,3.0,2.0,83.3,alta,La cosecha y el concurso de verduras sitúan la historia en un otoño rural.
+6,254,Cita en San Luis,Meet Me in St. Louis,1944,2.0,2.5,2.0,2.5,3.0,80.0,alta,"La película recorre un año e incluye un segmento otoñal destacado, pero no exclusivo."
+6,149,Dutch,Dutch,1991,3.0,1.5,2.5,3.0,2.0,80.0,alta,El viaje se organiza alrededor de Acción de Gracias y el clima de finales de otoño.
+6,150,El juramento,The Oath,2018,3.0,1.5,2.0,3.0,2.5,80.0,alta,La celebración de Acción de Gracias desencadena y encierra el conflicto.
+6,20,Fantástico Sr. Fox,Fantastic Mr. Fox,2009,2.0,3.0,2.0,3.0,2.0,80.0,alta,"La paleta ocre, las granjas, la sidra y la cosecha definen su identidad."
+6,70,Frozen 2,Frozen II,2019,2.5,3.0,2.5,1.5,2.5,80.0,alta,El bosque encantado y la paleta roja y dorada sostienen la asociación otoñal.
+6,198,Hermano oso,Brother Bear,2003,2.0,3.0,2.0,2.5,2.5,80.0,media,El paisaje natural y los ciclos animales refuerzan la lectura otoñal.
+6,213,La buena bruja,The Good Witch,2008,2.5,2.5,2.0,2.5,2.5,80.0,media,"La pequeña comunidad, los rituales y la estética cálida construyen una atmósfera otoñal bastante uniforme."
+6,189,La cafetería,The Spitfire Grill,1996,2.0,2.5,2.5,2.0,3.0,80.0,media,El entorno de Maine y el tono de renovación generan una otoñalidad clara.
+6,146,Los humanos,The Humans,2021,3.0,1.0,2.0,3.0,3.0,80.0,alta,La cena de Acción de Gracias constituye el espacio y el conflicto centrales.
+6,9,Noviembre dulce,Sweet November,2001,3.0,2.0,2.0,2.0,3.0,80.0,alta,"Noviembre es central y la melancolía domina, aunque el paisaje y los rituales tienen menor intensidad."
+6,113,Sirenas,Mermaids,1990,2.0,2.5,2.5,2.0,3.0,80.0,media,"El pueblo costero, el vestuario y la relación familiar sostienen una atmósfera otoñal clara."
+6,43,Una historia de Brooklyn,The Squid and the Whale,2005,2.5,2.5,2.0,2.0,3.0,80.0,alta,"El curso escolar, Brooklyn y la melancolía familiar construyen una sensación otoñal consistente."
+6,69,Wolfwalkers: Espíritu de lobo,Wolfwalkers,2020,2.5,3.0,2.0,2.0,2.5,80.0,media,El bosque y la paleta naturalista aportan una otoñalidad visual intensa.
+6,147,¿Qué se está cocinando?,What's Cooking?,2000,3.0,1.5,2.0,3.0,2.5,80.0,alta,Varias familias celebran Acción de Gracias como núcleo de la narración.
+7,122,"Baby, tú vales mucho",Baby Boom,1987,2.5,2.5,2.0,2.0,2.5,76.7,media,"La transformación rural y la ambientación de Nueva Inglaterra aportan una presencia otoñal clara, aunque no exclusiva."
+7,41,Conquista a medias,The Half of It,2020,2.0,2.5,2.5,1.5,3.0,76.7,media,"El entorno escolar, el clima fresco y el tono reflexivo sostienen la sensación otoñal sin convertirla en tema central."
+7,152,El yerno,Son in Law,1993,3.0,1.5,2.0,3.0,2.0,76.7,alta,La visita familiar durante Acción de Gracias estructura la comedia.
+7,55,Gente corriente,Ordinary People,1980,2.5,2.5,2.5,1.0,3.0,76.7,alta,La ambientación suburbana de otoño refuerza un drama familiar melancólico.
+7,10,Mujercitas,Little Women,1994,1.5,2.5,2.5,2.0,3.0,76.7,alta,"La historia recorre varias estaciones; el paisaje, el vestuario y la calidez familiar sostienen una afinidad otoñal fuerte."
+7,251,Mujercitas,Little Women,2019,1.5,2.5,2.5,2.0,3.0,76.7,alta,"La historia recorre varias estaciones, con fuerte calidez doméstica y tono nostálgico."
+7,28,Mystic Pizza,Mystic Pizza,1988,2.5,2.5,2.0,2.0,2.5,76.7,alta,"La localidad costera, el vestuario y el ambiente juvenil ofrecen un otoño reconocible y recurrente."
+7,33,Puñales por la espalda,Knives Out,2019,2.5,2.5,2.5,1.5,2.5,76.7,alta,"La mansión, el vestuario y el paisaje de Nueva Inglaterra aportan otoño, pero los rituales estacionales son secundarios."
+7,151,Un golpe de altura,Tower Heist,2011,2.5,2.0,2.5,2.5,2.0,76.7,media,El desfile de Acción de Gracias aporta una presencia estacional clara pero secundaria.
+8,232,A fuego lento,The Taste of Things,2023,2.0,2.5,1.5,2.5,2.5,73.3,media,"La cocina, el campo y el paso de las estaciones generan una asociación otoñal moderada."
+8,60,Coco,Coco,2017,1.0,3.0,1.0,3.0,3.0,73.3,alta,"La paleta y los rituales estacionales son dominantes, aunque el otoño climático tiene una presencia limitada."
+8,153,Free Birds: ¡Vaya pavos!,Free Birds,2013,3.0,2.0,1.5,3.0,1.5,73.3,alta,"Acción de Gracias es central, aunque la atmósfera emocional y climática es ligera."
+8,34,Juno,Juno,2007,1.5,2.0,3.0,1.5,3.0,73.3,alta,"El frío, el vestuario y la intimidad son recurrentes, aunque buena parte de la película se acerca más al invierno."
+8,17,La casa del lago,The Lake House,2006,1.5,2.5,2.5,1.5,3.0,73.3,media,"El paisaje, el clima y la melancolía refuerzan el otoño, aunque la historia atraviesa diferentes momentos temporales."
+8,202,Lo mejor de Winnie the Pooh,The Many Adventures of Winnie the Pooh,1977,1.5,2.5,2.0,2.5,2.5,73.3,media,"El bosque y algunos episodios estacionales aportan otoño, aunque la película reúne historias de distintos momentos."
+8,139,Maratón de otoño,Autumn Marathon,1979,2.5,2.0,2.5,1.0,3.0,73.3,media,El otoño urbano y el desgaste emocional sostienen la melancolía del relato.
+8,109,Novia a la fuga,Runaway Bride,1999,2.0,2.5,2.0,2.0,2.5,73.3,media,"El pequeño pueblo y la preparación de la boda generan una estética otoñal clara, pero no dominante."
+8,248,Persuasión,Persuasion,1995,1.5,2.5,2.5,1.5,3.0,73.3,media,"El paisaje costero, el clima y la madurez emocional refuerzan la asociación."
+8,245,Sentido y sensibilidad,Sense and Sensibility,1995,1.5,2.5,2.5,1.5,3.0,73.3,media,"La lluvia, el paisaje y la melancolía producen una atmósfera otoñal clara."
+8,190,Vías cruzadas,The Station Agent,2003,2.0,2.5,2.0,1.5,3.0,73.3,media,"El entorno rural, la soledad y la intimidad ofrecen una afinidad otoñal clara, aunque moderada."
+9,14,Crossing Delancey,Crossing Delancey,1988,2.0,2.0,2.0,2.0,2.5,70.0,media,"La vida urbana y el tono romántico ofrecen señales otoñales claras, aunque moderadas en todas las dimensiones."
+9,225,El festín de Babette,Babette's Feast,1987,0.5,2.0,2.5,2.5,3.0,70.0,alta,"La comida y la calidez son centrales, pero la película no está ligada claramente al otoño."
+9,188,El río de la vida,A River Runs Through It,1992,1.5,2.5,2.0,1.5,3.0,70.0,media,"El paisaje y la memoria dominan, pero la estación no estructura toda la narración."
+9,201,Ernest y Célestine,Ernest & Celestine,2012,1.0,2.0,2.5,2.0,3.0,70.0,media,"Los espacios acogedores, el clima y la amistad sostienen la sensación, aunque la estación es poco explícita."
+9,242,La edad de la inocencia,The Age of Innocence,1993,1.5,2.5,2.0,1.5,3.0,70.0,media,"La paleta, el vestuario y el tono elegíaco resultan más otoñales que la cronología."
+9,234,La librería,The Bookshop,2017,1.0,2.0,2.5,2.0,3.0,70.0,media,"La costa, el clima y la librería generan una atmósfera íntima, pero la estación no tiene un papel dominante."
+9,233,La sociedad literaria y el pastel de piel de patata,The Guernsey Literary and Potato Peel Pie Society,2018,1.0,2.0,2.0,2.5,3.0,70.0,media,"La comunidad literaria, los interiores y el tono nostálgico pesan más que la presencia explícita del otoño."
+9,101,Los Meyerowitz: La familia no se elige,The Meyerowitz Stories (New and Selected),2017,1.5,2.0,2.0,2.0,3.0,70.0,media,La reunión familiar y el tono neoyorquino son más relevantes que la estación explícita.
+9,252,Mujercitas,Little Women,1933,1.5,2.0,2.0,2.0,3.0,70.0,media,La calidez familiar y la melancolía superan a la presencia estacional explícita.
+9,253,Mujercitas,Little Women,1949,1.5,2.0,2.0,2.0,3.0,70.0,media,La calidez familiar y la melancolía superan a la presencia estacional explícita.
+9,187,Ni un pelo de tonto,Nobody's Fool,1994,1.0,2.0,3.0,1.5,3.0,70.0,alta,"La película es más invernal que otoñal, aunque comparte paisaje y tono de transición."
+9,217,Penelope,Penelope,2006,1.5,2.5,2.0,1.5,3.0,70.0,media,"La estética de cuento, el vestuario y el tono íntimo sugieren otoño, aunque la estación es secundaria."
+9,107,Reencuentro,The Big Chill,1983,1.5,2.0,2.0,2.0,3.0,70.0,media,"La reunión, la nostalgia y el clima emocional sugieren otoño sin dominar la trama."
+9,244,Regreso a Howards End,Howards End,1992,1.5,2.5,2.0,1.5,3.0,70.0,media,El paisaje inglés y el tono reflexivo aportan una otoñalidad parcial.
+10,16,Algo para recordar,Sleepless in Seattle,1993,1.5,2.0,2.0,1.5,3.0,66.7,media,"El otoño aparece en parte del recorrido urbano y emocional, pero la historia abarca otros momentos y ambientes."
+10,87,Paddington,Paddington,2014,1.0,2.0,2.0,2.0,3.0,66.7,media,Los interiores acogedores y la calidez emocional destacan más que una estación narrativa claramente otoñal.
+10,89,Paddington 2,Paddington 2,2017,1.0,2.0,2.0,2.0,3.0,66.7,media,"La comunidad, los interiores y el tono afectivo aportan calidez, sin una presencia otoñal dominante."
+11,191,Beautiful Girls,Beautiful Girls,1996,0.5,1.5,3.0,1.5,3.0,63.3,alta,"Predominan el invierno, el frío y la introspección; la atmósfera es afín, pero la estación otoñal no es central."
+11,223,Chocolat,Chocolat,2000,0.0,2.0,2.0,2.5,3.0,63.3,alta,"La calidez, la comida y la intimidad son fuertes, pero la narración se sitúa principalmente en otra época del año."
+11,35,En América,In America,2002,1.5,1.5,2.0,1.5,3.0,63.3,media,"La intimidad familiar y el clima aportan tono otoñal, pero la estación no domina la ambientación."
+11,12,Julie y Julia,Julie & Julia,2009,1.0,2.0,1.5,2.5,2.5,63.3,alta,"La cocina y los interiores aportan calidez, pero la historia recorre un periodo amplio y varias estaciones."
+11,199,La canción del mar,Song of the Sea,2014,1.0,2.0,2.0,1.5,3.0,63.3,media,El clima y el tono melancólico pesan más que una estación narrativa explícita.
+11,236,La carta final,84 Charing Cross Road,1987,1.0,1.5,2.0,2.0,3.0,63.3,media,"Las librerías, las cartas y la nostalgia aportan tono, pero la narración transcurre durante muchos años."
+11,243,Lo que queda del día,The Remains of the Day,1993,1.5,2.0,2.0,1.0,3.0,63.3,media,El tono de pérdida y los espacios señoriales sostienen una asociación indirecta.
+11,135,Principios de otoño,Early Autumn,1961,2.0,2.0,1.5,1.0,3.0,63.3,media,La estación funciona como marco simbólico de transición y cambio familiar.
+11,136,Un cuento de otoño,An Autumn's Tale,1987,1.5,2.0,1.5,1.5,3.0,63.3,media,La relación con el otoño es principalmente tonal y metafórica.
+12,250,Emma,Emma.,2020,1.0,2.5,1.5,1.5,2.5,60.0,media,"La puesta en escena aporta calidez visual, pero el otoño no domina la trama."
+12,124,Hechizo de luna,Moonstruck,1987,0.5,1.5,2.5,1.5,3.0,60.0,alta,El invierno neoyorquino y la intimidad emocional pesan más que cualquier presencia específicamente otoñal.
+12,82,Notting Hill,Notting Hill,1999,1.0,2.0,2.0,1.0,3.0,60.0,alta,"Londres y el tono romántico aportan cierta afinidad, aunque la historia atraviesa explícitamente las cuatro estaciones."
+12,117,Pequeñas cosas como estas,Small Things Like These,2024,0.5,1.5,3.0,1.0,3.0,60.0,alta,"La historia es principalmente invernal y prenavideña, aunque mantiene clima y tono intensos."
+12,53,Sabrina,Sabrina,1995,1.0,2.0,2.0,1.5,2.5,60.0,media,"La transformación personal y algunos ambientes elegantes aportan calidez, con señales estacionales limitadas."
+13,231,"Comer, beber, amar",Eat Drink Man Woman,1994,0.0,2.0,1.0,2.5,3.0,56.7,alta,La comida y la familia aportan calidez sin una estación otoñal reconocible.
+13,249,Emma,Emma,1996,1.0,2.0,1.5,1.5,2.5,56.7,media,La historia recorre estaciones y su asociación con el otoño es limitada.
+13,65,"Nicky, la aprendiz de bruja",Kiki's Delivery Service,1989,0.5,2.0,1.5,2.0,2.5,56.7,media,"La acogedora vida urbana y el tono de crecimiento personal destacan, pero el otoño no está claramente establecido."
+13,134,Otoño tardío,Late Autumn,1960,1.5,1.5,1.5,1.0,3.0,56.7,media,El título y el tono son más otoñales que la ambientación visual concreta.
+13,216,Por siempre jamás,Ever After,1998,0.5,2.0,1.5,1.5,3.0,56.7,alta,"El paisaje y el romanticismo aportan calidez, pero la película no se articula alrededor del otoño."
+13,230,Soul Food,Soul Food,1997,0.0,1.5,1.0,3.0,3.0,56.7,alta,"Las comidas familiares son centrales, pero no dependen del otoño ni de Acción de Gracias."
+13,224,Un viaje de diez metros,The Hundred-Foot Journey,2014,0.5,2.0,1.0,2.5,2.5,56.7,alta,"La comida, el paisaje y la convivencia aportan calidez, pero la historia se desarrolla principalmente en verano."
+14,49,Dos vidas en un instante,Sliding Doors,1998,1.0,1.5,2.0,1.0,2.5,53.3,media,"El clima londinense y la melancolía aportan afinidad otoñal, pero faltan señales estacionales recurrentes."
+14,57,Ratatouille,Ratatouille,2007,0.0,2.0,1.0,2.5,2.5,53.3,alta,"La cocina y los interiores son acogedores, pero París aparece principalmente en verano y el otoño no estructura la historia."
+14,229,Sin reservas,No Reservations,2007,0.5,1.5,1.0,2.5,2.5,53.3,alta,"La cocina y la intimidad son relevantes, pero la ambientación es principalmente veraniega y poco otoñal."
+15,156,Broadway Danny Rose,Broadway Danny Rose,1984,1.0,1.0,1.5,1.5,2.5,50.0,alta,"La escena de Acción de Gracias es relevante emocionalmente, pero no domina la película."
+15,255,El cuarto mandamiento,The Magnificent Ambersons,1942,1.0,1.5,1.5,1.0,2.5,50.0,media,La historia familiar y el tono elegíaco no dependen especialmente del otoño.
+15,228,Waitress,Waitress,2007,0.5,1.5,1.0,2.0,2.5,50.0,alta,"La cafetería y la cocina aportan espacios acogedores, pero la estación otoñal apenas interviene."
+16,227,Big Night,Big Night,1996,0.0,1.5,1.0,2.0,2.5,46.7,alta,"La gastronomía domina, pero no existe una ambientación otoñal suficiente."
+16,131,El hombre de mimbre,The Wicker Man,1973,0.0,1.5,1.0,2.0,2.5,46.7,alta,"La historia se vincula con el Primero de Mayo y la primavera, no con el otoño."
+17,121,Harold y Maude,Harold and Maude,1971,0.0,1.5,1.0,1.0,3.0,43.3,alta,"El tono es intensamente melancólico, pero la película no presenta una ambientación otoñal clara o sostenida."
