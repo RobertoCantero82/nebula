@@ -1,0 +1,410 @@
+---
+import { getCollection } from 'astro:content';
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+
+const ordenDestacados = [
+  'iphone-duo-ipad-mini',
+  'articulo_lanzamientos_china_2026',
+  'matrix-secuelas',
+];
+
+const articulos = await getCollection('articulos');
+const destacados = ordenDestacados
+  .map((id) => articulos.find((articulo) => articulo.id === id))
+  .filter((articulo) => articulo !== undefined);
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
+    <meta name="theme-color" content="#1B1836" />
+    <Seo
+      titulo="Trabaja conmigo | Roberto Cantero"
+      descripcion="Roberto Cantero es periodista especializado en tecnología y ciencia, con experiencia en análisis de producto, contenido y periodismo de datos."
+      imagen="/nebula/imagenes/roberto-cantero.jpg"
+    />
+  </head>
+  <body>
+    <header class="cabecera contenedor">
+      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
+        <svg width="110" height="32" viewBox="0 0 110 32" aria-hidden="true">
+          <circle cx="7" cy="8" r="3" fill="#D85A30" />
+          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
+        </svg>
+      </a>
+      <a class="volver" href="/nebula/"><span aria-hidden="true">←</span> Volver a Nebula</a>
+    </header>
+
+    <main>
+      <section class="perfil-hero contenedor" aria-labelledby="titulo-perfil">
+        <div class="perfil-intro">
+          <p class="etiqueta">BUSCANDO UNA NUEVA OPORTUNIDAD</p>
+          <h1 id="titulo-perfil">Soy periodista. Busco mi próxima oportunidad y, mientras llega, sigo contando historias con datos.</h1>
+          <p class="entradilla">Tras casi una década escribiendo sobre tecnología y ciencia, he creado Nebula para unir experiencia editorial, análisis de producto y ciencia de datos.</p>
+          <div class="perfil-acciones">
+            <a class="boton boton-principal" href="mailto:robertocanterogomez@gmail.com?subject=Oportunidad%20profesional%20para%20Roberto%20Cantero">Escríbeme <span aria-hidden="true">→</span></a>
+            <a class="boton boton-secundario" href="/nebula/roberto-cantero-cv.pdf" download>Descargar CV</a>
+          </div>
+          <p class="disponibilidad"><span aria-hidden="true"></span> Vitoria-Gasteiz, alrededores y remoto</p>
+        </div>
+
+        <figure class="perfil-foto">
+          <img src="/nebula/imagenes/roberto-cantero.jpg" alt="Retrato de Roberto Cantero en una calle" />
+          <figcaption>Roberto Cantero · Periodista</figcaption>
+        </figure>
+      </section>
+
+      <section class="cifras contenedor" aria-label="Experiencia destacada">
+        <div><strong>9</strong><span>años de experiencia</span></div>
+        <div><strong>7.500+</strong><span>artículos publicados</span></div>
+        <div><strong>+50 %</strong><span>de tráfico orgánico</span></div>
+        <div><strong>300.000</strong><span>lectores en artículos destacados</span></div>
+      </section>
+
+      <section class="bloque contenedor" aria-labelledby="titulo-aporto">
+        <div class="bloque-cabecera">
+          <p class="indice">01 · PERFIL</p>
+          <h2 id="titulo-aporto">Lo que puedo aportar</h2>
+          <p>Investigo, ordeno y traduzco información compleja para convertirla en contenido útil, riguroso y fácil de entender.</p>
+        </div>
+
+        <div class="capacidades">
+          <article>
+            <span>01</span>
+            <h3>Periodismo especializado</h3>
+            <p>Tecnología, ciencia e innovación explicadas con claridad, criterio editorial y fuentes solventes.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Análisis de producto</h3>
+            <p>Experiencia probando dispositivos y convirtiendo especificaciones y uso real en conclusiones comprensibles.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Contenido y comunicación</h3>
+            <p>Artículos, presentaciones e historias adaptadas al público, al canal y a los objetivos de cada proyecto.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Datos e inteligencia artificial</h3>
+            <p>Análisis, visualización y nuevas herramientas para encontrar enfoques propios y contar mejores historias.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="trayectoria">
+        <div class="contenedor trayectoria-grid">
+          <div>
+            <p class="indice indice-claro">02 · EXPERIENCIA</p>
+            <h2>Casi una década explicando tecnología</h2>
+          </div>
+          <div class="trayectoria-texto">
+            <p>Entre 2017 y 2026 trabajé como redactor y analista de productos en Difoosion. He publicado más de 7.500 artículos sobre tecnología, ciencia e innovación para cabeceras de Difoosion, Corporación Voz de Galicia, Grupo Godó y RBA.</p>
+            <p>Mi trabajo combina seguimiento de la actualidad, consulta de fuentes internacionales, lectura de papers y documentación técnica, análisis de producto, SEO y búsqueda de enfoques propios.</p>
+            <div class="medios" aria-label="Medios y grupos editoriales">
+              <span>Difoosion</span><span>Corporación Voz de Galicia</span><span>Grupo Godó</span><span>RBA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bloque contenedor" aria-labelledby="titulo-trabajo">
+        <div class="bloque-cabecera">
+          <p class="indice">03 · TRABAJO</p>
+          <h2 id="titulo-trabajo">Una selección de mi trabajo</h2>
+          <p>Estos son algunos de los artículos que mejor demuestran cómo combinar la ciencia de datos con una redacción sencilla y entretenida.</p>
+        </div>
+
+        <div class="casos">
+          {destacados.map((articulo, indice) => articulo && (
+            <a class="caso" href={`/nebula/articulos/${articulo.id}/`}>
+              <div class="caso-imagen">
+                {articulo.data.imagenPortada && <img src={articulo.data.imagenPortada} alt="" loading="lazy" />}
+                <span>0{indice + 1}</span>
+              </div>
+              <div class="caso-contenido">
+                <p>{articulo.data.tema}</p>
+                <h3>{articulo.data.titulo}</h3>
+                <span>Leer el análisis <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <section class="proyecto contenedor" aria-labelledby="titulo-indy">
+        <div class="proyecto-numero" aria-hidden="true">AI</div>
+        <div>
+          <p class="indice">04 · OTRO PROYECTO</p>
+          <h2 id="titulo-indy">Agente Indy</h2>
+          <p>Una aplicación web de crítica cinematográfica basada en inteligencia artificial, desarrollada durante el bootcamp de Data Science. Utiliza agentes para analizar información y construir una experiencia interactiva alrededor del cine.</p>
+          <a href="https://robertocantero-agente-indy.hf.space" target="_blank" rel="noreferrer">Visitar Agente Indy <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="colaboraciones contenedor" aria-labelledby="titulo-colaboraciones">
+        <p class="indice">05 · TAMBIÉN</p>
+        <div>
+          <h2 id="titulo-colaboraciones">Buenas historias mientras llega la oportunidad</h2>
+          <p>Mi prioridad es incorporarme a un nuevo equipo. Mientras tanto, valoro propuestas de marcas para análisis de producto, cesiones y colaboraciones editoriales que encajen con mi experiencia y con el criterio de Nebula.</p>
+        </div>
+      </section>
+
+      <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+        <div class="contenedor contacto-grid">
+          <div>
+            <p class="indice indice-claro">06 · CONTACTO</p>
+            <h2 id="titulo-contacto">Si buscas un perfil así, quiero hablar contigo.</h2>
+          </div>
+          <div class="contacto-enlaces">
+            <a class="contacto-principal" href="mailto:robertocanterogomez@gmail.com?subject=Oportunidad%20profesional%20para%20Roberto%20Cantero">robertocanterogomez@gmail.com <span aria-hidden="true">→</span></a>
+            <a href="https://www.linkedin.com/in/robertocanterog/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://robertocantero.carrd.co" target="_blank" rel="noreferrer">Portfolio <span aria-hidden="true">↗</span></a>
+            <a href="/nebula/roberto-cantero-cv.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pie-pagina contenedor">
+      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
+      <p>Periodismo, tecnología y datos</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .volver {
+    font: 12px var(--font-mono);
+    text-decoration: none;
+  }
+
+  .volver:hover,
+  .volver:focus-visible { color: var(--color-accent); }
+
+  .perfil-hero {
+    display: grid;
+    gap: clamp(2rem, 6vw, 5rem);
+    grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+    padding-bottom: clamp(3.5rem, 8vw, 6rem);
+    padding-top: clamp(3rem, 8vw, 7rem);
+  }
+
+  .perfil-intro { align-self: center; }
+  .etiqueta, .indice {
+    color: var(--color-accent);
+    font: 11px var(--font-mono);
+    letter-spacing: .09em;
+    margin: 0 0 1.25rem;
+  }
+
+  .perfil-hero h1 {
+    font-size: clamp(2.5rem, 5.8vw, 5rem);
+    letter-spacing: -.035em;
+    line-height: .98;
+    margin: 0;
+    max-width: 850px;
+  }
+
+  .entradilla {
+    color: var(--color-secondary-text);
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    line-height: 1.65;
+    margin: 2rem 0 0;
+    max-width: 700px;
+  }
+
+  .perfil-acciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    margin-top: 2rem;
+  }
+
+  .boton {
+    align-items: center;
+    display: inline-flex;
+    font: 600 12px var(--font-mono);
+    gap: .75rem;
+    justify-content: center;
+    min-height: 48px;
+    padding: .8rem 1.25rem;
+    text-decoration: none;
+  }
+
+  .boton-principal { background: var(--color-accent); color: #fff; }
+  .boton-secundario { border: 1px solid var(--color-ink); }
+  .boton:hover, .boton:focus-visible { background: var(--color-ink); border-color: var(--color-ink); color: #fff; }
+
+  .disponibilidad {
+    align-items: center;
+    color: var(--color-secondary-text);
+    display: flex;
+    font: 11px var(--font-mono);
+    gap: .6rem;
+    margin: 1.5rem 0 0;
+  }
+
+  .disponibilidad span {
+    background: #3d9b6d;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgb(61 155 109 / 16%);
+    height: 8px;
+    width: 8px;
+  }
+
+  .perfil-foto {
+    align-self: center;
+    margin: 0;
+    position: relative;
+  }
+
+  .perfil-foto::before {
+    background: var(--color-accent-2);
+    content: '';
+    inset: -14px 14px 14px -14px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .perfil-foto img {
+    aspect-ratio: 4 / 5;
+    display: block;
+    object-fit: cover;
+    object-position: 55% center;
+    width: 100%;
+  }
+
+  .perfil-foto figcaption {
+    background: var(--color-ink);
+    bottom: 0;
+    color: #fff;
+    font: 10px var(--font-mono);
+    left: 0;
+    letter-spacing: .05em;
+    padding: .8rem 1rem;
+    position: absolute;
+  }
+
+  .cifras {
+    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cifras > div {
+    border-right: 1px solid var(--color-border);
+    display: grid;
+    gap: .35rem;
+    padding: 1.75rem clamp(1rem, 3vw, 2rem);
+  }
+
+  .cifras > div:last-child { border-right: 0; }
+  .cifras strong { color: var(--color-accent); font: 600 clamp(1.8rem, 4vw, 3rem) var(--font-heading); }
+  .cifras span { color: var(--color-secondary-text); font: 10px var(--font-mono); line-height: 1.4; }
+
+  .bloque { padding-bottom: clamp(4rem, 9vw, 7rem); padding-top: clamp(4rem, 9vw, 7rem); }
+  .bloque-cabecera { display: grid; gap: 1.5rem; grid-template-columns: 1fr 2fr 1.25fr; margin-bottom: 3rem; }
+  .bloque-cabecera h2, .trayectoria h2, .proyecto h2, .colaboraciones h2, .contacto h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    letter-spacing: -.025em;
+    line-height: 1.05;
+    margin: 0;
+  }
+  .bloque-cabecera > p:last-child { color: var(--color-secondary-text); line-height: 1.65; margin: 0; }
+
+  .capacidades { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .capacidades article { border-left: 1px solid var(--color-border); padding: 1.5rem; }
+  .capacidades article:first-child { border-left-color: var(--color-accent); }
+  .capacidades article > span { color: var(--color-accent); font: 10px var(--font-mono); }
+  .capacidades h3 { font-size: 1.4rem; line-height: 1.15; margin: 2.5rem 0 .75rem; }
+  .capacidades p { color: var(--color-secondary-text); font-size: 15px; line-height: 1.55; margin: 0; }
+
+  .trayectoria { background: var(--color-ink); color: #fff; padding: clamp(4rem, 9vw, 7rem) 0; }
+  .trayectoria-grid { display: grid; gap: clamp(2rem, 7vw, 6rem); grid-template-columns: .85fr 1.15fr; }
+  .indice-claro { color: #d8d5e5; }
+  .trayectoria-texto > p { color: #d8d5e5; font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.7; margin: 0 0 1.25rem; }
+  .medios { border-top: 1px solid rgb(255 255 255 / 20%); display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin-top: 2rem; padding-top: 1.5rem; }
+  .medios span { font: 11px var(--font-mono); }
+
+  .casos { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); }
+  .caso { background: #fff; border: 1px solid var(--color-border); text-decoration: none; }
+  .caso-imagen { aspect-ratio: 16 / 10; overflow: hidden; position: relative; }
+  .caso-imagen img { height: 100%; object-fit: cover; transition: transform .3s ease; width: 100%; }
+  .caso-imagen > span { background: var(--color-accent); bottom: 0; color: #fff; font: 11px var(--font-mono); padding: .65rem; position: absolute; right: 0; }
+  .caso-contenido { padding: 1.5rem; }
+  .caso-contenido > p { color: #446ddf; font: 600 10px var(--font-mono); letter-spacing: .05em; margin: 0; }
+  .caso h3 { font-size: 1.45rem; line-height: 1.15; margin: .85rem 0 1.5rem; }
+  .caso-contenido > span { font: 600 11px var(--font-mono); }
+  .caso:hover { box-shadow: 0 14px 34px rgb(27 24 54 / 10%); }
+  .caso:hover img { transform: scale(1.025); }
+
+  .proyecto {
+    align-items: center;
+    border-top: 1px solid var(--color-border);
+    display: grid;
+    gap: clamp(2rem, 6vw, 5rem);
+    grid-template-columns: .6fr 1.4fr;
+    padding-bottom: clamp(4rem, 9vw, 7rem);
+    padding-top: clamp(4rem, 9vw, 7rem);
+  }
+  .proyecto-numero { color: var(--color-accent-2); font: 600 clamp(7rem, 20vw, 15rem)/.75 var(--font-heading); letter-spacing: -.08em; }
+  .proyecto p:not(.indice) { color: var(--color-secondary-text); font-size: 1.05rem; line-height: 1.7; max-width: 700px; }
+  .proyecto a { font: 600 12px var(--font-mono); text-decoration-color: var(--color-accent); text-underline-offset: 5px; }
+
+  .colaboraciones {
+    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: clamp(3rem, 7vw, 5rem);
+    padding-top: clamp(3rem, 7vw, 5rem);
+  }
+  .colaboraciones p:last-child { color: var(--color-secondary-text); font-size: 1.05rem; line-height: 1.7; max-width: 760px; }
+
+  .contacto { background: var(--color-accent); color: #fff; padding: clamp(4rem, 9vw, 7rem) 0; }
+  .contacto-grid { display: grid; gap: clamp(2rem, 7vw, 6rem); grid-template-columns: 1.15fr .85fr; }
+  .contacto-enlaces { align-content: center; display: grid; }
+  .contacto-enlaces a { border-bottom: 1px solid rgb(255 255 255 / 35%); display: flex; font: 12px var(--font-mono); justify-content: space-between; padding: 1rem 0; text-decoration: none; }
+  .contacto-enlaces .contacto-principal { font-family: var(--font-heading); font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 600; overflow-wrap: anywhere; }
+  .contacto-enlaces a:hover, .contacto-enlaces a:focus-visible { color: var(--color-ink); }
+
+  @media (max-width: 900px) {
+    .capacidades { grid-template-columns: repeat(2, 1fr); }
+    .capacidades article:nth-child(3) { border-left-color: var(--color-accent); border-top: 1px solid var(--color-border); }
+    .capacidades article:nth-child(4) { border-top: 1px solid var(--color-border); }
+    .casos { grid-template-columns: 1fr; }
+    .caso { display: grid; grid-template-columns: .8fr 1.2fr; }
+    .caso-imagen { aspect-ratio: auto; min-height: 220px; }
+  }
+
+  @media (max-width: 760px) {
+    .perfil-hero { grid-template-columns: 1fr; padding-top: 2.5rem; }
+    .perfil-foto { margin-left: 14px; max-width: 460px; }
+    .cifras { grid-template-columns: repeat(2, 1fr); }
+    .cifras > div:nth-child(2) { border-right: 0; }
+    .cifras > div:nth-child(-n+2) { border-bottom: 1px solid var(--color-border); }
+    .bloque-cabecera, .trayectoria-grid, .proyecto, .colaboraciones, .contacto-grid { grid-template-columns: 1fr; }
+    .bloque-cabecera { gap: .75rem; }
+    .proyecto-numero { font-size: 8rem; }
+    .caso { display: block; }
+    .caso-imagen { aspect-ratio: 16 / 10; min-height: 0; }
+  }
+
+  @media (max-width: 460px) {
+    .perfil-hero h1 { font-size: 2.5rem; }
+    .perfil-acciones .boton { width: 100%; }
+    .capacidades { grid-template-columns: 1fr; }
+    .capacidades article { border-left-color: var(--color-accent); border-top: 1px solid var(--color-border); }
+    .capacidades article:first-child { border-top: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .caso-imagen img { transition: none; }
+  }
+</style>

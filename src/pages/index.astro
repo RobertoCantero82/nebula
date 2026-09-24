@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
+import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
 
 const articulos = (await getCollection('articulos')).sort(
   (a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()
@@ -45,6 +46,8 @@ const formatearFecha = (fecha: Date) =>
     </header>
 
     <main>
+      <TrabajaConmigoBanner />
+
       {destacado && (
         <section class="hero contenedor" aria-labelledby="titular-destacado">
           <a class="hero-imagen" href={`/nebula/articulos/${destacado.id}/`} tabindex="-1" aria-hidden="true">

@@ -16,6 +16,7 @@ export const GET: APIRoute = async ({ site }) => {
   const articulos = await getCollection('articulos');
   const paginas = [
     { url: base.href },
+    { url: new URL('trabaja-conmigo/', base).href },
     ...articulos.map((articulo) => ({
       url: new URL(`articulos/${articulo.id}/`, base).href,
       fecha: articulo.data.fecha.toISOString().slice(0, 10),

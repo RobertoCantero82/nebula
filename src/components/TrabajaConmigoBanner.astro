@@ -1,0 +1,100 @@
+<section class="oportunidad contenedor" aria-labelledby="titulo-oportunidad">
+  <a class="oportunidad-enlace" href="/nebula/trabaja-conmigo/">
+    <div class="oportunidad-texto">
+      <p>ROBERTO CANTERO · PERIODISTA</p>
+      <h2 id="titulo-oportunidad">Periodismo con experiencia, criterio y datos.</h2>
+      <span>Tengo casi una década de experiencia contando tecnología y ciencia. Ahora sumo análisis de datos e inteligencia artificial.</span>
+    </div>
+
+    <span class="oportunidad-cta">Conoce mi perfil <span aria-hidden="true">→</span></span>
+  </a>
+</section>
+
+<style>
+  .oportunidad {
+    padding-top: 1rem;
+  }
+
+  .oportunidad-enlace {
+    align-items: stretch;
+    background: #1b1836;
+    color: #fff;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 112px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .oportunidad-texto {
+    align-self: center;
+    padding: 1.15rem clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .oportunidad-texto > p {
+    color: #d8d5e5;
+    font: 10px 'Fira Code', monospace;
+    letter-spacing: .09em;
+    margin: 0 0 .4rem;
+  }
+
+  .oportunidad-texto h2 {
+    font-size: clamp(1.4rem, 2.7vw, 2rem);
+    line-height: 1;
+    margin: 0 0 .7rem;
+  }
+
+  .oportunidad-texto > span {
+    color: #d8d5e5;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 720px;
+  }
+
+  .oportunidad-cta {
+    align-items: center;
+    border-left: 1px solid rgb(255 255 255 / 18%);
+    display: flex;
+    font: 600 12px 'Fira Code', monospace;
+    gap: .65rem;
+    padding: 1.25rem clamp(1.25rem, 3vw, 1.75rem);
+    white-space: nowrap;
+  }
+
+  .oportunidad-cta span {
+    color: #d85a30;
+    font-size: 1.2rem;
+    transition: transform .2s ease;
+  }
+
+  .oportunidad-enlace:hover .oportunidad-cta span,
+  .oportunidad-enlace:focus-visible .oportunidad-cta span {
+    transform: translateX(5px);
+  }
+
+  .oportunidad-enlace:focus-visible {
+    outline: 3px solid #8b85c4;
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 760px) {
+    .oportunidad-enlace {
+      grid-template-columns: 1fr;
+    }
+
+    .oportunidad-texto {
+      padding: 1.15rem 1.25rem;
+    }
+
+    .oportunidad-cta {
+      border-left: 0;
+      border-top: 1px solid rgb(255 255 255 / 18%);
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .oportunidad-cta span { transition: none; }
+  }
+</style>
