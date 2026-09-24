@@ -4,13 +4,29 @@ import Articulo from '../../layouts/Articulo.astro';
 
 export async function getStaticPaths() {
   const articulos = await getCollection('articulos');
+  const mezclar = <T,>(elementos: T[]) => {
+    const resultado = [...elementos];
+    for (let indice = resultado.length - 1; indice > 0; indice -= 1) {
+      const posicion = Math.floor(Math.random() * (indice + 1));
+      [resultado[indice], resultado[posicion]] = [resultado[posicion], resultado[indice]];
+    }
+    return resultado;
+  };
+
   return articulos.map((articulo) => ({
     params: { slug: articulo.id },
-    props: { articulo },
+    props: {
+      articulo,
+      relacionados: mezclar(
+        articulos.filter((candidato) =>
+          candidato.id !== articulo.id && candidato.data.tema === articulo.data.tema
+        )
+      ).slice(0, 3),
+    },
   }));
 }
 
-const { articulo } = Astro.props;
+const { articulo, relacionados } = Astro.props;
 const { Content } = await render(articulo);
 ---
 
@@ -23,6 +39,7 @@ const { Content } = await render(articulo);
   etiquetaCifra={articulo.data.etiquetaCifra}
   metodologia={articulo.data.metodologia}
   imagenPortada={articulo.data.imagenPortada}
+  relacionados={relacionados}
 >
   <Content />
 </Articulo>

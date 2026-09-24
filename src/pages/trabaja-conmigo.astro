@@ -13,6 +13,38 @@ const articulos = await getCollection('articulos');
 const destacados = ordenDestacados
   .map((id) => articulos.find((articulo) => articulo.id === id))
   .filter((articulo) => articulo !== undefined);
+
+const origen = Astro.site ?? Astro.url.origin;
+const urlPerfil = new URL('/nebula/trabaja-conmigo/', origen);
+const datosEstructurados = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@id': new URL('#roberto-cantero', urlPerfil).href,
+    '@type': 'Person',
+    name: 'Roberto Cantero',
+    url: urlPerfil.href,
+    image: new URL('/nebula/imagenes/roberto-cantero.jpg', origen).href,
+    jobTitle: 'Periodista especializado en tecnología, ciencia y datos',
+    description: 'Periodista con casi una década de experiencia creando contenido especializado en tecnología y ciencia, formado también en análisis y visualización de datos.',
+    homeLocation: {
+      '@type': 'Place',
+      name: 'Vitoria-Gasteiz',
+    },
+    knowsAbout: [
+      'Periodismo tecnológico',
+      'Periodismo científico',
+      'Análisis de producto',
+      'Ciencia de datos',
+      'Visualización de datos',
+      'SEO',
+    ],
+    sameAs: [
+      'https://www.linkedin.com/in/robertocanterog/',
+      'https://robertocantero.carrd.co',
+    ],
+  },
+};
 ---
 
 <html lang="es">
@@ -26,6 +58,7 @@ const destacados = ordenDestacados
       descripcion="Roberto Cantero es periodista especializado en tecnología y ciencia, con experiencia en análisis de producto, contenido y periodismo de datos."
       imagen="/nebula/imagenes/roberto-cantero.jpg"
     />
+    <script type="application/ld+json" set:html={JSON.stringify(datosEstructurados)} />
   </head>
   <body>
     <header class="cabecera contenedor">

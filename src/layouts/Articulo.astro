@@ -1,12 +1,16 @@
 ---
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
+import AutorPerfil from '../components/AutorPerfil.astro';
+import ArticulosRelacionados from '../components/ArticulosRelacionados.astro';
 
-const { titulo, descripcion, tema, fecha, cifraDestacada, etiquetaCifra, metodologia, imagenPortada } = Astro.props;
+const { titulo, descripcion, tema, fecha, cifraDestacada, etiquetaCifra, metodologia, imagenPortada, relacionados = [] } = Astro.props;
 
 const origen = Astro.site ?? Astro.url.origin;
 const canonical = new URL(Astro.url.pathname, origen);
 const imagenSocial = imagenPortada ? new URL(imagenPortada, origen) : undefined;
+const perfilAutor = new URL('/nebula/trabaja-conmigo/', origen);
+const identificadorAutor = new URL('#roberto-cantero', perfilAutor).href;
 const datosEstructurados = {
   '@context': 'https://schema.org',
   '@type': 'NewsArticle',
@@ -18,8 +22,16 @@ const datosEstructurados = {
   mainEntityOfPage: canonical.href,
   ...(imagenSocial ? { image: [imagenSocial.href] } : {}),
   author: {
+    '@id': identificadorAutor,
     '@type': 'Person',
     name: 'Roberto Cantero',
+    url: perfilAutor.href,
+    image: new URL('/nebula/imagenes/roberto-cantero.jpg', origen).href,
+    jobTitle: 'Periodista especializado en tecnología, ciencia y datos',
+    sameAs: [
+      'https://www.linkedin.com/in/robertocanterog/',
+      'https://robertocantero.carrd.co',
+    ],
   },
   publisher: {
     '@type': 'Organization',
@@ -89,6 +101,15 @@ const datosEstructurados = {
           <slot />
         </article>
 
+        {metodologia && (
+          <details style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 16px;">
+            <summary style="font-family: var(--font-mono); font-size: 12px; color: var(--color-secondary-text); cursor: pointer;">Metodología</summary>
+            <div style="font-size: 14px; color: var(--color-secondary-text); margin-top: 10px; line-height: 1.6;">
+              {metodologia}
+            </div>
+          </details>
+        )}
+
         <aside class="compartir-articulo" aria-labelledby="titulo-compartir">
           <div>
             <p class="compartir-etiqueta">AYUDA A QUE ESTA HISTORIA VIAJE</p>
@@ -101,15 +122,10 @@ const datosEstructurados = {
           <p class="compartir-estado" data-share-status aria-live="polite"></p>
         </aside>
 
-        {metodologia && (
-          <details style="margin-top: 32px; border-top: 1px solid var(--color-border); padding-top: 16px;">
-            <summary style="font-family: var(--font-mono); font-size: 12px; color: var(--color-secondary-text); cursor: pointer;">Metodología</summary>
-            <div style="font-size: 14px; color: var(--color-secondary-text); margin-top: 10px; line-height: 1.6;">
-              {metodologia}
-            </div>
-          </details>
-        )}
+        <AutorPerfil />
       </div>
+
+      <ArticulosRelacionados articulos={relacionados} />
     </main>
 
     <script>

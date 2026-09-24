@@ -1,0 +1,50 @@
+<aside class="autor" aria-labelledby="titulo-autor">
+  <img src="/nebula/imagenes/roberto-cantero.jpg" alt="Retrato de Roberto Cantero" loading="lazy" />
+  <div class="autor-contenido">
+    <p>EL AUTOR</p>
+    <h2 id="titulo-autor">Roberto Cantero</h2>
+    <span>Periodista especializado en tecnología y ciencia. Combino experiencia editorial, análisis de producto y ciencia de datos para explicar lo complejo de forma sencilla.</span>
+    <div class="autor-enlaces">
+      <a href="/nebula/trabaja-conmigo/">Conoce mi perfil <span aria-hidden="true">→</span></a>
+      <a href="https://www.linkedin.com/in/robertocanterog/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</aside>
+
+<style>
+  .autor {
+    align-items: stretch;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    display: grid;
+    gap: 0;
+    grid-template-columns: 150px 1fr;
+    margin-top: 3rem;
+  }
+
+  .autor > img {
+    height: 100%;
+    min-height: 210px;
+    object-fit: cover;
+    object-position: 58% center;
+    width: 100%;
+  }
+
+  .autor-contenido { padding: 1.5rem; }
+  .autor-contenido > p {
+    color: var(--color-accent);
+    font: 10px var(--font-mono);
+    letter-spacing: .09em;
+    margin: 0 0 .45rem;
+  }
+  .autor h2 { font-size: 1.6rem; margin: 0 0 .6rem; }
+  .autor-contenido > span { color: var(--color-secondary-text); display: block; font-size: 14px; line-height: 1.55; }
+  .autor-enlaces { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.15rem; }
+  .autor-enlaces a { font: 600 11px var(--font-mono); text-decoration-color: var(--color-accent); text-underline-offset: 4px; }
+  .autor-enlaces a:hover, .autor-enlaces a:focus-visible { color: var(--color-accent); }
+
+  @media (max-width: 540px) {
+    .autor { grid-template-columns: 1fr; }
+    .autor > img { aspect-ratio: 16 / 9; min-height: 0; object-position: 50% 42%; }
+  }
+</style>
