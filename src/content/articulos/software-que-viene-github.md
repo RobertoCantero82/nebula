@@ -17,17 +17,17 @@ La muestra no representa todo GitHub, pero comparte una ambición reconocible: *
 
 ## El repositorio se convierte en producto
 
-[MapToPoster](https://github.com/dimartarmizi/map-to-poster) transforma cualquier lugar en un póster cartográfico listo para imprimir. [Podsync](https://github.com/mxpv/podsync) convierte canales de YouTube y Vimeo en feeds de podcast con descargas y reproducción sin conexión. [TREK](https://github.com/liketrek/TREK) reúne itinerarios, reservas, gastos y documentos en un planificador de viajes colaborativo.
+**[MapToPoster](https://github.com/dimartarmizi/map-to-poster) transforma cualquier lugar en un póster cartográfico** listo para imprimir. [Podsync](https://github.com/mxpv/podsync) convierte canales de YouTube y Vimeo en feeds de podcast con descargas y reproducción sin conexión. [TREK](https://github.com/liketrek/TREK) reúne itinerarios, reservas, gastos y documentos en un planificador de viajes colaborativo.
 
 No son bibliotecas que esperan a que otra persona construya algo encima. Tienen una interfaz, resuelven una necesidad comprensible y pueden utilizarse como productos. Esa diferencia importa porque acerca el código abierto a personas que no quieren inspeccionar el código: solo quieren una herramienta útil y cierto control sobre ella.
 
-El cambio también se aprecia en la escala. [Instatic](https://github.com/corebunch/instatic) se presenta como alternativa autoalojable a Webflow, Framer y WordPress. [OpenCut](https://github.com/opencut-app/opencut) aspira a competir con los editores de vídeo comerciales mediante una aplicación para navegador, escritorio y móvil. Su nueva versión sigue en desarrollo, pero su arquitectura ya contempla plugins, automatización y un servidor para agentes de IA.
+El cambio también se aprecia en la escala. **[Instatic](https://github.com/corebunch/instatic) se presenta como alternativa autoalojable a Webflow, Framer y WordPress**. Por su parte, **[OpenCut](https://github.com/opencut-app/opencut) aspira a competir con los editores de vídeo** comerciales mediante una aplicación para navegador, escritorio y móvil. Su nueva versión sigue en desarrollo, pero su arquitectura ya contempla plugins, automatización y un servidor para agentes de IA.
 
 El código abierto no necesita superar inmediatamente a esos productos para resultar relevante. Basta con que se convierta en una alternativa creíble para cambiar la competencia: las plataformas cerradas ya no pueden defenderse solo con funciones, sino también con comodidad, alojamiento y soporte.
 
 ## Popularidad no significa madurez
 
-Las estrellas ofrecen contexto, no una clasificación de calidad. Favorecen a los proyectos antiguos, a los que se dirigen a comunidades grandes y a los que han recibido atención en redes. OpenCut encabeza esta muestra, pero está reescribiendo su aplicación; proyectos menores pueden ser más estables o resolver mejor un problema específico.
+**Las estrellas ofrecen contexto, no una clasificación de calidad**. Favorecen a los proyectos antiguos, a los que se dirigen a comunidades grandes y a los que han recibido atención en redes. OpenCut encabeza esta muestra, pero está reescribiendo su aplicación; proyectos menores pueden ser más estables o resolver mejor un problema específico.
 
 El gráfico utiliza una escala logarítmica para que las diferencias sean legibles. El morado señala actividad durante los 90 días anteriores a la consulta y el gris indica que no se registró un *push* reciente.
 
