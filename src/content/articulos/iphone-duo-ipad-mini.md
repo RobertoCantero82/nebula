@@ -13,6 +13,8 @@ Un teléfono de 1.999 dólares que se abre hasta las 7,58 pulgadas invita a una 
 
 He comparado sus dimensiones, peso, pantalla y precio con los iPhone 18 Pro y Pro Max, el iPad mini y dos rivales plegables: el Samsung Galaxy Z Fold8 y el Google Pixel 11 Pro Fold. Los datos, a primera vista, ofrecen una respuesta curiosa. **Cerrado**, el Duo es un **teléfono extraño**. **Abierto**, no tiene el cuerpo de un iPad mini, pero sí gran parte de su **experiencia visual**.
 
+La comparación sigue el mismo principio que utilicé para [medir la aceleración de los lanzamientos espaciales de China](/nebula/articulos/articulo_lanzamientos_china_2026/): separar la impresión inicial de las métricas que realmente permiten comprobarla.
+
 ## 1. Cerrado: menos móvil por delante, más móvil en el bolsillo
 
 El iPhone Duo ocupa 99,1 cm² cuando está cerrado, un 15,8% menos que el promedio del iPhone 18 Pro y el Pro Max. Esa reducción, sin embargo, no consigue un teléfono más ligero ni más fino. La nueva creación de Apple pesa 254 gramos, un 10,4% más que los mencionados modelos de referencia, y sus 11,3 milímetros de grosor superan la media de los iPhone convencionales en un 29,1%.
@@ -126,5 +128,7 @@ El iPhone Duo sigue siendo, ante todo, un teléfono móvil. Tiene su conectivida
 Al abrirse aparece la razón de esa incomodidad. El Duo entrega el 85,5% de la pantalla de un iPad mini, una proporción casi idéntica y una densidad muy superior, en un cuerpo más compacto y ligero. No convierte iOS en iPadOS ni sustituye automáticamente la experiencia de una tableta, pero sí invade su territorio visual.
 
 La mejor definición quizá no esté en ninguno de los dos extremos. **El iPhone Duo no es un iPad mini plegable: es un móvil que acepta dejar de parecerlo cada vez que se abre**.
+
+**Puedes reproducir los cálculos y los dos gráficos** en el [notebook de Jupyter del análisis del iPhone Duo](/nebula/analisis/analisis-iphone-duo.ipynb).
 
 Fuentes: [Apple, especificaciones del iPhone Duo](https://www.apple.com/iphone-duo/specs/), [Apple, iPhone 18 Pro](https://www.apple.com/iphone-18-pro/specs/), [Apple, iPad mini](https://www.apple.com/ipad-mini/specs/), [Samsung, Galaxy Z Fold8](https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living) y [Google, Pixel 11 Pro Fold](https://store.google.com/gb/product/pixel_11_pro_fold_specs?hl=en-GB).

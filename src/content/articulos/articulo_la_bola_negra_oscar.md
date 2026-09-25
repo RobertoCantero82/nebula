@@ -17,6 +17,8 @@ Pero representar a un país no equivale a estar nominada. Antes deberá entrar e
 
 Para intentar responderla he construido un modelo de machine learning con las películas presentadas al Oscar internacional durante las últimas quince ediciones. El resultado sitúa a *La bola negra* como una candidata fuerte: **un 74,7 % de probabilidades de alcanzar la preselección y un 62 % de obtener la nominación**.
 
+La idea se parece a la que utilicé al [contrastar tres mitos sobre *The Matrix*](/nebula/articulos/matrix-secuelas/): convertir una afirmación atractiva en una hipótesis que los datos puedan sostener, matizar o desmontar.
+
 Son cifras llamativas, pero no certezas. Los intervalos de incertidumbre son amplios y el modelo depende mucho de una señal concreta: el premio de Cannes.
 
 ## Quince ediciones y 1.264 candidaturas
@@ -201,6 +203,8 @@ Los datos colocan a *La bola negra* en una posición excepcional. España llega 
 El modelo traduce ese impulso en un 74,7 % de opciones de alcanzar la preselección y un 62 % de conseguir la nominación. Pero también ofrece la advertencia que debería acompañar a cualquier predicción: cuando el intervalo es ancho y una sola variable explica gran parte del resultado, el porcentaje central cuenta solo una parte de la historia.
 
 ***La bola negra* es una candidata fuerte**. La estadística permite explicar por qué. Decidir si llegará hasta la ceremonia sigue estando en manos de los votantes.
+
+**Puedes revisar las probabilidades, los intervalos y el efecto de Cannes** en el [notebook de Jupyter del modelo de *La bola negra*](/nebula/analisis/modelo-bola-negra-oscar.ipynb).
 
 ---
 

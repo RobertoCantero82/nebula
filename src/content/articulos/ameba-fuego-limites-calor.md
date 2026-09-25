@@ -143,6 +143,8 @@ La publicación de NASA permite ver ese comportamiento, no solo leerlo:
 
 **He analizado los datos de crecimiento publicados por los investigadores**. El archivo contiene 924 observaciones tomadas en 116 cultivos individuales y 17 temperaturas. Sesenta registros no tienen un recuento celular válido, por lo que el análisis utiliza las 864 mediciones restantes.
 
+Como en [el análisis de la cadencia espacial de China](/nebula/articulos/articulo_lanzamientos_china_2026/), una cifra llamativa adquiere sentido cuando se observa la serie completa y no solo su valor máximo.
+
 Los cultivos no empezaban siempre con la misma cantidad de células. Para compararlos, dividí cada recuento por la densidad de ese mismo cultivo en el día 0. Un resultado de 1 significa que termina igual que comenzó; por encima de 1 hay crecimiento neto y por debajo de 1 hay pérdida.
 
 El patrón forma una montaña. A temperaturas bajas la ameba apenas crece. Acelera al acercarse a los 55-57 °C y después pierde rendimiento mientras se aproxima a su límite.
@@ -306,6 +308,8 @@ A 57 °C se duplica con rapidez. A 63 tarda más de cuatro días. A 64 conserva 
 El calor no encuentra un interruptor. Encuentra una escalera y va apagando funciones peldaño a peldaño.
 
 Esa es una historia más precisa que 'la vida compleja sobrevive a una temperatura récord'. También es más extraña y más interesante. **La gran hazaña de esta ameba no consiste en ser indestructible, sino en seguir siendo una célula funcional cuando casi todas las puertas ya se han cerrado.**
+
+**Puedes reproducir las comparaciones de crecimiento y tiempo de duplicación** en el [notebook de Jupyter de la ameba de fuego](/nebula/analisis/analisis-ameba-fuego.ipynb).
 
 Fuentes: [estudio original en *Cell*](https://doi.org/10.1016/j.cell.2026.08.043), [versión de acceso abierto en PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC12697723/), [datos y código de los autores](https://github.com/hbrappaport/incendiamoeba_manuscript), [NASA Science](https://science.nasa.gov/earth/nasa-funded-research-finds-complex-life-defying-record-heat/), [NASA Ciencia](https://ciencia.nasa.gov/ciencias-terrestres/investigacion-financiada-por-la-nasa-descubre-vida-compleja-que-desafia-un-calor-record/) y [Live Science](https://www.livescience.com/planet-earth/evolution/newfound-fire-amoeba-from-the-cascades-sets-record-for-the-hottest-temperature-complex-life-can-survive-at).
 

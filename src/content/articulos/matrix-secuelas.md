@@ -11,6 +11,8 @@ metodologia: "Análisis basado en datasets de TMDB (presupuestos y créditos de 
 
 En 1999, **'The Matrix'** planteó una pregunta incómoda sobre la realidad y, de paso, **cambió la forma en que Hollywood hacía cine de ciencia ficción**. Más de 25 años después, tres creencias sobre la saga se han asentado en el imaginario colectivo: que revolucionó el género, que su filosofía caló en la cultura popular y que sus secuelas fueron peores. He contrastado las tres con datos reales. ¿Cuáles crees que habrán sido las conclusiones?
 
+Convertir una intuición cultural en variables medibles es también la base de [mi índice para encontrar la película más otoñal](/nebula/articulos/peliculas-mas-otonales/) y del [modelo sobre las opciones de *La bola negra* en los Oscar](/nebula/articulos/articulo_la_bola_negra_oscar/).
+
 ## 1. ¿Revolucionó el género de la ciencia ficción?
 
 Antes de 1999, los presupuestos de ciencia ficción se movían en una horquilla de entre 20 y 60 millones de dólares, con 'Superman' (1978) como una anomalía aislada de 55 millones que no marcó tendencia. **Tras 'The Matrix'**, esa horquilla se rompe: los **presupuestos** se estabilizan por encima de los 60 millones y **llegan a superar los 100 millones** en los años finales del dataset.
@@ -148,3 +150,5 @@ En la primera película, los monólogos más largos los pronuncian el antagonist
 ## Conclusión
 
 Enfrentar a los mitos que circulaban sobre 'The Matrix' con los datos es un ejercicio sumamente estimulante. Podríamos decir que la saga sí cambió el género, no de la noche a la mañana, pero de forma medible en presupuestos y en equipos de efectos visuales. Su pregunta filosófica central sí trascendió la pantalla, aunque no por la vía académica que cabría esperar, sino a través de YouTube, en dos idiomas y con picos de interés que coinciden con la actualidad tecnológica más que con la propia saga. Y **sus secuelas no fueron peores, fueron simplemente menos capaces de mantener al espectador cerca de su protagonista**. Un cuarto de siglo después, la píldora roja sigue generando la misma pregunta incómoda con la que empezó todo: ¿Vivimos en una simulación?
+
+**Puedes revisar las tablas, los cálculos y las visualizaciones** en el [notebook de Jupyter del análisis de *Matrix*](/nebula/analisis/analisis-matrix.ipynb).

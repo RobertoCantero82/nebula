@@ -13,6 +13,8 @@ El Baskonia lleva años conviviendo con una certeza incómoda: cuando encuentra 
 
 He analizado las diez temporadas disputadas desde el cambio de formato de 2016-17 hasta 2025-26. El resultado confirma la magnitud de la rotación, pero también desmonta su explicación más evidente. **Baskonia pierde de media el 51,3% de los puntos producidos por la plantilla anterior cada verano**, aunque esa fuga no presenta una relación clara con el porcentaje de victorias de la temporada siguiente.
 
+Es el mismo tipo de contraste que aparece en [el análisis de los mitos sobre las secuelas de *Matrix*](/nebula/articulos/matrix-secuelas/): los datos pueden confirmar la sensación inicial y, al mismo tiempo, corregir la explicación que parecía más obvia.
+
 ## 1. La reconstrucción permanente sí existe
 
 En cuatro de las nueve transiciones analizadas desapareció más de la mitad de la producción anotadora. El caso más extremo llegó en el verano de 2020: los jugadores que salieron habían generado el 66,3% de los puntos del curso anterior. Un año después volvió a ocurrir casi lo mismo, con una pérdida del 65,7%.
@@ -116,3 +118,5 @@ Las cinco temporadas con diferencia positiva acabaron con al menos un 50% de vic
 Los datos confirman la intuición del aficionado y corrigen su diagnóstico. Baskonia vive en una reconstrucción permanente, pierde a su máximo anotador más de la mitad de los veranos y reemplaza, de media, uno de cada dos puntos. Aun así, esa inestabilidad no explica sus victorias.
 
 La capacidad histórica del club para detectar y desarrollar talento ha compensado muchas salidas. El límite aparece cuando esa reinvención produce equipos capaces de anotar, pero no de contener al rival. **El reto** no consiste únicamente en conservar estrellas. **Consiste en reconstruir sin perder el equilibrio**.
+
+**Puedes reproducir las comparaciones y correlaciones del artículo** en el [notebook de Jupyter del análisis del Baskonia](/nebula/analisis/analisis-baskonia-euroliga.ipynb).

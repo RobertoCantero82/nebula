@@ -17,6 +17,8 @@ La secuencia, recogida por [Space.com](https://www.space.com/space-exploration/l
 
 Para comprobarlo he analizado los registros históricos de [Launch Library 2](https://thespacedevs.com/llapi), una base de datos abierta especializada en misiones espaciales. El resultado confirma que **China** no solo lanza más cohetes: también **ha reducido drásticamente el tiempo que transcurre entre ellos**.
 
+Es una pregunta distinta, pero parte del mismo enfoque que [la comparación del iPhone Duo con móviles y tabletas](/nebula/articulos/iphone-duo-ipad-mini/): traducir una impresión tecnológica en medidas que puedan contrastarse.
+
 ## Cuatro misiones completamente diferentes
 
 La primera misión comenzó el 15 de septiembre a las 06:26 UTC. LandSpace lanzó desde Jiuquan un Zhuque-2E con diez satélites de la constelación Qianfan. Quince horas después, un Gravity-1 de Orienspace despegó desde una plataforma marítima. El 17 de septiembre llegaron las otras dos misiones: un Long March 12 salió desde Wenchang y un Kuaizhou-11 lo hizo desde Jiuquan apenas dos horas más tarde.
@@ -274,6 +276,8 @@ Los datos confirman la impresión que deja la noticia. China está lanzando más
 Si mantiene el ritmo, **el país podría terminar 2026** alrededor de los **110 lanzamientos**, 17 más que su récord anterior. La cifra exacta dependerá de retrasos, fallos técnicos y cambios de calendario. Sin embargo, incluso el extremo inferior del intervalo supondría un nuevo máximo histórico.
 
 La **carrera espacial china** ya no se explica únicamente por grandes misiones aisladas. También **se mide en frecuencia, capacidad industrial y en una infraestructura capaz de volver a lanzar apenas unas horas después**.
+
+**El resumen de datos, los cálculos y los gráficos están disponibles** en el [notebook de Jupyter del análisis](/nebula/analisis/analisis-lanzamientos-china.ipynb). También puedes consultar el [cuaderno con la predicción para 2026](/nebula/analisis/prediccion-lanzamientos-china-2026.ipynb).
 
 ---
 
