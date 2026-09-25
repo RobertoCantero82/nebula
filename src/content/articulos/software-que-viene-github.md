@@ -94,9 +94,9 @@ El gráfico utiliza una escala logarítmica para que las diferencias sean legibl
 
 ## La IA deja de ser un chat
 
-Los proyectos más reveladores no intentan construir otro chatbot. [Multica](https://github.com/multica-ai/multica) organiza agentes de programación como si fueran compañeros de equipo: reciben tareas, informan de avances, plantean bloqueos y entregan el trabajo para revisión. Conviene llamarlo *source-available*, no estrictamente código abierto, porque su licencia añade condiciones propias.
+Los proyectos más reveladores no intentan construir otro chatbot. **[Multica](https://github.com/multica-ai/multica) organiza agentes de programación** como si fueran compañeros de equipo: reciben tareas, informan de avances, plantean bloqueos y entregan el trabajo para revisión. Conviene llamarlo *source-available*, no estrictamente código abierto, porque su licencia añade condiciones propias.
 
-[Anti-slop](https://github.com/miqdadbadjuber/anti-slop) ataca otro problema: las interfaces, textos y fragmentos de código genéricos producidos por agentes. Sus reglas no generan una dirección creativa, pero funcionan como filtro de calidad. [Sprite-gen](https://github.com/aldegad/sprite-gen), por su parte, transforma una ilustración en sprites, animaciones y archivos preparados para un videojuego. Su valor no está en crear una imagen llamativa, sino en convertirla en un recurso utilizable.
+**[Anti-slop](https://github.com/miqdadbadjuber/anti-slop) ataca** otro problema: las **interfaces, textos y fragmentos de código** genéricos producidos por agentes. Sus reglas no generan una dirección creativa, pero funcionan como filtro de calidad. **[Sprite-gen](https://github.com/aldegad/sprite-gen)**, por su parte, **transforma una ilustración en sprites**, animaciones y archivos preparados para un videojuego. Su valor no está en crear una imagen llamativa, sino en convertirla en un recurso utilizable.
 
 Los tres proyectos apuntan al mismo cambio: **el modelo importa menos cuando no existe un buen proceso alrededor**.
 
