@@ -15,6 +15,17 @@ La ciencia ficción suele dejarnos atónitos con la tecnología: la tablet de *2
 
 Para poder separar lo alucinate del cine con los conceptos disponibles en nuestra sociedad he reunido **100 tecnologías de 27 películas estrenadas entre 1927 y 2015**. Cada observación corresponde a una tecnología, no a una película. Una misma obra puede aportar varias ideas: *Planeta prohibido*, por ejemplo, aparece seis veces.
 
+  <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 2rem 0; overflow: hidden;">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/JCbno_IZSWM"
+      title="Descripción del vídeo"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    ></iframe>
+  </div>
+
 Después clasifiqué cada caso en cinco estados: ficción, investigación, prototipo, uso real y tecnología cotidiana. El objetivo no es decidir qué guionista predijo mejor el futuro, sino responder una pregunta más útil: **¿en qué campos consigue el cine anticipar una función real y en cuáles continúa dependiendo de un milagro científico?**
 
 Es una forma de convertir una intuición cultural en variables medibles, como hice al [contrastar tres mitos sobre *The Matrix*](/nebula/articulos/matrix-secuelas/) y al buscar [las señales del software que viene en GitHub](/nebula/articulos/software-que-viene-github/).
@@ -239,6 +250,17 @@ En 1956 no existían los agentes de inteligencia artificial, pero la película y
 ## El cine predice funciones, no mecanismos
 
 Las anticipaciones más convincentes no describen con precisión cómo funciona una tecnología. Describen qué hará por nosotros. *Her* no necesitó explicar la arquitectura de su sistema operativo para imaginar una inteligencia disponible mediante la voz. *Minority Report* no acertó porque pudiéramos mover ventanas con las manos, sino porque entendió que la identificación automática conectaría espacios físicos, perfiles personales y publicidad. *2001: Una odisea del espacio* no diseñó la tablet moderna, pero comprendió que una pantalla portátil acabaría convirtiéndose en un objeto cotidiano.
+
+  <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 2rem 0; overflow: hidden;">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/-3949GAIokg"
+      title="Descripción del vídeo"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    ></iframe>
+  </div>
 
 Cuando la predicción depende de software, sensores o miniaturización, la realidad suele encontrar un camino. Cuando necesita energía ilimitada, control completo de la biología o una excepción a la física, el cine conserva la ventaja.
 
