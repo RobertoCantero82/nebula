@@ -15,7 +15,7 @@ El 20 de abril de 2023, el primer conjunto integrado de Starship y Super Heavy d
 
 El 28 de septiembre de 2026, 1.257 días después, el [vuelo 14 alcanzó la órbita](https://x.com/SpaceX/status/2104354931595423762) y desplegó 26 satélites Starlink V3. SpaceX acortó la misión por precaución tras el apagado prematuro de un motor, pero la nave regresó de forma controlada.
 
-Entre ambos vuelos hubo explosiones, amerizajes, capturas del booster y cambios de arquitectura. Para entender esa evolución he analizado diez capacidades: separación de etapas, llegada al espacio, ascenso completo, retorno y captura del booster, reentrada, amerizaje de la nave, despliegue de carga, reencendido espacial e inserción orbital.
+Entre ambos vuelos hubo explosiones, amerizajes, capturas del booster y cambios de arquitectura. Para entender esa evolución **he analizado diez capacidades**: separación de etapas, llegada al espacio, ascenso completo, retorno y captura del booster, reentrada, amerizaje de la nave, despliegue de carga, reencendido espacial e inserción orbital.
 
 Es el mismo enfoque utilizado para estudiar [la aceleración de los lanzamientos chinos](/nebula/articulos/articulo_lanzamientos_china_2026/): sustituir una impresión tecnológica por medidas que puedan compararse.
 
@@ -25,7 +25,7 @@ Es el mismo enfoque utilizado para estudiar [la aceleración de los lanzamientos
 
 El vuelo 5 añadió la primera captura de Super Heavy, el enorme propulsor que la impulsa durante el despegue, mediante los brazos de la torre. Un mes después, el sexto consiguió reencender un motor Raptor en el espacio.
 
-Al terminar la primera generación, el programa ya había demostrado ocho de las diez capacidades estudiadas. Sin embargo, ninguna misión las había reunido todas a la vez.
+**Al terminar la primera generación**, el programa ya había **demostrado ocho de las diez capacidades** estudiadas. Sin embargo, ninguna misión las había reunido todas a la vez.
 
 <div class="grafico-interactivo">
   <canvas id="grafico-evolucion-starship" height="300"></canvas>
@@ -97,7 +97,7 @@ La cadencia tampoco explica por sí sola el progreso. El intervalo mediano entre
 
 V3 debutó después de la pausa más larga de la campaña: 221 días. Su primer vuelo desplegó 20 simuladores y dos satélites modificados para fotografiar Starship. El siguiente liberó 20 Starlink V3 reales, pero en una trayectoria suborbital que los condujo de nuevo a la atmósfera.
 
-El [vuelo 14](https://www.spacex.com/launches/starship-flight-14) convirtió finalmente esa prueba en una misión orbital. Desplegó 26 Starlink V3 operativos y añadió la última capacidad del análisis.
+El **[vuelo 14](https://www.spacex.com/launches/starship-flight-14)** convirtió finalmente esa prueba en una **misión orbital**. Desplegó 26 Starlink V3 operativos y añadió la última capacidad del análisis.
 
 <div style="max-width: 560px; margin: 2rem auto;">
   <blockquote class="twitter-tweet" data-dnt="true">
@@ -111,6 +111,6 @@ El [vuelo 14](https://www.spacex.com/launches/starship-flight-14) convirtió fin
 
 Solo siete de los catorce vuelos ampliaron la frontera técnica estudiada. Los demás repitieron capacidades, probaron configuraciones diferentes o terminaron antes de completar sus objetivos.
 
-La llegada a órbita no elimina los problemas pendientes ni convierte a Starship en un sistema completamente reutilizable. Sí muestra algo más concreto: **el vehículo orbital surgió de acumular avances que rara vez aparecieron juntos y que, en varias ocasiones, parecieron desaparecer antes de regresar**.
+La llegada a órbita no elimina los problemas pendientes ni convierte a Starship en un sistema completamente reutilizable. Sí muestra algo más concreto: **el vehículo orbital surgió de acumular avances que rara vez aparecieron juntos** y que, en varias ocasiones, parecieron desaparecer antes de regresar.
 
-**Puedes revisar los datos, reproducir los gráficos y consultar la clasificación de los hitos técnicos** en el [notebook de Jupyter del análisis de Starship](/nebula/analisis/analisis-evolucion-starship.ipynb).
+Puedes revisar los datos, reproducir los gráficos y consultar la clasificación de los hitos técnicos en el **[notebook de Jupyter del análisis de Starship](/nebula/analisis/analisis-evolucion-starship.ipynb)**.
