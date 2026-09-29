@@ -1,0 +1,119 @@
+---
+interface Props {
+  etiqueta: string;
+  detalle: string;
+  href?: string;
+  compacto?: boolean;
+}
+
+const { etiqueta, detalle, href, compacto = false } = Astro.props;
+const clases = ['reconocimiento-editorial', compacto && 'reconocimiento-editorial--compacto']
+  .filter(Boolean)
+  .join(' ');
+---
+
+{href ? (
+  <a class={clases} href={href} aria-label={`${etiqueta}. ${detalle}`}>
+    <span class="reconocimiento-medalla" aria-hidden="true">
+      <svg viewBox="0 0 48 58" role="img">
+        <path d="M15 36 10 55l14-7 14 7-5-19" fill="#1B1836" />
+        <circle cx="24" cy="23" r="18" fill="#D85A30" />
+        <circle cx="24" cy="23" r="13" fill="#F7F5F0" />
+        <path d="m24 14 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z" fill="#D85A30" />
+      </svg>
+    </span>
+    <span class="reconocimiento-texto">
+      <span class="reconocimiento-sobretitulo">RECONOCIMIENTO EDITORIAL</span>
+      <strong>{etiqueta}</strong>
+      <span class="reconocimiento-detalle">{detalle}</span>
+    </span>
+    <span class="reconocimiento-flecha" aria-hidden="true">→</span>
+  </a>
+) : (
+  <div class={clases} role="note" aria-label={`${etiqueta}. ${detalle}`}>
+    <span class="reconocimiento-medalla" aria-hidden="true">
+      <svg viewBox="0 0 48 58" role="img">
+        <path d="M15 36 10 55l14-7 14 7-5-19" fill="#1B1836" />
+        <circle cx="24" cy="23" r="18" fill="#D85A30" />
+        <circle cx="24" cy="23" r="13" fill="#F7F5F0" />
+        <path d="m24 14 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8Z" fill="#D85A30" />
+      </svg>
+    </span>
+    <span class="reconocimiento-texto">
+      <span class="reconocimiento-sobretitulo">RECONOCIMIENTO EDITORIAL</span>
+      <strong>{etiqueta}</strong>
+      <span class="reconocimiento-detalle">{detalle}</span>
+    </span>
+  </div>
+)}
+
+<style>
+  .reconocimiento-editorial {
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-accent);
+    color: var(--color-ink);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+    margin: 1.5rem 0 0;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+  }
+
+  a.reconocimiento-editorial {
+    transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+
+  a.reconocimiento-editorial:hover,
+  a.reconocimiento-editorial:focus-visible {
+    border-color: var(--color-accent);
+    box-shadow: 0 12px 30px rgb(27 24 54 / 10%);
+    transform: translateY(-2px);
+  }
+
+  .reconocimiento-medalla {
+    display: block;
+    line-height: 0;
+    width: 42px;
+  }
+
+  .reconocimiento-medalla svg { height: auto; width: 100%; }
+  .reconocimiento-texto { display: grid; gap: .18rem; }
+
+  .reconocimiento-sobretitulo {
+    color: var(--color-accent);
+    font: 600 9px var(--font-mono);
+    letter-spacing: .09em;
+  }
+
+  .reconocimiento-texto strong {
+    font: 600 clamp(1.05rem, 2vw, 1.3rem) var(--font-heading);
+  }
+
+  .reconocimiento-detalle {
+    color: var(--color-secondary-text);
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .reconocimiento-flecha {
+    color: var(--color-accent);
+    font: 600 1.4rem var(--font-heading);
+  }
+
+  .reconocimiento-editorial--compacto {
+    margin: 0 0 1.5rem;
+    padding: .85rem 1rem;
+  }
+
+  .reconocimiento-editorial--compacto .reconocimiento-medalla { width: 34px; }
+  .reconocimiento-editorial--compacto .reconocimiento-detalle { font-size: 12px; }
+
+  @media (max-width: 540px) {
+    .reconocimiento-editorial { gap: .75rem; padding: .9rem; }
+    .reconocimiento-medalla { width: 36px; }
+    .reconocimiento-flecha { display: none; }
+  }
+</style>

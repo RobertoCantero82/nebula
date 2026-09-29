@@ -7,6 +7,9 @@ fecha: 2026-09-29
 cifraDestacada: "1.257 días"
 etiquetaCifra: "entre el primer vuelo integrado de Starship y su llegada a órbita"
 metodologia: "Análisis exploratorio de los 14 vuelos integrados de Starship y Super Heavy realizados entre abril de 2023 y septiembre de 2026. Se estudiaron diez capacidades observables a partir de los resúmenes de SpaceX y fuentes periodísticas independientes. Los hitos tienen el mismo peso y no constituyen una clasificación oficial de éxito."
+reconocimiento:
+  etiqueta: "Destacado por LinkedIn Noticias"
+  detalle: "Seleccionado entre las principales perspectivas sobre la llegada de Starship a órbita."
 ---
 
 *Starship ha alcanzado por fin la órbita terrestre. El hito parece un salto repentino, pero los datos cuentan una historia más accidentada: SpaceX necesitó 14 vuelos, tres generaciones del vehículo y numerosos retrocesos para reunir las capacidades necesarias en una misma misión.*

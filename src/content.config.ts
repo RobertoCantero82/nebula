@@ -12,6 +12,10 @@ const articulos = defineCollection({
     etiquetaCifra: z.string().optional(),
     metodologia: z.string().optional(),
     imagenPortada: z.string().optional(),
+    reconocimiento: z.object({
+      etiqueta: z.string(),
+      detalle: z.string(),
+    }).optional(),
   }),
 });
 

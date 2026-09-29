@@ -3,12 +3,14 @@ import { getCollection } from 'astro:content';
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
 import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
+import ReconocimientoEditorial from '../components/ReconocimientoEditorial.astro';
 
 const articulos = (await getCollection('articulos')).sort(
   (a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()
 );
 
 const destacado = articulos[0];
+const articuloReconocido = articulos.find((articulo) => articulo.data.reconocimiento);
 
 const formatearFecha = (fecha: Date) =>
   new Intl.DateTimeFormat('es-ES', {
@@ -48,6 +50,16 @@ const formatearFecha = (fecha: Date) =>
 
     <main>
       <TrabajaConmigoBanner />
+
+      {articuloReconocido?.data.reconocimiento && (
+        <div class="contenedor">
+          <ReconocimientoEditorial
+            etiqueta={articuloReconocido.data.reconocimiento.etiqueta}
+            detalle={articuloReconocido.data.reconocimiento.detalle}
+            href={`/nebula/articulos/${articuloReconocido.id}/`}
+          />
+        </div>
+      )}
 
       {destacado && (
         <section class="hero contenedor" aria-labelledby="titular-destacado">
