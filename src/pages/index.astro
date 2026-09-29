@@ -10,7 +10,6 @@ const articulos = (await getCollection('articulos')).sort(
 );
 
 const destacado = articulos[0];
-const articuloReconocido = articulos.find((articulo) => articulo.data.reconocimiento);
 
 const formatearFecha = (fecha: Date) =>
   new Intl.DateTimeFormat('es-ES', {
@@ -51,20 +50,17 @@ const formatearFecha = (fecha: Date) =>
     <main>
       <TrabajaConmigoBanner />
 
-      {articuloReconocido?.data.reconocimiento && (
-        <div class="contenedor">
-          <ReconocimientoEditorial
-            etiqueta={articuloReconocido.data.reconocimiento.etiqueta}
-            detalle={articuloReconocido.data.reconocimiento.detalle}
-            href={`/nebula/articulos/${articuloReconocido.id}/`}
-          />
-        </div>
-      )}
-
       {destacado && (
         <section class="hero contenedor" aria-labelledby="titular-destacado">
           <a class="hero-imagen" href={`/nebula/articulos/${destacado.id}/`} tabindex="-1" aria-hidden="true">
             {destacado.data.imagenPortada ? <img src={destacado.data.imagenPortada} alt="" /> : <div class="imagen-placeholder"></div>}
+            {destacado.data.reconocimiento && (
+              <ReconocimientoEditorial
+                etiqueta={destacado.data.reconocimiento.etiqueta}
+                detalle={destacado.data.reconocimiento.detalle}
+                sello
+              />
+            )}
           </a>
 
           <div class="hero-contenido">
@@ -99,6 +95,13 @@ const formatearFecha = (fecha: Date) =>
             <a class="tarjeta-articulo" href={`/nebula/articulos/${articulo.id}/`}>
               <div class="tarjeta-imagen">
                 {articulo.data.imagenPortada ? <img src={articulo.data.imagenPortada} alt="" loading="lazy" /> : <div class="imagen-placeholder"></div>}
+                {articulo.data.reconocimiento && (
+                  <ReconocimientoEditorial
+                    etiqueta={articulo.data.reconocimiento.etiqueta}
+                    detalle={articulo.data.reconocimiento.detalle}
+                    sello
+                  />
+                )}
               </div>
               <article>
                 <div class="tarjeta-meta">
