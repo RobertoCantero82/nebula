@@ -190,19 +190,31 @@ h1, h2, h3 {
 .enlace-lectura:hover { color: var(--color-accent); }
 
 .hero-dato {
-  align-items: baseline;
+  align-items: start;
   background: var(--color-ink);
   color: #fff;
   display: grid;
-  gap: .75rem;
-  grid-template-columns: auto 1fr;
+  gap: .4rem;
+  grid-template-columns: minmax(0, 1fr);
   margin-left: -3rem;
   padding: 1.25rem clamp(1.75rem, 4vw, 3rem);
   position: relative;
 }
 
-.hero-dato strong { color: #fff; font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem); line-height: 1; }
-.hero-dato span { color: #d8d5e5; font-size: 13px; line-height: 1.4; }
+.hero-dato strong {
+  color: #fff;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.hero-dato span {
+  color: #d8d5e5;
+  font-size: 13px;
+  line-height: 1.4;
+  max-width: 42ch;
+}
 .seccion-articulos { padding-bottom: clamp(4rem, 8vw, 7rem); }
 
 .cabecera-seccion {
