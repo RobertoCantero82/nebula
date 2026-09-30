@@ -19,6 +19,32 @@ La más antigua identificada ha recibido el nombre de **Low-energy-Kraken-Heracl
 
 En esta ocasión, el telescopio Hubble no captó la colisión. **El equipo analizó 39 cúmulos globulares situados en los 20.000 años luz más internos de nuestra galaxia**. Estas agrupaciones contienen estrellas muy antiguas nacidas en condiciones semejantes, por lo que conservan información sobre su lugar de origen.
 
+<div class="video-youtube">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/r5DEplq56D8"
+    title="Vídeo sobre la historia de la Vía Láctea"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<style>
+  .video-youtube {
+    aspect-ratio: 16 / 9;
+    margin: 2rem 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .video-youtube iframe {
+    border: 0;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+
 Los investigadores compararon la edad, la composición y el movimiento de los cúmulos usando datos de Gaia, el telescopio espacial de la Agencia Espacial Europea y que es capaz de medir la posición, la distancia y el movimiento de casi 2.000 millones de estrellas para crear el mapa más preciso de la Vía Láctea. Al ordenarlos aparecieron tres secuencias: una formada en la propia Vía Láctea, otra asociada a Gaia-Sausage-Enceladus y una tercera población intermedia.
 
 Esa tercera secuencia constituye la **principal evidencia de LKH**. Sin embargo, esta es una reconstrucción estadística y química, no la imagen directa de una galaxia intacta. La diferencia importa, igual que en [el análisis de la ameba de fuego](/nebula/articulos/ameba-fuego-limites-calor/), donde reproducirse, moverse y resistir unos minutos describían límites distintos aunque el titular pudiera mezclarlos.
