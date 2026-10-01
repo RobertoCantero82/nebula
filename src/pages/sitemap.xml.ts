@@ -13,7 +13,10 @@ const escaparXml = (valor: string) =>
 export const GET: APIRoute = async ({ site }) => {
   const origen = site ?? new URL('https://robertocantero82.github.io');
   const base = new URL('/nebula/', origen);
-  const articulos = await getCollection('articulos');
+  const ahora = new Date();
+  const articulos = (await getCollection('articulos')).filter(
+    (articulo) => articulo.data.fecha <= ahora
+  );
   const paginas = [
     { url: base.href },
     { url: new URL('trabaja-conmigo/', base).href },

@@ -5,9 +5,11 @@ import Seo from '../components/Seo.astro';
 import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
 import ReconocimientoEditorial from '../components/ReconocimientoEditorial.astro';
 
-const articulos = (await getCollection('articulos')).sort(
-  (a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()
-);
+const ahora = new Date();
+
+const articulos = (await getCollection('articulos'))
+  .filter((articulo) => articulo.data.fecha <= ahora)
+  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
 
 const destacado = articulos[0];
 

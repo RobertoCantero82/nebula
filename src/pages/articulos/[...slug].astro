@@ -3,7 +3,11 @@ import { getCollection, render } from 'astro:content';
 import Articulo from '../../layouts/Articulo.astro';
 
 export async function getStaticPaths() {
-  const articulos = await getCollection('articulos');
+  const ahora = new Date();
+
+  const articulos = (await getCollection('articulos')).filter(
+    (articulo) => articulo.data.fecha <= ahora
+  );
   const mezclar = <T,>(elementos: T[]) => {
     const resultado = [...elementos];
     for (let indice = resultado.length - 1; indice > 0; indice -= 1) {

@@ -9,7 +9,10 @@ const ordenDestacados = [
   'matrix-secuelas',
 ];
 
-const articulos = await getCollection('articulos');
+const ahora = new Date();
+const articulos = (await getCollection('articulos')).filter(
+  (articulo) => articulo.data.fecha <= ahora
+);
 const destacados = ordenDestacados
   .map((id) => articulos.find((articulo) => articulo.id === id))
   .filter((articulo) => articulo !== undefined);
