@@ -13,15 +13,29 @@ export async function getStaticPaths() {
     return resultado;
   };
 
+  const seleccionarRelacionados = (articuloActual: (typeof articulos)[number]) => {
+    const candidatos = articulos.filter(
+      (candidato) => candidato.id !== articuloActual.id
+    );
+    const mismoTema = mezclar(
+      candidatos.filter(
+        (candidato) => candidato.data.tema === articuloActual.data.tema
+      )
+    );
+    const otrosTemas = mezclar(
+      candidatos.filter(
+        (candidato) => candidato.data.tema !== articuloActual.data.tema
+      )
+    );
+
+    return [...mismoTema, ...otrosTemas].slice(0, 3);
+  };
+
   return articulos.map((articulo) => ({
     params: { slug: articulo.id },
     props: {
       articulo,
-      relacionados: mezclar(
-        articulos.filter((candidato) =>
-          candidato.id !== articulo.id && candidato.data.tema === articulo.data.tema
-        )
-      ).slice(0, 3),
+      relacionados: seleccionarRelacionados(articulo),
     },
   }));
 }
