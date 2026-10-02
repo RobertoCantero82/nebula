@@ -1,6 +1,6 @@
 ---
 imagenPortada: "/nebula/imagenes/google_datos_portada.png"
-titulo: "Google quiere llevar la IA al espacio: el problema son 1.800 lanzamientos"
+titulo: "Google ya ha puesto su IA en órbita. Ahora viene la parte casi imposible con SpaceX"
 descripcion: "Project Suncatcher ya ha enviado una TPU a órbita, pero convertir el experimento en un centro de datos exige una cadencia de Starship difícil de imaginar."
 tema: "TECNOLOGÍA"
 fecha: 2026-10-02
