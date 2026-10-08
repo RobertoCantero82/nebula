@@ -1,0 +1,9 @@
+id,fecha,region,metrica,valor,unidad,segmento,fuente_id,comparable_global,nota
+ai_pc_global_2024,2024-12-31,Global,cuota_ai_pc,17,porcentaje,Todos los PC,CANALYS_2024,si,"Estimación anual con definición amplia de hardware dedicado"
+ai_pc_global_2025,2025-12-31,Global,cuota_ai_pc,31,porcentaje,Todos los PC,GARTNER_2025,si,"Estimación de cierre publicada en agosto de 2025"
+copilot_europa_q2_2025,2025-06-30,Europa,cuota_copilot_plus_sobre_ai_pc,9,porcentaje,Distribución profesional,COPILOT_EU,no,"Solo una fracción de los AI PC distribuidos cumplía el umbral Copilot+ de 40 TOPS"
+ai_pc_usa_q2_2026,2026-06-30,Estados Unidos,cuota_ai_pc,48.3,porcentaje,Todos los PC,OMDIA_US,no,"Dato regional; no representa el total mundial"
+precio_surface_ultra_2026,2026-10-07,Estados Unidos,precio_inicial,2599.99,USD,Surface Laptop Ultra,MS_SURFACE,no,"Precio comercial anunciado por Microsoft"
+precio_dev_box_2026,2026-10-07,Estados Unidos,precio_inicial,5999.99,USD,Surface RTX Spark Dev Box,MS_EVENTO,no,"Precio comercial anunciado por Microsoft"
+memoria_maxima_surface_2026,2026-10-07,Global,memoria_unificada_maxima,128,GB,Surface Laptop Ultra,MS_EVENTO,no,"Configuración máxima anunciada"
+modelo_local_surface_2026,2026-10-07,Global,parametros_modelo_local,120,miles_de_millones,Surface Laptop Ultra,MS_EVENTO,no,"Capacidad declarada; no representa el AI PC medio"

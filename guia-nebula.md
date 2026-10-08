@@ -87,7 +87,28 @@ Tipos de gráfico disponibles cambiando `type`: `'bar'` (barras), `'line'` (lín
 
 ---
 
-## 4. Añadir una imagen propia
+## 4. Regla editorial: EDA o machine learning
+
+Todos los artículos de datos de Nebula deben ser una de estas dos cosas:
+
+- **EDA**: explora, compara y explica datos existentes. Puede incluir escenarios o previsiones de fuentes externas, siempre identificados como tales, pero no crea una predicción propia.
+- **Machine learning**: entrena un modelo y demuestra cómo funciona con una referencia básica, datos de prueba separados y métricas claras.
+
+No hay una categoría intermedia. Si no existen suficientes datos para comprobar un modelo de forma seria, el artículo se plantea como EDA.
+
+Como norma general, el artículo tendrá unas **700 palabras**, lenguaje sencillo, frases cortas y una conclusión clara. Debe distinguir entre datos observados, previsiones ajenas y mensajes comerciales, y explicar las limitaciones del análisis.
+
+Si existe un notebook, hay que copiarlo junto con los archivos locales que necesite a una carpeta dentro de `public/analisis/` y enlazarlo en el texto con una ruta pública, por ejemplo:
+
+```markdown
+[notebook de Jupyter](/nebula/analisis/nombre-del-proyecto/analisis.ipynb)
+```
+
+La portada debe ser original, mantener el lenguaje visual habitual de Nebula, no llevar texto, logotipos ni marcas de agua y guardarse en `public/imagenes/`.
+
+---
+
+## 5. Añadir una imagen propia
 
 1. Guarda la imagen (jpg, png o svg) dentro de `public/imagenes/`. Créala si no existe:
 
@@ -107,7 +128,7 @@ El `/nebula/` es obligatorio porque el sitio vive bajo esa ruta base (recuérdal
 
 ---
 
-## 5. Publicar el artículo
+## 6. Publicar el artículo
 
 Una vez guardado el `.md`:
 
@@ -129,7 +150,7 @@ Ve a la pestaña **Actions** de tu repositorio en GitHub y espera el check verde
 
 ---
 
-## 6. Verlo en local antes de publicar
+## 7. Verlo en local antes de publicar
 
 Antes de subir nada, siempre puedes comprobarlo en tu máquina:
 
@@ -141,7 +162,7 @@ Y visita `localhost:4321/nebula/articulos/tu-articulo` (no olvides el `/nebula/`
 
 ---
 
-## 7. Errores típicos
+## 8. Errores típicos
 
 - **La página sale en blanco o da error al abrirla**: revisa que el frontmatter tenga exactamente dos líneas `---` (una al principio, otra al final) y que `fecha` no lleve comillas.
 - **El gráfico no aparece**: el `id` del `<canvas>` no coincide con el `id` que usas en `getElementById()`, o hay dos gráficos con el mismo `id` en el mismo artículo.
@@ -150,6 +171,6 @@ Y visita `localhost:4321/nebula/articulos/tu-articulo` (no olvides el `/nebula/`
 
 ---
 
-## 8. Añadirlo a la portada
+## 9. Añadirlo a la portada
 
-Para que aparezca en "Artículos recientes" de la home, edita `src/pages/index.astro` y añade una tarjeta más dentro de `<div class="grid-articulos">`, copiando el bloque `<a href="/articulos/...">...</a>` que ya existe y cambiando el enlace, la etiqueta de tema y el título.
+La portada se alimenta automáticamente de la colección `articulos`. Si el archivo está en `src/content/articulos/`, el frontmatter es válido y la fecha no está en el futuro, aparecerá sin editar `src/pages/index.astro`.
