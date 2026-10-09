@@ -1,0 +1,14 @@
+evidencia,valor,incertidumbre,unidad,interpretacion,fuente
+Distancia,82.6,0.3,pársecs,Distancia entre la Tierra y HS 0209+0832,Extended Data Table 1
+Temperatura efectiva,35800,500,kelvin,Temperatura de la superficie de la enana blanca,Extended Data Table 1
+Edad de enfriamiento,5.1,0.2,millones de años,Tiempo aproximado desde que se formó la enana blanca,Extended Data Table 1
+Masa,0.61,0.01,masas solares,Masa actual de la enana blanca,Extended Data Table 1
+Enanas blancas comparadas,33,,estrellas,Muestra de control examinada en busca de niobio,Texto principal
+Detecciones de niobio en la comparación,0,,estrellas,Ninguna de las 33 mostró niobio,Texto principal
+Líneas de Nb III,5,,líneas espectrales,Marcas atribuidas a niobio ionizado dos veces,Extended Data Table 2
+Líneas de Nb IV,57,,líneas espectrales,Marcas atribuidas a niobio ionizado tres veces,Extended Data Table 2
+Periodo fotométrico,4.399,0.026,días,Tiempo que tarda en repetirse la variación de brillo,TEXTO principal y métodos
+Amplitud fotométrica,0.120,0.018,porcentaje,Tamaño de la variación de brillo,TEXTO principal y métodos
+Probabilidad de falsa alarma,4.4e-16,,proporción,Probabilidad estimada de obtener por azar una señal periódica así,Métodos
+Separación orbital propuesta,0.044,,unidades astronómicas,Distancia orbital compatible con un periodo de 4.4 días,Métodos
+
