@@ -31,3 +31,14 @@ Consult these guides before working on related tasks:
 - Si el análisis parte de un cuaderno, el artículo debe enlazarlo desde `/nebula/analisis/`. El cuaderno y los datos locales necesarios para reproducirlo deben copiarse a `public/analisis/`.
 - Cada artículo tendrá una portada original en `public/imagenes/`, coherente con las portadas habituales de Nebula y sin texto, logotipos ni marcas de agua. Se declarará mediante `imagenPortada`.
 - Antes de entregar, ejecutar la compilación del sitio y comprobar que el artículo, la portada y los enlaces locales están incluidos.
+
+## Publicaciones de Nebula en LinkedIn
+
+- Los posts serán siempre cortos y dejarán al lector con ganas de abrir el artículo. No resumirán toda la historia ni revelarán por completo su giro principal.
+- El gancho utilizará un *clickbait* moderado y honesto: debe crear tensión, sorpresa o una incógnita concreta, pero el artículo cumplirá exactamente la promesa sin engaños ni exageraciones.
+- No basta con formular una pregunta neutra. El texto debe sugerir que existe un resultado inesperado, una contradicción o un detalle capaz de cambiar la interpretación.
+- El inicio debe entenderse sin haber leído el artículo ni conocer previamente el tema. Cualquier récord, cifra o conflicto mencionado tendrá contexto suficiente desde la primera frase.
+- Está prohibido utilizar emojis.
+- La estructura preferida es: gancho claro, tensión o pregunta breve y enlace al artículo.
+- Todos los posts incluirán hashtags relacionados con la búsqueda de empleo, el oficio periodístico, la redacción y la ciencia de datos. Como base: `#OpenToWork`, `#BuscandoTrabajo`, `#Periodista`, `#Redactor` y `#CienciaDeDatos`.
+- Se añadirán también hashtags del asunto concreto tratado, como ciencia, tecnología, aves, inteligencia artificial o baloncesto, sin convertir el cierre en una lista excesiva.
