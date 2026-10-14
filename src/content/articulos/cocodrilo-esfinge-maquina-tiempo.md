@@ -70,17 +70,6 @@ Para sentir qué significan 45 millones de años, comprimamos todo ese tiempo en
 
 La Esfinge sería tallada a las **23:59:51,4**: apenas 8,6 segundos antes de medianoche.
 
-<div style="position: relative; width: 100%; padding-top: 56.25%; margin: 2rem 0;">
-  <iframe
-    src="https://www.youtube.com/watch?v=Z1oeNPwsqrM"
-    title="La GRAN ESFINGE de Guiza"
-    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
-    loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
-
 La descripción de 1927 llegaría a dos décimas de segundo del final. Toda la civilización egipcia cabe en el último parpadeo de la historia de esa roca.
 
 ## El desierto todavía no existía
@@ -112,6 +101,17 @@ Es una advertencia: los periodos con más fósiles estudiados suelen parecer má
 ## La roca que recuerda dos Egiptos
 
 La Gran Esfinge nació hace unos 4.500 años, pero su materia prima ya era inimaginablemente vieja. Antes de ser monumento, aquella caliza fue fondo marino. Antes de sostener arena, sostuvo un ecosistema tropical.
+
+<div style="position: relative; width: 100%; padding-top: 56.25%; margin: 2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/z1za3DP1mj8"
+    title="Vídeo de YouTube"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 El verdadero vínculo es más profundo: **la misma geología conserva un mundo y permite construir otro**.
 
