@@ -1,0 +1,387 @@
+﻿occurrence_no,collection_no,taxon_original,taxon_actualizado,accepted_rank,max_ma,min_ma,edad_central_ma,cc,lat,lng,paleolat,paleolng,formation,environment,ambiente_agrupado,reference_no
+40167,3113,Gavialoidea,Gavialoidea,superfamily,59.24,56.0,57.620000000000005,US,39.971943,-74.683334,40.13,-44.51,Vincentown,,Sin clasificar,140
+40168,3113,Gavialoidea,Gavialoidea,superfamily,59.24,56.0,57.620000000000005,US,39.971943,-74.683334,40.13,-44.51,Vincentown,,Sin clasificar,140
+40169,3113,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,59.24,56.0,57.620000000000005,US,39.971943,-74.683334,40.13,-44.51,Vincentown,,Sin clasificar,140
+150901,13456,Gavialis,Gavialis,genus,0.129,0.0,0.0645,IN,23.5,87.0,,,Babladanga,fluvial indet.,Continental,6077
+214257,21962,Tomistoma,Tomistoma,genus,3.6,2.58,3.09,TD,15.9694,18.8794,15.19,19.01,,fluvial-lacustrine indet.,Continental,5264
+218082,22248,Tomistoma coppensi,Tomistoma coppensi,species,5.333,2.58,3.9565,UG,1.5,31.0,0.32,30.9,Warwire,lacustrine indet.,Continental,5455
+219291,22505,Tomistoma,Tomistoma,genus,3.6,2.58,3.09,TD,15.9692,18.869499,15.19,19.0,,fluvial-lacustrine indet.,Continental,5264
+219308,22506,Tomistoma,Tomistoma,genus,3.6,2.58,3.09,TD,15.9694,18.8794,15.19,19.01,,fluvial indet.,Continental,5264
+228391,22345,Tomistoma coppensi,Tomistoma coppensi,species,11.63,3.6,7.615,UG,1.5,31.0,-0.86,30.78,Nkondo,lacustrine indet.,Continental,5432
+228835,22456,Tomistoma coppensi,Tomistoma coppensi,species,11.63,3.6,7.615,UG,1.5,31.0,-0.86,30.78,Nkondo,lacustrine indet.,Continental,5427
+247315,24181,Gavialidae,Gavialidae,family,11.63,3.6,7.615,TD,16.333332,18.666668,14.25,19.0,,lacustrine indet.,Continental,6838
+281685,26819,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,61.66,66.93,US,39.763,-75.127998,40.89,-39.79,Hornerstown,shallow subtidal indet.,Sin clasificar,54671
+287836,15595,Eosuchus minor,Eosuchus minor,species,56.0,48.07,52.035,US,38.285,-77.367226,39.3,-51.03,Nanjemoy,coastal indet.,Costero o marino,89365
+287837,15595,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,56.0,48.07,52.035,US,38.285,-77.367226,39.3,-51.03,Nanjemoy,coastal indet.,Costero o marino,812
+287885,18663,Gavialosuchus,Gavialosuchus,genus,23.04,20.45,21.744999999999997,US,31.0,-93.400002,34.75,-84.46,Fleming,coarse channel fill,Continental,742
+289118,27563,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,38.909378,-76.84597,40.96,-39.9,Severn,coastal indet.,Costero o marino,773
+289125,27564,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,38.887878,-76.848473,40.94,-39.91,Severn,coastal indet.,Costero o marino,773
+289128,27565,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,38.948833,-76.818512,40.99,-39.85,Severn,coastal indet.,Costero o marino,773
+294902,28180,Gavialis gangeticus,Gavialis gangeticus,species,2.58,0.0,1.29,IN,22.833332,88.300003,22.2,88.3,,marginal marine indet.,Costero o marino,7703
+358659,22241,Eogavialis andrewsi,Eogavialis andrewsi,species,11.63,5.333,8.4815,KE,2.9,36.049999,0.54,35.83,Nawata,fluvial indet.,Continental,8636
+368322,34845,Gavialis lewisi,Gavialis lewisi,species,11.63,5.333,8.4815,PK,33.033333,72.466667,28.81,73.7,Dhok Pathan,marine indet.,Costero o marino,9294
+368323,34846,Gavialis lewisi,Gavialis lewisi,species,11.63,5.333,8.4815,PK,32.833332,73.300003,28.56,74.48,Dhok Pathan,marine indet.,Costero o marino,9294
+368324,34847,Gavialis lewisi,Gavialis lewisi,species,11.63,5.333,8.4815,PK,32.333332,73.883331,28.03,74.99,Dhok Pathan,marine indet.,Costero o marino,9294
+371211,35132,Maroccosuchus zennaroi,Maroccosuchus zennaroi,species,56.0,48.07,52.035,MA,32.864765,-6.63106,23.23,0.0,,terrestrial indet.,Continental,50043
+372841,35289,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,85.7,72.2,78.95,US,32.164165,-85.026665,36.03,-48.62,Blufftown,transition zone/lower shoreface,Costero o marino,9505
+382982,36449,Thoracosaurus,Thoracosaurus,genus,83.6,72.2,77.9,US,36.486111,-108.486115,46.89,-71.36,Fruitland,terrestrial indet.,Continental,9765
+407562,39209,Gavialis browni,Gavialis browni,species,3.6,2.58,3.09,IN,29.0,80.0,27.26,80.25,,terrestrial indet.,Continental,10584
+427951,41735,Gavialis,Gavialis,genus,11.63,8.725,10.1775,IQ,34.483334,44.633331,30.39,44.44,Agha Jari,,Sin clasificar,11166
+458021,45102,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,45.977699,-103.753899,56.0,-62.9,Hell Creek,crevasse splay,Sin clasificar,11749
+458040,45111,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.026402,-103.766899,56.04,-62.88,Hell Creek,"""floodplain""",Continental,11749
+458106,45136,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.381901,-103.964401,56.42,-62.81,Hell Creek,"""channel""",Continental,11749
+458129,45099,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,45.948799,-103.9617,56.03,-63.15,Hell Creek,"""channel""",Continental,11749
+458151,45128,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.406399,-103.939697,56.44,-62.76,Hell Creek,"""channel""",Continental,11749
+458171,14610,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.099998,-103.300003,55.96,-62.3,Hell Creek,crevasse splay,Sin clasificar,11749
+458179,45130,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.381901,-103.964401,56.42,-62.81,Hell Creek,"""channel""",Continental,11749
+458202,45137,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.449799,-104.0233,56.5,-62.82,Hell Creek,"""channel""",Continental,11749
+458253,45144,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.334,-103.897903,56.36,-62.78,Hell Creek,"""channel""",Continental,11749
+459859,45299,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.464298,-104.002403,56.51,-62.79,Hell Creek,"""channel""",Continental,11749
+460440,45381,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.3629,-103.897903,56.38,-62.75,Hell Creek,"""floodplain""",Continental,11749
+462072,45591,Tomistoma tandoni,Tomistoma tandoni,species,41.03,37.71,39.370000000000005,IN,23.652779,68.683334,2.81,68.52,Harudi,marine indet.,Costero o marino,11991
+464407,45844,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,US,41.568298,-108.648598,53.45,-71.64,Lance,terrestrial indet.,Continental,1129
+481323,48077,Tomistoma,Tomistoma,genus,41.03,33.9,37.465,LY,25.75,18.5,15.78,20.63,,marine indet.,Costero o marino,12869
+481962,48159,Megadontosuchus arduini,Megadontosuchus arduini,species,41.03,37.71,39.370000000000005,IT,45.8125,11.289167,36.45,17.37,Orizzonte di Roncà,marine indet.,Costero o marino,12903
+486386,48681,Gavialis,Gavialis,genus,15.98,11.63,13.805,NP,28.200001,82.166664,19.98,82.49,,fluvial-lacustrine indet.,Continental,12990
+486387,48681,Tomistoma,Tomistoma,genus,15.98,11.63,13.805,NP,28.200001,82.166664,19.98,82.49,,fluvial-lacustrine indet.,Continental,12990
+486420,48696,Gavialis,Gavialis,genus,15.98,11.63,13.805,NP,28.200001,82.166664,19.98,82.49,,fluvial-lacustrine indet.,Continental,12990
+486433,48706,Gavialis,Gavialis,genus,15.98,11.63,13.805,NP,28.200001,82.166664,19.98,82.49,,fluvial-lacustrine indet.,Continental,12990
+520631,18554,Thecachampsa sericodon,Thecachampsa sericodon,species,12.5,9.4,10.95,US,29.549999,-82.51667,31.36,-77.8,Alachua,marginal marine indet.,Costero o marino,3581
+533993,55250,Maroccosuchus zennaroi,Maroccosuchus zennaroi,species,56.0,48.07,52.035,MA,32.889999,-6.906667,23.31,-0.23,,shallow subtidal indet.,Sin clasificar,30859
+535316,55396,Thecachampsa antiquus,Thecachampsa antiquus,species,13.82,11.63,12.725000000000001,US,38.541199,-76.730797,40.07,-70.64,Calvert,offshore shelf,Sin clasificar,12189
+535317,55396,Thecachampsa sericodon,Thecachampsa sericodon,species,13.82,11.63,12.725000000000001,US,38.541199,-76.730797,40.07,-70.64,Calvert,offshore shelf,Sin clasificar,12189
+536099,55449,Gavialidae,Gavialidae,family,41.03,33.9,37.465,LY,25.715,18.181944,15.77,20.33,Idam Unit,marine indet.,Costero o marino,46478
+536101,55449,Tomistominae,Tomistominae,unranked clade,41.03,33.9,37.465,LY,25.715,18.181944,15.77,20.33,Idam Unit,marine indet.,Costero o marino,46478
+536858,55600,Gryposuchus neogaeus,Gryposuchus neogaeus,species,8.0,5.0,6.5,AR,-31.483334,-60.233334,-31.26,-58.44,Ituzaingo,marine indet.,Costero o marino,15016
+537541,45469,Thecachampsa sericodon,Thecachampsa sericodon,species,11.63,7.246,9.438,US,27.834999,-81.97139,29.23,-78.58,Peace River,lagoonal,Costero o marino,12596
+544677,57007,Tomistoma,Tomistoma,genus,20.45,15.98,18.215,KE,2.333,35.833,-2.97,35.31,Turkana Grit,wet floodplain,Continental,15377
+544678,57007,Eogavialis andrewsi,Eogavialis andrewsi,species,20.45,15.98,18.215,KE,2.333,35.833,-2.97,35.31,Turkana Grit,wet floodplain,Continental,46598
+545037,13079,Piscogavialis jugaliperforatus,Piscogavialis jugaliperforatus,species,7.246,5.333,6.2895,PE,-15.580833,-74.719719,-15.2,-73.17,Pisco,foreshore,Costero o marino,18990
+557239,57700,Thecachampsa,Thecachampsa,genus,13.82,11.63,12.725000000000001,US,37.927223,-77.514442,39.51,-71.5,Calvert,estuary/bay,Costero o marino,62139
+558115,57916,Thoracosaurus,Thoracosaurus,genus,83.6,66.0,74.8,US,40.259998,-74.27417,40.76,-35.25,Mount Laurel,marginal marine indet.,Costero o marino,1580
+565311,45485,Sacacosuchus cordovai,Sacacosuchus cordovai,species,11.63,7.246,9.438,PE,-15.5,-74.800003,-14.92,-72.58,Pisco,foreshore,Costero o marino,81650
+570367,59839,Gavialidae,Gavialidae,family,7.246,5.333,6.2895,TD,16.241667,17.475,14.7,17.73,,lacustrine indet.,Continental,17171
+571573,57782,Thecachampsa sericodon,Thecachampsa sericodon,species,13.82,11.63,12.725000000000001,US,38.542778,-76.70417,40.07,-70.61,Calvert,coastal indet.,Costero o marino,23900
+593173,18539,Thecachampsa sericodon,Thecachampsa sericodon,species,9.4,4.7,7.050000000000001,US,29.683332,-82.566666,30.96,-79.48,,fluvial indet.,Continental,18119
+598858,63519,Thecachampsa,Thecachampsa,genus,15.98,11.63,13.805,VE,11.995,-70.111115,12.63,-65.89,Socorro,terrestrial indet.,Continental,18258
+608674,65143,Gryposuchus,Gryposuchus,genus,2.58,0.0117,1.29585,BR,-8.891111,-72.808891,-8.82,-72.56,,terrestrial indet.,Continental,18743
+608923,55602,Gavialosuchus,Gavialosuchus,genus,11.63,7.246,9.438,BR,-10.116389,-66.87944,-9.7,-64.57,Solimoes,fluvial-deltaic indet.,Continental,18778
+613757,65960,Eogavialis gavialoides,Eogavialis gavialoides,species,37.71,27.3,32.505,EG,29.641937,30.575405,20.75,31.91,Jebel Qatrani,fluvial indet.,Continental,46727
+624960,67385,Hesperogavialis,Hesperogavialis,genus,11.63,7.246,9.438,BR,-8.175556,-70.484444,-7.68,-68.13,Solimoes,fluvial-lacustrine indet.,Continental,19222
+624964,67385,Gavialidae,Gavialidae,family,11.63,7.246,9.438,BR,-8.175556,-70.484444,-7.68,-68.13,Solimoes,fluvial-lacustrine indet.,Continental,19222
+624991,55602,Gryposuchus jessei,Gryposuchus jessei,species,11.63,7.246,9.438,BR,-10.116389,-66.87944,-9.7,-64.57,Solimoes,fluvial-deltaic indet.,Continental,47640
+624992,55602,Gryposuchus,Gryposuchus,genus,11.63,7.246,9.438,BR,-10.116389,-66.87944,-9.7,-64.57,Solimoes,fluvial-deltaic indet.,Continental,19222
+624993,55602,Hesperogavialis,Hesperogavialis,genus,11.63,7.246,9.438,BR,-10.116389,-66.87944,-9.7,-64.57,Solimoes,fluvial-deltaic indet.,Continental,19222
+624994,55602,Hesperogavialis,Hesperogavialis,genus,11.63,7.246,9.438,BR,-10.116389,-66.87944,-9.7,-64.57,Solimoes,fluvial-deltaic indet.,Continental,19222
+650525,49102,Gavialosuchus,Gavialosuchus,genus,20.45,15.98,18.215,DE,48.351391,9.858333,44.95,12.23,Brackwater Molasse,estuary/bay,Costero o marino,23602
+655657,70808,Tomistoma,Tomistoma,genus,23.04,15.98,19.509999999999998,KE,4.266667,36.599998,-1.21,36.17,Bakate,coarse channel fill,Continental,23745
+656614,43063,Siquisiquesuchus venezuelensis,Siquisiquesuchus venezuelensis,species,20.45,15.98,18.215,VE,10.366667,-70.050003,10.96,-64.5,Castillo,shallow subtidal indet.,Sin clasificar,46522
+663790,18587,Thecachampsa sericodon,Thecachampsa sericodon,species,20.45,15.98,18.215,US,39.299999,-75.199997,41.03,-66.42,Kirkwood,marginal marine indet.,Costero o marino,12635
+666754,71791,Gavialidae,Gavialidae,family,143.1,100.5,121.8,CN,30.609417,108.379868,26.31,123.01,Tzeliuching,terrestrial indet.,Continental,15531
+666755,71792,Gavialidae,Gavialidae,family,143.1,100.5,121.8,CN,29.023127,106.680801,24.2,122.48,Tzeliuching,terrestrial indet.,Continental,15531
+666775,70827,Gavialosuchus antiquus,Gavialosuchus antiquus,species,15.98,13.82,14.9,US,38.530834,-76.516388,40.19,-69.41,Calvert,estuary/bay,Costero o marino,24251
+666785,28368,Thecachampsa antiquus,Thecachampsa antiquus,species,15.98,13.82,14.9,US,38.170555,-76.870834,39.86,-69.82,Calvert,estuary/bay,Costero o marino,23900
+666952,71819,Thecachampsa antiquus,Thecachampsa antiquus,species,13.82,11.63,12.725000000000001,US,38.413891,-76.415558,39.93,-70.33,Choptank,coastal indet.,Costero o marino,23900
+724268,77777,Tomistominae,Tomistominae,unranked clade,22.4,20.0,21.2,PK,29.031111,69.146667,18.45,70.32,,terrestrial indet.,Continental,23349
+724281,77779,Tomistominae,Tomistominae,unranked clade,20.0,16.9,18.45,PK,29.031111,69.146667,19.93,70.34,,terrestrial indet.,Continental,23349
+724282,77779,Tomistominae,Tomistominae,unranked clade,20.0,16.9,18.45,PK,29.031111,69.146667,19.93,70.34,,terrestrial indet.,Continental,23349
+741175,79700,Eogavialis africanum,Eogavialis africanum,species,37.71,33.9,35.805,EG,29.615999,30.691999,19.28,32.18,Qasr el-Sagha,coastal indet.,Costero o marino,26772
+742607,53970,Sutekhsuchus dowsoni,Sutekhsuchus dowsoni,species,16.9,15.98,16.439999999999998,EG,30.381111,28.820278,25.85,29.69,Moghara,marginal marine indet.,Costero o marino,26934
+742608,53970,Gavialis,Gavialis,genus,16.9,15.98,16.439999999999998,EG,30.381111,28.820278,25.85,29.69,Moghara,marginal marine indet.,Costero o marino,26934
+778382,46084,Piscogavialis jugaliperforatus,Piscogavialis jugaliperforatus,species,7.246,5.333,6.2895,PE,-15.551389,-74.799164,-15.17,-73.25,Pisco,paralic indet.,Costero o marino,28038
+820675,45118,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.026402,-103.766899,56.04,-62.88,Hell Creek,"""floodplain""",Continental,11749
+820693,45109,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,46.026402,-103.766899,56.04,-62.88,Hell Creek,"""floodplain""",Continental,11749
+829914,91575,Dollosuchoides densmorei,Dollosuchoides densmorei,species,48.07,41.03,44.55,BE,50.666668,4.45,42.96,10.53,Brussel Sand,coastal indet.,Costero o marino,30859
+842512,93525,Gavialis,Gavialis,genus,3.6,0.774,2.1870000000000003,ID,-4.379722,119.96389,-4.45,120.39,Walane,terrestrial indet.,Continental,31625
+879551,97550,Thecachampsa carolinensis,Thecachampsa carolinensis,species,27.3,23.04,25.17,US,33.02639,-80.26889,35.51,-68.92,Chandler Bridge,shoreface,Costero o marino,46645
+899103,45452,Thecachampsa sericodon,Thecachampsa sericodon,species,11.63,7.246,9.438,US,27.753,-81.980003,29.15,-78.6,Peace River,lagoonal,Costero o marino,46386
+940881,108936,Eothoracosaurus mississippiensis,Eothoracosaurus mississippiensis,species,72.2,66.0,69.1,US,33.433334,-88.883331,39.87,-55.1,Ripley,marine indet.,Costero o marino,34878
+940882,108937,Eothoracosaurus mississippiensis,Eothoracosaurus mississippiensis,species,83.6,66.0,74.8,US,35.616669,-88.116669,40.73,-50.9,Ripley,marine indet.,Costero o marino,34878
+940883,108938,Eothoracosaurus mississippiensis,Eothoracosaurus mississippiensis,species,83.6,66.0,74.8,US,35.383331,-88.400002,40.6,-51.3,Ripley,marine indet.,Costero o marino,34878
+965509,113770,Eosuchus lerichei,Eosuchus lerichei,species,59.24,56.0,57.620000000000005,FR,50.299999,4.1,40.24,11.58,Hannut,marine indet.,Costero o marino,36954
+966674,114103,Ocepesuchus eoafricanus,Ocepesuchus eoafricanus,species,72.2,66.0,69.1,MA,32.883331,-6.633333,21.07,2.19,,marine indet.,Costero o marino,37012
+966676,114104,Argochampsa krebsi,Argochampsa krebsi,species,66.0,61.66,63.83,MA,32.866669,-6.566667,21.34,1.53,,marine indet.,Costero o marino,37014
+966679,114105,Argochampsa krebsi,Argochampsa krebsi,species,66.0,61.66,63.83,MA,32.866669,-6.566667,21.34,1.53,,marine indet.,Costero o marino,37014
+966807,114149,Argochampsa krebsi,Argochampsa krebsi,species,66.0,56.0,61.0,MA,32.916668,-6.633333,21.62,0.94,Couche II,marine indet.,Costero o marino,23621
+966808,65181,Gavialosuchus eggenburgensis,Gavialosuchus eggenburgensis,species,20.45,15.98,18.215,AT,48.643055,15.810833,45.09,17.82,Burgeschleinitz,marine indet.,Costero o marino,50050
+968921,114766,Dolichochampsa minima,Dolichochampsa minima,species,72.2,66.0,69.1,AR,-25.383333,-65.949997,-26.26,-49.37,Yacoraite,marine indet.,Costero o marino,37194
+968924,114767,Dolichochampsa minima,Dolichochampsa minima,species,72.2,66.0,69.1,AR,-24.35,-66.25,-25.19,-49.44,Yacoraite,marine indet.,Costero o marino,37194
+969892,114971,Dolichochampsa minima,Dolichochampsa minima,species,72.2,66.0,69.1,BO,-19.518888,-65.813057,-20.44,-47.64,El Molino,marine indet.,Costero o marino,37227
+970602,15074,Thoracosaurus,Thoracosaurus,genus,57.5,56.0,56.75,US,33.433334,-80.099998,35.38,-53.66,Williamsburg,coastal indet.,Costero o marino,37282
+970618,115148,Thoracosaurus,Thoracosaurus,genus,66.0,61.66,63.83,US,33.671112,-79.828613,36.4,-48.54,Rhems,marginal marine indet.,Costero o marino,37282
+970625,115152,Thoracosaurus,Thoracosaurus,genus,66.0,61.66,63.83,US,33.671112,-79.828613,36.4,-48.54,Rhems,marginal marine indet.,Costero o marino,37282
+985438,118194,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,FR,43.205952,0.958117,31.39,9.78,Marnes d'Auzas,paralic indet.,Costero o marino,76284
+1010755,86755,Thoracosaurus borissiaki,Thoracosaurus borissiaki,species,72.2,66.0,69.1,UA,44.599998,33.599998,30.79,37.17,,marine indet.,Costero o marino,39421
+1010756,92329,Gavialoidea,Gavialoidea,superfamily,83.6,72.2,77.9,RU,52.466702,44.9333,40.25,47.6,Rybushka,marine indet.,Costero o marino,39421
+1011254,90576,Thoracosaurus isorhynchus,Thoracosaurus isorhynchus,species,66.0,61.66,63.83,SE,55.566666,12.933333,43.63,20.46,København Limestone,deep subtidal shelf,Sin clasificar,37219
+1011257,90778,Thoracosaurus isorhynchus,Thoracosaurus isorhynchus,species,72.2,66.0,69.1,NL,50.833332,5.683333,38.43,15.09,Maastrichter Tuffkreide,marine indet.,Costero o marino,37219
+1011382,123511,Eosuchus minor,Eosuchus minor,species,59.24,56.0,57.620000000000005,US,39.259998,-74.599998,39.44,-44.76,Vincentown,coastal indet.,Costero o marino,34880
+1011383,123512,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,59.24,56.0,57.620000000000005,US,39.933887,-74.748611,40.11,-44.59,Vincentown,coastal indet.,Costero o marino,34880
+1011384,123513,Eosuchus minor,Eosuchus minor,species,56.0,48.07,52.035,US,40.0,-74.0,40.15,-47.77,Manasquan,coastal indet.,Costero o marino,71009
+1011385,123514,Eosuchus minor,Eosuchus minor,species,59.24,56.0,57.620000000000005,US,38.701111,-76.986946,39.55,-47.26,Aquia,marine indet.,Costero o marino,34880
+1011386,123515,Eosuchus minor,Eosuchus minor,species,59.24,56.0,57.620000000000005,US,38.400002,-77.300003,39.35,-47.69,Aquia,marine indet.,Costero o marino,34880
+1013119,120885,Tomistominae,Tomistominae,unranked clade,48.07,41.03,44.55,UA,49.528332,39.066387,41.64,40.43,Buchak,marine indet.,Costero o marino,39895
+1020240,124905,Paratomistoma courtii,Paratomistoma courtii,species,41.03,37.71,39.370000000000005,EG,29.305555,30.059168,17.86,31.69,Gehannam,coastal indet.,Costero o marino,40452
+1020564,124938,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,61.66,66.93,US,39.805,-75.085831,40.92,-39.73,Hornerstown,marine indet.,Costero o marino,54671
+1021299,125091,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,59.24,56.0,57.620000000000005,US,39.878334,-75.085281,40.19,-45.59,Vincentown,marine indet.,Costero o marino,40566
+1021300,125091,Gavialoidea,Gavialoidea,superfamily,59.24,56.0,57.620000000000005,US,39.878334,-75.085281,40.19,-45.59,Vincentown,marine indet.,Costero o marino,40566
+1035391,84045,Thecachampsa marylandica,Thecachampsa marylandica,species,59.24,56.0,57.620000000000005,US,38.417999,-77.264999,39.36,-47.65,Aquia,transition zone/lower shoreface,Costero o marino,41194
+1035396,126866,Thecachampsa marylandica,Thecachampsa marylandica,species,56.0,48.07,52.035,US,38.815834,-76.749725,39.65,-50.87,Nanjemoy,marine indet.,Costero o marino,41194
+1038707,124191,Thecachampsa,Thecachampsa,genus,59.24,56.0,57.620000000000005,US,38.46389,-77.269165,39.4,-47.64,Aquia,marine indet.,Costero o marino,41356
+1038708,84045,Thecachampsa sericodon,Thecachampsa sericodon,species,59.24,56.0,57.620000000000005,US,38.417999,-77.264999,39.36,-47.65,Aquia,transition zone/lower shoreface,Costero o marino,41356
+1038709,84048,Thecachampsa antiquus,Thecachampsa antiquus,species,59.24,56.0,57.620000000000005,US,38.50111,-77.590836,39.54,-48.57,Aquia,marine indet.,Costero o marino,41356
+1038739,127182,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,100.5,66.0,83.25,US,39.110001,-76.540276,39.88,-36.13,Matawan,marine indet.,Costero o marino,41363
+1094078,136717,Ikanogavialis,Ikanogavialis,genus,11.63,7.246,9.438,BR,-10.133889,-67.813614,-9.7,-65.5,Solimões,fluvial-lacustrine indet.,Continental,44102
+1123374,142340,Thoracosaurus,Thoracosaurus,genus,66.0,61.66,63.83,PL,51.316666,21.950001,39.08,27.27,,marginal marine indet.,Costero o marino,46217
+1127364,143057,Aktiogavialis puertoricensis,Aktiogavialis puertoricensis,species,27.3,23.04,25.17,PR,18.356943,-66.995003,19.38,-61.51,San Sebastián,deltaic indet.,Sin clasificar,46382
+1127595,18550,Thecachampsa antiquus,Thecachampsa antiquus,species,3.6,2.58,3.09,US,35.400002,-76.800003,35.82,-75.51,Yorktown,terrestrial indet.,Continental,18134
+1129948,143464,Penghusuchus pani,Penghusuchus pani,species,11.63,5.333,8.4815,TW,23.571667,119.495003,23.39,118.94,Yuwentao,terrestrial indet.,Continental,46480
+1129953,13065,Sutekhsuchus dowsoni,Sutekhsuchus dowsoni,species,20.45,15.98,18.215,LY,28.0,20.5,22.67,21.83,Maradah,marine indet.,Costero o marino,46482
+1129954,13065,Sutekhsuchus dowsoni,Sutekhsuchus dowsoni,species,20.45,15.98,18.215,LY,28.0,20.5,22.67,21.83,Maradah,marine indet.,Costero o marino,89545
+1129957,13065,Gavialidae,Gavialidae,family,20.45,15.98,18.215,LY,28.0,20.5,22.67,21.83,Maradah,marine indet.,Costero o marino,46482
+1129993,143472,Gavialosuchus,Gavialosuchus,genus,15.98,11.63,13.805,FR,43.532223,0.845556,41.16,2.85,,fluvial indet.,Continental,46485
+1130064,143487,Kentisuchus spenceri,Kentisuchus spenceri,species,56.0,48.07,52.035,UK,51.400002,0.833333,42.57,8.27,London Clay,marine indet.,Costero o marino,30859
+1130155,143515,Tomistoma,Tomistoma,genus,27.3,23.04,25.17,FR,43.688057,-1.228056,39.44,2.54,,coastal indet.,Costero o marino,46500
+1130158,143518,Hesperogavialis cruxenti,Hesperogavialis cruxenti,species,11.63,5.333,8.4815,VE,11.383056,-69.928055,11.77,-67.33,Urumaco,terrestrial indet.,Continental,46502
+1130180,143321,Gryposuchus croizati,Gryposuchus croizati,species,11.63,5.333,8.4815,VE,11.2175,-70.235001,11.61,-67.64,Urumaco,fluvial-deltaic indet.,Continental,46508
+1130181,63520,Gryposuchus croizati,Gryposuchus croizati,species,11.63,5.333,8.4815,VE,11.249167,-70.269447,11.64,-67.68,Urumaco,terrestrial indet.,Continental,46508
+1130182,136776,Gryposuchus croizati,Gryposuchus croizati,species,11.63,5.333,8.4815,VE,11.241944,-70.311111,11.63,-67.72,Urumaco,fluvial-deltaic indet.,Continental,46508
+1130192,143552,Toyotamaphimeia machikanensis,Toyotamaphimeia machikanensis,species,0.774,0.129,0.4515,JP,34.819168,135.526672,,,Ibaraki,mire/swamp,Continental,46512
+1130242,143603,Siquisiquesuchus venezuelensis,Siquisiquesuchus venezuelensis,species,20.45,15.98,18.215,VE,10.569167,-69.699997,11.15,-64.14,Castillo,shallow subtidal indet.,Sin clasificar,46522
+1130493,78233,Kentisuchus astrei,Kentisuchus astrei,species,56.0,37.71,46.855000000000004,FR,43.3675,1.990278,35.79,7.75,Sables du Castrais,"""channel""",Continental,59233
+1130498,78249,Tomistominae,Tomistominae,unranked clade,41.03,37.71,39.370000000000005,FR,43.272778,2.519722,36.58,7.53,,fluvial indet.,Continental,46532
+1130635,133440,Gavialidae,Gavialidae,family,23.04,15.98,19.509999999999998,CO,3.783333,-75.183334,4.57,-69.22,Barzalosa,terrestrial indet.,Continental,46538
+1130649,143780,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,CO,3.783333,-75.183334,4.57,-71.57,,terrestrial indet.,Continental,46538
+1130679,143781,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,CO,3.783333,-75.183334,4.57,-71.57,,terrestrial indet.,Continental,46538
+1130743,143784,Gavialidae,Gavialidae,family,13.8,11.0,12.4,CO,3.2,-75.199997,3.99,-71.6,,terrestrial indet.,Continental,46538
+1130756,133692,Rhamphostomopsis,Rhamphostomopsis,genus,13.8,11.0,12.4,CO,3.2425,-75.176941,4.03,-71.57,Villavieja,terrestrial indet.,Continental,46538
+1130770,140051,Rhamphostomopsis,Rhamphostomopsis,genus,13.8,11.0,12.4,CO,3.316667,-75.133331,4.1,-71.53,Villavieja,terrestrial indet.,Continental,46538
+1131108,58454,Gavialoidea,Gavialoidea,superfamily,15.98,11.63,13.805,BR,-0.601389,-47.313332,-0.72,-43.51,Pirabas,shallow subtidal indet.,Sin clasificar,46552
+1131109,65163,Gavialoidea,Gavialoidea,superfamily,23.04,15.98,19.509999999999998,BR,-1.196389,-47.170277,-1.59,-41.44,Pirabas,coastal indet.,Costero o marino,46552
+1131110,65162,Gavialoidea,Gavialoidea,superfamily,23.04,15.98,19.509999999999998,BR,-0.48,-48.170555,-0.83,-42.41,Pirabas,coastal indet.,Costero o marino,46552
+1131111,76844,Toyotamaphimeia taiwanicus,Toyotamaphimeia taiwanicus,species,0.774,0.129,0.4515,TW,23.048889,120.407219,23.01,120.29,,marine indet.,Costero o marino,46553
+1131112,143884,Toyotamaphimeia machikanensis,Toyotamaphimeia machikanensis,species,0.774,0.129,0.4515,JP,34.440121,135.389587,,,Senpoku,terrestrial indet.,Continental,65770
+1131113,143885,Gavialis bengawanicus,Gavialis bengawanicus,species,0.774,0.129,0.4515,TH,15.040278,102.090553,,,,alluvial fan,Sin clasificar,46555
+1132117,144065,Maomingosuchus petrolica,Maomingosuchus petrolica,species,37.71,33.9,35.805,CN,21.65,110.916664,20.35,112.96,,terrestrial indet.,Continental,46579
+1132154,144099,Gavialis browni,Gavialis browni,species,11.63,5.333,8.4815,PK,32.833332,73.216667,28.57,74.4,Siwaliks,terrestrial indet.,Continental,46592
+1132272,93521,Gavialis bengawanicus,Gavialis bengawanicus,species,1.8,0.129,0.9645,ID,-7.366667,111.349998,,,,terrestrial indet.,Continental,46603
+1132274,93522,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.774,1.677,ID,-7.411667,111.660835,-7.6,112.13,,terrestrial indet.,Continental,46603
+1132276,144105,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.774,1.677,ID,-7.366667,111.349998,-7.56,111.82,,terrestrial indet.,Continental,46603
+1132278,144106,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.129,1.3545,ID,-7.411667,111.660835,-7.51,111.9,,terrestrial indet.,Continental,46603
+1132279,144107,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.774,1.677,ID,-7.366667,111.349998,-7.56,111.82,,terrestrial indet.,Continental,46603
+1132280,144108,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.774,1.677,ID,-7.366667,111.349998,-7.56,111.82,,terrestrial indet.,Continental,46603
+1132281,144109,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.774,1.677,ID,-7.366667,111.349998,-7.56,111.82,,terrestrial indet.,Continental,46603
+1132290,144119,Gavialis bengawanicus,Gavialis bengawanicus,species,2.58,0.774,1.677,ID,-7.366667,111.349998,-7.56,111.82,,terrestrial indet.,Continental,46603
+1132785,144176,Ikanogavialis,Ikanogavialis,genus,11.63,5.333,8.4815,AE,24.156944,53.008888,20.63,52.2,Baynunah,fluvial-lacustrine indet.,Continental,46619
+1132786,144176,Gavialidae,Gavialidae,family,11.63,5.333,8.4815,AE,24.156944,53.008888,20.63,52.2,Baynunah,fluvial-lacustrine indet.,Continental,46619
+1132847,144187,Gavialis,Gavialis,genus,11.63,5.333,8.4815,TH,15.008611,102.242775,13.38,102.75,,alluvial fan,Sin clasificar,46623
+1132904,144200,Thecachampsa sericodon,Thecachampsa sericodon,species,11.63,3.6,7.615,US,29.648331,-82.349442,30.91,-79.26,Peace River,terrestrial indet.,Continental,46627
+1132924,144202,Thecachampsa sericodon,Thecachampsa sericodon,species,11.63,3.6,7.615,US,29.683332,-82.366669,30.95,-79.28,Peace River,terrestrial indet.,Continental,46627
+1132928,79757,Thecachampsa sericodon,Thecachampsa sericodon,species,0.21,0.014,0.112,US,32.479443,-80.334724,,,,marine indet.,Costero o marino,46627
+1132929,144203,Thecachampsa carolinensis,Thecachampsa carolinensis,species,27.3,23.04,25.17,US,32.636944,-80.0,35.09,-68.71,,terrestrial indet.,Continental,46645
+1133253,144260,Thecachampsa carolinensis,Thecachampsa carolinensis,species,27.3,23.04,25.17,US,32.866669,-80.033333,35.33,-68.7,Chandler Bridge,terrestrial indet.,Continental,46645
+1133254,60443,Thecachampsa carolinensis,Thecachampsa carolinensis,species,27.3,23.04,25.17,US,33.008186,-80.057541,35.47,-68.7,Chandler Bridge,lagoonal/restricted shallow subtidal,Costero o marino,46645
+1133265,144261,Thecachampsa carolinensis,Thecachampsa carolinensis,species,33.9,27.3,30.6,US,32.974167,-80.197777,35.45,-66.69,Ashley,terrestrial indet.,Continental,46645
+1133270,144262,Thecachampsa carolinensis,Thecachampsa carolinensis,species,27.3,23.04,25.17,US,33.009445,-80.105553,35.48,-68.75,Chandler Bridge,terrestrial indet.,Continental,46645
+1133271,144263,Thecachampsa carolinensis,Thecachampsa carolinensis,species,27.3,23.04,25.17,US,32.636944,-80.0,35.09,-68.71,,terrestrial indet.,Continental,46645
+1134814,107992,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,PE,-10.395,-73.008888,-9.67,-69.81,,lacustrine - large,Continental,46725
+1134822,52504,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,83.6,66.0,74.8,US,39.739281,-75.224075,40.58,-36.4,,terrestrial indet.,Continental,46726
+1134823,88034,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,US,40.116669,-74.550003,41.28,-37.71,Hornerstown,marginal marine indet.,Costero o marino,46726
+1134824,83938,Tomistoma kerunense,Tomistoma kerunense,species,37.71,33.9,35.805,EG,29.27,30.200001,18.97,31.7,Birket Qarun,coastal indet.,Costero o marino,46727
+1134855,13626,Rhamphostomopsis neogaeus,Rhamphostomopsis neogaeus,species,11.63,7.246,9.438,AR,-33.716667,-59.25,-33.45,-57.55,Entre Rios,marginal marine indet.,Costero o marino,46739
+1134857,13626,Rhamphostomopsis neogaeus,Rhamphostomopsis neogaeus,species,11.63,7.246,9.438,AR,-33.716667,-59.25,-33.45,-57.55,Entre Rios,marginal marine indet.,Costero o marino,46739
+1134972,144554,Tomistominae,Tomistominae,unranked clade,20.45,5.333,12.8915,IT,40.145279,18.193333,36.76,19.74,Pietra Leccese,carbonate indet.,Costero o marino,46758
+1134973,49403,Tomistominae,Tomistominae,unranked clade,11.63,7.246,9.438,IT,40.15889,18.293056,37.82,19.39,Pietra Leccese,carbonate indet.,Costero o marino,46758
+1134982,118406,Melitosaurus champsoides,Melitosaurus champsoides,species,20.45,15.98,18.215,MT,36.049442,14.266389,,,Globigerina Limestone,carbonate indet.,Costero o marino,46803
+1135257,144596,Thecachampsa sericodon,Thecachampsa sericodon,species,7.246,5.333,6.2895,CR,8.8554,-83.081001,10.1,-81.56,Curré,deltaic indet.,Sin clasificar,46789
+1136173,144788,Tomistominae,Tomistominae,unranked clade,20.45,15.98,18.215,DE,47.766666,9.158333,44.38,11.54,,marine indet.,Costero o marino,75100
+1144033,22368,Tomistoma coppensi,Tomistoma coppensi,species,11.63,3.6,7.615,UG,1.5,31.0,-0.86,30.78,Nkondo/Warwire,lacustrine indet.,Continental,47091
+1144034,145619,Tomistoma coppensi,Tomistoma coppensi,species,5.333,2.58,3.9565,UG,1.5,31.0,0.32,30.9,Warwire,lacustrine indet.,Continental,47091
+1144035,145620,Tomistoma coppensi,Tomistoma coppensi,species,11.63,2.58,7.105,UG,1.5,31.0,-0.56,30.81,Nkondo,lacustrine indet.,Continental,47091
+1144036,145621,Tomistoma coppensi,Tomistoma coppensi,species,11.63,3.6,7.615,UG,1.5,31.0,-0.86,30.78,Nkondo,lacustrine indet.,Continental,47091
+1144037,145622,Tomistoma coppensi,Tomistoma coppensi,species,5.333,2.58,3.9565,UG,1.5,31.0,0.32,30.9,Hohwa Beds,lacustrine indet.,Continental,47091
+1153276,147463,Hesperogavialis cruxenti,Hesperogavialis cruxenti,species,11.63,5.333,8.4815,VE,11.183333,-70.283333,11.57,-67.69,Urumaco,terrestrial indet.,Continental,47517
+1153280,147463,Ikanogavialis gameroi,Ikanogavialis gameroi,species,11.63,5.333,8.4815,VE,11.183333,-70.283333,11.57,-67.69,Urumaco,terrestrial indet.,Continental,47517
+1153281,147464,Gryposuchus pachakamue,Gryposuchus pachakamue,species,11.63,5.333,8.4815,VE,11.223611,-70.247223,11.61,-67.66,Urumaco,terrestrial indet.,Continental,59222
+1153282,147464,Hesperogavialis cruxenti,Hesperogavialis cruxenti,species,11.63,5.333,8.4815,VE,11.223611,-70.247223,11.61,-67.66,Urumaco,terrestrial indet.,Continental,47517
+1153284,136777,Gryposuchus croizati,Gryposuchus croizati,species,11.63,7.246,9.438,VE,11.2175,-70.235001,11.7,-67.48,Urumaco,fluvial-deltaic indet.,Continental,47517
+1153292,147465,Gryposuchus,Gryposuchus,genus,11.63,5.333,8.4815,VE,11.247778,-70.235001,11.64,-67.64,Urumaco,terrestrial indet.,Continental,47517
+1153297,63520,Gryposuchus jessei,Gryposuchus jessei,species,11.63,5.333,8.4815,VE,11.249167,-70.269447,11.64,-67.68,Urumaco,terrestrial indet.,Continental,47517
+1153301,136776,Ikanogavialis gameroi,Ikanogavialis gameroi,species,11.63,5.333,8.4815,VE,11.241944,-70.311111,11.63,-67.72,Urumaco,fluvial-deltaic indet.,Continental,47637
+1153303,147466,Thecachampsa,Thecachampsa,genus,15.98,11.63,13.805,VE,11.191667,-70.150002,11.82,-65.96,Socorro,terrestrial indet.,Continental,47517
+1153306,147466,Ikanogavialis gameroi,Ikanogavialis gameroi,species,15.98,11.63,13.805,VE,11.191667,-70.150002,11.82,-65.96,Socorro,terrestrial indet.,Continental,47517
+1156712,148384,Gavialidae,Gavialidae,family,23.04,15.98,19.509999999999998,IN,23.372223,68.703613,13.38,68.99,Vinjhan Shale,marine indet.,Costero o marino,47632
+1156718,148388,Gavialis,Gavialis,genus,20.45,15.98,18.215,PK,26.866667,67.316666,18.02,68.32,Gaj,fluvial-deltaic indet.,Continental,47636
+1156740,35986,Gavialosuchus americana lusitanica,Gavialosuchus americana lusitanica,subspecies,15.98,13.82,14.9,PT,38.716667,-9.116667,36.51,-6.9,,terrestrial indet.,Continental,47646
+1190811,153763,Harpacochampsa camfieldensis,Harpacochampsa camfieldensis,species,15.98,11.63,13.805,AU,-17.056944,131.555283,-25.84,131.14,Camfield Beds,fluvial-lacustrine indet.,Continental,49815
+1190860,153775,Tomistoma brumpti,Tomistoma brumpti,species,5.333,0.0117,2.6723500000000002,ET,5.0072,35.994999,4.12,35.91,,fluvial indet.,Continental,49829
+1190955,13739,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,CO,3.3,-75.133331,4.09,-71.53,La Victoria,fluvial indet.,Continental,49846
+1190956,13758,Gryposuchus colombianus,Gryposuchus colombianus,species,15.98,11.63,13.805,CO,3.3,-75.116669,4.09,-71.18,,terrestrial indet.,Continental,49846
+1190957,153822,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,CO,3.3,-75.166664,4.09,-71.56,La Victoria,terrestrial indet.,Continental,49846
+1190959,153823,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,CO,3.3,-75.166664,4.09,-71.56,Villavieja,terrestrial indet.,Continental,49846
+1190960,153824,Gryposuchus colombianus,Gryposuchus colombianus,species,13.8,11.0,12.4,CO,3.3,-75.166664,4.09,-71.56,Villavieja,terrestrial indet.,Continental,49846
+1193134,65943,Tomistoma lusitanica,Tomistoma lusitanica,species,11.63,7.246,9.438,PT,38.674999,-9.154722,37.41,-7.84,,marine indet.,Costero o marino,49992
+1193268,154221,Thecachampsa sericodon,Thecachampsa sericodon,species,9.4,4.7,7.050000000000001,US,29.683332,-82.566666,30.96,-79.48,,marginal marine indet.,Costero o marino,50053
+1200115,155253,Tomistoma lusitanica,Tomistoma lusitanica,species,20.45,15.98,18.215,ES,39.920834,3.057778,,,Calcarenites of Sant Elm,coastal indet.,Costero o marino,50623
+1216963,158991,Maroccosuchus zennaroi,Maroccosuchus zennaroi,species,56.0,48.07,52.035,MA,32.716667,6.783333,20.63,11.83,Couche I,marine indet.,Costero o marino,52023
+1227251,161374,Thecachampsa sericodon,Thecachampsa sericodon,species,12.5,9.4,10.95,US,30.4,-83.0,32.23,-78.23,Statenville,marine indet.,Costero o marino,52569
+1227292,161377,Gavialosuchus,Gavialosuchus,genus,12.5,9.4,10.95,US,30.4,-83.0,32.23,-78.23,Statenville,marine indet.,Costero o marino,52569
+1255663,166506,Gavialidae,Gavialidae,family,20.45,15.98,18.215,CO,11.948889,-71.271385,12.59,-65.66,Castilletes,terrestrial indet.,Continental,54378
+1255692,166507,Gavialidae,Gavialidae,family,23.04,15.98,19.509999999999998,CO,11.932778,-71.359444,12.56,-65.05,Jimol,marine indet.,Costero o marino,54378
+1256735,166767,Gryposuchus pachakamue,Gryposuchus pachakamue,species,15.98,11.63,13.805,PE,-3.989444,-73.166389,-3.25,-69.45,Pebas,lacustrine - large,Continental,59222
+1256742,166768,Gryposuchus pachakamue,Gryposuchus pachakamue,species,15.98,11.63,13.805,PE,-4.0075,-73.154724,-3.27,-69.44,Pebas,lacustrine - large,Continental,59222
+1256746,166769,Gryposuchus pachakamue,Gryposuchus pachakamue,species,15.98,11.63,13.805,PE,-4.011667,-73.366943,-3.27,-69.66,Pebas,lacustrine - large,Continental,59222
+1256750,166770,Gryposuchus,Gryposuchus,genus,13.82,11.63,12.725000000000001,PE,-4.305,-73.458336,-3.56,-70.08,Pebas,wet floodplain,Continental,54473
+1259284,167230,Maomingosuchus petrolica,Maomingosuchus petrolica,species,48.07,37.71,42.89,CN,21.700001,110.883331,20.36,113.53,Youganwo,lacustrine - large,Continental,54564
+1260987,88034,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,40.116669,-74.550003,41.28,-37.71,Hornerstown,marginal marine indet.,Costero o marino,46726
+1260999,167531,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,US,40.146942,-74.721947,41.36,-37.85,Hornerstown,marginal marine indet.,Costero o marino,54671
+1263221,87902,Gavialoidea,Gavialoidea,superfamily,72.2,66.0,69.1,US,39.972858,-74.67701,41.19,-37.91,Hornerstown,marginal marine indet.,Costero o marino,54671
+1263224,167780,Holops glyptodon,Holops glyptodon,species,72.2,66.0,69.1,US,39.761665,-75.160004,41.16,-38.47,Hornerstown,marginal marine indet.,Costero o marino,54671
+1263225,167780,Gavialoidea,Gavialoidea,superfamily,72.2,66.0,69.1,US,39.761665,-75.160004,41.16,-38.47,Hornerstown,marginal marine indet.,Costero o marino,54671
+1263266,129264,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,40.304169,-74.100555,41.3,-37.19,Hornerstown,marine indet.,Costero o marino,54671
+1312212,144474,Gavialoidea,Gavialoidea,superfamily,37.71,27.3,32.505,PE,-7.330556,-74.947502,-7.91,-62.15,Pozo,terrestrial indet.,Continental,57830
+1312277,176129,Gavialoidea,Gavialoidea,superfamily,33.9,23.04,28.47,PE,-7.32859,-74.945557,-7.91,-62.15,Pozo,fluvial indet.,Continental,57830
+1312317,176130,Gavialoidea,Gavialoidea,superfamily,27.3,23.04,25.17,PE,-7.32374,-74.932838,-6.77,-67.53,Chambira,fluvial-lacustrine indet.,Continental,57830
+1312345,176148,Gavialoidea,Gavialoidea,superfamily,27.3,23.04,25.17,PE,-7.35335,-74.955727,-6.8,-67.55,Chambira,fluvial indet.,Continental,57830
+1312359,176147,Gavialoidea,Gavialoidea,superfamily,27.3,23.04,25.17,PE,-7.35448,-74.953659,-6.8,-67.55,Chambira,"""channel""",Continental,57830
+1312412,176149,Gavialoidea,Gavialoidea,superfamily,21.0,17.5,19.25,PE,-7.36053,-74.955513,-6.57,-69.77,Pebas,lacustrine indet.,Continental,57830
+1312433,176127,Gavialoidea,Gavialoidea,superfamily,23.04,11.63,17.335,PE,-7.36361,-74.957077,-6.57,-70.4,Pebas,fluvial indet.,Continental,57830
+1312447,176135,Gavialoidea,Gavialoidea,superfamily,15.98,11.63,13.805,PE,-7.36388,-74.957077,-6.57,-71.35,Pebas,coastal indet.,Costero o marino,57830
+1312544,176162,Gavialidae,Gavialidae,family,11.63,7.246,9.438,PE,-7.36415,-74.958328,-6.78,-72.58,Pebas,coastal indet.,Costero o marino,57830
+1312578,176133,Gavialoidea,Gavialoidea,superfamily,11.63,7.246,9.438,PE,-7.36497,-74.957932,-6.78,-72.58,Pebas,coastal indet.,Costero o marino,57830
+1312604,176143,Gavialoidea,Gavialoidea,superfamily,13.82,7.246,10.533000000000001,PE,-7.36191,-74.961113,-6.6,-72.3,Pebas,fluvial indet.,Continental,57830
+1312610,176128,Gavialoidea,Gavialoidea,superfamily,11.63,7.246,9.438,PE,-7.36538,-74.958122,-6.78,-72.58,Pebas,fluvial indet.,Continental,57830
+1312626,176156,Gavialoidea,Gavialoidea,superfamily,11.63,7.246,9.438,PE,-7.36596,-74.958549,-6.6,-72.3,Pebas,fluvial indet.,Continental,57830
+1312634,176132,Gavialoidea,Gavialoidea,superfamily,11.63,2.58,7.105,PE,-7.36743,-74.96035,-6.94,-72.99,Ipururo,fluvial indet.,Continental,57830
+1317143,176824,Gavialoidea,Gavialoidea,superfamily,20.45,15.98,18.215,CO,12.0,-71.033333,12.63,-65.42,Jimol,marine indet.,Costero o marino,58353
+1317144,176825,Gavialoidea,Gavialoidea,superfamily,23.04,11.63,17.335,CO,12.0,-71.033333,12.64,-65.77,Castilletes,marginal marine indet.,Costero o marino,58353
+1317145,176826,Gavialoidea,Gavialoidea,superfamily,20.45,15.98,18.215,CO,11.9465,-71.3255,12.59,-65.71,Castilletes,fluvial-deltaic indet.,Continental,58353
+1317496,176936,Gavialosuchus,Gavialosuchus,genus,18.5,16.3,17.4,US,29.9,-82.900002,32.36,-75.53,Marks Head,terrestrial indet.,Continental,58392
+1317560,175334,Tomistominae,Tomistominae,unranked clade,33.9,27.3,30.6,OM,17.0,53.0,4.47,49.96,Ashawaq,marginal marine indet.,Costero o marino,52911
+1329768,179000,Gryposuchus pachakamue,Gryposuchus pachakamue,species,15.98,11.63,13.805,PE,-4.011667,-73.366943,-3.27,-69.66,Pebas,lacustrine - large,Continental,59222
+1329769,179001,Gryposuchus pachakamue,Gryposuchus pachakamue,species,15.98,11.63,13.805,PE,-4.011667,-73.033333,-3.28,-69.32,Pebas,lacustrine - large,Continental,59222
+1333631,18560,Thecachampsa sericodon,Thecachampsa sericodon,species,9.4,4.7,7.050000000000001,US,29.65,-82.599998,30.92,-79.51,Alachua,terrestrial indet.,Continental,59567
+1338378,180692,Tomistoma,Tomistoma,genus,0.774,0.129,0.4515,CN,32.900002,119.800003,,,,terrestrial indet.,Continental,59999
+1348062,182641,Kentisuchus spenceri,Kentisuchus spenceri,species,56.0,48.07,52.035,FR,43.332222,2.036667,34.46,8.53,,fluvial-lacustrine indet.,Continental,60846
+1350123,183010,Gavialoidea,Gavialoidea,superfamily,11.63,5.333,8.4815,VE,11.183333,-70.283333,11.57,-67.69,Urumaco,terrestrial indet.,Continental,61076
+1353555,83331,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,38.96389,-76.708336,40.96,-39.74,Severn,marine indet.,Costero o marino,40545
+1354889,183918,Piscogavialis jugaliperforatus,Piscogavialis jugaliperforatus,species,11.63,7.246,9.438,PE,-15.480556,-74.804726,-14.9,-72.59,Pisco,marine indet.,Costero o marino,61392
+1361767,57700,Thecachampsa antiquus,Thecachampsa antiquus,species,13.82,11.63,12.725000000000001,US,37.927223,-77.514442,39.51,-71.5,Calvert,estuary/bay,Costero o marino,62139
+1372044,79793,Thecachampsa sericodon,Thecachampsa sericodon,species,15.98,13.82,14.9,US,38.163334,-76.83139,39.85,-69.78,Calvert,marine indet.,Costero o marino,62831
+1372090,187324,Thecachampsa antiquus,Thecachampsa antiquus,species,13.82,11.63,12.725000000000001,US,38.163334,-76.83139,39.7,-70.78,Calvert,marine indet.,Costero o marino,62831
+1372091,187324,Thecachampsa sericodon,Thecachampsa sericodon,species,13.82,11.63,12.725000000000001,US,38.163334,-76.83139,39.7,-70.78,Calvert,marine indet.,Costero o marino,62831
+1372137,126605,Thecachampsa antiquus,Thecachampsa antiquus,species,13.82,11.63,12.725000000000001,US,38.163334,-76.83139,39.7,-70.78,Choptank,marine indet.,Costero o marino,62831
+1374037,187580,Tomistoma lusitanica,Tomistoma lusitanica,species,20.45,7.246,13.847999999999999,FR,47.325832,0.328056,44.96,2.58,,marine indet.,Costero o marino,62965
+1374038,187580,Gavialis,Gavialis,genus,20.45,7.246,13.847999999999999,FR,47.325832,0.328056,44.96,2.58,,marine indet.,Costero o marino,62965
+1374151,187583,Tomistominae,Tomistominae,unranked clade,11.63,7.246,9.438,PA,9.2124,-79.593597,,,Alajuela,marine indet.,Costero o marino,62967
+1382175,87902,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,72.2,66.0,69.1,US,39.972858,-74.67701,41.19,-37.91,Hornerstown,marginal marine indet.,Costero o marino,58984
+1382188,52504,Holops glyptodon,Holops glyptodon,species,83.6,66.0,74.8,US,39.739281,-75.224075,40.58,-36.4,,terrestrial indet.,Continental,35435
+1382273,189440,Gryposuchus,Gryposuchus,genus,20.45,15.98,18.215,VE,10.366667,-70.050003,10.96,-64.5,Castillo,marginal marine indet.,Costero o marino,63644
+1385169,190041,Tomistoma schlegelii,Tomistoma schlegelii,species,33.9,0.0,16.95,ID,0.813056,109.467781,-0.46,113.9,,open shallow subtidal,Sin clasificar,63899
+1403462,193667,Toyotamaphimeia,Toyotamaphimeia,genus,3.6,2.58,3.09,JP,33.531971,131.349548,33.36,130.78,Tsubusagawa,terrestrial indet.,Continental,65770
+1404977,189440,Siquisiquesuchus,Siquisiquesuchus,genus,20.45,15.98,18.215,VE,10.366667,-70.050003,10.96,-64.5,Castillo,marginal marine indet.,Costero o marino,65893
+1404983,193999,Siquisiquesuchus,Siquisiquesuchus,genus,20.45,15.98,18.215,VE,10.368056,-70.070557,10.97,-64.52,Castillo,coastal indet.,Costero o marino,65893
+1404985,194000,Siquisiquesuchus,Siquisiquesuchus,genus,20.45,15.98,18.215,VE,10.368056,-70.070557,10.97,-64.52,Castillo,coastal indet.,Costero o marino,65893
+1404987,194002,Siquisiquesuchus,Siquisiquesuchus,genus,20.45,15.98,18.215,VE,10.363333,-70.085281,10.96,-64.54,Castillo,coastal indet.,Costero o marino,65893
+1413354,175734,Gavialoidea,Gavialoidea,superfamily,41.03,37.71,39.370000000000005,EH,25.094723,-13.893889,19.18,-9.61,Aridal,shallow subtidal indet.,Sin clasificar,66463
+1414467,195449,Gryposuchus jessei,Gryposuchus jessei,species,11.63,7.246,9.438,BR,-9.081389,-68.672775,-8.63,-66.34,Solimões,terrestrial indet.,Continental,66536
+1415361,195628,Thoracosaurus isorhynchus,Thoracosaurus isorhynchus,species,72.2,66.0,69.1,FR,48.5,3.0,36.28,12.85,,terrestrial indet.,Continental,37219
+1415362,195628,Thoracosaurus isorhynchus,Thoracosaurus isorhynchus,species,72.2,66.0,69.1,FR,48.5,3.0,36.28,12.85,,terrestrial indet.,Continental,37219
+1419304,196739,Dadagavialis gunai,Dadagavialis gunai,species,18.5,16.3,17.4,PA,9.050833,-79.649719,,,Cucaracha,delta plain,Sin clasificar,66986
+1419305,196740,Dadagavialis gunai,Dadagavialis gunai,species,18.5,16.3,17.4,PA,9.030833,-79.636665,,,Cucaracha,channel lag,Continental,66986
+1419307,196742,Aktiogavialis caribesi,Aktiogavialis caribesi,species,11.63,7.246,9.438,VE,11.2,-70.26667,11.68,-67.51,Urumaco,"""channel""",Continental,66986
+1425561,198029,Portugalosuchus azenhae,Portugalosuchus azenhae,species,100.5,93.9,97.2,PT,40.25222,-8.568889,37.2,7.28,Tentúgal,coastal indet.,Costero o marino,67508
+1429184,198812,Gavialis gangeticus,Gavialis gangeticus,species,2.58,0.774,1.677,IN,30.774445,76.864441,29.66,77.1,Pinjor,terrestrial indet.,Continental,67706
+1429185,198812,Gavialis,Gavialis,genus,2.58,0.774,1.677,IN,30.774445,76.864441,29.66,77.1,Pinjor,terrestrial indet.,Continental,67706
+1429186,198812,Gavialis gangeticus,Gavialis gangeticus,species,2.58,0.774,1.677,IN,30.774445,76.864441,29.66,77.1,Pinjor,terrestrial indet.,Continental,67706
+1429187,198813,Tomistominae,Tomistominae,unranked clade,3.6,0.774,2.1870000000000003,IN,30.774445,76.864441,29.66,77.1,,terrestrial indet.,Continental,67706
+1429188,198814,Tomistominae,Tomistominae,unranked clade,15.98,11.63,13.805,PK,26.1,67.866669,19.21,68.83,,terrestrial indet.,Continental,67706
+1429189,198815,Tomistominae,Tomistominae,unranked clade,15.98,11.63,13.805,PK,26.419001,67.860001,19.52,68.86,,terrestrial indet.,Continental,67706
+1429190,198814,Tomistominae,Tomistominae,unranked clade,15.98,11.63,13.805,PK,26.1,67.866669,19.21,68.83,,terrestrial indet.,Continental,67706
+1429191,198816,Tomistominae,Tomistominae,unranked clade,33.9,5.333,19.6165,PK,29.023781,68.994781,18.92,70.16,,terrestrial indet.,Continental,67706
+1429571,92070,Rhamphosuchus crassidens,Rhamphosuchus crassidens,species,3.6,0.774,2.1870000000000003,PK,30.733334,76.783333,28.5,77.24,Pinjor,fluvial indet.,Continental,14142
+1429574,129263,Thoracosaurus brevispinus,Thoracosaurus brevispinus,species,100.5,66.0,83.25,US,39.855831,-74.686943,40.1,-34.04,,marine indet.,Costero o marino,58984
+1431107,90354,Gavialis,Gavialis,genus,15.98,13.82,14.9,FR,47.418331,1.428611,44.84,3.79,,fluvial indet.,Continental,67825
+1434368,200111,Gryposuchus pachakamue,Gryposuchus pachakamue,species,11.63,7.246,9.438,VE,11.504444,-69.51889,11.97,-66.76,Caujarao,estuary/bay,Costero o marino,68161
+1434369,200111,Gavialidae,Gavialidae,family,11.63,7.246,9.438,VE,11.504444,-69.51889,11.97,-66.76,Caujarao,estuary/bay,Costero o marino,68161
+1434377,200110,Gavialidae,Gavialidae,family,11.63,7.246,9.438,VE,11.496111,-69.509171,11.96,-66.75,Caujarao,estuary/bay,Costero o marino,68161
+1434624,200133,Gavialinum rhodani,Gavialinum rhodani,species,168.2,165.3,166.75,FR,45.848843,5.434383,30.67,26.3,,marine indet.,Costero o marino,68221
+1442767,16712,Tomistoma,Tomistoma,genus,48.07,41.03,44.55,US,32.827702,-117.119598,,,Scripps,shoreface,Costero o marino,41378
+1443739,180790,Gavialoidea,Gavialoidea,superfamily,83.6,72.2,77.9,US,34.239445,-79.841667,36.61,-42.95,Coachman,marine indet.,Costero o marino,68976
+1443757,201600,Gavialoidea,Gavialoidea,superfamily,83.6,72.2,77.9,US,34.245556,-79.716667,36.57,-42.83,Bladen,terrestrial indet.,Continental,68976
+1443761,201601,Gavialoidea,Gavialoidea,superfamily,72.2,66.0,69.1,US,33.88028,-80.052223,37.41,-46.21,Steel Creek,delta plain,Sin clasificar,68976
+1456442,49078,Maomingosuchus,Maomingosuchus,genus,37.71,33.9,35.805,TH,7.970278,99.060555,3.35,106.91,Krabi Basin B2,terrestrial indet.,Continental,69680
+1468556,13063,Tomistoma,Tomistoma,genus,15.98,13.82,14.9,PL,50.520279,20.526388,47.5,22.03,Pińczów Limestone,open shallow subtidal,Sin clasificar,70397
+1499901,67706,Gavialoidea,Gavialoidea,superfamily,37.71,33.9,35.805,EG,29.6,30.6,19.27,32.09,Birket Qarun,"""channel""",Continental,72053
+1514383,211306,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,59.24,56.0,57.620000000000005,US,39.864269,-74.822472,40.1,-45.35,Vincentown,marine indet.,Costero o marino,72977
+1531918,214890,Dolichochampsa minima,Dolichochampsa minima,species,72.2,66.0,69.1,BO,-18.033333,-65.583336,-19.03,-47.11,El Molino,marine indet.,Costero o marino,74135
+1545823,217618,Gryposuchus jessei,Gryposuchus jessei,species,56.0,2.58,29.29,BR,-7.844715,-69.150238,-7.78,-60.84,Solimões,terrestrial indet.,Continental,75568
+1546245,136714,Gryposuchus,Gryposuchus,genus,11.63,5.333,8.4815,BR,-10.939167,-69.343613,-10.56,-67.12,Solimoes,fluvial-lacustrine indet.,Continental,75568
+1546246,136714,Gavialoidea,Gavialoidea,superfamily,11.63,5.333,8.4815,BR,-10.939167,-69.343613,-10.56,-67.12,Solimoes,fluvial-lacustrine indet.,Continental,75568
+1546540,217877,Gavialoidea,Gavialoidea,superfamily,11.63,5.333,8.4815,BR,-8.788611,-67.498665,-8.44,-65.24,Solimões,terrestrial indet.,Continental,75568
+1550741,219027,Gavialidae,Gavialidae,family,15.98,0.774,8.377,MM,21.281668,95.514999,16.3,96.15,Irrawaddy,terrestrial indet.,Continental,75871
+1550744,219025,Gavialis,Gavialis,genus,11.63,7.246,9.438,MM,20.127222,94.89167,14.44,95.97,Irrawaddy,terrestrial indet.,Continental,75871
+1550745,219024,Gavialis,Gavialis,genus,11.63,7.246,9.438,MM,20.130278,94.903893,14.44,95.98,Irrawaddy,terrestrial indet.,Continental,75871
+1550747,219023,Gavialis,Gavialis,genus,11.63,7.246,9.438,MM,20.168333,94.919167,14.48,95.99,Irrawaddy,terrestrial indet.,Continental,75871
+1554653,219291,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,ES,42.347885,0.516767,30.43,10.45,Arén,terrestrial indet.,Continental,76235
+1555107,90577,Thoracosaurus,Thoracosaurus,genus,66.0,61.66,63.83,DK,55.25,12.133333,43.35,19.8,,deep subtidal shelf,Sin clasificar,52305
+1562562,220590,Gunggamarandu maunala,Gunggamarandu maunala,species,5.333,0.0117,2.6723500000000002,AU,-26.843506,150.781967,-28.51,151.07,,terrestrial indet.,Continental,77102
+1564062,214429,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,DK,54.973671,12.548013,41.96,21.2,Møns Klint,carbonate indet.,Costero o marino,52305
+1585125,224010,Gryposuchinae,Gryposuchinae,unranked clade,15.98,11.63,13.805,PE,-3.743611,-73.251114,-3.01,-69.53,Pebas,fluvial-lacustrine indet.,Continental,78963
+1585142,224013,Gryposuchinae,Gryposuchinae,unranked clade,15.98,11.63,13.805,PE,-3.743611,-73.251114,-3.01,-69.53,Pebas,fluvial-lacustrine indet.,Continental,78963
+1587321,224309,Gavialis gangeticus,Gavialis gangeticus,species,3.6,2.58,3.09,IN,30.833332,76.833336,29.16,77.19,,terrestrial indet.,Continental,79680
+1587322,92070,Gavialis gangeticus,Gavialis gangeticus,species,3.6,0.774,2.1870000000000003,PK,30.733334,76.783333,28.5,77.24,Pinjor,fluvial indet.,Continental,79680
+1587323,203112,Gavialis,Gavialis,genus,11.63,7.246,9.438,IN,21.598057,72.355835,16.89,72.74,Piram Conglomerate,terrestrial indet.,Continental,67706
+1587324,224310,Gavialis gangeticus,Gavialis gangeticus,species,0.129,0.0117,0.07035,IN,24.5,82.00972,,,,terrestrial indet.,Continental,79680
+1587325,224311,Gavialis gangeticus,Gavialis gangeticus,species,3.6,2.58,3.09,NP,26.178057,87.696114,24.3,87.76,,terrestrial indet.,Continental,79680
+1587326,92070,Gavialis gangeticus,Gavialis gangeticus,species,3.6,0.774,2.1870000000000003,PK,30.733334,76.783333,28.5,77.24,Pinjor,fluvial indet.,Continental,79680
+1587327,224312,Gavialis gangeticus,Gavialis gangeticus,species,3.6,2.58,3.09,IN,30.327801,77.111702,28.65,77.44,Pinjor,terrestrial indet.,Continental,79680
+1587328,176226,Gavialis gangeticus,Gavialis gangeticus,species,3.6,2.58,3.09,IN,30.677397,76.995811,29.0,77.34,Tatrot,fluvial indet.,Continental,79680
+1587329,224301,Gavialis gangeticus,Gavialis gangeticus,species,3.6,2.58,3.09,IN,28.820499,79.093803,27.1,79.35,Pinjor,terrestrial indet.,Continental,79680
+1587330,224301,Gavialis browni,Gavialis browni,species,3.6,2.58,3.09,IN,28.820499,79.093803,27.1,79.35,Pinjor,terrestrial indet.,Continental,79680
+1587332,92070,Gavialis browni,Gavialis browni,species,3.6,0.774,2.1870000000000003,PK,30.733334,76.783333,28.5,77.24,Pinjor,fluvial indet.,Continental,79680
+1587333,203112,Gavialis browni,Gavialis browni,species,11.63,7.246,9.438,IN,21.598057,72.355835,16.89,72.74,Piram Conglomerate,terrestrial indet.,Continental,79680
+1587334,198816,Tomistominae,Tomistominae,unranked clade,33.9,5.333,19.6165,PK,29.023781,68.994781,18.92,70.16,,terrestrial indet.,Continental,79680
+1587335,224313,Rhamphosuchus crassidens,Rhamphosuchus crassidens,species,3.6,2.58,3.09,IN,29.3883,76.515503,27.72,76.83,Tatrot,terrestrial indet.,Continental,79680
+1587336,224311,Rhamphosuchus crassidens,Rhamphosuchus crassidens,species,3.6,2.58,3.09,NP,26.178057,87.696114,24.3,87.76,,terrestrial indet.,Continental,79680
+1587530,224333,Tomistoma calaritanum,Tomistoma calaritanum,species,11.63,5.333,8.4815,IT,39.2281,9.1111,,,Calcari di Cagliari,marine indet.,Costero o marino,79866
+1588517,224484,Thoracosaurus,Thoracosaurus,genus,72.2,66.0,69.1,US,45.000481,-103.188957,54.94,-63.03,Hell Creek,channel lag,Continental,80625
+1588616,224505,Hanyusuchus sinensis,Hanyusuchus sinensis,species,0.0117,0.0,0.00585,CN,22.75202,113.352242,,,,terrestrial indet.,Continental,80635
+1588617,224506,Hanyusuchus sinensis,Hanyusuchus sinensis,species,0.0117,0.0,0.00585,CN,22.829741,113.198792,,,,terrestrial indet.,Continental,80635
+1588618,224507,Hanyusuchus sinensis,Hanyusuchus sinensis,species,0.0117,0.0,0.00585,CN,22.686747,113.071411,,,,terrestrial indet.,Continental,80635
+1588620,224509,Hanyusuchus sinensis,Hanyusuchus sinensis,species,0.0117,0.0,0.00585,CN,22.657759,113.06575,,,,terrestrial indet.,Continental,80635
+1588629,224510,Hanyusuchus sinensis,Hanyusuchus sinensis,species,0.0117,0.0,0.00585,CN,23.05987,113.24826,,,,terrestrial indet.,Continental,80635
+1588630,224511,Hanyusuchus sinensis,Hanyusuchus sinensis,species,0.0117,0.0,0.00585,CN,23.00635,113.094788,,,,terrestrial indet.,Continental,80635
+1594371,13079,Sacacosuchus cordovai,Sacacosuchus cordovai,species,7.246,5.333,6.2895,PE,-15.580833,-74.719719,-15.2,-73.17,Pisco,foreshore,Costero o marino,81650
+1594372,225490,Sacacosuchus cordovai,Sacacosuchus cordovai,species,11.63,7.246,9.438,PE,-15.551389,-74.799164,-14.97,-72.58,Pisco,paralic indet.,Costero o marino,81650
+1594373,45485,Piscogavialis,Piscogavialis,genus,11.63,7.246,9.438,PE,-15.5,-74.800003,-14.92,-72.58,Pisco,foreshore,Costero o marino,81650
+1594377,67634,Piscogavialis,Piscogavialis,genus,5.333,3.6,4.4665,PE,-15.671667,-74.536667,-15.39,-73.59,Pisco,marine indet.,Costero o marino,81650
+1594382,78518,Sacacosuchus,Sacacosuchus,genus,7.246,5.333,6.2895,PE,-14.524444,-75.711113,-14.13,-74.14,Pisco,lagoonal,Costero o marino,81650
+1594383,211787,Sacacosuchus,Sacacosuchus,genus,11.63,7.246,9.438,PE,-14.446667,-75.748055,-13.85,-73.51,Pisco,marine indet.,Costero o marino,81650
+1594384,100330,Sacacosuchus,Sacacosuchus,genus,20.45,15.98,18.215,PE,-14.617222,-75.625275,-13.79,-71.03,Chilcatay,coastal indet.,Costero o marino,81650
+1594388,225491,Piscogavialis,Piscogavialis,genus,7.246,5.333,6.2895,PE,-15.557222,-74.690277,-15.18,-73.14,Pisco,paralic indet.,Costero o marino,81650
+1594389,225492,Sacacosuchus,Sacacosuchus,genus,15.98,13.82,14.9,PE,-15.486111,-74.734444,-14.69,-71.08,Pisco,marine indet.,Costero o marino,81650
+1594390,225493,Piscogavialis,Piscogavialis,genus,15.98,13.82,14.9,PE,-15.575556,-74.663887,-14.78,-71.01,Pisco,marine indet.,Costero o marino,81650
+1594391,225494,Sacacosuchus,Sacacosuchus,genus,11.63,7.246,9.438,PE,-14.383889,-75.899719,-13.78,-73.66,Pisco,marine indet.,Costero o marino,81650
+1594392,225495,Piscogavialis,Piscogavialis,genus,20.45,15.98,18.215,PE,-14.383889,-75.899719,-13.55,-71.29,Chilcatay,marine indet.,Costero o marino,81650
+1595254,199560,Gavialoidea,Gavialoidea,superfamily,33.9,23.04,28.47,PE,-6.583056,-76.281387,-6.56,-65.67,Pozo,fluvial-deltaic indet.,Continental,81705
+1595682,169420,Maomingosuchus acutirostris,Maomingosuchus acutirostris,species,41.03,33.9,37.465,VN,21.700001,106.966667,19.11,109.46,Na Duong,lacustrine - large,Continental,81724
+1603570,226738,Sakhibaghoon khizari,Sakhibaghoon khizari,species,11.63,5.333,8.4815,PK,30.080833,70.262222,26.01,71.34,Litra,fluvial indet.,Continental,82258
+1605551,123296,Sutekhsuchus dowsoni,Sutekhsuchus dowsoni,species,23.04,15.98,19.509999999999998,EG,29.216667,25.666668,23.66,26.82,,marginal marine indet.,Costero o marino,15013
+1606538,35360,Gavialoidea,Gavialoidea,superfamily,83.6,72.2,77.9,MX,25.5,-101.75,34.66,-68.57,Cerro del Pueblo,estuary/bay,Costero o marino,82621
+1607164,120036,Tomistominae,Tomistominae,unranked clade,48.07,41.03,44.55,DE,49.933334,8.75,42.07,14.2,Messel,crater lake,Sin clasificar,47641
+1610487,92751,Gryposuchus croizati,Gryposuchus croizati,species,11.63,5.333,8.4815,VE,11.248889,-70.269447,11.64,-67.68,Urumaco,coastal indet.,Costero o marino,82962
+1610490,217781,Gavialoidea,Gavialoidea,superfamily,56.0,2.58,29.29,BR,-10.935816,-69.523407,-10.85,-61.4,Solimões,terrestrial indet.,Continental,82964
+1616629,186852,Gavialoidea,Gavialoidea,superfamily,37.71,33.9,35.805,RO,45.633331,24.299999,32.93,27.78,Valea Nișului,marine indet.,Costero o marino,83604
+1628539,230675,Toyotamaphimeia taiwanicus,Toyotamaphimeia taiwanicus,species,2.58,0.129,1.3545,TW,23.06456,120.38401,23.04,120.33,,marine indet.,Costero o marino,85257
+1638045,65912,Tomistoma calaritanum,Tomistoma calaritanum,species,15.98,12.75,14.365,PT,38.754162,-9.117798,36.71,-7.05,,marine indet.,Costero o marino,86091
+1690692,239799,Argochampsa krebsi,Argochampsa krebsi,species,56.0,48.07,52.035,MA,32.883331,-6.633333,23.25,0.01,Couche I,marine indet.,Costero o marino,91516
+1691469,239955,Tomistoma cairense,Herugavialis cairensis,species,48.07,41.03,44.55,EG,30.024166,31.298332,17.06,33.01,Mokattam,carbonate indet.,Costero o marino,91752
+1691470,188992,Tomistoma tenuirostre,Tomistoma tenuirostre,species,33.9,27.3,30.6,EG,29.641937,30.575405,20.75,31.91,Jebel Qatrani,fluvial indet.,Continental,91752
+1691471,79701,Sutekhsuchus dowsoni,Sutekhsuchus dowsoni,species,23.04,15.98,19.509999999999998,EG,30.299999,30.0,24.59,30.99,Moghara,marine indet.,Costero o marino,91752
+1695646,226046,Gryposuchinae,Gryposuchinae,unranked clade,7.246,3.6,5.423,DO,18.909166,-69.746391,19.38,-68.51,Yanigüa-Los Haitises,estuary/bay,Costero o marino,91943
+1695650,144645,Aktiogavialis puertoricensis,Aktiogavialis puertoricensis,species,33.9,27.3,30.6,PR,18.420279,-67.153336,19.33,-60.89,San Sebastian,marginal marine indet.,Costero o marino,91943
+2055032,277552,Tomistoma lusitanica,Tomistoma lusitanica,species,20.45,11.63,16.04,PT,37.075001,-8.28,34.68,-6.04,Lagos-Portimão,carbonate indet.,Costero o marino,94050
+2055202,277557,Tomistoma lusitanica,Tomistoma lusitanica,species,20.45,11.63,16.04,PT,37.105999,-8.686,34.72,-6.43,Lagos-Portimão,carbonate indet.,Costero o marino,94050
+2056144,277690,Thoracosaurus neocesariensis,Thoracosaurus neocesariensis,species,83.6,72.2,77.9,US,34.584,-88.634003,39.35,-51.12,Demopolis,coastal indet.,Costero o marino,94136
+2070356,279928,Gavialosuchus,Gavialosuchus,genus,27.3,23.04,25.17,US,32.974998,-80.152,35.44,-69.24,Chandler Bridge,coastal indet.,Costero o marino,15424
