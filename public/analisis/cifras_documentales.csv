@@ -1,0 +1,13 @@
+caso,fecha,metrica,valor,calificador,unidad,fuente_id,estado
+chapman,2024-05-16,empresas,300,mas_de,empresas,chapman_2024,acusacion
+chapman,2024-05-16,identidades,60,mas_de,personas,chapman_2024,acusacion
+chapman,2024-05-16,ingresos,6800000,al_menos,USD,chapman_2024,acusacion
+wang,2025-06-30,empresas,100,mas_de,empresas,wang_2025,acusacion
+wang,2025-06-30,identidades,80,mas_de,personas,wang_2025,acusacion
+wang,2025-06-30,danos,3000000,al_menos,USD,wang_2025,acusacion
+wang,2026-04-15,empresas,100,mas_de,empresas,wang_2026,sentencia_dos_facilitadores
+wang,2026-04-15,identidades,80,al_menos,personas,wang_2026,sentencia_dos_facilitadores
+wang,2026-04-15,ingresos,5000000,mas_de,USD,wang_2026,sentencia_dos_facilitadores
+texas,2026-10-13,empresas,70,mas_de,empresas,texas_2026,acusacion
+texas,2026-10-13,ingresos,3000000,aproximadamente,USD,texas_2026,acusacion
+texas,2026-10-13,dispositivos,187,aproximadamente,equipos_incluidos_kvm,texas_2026,intervencion
