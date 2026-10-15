@@ -42,3 +42,12 @@ Consult these guides before working on related tasks:
 - La estructura preferida es: gancho claro, tensión o pregunta breve y enlace al artículo.
 - Todos los posts incluirán hashtags relacionados con la búsqueda de empleo, el oficio periodístico, la redacción y la ciencia de datos. Como base: `#OpenToWork`, `#BuscandoTrabajo`, `#Periodista`, `#Redactor` y `#CienciaDeDatos`.
 - Se añadirán también hashtags del asunto concreto tratado, como ciencia, tecnología, aves, inteligencia artificial o baloncesto, sin convertir el cierre en una lista excesiva.
+
+## Lenguaje obligatorio de los artículos
+
+- Todos los artículos de Nebula se escriben siempre en lenguaje coloquial, sencillo y fácil de entender, manteniendo el tono y el rigor periodísticos.
+- El texto debe resultar entretenido y ágil. Cuenta una historia; no convierte las decisiones del análisis en un informe técnico.
+- Los conceptos difíciles se explican dentro del relato con palabras cotidianas y ejemplos claros, sin presuponer conocimientos especializados.
+- Se evitan tecnicismos, abstracciones y formulaciones enrevesadas cuando existe una forma corriente de decir lo mismo. Simplificar el lenguaje no significa perder precisión.
+- Esta norma se aplica también al titular, la descripción, la cifra destacada, su etiqueta y los textos de gráficos e interacciones.
+- La extensión habitual es de 700 a 800 palabras de texto editorial, salvo indicación expresa distinta.
