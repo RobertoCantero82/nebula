@@ -15,6 +15,9 @@ La demostración del 15 de octubre en las instalaciones de SpaceX, en Texas, me 
 
 Tesla también muestra una **aceleración hasta cerca de 100 kilómetros por hora en 0,81 segundos**. Sin embargo, creo que es posible contar tres historias distintas: lo que acabo de ver, lo que la compañía promete para 2028 y lo que todavía no sé. Para separarlas he reunido la telemetría del acto, las especificaciones publicadas y los datos de cuatro vehículos eléctricos de producción.
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Real life, baby https://t.co/3QEqn18wig</p>&mdash; Tesla (@Tesla) <a href="https://x.com/Tesla/status/2110913438293647789?ref_src=twsrc%5Etfw">October 16, 2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
 ## Tres Roadster y una promesa extrema
 
 La compañía de Elon Musk ha anunciado tres versiones de este Roadster. La Performance bajaría de 1,6 segundos en el 0 a 100 km/h. La Thrust añadiría propulsores traseros y lo haría en menos de 0,9 segundos. Por último, la Rocket, con una sola plaza y diez propulsores alrededor del vehículo, bajaría de **0,59 segundos** y podría desplazarse por el aire.
@@ -157,6 +160,9 @@ La propuesta también ha cambiado. En 2017 ofrecía cuatro plazas, 620 millas de
 Tesla anunció entonces producción para 2020. Entre aquella presentación y esta han transcurrido **3.255 días**. Ahora, el nuevo objetivo, 2028, queda ocho años por detrás del primero.
 
 La espera también tiene precio. La **reserva del Performance** exige 50.000 dólares, unos **44.000 euros**. Las [condiciones de Tesla](https://www.tesla.com/configurator/api/v4/terms?locale=en_US&model=mt&saleType=PreSale) permiten cancelarla, pero el dinero no genera intereses. Según el IPC estadounidense, hoy harían falta unos 68.000 dólares, alrededor de **60.000 euros**, para conservar el poder de compra de 50.000 en noviembre de 2017. Una reinversión teórica en letras del Tesoro habría alcanzado unos 56.000 euros.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Do a kickflip! https://t.co/DJ1Bq1yu8m</p>&mdash; Tesla (@Tesla) <a href="https://x.com/Tesla/status/2110926164306931860?ref_src=twsrc%5Etfw">October 16, 2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
 El Roadster que he visto es real como prototipo. Su vuelo también. Sus cifras más extremas, su homologación y su calendario continúan en el futuro. **Puedo alucinar con la demostración y exigir pruebas para las promesas al mismo tiempo.**
 
