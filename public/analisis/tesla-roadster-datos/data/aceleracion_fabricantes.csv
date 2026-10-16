@@ -1,0 +1,8 @@
+modelo,fabricante,propulsion,tiempo_0_60_mph_s,comparador,estado_cifra,rollout_descontado,fuente
+Roadster Rocket,Tesla,Eléctrica con propulsores,0.59,<,Objetivo anunciado,No,https://x.com/Tesla/status/2110905588402295283
+Roadster Thrust,Tesla,Eléctrica con propulsores,0.90,<,Objetivo anunciado,No,https://x.com/Tesla/status/2110905588402295283
+Roadster Performance,Tesla,Eléctrica,1.60,<,Objetivo anunciado,No,https://x.com/Tesla/status/2110905588402295283
+Nevera R,Rimac,Eléctrica,1.66,=,Dato del fabricante,No,https://www.rimac-automobili.com/NeveraR/
+Battista,Pininfarina,Eléctrica,1.79,=,Prueba de homologación del fabricante,No,https://www.automobili-pininfarina.com/media-hub/press-releases/automobili-pininfarina-confirms-record-breaking-battista-performance-uae
+Air Sapphire,Lucid,Eléctrica,1.89,=,Especificación final de producción,No,https://lucidmotors.com/en-ca/stories/final-production-specs-sapphire
+Model S Plaid,Tesla,Eléctrica,1.99,=,Dato del fabricante,Sí,https://www.tesla.com/models

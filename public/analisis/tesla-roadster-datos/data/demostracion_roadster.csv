@@ -1,0 +1,11 @@
+indicador,valor,unidad,estado_cifra,fuente
+Tiempo mostrado de 0 a 60 mph,0.81,segundos,Demostración de Tesla,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Altura alcanzada en la rampa,21,metros,Telemetría mostrada por Tesla,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Inclinación antes de desprenderse,170,grados,Telemetría mostrada por Tesla,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Carga vertical mostrada,4700,kilogramos,Telemetría mostrada por Tesla,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Pico durante el frenado de la caída,3.3,g,Telemetría mostrada por Tesla,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Succión máxima anunciada,2,g,Afirmación de Tesla,https://www.caranddriver.com/news/a74145531/tesla-roadster-revealed/
+Empuje anunciado de los propulsores,80,kilonewtons,Límite inferior anunciado,https://www.caranddriver.com/news/a74145531/tesla-roadster-revealed/
+Capacidad conjunta de los depósitos,600,litros,Afirmación durante la presentación,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Masa de aire comprimido,250,kilogramos,Afirmación durante la presentación,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+Número de propulsores del Rocket,10,propulsores,Afirmación de Tesla,https://x.com/Tesla/status/2110904290743402880

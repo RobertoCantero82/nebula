@@ -1,0 +1,5 @@
+version,fecha_presentacion,plazas,tiempo_0_60_mph_s,comparador_tiempo,velocidad_maxima_mph,comparador_velocidad,autonomia_millas,comparador_autonomia,objetivo_produccion,reserva_usd,disponibilidad,homologacion_publica,fuente
+Prototipo 2017,2017-11-16,4,1.90,=,250,>,620,=,2020,50000,Reserva abierta,Sin determinar,https://www.tesla.com/roadster
+Performance 2026,2026-10-15,2,1.60,<,,,300,>,2028,50000,Reserva abierta,Orientado a carretera,https://x.com/Tesla/status/2110905588402295283
+Thrust 2026,2026-10-15,2,0.90,<,,,300,>,2028,250000,Lanzamiento limitado,Sin confirmar,https://x.com/Tesla/status/2110905588402295283
+Rocket 2026,2026-10-15,1,0.59,<,230,>,300,>,2028,,Solo por invitación,No aprobada,https://x.com/Tesla/status/2110905588402295283

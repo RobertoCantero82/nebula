@@ -1,0 +1,34 @@
+{
+  "corte_datos": "2026-09",
+  "acumulado_2026": {
+    "BYD": 14227,
+    "Tesla": 13481
+  },
+  "modelo_candidato_validacion": {
+    "BYD": "regresion_logaritmica_24m",
+    "Tesla": "regresion_periodica_24m"
+  },
+  "modelo_final": {
+    "BYD": "estacional",
+    "Tesla": "estacional"
+  },
+  "mae_prueba_2026": {
+    "BYD": 499,
+    "Tesla": 570
+  },
+  "prevision_octubre_diciembre": {
+    "BYD": 6112,
+    "Tesla": 3714
+  },
+  "total_2026_estimado": {
+    "BYD": 20339,
+    "Tesla": 17195
+  },
+  "probabilidad_byd_supera_tesla": 0.99976,
+  "diferencia_mediana": 2956,
+  "intervalo_diferencia_80": [
+    1594,
+    4478
+  ],
+  "simulaciones": 50000
+}

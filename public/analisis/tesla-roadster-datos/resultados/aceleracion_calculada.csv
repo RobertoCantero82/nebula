@@ -1,0 +1,9 @@
+modelo,fabricante,propulsion,tiempo_0_60_mph_s,comparador,estado_cifra,rollout_descontado,fuente,aceleracion_media_ms2,aceleracion_media_g,distancia_constante_m,es_roadster
+Roadster Rocket,Tesla,Eléctrica con propulsores,0.59,<,Objetivo anunciado,No,https://x.com/Tesla/status/2110905588402295283,45.461694915254235,4.635802737454099,7.912607999999999,True
+Roadster · prueba mostrada,Tesla,Eléctrica con propulsores,0.81,=,Demostración de Tesla,No indicado,https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/,33.11407407407407,3.3766958211085405,10.863072,True
+Roadster Thrust,Tesla,Eléctrica con propulsores,0.9,<,Objetivo anunciado,No,https://x.com/Tesla/status/2110905588402295283,29.802666666666664,3.0390262389976868,12.070079999999999,True
+Roadster Performance,Tesla,Eléctrica,1.6,<,Objetivo anunciado,No,https://x.com/Tesla/status/2110905588402295283,16.764,1.709452259436199,21.45792,True
+Nevera R,Rimac,Eléctrica,1.66,=,Dato del fabricante,No,https://www.rimac-automobili.com/NeveraR/,16.158072289156625,1.6476648283722397,22.262591999999998,False
+Battista,Pininfarina,Eléctrica,1.79,=,Prueba de homologación del fabricante,No,https://www.automobili-pininfarina.com/media-hub/press-releases/automobili-pininfarina-confirms-record-breaking-battista-performance-uae,14.984581005586591,1.5280020196077755,24.006048,False
+Air Sapphire,Lucid,Eléctrica,1.89,=,Especificación final de producción,No,https://lucidmotors.com/en-ca/stories/final-production-specs-sapphire,14.191746031746032,1.4471553519036606,25.347167999999996,False
+Model S Plaid,Tesla,Eléctrica,1.99,=,Dato del fabricante,Sí,https://www.tesla.com/models,13.47859296482412,1.3744339774361398,26.688287999999996,False
