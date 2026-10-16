@@ -143,6 +143,9 @@ Antes de hacer la cuenta, propongo una apuesta:
 
 La cifra de 0,59 segundos implica más de **4,6 g horizontales de media**. La prueba de 0,81 equivale a unos 3,4 g y 10,9 metros. Para alcanzar el objetivo, Tesla todavía tendría que recortar un 27% el tiempo mostrado.
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">0-60 mph in 0.81 seconds https://t.co/7Pp4oqJVzq</p>&mdash; Tesla (@Tesla) <a href="https://x.com/Tesla/status/2110963770763649487?ref_src=twsrc%5Etfw">October 16, 2026</a></blockquote>
+<script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+
 No sumo esas fuerzas a los 2 g de succión: una empuja el coche hacia delante y la otra lo pega a la superficie. Los depósitos almacenan, según lo explicado durante el acto, unos 250 kilos de aire comprimido en 600 litros. Sin la masa total del coche no puedo convertir los más de 80 kN anunciados en una aceleración real.
 
 En la rampa encuentro otra medida del espectáculo. La pantalla muestra una carga vertical equivalente a 4.700 kilos cerca de la posición invertida y un pico de 3,3 g durante la caída. No interpreto esas lecturas como una certificación: son telemetría ofrecida por Tesla en una demostración controlada. Sí muestran que el salto combina ventiladores, aerodinámica activa y propulsores cuando las ruedas dejan de tocar la superficie.
