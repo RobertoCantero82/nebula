@@ -1,0 +1,11 @@
+﻿id,tipo,equipo,protagonista,metrica,total_2025_26,partidos_2025_26,record,temporada_record,titular_record,fuentes,temporada_comparada,temporada_a_seguir
+luka,Positivo,Los Angeles Lakers,Luka Dončić,Triples,254,64,254,2025-26,Luka Dončić,luka,2025-26,2026-27
+gillespie,Positivo,Phoenix Suns,Collin Gillespie,Triples,232,80,232,2025-26,Collin Gillespie,gillespie;gillespie_partidos,2025-26,2026-27
+nickeil,Positivo,Atlanta Hawks,Nickeil Alexander-Walker,Triples,251,78,251,2025-26,Nickeil Alexander-Walker,nickeil,2025-26,2026-27
+warriors,Positivo,Golden State Warriors,Golden State Warriors,Asistencias,2369,82,2491,2016-17,Golden State Warriors,warriors_historia;warriors_actual;warriors_series,2025-26,2026-27
+huff,Positivo,Indiana Pacers,Jay Huff,Tapones,153,82,228,2000-01,Jermaine O’Neal,huff;indiana_guia;indiana_notas,2025-26,2026-27
+indiana,Negativo,Indiana Pacers,Indiana Pacers,Derrotas,63,82,63,2025-26,Indiana Pacers,indiana_record;indiana_notas,2025-26,2026-27
+washington,Negativo,Washington Wizards,Washington Wizards,Derrotas,65,82,67,2023-24,Washington Wizards,washington_record;washington_2025;washington_2026,2025-26,2026-27
+utah,Negativo,Utah Jazz,Utah Jazz,Derrotas,60,82,65,2024-25,Utah Jazz,utah_record,2025-26,2026-27
+sacramento,Negativo,Sacramento Kings,Sacramento Kings,Derrotas,60,82,65,2008-09,Sacramento Kings,sacramento_record;sacramento_2026,2025-26,2026-27
+brooklyn,Negativo,Brooklyn Nets,Brooklyn Nets,Derrotas,62,82,70,2009-10,New Jersey Nets,nets_record;nets_2026;clasificacion,2025-26,2026-27

@@ -1,0 +1,6 @@
+﻿id,tipo,equipo,protagonista,metrica,total_2025_26,partidos_2025_26,record,temporada_record,titular_record,fuentes,temporada_comparada,temporada_a_seguir,para_superarlo,diferencia,cambio_total_pct,ritmo_anterior,ritmo_82,victorias_maximas,derrotas_pct
+indiana,Negativo,Indiana Pacers,Indiana Pacers,Derrotas,63,82,63,2025-26,Indiana Pacers,indiana_record;indiana_notas,2025-26,2026-27,64,1,1.5873015873015872,0.7682926829268293,0.7804878048780488,18,78.04878048780488
+washington,Negativo,Washington Wizards,Washington Wizards,Derrotas,65,82,67,2023-24,Washington Wizards,washington_record;washington_2025;washington_2026,2025-26,2026-27,68,3,4.615384615384615,0.7926829268292683,0.8292682926829268,14,82.92682926829268
+sacramento,Negativo,Sacramento Kings,Sacramento Kings,Derrotas,60,82,65,2008-09,Sacramento Kings,sacramento_record;sacramento_2026,2025-26,2026-27,66,6,10.0,0.7317073170731707,0.8048780487804879,16,80.48780487804878
+utah,Negativo,Utah Jazz,Utah Jazz,Derrotas,60,82,65,2024-25,Utah Jazz,utah_record,2025-26,2026-27,66,6,10.0,0.7317073170731707,0.8048780487804879,16,80.48780487804878
+brooklyn,Negativo,Brooklyn Nets,Brooklyn Nets,Derrotas,62,82,70,2009-10,New Jersey Nets,nets_record;nets_2026;clasificacion,2025-26,2026-27,71,9,14.516129032258064,0.7560975609756098,0.8658536585365854,11,86.58536585365853
