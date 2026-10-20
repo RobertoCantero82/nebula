@@ -139,11 +139,11 @@ Por eso no enfrento los once días anunciados del Nokia con las horas de navegac
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowfullscreen>
   </iframe>
-</div>
+</div>  
 
 ## La prueba que sí podemos compartir
 
-He reunido doce resultados de [Notebookcheck](https://www.notebookcheck.net/How-does-Notebookcheck-test-laptops-and-smartphones-A-behind-the-scenes-look-into-our-review-process.15394.0.html): cuatro generaciones de iPhone, Galaxy S y Moto G, entre 2015 y 2025. Es una selección de tres familias, no todo el mercado. Elijo 2025 como último año completo y añado 2018 y 2021 para no quedarme solo con los extremos.
+He reunido doce resultados de [Notebookcheck](https://www.notebookcheck.net/How-does-Notebookcheck-test-laptops-and-smartphones-A-behind-the-scenes-look-into-our-review-process.15394.0.html): cuatro generaciones de **iPhone, Galaxy S y Moto G**, entre 2015 y 2025. Es una selección de tres familias, no todo el mercado. Elijo 2025 como último año completo y añado 2018 y 2021 para no quedarme solo con los extremos.
 
 Comparten una prueba de navegación por Wi-Fi y un brillo de referencia parecido. Cambian los navegadores y el software, así que no es un laboratorio congelado durante una década. Aun así, ofrece una comparación bastante más razonable que enfrentar recuerdos con anuncios.
 
@@ -160,7 +160,7 @@ Antes de mirar, haz tu apuesta: ¿qué generación crees que aguanta más en las
   <p id="moviles-veredicto" aria-live="polite">Elige un año y comprueba tu intuición.</p>
 </fieldset>
 
-El gráfico muestra horas de navegación: cuanto más larga sea la barra, más tardó en agotarse la carga. Puedes cambiar de familia para seguir sus cuatro modelos.
+El gráfico muestra **horas de navegación**: cuanto más larga sea la barra, más tardó en agotarse la carga. Puedes cambiar de familia para seguir sus cuatro modelos.
 
 <section class="moviles-grafico" aria-labelledby="moviles-titulo-grafico">
 <h3 id="moviles-titulo-grafico">Los tres modelos de 2025 superan a sus referencias de 2015</h3>
