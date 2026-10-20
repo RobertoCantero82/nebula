@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Samsung-Galaxy-S25-review-The-star-among-compact-smartphones-is-losing-ground.989246.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Samsung-Galaxy-S25-review-The-star-among-compact-smartphones-is-losing-ground.989246.0.html","pattern":"WiFi Websurfing"}); Total lines: 1785
+L1446: Battery Runtime
+L1448: WiFi Websurfing (Chrome 135)  |  | 18h 02min
+L1449: Big Buck Bunny H.264 1080p  |  | 26h 30min
+L1461: WiFi v1.3 (h)  | 18  | 14.7 -18%  | 17 -6%  | 19.2 7%  | 22.8 27%

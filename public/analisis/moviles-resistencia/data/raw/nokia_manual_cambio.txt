@@ -1,0 +1,19 @@
+Consulta: 2026-10-20
+Extracto mínimo de la documentación original consultada por web.
+L210@P21: handling, inserting or removing the card.
+L211@P21: • Before installing the SIM card, always make sure that the phone is switched off and then remove
+L212@P21: the battery.
+L213@P21: Inserting the SIM card in the phone• Before installing the SIM card, always make sure that the phone is switched off and then remove
+L214@P21-22: the battery.©2001 Nokia Mobile Phones. All rights reserved.
+L215@P22: 23
+L216@P22: Getting started1. Remove the back cover: Press the locking catch (1), slide the cover (2), and lift the cover (3).
+L217@P22: 2. Remove the battery:
+L218@P22: Push the two release catches in the opposite directions (4) and remove the battery (5).
+L219@P22: 3. Insert the SIM card:
+L220@P22-23: Slide the SIM card carefully into the SIM card slot (6). Make sure that the golden connectors on the card are facing downwards and that the bevelled corner is on the left.©2001 Nokia Mobile Phones. All rights reserved.
+L221@P23: Getting started
+L222@P23: 24
+L223@P23: 4. Install the battery:
+L224@P23: Align the golden connectors on the battery with the corresponding connectors on the phone and push the opposite end of the battery until it snaps into place (7).
+L225@P23: 5. Replace the back cover:
+L226@P23: Insert the two catches of the back cover in the corresponding slots in the phone (8) and slide the cover towards the bottom of the phone until it locks into place (9).

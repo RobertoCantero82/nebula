@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Samsung-Galaxy-S6-Smartphone-Review.140249.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: yesterday; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Samsung-Galaxy-S6-Smartphone-Review.140249.0.html","pattern":"WiFi Websurfing"}); Total lines: 940
+L643: ### Battery Runtime
+L646: Battery Runtime
+L649: WiFi Websurfing (Chrome 39.0.2171.93)  |  | 7h 55min
+L662: WiFi v1.3 (h)  | 7.9  |  | 5.8 -27%  |  | 16.1 104%  |  |

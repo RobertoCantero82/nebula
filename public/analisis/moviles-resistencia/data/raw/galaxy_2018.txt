@@ -1,0 +1,9 @@
+Fuente: https://www.notebookcheck.net/Samsung-Galaxy-S9-Smartphone-Review.293936.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Samsung-Galaxy-S9-Smartphone-Review.293936.0.html","pattern":"WiFi Websurfing"}); Total lines: 1468
+L1153: ### Battery Runtime – Galaxy S9 surprisingly poor
+L1159: Battery Runtime
+L1161: WiFi Websurfing (Samsung Browser 7.0)  |  | 7h 54min
+L1162: Big Buck Bunny H.264 1080p  |  | 10h 9min
+L1177: WiFi v1.3 (h)  | 7.9  | 12 52%  | 12.9 63%  | 9.3 18%  | 9.6 22%  | 9.4 19%  | 10 27%  | 13.6 72%

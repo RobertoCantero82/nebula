@@ -1,0 +1,21 @@
+{
+  "data/raw/apple_ciclos.txt": "012ac63bdf44b38cd20652ec6e4d5eab5eda7b83036deed37639d904b4991472",
+  "data/raw/fairphone_bateria.txt": "446caf794767356eb415c3d4cd1497323c606549a6ec16058bbc01e1e4468c21",
+  "data/raw/galaxy_2015.txt": "f08b73d7e48c2a6c60b9da02fc35da4d1f101f491506e231c30259a2c7378113",
+  "data/raw/galaxy_2018.txt": "f5d4763d1a559b67730fa962a9802f4321811fbe5b3b9b26531f85fe2ca168b8",
+  "data/raw/galaxy_2021.txt": "d1090efb6e139489c013bc5f135cf3e59f696e1135873dd95bf29cf4f1b097c0",
+  "data/raw/galaxy_2025.txt": "50ebef9e9a7d604ad68bb6ec03cf2e976c46d74596f5a691bb9732b95da175d6",
+  "data/raw/iphone_2015.txt": "ca667ceea35199c9dfeb6c1efe5952e7dfaa6f8aa2589d6d9e4af05bcbf25ceb",
+  "data/raw/iphone_2018.txt": "58bb66867a9450d51465b6d16c54cf71bdd5d9c2cbeb68b95263de6c9b358adb",
+  "data/raw/iphone_2021.txt": "65854514ec750540363156f4bb8c66eb31fb23dfc3a6d67008f17081c6b60dc0",
+  "data/raw/iphone_2025.txt": "e96150ade0a1cb3a745fec0e81e7a58d7aed21aa954500d5c917e8e801c27ae0",
+  "data/raw/metodo_notebookcheck.txt": "bcc483057076a68d41af30468b84929ed592aeb5b3ab01b2b8da7551022eea87",
+  "data/raw/moto_2015.txt": "0f048c584c9c2b19bc12de1b4d641474192637124d7e751d6845bdbc8dfb7fa6",
+  "data/raw/moto_2018.txt": "364cc99defa4dac9102960516fb870afecf6e0976721027f45eaa815ec9fbef1",
+  "data/raw/moto_2021.txt": "13515ca4420e01a54f38e5c10dea5dc858ddf3c4d7309780f22eae04f0ffee17",
+  "data/raw/moto_2025.txt": "d69b23e551bb1e7bd263830c63147ef1cdff3d0954e3c8fc117e0f065b66fb6d",
+  "data/raw/nokia_comunicado.txt": "9d467a64f18ca042b084941265ac2ef56cceda38a7f7c5ab2520d29e356b22f8",
+  "data/raw/nokia_manual_bateria.txt": "2acf4af6ea10751d7fde80599976016cd6f1073ea0e21c213fc6e425680c55c0",
+  "data/raw/nokia_manual_cambio.txt": "c19cdad0dad2e96c52e0f5b9fabec0471823bbb12c6a5bb5b1e945a748b83739",
+  "data/raw/nokia_manual_golpes.txt": "00c20b12b85a34727c3b638a47a3b775638dbd42b8f6e66fa996babef5c6fcdc"
+}

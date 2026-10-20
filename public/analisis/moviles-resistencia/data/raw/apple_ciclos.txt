@@ -1,0 +1,4 @@
+Fuente: https://support.apple.com/es-es/106348
+Consulta: 2026-10-20.
+Datos transcritos de la documentación de Apple: iPhone 14 y anteriores, diseño para conservar el 80 % de capacidad a los 500 ciclos completos en condiciones ideales; iPhone 15 y posteriores, 80 % a los 1000 ciclos completos en condiciones ideales.
+Tipo de evidencia: especificación declarada por Apple. No representa resultados longitudinales observados por Nebula. La propia fuente advierte de la influencia del uso y la carga.

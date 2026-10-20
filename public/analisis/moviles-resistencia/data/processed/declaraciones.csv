@@ -1,0 +1,5 @@
+modelo,magnitud,valor,unidad,tipo,fuente
+Nokia 3310 (2000),espera,260.0,horas,máximo anunciado,nokia_comunicado.txt
+Nokia 3310 (2000),conversación,4.5,horas,máximo anunciado,nokia_comunicado.txt
+iPhone 14 y anteriores,ciclos hasta conservar el 80 %,500.0,ciclos,objetivo de diseño en condiciones ideales,apple_ciclos.txt
+iPhone 15 y posteriores,ciclos hasta conservar el 80 %,1000.0,ciclos,objetivo de diseño en condiciones ideales,apple_ciclos.txt

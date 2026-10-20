@@ -1,0 +1,9 @@
+Fuente: https://www.notebookcheck.net/Motorola-Moto-G-3rd-Generation-Smartphone-Review.147931.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: last week; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Motorola-Moto-G-3rd-Generation-Smartphone-Review.147931.0.html","pattern":"WiFi Websurfing"}); Total lines: 1046
+L764: ### Battery Runtime
+L769: Battery Runtime
+L771: WiFi Websurfing  |  | 8h 46min
+L772: Big Buck Bunny H.264 1080p  |  | 11h 17min
+L786: WiFi v1.3 (h)  | 8.8  |  |  | 8.4 -5%  | 5.9 -33%  | 7 -20%  | 7.2 -18%

@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Samsung-Galaxy-S21-smartphone-review-The-most-affordable-high-end-Galaxy.522690.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Samsung-Galaxy-S21-smartphone-review-The-most-affordable-high-end-Galaxy.522690.0.html","pattern":"WiFi Websurfing"}); Total lines: 1864
+L1565: Battery Runtime
+L1567: WiFi Websurfing  |  | 9h 04min
+L1568: Big Buck Bunny H.264 1080p  |  | 15h 41min
+L1581: WiFi v1.3 (h)  | 9.1  | 15.8 74%  | 12.8 41%  | 12.4 36%  | 15.4 69%  | 12.7 40%

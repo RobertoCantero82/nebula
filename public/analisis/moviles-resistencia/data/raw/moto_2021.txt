@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Motorola-Moto-G30-Review-90-Hz-smartphone-with-an-IP-certification-and-NFC-for-less-than-180-Euros.530863.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Motorola-Moto-G30-Review-90-Hz-smartphone-with-an-IP-certification-and-NFC-for-less-than-180-Euros.530863.0.html","pattern":"WiFi Websurfing"}); Total lines: 1657
+L1431: Battery Runtime
+L1433: WiFi Websurfing  |  | 17h 49min
+L1434: Big Buck Bunny H.264 1080p  |  | 22h 29min
+L1447: WiFi v1.3 (h)  | 17.8  | 20 12%  | 21.8 22%  | 19.2 8%  | 18.6 4%  | 14.5 -19%

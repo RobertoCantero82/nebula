@@ -1,0 +1,42 @@
+{
+  "categoria": "EDA",
+  "consulta": "2026-10-20",
+  "moviles": 12,
+  "anios": [
+    2015,
+    2018,
+    2021,
+    2025
+  ],
+  "familias": [
+    "Galaxy S",
+    "Moto G",
+    "iPhone"
+  ],
+  "cambios_wifi_porcentaje": {
+    "Galaxy S": 127.78947368421055,
+    "Moto G": 97.3384030418251,
+    "iPhone": 144.51219512195124
+  },
+  "cambios_video_porcentaje": {
+    "Moto G": 78.43426883308715,
+    "iPhone": 152.21745350500714
+  },
+  "bajadas_intermedias": [
+    {
+      "modelo": "Samsung Galaxy S9",
+      "cambio_minutos": -1.0,
+      "cambio_porcentaje": -0.21052631578947212
+    },
+    {
+      "modelo": "Motorola Moto G86",
+      "cambio_minutos": -31.0,
+      "cambio_porcentaje": -2.8999064546304965
+    }
+  ],
+  "nokia_espera_horas_maximo_anunciado": 260,
+  "nokia_conversacion_horas_maximo_anunciado": 4.5,
+  "nokia_espera_dias_maximo_anunciado": 10.833333333333334,
+  "galaxy_s6_wifi_minutos": 475,
+  "galaxy_s25_wifi_minutos": 1082
+}

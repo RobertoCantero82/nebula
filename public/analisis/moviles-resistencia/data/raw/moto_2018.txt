@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Motorola-Moto-G6-Smartphone-Review.303202.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Motorola-Moto-G6-Smartphone-Review.303202.0.html","pattern":"WiFi Websurfing"}); Total lines: 1222
+L1061: Battery Runtime
+L1063: WiFi Websurfing (Chrome 66)  |  | 9h 13min
+L1064: Big Buck Bunny H.264 1080p  |  | 10h 00min
+L1077: WiFi v1.3 (h)  | 9.2  | 8.6 -7%  | 13.2 43%  | 10 9%  | 15.1 64%  | 12.2 33%

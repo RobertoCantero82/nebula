@@ -1,0 +1,9 @@
+Fuente: https://www.notebookcheck.net/Apple-iPhone-6S-Smartphone-Review.151403.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: yesterday; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Apple-iPhone-6S-Smartphone-Review.151403.0.html","pattern":"WiFi Websurfing"}); Total lines: 1085
+L778: ### Battery Runtime
+L782: Battery Runtime
+L784: WiFi Websurfing  |  | 8h 12min
+L785: Big Buck Bunny H.264 1080p  |  | 11h 39min
+L799: WiFi v1.3 (h)  | 8.2  |  | 5.9 -28%  | 5.4 -34%  | 8.9 9%  | 7.2 -12%  | 6.5 -21%

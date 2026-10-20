@@ -1,0 +1,171 @@
+[
+  {
+    "clave": "iphone_2015",
+    "modelo": "Apple iPhone 6s",
+    "anio": 2015,
+    "familia": "iPhone",
+    "url": "https://www.notebookcheck.net/Apple-iPhone-6S-Smartphone-Review.151403.0.html",
+    "archivo": "data/raw/iphone_2015.txt",
+    "sha256": "ca667ceea35199c9dfeb6c1efe5952e7dfaa6f8aa2589d6d9e4af05bcbf25ceb",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "iphone_2018",
+    "modelo": "Apple iPhone XR",
+    "anio": 2018,
+    "familia": "iPhone",
+    "url": "https://www.notebookcheck.net/Apple-iPhone-XR-Smartphone-Review.346971.0.html",
+    "archivo": "data/raw/iphone_2018.txt",
+    "sha256": "58bb66867a9450d51465b6d16c54cf71bdd5d9c2cbeb68b95263de6c9b358adb",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "iphone_2021",
+    "modelo": "Apple iPhone 13",
+    "anio": 2021,
+    "familia": "iPhone",
+    "url": "https://www.notebookcheck.net/Apple-iPhone-13-Smartphone-Review-High-quality-Apple-phone-with-an-even-brighter-display.572153.0.html",
+    "archivo": "data/raw/iphone_2021.txt",
+    "sha256": "65854514ec750540363156f4bb8c66eb31fb23dfc3a6d67008f17081c6b60dc0",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "iphone_2025",
+    "modelo": "Apple iPhone 17",
+    "anio": 2025,
+    "familia": "iPhone",
+    "url": "https://www.notebookcheck.net/Apple-iPhone-17-smartphone-review-The-best-iPhone-of-the-year-is-unbelievably-close-to-an-iPhone-Pro.1129296.0.html",
+    "archivo": "data/raw/iphone_2025.txt",
+    "sha256": "e96150ade0a1cb3a745fec0e81e7a58d7aed21aa954500d5c917e8e801c27ae0",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "galaxy_2015",
+    "modelo": "Samsung Galaxy S6",
+    "anio": 2015,
+    "familia": "Galaxy S",
+    "url": "https://www.notebookcheck.net/Samsung-Galaxy-S6-Smartphone-Review.140249.0.html",
+    "archivo": "data/raw/galaxy_2015.txt",
+    "sha256": "f08b73d7e48c2a6c60b9da02fc35da4d1f101f491506e231c30259a2c7378113",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "galaxy_2018",
+    "modelo": "Samsung Galaxy S9",
+    "anio": 2018,
+    "familia": "Galaxy S",
+    "url": "https://www.notebookcheck.net/Samsung-Galaxy-S9-Smartphone-Review.293936.0.html",
+    "archivo": "data/raw/galaxy_2018.txt",
+    "sha256": "f5d4763d1a559b67730fa962a9802f4321811fbe5b3b9b26531f85fe2ca168b8",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "galaxy_2021",
+    "modelo": "Samsung Galaxy S21",
+    "anio": 2021,
+    "familia": "Galaxy S",
+    "url": "https://www.notebookcheck.net/Samsung-Galaxy-S21-smartphone-review-The-most-affordable-high-end-Galaxy.522690.0.html",
+    "archivo": "data/raw/galaxy_2021.txt",
+    "sha256": "d1090efb6e139489c013bc5f135cf3e59f696e1135873dd95bf29cf4f1b097c0",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "galaxy_2025",
+    "modelo": "Samsung Galaxy S25",
+    "anio": 2025,
+    "familia": "Galaxy S",
+    "url": "https://www.notebookcheck.net/Samsung-Galaxy-S25-review-The-star-among-compact-smartphones-is-losing-ground.989246.0.html",
+    "archivo": "data/raw/galaxy_2025.txt",
+    "sha256": "50ebef9e9a7d604ad68bb6ec03cf2e976c46d74596f5a691bb9732b95da175d6",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "moto_2015",
+    "modelo": "Motorola Moto G (2015)",
+    "anio": 2015,
+    "familia": "Moto G",
+    "url": "https://www.notebookcheck.net/Motorola-Moto-G-3rd-Generation-Smartphone-Review.147931.0.html",
+    "archivo": "data/raw/moto_2015.txt",
+    "sha256": "0f048c584c9c2b19bc12de1b4d641474192637124d7e751d6845bdbc8dfb7fa6",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "moto_2018",
+    "modelo": "Motorola Moto G6",
+    "anio": 2018,
+    "familia": "Moto G",
+    "url": "https://www.notebookcheck.net/Motorola-Moto-G6-Smartphone-Review.303202.0.html",
+    "archivo": "data/raw/moto_2018.txt",
+    "sha256": "364cc99defa4dac9102960516fb870afecf6e0976721027f45eaa815ec9fbef1",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "moto_2021",
+    "modelo": "Motorola Moto G30",
+    "anio": 2021,
+    "familia": "Moto G",
+    "url": "https://www.notebookcheck.net/Motorola-Moto-G30-Review-90-Hz-smartphone-with-an-IP-certification-and-NFC-for-less-than-180-Euros.530863.0.html",
+    "archivo": "data/raw/moto_2021.txt",
+    "sha256": "13515ca4420e01a54f38e5c10dea5dc858ddf3c4d7309780f22eae04f0ffee17",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "moto_2025",
+    "modelo": "Motorola Moto G86",
+    "anio": 2025,
+    "familia": "Moto G",
+    "url": "https://www.notebookcheck.net/The-brightest-star-in-the-midrange-Motorola-Moto-G86-smartphone-review.1069107.0.html",
+    "archivo": "data/raw/moto_2025.txt",
+    "sha256": "d69b23e551bb1e7bd263830c63147ef1cdff3d0954e3c8fc117e0f065b66fb6d",
+    "consulta": "2026-10-20"
+  },
+  {
+    "clave": "metodo_notebookcheck",
+    "url": "https://www.notebookcheck.net/How-does-Notebookcheck-test-laptops-and-smartphones-A-behind-the-scenes-look-into-our-review-process.15394.0.html",
+    "archivo": "data/raw/metodo_notebookcheck.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  },
+  {
+    "clave": "nokia_comunicado",
+    "url": "https://www.globenewswire.com/news-release/2000/09/01/1845525/0/en/Nokia-introduces-mobile-chat-with-the-Nokia-3310.html",
+    "archivo": "data/raw/nokia_comunicado.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  },
+  {
+    "clave": "nokia_manual_cambio",
+    "url": "https://www.manuallib.com/download/NOKIA-3310-USER-GUIDE.PDF",
+    "archivo": "data/raw/nokia_manual_cambio.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  },
+  {
+    "clave": "nokia_manual_bateria",
+    "url": "https://www.manuallib.com/download/NOKIA-3310-USER-GUIDE.PDF",
+    "archivo": "data/raw/nokia_manual_bateria.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  },
+  {
+    "clave": "nokia_manual_golpes",
+    "url": "https://www.manuallib.com/download/NOKIA-3310-USER-GUIDE.PDF",
+    "archivo": "data/raw/nokia_manual_golpes.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  },
+  {
+    "clave": "apple_ciclos",
+    "url": "https://support.apple.com/es-es/106348",
+    "archivo": "data/raw/apple_ciclos.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  },
+  {
+    "clave": "fairphone_bateria",
+    "url": "https://support.fairphone.com/hc/en-us/articles/37412807551634-How-to-replace-the-battery-in-The-Fairphone-Gen-6",
+    "archivo": "data/raw/fairphone_bateria.txt",
+    "consulta": "2026-10-20",
+    "tipo": "extracto documental; no medición propia"
+  }
+]

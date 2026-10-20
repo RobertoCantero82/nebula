@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Apple-iPhone-XR-Smartphone-Review.346971.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Apple-iPhone-XR-Smartphone-Review.346971.0.html","pattern":"WiFi Websurfing"}); Total lines: 1335
+L1033: Battery Runtime
+L1035: WiFi Websurfing (Safari Mobile 12)  |  | 15h 10min
+L1036: Big Buck Bunny H.264 1080p  |  | 16h 51min
+L1049: WiFi v1.3 (h)  | 15.2  | 7.9 -48%  | 13.5 -11%  | 12.8 -16%  | 9.5 -37%  | 11 -28%

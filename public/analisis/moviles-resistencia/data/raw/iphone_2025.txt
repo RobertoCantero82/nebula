@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Apple-iPhone-17-smartphone-review-The-best-iPhone-of-the-year-is-unbelievably-close-to-an-iPhone-Pro.1129296.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Apple-iPhone-17-smartphone-review-The-best-iPhone-of-the-year-is-unbelievably-close-to-an-iPhone-Pro.1129296.0.html","pattern":"WiFi Websurfing"}); Total lines: 1756
+L1413: Battery Runtime
+L1415: WiFi Websurfing  |  | 20h 03min
+L1416: Big Buck Bunny H.264 1080p  |  | 29h 23min
+L1429: WiFi v1.3 (h)  | 20.1  | 18.3 -9%  | 17 -15%  | 22.5 12%  | 18 -10%  | 22.8 13%

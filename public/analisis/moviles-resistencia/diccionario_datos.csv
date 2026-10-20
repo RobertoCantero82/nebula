@@ -1,0 +1,14 @@
+columna,descripcion
+clave,identificador de la observación y el extracto
+modelo,nombre del modelo concreto probado
+anio,año de lanzamiento seleccionado
+familia,familia utilizada para comparar generaciones
+url,enlace a la prueba original de Notebookcheck
+wifi_original,duración exacta publicada en horas y minutos
+wifi_minutos,duración wifi convertida a minutos enteros
+video_original,duración de reproducción local publicada o ausente
+video_minutos,duración de vídeo convertida a minutos o ausente
+protocolo,versión del ensayo wifi y brillo de referencia
+consulta,fecha de consulta de la fuente
+wifi_horas,minutos de navegación divididos entre sesenta
+video_horas,minutos de vídeo divididos entre sesenta o ausente

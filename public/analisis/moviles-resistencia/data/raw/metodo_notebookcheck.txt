@@ -1,0 +1,6 @@
+Consulta: 2026-10-20
+Fuente: https://www.notebookcheck.net/How-does-Notebookcheck-test-laptops-and-smartphones-A-behind-the-scenes-look-into-our-review-process.15394.0.html
+L531:   * WLAN operation: Achievable runtime in WLAN operation with adjusted display brightness (~150 cd/m²) and activated power-saving measures (power profile Balanced or similar). For the run time test, an automatic script (updated on 05.03.2015 to v1.3 with HTML5, javascript, and no flash) is executed, which calls up a mix of Internet pages that change constantly every 30s.
+Extracto mínimo de la documentación original consultada por web.
+L532:   * Video playback: We perform our H.264 test with the freely available cite79†Big Buck Bunny Film†peach.blender.org in 1080p and H.264 encoding in a continuous loop. The power-saving measures are activated, the screen is set to a brightness of 150 cd/m², Wi-Fi and Bluetooth are switched off (flight mode), and the sound is set to silent.
+L534: With regard to the test results, it should be noted that our test samples are generally new devices and full battery performance can only be achieved after several complete charging and discharging cycles. The tests carried out are thus only indicative of the review device's battery life.

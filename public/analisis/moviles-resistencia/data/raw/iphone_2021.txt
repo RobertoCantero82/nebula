@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/Apple-iPhone-13-Smartphone-Review-High-quality-Apple-phone-with-an-even-brighter-display.572153.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/Apple-iPhone-13-Smartphone-Review-High-quality-Apple-phone-with-an-even-brighter-display.572153.0.html","pattern":"WiFi Websurfing"}); Total lines: 1507
+L1201: Battery Runtime
+L1203: WiFi Websurfing  |  | 16h 59min
+L1204: Big Buck Bunny H.264 1080p  |  | 20h 24min
+L1217: WiFi v1.3 (h)  | 17  | 15.8 -7%  | 9.1 -46%  | 14.2 -16%  | 8.8 -48%  | 12.1 -29%

@@ -1,0 +1,8 @@
+Fuente: https://www.notebookcheck.net/The-brightest-star-in-the-midrange-Motorola-Moto-G86-smartphone-review.1069107.0.html
+Consulta: 2026-10-20
+Captura de las filas numéricas publicadas; acceso mediante buscador web. La descarga HTTP directa devolvió 403.
+  Crawled: today; Content type: text/html; Source: find({"ref_id":"https://www.notebookcheck.net/The-brightest-star-in-the-midrange-Motorola-Moto-G86-smartphone-review.1069107.0.html","pattern":"WiFi Websurfing"}); Total lines: 1614
+L1311: Battery Runtime
+L1313: WiFi Websurfing  |  | 17h 18min
+L1314: Big Buck Bunny H.264 1080p  |  | 20h 08min
+L1326: WiFi v1.3 (h)  | 17.3  | 14.9 -14%  | 18.3 6%  | 12.3 -29%  | 17.1 -1%

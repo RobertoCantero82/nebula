@@ -1,0 +1,3 @@
+Fuente: https://support.fairphone.com/hc/en-us/articles/37412807551634-How-to-replace-the-battery-in-The-Fairphone-Gen-6
+Consulta: 2026-10-20.
+Datos transcritos de la guía oficial: destornillador Torx T5; dos tornillos de la tapa inferior; cinco tornillos alrededor de la batería; desconexión del conector y sustitución. No consta un tiempo medido por Nebula.
