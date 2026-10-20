@@ -187,6 +187,17 @@ Un ciclo no es cada vez que enchufas: varias cargas parciales pueden sumar uno. 
 
 El propio [manual del Nokia](https://www.manuallib.com/download/NOKIA-3310-USER-GUIDE.PDF) ya avisaba de que la batería acabaría desgastándose. La inmortalidad no venía incluida en la caja.
 
+<div style="aspect-ratio:16/9;margin:2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/QqwqEUgLPk0"
+    title="Vídeo de YouTube"
+    style="width:100%;height:100%;border:0;border-radius:12px;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## Donde el ladrillo sí tenía una ventaja
 
 En el 3310 podías retirar la tapa y sacar la batería mediante pestañas. Cambiar una pieza gastada no exigía despegar el teléfono. Esa comodidad sí está documentada y ya faltaba en el Galaxy S6 de 2015.
