@@ -130,7 +130,16 @@ Ambas cifras podían convivir porque describían tareas distintas. Esperar una l
 
 Por eso no enfrento los once días anunciados del Nokia con las horas de navegación de un smartphone. Sería comparar cuánto aguanta un coche aparcado con cuánto recorre en carretera. El ladrillo conserva su leyenda, pero no gana por incomparecencia del rival.
 
-
+<div style="position:relative;width:100%;aspect-ratio:16/9;margin:2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/BtfIz74gCD8"
+    title="Vídeo de YouTube sobre teléfonos móviles"
+    style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## La prueba que sí podemos compartir
 
