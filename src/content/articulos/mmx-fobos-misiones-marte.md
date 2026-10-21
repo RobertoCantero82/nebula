@@ -46,178 +46,175 @@ Puedes explorar las campañas y sus resultados aquí. Los guiones indican un obj
 ## Fobos no es un Marte pequeño
 
 <fieldset id="apuesta-fobos">
-  <legend>Antes de seguir, haz tu apuesta</legend>
-
-  <p>
-    Antes de MMX, tres misiones intentaron llevar aparatos
-    a la superficie de Fobos.
-    <strong>
-      ¿Cuántas consiguieron siquiera quedarse en órbita de Marte?
-    </strong>
-  </p>
-
-  <div class="fobos-opciones">
-    <button type="button" data-respuesta="0" aria-pressed="false">
-      Ninguna
-    </button>
-    <button type="button" data-respuesta="1" aria-pressed="false">
-      Una
-    </button>
-    <button type="button" data-respuesta="3" aria-pressed="false">
-      Las tres
-    </button>
-  </div>
-
-  <p class="fobos-respuesta" aria-live="polite">
-    Elige una respuesta para descubrir hasta dónde llegaron.
-  </p>
-
-  <div class="fobos-recorrido" hidden>
-    <ol>
-      <li>
-        <strong>Phobos 1 · 1988</strong>
-        <span>Perdió el contacto durante el viaje.</span>
-      </li>
-      <li class="fobos-mas-lejos">
-        <strong>Phobos 2 · 1988</strong>
-        <span>
-          Sí orbitó Marte y observó Fobos. Dejó de responder
-          antes de liberar sus módulos de superficie.
-        </span>
-      </li>
-      <li>
-        <strong>Phobos-Grunt · 2011</strong>
-        <span>No consiguió abandonar la órbita terrestre.</span>
-      </li>
-    </ol>
-
-    <p>
-      Ninguna llegó a trabajar en el suelo de Fobos.
-      Pero tampoco fallaron todas en el mismo punto.
-    </p>
-  </div>
+<legend>Antes de seguir, haz tu apuesta</legend>
+<p>Antes de MMX, tres misiones intentaron llevar aparatos a la superficie de Fobos. <strong>¿Cuántas consiguieron siquiera entrar en órbita de Marte?</strong></p>
+<div class="fobos-opciones">
+<button type="button" data-respuesta="0" aria-pressed="false">Ninguna</button>
+<button type="button" data-respuesta="1" aria-pressed="false">Una</button>
+<button type="button" data-respuesta="3" aria-pressed="false">Las tres</button>
+</div>
+<p class="fobos-respuesta" role="status" aria-live="polite">Elige una respuesta para descubrir hasta dónde llegaron.</p>
+<div class="fobos-recorrido" hidden>
+<ol>
+<li><strong>Phobos 1 · 1988</strong><span>Perdió el contacto durante el viaje.</span></li>
+<li class="fobos-mas-lejos"><strong>Phobos 2 · 1988</strong><span>Sí orbitó Marte y observó Fobos. Dejó de responder antes de liberar sus módulos de superficie.</span></li>
+<li><strong>Phobos-Grunt · 2011</strong><span>No consiguió abandonar la órbita terrestre.</span></li>
+</ol>
+<p>Ninguna llegó a trabajar en el suelo de Fobos. Pero tampoco fallaron todas en el mismo punto.</p>
+</div>
 </fieldset>
 
 <style>
-  #apuesta-fobos {
-    min-width: 0;
-    margin: 2rem 0;
-    padding: 1.25rem;
-    border: 1px solid #446ddf55;
-    border-radius: 14px;
-    background: #446ddf08;
-  }
+#apuesta-fobos {
+  min-width: 0;
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid #446ddf55;
+  border-radius: 14px;
+  background: #446ddf08;
+}
 
-  #apuesta-fobos legend {
-    padding: 0 .4rem;
-    font-weight: 700;
-  }
+#apuesta-fobos legend {
+  padding: 0 .4rem;
+  font-weight: 700;
+}
 
-  #apuesta-fobos .fobos-opciones {
-    display: flex;
-    flex-wrap: wrap;
-    gap: .65rem;
-  }
+#apuesta-fobos p {
+  line-height: 1.6;
+}
 
-  #apuesta-fobos button {
-    padding: .75rem 1rem;
-    border: 1px solid #446ddf;
-    border-radius: 8px;
-    background: #fff;
-    color: #294da9;
-    font: inherit;
-    cursor: pointer;
-  }
+#apuesta-fobos > p strong {
+  color: inherit;
+}
 
-  #apuesta-fobos button[aria-pressed="true"] {
-    background: #446ddf;
-    color: #fff;
-  }
+#apuesta-fobos .fobos-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+}
 
-  #apuesta-fobos button:focus-visible {
-    outline: 3px solid #d85a30;
-    outline-offset: 3px;
-  }
+#apuesta-fobos button {
+  padding: .75rem 1rem;
+  border: 1px solid #446ddf;
+  border-radius: 8px;
+  background: #fff;
+  color: #294da9;
+  font: inherit;
+  cursor: pointer;
+}
 
-  #apuesta-fobos .fobos-respuesta {
-    margin-bottom: 0;
-    font-weight: 600;
-  }
+#apuesta-fobos button[aria-pressed="true"] {
+  border-width: 2px;
+  background: #e9eefc;
+  color: #294da9;
+  box-shadow: inset 0 0 0 1px #446ddf;
+}
 
-  #apuesta-fobos .fobos-recorrido {
-    margin-top: 1.25rem;
-  }
+#apuesta-fobos button.fobos-correcta {
+  border-color: #446ddf;
+  background: #446ddf;
+  color: #fff;
+  box-shadow: none;
+}
 
-  #apuesta-fobos [hidden] {
-    display: none !important;
-  }
+#apuesta-fobos button:focus-visible {
+  outline: 3px solid #d85a30;
+  outline-offset: 3px;
+}
 
-  #apuesta-fobos ol {
-    display: grid;
-    gap: .75rem;
-    padding: 0;
-    list-style: none;
-  }
+#apuesta-fobos .fobos-respuesta {
+  margin-bottom: 0;
+  font-weight: 600;
+}
 
-  #apuesta-fobos li {
-    padding: .9rem 1rem;
-    border-left: 3px solid #c1c7d6;
-    background: #fff;
-  }
+#apuesta-fobos .fobos-recorrido {
+  margin-top: 1.25rem;
+}
 
-  #apuesta-fobos li.fobos-mas-lejos {
-    border-left-color: #446ddf;
-    background: #446ddf0d;
-  }
+#apuesta-fobos [hidden] {
+  display: none !important;
+}
 
-  #apuesta-fobos li strong,
-  #apuesta-fobos li span {
-    display: block;
-  }
+#apuesta-fobos ol {
+  display: grid;
+  gap: .75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-  #apuesta-fobos li span {
-    margin-top: .3rem;
-  }
+#apuesta-fobos li {
+  margin: 0;
+  padding: .9rem 1rem;
+  border-left: 3px solid #c1c7d6;
+  background: #fff;
+}
+
+#apuesta-fobos li.fobos-mas-lejos {
+  border-left-color: #446ddf;
+  background: #446ddf0d;
+}
+
+#apuesta-fobos li strong,
+#apuesta-fobos li span {
+  display: block;
+}
+
+#apuesta-fobos li strong {
+  color: inherit;
+}
+
+#apuesta-fobos li span {
+  margin-top: .3rem;
+}
+
+#apuesta-fobos .fobos-recorrido > p:last-child {
+  margin-bottom: 0;
+}
 </style>
 
 <script>
-  (() => {
-    const iniciar = () => {
-      const bloque = document.getElementById('apuesta-fobos');
-      if (!bloque || bloque.dataset.iniciado) return;
+(() => {
+  const iniciar = () => {
+    const bloque = document.getElementById('apuesta-fobos');
+    if (!bloque || bloque.dataset.iniciado) return;
 
-      bloque.dataset.iniciado = 'si';
+    bloque.dataset.iniciado = 'si';
 
-      const botones = bloque.querySelectorAll('[data-respuesta]');
-      const respuesta = bloque.querySelector('.fobos-respuesta');
-      const recorrido = bloque.querySelector('.fobos-recorrido');
+    const botones = bloque.querySelectorAll('[data-respuesta]');
+    const respuesta = bloque.querySelector('.fobos-respuesta');
+    const recorrido = bloque.querySelector('.fobos-recorrido');
 
-      botones.forEach((boton) => {
-        boton.addEventListener('click', () => {
-          botones.forEach((opcion) => {
-            opcion.setAttribute(
-              'aria-pressed',
-              String(opcion === boton)
-            );
-          });
-
-          respuesta.textContent = boton.dataset.respuesta === '1'
-            ? 'Has acertado: solo Phobos 2 consiguió orbitar Marte.'
-            : 'Fue una: Phobos 2. Las otras dos se quedaron antes.';
-
-          recorrido.hidden = false;
+    botones.forEach((boton) => {
+      boton.addEventListener('click', () => {
+        botones.forEach((opcion) => {
+          opcion.setAttribute(
+            'aria-pressed',
+            String(opcion === boton)
+          );
+          opcion.classList.toggle(
+            'fobos-correcta',
+            opcion.dataset.respuesta === '1'
+          );
         });
-      });
-    };
 
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', iniciar, {
-        once: true
+        respuesta.textContent = boton.dataset.respuesta === '1'
+          ? 'Has acertado: solo Phobos 2 consiguió orbitar Marte.'
+          : 'La respuesta correcta es una: Phobos 2. Las otras dos no llegaron a entrar en órbita de Marte.';
+
+        recorrido.hidden = false;
       });
-    } else {
-      iniciar();
-    }
-  })();
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', iniciar, {
+      once: true
+    });
+  } else {
+    iniciar();
+  }
+})();
 </script>
 
 En Fobos, el historial cabe en tres nombres. Phobos 1 perdió el contacto durante el viaje de 1988. Phobos 2 sí orbitó Marte y observó la luna, pero en 1989 dejó de responder antes de liberar sus módulos de superficie. Phobos-Grunt, lanzada en 2011, ni siquiera consiguió abandonar la órbita terrestre.
