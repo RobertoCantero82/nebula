@@ -17,6 +17,28 @@ El plan de la agencia espacial japonesa, JAXA, consiste en recoger material de F
 
 La duda es si son cuerpos que Marte atrapó con su gravedad o si nacieron de restos de un gran impacto. Mirarlos desde lejos no ha cerrado la discusión. Llevar una muestra al laboratorio permitiría examinarla con instrumentos que no caben en una sonda.
 
+<div class="video-mmx">
+<iframe src="https://www.youtube-nocookie.com/embed/3pY8tihDfB4" title="Vídeo sobre la misión MMX" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<style>
+.video-mmx {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 2rem 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #111;
+}
+
+.video-mmx iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+</style>
+
 ## Llegar a Marte se nos da mejor que antes
 
 ¿Y cómo lo puedo comprobar? Para ello, he reconstruido **49 campañas de lanzamiento hacia Marte y sus lunas**, desde 1960. He separado dos objetivos: entrar en órbita, es decir, quedarse dando vueltas alrededor del planeta, y trabajar desde el suelo durante más de un día.
