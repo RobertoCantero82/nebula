@@ -1,0 +1,152 @@
+MMX mission successfully launched – Idefix® rover on its way to Martian moon Phobos
+Skip to main content
+Skip to navigation
+Skip to footer
+Press
+Accessibility
+de
+en
+>
+Latest
+>
+News
+>
+>
+2026
+>
+MMX mission successfully launches – Idefix® rover on its way to Martian moon Phobos
+Home
+>
+Latest
+>
+News
+>
+2026
+>
+MMX mission successfully launches – Idefix® rover on its way to Martian moon Phobos
+MMX mission successfully launches – Idefix® rover on its way to Martian moon Phobos
+Go MMX!
+On 19 October 2026 at 21:41 CEST, the Japanese MMX (Martian Moons eXploration) spacecraft lifted off on schedule on board an H3 launch vehicle from the Tanegashima Space Center.
+Image:
+1
+/
+8
+,
+Credit:
+DLR (CC BY-NC-ND 3.0)
+Download
+Download
+MMX mission during rollout to the launch pad
+The final stretch – the Japanese H3 launch vehicle, with the MMX spacecraft at the top, on its way to the launch pad at the Tanegashima Space Center.
+Image:
+2
+/
+8
+,
+Credit:
+DLR (CC BY-NC-ND 3.0)
+Download
+Download
+The MMX probe
+MMX is a mission of the Japanese space agency, JAXA, with contributions from NASA, ESA, CNES and DLR. Launch is expected in September 2024. The mission is tasked with characterising the Martian moons Phobos and Deimos, and clarifying how and where the two satellites formed.
+Image:
+8
+/
+8
+,
+Credit:
+JAXA
+Download
+Download
+The Japanese MMX spacecraft has lifted off on board a H3 launch vehicle from the Tanegashima Space Center.
+The Idefix
+®
+rover, developed jointly by DLR and CNES, is scheduled to land on Mars' moon Phobos around the turn of the year 2028/2029 and explore it for approximately 100 days.
+MMX aims to determine the origin of Mars' moons and, in 2031, bring soil samples from Phobos back to Earth for the first time.
+Focus: Space, robotics, exploration, Mars
+The exploration of the Martian system is entering a new phase. On 19 October 2026 at 21:41 CEST, the Japanese MMX (Martian Moons eXploration) spacecraft was successfully launched from the Tanegashima Space Center on board a H3 launch vehicle. Travelling with it is the German-French Idefix
+®
+rover, which was jointly developed and built by the German Aerospace Center (Deutsches Zentrum für Luft- und Raumfahrt; DLR) and the French space agency CNES (Centre national d’études spatiales). Around the turn of the year 2028/2029, Idefix
+®
+is set to become the first lander to touch down on the Martian moon Phobos, where it will explore the surface for 100 days. The MMX mothercraft will then land on the larger of the two Martian moons itself, in order to bring samples from the Martian system back to Earth for the first time. MMX is the largest mission into the Solar System that the Japan Aerospace Exploration Agency (JAXA) has undertaken to date.
+DLR mission trailer 2026: Off to the Martian moons – Phobos, here we come!
+Your consent to the storage of data ('cookies') is required for the playback of this video on
+Youtube.com
+. You can view and change your current data storage settings at any time under
+privacy
+.
+Agree and show video
+DLR mission trailer 2026: Off to the Martian moons – Phobos, here we come!
+Credit:
+© DLR. All rights reserved
+"With the Idefix
+®
+rover, Germany and France are sending a piece of European robotics expertise on an extraordinary research journey", says Anke Kaysser-Pyzalla, Chair of the DLR Executive Board. "Idefix
+®
+will move across a celestial body whose low gravity is barely comparable to that of Earth. The mission combines pioneering technological work with fundamental questions about the formation of our Solar System and demonstrates the strength of international cooperation."
+Dorothee Bär, Federal Minister of Research, Technology and Space, adds: "I am delighted by the successful launch of the MMX mission, including the Idefix
+®
+rover. Germany's space sector is impressively demonstrating what it is capable of: high-precision technology that must continue to function perfectly in the vastness of space on Mars' moon Phobos. I am particularly proud that DLR, together with the French space agency CNES, is making a significant contribution to this mission. Japan, Germany and France – JAXA, DLR and CNES – are jointly driving forward the exploration of our Solar System. At the same time, with Idefix
+®
+, we are also breaking new technological ground – that is high-tech working hand in hand."
+A leap into the unknown – landing and driving in extreme microgravity
+For the team, the most exciting moment of the mission will come around the turn of the year 2028/2029, when MMX releases Idefix
+®
+from a height of approximately 40 to 100 metres above the surface of Phobos. After an unbraked impact, a rebound and the resulting bounces across the surface, the rover will autonomously right itself from its resting position, deploy its solar panels and begin its 100 days of exploration.
+The environmental conditions place extreme demands on the technology. The gravity on Phobos is less than one thousandth of that on Earth, and temperatures fluctuate by more than 200 degrees Celsius over a seven-hour day-night cycle.
+"Landing and driving on Phobos is uncharted territory for robotics", explains Markus Grebenstein, DLR project manager for Idefix
+®
+. "In terms of design, this requires extremely lightweight construction combined with robustness. In addition, the long signal travel times to Earth call for entirely new approaches to controlling the rover. Our first real test will be getting the rover to right itself from any position in this unknown environment."
+Idefix
+®
+will investigate different areas of Phobos and gather insights into the mechanical, thermal and mineralogical properties of its surface. Two DLR instruments are on board for this purpose – the RAX Raman spectrometer and the miniRAD radiometer. The rover's measurements will also provide information for selecting a suitable landing site and for the later sampling by the MMX mothercraft.
+Mission preparation and rover operations at DLR in Cologne
+At the control centre in DLR's Microgravity User Support Center (MUSC) in Cologne, preparations for operating Idefix
+®
+are in full swing. Following launch, the initial focus will be on the cruise phase to Mars, during which time the rover will remain docked to the MMX spacecraft. Taking turns with the control centre in Toulouse and working together with the German-French rover team, MUSC is planning and preparing the command sequences for regular health checks, instrument calibrations and maintenance tasks, such as charging the battery. A software update is also scheduled during the flight.
+While the MMX spacecraft is travelling to Mars, the research and operations teams are preparing for the exploration of Phobos by developing and rehearsing operational procedures and carrying out tests. These preparations will be stepped up once the spacecraft arrives at Mars.
+MMX aims to solve the mystery of Mars' moons
+The MMX mission aims to answer a key question in planetary science: how did the two Martian moons, Phobos and Deimos, form? Are they asteroids that were captured by Mars’ gravity, or did they form from the debris of massive impacts on the planet? Both moons are irregular in shape and, with diameters of up to 27 kilometres (Phobos) and 15 kilometres (Deimos), are comparatively small. Their formation history could provide important insights into the evolution of the Martian system and more general processes of planetary formation.
+Following its arrival in summer 2027, the MMX probe will initially study the moons of Mars from orbit using eight scientific instruments. After deploying Idefix
+®
+, the probe is also set to land on Phobos itself, collect at least ten grams of soil samples and send them back to Earth in a return capsule in 2031. This would mark the first time that samples from a Martian moon could be analysed in laboratories on Earth.
+Yasuhiro Kawakatsu, MMX project manager at JAXA: "As I watched the rocket H3 F10 soar into the sky, my thoughts went back to the very beginning of this project more than a decade ago. Inside the fairing was a spacecraft conceived, designed and built by an international team united by a shared vision. Together, we have created a world-class mission and assembled an unparalleled suite of scientific instruments to explore the Martian moons. The Idefix
+®
+rover, jointly developed by DLR and CNES, is a vital part of that mission. As the first vehicle to attempt operations on the surface of a Martian moon, it will provide unique insights into Phobos and help prepare for one of the mission's most challenging undertakings: collecting a sample from its surface. Reaching this moment has required perseverance, innovation and, above all, close cooperation between partners around the world. We have overcome many challenges together, and I look forward to the discoveries that await us as we continue this journey to Phobos."
+Related links
+DLR news: Off to the moons of Mars – MMX mission and
+Idefix
+®
+rover ready for launch
+DLR MMX mission
+Animation: MMX mission – The journey to the Martian moon Phobos
+Video: Testing, assembly and preparation of the German-French rover Idefix® for the MMX mission
+The German rover control centre
+DLR Institute of Robotics and Mechatronics
+DLR Institute of Space Systems in Bremen
+DLR Institute of Space Research
+DLR Institute of System Architectures in Aeronautics
+DLR Institute of Software Technology
+DLR Space Operations and Astronaut Training
+JAXA MMX mission
+CNES – MMX mission
+Download
+MMX Idefix® launchkit
+7.7 MB
+|
+PDF
+From Hayabusa2 to MMX – international collaboration
+MMX sees JAXA, CNES and DLR continue their successful collaboration in the exploration of small celestial bodies. Back in 2018, the German-French lander MASCOT touched down on the asteroid Ryugu as part of the Japanese Hayabusa2 mission. The probe returned samples from the asteroid to Earth in 2020. Idefix® builds on this experience and adds a new capability – while MASCOT moved by hopping, Idefix® will be the first lander to roll across the surface of a celestial body with extremely low gravity to explore it.
+About the MMX mission and the Idefix
+®
+rover
+MMX (Martian Moons eXploration) is a mission by the Japan Aerospace Exploration Agency (JAXA) to investigate the Martian moons Phobos and Deimos and to return soil samples from Phobos. The German-French Idefix® rover was developed under the joint responsibility of DLR and CNES. It is designed to explore the surface of Phobos and provide scientific data for the mission. Following the launch of the MMX mission, the rover will be operated from control centres at CNES in Toulouse, France, and DLR in Cologne.
+Contact
+Falk Dambowsky
+Head of Media Relations, Editor
+German Aerospace Center (DLR)
+Corporate Communications
+Linder Höhe, 51147 Cologne
+Tel:
++49 2203 601-3959
+Contact

@@ -1,0 +1,142 @@
+MMX - Martian Moons eXploration
+Destination Phobos,
+the unexplored Martian moon
+A world-first sample return mission to the Martian sphere.
+The five year journey now begins.
+The Martian Moons eXploration (MMX) Project
+LAUNCH
+[Scheduled]
+2026.10.20
+LIFT OFF !
+Scheduled for 4:41:03 a.m. JST
+MMX × H3
+Flight No. 10
+Special Site
+NEWS
+ALL
+2026.8.21
+A five year journey encompassed in one orange circle: The vision behind the MMX launch poster
+2026.8.20
+Launch of the MMX (Martian Moons eXploration) spacecraft onboard the H3 Launch Vehicle No. 10
+2026.4.30
+The third MMX meeting
+MESSAGE
+#GOODLUCKMMX
+WHAT’S MMX
+By returning 10g of material from the Martian moon, Phobos,
+and conducting observations of the moons,
+the origin of the Mars system
+and the pathways for the emergence of habitability
+and life can be explored.
+This is a world-first mission led by JAXA.
+The Martian Moons eXploration (MMX) mission will primarily focus on Phobos, a Martian moon that has never been explored. The mission will observe the topography, internal structure, composition, and gravity of the moon, and return samples of regolith.
+How did the Martian moons form? How did Mars and our Solar System evolve? Through detailed observations and analysis of the samples obtained from Phobos, this mission seeks to clarify the formation of the Martian sphere and the Solar System, explore how life began, and pave the way for future deep-space exploration.
+Launch is scheduled in autumn 2026, with the return to Earth targeted for 2031.
+MISSION
+MISSION 01
+Planetary Science
+Exploring the origin of the Martian moons and unveiling the evolutionary history of the Mars system
+©DLR 2024
+01
+Uncover the origin of the Martian moons and investigate how the planetary formation process unfolded in the transition region between the inner and outer Solar System, including mechanisms that transported key materials–such as water and organic matter–necessary for the emergency and habitability of life on terrestrial planets.
+02
+Clarify the mechanisms driving change in the Martian sphere from the vantage point of its moons, providing new insights into the evolutionary history of the Mars system.
+MISSION 02
+Acquisition of Exploration Technology
+Laying the foundations for future space exploration
+©DLR 2024
+01
+Develop technology for enabling round-trip missions to the Martian sphere and access to planetary moons.
+02
+Develop technology for reaching the surface of the Martian moons, supporting a sustained stay, and enabling advanced sampling on celestial bodies.
+03
+Develop communication technology optimised for reliable operations with ground stations during deep space exploration.
+MISSION SCHEDULE
+STEP 01
+2026
+Launch onboard the H3 rocket (Flight No. 10) from Tanegashima Space Center.
+STEP 02
+2027
+Journey for approximately one year to the Martian sphere, and head towards the Martian moon, Phobos.
+STEP 03
+2027 -
+2030
+- Enter in to a quasi-satellite orbit around Phobos and begin detailed observations of the moon.
+- Collect a 10g sample through two soft-landing operations on the moon's surface.
+- Observe the second Martian moon, Deimos, during the final phase of the mission.
+STEP 04
+2030
+Depart the Martian sphere. Return to Earth over the course of about one year.
+STEP 05
+2031
+Separate the re-entry capsule containing the sample from Phobos for atmospheric entry.
+The capsule is scheduled to be recovered in Australia, marking the final critical milestone of the mission.
+Simplified diagram
+VIEW MORE MISSION DETAIL
+PROJECT MANAGER
+Martian Moons Exploration Project Team
+Project Manager
+KAWAKATSU Yasuhiro
+I am Kawakatsu Yasuhiro, Project Manager for the Martian Moons eXploration (MMX) mission
+The Martian moon Phobos remains an unexplored frontier for humankind. By bringing home samples from Phobos, we hope to explore how the Martian moons were formed, how the Mars sphere evolved, and how the water and organic materials found on the terrestrial planets originated. We will also develop exploration technology that will be necessary for human exploration in the future.
+This exploration project began almost ten years ago. From the engineering perspective, this is an ambitious plan and the mission has gained much international attention. With researchers and engineers from Japan and overseas working together to overcome the numerous challenges, we are finally approaching launch in JFY 2026. We will be very grateful for your support over the five years from launch until our return to Earth.
+PRINCIPAL INVESTIGATOR
+MMX Project Principal Investigator
+KURAMOTO Kiyoshi
+In ancient times, Mars was a world shrouded in a thick atmosphere. Rivers flowed across the planet's landscape into vast oceans. How did Mars acquire such a primordial, water-rich environment where life could conceivably have existed? The key to this mystery lies in the Martian moons, which closely resemble carbonaceous asteroids—the very celestial bodies capable of carrying the ingredients for an atmosphere and water.
+Through the Martian Moons eXploration (MMX) mission, we aim to unravel this question and shed light on the origin of the moons themselves. The mission will also investigate the processes that led to Mars losing its atmosphere and water, through atmospheric observation and analysing the material ejected from Martian craters.
+MMX promises to reveal a great deal about how the Earth—the neighbour to Mars—became a planet capable of sustaining life, and how our planet has managed to remain so.
+AMBASSADOR
+JAXA Astronaut
+SUWA
+Makoto
+I am JAXA Astronaut Suwa Makoto, and I have recently been appointed as the MMX Public Relations Ambassador.
+MMX will launch from Tanegashima and embark on a journey towards the distant planet Mars. It is a truly grand challenge to carry out this mission of conducting detailed observations of the Martian moons and collecting samples, and returning these results to Earth. The mission will not only shed light on the formation of the Solar System from the perspective of Earth and planetary science, but is also an extremely important step in acquiring new exploration technologies as humanity's focus shifts towards deep space exploration.
+ALL MESSAGE
+JAXA Astronaut
+YONEDA
+Ayu
+I am JAXA Astronaut Yoneda Ayu, and I have recently been appointed as the MMX Public Relations Ambassador.
+Many of you have probably spotted the red planet, Mars, floating in the night sky. MMX is humanity's first attempt to travel to the Martian sphere, land on Mars's moon, Phobos, collect samples, and bring these back to Earth. Nothing has ever been returned from the Martian sphere before. These samples may provide clues to the origins of life and the planets, and expand the possibilities for humans to explore Mars.
+ALL MESSAGE
+SPACECRAFT
+The MMX spacecraft consists of three modules: the propulsion module, the exploration module, and the return module. It will carry out a five-year mission to the Martian moons and back to Earth.
+The design leverages its versatility to support landing operations on the Martian moon, long-distance round-trip travel between Earth and the Mars sphere, and sample collection.
+5.3m
+9.0m
+Height 5.3 m, length 9.0 m, width 4.5 m
+VIEW MORE SPACECRAFT DETAIL
+MISSION INSTRUMENTS
+To unravel the mysteries of the Martian moons, we must decide what to observe with which instrument, and which samples to collect. The MMX spacecraft will use thirteen scientific mission instruments to explore the moons, and the landing site will be selected based on remote-sensing data. The goal is to return more than 10g of material to Earth.
+[ TENGOO ]
+[ OROCHI ]
+[ LIDAR ]
+[ MEGANE_GRS ]
+[ MEGANE_NS ]
+[ MIRS ]
+[ ROVER ]
+[ CMDM ]
+[ MSA ]
+[ C-SMP ]
+[ P-SMP ]
+[ SRC ]
+[ IREM ]
+[ SHV ]
+[ TENGOO ]
+[ OROCHI ]
+[ LIDAR ]
+[ MEGANE_GRS ]
+[ MEGANE_NS ]
+[ MIRS ]
+[ ROVER ]
+[ CMDM ]
+[ MSA ]
+[ C-SMP ]
+[ P-SMP ]
+[ SRC ]
+[ IREM ]
+[ SHV ]
+VIEW MORE MISSION INSTRUMENTS
+TEAM
+MMX is the largest international collaborative mission in lunar and planetary exploration ever led by Japan. The Project has built a wide-ranging framework of cooperation across Japan and with major Europe and U.S. space agencies, including the provision of onboard equipment.
+VIEW MORE TEAM DETAIL

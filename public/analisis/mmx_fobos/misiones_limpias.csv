@@ -1,0 +1,50 @@
+mision,anio,agencia,salida_tierra,orbita_prevista,orbita_lograda,superficie_destino,superficie_operativa,nota,fuentes,periodo
+Mars 1960A,1960,URSS,0,0,,ninguna,,No alcanzó la órbita terrestre,historia|cronologia,1960–1999
+Mars 1960B,1960,URSS,0,0,,ninguna,,No alcanzó la órbita terrestre,historia|cronologia,1960–1999
+Sputnik 22,1962,URSS,0,0,,ninguna,,Quedó en órbita terrestre,historia|cronologia,1960–1999
+Mars 1,1962,URSS,1,0,,ninguna,,Perdió el contacto durante el viaje,historia|cronologia,1960–1999
+Sputnik 24,1962,URSS,0,0,,Marte,0,Aterrizador según cronología NSSDCA; la tabla JPL lo llama sobrevuelo,cronologia|historia,1960–1999
+Mariner 3,1964,NASA,1,0,,ninguna,,Fallo de la cubierta; sin encuentro científico con Marte,mariner|historia,1960–1999
+Mariner 4,1964,NASA,1,0,,ninguna,,Sobrevuelo con fotografías,historia|mariner,1960–1999
+Zond 2,1964,URSS,1,0,,ninguna,,Pasó junto a Marte sin contacto por radio,historia|cronologia,1960–1999
+Mariner 6,1969,NASA,1,0,,ninguna,,Sobrevuelo científico,historia|mariner,1960–1999
+Mariner 7,1969,NASA,1,0,,ninguna,,Sobrevuelo científico,historia|mariner,1960–1999
+Mars 1969A,1969,URSS,0,1,0,ninguna,,Fallo de lanzamiento,historia|cronologia,1960–1999
+Mars 1969B,1969,URSS,0,1,0,ninguna,,Fallo de lanzamiento,historia|cronologia,1960–1999
+Mariner 8,1971,NASA,0,1,0,ninguna,,Fallo de lanzamiento; orbitador según JPL,historia|mariner,1960–1999
+Kosmos 419,1971,URSS,0,1,0,ninguna,,Orbitador sin módulo de descenso según la historia NASA SP-4524,cronica|historia,1960–1999
+Mars 2,1971,URSS,1,1,1,Marte,0,Orbitador en Marte; módulo de descenso se estrelló,historia|cronologia,1960–1999
+Mars 3,1971,URSS,1,1,1,Marte,0,Orbitador en Marte; señal desde la superficie durante unos 20 segundos,historia|cronologia,1960–1999
+Mariner 9,1971,NASA,1,1,1,ninguna,,Órbita científica de Marte,historia|mariner,1960–1999
+Mars 4,1973,URSS,1,1,0,ninguna,,Falló la inserción orbital y pasó junto al planeta,historia|cronologia,1960–1999
+Mars 5,1973,URSS,1,1,1,ninguna,,Entró en órbita; misión breve,historia|cronologia,1960–1999
+Mars 6,1973,URSS,1,0,,Marte,0,Transmitió durante el descenso; sin trabajo tras el impacto,historia|cronologia,1960–1999
+Mars 7,1973,URSS,1,0,,Marte,0,El módulo de descenso no alcanzó el planeta,historia|cronologia,1960–1999
+Viking 1,1975,NASA,1,1,1,Marte,1,Orbitador y módulo de superficie operativos,historia|cronologia,1960–1999
+Viking 2,1975,NASA,1,1,1,Marte,1,Orbitador y módulo de superficie operativos,historia|cronologia,1960–1999
+Phobos 1,1988,URSS,1,1,0,Fobos,0,Pérdida de orientación durante el viaje,phobos,1960–1999
+Phobos 2,1988,URSS,1,1,1,Fobos,0,Orbitó Marte y observó Fobos; perdió el contacto antes de soltar los módulos,phobos,1960–1999
+Mars Observer,1992,NASA,1,1,0,ninguna,,Contacto perdido antes de la inserción orbital,historia|cronologia,1960–1999
+Mars Global Surveyor,1996,NASA,1,1,1,ninguna,,Orbitador científico,historia|cronologia,1960–1999
+Mars 96,1996,Roscosmos,0,1,0,Marte,0,No abandonó la Tierra; agrupados los módulos de descenso y penetradores,historia|cronologia,1960–1999
+Mars Pathfinder,1996,NASA,1,0,,Marte,1,Módulo de aterrizaje y vehículo Sojourner; una campaña,historia|cronologia,1960–1999
+Nozomi,1998,JAXA,1,1,0,ninguna,,Abandonó el intento de entrar en órbita en diciembre de 2003,nozomi|historia,1960–1999
+Mars Climate Orbiter,1998,NASA,1,1,0,ninguna,,Perdido durante la llegada,historia|cronologia,1960–1999
+Mars Polar Lander / Deep Space 2,1999,NASA,1,0,,Marte,0,Agrupados el aterrizador y los dos penetradores; sin señal desde la superficie,historia|cronologia,1960–1999
+Mars Odyssey,2001,NASA,1,1,1,ninguna,,Inserción orbital conseguida,historia|cronologia,2000–2020
+Mars Express / Beagle 2,2003,ESA,1,1,1,Marte,0,Orbitador operativo; Beagle 2 llegó pero nunca comunicó desde la superficie,beagle|historia,2000–2020
+Spirit,2003,NASA,1,0,,Marte,1,Vehículo operativo en superficie,historia|cronologia,2000–2020
+Opportunity,2003,NASA,1,0,,Marte,1,Vehículo operativo en superficie,historia|cronologia,2000–2020
+Mars Reconnaissance Orbiter,2005,NASA,1,1,1,ninguna,,Inserción orbital conseguida,historia|cronologia,2000–2020
+Phoenix,2007,NASA,1,0,,Marte,1,Módulo de superficie operativo,historia|cronologia,2000–2020
+Phobos-Grunt / Yinghuo-1,2011,Roscosmos / CNSA,0,1,0,Fobos,0,Agrupados la sonda rusa y el orbitador chino; no abandonaron la órbita terrestre,grunt|grunt_fin|cronologia,2000–2020
+Curiosity,2011,NASA,1,0,,Marte,1,Vehículo operativo en superficie,historia|curiosity,2000–2020
+Mangalyaan,2013,ISRO,1,1,1,ninguna,,Inserción orbital conseguida,historia|isro,2000–2020
+MAVEN,2013,NASA,1,1,1,ninguna,,Inserción orbital conseguida; no implica seguir activo en la fecha de corte,historia|cronologia,2000–2020
+ExoMars 2016 / Schiaparelli,2016,ESA / Roscosmos,1,1,1,Marte,0,TGO entró en órbita; Schiaparelli se estrelló,tgo|schiaparelli,2000–2020
+InSight,2018,NASA,1,0,,Marte,1,Módulo de superficie operativo,insight,2000–2020
+Hope,2020,MBRSC,1,1,1,ninguna,,Inserción orbital el 9 de febrero de 2021,hope,2000–2020
+Tianwen-1 / Zhurong,2020,CNSA,1,1,1,Marte,1,Orbitador y vehículo de superficie operativos,tianwen,2000–2020
+Mars 2020 / Perseverance,2020,NASA,1,0,,Marte,1,Agrupados Perseverance e Ingenuity; vehículo operativo,perseverance,2000–2020
+ESCAPADE,2025,NASA,,1,,ninguna,,Resultado marciano pendiente; lanzamiento en 2025 y llegada prevista en 2027,escapade,Pendiente
+MMX,2026,JAXA,1,1,,Fobos,,Lanzamiento confirmado; órbita y superficie pendientes; retorno previsto para 2031,mmx_lanzamiento|mmx,Pendiente

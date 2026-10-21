@@ -1,0 +1,199 @@
+Mars Exploration Timeline
+Chronology of Mars Exploration
+Mission Timeline
+1960
+Mars 1960A
+-  10 October 1960  -  Attempted Mars Flyby
+(Launch Failure)
+Mars 1960B
+-  14 October 1960  -  Attempted Mars Flyby
+(Launch Failure)
+1961
+1962
+Sputnik 22
+-  24 October 1962  -  Attempted Mars Flyby
+Mars 1
+-  1 November 1962  -  Mars Flyby (Contact Lost)
+Sputnik 24
+-  4 November 1962  -  Attempted Mars Lander
+1963
+1964
+Mariner 3
+-  5 November 1964  -  Attempted Mars Flyby
+Mariner 4
+-  28 November 1964  -  Mars Flyby
+Zond 2
+-  30 November 1964  -  Mars Flyby (Contact Lost)
+1965
+Zond 3
+-  18 July 1965  -  Lunar Flyby, Mars Test Vehicle
+1966
+1967
+1968
+1969
+Mariner 6
+-  25 February 1969  -  Mars Flyby
+Mariner 7
+-  27 March 1969  -  Mars Flyby
+Mars 1969A
+-  27 March 1969  -  Attempted Mars Orbiter
+(Launch Failure)
+Mars 1969B
+-  2 April 1969  -  Attempted Mars Orbiter
+(Launch Failure)
+1970
+1971
+Mariner 8
+-  9 May 1971  -  Attempted Mars Flyby
+(Launch Failure)
+Cosmos 419
+-  10 May 1971  -  Attempted Mars Orbiter/Lander
+Mars 2
+-  19 May 1971  -  Mars Orbiter/ Attempted Lander
+Mars 3
+-  28 May 1971  -  Mars Orbiter/ Lander
+Mariner 9
+-  30 May 1971  -  Mars Orbiter
+1972
+1973
+Mars 4
+-  21 July 1973  -  Mars Flyby (Attempted Mars Orbiter)
+Mars 5
+-  25 July 1973  -  Mars Orbiter
+Mars 6
+-  5 August 1973  -  Mars Lander (Contact Lost)
+Mars 7
+-  9 August 1973  -  Mars Flyby (Attempted Mars Lander)
+1974
+1975
+Viking 1
+-  20 August 1975  -  Mars Orbiter and Lander
+Viking 2
+-  9 September 1975  -  Mars Orbiter and Lander
+1976
+1977
+1978
+1979
+1980
+1981
+1982
+1983
+1984
+1985
+1986
+1987
+1988
+Phobos 1
+-  7 July 1988  -  Attempted Mars Orbiter/Phobos Landers
+Phobos 2
+-  12 July 1988  -  Mars Orbiter/Attempted Phobos Landers
+1989
+1990
+1991
+1992
+Mars Observer
+-  25 September 1992  -  Attempted Mars Orbiter (Contact Lost)
+1993
+1994
+1995
+1996
+Mars Global Surveyor
+-  07 November 1996  -  Mars Orbiter
+Mars 96
+-  16 November 1996  -  Attempted Mars Orbiter/Landers
+Mars Pathfinder
+-  04 December 1996  -  Mars Lander and Rover
+1997
+1998
+Nozomi (Planet-B)
+-  3 July 1998  -  Mars Orbiter
+Mars Climate Orbiter
+-  11 December 1998  -  Attempted Mars Orbiter
+1999
+Mars Polar Lander
+-  3 January 1999  -  Attempted Mars Lander
+Deep Space 2 (DS2)
+-  3 January 1999  -  Attempted Mars Penetrators
+2000
+2001
+2001 Mars Odyssey
+-  7 April 2001  -  Mars Orbiter
+2002
+2003
+Mars Express
+-  2 June 2003 -  Mars Orbiter and Lander
+Spirit (MER-A)
+-  10 June 2003  -  Mars Rover
+Opportunity (MER-B)
+-  8 July 2003  -  Mars Rover
+2004
+2005
+Mars Reconnaisance Orbiter
+-  12 August 2005  -  Mars Orbiter
+2006
+2007
+Phoenix
+-  04 August 2007  -  Mars Scout Lander
+2008
+2009
+2010
+2011
+Phobos-Grunt
+-  08 November 2011  -  Attempted Martian Moon Phobos Lander
+Yinghuo-1
+-  08 November 2011  -  Attempted Mars Orbiter
+Mars Science Laboratory
+-  26 November 2011 - Mars Rover
+2012
+2013
+Mangalyaan
+-  05 November 2013 -  ISRO (India) Mars Orbiter
+MAVEN
+-  18 November 2013  -  Mars Scout Mission Orbiter
+2014
+2015
+2016
+ExoMars 2016
+-  14 March 2016  -  ESA Mars Orbiter and Lander
+2017
+2018
+InSight
+-  5 May 2018  -  Mars Lander
+2019
+2020
+Hope
+-  19 July 2020  -  United Arab Emirates Mars Orbiter
+Tianwen 1
+-  23 July 2020  -  Chinese Mars Orbiter and Rover
+Mars 2020
+-  30 July 2020  -  Mars Rover and Rotorcraft
+2021
+2022
+2023
+2024
+2025
+EscaPADE
+-  2025  -  Dual Mars Orbiting Spacecraft
+2026
+Martian Moons eXploration (MMX)
+-  2026  -  JAXA (Japan) Phobos Sample Return Mission
+2027
+2028
+ExoMars Rover
+-  2028 -  ESA Mars Rover, Rosalind Franklin
+Other Missions
+Search for Mission Information
+To search for information on any mission, enter the spacecraft name in
+the box below.
+Name:
+Mars Home Page
+Chronology of Lunar and Planetary Exploration
+Author/Curator:
+Dr. David R. Williams,
+dave.williams@nasa.gov
+NSSDCA, Mail Code 690.1
+NASA Goddard Space Flight Center
+Greenbelt, MD 20771
++1-301-286-1258
+NASA Official: Thomas Morgan, thomas.h.morgan@nasa.gov
+Last Updated: 11 September 2024, DRW

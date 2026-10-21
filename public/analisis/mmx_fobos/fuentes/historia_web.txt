@@ -1,0 +1,151 @@
+InSight Landing Press Kit | Historical Mars Missions (https://www.jpl.nasa.gov/news/press_kits/insight/landing/appendix/history/)
+citeturn15view0 [wordlim: 200] Crawled: today; Content type: text/html; Source: open({"ref_id":"https://www.jpl.nasa.gov/news/press_kits/insight/landing/appendix/history/","lineno":75}); Total lines: 260
+L0: cite0†NASA†www.nasa.gov L1: 
+L2: cite1†Jet Propulsion Laboratory L3: 
+L4: cite2†California Institute of Technology†www.caltech.edu L5: 
+L6: cite3†Image: NASA, California Institute of Technology, and Jet Propulsion Laboratory Page Header Title L7: 
+L8: menu and search
+L9: 
+L10: * * *
+L11:   * cite4†Introduction L12:   * cite5†Media Services L13:   * Quick Facts
+L14:     * cite6†landing Facts L15:     * cite7†Mars at a Glance L16:   * Mission
+L17:     * cite8†Overview L18:     * cite9†Spacecraft L19:     * cite10†Science L20:     * cite11†Landing Site L21:   * cite12†Management L22:   * Appendix
+L23:     * cite13†Mars Cube One L24:     * cite14†Gallery L25:     * cite15†Science Objectives L26:     * cite16†History L27:     * cite17†NASA's Discovery Program L28:   * cite18†Download Press Kit L29: 
+L30: cite1†Jet Propulsion Laboratory L31: 
+L32: cite2†California Institute of Technology†www.caltech.edu L33: cite3†Image: NASA, California Institute of Technology, and Jet Propulsion Laboratory Page Header Title L34: 
+L35: close menu
+L36: 
+L37: menu
+L38: 
+L39: cite4†Introduction L40: 
+L41: cite5†Media Services L42: ### Quick Facts
+L43: 
+L44:   * cite6†Launch Facts L45:   * cite7†Mars at a Glance L46: 
+L47: ### Mission
+L48: 
+L49:   * cite8†Overview L50:   * cite9†Spacecraft L51:   * cite10†Science L52:   * cite11†Landing Site L53: 
+L54: cite12†Management L55: 
+L56: ### Appendix
+L57: 
+L58:   * cite13†Mars Cube One L59:   * cite14†Gallery L60:   * cite15†Science Objectives L61:   * cite16†History L62:   * cite17†NASA's Discovery Program L63: 
+L64: cite18†Download Press Kit L65: 
+L66: # Historical Mars Missions
+L67: 
+L68: * * *
+L69: 
+L70: cite19†History Overview   L71: 
+L72: cite20†Future   L73: ## History
+L74: 
+L75: *Mission: Country, Launch Date, Purpose, Results
+L76: 
+L77: Marsnik 1: USSR, 10/10/60, Mars flyby, did not reach Earth orbit
+L78: 
+L79: Marsnik 2: USSR, 10/14/60, Mars flyby, did not reach Earth orbit
+L80: 
+L81: Sputnik 22: USSR, 10/24/62, Mars flyby, achieved Earth orbit only
+L82: 
+L83: Mars 1: USSR, 11/1/62, Mars flyby, radio failed at 65.9 million miles (106 million kilometers)
+L84: 
+L85: Sputnik 24: USSR, 11/4/62, Mars flyby, achieved Earth orbit only
+L86: 
+L87: Mariner 3: U.S., 11/5/64, Mars flyby, shroud failed to jettison
+L88: cite21†Mariner 4 : U.S. 11/28/64, first successful Mars flyby 7/14/65, returned cite22†21 photos†nssdc.gsfc.nasa.gov L89: 
+L90: Zond 2: USSR, 11/30/64, Mars flyby, passed Mars but radio failed, returned no planetary data
+L91: 
+L92: cite23†Mariner 6†nssdc.gsfc.nasa.gov : U.S., 2/24/69, Mars flyby 7/31/69, returned 75 photos
+L93: 
+L94: cite24†Mariner 7 : U.S., 3/27/69, Mars flyby 8/5/69, returned 126 photos
+L95: 
+L96: Mars 1969A: USSR, 3/27/69, Mars orbiter, did not reach Earth orbit
+L97: 
+L98: Mars 1969B: USSR, 4/2/69, Mars orbiter, failed during launch
+L99: Mariner 8: U.S., 5/8/71, Mars orbiter, failed during launch
+L100: 
+L101: Kosmos 419: USSR, 5/10/71, Mars lander, achieved Earth orbit only
+L102: 
+L103: Mars 2: USSR, 5/19/71, Mars orbiter/lander arrived 11/27/71, no useful data, lander burned up due to steep entry
+L104: 
+L105: Mars 3: USSR, 5/28/71, Mars orbiter/lander, arrived 12/3/71, lander operated on surface for 20 seconds before failing
+L106: 
+L107: cite25†Mariner 9†nssdc.gsfc.nasa.gov : U.S., 5/30/71, Mars orbiter, operated in orbit 11/13/71 to 10/27/72, returned 7,329 photos
+L108: Mars 4: USSR, 7/21/73, failed Mars orbiter, flew past Mars 2/10/74
+L109: 
+L110: Mars 5: USSR, 7/25/73, Mars orbiter, arrived 2/12/74, lasted a few days
+L111: 
+L112: Mars 6: USSR, 8/5/73, Mars flyby module and lander, arrived 3/12/74, lander failed due to fast impact
+L113: 
+L114: Mars 7: USSR, 8/9/73, Mars flyby module and lander, arrived 3/9/74, lander missed the planet
+L115: 
+L116: cite26†Viking 1†mars.nasa.gov : U.S., 8/20/75, Mars orbiter/lander, orbit 6/19/76-1980, lander 7/20/76-1982
+L117: cite26†Viking 2†mars.nasa.gov : U.S., 9/9/75, Mars orbiter/lander, orbit 8/7/76-1987, lander 9/3/76-1980; combined, the Viking orbiters and landers returned more than 50,000 photos
+L118: 
+L119: Phobos 1: USSR, 7/7/88, Mars orbiter and Phobos lander, lost 8/88 en route to Mars
+L120: 
+L121: Phobos 2: USSR, 7/12/88, Mars orbiter and Phobos lander, lost 3/89 near Phobos
+L122: 
+L123: cite27†Mars Observer†mars.nasa.gov : U.S., 9/25/92, Mars orbiter, lost just before Mars arrival 8/21/93
+L124: cite28†Mars Global Surveyor†mars.nasa.gov : U.S., 11/7/96, Mars orbiter, arrived 9/12/97, high-detail mapping through 1/00, third extended mission completed 9/06, last communication 11//2/06
+L125: 
+L126: Mars 96: Russia, 1/16/96, orbiter/two landers/two penetrators, launch vehicle failed
+L127: 
+L128: cite29†Mars Pathfinder†mars.nasa.gov : U.S., 12/4/96, Mars lander/rover, landed 7/4/97, completed prime mission and began extended mission 8/3/07, last transmission 9/27/97
+L129: cite30†Nozomi†www.isas.jaxa.jp : Japan, 7/4/98, Mars orbiter, failed to enter orbit 12/03
+L130: 
+L131: cite31†Mars Climate Orbiter†mars.nasa.gov : U.S., 12/11/98, lost upon arrival 9/23/99
+L132: 
+L133: cite32†Mars Polar Lander/Deep Space 2†mars.nasa.gov : U.S., 1/3/99, lander/two penetrators, lost on arrival 12/3/99
+L134: 
+L135: cite33†Mars Odyssey†mars.nasa.gov : U.S., 3/7/01, Mars orbiter, arrived 10/24/01, completed prime mission 8/25/04, currently conducting extended mission of science and communication relay
+L136: cite34†Mars Express†sci.esa.int /Beagle 2: European Space Agency, 6/2/03, Mars orbiter/lander, orbiter completed prime mission 11/05, currently in extended mission; lander lost on arrival 12/25/03
+L137: 
+L138: cite35†Mars Exploration Rover Spirit : U.S., 6/10/03, Mars rover, landed 1/4/04 for three-month prime mission inside Gusev Crater, completed several extended missions, last communication 3/22/10
+L139: cite36†Mars Exploration Rover Opportunity†mars.nasa.gov : U.S., 7/7/03, Mars rover, landed 1/25/04 for three-month prime mission in Meridiani Planum region, currently conducting extended mission
+L140: 
+L141: cite37†Mars Reconnaissance Orbiter†mars.nasa.gov : U.S., 8/12/05, Mars orbiter, arrived 3/12/06, completed prime mission 9/26/10, currently conducting extended mission of science and communication relay
+L142: cite38†Phoenix Mars Lander†mars.nasa.gov : U.S., 8/4/07, Mars lander, landed 5/25/08, completed prime mission and began extended mission 8/26/08, last communication 11/2/08
+L143: 
+L144: cite39†Phobos-Grunt/Yinghuo 1†phobos-grunt.cnes.fr : Russia/China, 11/8/11, Phobos lander with sample return and Mars orbiter, achieved Earth orbit only
+L145: 
+L146: cite40†Curiosity Rover (Mars Science Laboratory)†mars.nasa.gov : U.S., 11/26/11, Mars rover, landed 8/6/12, completed prime mission, currently conducting extended science mission
+L147: cite41†Mars Atmosphere and Volatile Evolution Mission (MAVEN)†www.nasa.gov : U.S., 11/18/13, Mars orbiter, arrived 9/21/14, completed prime mission, currently conducting extended science mission
+L148: 
+L149: cite42†Mars Orbiter Mission (Mangalyaan)†www.isro.gov.in : India, 11/5/13, Mars orbiter, arrived 9/14/14, completed prime mission, currently conducting extended mission
+L150: cite43†ExoMars 2016†exploration.esa.int : European Space Agency, 3/14/16, orbiter and landing-demonstration module, Trace Gas Orbiter arrived 10/19/16, currently conducting prime mission; unsuccessful Mars impact of Schiaparelli module 10/19/16
+L151: 
+L152: cite44†Image: Mars 2020 Artist Concept L153: ## Future
+L154: NASA’s next mission to Mars, following InSight, will be the cite45†Mars 2020 mission†mars.nasa.gov , which is in development to launch in the summer of 2020. It will land a Curiosity-size rover in February 2021 to seek signs of past microbial life at a carefully selected site, using capabilities to examine rocks’ composition and texture at microscopic scale and to collect and seal drilled rock cores for possible future return to Earth.
+L155: The rover will also test extraction of oxygen from the carbon dioxide in Mars’ atmosphere, as a useful technology for future astronauts on Mars.
+L156: BACK TO TOP
+L157: ## Get the Newsletter
+L158: 
+L159: [Input: enter email address] [Input]
+L160: 
+L161: ### about JPL
+L162: 
+L163:   * cite46†About JPL L164:   * cite47†JPL Vision L165:   * cite48†Executive Council L166:   * cite49†History L167:   * cite50†Annual Reports L168:   * cite51†Contact Us L169:   * cite52†Opportunities L170:   * cite53†JPL Online Store†thejplstore.com L171:   * cite54†Doing Business with JPL L172: 
+L173: ### missions
+L174: 
+L175:   * cite55†Current L176:   * cite56†Past L177:   * cite57†Future L178:   * cite58†Proposed L179:   * cite59†All L180: 
+L181: ### education
+L182: 
+L183:   * cite60†Intern L184:   * cite61†Learn L185:   * cite62†Teach L186:   * cite63†News L187:   * cite64†Events L188: ### news
+L189: 
+L190:   * cite65†Latest News L191:   * cite66†Press Kits L192:   * cite67†Fact Sheets L193:   * cite68†Media Information L194:   * cite69†Universe Newspaper L195: 
+L196: ### public events
+L197: 
+L198:   * cite70†Overview L199:   * cite71†Tours L200:   * cite72†Lecture Series L201:   * cite73†Speakers Bureau L202:   * cite74†Team Competitions L203:   * cite75†Special Events L204: ### Our Sites
+L205:   * cite76†Asteroid Watch L206:   * cite77†Basics of Spaceflight†solarsystem.nasa.gov L207:   * cite78†Cassini - Mission to Saturn†saturn.jpl.nasa.gov L208:   * cite79†Climate Kids†climatekids.nasa.gov L209:   * cite80†Earth / Global Climate Change†climate.nasa.gov L210:   * cite81†Exoplanet Exploration†planetquest.jpl.nasa.gov L211:   * cite82†Juno - Mission to Jupiter L212:   * cite83†Mars Exploration†mars.nasa.gov L213:   * cite84†Science and Technology†scienceandtechnology.jpl.nasa.gov L214:   * cite85†Solar System Exploration†solarsystem.nasa.gov L215:   * cite86†Space Place†spaceplace.nasa.gov L216:   * cite87†NASA's Eyes†eyes.nasa.gov L217:   * cite88†Spitzer Space Telescope†www.spitzer.caltech.edu L218:   * cite89†Voyager Interstellar Mission†voyager.jpl.nasa.gov L219: ### galleries
+L220: 
+L221:   * cite90†JPL Space Images L222:   * cite91†Videos L223:   * cite92†Infographics L224:   * cite93†Photojournal†photojournal.jpl.nasa.gov L225:   * cite94†NASA Images†www.nasaimages.org L226:   * cite95†Mobile Apps L227: ### Follow JPL
+L228: 
+L229:   * cite96†Newsletter L230:   * cite97†Facebook†www.facebook.com L231:   * cite98†Twitter†twitter.com L232:   * cite99†YouTube†www.youtube.com L233:   * cite100†Flickr†www.flickr.com L234:   * cite101†Instagram†instagram.com L235:   * cite102†LinkedIn†www.linkedin.com L236:   * cite103†iTunes†itunes.apple.com L237:   * cite104†UStream†www.ustream.tv L238:   * cite105†RSS L239:   * cite106†Blog†blogs.jpl.nasa.gov L240:   * cite107†Mobile L241:   * cite108†All Social Media L242: ### NASA
+L243: 
+L244:   * cite109†NASA Water Cleanup†jplwater.nasa.gov L245:   * cite110†FOIA†www.hq.nasa.gov L246: 
+L247:   * cite0†NASA†www.nasa.gov L248: |
+L249:   * cite2†Caltech†www.caltech.edu L250: |
+L251:   * cite111†Privacy L252: |
+L253:   * cite112†Image Policy L254: |
+L255:   * cite113†FAQ L256: |
+L257:   * cite51†Feedback L258: 
+L259: Site Manager: Veronica McGregor Site Editors: Tony Greicius, Randal Jackson, Naomi Hartono
+

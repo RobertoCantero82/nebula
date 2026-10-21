@@ -1,0 +1,56 @@
+ESA - ESA tracking station establishes contact with Russia’s Mars mission
+ESA
+/
+Enabling & Support
+/
+Operations
+On Tuesday, 22 November at 20:25 GMT, ESA's tracking station at Perth, Australia, established contact with Russia's Phobos-Grunt spacecraft. Contact with the Mars mission was lost shortly after separation from the launch vehicle was confirmed on 8 November.
+Following liftoff, the spacecraft was injected into low-Earth orbit in preparation for departure to Mars. Immediately after separation of the spacecraft and its modified Fregat stage from the launcher, controllers received signals confirming deployment of the solar panels.
+Two automated burns of the Fregat engine were to have taken place beyond coverage of Russian ground stations, boosting it onto an interplanetary trajectory for the Red Planet. These failed to happen and contact was lost from that moment. However, observations showed that the craft was in a controlled attitude orbiting Earth between about 200 km and 340 km altitude.
+ESA responds to Russian request for assistance
+Upon request from NPO Lavochkin, operator of the mission on behalf of the Russian space agency, Roscosmos, ESA agreed to do its utmost to attempt contact using the Agency’s ground station network.
+Phobos-Grunt orbiter and lander
+Starting on 9 November, and in close coordination with Russian engineers, ESA made almost daily attempts to contact Phobos-Grunt using numerous configurations and radio link modes, but to no avail.
+A major problem was that the spacecraft's orbit was not accurately known, whereas ground stations normally require very accurate position information for pointing due to the antenna size.
+In the past few days, ESA's
+15 m-diameter
+Perth dish was modified by the addition of a 'feedhorn' antenna at the side of the main dish so as to transmit very low-power signals over a wide angle in the hopes of triggering a response from the satellite.
+Low-power feedhorn antenna contacted Phobos-Grunt
+The transmit power was reduced in part because the receiver on Phobos-Grunt is optimised to receive only very weak signals when deep in space.
+Perth is ideally located because the satellite's solar panels were illuminated by sunlight when overhead, giving a power boost to its systems.
+ESA station in Australia transmits Russian telecommands
+On 22 November, the Perth station antenna was pointed toward the spacecraft's expected orbital position during 20:21–20:28 GMT, and telecommands provided by NPO Lavochkin were transmitted.
+"Owing to its very low altitude, it was expected that our station would only have Phobos-Grunt in view for six to ten minutes during each orbit, and the fast overhead pass introduced large variations in the signal frequency," said Wolfgang Hell, the Phobos-Grunt Service Manager at ESOC.
+Hard work pays off
+ESOC: home to ESA's mission operations
+Despite these difficulties, it was a success: the signals commanded the spacecraft's transmitter to switch on, sending a signal down to the station's 15 m dish antenna.
+Data received from Phobos-Grunt were then transmitted from Perth to Russian mission controllers via ESA's Space Operations Centre, Darmstadt, Germany, for analysis.
+Additional communication slots are available on 23 November at 20:21–20:28 GMT and 21:53–22:03 GMT, and ESA teams are working closely with Russian controllers to determine how best to maintain communication with their spacecraft.
+More news will follow as the situation develops.
+Like
+Thank you for liking
+You have already liked this page, you can only like it once!
+Related Links
+Focus on
+Open
+Focus on
+Open
+Focus on
+Open
+Story
+Read
+Story
+Read
+Story
+Read
+Focus on
+Open
+Focus on
+Open
+European Space Agency
+FAQ
+Contacts
+Terms and conditions
+Privacy notice
+Careers at ESA
+Subscribe

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "beagle",
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Beagle-2_lander_found_on_Mars",
+    "url_final": "https://www.esa.int/Science_Exploration/Space_Science/Mars_Express/Beagle-2_lander_found_on_Mars",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/beagle.html",
+    "sha256": "9cb285076c46d73655905bcd98091d2eff3bd1816d32b6ab99e9e88d6426bdf0",
+    "estado": 200
+  },
+  {
+    "id": "cronica",
+    "url": "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4524.pdf",
+    "url_final": "https://www.nasa.gov/wp-content/uploads/2023/04/sp-4524.pdf",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/cronica.pdf",
+    "sha256": "7f72acf63cb863e331f5c25960d0860687d7b1a14525683bfc8902f6666175bb",
+    "estado": 200
+  },
+  {
+    "id": "cronologia",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/chronology_mars.html",
+    "url_final": "https://nssdc.gsfc.nasa.gov/planetary/chronology_mars.html",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/cronologia.html",
+    "sha256": "be0ca4fc0267fd2bc59deae5716f47229e61314100681da5139ae72d8e72bf63",
+    "estado": 200
+  },
+  {
+    "id": "curiosity",
+    "url": "https://science.nasa.gov/mission/msl-curiosity/",
+    "url_final": "https://science.nasa.gov/mission/msl-curiosity/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/curiosity.html",
+    "sha256": "120f0019c51afef5d37bdfe282cb3043a90fa1b15d2ba20c0ad0bcafd5cf69df",
+    "estado": 200
+  },
+  {
+    "id": "dlr_mmx",
+    "url": "https://www.dlr.de/en/latest/news/2026/mmx-mission-successfully-launched-idefix-rover-is-on-its-way-to-martian-moon-phobos",
+    "url_final": "https://www.dlr.de/en/latest/news/2026/mmx-mission-successfully-launches-idefix-rover-on-its-way-to-martian-moon-phobos",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/dlr_mmx.html",
+    "sha256": "9eda111f9a093a4187919e231e90d044f15110391549cb3335678b78baf7fb50",
+    "estado": 200
+  },
+  {
+    "id": "escapade",
+    "url": "https://ciencia.nasa.gov/sistema-solar/mision-escapade-de-la-nasa-esta-lista-para-estudiar-la-meteorologia-espacial-desde-la-tierra-hasta-marte/",
+    "url_final": "https://ciencia.nasa.gov/sistema-solar/mision-escapade-de-la-nasa-esta-lista-para-estudiar-la-meteorologia-espacial-desde-la-tierra-hasta-marte/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/escapade.html",
+    "sha256": "69cc9a4d97840c1b2b4cb50b439e9b8c330f7c0894893265a50d6ae7795190e9",
+    "estado": 200
+  },
+  {
+    "id": "grunt",
+    "url": "https://www.esa.int/Enabling_Support/Operations/ESA_tracking_station_establishes_contact_with_Russia_s_Mars_mission",
+    "url_final": "https://www.esa.int/Enabling_Support/Operations/ESA_tracking_station_establishes_contact_with_Russia_s_Mars_mission",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/grunt.html",
+    "sha256": "c1f7d4c85a6b7bc0777f157ef13239e7f592456a925d7068ad965358f04f48f2",
+    "estado": 200
+  },
+  {
+    "id": "grunt_fin",
+    "url": "https://www.esa.int/Space_Safety/Space_Debris/Space_debris_experts_confirm_estimate_for_Phobos_Grunt_reentry",
+    "url_final": "https://www.esa.int/Space_Safety/Space_Debris/Space_debris_experts_confirm_estimate_for_Phobos_Grunt_reentry",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/grunt_fin.html",
+    "sha256": "3bf52f9481817fa16fd5b42aec646a50aa2ed51829df206ed681f806a4dd04e9",
+    "estado": 200
+  },
+  {
+    "id": "historia",
+    "url": "https://www.jpl.nasa.gov/news/press_kits/insight/landing/appendix/history/",
+    "consulta": "2026-10-21",
+    "error": "403 Client Error: Forbidden for url: https://www.jpl.nasa.gov/news/press_kits/insight/landing/appendix/history/",
+    "archivo": "fuentes/historia_web.txt",
+    "sha256": "a1e790c8663f19d982e72d725f6f660121f0a77b7d75a7bbef15675805230b95",
+    "metodo_copia": "extracción de texto mediante navegador de investigación; petición HTTP directa bloqueada con 403"
+  },
+  {
+    "id": "hope",
+    "url": "https://www.mofa.gov.ae/en/missions/warsaw/media-hub/image-gallery/mission-accomplished---uaes-hope-probe-reached-mars-orbit",
+    "url_final": "https://www.mofa.gov.ae/404?item=%2fmissions%2fwarsaw%2fmedia-hub%2fimage-gallery%2fmission-accomplished---uaes-hope-probe-reached-mars-orbit&user=extranet%5cAnonymous&site=LDSC",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/hope.html",
+    "sha256": "fa797288dd3f6a281b06bb5958eb4c671536e3b635987f4c319a849266052526",
+    "estado": 200
+  },
+  {
+    "id": "insight",
+    "url": "https://science.nasa.gov/mission/insight/",
+    "url_final": "https://science.nasa.gov/mission/insight/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/insight.html",
+    "sha256": "a86512fad6c913aaa347f29ba3924157f1d04f8645adae83c92f06359dbb99ba",
+    "estado": 200
+  },
+  {
+    "id": "isro",
+    "url": "https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html",
+    "url_final": "https://www.isro.gov.in/MarsOrbiterMissionSpacecraft.html",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/isro.html",
+    "sha256": "bafd356516526b4a06645081c5ae190d71e478605f4daa82ab9711f8c229ea5d",
+    "estado": 200
+  },
+  {
+    "id": "mariner",
+    "url": "https://science.nasa.gov/mission/mariner-program/",
+    "url_final": "https://science.nasa.gov/mission/mariner-program/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/mariner.html",
+    "sha256": "c7e169e4febc6727c331c16de584f278e34431cda2554cd582aef47348741637",
+    "estado": 200
+  },
+  {
+    "id": "mariner3",
+    "url": "https://science.nasa.gov/mission/mariner-3/",
+    "url_final": "https://science.nasa.gov/mission/mariner-3/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/mariner3.html",
+    "sha256": "64cf50e03a71eeda5c1edda7a26940c213f42d97cc7134a219eb668e4938840c",
+    "estado": 200
+  },
+  {
+    "id": "mmx",
+    "url": "https://www.mmx.jaxa.jp/en/",
+    "url_final": "https://www.mmx.jaxa.jp/en/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/mmx.html",
+    "sha256": "a85c0d4641ee4351da7af16b9e0adc2dba2c18ed3a166a929da589184c7d1977",
+    "estado": 200
+  },
+  {
+    "id": "mmx_lanzamiento",
+    "url": "https://www.jaxa.jp/press/2026/10/20261020-1_j.html",
+    "url_final": "https://www.jaxa.jp/press/2026/10/20261020-1_j.html",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/mmx_lanzamiento.html",
+    "sha256": "47cc1556649e0ae17aa5200e8d6e06fbd713c96b1914c7d0ff611864dc199a0a",
+    "estado": 200
+  },
+  {
+    "id": "nozomi",
+    "url": "https://www.isas.jaxa.jp/e/snews/2003/1209.shtml",
+    "url_final": "https://www.isas.jaxa.jp/e/snews/2003/1209.shtml",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/nozomi.html",
+    "sha256": "e2d83f15a804d18dae1ce193199902b6dbac76f4882408ea9996c86e5a8e5be8",
+    "estado": 200
+  },
+  {
+    "id": "perseverance",
+    "url": "https://science.nasa.gov/mission/mars-2020-perseverance/",
+    "url_final": "https://science.nasa.gov/mission/mars-2020-perseverance/",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/perseverance.html",
+    "sha256": "a2f0b9139c4e6681333b5c46a6b840d3b411e19f05ac643561fcc95f358f294e",
+    "estado": 200
+  },
+  {
+    "id": "phobos",
+    "url": "https://nssdc.gsfc.nasa.gov/planetary/phobos.html",
+    "url_final": "https://nssdc.gsfc.nasa.gov/planetary/phobos.html",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/phobos.html",
+    "sha256": "26e4192d3c5fc11953c091e5e774bbcb14bb96bf8db5b475b6b3a8c8ec2fe580",
+    "estado": 200
+  },
+  {
+    "id": "schiaparelli",
+    "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/Schiaparelli_landing_investigation_completed",
+    "url_final": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/Schiaparelli_landing_investigation_completed",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/schiaparelli.html",
+    "sha256": "f9bfd42f23b98f934dd6fe8e06e6a38c93631fc652e3fa1243cb939dbcc856f0",
+    "estado": 200
+  },
+  {
+    "id": "tgo",
+    "url": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/TGO_s_orbit_around_Mars",
+    "url_final": "https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Exploration/ExoMars/TGO_s_orbit_around_Mars",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/tgo.html",
+    "sha256": "03db3a4d9459010b87c53333e590022d6aad7965aa9140dfa2b1cc3e65acb208",
+    "estado": 200
+  },
+  {
+    "id": "tianwen",
+    "url": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6840321/content.html",
+    "url_final": "https://www.cnsa.gov.cn/english/n6465652/n6465653/c6840321/content.html",
+    "consulta": "2026-10-21",
+    "archivo": "fuentes/tianwen.html",
+    "sha256": "a9656e17b279268ba87be1320f1c1c5ae800ae85d260757d609c8e5f26c114fe",
+    "estado": 200
+  }
+]

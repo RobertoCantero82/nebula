@@ -1,0 +1,48 @@
+{
+  "categoria": "EDA",
+  "fecha_corte": "2026-10-21",
+  "campanas": 49,
+  "historicas": 47,
+  "pendientes": [
+    "ESCAPADE",
+    "MMX"
+  ],
+  "periodos": [
+    {
+      "periodo": "1960–1999",
+      "objetivo": "Entrar en órbita de Marte",
+      "conseguidos": 8,
+      "intentos": 18,
+      "porcentaje": 44.44
+    },
+    {
+      "periodo": "1960–1999",
+      "objetivo": "Trabajar en el suelo de Marte",
+      "conseguidos": 3,
+      "intentos": 10,
+      "porcentaje": 30.0
+    },
+    {
+      "periodo": "2000–2020",
+      "objetivo": "Entrar en órbita de Marte",
+      "conseguidos": 8,
+      "intentos": 9,
+      "porcentaje": 88.89
+    },
+    {
+      "periodo": "2000–2020",
+      "objetivo": "Trabajar en el suelo de Marte",
+      "conseguidos": 7,
+      "intentos": 9,
+      "porcentaje": 77.78
+    }
+  ],
+  "fobos_antecedentes": 3,
+  "fobos_superficie_operativa": 0,
+  "resultados_divididos": [
+    "Mars 2",
+    "Mars 3",
+    "Mars Express / Beagle 2",
+    "ExoMars 2016 / Schiaparelli"
+  ]
+}
