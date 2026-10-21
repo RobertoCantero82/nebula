@@ -5,7 +5,7 @@ tema: 'CIENCIA'
 fecha: 2026-10-21
 imagenPortada: '/nebula/imagenes/mmx_fobos_portada.png'
 cifraDestacada: '7 de 9'
-etiquetaCifra: 'campañas de 2000–2020 que lograron trabajar en el suelo de Marte'
+etiquetaCifra: 'campañas entre los años 2000–2020 lograron trabajar en el suelo de Marte'
 metodologia: 'EDA de 49 campañas por lanzamiento (1960–2026), con 47 lanzadas hasta 2020 en los recuentos y dos pendientes: ESCAPADE y MMX. Reconstrucción manual con NASA, ESA, JAXA y otras agencias. Agrupo componentes de un mismo lanzamiento y separo órbita conseguida de trabajo comunicado desde la superficie durante más de un día terrestre. No cuento objetivos no previstos ni pendientes como fallos. Las campañas de órbita y suelo se solapan. Comparo periodos, reviso Mars 3, Beagle 2 y Sputnik 24, y separo los tres antecedentes destinados al suelo de Fobos. No estimo el riesgo de MMX ni atribuyo causalidad a la mejora histórica.'
 ---
 
