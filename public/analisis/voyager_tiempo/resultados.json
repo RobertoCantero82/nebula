@@ -1,0 +1,12 @@
+{
+  "categoria": "EDA",
+  "corte_utc": "2026-10-22T00:00:00Z",
+  "voyager_1_horas_ida": 23.93319383631507,
+  "voyager_1_horas_ida_vuelta_aprox": 47.86638767263014,
+  "intervalos_diarios_acercamiento": 93,
+  "reduccion_ida_segundos": 135.7155016810575,
+  "inicio_descenso": "2026-01-21",
+  "fin_descenso": "2026-04-24",
+  "filas_historia": 599,
+  "filas_diarias": 295
+}

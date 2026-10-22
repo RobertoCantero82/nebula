@@ -1,0 +1,80 @@
+[
+  {
+    "archivo": "fuentes/actual_301.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27301%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-10-22%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:42.722088+00:00",
+    "sha256": "0bcb0bf3db26e584b311e8c79f67eae503d0ac07770df94d475f683c413564e9"
+  },
+  {
+    "archivo": "fuentes/actual_499.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27499%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-10-22%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:43.758681+00:00",
+    "sha256": "3f5d372a270ebd18f24b0a1fdc7cb42ecfae9a6089006b7ae6e400bc61572999"
+  },
+  {
+    "archivo": "fuentes/actual_599.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27599%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-10-22%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:44.635978+00:00",
+    "sha256": "edf2bd02cb560920cba240516fe53d58710c25b013dcfd2be5580cd51aded588"
+  },
+  {
+    "archivo": "fuentes/actual_m98.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-98%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-10-22%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:45.579795+00:00",
+    "sha256": "a222ac03d5b39dfee6819c40cbb31b09b77ef4acf30aa00c7b6b2001d22e16f7"
+  },
+  {
+    "archivo": "fuentes/actual_m32.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-32%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-10-22%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:46.521722+00:00",
+    "sha256": "381076770fe3784495b9c9c8c8613b8d4368c33d0b9f05b455aadab132e9d066"
+  },
+  {
+    "archivo": "fuentes/actual_m31.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-10-22%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:47.508164+00:00",
+    "sha256": "5761c659290de0a62b483edf0dbea04b29be63ed0d273a6eb0d55f312a4340fb"
+  },
+  {
+    "archivo": "fuentes/historia.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%271977-09-06%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%2730+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:49.252291+00:00",
+    "sha256": "6d06d733cd3efed6f11f3e7c1a2033b1268dbb21180fb381d43319ea074e91b7"
+  },
+  {
+    "archivo": "fuentes/diario_2026.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-01-01%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:50.607243+00:00",
+    "sha256": "5e7747612acef330c60030372df2895cfda8d6d09b3853b462c0e272cb880ca7"
+  },
+  {
+    "archivo": "fuentes/diario_sol_2026.json",
+    "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%4010%27&START_TIME=%272026-01-01%27&STOP_TIME=%272026-10-23%27&STEP_SIZE=%271+d%27&OUT_UNITS=%27KM-S%27&VEC_TABLE=%273%27&VEC_CORR=%27NONE%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "consulta_utc": "2026-10-22T06:05:51.901566+00:00",
+    "sha256": "feee347addd8b2979a56dda13609a331dec6bd70450c9c17729c7c537cffd23a"
+  },
+  {
+    "archivo": "fuentes/hito.html",
+    "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+    "consulta_utc": "2026-10-22T06:05:53.488503+00:00",
+    "sha256": "bb5a7cadaabd8c2f143c0d5f644a8313e3c213d62ecb452907b951561a43c8f7"
+  },
+  {
+    "archivo": "fuentes/faq.html",
+    "url": "https://science.nasa.gov/mission/voyager/frequently-asked-questions/",
+    "consulta_utc": "2026-10-22T06:05:55.226548+00:00",
+    "sha256": "25592b988c951f6ec8955cad2d21c9288b1d8ecc290c5423d9f612f30ba022ca"
+  },
+  {
+    "archivo": "fuentes/horizons_api.html",
+    "url": "https://ssd-api.jpl.nasa.gov/doc/horizons.html",
+    "consulta_utc": "2026-10-22T06:05:56.957058+00:00",
+    "sha256": "6ca45d9c222d6e5c425ae3e0a3c44225cf8b6d30c4a14892b0f1157b0ab4cfe4"
+  },
+  {
+    "archivo": "fuentes/horizons_manual.html",
+    "url": "https://ssd.jpl.nasa.gov/horizons/manual.html",
+    "consulta_utc": "2026-10-22T06:05:58.450948+00:00",
+    "sha256": "361ddc812ea0b9976e1c758af8f4c05694f7618498a7e75876fe5fc11d5cb0b5"
+  }
+]

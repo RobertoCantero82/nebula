@@ -1,0 +1,217 @@
+---
+titulo: 'Voyager 1 está a casi un día luz. ¿Por qué a veces tarda menos en contestar?'
+descripcion: 'La sonda se aleja del Sol, pero durante parte de 2026 se acercó a la Tierra. Los datos de NASA explican esa aparente contradicción.'
+tema: 'CIENCIA'
+fecha: 2026-10-22
+imagenPortada: '/nebula/imagenes/voyager_tiempo_portada.png'
+cifraDestacada: '47 h 52 min'
+etiquetaCifra: 'ida y vuelta aproximada de la señal de Voyager 1'
+metodologia: 'EDA de efemérides geométricas de JPL Horizons. Comparo seis destinos el 22 de octubre de 2026 a las 00:00 UTC, 599 posiciones de Voyager 1 cada 30 días desde 1977 y 295 posiciones diarias de 2026 desde la Tierra y desde el Sol. Distancia dividida por la velocidad de la luz y doble demora como aproximación de ida y vuelta. No son mensajes observados ni una predicción propia. Excluyo filas posteriores al corte. El hito del 18 de noviembre es una previsión publicada por NASA.'
+---
+
+**¿Cuánto aguantarías mirando el móvil si cada respuesta tardase dos días?** Con la Voyager 1, la pregunta empieza a parecerse al trabajo cotidiano de quienes la controlan. La sonda, que despegó en el año 1977, está tan lejos que una señal de radio necesita casi una jornada para llegar hasta ella. Y eso sin contar el viaje de vuelta.
+
+NASA ha puesto fecha al siguiente número redondo: [el 18 de noviembre Voyager 1 estará a un día luz de la Tierra](https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/). Eso significa unos 25.902 millones de kilómetros. No quiere decir que la nave haya tardado un día en recorrerlos. Lleva casi medio siglo viajando- En cambio, es la luz la que necesitará esas 24 horas.
+
+Sin embargo, hay una pequeña **trampa** en la historia. Aunque la Voyager sigue alejándose del Sol, la espera desde la Tierra no aumenta todos los días. Durante una parte de este año ocurrió lo contrario.
+
+## Casi dos días para recibir una respuesta
+
+Para poner en perspectiva esa espera, he comparado seis destinos con las tablas de posiciones de [JPL, el laboratorio de NASA que calcula estas trayectorias](https://ssd.jpl.nasa.gov/horizons/). Todas las distancias corresponden al 22 de octubre de 2026 a las 00:00 UTC, las dos de la madrugada en la España peninsular.
+
+La señal tarda 1,3 segundos en alcanzar la Luna. Hasta Marte necesita 12 minutos y 34 segundos. Júpiter ya exige casi 47 minutos. Estas cifras sirven para hacerse una idea de la espera: están calculadas hasta el centro de cada cuerpo celeste, no hasta una nave en su superficie o en órbita.
+
+Más allá aparecen las sondas. New Horizons está a unas nueve horas de señal, la Voyager 2, a veinte y la Voyager 1 alcanza las 23 horas y 56 minutos. **La señal** viaja a la velocidad de la luz, pero incluso así **necesita casi un día para llegar hasta Voyager 1**.
+
+<section id="conversacion-espacial" aria-labelledby="conversacion-titulo">
+  <h3 id="conversacion-titulo">¿Cuánto esperarías una respuesta?</h3>
+  <p>Elige dónde está quien te escucha.</p>
+
+  <label for="destino-espacial">Destino</label>
+  <select id="destino-espacial">
+    <option value="1.299294997">La Luna</option>
+    <option value="754.450947">Marte</option>
+    <option value="2817.794273">Júpiter</option>
+    <option value="32960.183403">New Horizons</option>
+    <option value="72042.941426">Voyager 2</option>
+    <option value="86159.497811" selected>Voyager 1</option>
+  </select>
+
+  <div class="esperas" aria-live="polite" aria-atomic="true">
+    <p>
+      Tu orden llegaría en
+      <strong id="espera-ida">23 h 56 min</strong>
+    </p>
+    <p>
+      Su respuesta volvería en unas
+      <strong id="espera-total">47 h 52 min</strong>
+      desde el envío
+    </p>
+  </div>
+
+  <p class="nota-espera">
+    Distancias del 22 de octubre de 2026 a las 00:00 UTC.
+    Imagino una respuesta inmediata y duplico la demora de ida.
+    Es una aproximación: no incluye el movimiento durante el viaje
+    de la señal, la ejecución de la orden ni la disponibilidad de antenas.
+    Para la Luna y los planetas uso la distancia hasta su centro.
+  </p>
+</section>
+
+<style>
+  #conversacion-espacial {
+    margin: 2rem 0;
+    padding: clamp(1rem, 4vw, 1.8rem);
+    border: 1px solid #c6d2f1;
+    border-radius: 16px;
+    background: #f4f7ff;
+    color: #25314b;
+  }
+
+  #conversacion-espacial h3 {
+    margin-top: 0;
+  }
+
+  #conversacion-espacial select {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
+    padding: .8rem;
+    border: 1px solid #446ddf;
+    border-radius: 8px;
+    background: white;
+    color: inherit;
+    font: inherit;
+  }
+
+  #conversacion-espacial select:focus-visible {
+    outline: 3px solid #446ddf;
+    outline-offset: 3px;
+  }
+
+  #conversacion-espacial .esperas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: 1rem;
+    margin: 1.2rem 0;
+  }
+
+  #conversacion-espacial .esperas p {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background: white;
+  }
+
+  #conversacion-espacial strong {
+    display: block;
+    margin: .4rem 0;
+    color: #446ddf;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    line-height: 1.2;
+  }
+
+  #conversacion-espacial .nota-espera {
+    margin-bottom: 0;
+    font-size: .85em;
+    line-height: 1.5;
+  }
+</style>
+
+<script>
+  (() => {
+    function iniciarConversacion() {
+      const bloque = document.getElementById('conversacion-espacial');
+      if (!bloque || bloque.dataset.iniciado) return;
+      bloque.dataset.iniciado = 'true';
+
+      const selector = bloque.querySelector('select');
+      const ida = bloque.querySelector('#espera-ida');
+      const total = bloque.querySelector('#espera-total');
+
+      function formatear(segundos) {
+        if (segundos < 60) {
+          return segundos.toLocaleString('es-ES', {
+            minimumFractionDigits: 1,
+            maximumFractionDigits: 1
+          }) + ' segundos';
+        }
+
+        if (segundos < 3600) {
+          const redondeados = Math.round(segundos);
+          return Math.floor(redondeados / 60) + ' min ' +
+            (redondeados % 60) + ' s';
+        }
+
+        const minutos = Math.round(segundos / 60);
+        return Math.floor(minutos / 60) + ' h ' +
+          (minutos % 60) + ' min';
+      }
+
+      function actualizar() {
+        const segundos = Number(selector.value);
+        ida.textContent = formatear(segundos);
+        total.textContent = formatear(segundos * 2);
+      }
+
+      selector.addEventListener('change', actualizar);
+      actualizar();
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', iniciarConversacion);
+    } else {
+      iniciarConversacion();
+    }
+  })();
+</script>
+
+Si duplicamos la demora de Voyager 1, obtenemos unas 47 horas y 52 minutos para la ida y la vuelta. **Una orden enviada un viernes por la mañana tendría su respuesta cerca del domingo por la mañana**, incluso imaginando que la nave contestase inmediatamente.
+
+Es una aproximación para entender la escala: durante ese tiempo ambos extremos se mueven. Tampoco incluye lo que tarde la nave en ejecutar la orden ni la disponibilidad de las grandes antenas terrestres. La espera real puede ser mayor.
+
+<figure class="voy-figura"><figcaption><strong>Casi medio siglo para alejarse un día luz</strong><br>Horas de ida de la señal desde la Tierra. La curva acaba el 19 de octubre de 2026; el muestreo salta 30 días.</figcaption><svg viewBox="0 0 760 285" role="img" aria-label="La demora de ida crece desde casi cero en 1977 hasta casi 24 horas en octubre de 2026."><line x1="64" x2="714" y1="238.0" y2="238.0" stroke="#ddd"/><text x="54" y="243.0" text-anchor="end">0</text><line x1="64" x2="714" y1="188.0" y2="188.0" stroke="#ddd"/><text x="54" y="193.0" text-anchor="end">6</text><line x1="64" x2="714" y1="138.0" y2="138.0" stroke="#ddd"/><text x="54" y="143.0" text-anchor="end">12</text><line x1="64" x2="714" y1="88.0" y2="88.0" stroke="#ddd"/><text x="54" y="93.0" text-anchor="end">18</text><line x1="64" x2="714" y1="38.0" y2="38.0" stroke="#ddd"/><text x="54" y="43.0" text-anchor="end">24</text><polyline points="64.00,238.00 65.09,237.80 66.17,237.57 67.26,237.21 68.35,236.67 69.43,235.98 70.52,235.22 71.61,234.45 72.70,233.73 73.78,233.13 74.87,232.69 75.96,232.45 77.04,232.40 78.13,232.55 79.22,232.84 80.30,233.17 81.39,233.37 82.48,233.29 83.57,232.88 84.65,232.33 85.74,231.71 86.83,231.08 87.91,230.53 89.00,230.10 90.09,229.84 91.17,229.76 92.26,229.87 93.35,230.12 94.43,230.42 95.52,230.66 96.61,230.68 97.70,230.41 98.78,229.85 99.87,229.09 100.96,228.26 102.04,227.47 103.13,226.84 104.22,226.40 105.30,226.21 106.39,226.28 107.48,226.63 108.57,227.02 109.65,227.33 110.74,227.40 111.83,227.17 112.91,226.66 114.00,225.95 115.09,225.19 116.17,224.48 117.26,223.94 118.35,223.61 119.43,223.52 120.52,223.66 121.61,223.93 122.70,224.21 123.78,224.35 124.87,224.25 125.96,223.86 127.04,223.22 128.13,222.43 129.22,221.62 130.30,220.91 131.39,220.38 132.48,220.09 133.57,220.05 134.65,220.20 135.74,220.43 136.83,220.61 137.91,220.60 139.00,220.33 140.09,219.79 141.17,219.05 142.26,218.22 143.35,217.42 144.43,216.77 145.52,216.34 146.61,216.16 147.70,216.20 148.78,216.38 149.87,216.57 150.96,216.63 152.04,216.45 153.13,216.02 154.22,215.34 155.30,214.53 156.39,213.70 157.48,212.97 158.57,212.43 159.65,212.15 160.74,212.10 161.83,212.22 162.91,212.40 164.00,212.51 165.09,212.41 166.17,212.06 167.26,211.46 168.35,210.69 169.43,209.85 170.52,209.07 171.61,208.45 172.70,208.07 173.78,207.95 174.87,208.02 175.96,208.18 177.04,208.31 178.13,208.28 179.22,208.01 180.30,207.48 181.39,206.75 182.48,205.92 183.57,205.11 184.65,204.44 185.74,203.98 186.83,203.78 187.91,203.79 189.00,203.94 190.09,204.09 191.17,204.10 192.26,203.90 193.35,203.44 194.43,202.76 195.52,201.95 196.61,201.12 197.70,200.40 198.78,199.88 199.87,199.60 200.96,199.57 202.04,199.68 203.13,199.84 204.22,199.90 205.30,199.76 206.39,199.36 207.48,198.74 208.57,197.95 209.65,197.12 210.74,196.36 211.83,195.78 212.91,195.44 214.00,195.34 215.09,195.43 216.17,195.59 217.26,195.68 218.35,195.59 219.43,195.26 220.52,194.69 221.61,193.93 222.70,193.10 223.78,192.31 224.87,191.68 225.96,191.28 227.04,191.13 228.13,191.18 229.22,191.33 230.30,191.45 231.39,191.41 232.48,191.13 233.57,190.62 234.65,189.90 235.74,189.07 236.83,188.26 237.91,187.59 239.00,187.13 240.09,186.93 241.17,186.94 242.26,187.08 243.35,187.21 244.43,187.21 245.52,187.00 246.61,186.53 247.70,185.85 248.78,185.04 249.87,184.22 250.96,183.51 252.04,183.00 253.13,182.74 254.22,182.71 255.30,182.83 256.39,182.97 257.48,183.01 258.57,182.85 259.65,182.44 260.74,181.80 261.83,181.01 262.91,180.18 264.00,179.44 265.09,178.88 266.17,178.56 267.26,178.49 268.35,178.59 269.43,178.74 270.52,178.81 271.61,178.69 272.70,178.33 273.78,177.74 274.87,176.97 275.96,176.15 277.04,175.37 278.13,174.77 279.22,174.40 280.30,174.29 281.39,174.36 282.48,174.50 283.57,174.60 284.65,174.53 285.74,174.22 286.83,173.67 287.91,172.94 289.00,172.12 290.09,171.32 291.17,170.68 292.26,170.26 293.35,170.09 294.43,170.13 295.52,170.28 296.61,170.39 297.70,170.36 298.78,170.10 299.87,169.60 300.96,168.90 302.04,168.09 303.13,167.28 304.22,166.60 305.30,166.13 306.39,165.92 307.48,165.92 308.57,166.05 309.65,166.18 310.74,166.19 311.83,165.98 312.91,165.53 314.00,164.86 315.09,164.06 316.17,163.25 317.26,162.53 318.35,162.02 319.43,161.75 320.52,161.72 321.61,161.84 322.70,161.98 323.78,162.02 324.87,161.86 325.96,161.45 327.04,160.82 328.13,160.04 329.22,159.22 330.30,158.48 331.39,157.92 332.48,157.60 333.57,157.53 334.65,157.63 335.74,157.77 336.83,157.84 337.91,157.73 339.00,157.37 340.09,156.78 341.17,156.02 342.26,155.20 343.35,154.43 344.43,153.83 345.52,153.47 346.61,153.35 347.70,153.42 348.78,153.57 349.87,153.66 350.96,153.59 352.04,153.28 353.13,152.73 354.22,152.00 355.30,151.18 356.39,150.39 357.48,149.75 358.57,149.34 359.65,149.18 360.74,149.23 361.83,149.37 362.91,149.48 364.00,149.45 365.09,149.19 366.17,148.68 367.26,147.98 368.35,147.17 369.43,146.37 370.52,145.69 371.61,145.23 372.70,145.03 373.78,145.04 374.87,145.17 375.96,145.30 377.04,145.30 378.13,145.08 379.22,144.63 380.30,143.96 381.39,143.16 382.48,142.34 383.57,141.64 384.65,141.13 385.74,140.88 386.83,140.85 387.91,140.97 389.00,141.11 390.09,141.14 391.17,140.97 392.26,140.56 393.35,139.93 394.43,139.15 395.52,138.33 396.61,137.59 397.70,137.04 398.78,136.74 399.87,136.68 400.96,136.78 402.04,136.93 403.13,136.99 404.22,136.86 405.30,136.49 406.39,135.90 407.48,135.13 408.57,134.31 409.65,133.55 410.74,132.96 411.83,132.62 412.91,132.51 414.00,132.59 415.09,132.74 416.17,132.82 417.26,132.74 418.35,132.42 419.43,131.86 420.52,131.12 421.61,130.30 422.70,129.52 423.78,128.90 424.87,128.50 425.96,128.36 427.04,128.41 428.13,128.55 429.22,128.66 430.30,128.61 431.39,128.34 432.48,127.82 433.57,127.11 434.65,126.30 435.74,125.50 436.83,124.84 437.91,124.40 439.00,124.21 440.09,124.23 441.17,124.37 442.26,124.49 443.35,124.48 444.43,124.25 445.52,123.78 446.61,123.10 447.70,122.30 448.78,121.49 449.87,120.79 450.96,120.31 452.04,120.07 453.13,120.06 454.22,120.19 455.30,120.32 456.39,120.34 457.48,120.16 458.57,119.73 459.65,119.09 460.74,118.30 461.83,117.48 462.91,116.76 464.00,116.23 465.09,115.95 466.17,115.90 467.26,116.01 468.35,116.16 469.43,116.20 470.52,116.06 471.61,115.68 472.70,115.07 473.78,114.30 474.87,113.48 475.96,112.73 477.04,112.16 478.13,111.84 479.22,111.75 480.30,111.84 481.39,111.99 482.48,112.06 483.57,111.96 484.65,111.62 485.74,111.05 486.83,110.31 487.91,109.49 489.00,108.72 490.09,108.11 491.17,107.74 492.26,107.61 493.35,107.68 494.43,107.82 495.52,107.92 496.61,107.86 497.70,107.56 498.78,107.03 499.87,106.31 500.96,105.50 502.04,104.71 503.13,104.07 504.22,103.65 505.30,103.48 506.39,103.52 507.48,103.66 508.57,103.77 509.65,103.75 510.74,103.50 511.83,103.01 512.91,102.32 514.00,101.51 515.09,100.71 516.17,100.03 517.26,99.57 518.35,99.35 519.43,99.36 520.52,99.49 521.61,99.62 522.70,99.63 523.78,99.42 524.87,98.98 525.96,98.32 527.04,97.53 528.13,96.71 529.22,96.01 530.30,95.50 531.39,95.24 532.48,95.21 533.57,95.33 534.65,95.47 535.74,95.50 536.83,95.34 537.91,94.94 539.00,94.32 540.09,93.54 541.17,92.72 542.26,91.99 543.35,91.44 544.43,91.13 545.52,91.07 546.61,91.17 547.70,91.31 548.78,91.38 549.87,91.25 550.96,90.90 552.04,90.31 553.13,89.55 554.22,88.73 555.30,87.97 556.39,87.38 557.48,87.03 558.57,86.93 559.65,87.01 560.74,87.16 561.83,87.24 562.91,87.16 564.00,86.84 565.09,86.30 566.17,85.56 567.26,84.75 568.35,83.97 569.43,83.34 570.52,82.95 571.61,82.80 572.70,82.85 573.78,83.00 574.87,83.10 575.96,83.06 577.04,82.79 578.13,82.28 579.22,81.57 580.30,80.76 581.39,79.97 582.48,79.31 583.57,78.87 584.65,78.68 585.74,78.70 586.83,78.84 587.91,78.96 589.00,78.95 590.09,78.72 591.17,78.26 592.26,77.58 593.35,76.78 594.43,75.98 595.52,75.28 596.61,74.80 597.70,74.57 598.78,74.56 599.87,74.68 600.96,74.82 602.04,74.84 603.13,74.66 604.22,74.23 605.30,73.59 606.39,72.81 607.48,71.99 608.57,71.27 609.65,70.74 610.74,70.47 611.83,70.42 612.91,70.53 614.00,70.68 615.09,70.72 616.17,70.58 617.26,70.20 618.35,69.59 619.43,68.83 620.52,68.01 621.61,67.27 622.70,66.70 623.78,66.37 624.87,66.29 625.96,66.38 627.04,66.53 628.13,66.61 629.22,66.50 630.30,66.17 631.39,65.60 632.48,64.85 633.57,64.04 634.65,63.27 635.74,62.66 636.83,62.29 637.91,62.17 639.00,62.24 640.09,62.39 641.17,62.48 642.26,62.42 643.35,62.12 644.43,61.59 645.52,60.88 646.61,60.06 647.70,59.28 648.78,58.64 649.87,58.22 650.96,58.06 652.04,58.10 653.13,58.24 654.22,58.36 655.30,58.33 656.39,58.08 657.48,57.59 658.57,56.90 659.65,56.10 660.74,55.30 661.83,54.62 662.91,54.16 664.00,53.96 665.09,53.97 666.17,54.10 667.26,54.23 668.35,54.23 669.43,54.03 670.52,53.58 671.61,52.92 672.70,52.13 673.78,51.32 674.87,50.61 675.96,50.11 677.04,49.86 678.13,49.84 679.22,49.96 680.30,50.10 681.39,50.13 682.48,49.97 683.57,49.56 684.65,48.93 685.74,48.16 686.83,47.34 687.91,46.61 689.00,46.07 690.09,45.77 691.17,45.71 692.26,45.82 693.35,45.96 694.43,46.02 695.52,45.90 696.61,45.53 697.70,44.94 698.78,44.19 699.87,43.37 700.96,42.62 702.04,42.03 703.13,41.69 704.22,41.60 705.30,41.68 706.39,41.83 707.48,41.91 708.57,41.82 709.65,41.50 710.74,40.95 711.83,40.22 712.91,39.40 714.00,38.63" stroke="#446ddf" stroke-width="3" fill="none"/><text x="64.0" y="265" text-anchor="middle">1977</text><text x="236.4" y="265" text-anchor="middle">1990</text><text x="369.1" y="265" text-anchor="middle">2000</text><text x="501.8" y="265" text-anchor="middle">2010</text><text x="714.0" y="265" text-anchor="middle">2026</text></svg></figure>
+
+## La Tierra también pone kilómetros
+
+Ahora viene lo curioso. Antes de mirar el segundo gráfico, prueba a responder: **si Voyager se aleja del Sol, ¿la señal tiene que tardar cada día un poco más en llegar a la Tierra?**
+
+<fieldset class="voy-bloque" id="voy-apuesta"><legend>Haz tu apuesta</legend><p>Si Voyager se aleja del Sol, ¿la señal tarda cada día más en llegar a la Tierra?</p><div class="voy-opciones"><button type="button" data-voy="si" aria-pressed="false">Sí, siempre</button><button type="button" data-voy="no" aria-pressed="false">No necesariamente</button></div><p id="voy-respuesta" role="status" aria-live="polite">Elige una respuesta o abre la explicación que hay debajo.</p><details id="voy-explicacion"><summary>Descubrir la explicación</summary><p>No necesariamente. La Tierra también se mueve. Entre el 21 de enero y el 24 de abril, la demora de ida bajó unos 136 segundos mientras la distancia al Sol seguía creciendo.</p></details></fieldset>
+
+Las tablas cuentan que entre el 21 de enero y el 24 de abril la separación entre Voyager 1 y la Tierra disminuyó. En ese tramo, la demora de ida bajó unos 136 segundos: dos minutos y cuarto. Encontré el descenso en 93 intervalos consecutivos de un día.
+
+**La sonda no estaba dando marcha atrás**. Durante ese mismo periodo, su distancia al Sol siguió aumentando. Quien cambiaba la comparación era nuestro planeta, que también recorre su órbita y durante una parte del año reduce la separación con Voyager.
+
+Piensa en dos personas que salen de una plaza por caminos distintos. Saber que una se aleja de la plaza no basta para saber si se acerca a la otra. También necesitas conocer por dónde camina la segunda. Aquí la plaza es el Sol y esa segunda persona somos nosotros.
+
+<figure class="voy-figura"><figcaption><strong>Alejarse del Sol no siempre significa alejarse de la Tierra</strong><br>Cambio de distancia desde el 1 de enero de 2026, en millones de kilómetros. Ambas curvas parten de cero para comparar el cambio, no la distancia total.</figcaption><p class="voy-leyenda"><span>Azul continuo: desde la Tierra</span><span>Marrón discontinuo: desde el Sol</span></p><svg viewBox="0 0 760 300" role="img" aria-label="La distancia al Sol aumenta todo el periodo; la distancia a la Tierra desciende entre enero y abril antes de aumentar de nuevo."><line x1="68" x2="713" y1="250.0" y2="250.0" stroke="#ddd"/><text x="58" y="255.0" text-anchor="end">-50</text><line x1="68" x2="713" y1="229.0" y2="229.0" stroke="#ddd"/><text x="58" y="234.0" text-anchor="end">0</text><line x1="68" x2="713" y1="166.0" y2="166.0" stroke="#ddd"/><text x="58" y="171.0" text-anchor="end">150</text><line x1="68" x2="713" y1="103.0" y2="103.0" stroke="#ddd"/><text x="58" y="108.0" text-anchor="end">300</text><line x1="68" x2="713" y1="40.0" y2="40.0" stroke="#ddd"/><text x="58" y="45.0" text-anchor="end">450</text><polyline points="68.00,229.00 70.19,228.39 72.39,227.77 74.58,227.16 76.78,226.55 78.97,225.94 81.16,225.32 83.36,224.71 85.55,224.10 87.74,223.49 89.94,222.87 92.13,222.26 94.33,221.65 96.52,221.04 98.71,220.42 100.91,219.81 103.10,219.20 105.30,218.59 107.49,217.97 109.68,217.36 111.88,216.75 114.07,216.13 116.27,215.52 118.46,214.91 120.65,214.30 122.85,213.68 125.04,213.07 127.23,212.46 129.43,211.85 131.62,211.23 133.82,210.62 136.01,210.01 138.20,209.40 140.40,208.78 142.59,208.17 144.79,207.56 146.98,206.95 149.17,206.33 151.37,205.72 153.56,205.11 155.76,204.49 157.95,203.88 160.14,203.27 162.34,202.66 164.53,202.04 166.72,201.43 168.92,200.82 171.11,200.21 173.31,199.59 175.50,198.98 177.69,198.37 179.89,197.76 182.08,197.14 184.28,196.53 186.47,195.92 188.66,195.31 190.86,194.69 193.05,194.08 195.24,193.47 197.44,192.85 199.63,192.24 201.83,191.63 204.02,191.02 206.21,190.40 208.41,189.79 210.60,189.18 212.80,188.57 214.99,187.95 217.18,187.34 219.38,186.73 221.57,186.12 223.77,185.50 225.96,184.89 228.15,184.28 230.35,183.67 232.54,183.05 234.73,182.44 236.93,181.83 239.12,181.21 241.32,180.60 243.51,179.99 245.70,179.38 247.90,178.76 250.09,178.15 252.29,177.54 254.48,176.93 256.67,176.31 258.87,175.70 261.06,175.09 263.26,174.48 265.45,173.86 267.64,173.25 269.84,172.64 272.03,172.03 274.22,171.41 276.42,170.80 278.61,170.19 280.81,169.57 283.00,168.96 285.19,168.35 287.39,167.74 289.58,167.12 291.78,166.51 293.97,165.90 296.16,165.29 298.36,164.67 300.55,164.06 302.74,163.45 304.94,162.84 307.13,162.22 309.33,161.61 311.52,161.00 313.71,160.39 315.91,159.77 318.10,159.16 320.30,158.55 322.49,157.93 324.68,157.32 326.88,156.71 329.07,156.10 331.27,155.48 333.46,154.87 335.65,154.26 337.85,153.65 340.04,153.03 342.23,152.42 344.43,151.81 346.62,151.20 348.82,150.58 351.01,149.97 353.20,149.36 355.40,148.75 357.59,148.13 359.79,147.52 361.98,146.91 364.17,146.29 366.37,145.68 368.56,145.07 370.76,144.46 372.95,143.84 375.14,143.23 377.34,142.62 379.53,142.01 381.72,141.39 383.92,140.78 386.11,140.17 388.31,139.56 390.50,138.94 392.69,138.33 394.89,137.72 397.08,137.11 399.28,136.49 401.47,135.88 403.66,135.27 405.86,134.65 408.05,134.04 410.24,133.43 412.44,132.82 414.63,132.20 416.83,131.59 419.02,130.98 421.21,130.37 423.41,129.75 425.60,129.14 427.80,128.53 429.99,127.92 432.18,127.30 434.38,126.69 436.57,126.08 438.77,125.47 440.96,124.85 443.15,124.24 445.35,123.63 447.54,123.02 449.73,122.40 451.93,121.79 454.12,121.18 456.32,120.56 458.51,119.95 460.70,119.34 462.90,118.73 465.09,118.11 467.29,117.50 469.48,116.89 471.67,116.28 473.87,115.66 476.06,115.05 478.26,114.44 480.45,113.83 482.64,113.21 484.84,112.60 487.03,111.99 489.22,111.38 491.42,110.76 493.61,110.15 495.81,109.54 498.00,108.92 500.19,108.31 502.39,107.70 504.58,107.09 506.78,106.47 508.97,105.86 511.16,105.25 513.36,104.64 515.55,104.02 517.74,103.41 519.94,102.80 522.13,102.19 524.33,101.57 526.52,100.96 528.71,100.35 530.91,99.74 533.10,99.12 535.30,98.51 537.49,97.90 539.68,97.29 541.88,96.67 544.07,96.06 546.27,95.45 548.46,94.83 550.65,94.22 552.85,93.61 555.04,93.00 557.23,92.38 559.43,91.77 561.62,91.16 563.82,90.55 566.01,89.93 568.20,89.32 570.40,88.71 572.59,88.10 574.79,87.48 576.98,86.87 579.17,86.26 581.37,85.65 583.56,85.03 585.76,84.42 587.95,83.81 590.14,83.20 592.34,82.58 594.53,81.97 596.72,81.36 598.92,80.74 601.11,80.13 603.31,79.52 605.50,78.91 607.69,78.29 609.89,77.68 612.08,77.07 614.28,76.46 616.47,75.84 618.66,75.23 620.86,74.62 623.05,74.01 625.24,73.39 627.44,72.78 629.63,72.17 631.83,71.56 634.02,70.94 636.21,70.33 638.41,69.72 640.60,69.11 642.80,68.49 644.99,67.88 647.18,67.27 649.38,66.65 651.57,66.04 653.77,65.43 655.96,64.82 658.15,64.20 660.35,63.59 662.54,62.98 664.73,62.37 666.93,61.75 669.12,61.14 671.32,60.53 673.51,59.92 675.70,59.30 677.90,58.69 680.09,58.08 682.29,57.47 684.48,56.85 686.67,56.24 688.87,55.63 691.06,55.02 693.26,54.40 695.45,53.79 697.64,53.18 699.84,52.56 702.03,51.95 704.22,51.34 706.42,50.73 708.61,50.11 710.81,49.50 713.00,48.89" stroke="#a76d3c" stroke-dasharray="8 5" stroke-width="3" fill="none"/><polyline points="68.00,229.00 70.19,228.75 72.39,228.52 74.58,228.30 76.78,228.09 78.97,227.90 81.16,227.72 83.36,227.56 85.55,227.41 87.74,227.27 89.94,227.14 92.13,227.03 94.33,226.93 96.52,226.85 98.71,226.77 100.91,226.71 103.10,226.67 105.30,226.63 107.49,226.60 109.68,226.59 111.88,226.59 114.07,226.60 116.27,226.62 118.46,226.65 120.65,226.70 122.85,226.75 125.04,226.81 127.23,226.89 129.43,226.97 131.62,227.06 133.82,227.17 136.01,227.28 138.20,227.40 140.40,227.53 142.59,227.67 144.79,227.81 146.98,227.97 149.17,228.13 151.37,228.30 153.56,228.47 155.76,228.66 157.95,228.85 160.14,229.05 162.34,229.25 164.53,229.46 166.72,229.68 168.92,229.90 171.11,230.12 173.31,230.36 175.50,230.59 177.69,230.83 179.89,231.08 182.08,231.33 184.28,231.58 186.47,231.84 188.66,232.10 190.86,232.36 193.05,232.63 195.24,232.90 197.44,233.17 199.63,233.44 201.83,233.71 204.02,233.98 206.21,234.26 208.41,234.54 210.60,234.81 212.80,235.09 214.99,235.37 217.18,235.64 219.38,235.92 221.57,236.20 223.77,236.47 225.96,236.74 228.15,237.02 230.35,237.29 232.54,237.55 234.73,237.82 236.93,238.08 239.12,238.34 241.32,238.60 243.51,238.85 245.70,239.10 247.90,239.35 250.09,239.59 252.29,239.82 254.48,240.06 256.67,240.28 258.87,240.50 261.06,240.72 263.26,240.93 265.45,241.13 267.64,241.33 269.84,241.52 272.03,241.71 274.22,241.89 276.42,242.06 278.61,242.22 280.81,242.38 283.00,242.53 285.19,242.67 287.39,242.80 289.58,242.92 291.78,243.04 293.97,243.15 296.16,243.24 298.36,243.33 300.55,243.41 302.74,243.48 304.94,243.54 307.13,243.59 309.33,243.63 311.52,243.65 313.71,243.67 315.91,243.68 318.10,243.67 320.30,243.66 322.49,243.63 324.68,243.59 326.88,243.54 329.07,243.48 331.27,243.41 333.46,243.32 335.65,243.23 337.85,243.12 340.04,242.99 342.23,242.86 344.43,242.71 346.62,242.55 348.82,242.38 351.01,242.19 353.20,241.99 355.40,241.78 357.59,241.55 359.79,241.31 361.98,241.06 364.17,240.79 366.37,240.51 368.56,240.22 370.76,239.91 372.95,239.58 375.14,239.25 377.34,238.89 379.53,238.53 381.72,238.15 383.92,237.75 386.11,237.34 388.31,236.92 390.50,236.48 392.69,236.02 394.89,235.56 397.08,235.07 399.28,234.58 401.47,234.06 403.66,233.54 405.86,233.00 408.05,232.44 410.24,231.87 412.44,231.28 414.63,230.68 416.83,230.07 419.02,229.44 421.21,228.79 423.41,228.13 425.60,227.46 427.80,226.77 429.99,226.06 432.18,225.35 434.38,224.61 436.57,223.86 438.77,223.10 440.96,222.32 443.15,221.53 445.35,220.72 447.54,219.90 449.73,219.07 451.93,218.22 454.12,217.35 456.32,216.48 458.51,215.59 460.70,214.68 462.90,213.76 465.09,212.83 467.29,211.88 469.48,210.92 471.67,209.95 473.87,208.96 476.06,207.96 478.26,206.95 480.45,205.92 482.64,204.88 484.84,203.83 487.03,202.77 489.22,201.69 491.42,200.60 493.61,199.50 495.81,198.38 498.00,197.25 500.19,196.12 502.39,194.97 504.58,193.80 506.78,192.63 508.97,191.45 511.16,190.25 513.36,189.04 515.55,187.83 517.74,186.60 519.94,185.36 522.13,184.11 524.33,182.86 526.52,181.59 528.71,180.31 530.91,179.02 533.10,177.73 535.30,176.42 537.49,175.11 539.68,173.78 541.88,172.45 544.07,171.11 546.27,169.76 548.46,168.41 550.65,167.04 552.85,165.67 555.04,164.29 557.23,162.91 559.43,161.51 561.62,160.11 563.82,158.71 566.01,157.30 568.20,155.88 570.40,154.45 572.59,153.02 574.79,151.59 576.98,150.15 579.17,148.71 581.37,147.26 583.56,145.80 585.76,144.35 587.95,142.89 590.14,141.42 592.34,139.95 594.53,138.48 596.72,137.01 598.92,135.53 601.11,134.05 603.31,132.57 605.50,131.09 607.69,129.60 609.89,128.12 612.08,126.63 614.28,125.14 616.47,123.65 618.66,122.16 620.86,120.67 623.05,119.18 625.24,117.69 627.44,116.20 629.63,114.72 631.83,113.23 634.02,111.74 636.21,110.26 638.41,108.78 640.60,107.30 642.80,105.82 644.99,104.35 647.18,102.88 649.38,101.41 651.57,99.95 653.77,98.48 655.96,97.03 658.15,95.57 660.35,94.13 662.54,92.68 664.73,91.24 666.93,89.81 669.12,88.38 671.32,86.96 673.51,85.54 675.70,84.13 677.90,82.73 680.09,81.33 682.29,79.94 684.48,78.55 686.67,77.18 688.87,75.81 691.06,74.45 693.26,73.09 695.45,71.75 697.64,70.41 699.84,69.08 702.03,67.77 704.22,66.46 706.42,65.16 708.61,63.86 710.81,62.58 713.00,61.31" stroke="#446ddf" stroke-width="3" fill="none"/><text x="68.0" y="280" text-anchor="middle">Ene</text><text x="265.4" y="280" text-anchor="middle">Abr</text><text x="465.1" y="280" text-anchor="middle">Jul</text><text x="713.0" y="280" text-anchor="middle">22 oct</text></svg></figure>
+
+El recorte no cambia la vida del equipo de control: apenas son unos minutos frente a una espera de casi un día. Sí cambia la forma de entender el récord. **Voyager se aleja del Sol, pero su distancia a la Tierra también cambia según dónde estemos en nuestra órbita**.
+
+## Dos días para saber si salió bien
+
+Este análisis describe distancias calculadas por JPL, no registros de mensajes reales. He usado pasos diarios para **revisar 2026 y saltos de 30 días** para recorrer la historia. No calculo una fecha propia para el día luz: la del 18 de noviembre es la previsión publicada por NASA.
+
+El 18 de noviembre no cambiará nada de repente. La señal ya tarda casi un día en llegar y ese tiempo ha ido aumentando poco a poco desde 1977. Lo que cambia es nuestra manera de imaginarla: una máquina construida en los setenta sigue al otro lado, pero **comprobar que una orden salió bien ya exige organizarse en días**.
+
+La próxima vez que una respuesta tarde unos segundos, Voyager ofrece una comparación bastante eficaz. **Comunicarse con Voyager 1 exige planificar cada orden con tiempo**: solo comprobar que la ha recibido puede llevar casi dos días.
+
+## Fuentes y análisis
+
+- [NASA: el próximo día luz de Voyager 1](https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/).
+- [JPL Horizons: posiciones y distancias](https://ssd.jpl.nasa.gov/horizons/) y [definiciones de las tablas](https://ssd.jpl.nasa.gov/horizons/manual.html).
+- [Notebook ejecutado](/nebula/analisis/voyager_tiempo/analisis_voyager.ipynb), [datos de comparación](/nebula/analisis/voyager_tiempo/comparacion.csv), [serie diaria](/nebula/analisis/voyager_tiempo/diario_2026.csv) y [guía de reproducción](/nebula/analisis/voyager_tiempo/README.md).
+
+<style>
+.voy-bloque{border:1px solid #becbec;border-radius:14px;padding:1.2rem;margin:1.8rem 0;background:#f5f7fd;min-width:0}.voy-bloque legend{font-weight:700;padding:0 .5rem}.voy-bloque select,.voy-bloque button{font:inherit;padding:.65rem .8rem;border:1px solid #446ddf;border-radius:8px;background:white;color:#23439b}.voy-bloque button[aria-pressed="true"]{background:#446ddf;color:white}.voy-opciones{display:flex;gap:.65rem;flex-wrap:wrap}.voy-bloque :focus-visible{outline:3px solid #a76d3c;outline-offset:3px}.voy-nota{font-size:.85em;color:#535d70}.voy-tabla{overflow-x:auto}.voy-tabla table{width:100%;border-collapse:collapse;font-size:.9em}.voy-tabla td,.voy-tabla th{padding:.6rem;text-align:left;border-bottom:1px solid #d5def1}.voy-figura{margin:2rem 0}.voy-figura svg{width:100%;height:auto;display:block}.voy-figura text{font-size:15px;fill:#536075;font-family:system-ui,sans-serif}.voy-figura figcaption{font-size:.95em;line-height:1.5}.voy-leyenda{font-size:.85em;display:flex;flex-wrap:wrap;gap:.3rem 1rem}.voy-leyenda span:first-child{color:#446ddf}.voy-leyenda span:last-child{color:#946039}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+ const destinos=[{"destino": "Luna", "segundos_ida": 1.299294997452604}, {"destino": "Marte", "segundos_ida": 754.4509473798504}, {"destino": "Júpiter", "segundos_ida": 2817.794272602417}, {"destino": "New Horizons", "segundos_ida": 32960.18340310109}, {"destino": "Voyager 2", "segundos_ida": 72042.94142645222}, {"destino": "Voyager 1", "segundos_ida": 86159.49781073425}];
+ const formato=(segundos)=>{if(segundos<60)return `${segundos.toFixed(1).replace('.',',')} segundos`;const s=Math.round(segundos);if(s<3600)return `${Math.floor(s/60)} min ${s%60} s`;const m=Math.round(segundos/60);return `${Math.floor(m/60)} h ${m%60} min`;};
+ const selector=document.getElementById('voy-destino');
+ const actualizar=()=>{const d=destinos[Number(selector.value)];document.getElementById('voy-espera').textContent=`${d.destino}: ${formato(d.segundos_ida)} de ida; ${formato(d.segundos_ida*2)} para ida y vuelta aproximada.`;};
+ if(selector){selector.addEventListener('change',actualizar);actualizar();}
+ document.querySelectorAll('[data-voy]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-voy]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.getElementById('voy-respuesta').textContent=b.dataset.voy==='no'?'Exacto. La distancia también depende del movimiento de la Tierra.':'La intuición engaña: la Tierra también se mueve y puede reducir la separación.';document.getElementById('voy-explicacion').open=true;}));
+});
+</script>
