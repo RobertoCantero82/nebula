@@ -1,0 +1,33 @@
+{
+  "mae": 5.31703519821167,
+  "mediana_error_absoluto": 4.404182434082031,
+  "rmse": 7.3347146149435165,
+  "r2": 0.8191398978233337,
+  "mae_base": 14.047244094488189,
+  "mediana_entrenamiento": 64.0,
+  "mae_validacion": 4.720539569854736,
+  "mejores_parametros": {
+    "ridge__alpha": 100.0,
+    "seleccion__k": 1000
+  },
+  "semianchura_intervalo_90": 9.638710021972656,
+  "cobertura_prueba": 0.8661417322834646,
+  "mae_ic95_por_chip": [
+    4.275305634408849,
+    6.521064311718118
+  ],
+  "particiones": {
+    "entrenamiento": {
+      "n": 420,
+      "chips": 43
+    },
+    "calibracion": {
+      "n": 109,
+      "chips": 10
+    },
+    "prueba": {
+      "n": 127,
+      "chips": 14
+    }
+  }
+}

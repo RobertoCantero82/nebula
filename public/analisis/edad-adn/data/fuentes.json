@@ -1,0 +1,14 @@
+[
+  {
+    "archivo": "GSE40279_sample_key.txt.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE40nnn/GSE40279/suppl/GSE40279_sample_key.txt.gz",
+    "bytes": 4563,
+    "sha256": "dbb7c510da6a90bd2ff203564288b3b3400298c9d50217377a347f2ef2a9e7f9"
+  },
+  {
+    "archivo": "GSE40279_series_matrix.txt.gz",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE40nnn/GSE40279/matrix/GSE40279_series_matrix.txt.gz",
+    "bytes": 1237679628,
+    "sha256": "1f6ef8b5ce08f9a5f1c09b047b36d1f3342757b6e8e19dce0398581bb76807eb"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "personas": 656,
+  "candidatos": 23734,
+  "chips": 67,
+  "edad_minima": 19,
+  "edad_maxima": 101,
+  "ausentes": 0,
+  "regla": "identificador cg divisible entre 20"
+}
