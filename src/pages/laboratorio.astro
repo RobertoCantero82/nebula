@@ -5,6 +5,12 @@ import Seo from '../components/Seo.astro';
 const proyectos = [
   {
     nombre: 'Agente Indy',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/agente-indy.png',
+      alt: 'Pantalla de inicio de Agente Indy, con su mascota de sombrero y el botón Chat con Indy sobre un fondo de ilustraciones de aventuras.',
+      ancho: 1466,
+      alto: 888,
+    },
     tema: 'Cine',
     pregunta: '¿Merece la pena ver esa película?',
     descripcion: 'Le digo una película y me ayuda a decidir si verla. Una forma de utilizar la inteligencia artificial para resolver esa duda que aparece antes de darle al play.',
@@ -15,6 +21,12 @@ const proyectos = [
   },
   {
     nombre: 'Agente MVP',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/agente-mvp.png',
+      alt: 'Agente MVP en modo Resultados: resumen de la jornada NBA, análisis partido a partido y acceso a Pregunta a M.V.P.',
+      ancho: 1405,
+      alto: 881,
+    },
     tema: 'Baloncesto',
     pregunta: 'La jornada NBA, a tu manera.',
     descripcion: 'Analiza la jornada de la NBA con y sin spoilers. También incluye un buscador global: escribo una pregunta y rastrea los datos de todos los partidos de la temporada actual para responderla.',
@@ -25,6 +37,12 @@ const proyectos = [
   },
   {
     nombre: 'Radar Marvel Snap',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/radar-marvel-snap.png',
+      alt: 'Radar Marvel Snap con filtros de cartas y arquetipos, dos mazos con sus cartas y estadísticas, y opciones para copiar el mazo y consultar su fuente.',
+      ancho: 1790,
+      alto: 908,
+    },
     tema: 'Videojuegos',
     pregunta: 'Otra forma de encontrar tu próximo mazo.',
     descripcion: 'Busca nuevos mazos a diario para jugar a Marvel Snap. Reúno propuestas con distintas combinaciones de cartas para tener ideas cuando quiero cambiar mi forma de jugar.',
@@ -35,6 +53,12 @@ const proyectos = [
   },
   {
     nombre: 'La NBA dibujada',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/la-nba-dibujada.png',
+      alt: 'Publicación de La NBA dibujada en X: los once partidos del 21 de octubre se convierten en un gráfico con forma de perro y en un cuadro de un perro viendo baloncesto desde la grada.',
+      ancho: 705,
+      alto: 496,
+    },
     tema: 'Datos y arte',
     pregunta: '¿Y si un gráfico también fuera un cuadro?',
     descripcion: 'En esta cuenta de X convierto cada jornada de la NBA en una imagen. El proceso parte de un gráfico, encuentra un objeto en su forma y lo transforma en un cuadro.',
@@ -45,6 +69,12 @@ const proyectos = [
   },
   {
     nombre: 'Radar de empleo editorial en España',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/radar-empleo.png',
+      alt: 'Radar de empleo editorial en España con búsquedas para X, LinkedIn, Facebook e Instagram y etiquetas para encontrar ofertas de periodismo.',
+      ancho: 1388,
+      alto: 920,
+    },
     tema: 'Empleo',
     pregunta: 'Las ofertas también aparecen entre publicaciones.',
     descripcion: 'Una herramienta que utilizo para seguir ofertas de empleo de periodismo en redes sociales. Reúne búsquedas para consultar oportunidades editoriales en España desde un mismo lugar.',
@@ -55,6 +85,12 @@ const proyectos = [
   },
   {
     nombre: 'Agente de empleo editorial',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/empleo-email.png',
+      alt: 'Ejemplo del boletín de empleo por correo: oportunidades seleccionadas, criterios de búsqueda y una oferta de Data Scientist Junior con una valoración de afinidad.',
+      ancho: 1323,
+      alto: 647,
+    },
     tema: 'Empleo y automatización',
     pregunta: 'Las ofertas que encajan conmigo, en mi correo.',
     descripcion: 'He creado un agente que busca ofertas de periodismo, redacción y edición en España. Consulta portales de empleo, filtra las oportunidades según mi perfil y me envía una selección por correo electrónico.',
@@ -66,6 +102,12 @@ const proyectos = [
   },
   {
     nombre: 'Rebobina · Cine de los 80 y 90',
+    captura: {
+      src: '/nebula/imagenes/laboratorio/rebobina.png',
+      alt: 'La estantería de Rebobina con filtros por título, año, mes y género, y películas como Cadena perpetua, El club de la lucha, Forrest Gump, Pulp Fiction, Matrix y Seven.',
+      ancho: 1885,
+      alto: 928,
+    },
     tema: 'Cine y memoria',
     pregunta: 'Volver al videoclub de mi infancia.',
     descripcion: 'He preparado un catálogo de películas de 1980 a 1999 para redescubrir el cine con el que crecí. Puedo recorrer los estrenos por año y mes, buscar títulos y guardar mi propia estantería con las que quiero ver o ya he visto.',
@@ -119,6 +161,14 @@ const proyectos = [
             <article class="proyecto" aria-labelledby={`proyecto-${indice}`}>
               <div class="meta"><span>{String(indice + 1).padStart(2, '0')} / {proyecto.tema}</span><span class="estado">{proyecto.estado}</span></div>
               <h3 id={`proyecto-${indice}`}>{proyecto.nombre}</h3>
+              {proyecto.captura && (
+                <figure class="captura-proyecto">
+                  <a href={proyecto.captura.src} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar captura de ${proyecto.nombre} (se abre en otra pestaña)`}>
+                    <img src={proyecto.captura.src} alt={proyecto.captura.alt} width={proyecto.captura.ancho} height={proyecto.captura.alto} loading="lazy" />
+                  </a>
+                  <figcaption><a href={proyecto.captura.src} target="_blank" rel="noopener noreferrer">Ampliar captura<span class="solo-lectores"> (se abre en otra pestaña)</span></a></figcaption>
+                </figure>
+              )}
               <p class="pregunta">{proyecto.pregunta}</p>
               <p class="descripcion">{proyecto.descripcion}</p>
               <p class="ejemplo">{proyecto.ejemplo}</p>
@@ -186,6 +236,12 @@ const proyectos = [
 </html>
 
 <style>
+  .captura-proyecto { margin: .5rem 0 1.5rem; }
+  .captura-proyecto img { border: 1px solid var(--color-border); display: block; height: auto; margin: 0; width: 100%; }
+  .captura-proyecto > a { cursor: zoom-in; display: block; }
+  .captura-proyecto a:focus-visible { outline: 2px solid #446ddf; outline-offset: 4px; }
+  .captura-proyecto figcaption { font-family: var(--font-mono); font-size: 10px; margin-top: .6rem; }
+  .captura-proyecto figcaption a { color: #344f9b; display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: 4px; }
   .indice, .meta, .accion, .privado { font-family: var(--font-mono); }
   .indice { color: var(--color-secondary-text); font-size: 11px; letter-spacing: .06em; }
   .introduccion { max-width: 850px; padding: clamp(3rem, 8vw, 6rem) 0 3.5rem; }
