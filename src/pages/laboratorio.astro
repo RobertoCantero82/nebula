@@ -17,8 +17,8 @@ const proyectos = [
     nombre: 'Agente MVP',
     tema: 'Baloncesto',
     pregunta: 'La jornada NBA, a tu manera.',
-    descripcion: 'Analiza la jornada de la NBA con y sin spoilers. Puedo repasar lo que ha pasado o acercarme a los partidos sin que el resultado me arruine la sesión.',
-    ejemplo: 'La misma jornada, dos formas de seguirla: con resultados o sin spoilers.',
+    descripcion: 'Analiza la jornada de la NBA con y sin spoilers. También incluye un buscador global: escribo una pregunta y rastrea los datos de todos los partidos de la temporada actual para responderla.',
+    ejemplo: 'Puedo seguir la jornada con o sin resultados y consultar los datos de toda la temporada actual desde el buscador global.',
     enlace: 'https://robertocantero-mvp-nba.static.hf.space/index.html',
     accion: 'Consultar la jornada',
     estado: 'Acceso público',
@@ -53,6 +53,28 @@ const proyectos = [
     accion: undefined,
     estado: 'Uso personal · Sin acceso público',
   },
+  {
+    nombre: 'Agente de empleo editorial',
+    tema: 'Empleo y automatización',
+    pregunta: 'Las ofertas que encajan conmigo, en mi correo.',
+    descripcion: 'He creado un agente que busca ofertas de periodismo, redacción y edición en España. Consulta portales de empleo, filtra las oportunidades según mi perfil y me envía una selección por correo electrónico.',
+    ejemplo: 'De la búsqueda al boletín: reúne ofertas, valora su encaje y evita volver a enviarme las mismas.',
+    enlace: undefined,
+    accion: undefined,
+    estado: 'Uso personal · Sin acceso público',
+    nota: 'Agente de uso personal con envío por correo.',
+  },
+  {
+    nombre: 'Rebobina · Cine de los 80 y 90',
+    tema: 'Cine y memoria',
+    pregunta: 'Volver al videoclub de mi infancia.',
+    descripcion: 'He preparado un catálogo de películas de 1980 a 1999 para redescubrir el cine con el que crecí. Puedo recorrer los estrenos por año y mes, buscar títulos y guardar mi propia estantería con las que quiero ver o ya he visto.',
+    ejemplo: 'La selección se orienta por los votos actuales de IMDb: una pista de popularidad, no un registro de lo más visto en aquellas décadas.',
+    enlace: undefined,
+    accion: undefined,
+    estado: 'Uso personal · Sin acceso público',
+    nota: 'Catálogo interactivo de uso personal.',
+  },
 ];
 ---
 
@@ -84,13 +106,13 @@ const proyectos = [
         <p class="indice">LABORATORIO · ROBERTO CANTERO</p>
         <h1 id="titulo-laboratorio">Ideas que pongo<br />a trabajar.</h1>
         <p class="entradilla">Además de contar historias con datos, creo herramientas con agentes, inteligencia artificial y automatización. Aquí reúno los proyectos que utilizo para explorar mis intereses y resolver necesidades del día a día.</p>
-        <p class="presentacion">Cine, baloncesto, videojuegos y búsqueda de empleo. Cinco proyectos que puedes conocer y, cuando tienen acceso público, probar por tu cuenta.</p>
+        <p class="presentacion">Cine, baloncesto, videojuegos y búsqueda de empleo. Siete proyectos que puedes conocer y, cuando tienen acceso público, probar por tu cuenta.</p>
       </section>
 
       <section class="proyectos" aria-labelledby="titulo-proyectos">
         <div class="cabecera-proyectos">
           <h2 id="titulo-proyectos">Del «¿y si…?» a ponerlo en marcha</h2>
-          <p class="indice">05 PROYECTOS</p>
+          <p class="indice">07 PROYECTOS</p>
         </div>
         <div class="coleccion">
           {proyectos.map((proyecto, indice) => (
@@ -103,7 +125,7 @@ const proyectos = [
               {proyecto.enlace ? (
                 <a class="accion" href={proyecto.enlace} target="_blank" rel="noopener noreferrer">{proyecto.accion}<span aria-hidden="true">↗</span><span class="solo-lectores"> (se abre en otra pestaña)</span></a>
               ) : (
-                <p class="privado">Herramienta local de uso personal.</p>
+                <p class="privado">{proyecto.nota ?? 'Herramienta local de uso personal.'}</p>
               )}
             </article>
           ))}
