@@ -1,0 +1,214 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+
+const proyectos = [
+  {
+    nombre: 'Agente Indy',
+    tema: 'Cine',
+    pregunta: '¿Merece la pena ver esa película?',
+    descripcion: 'Le digo una película y me ayuda a decidir si verla. Una forma de utilizar la inteligencia artificial para resolver esa duda que aparece antes de darle al play.',
+    ejemplo: 'Una película como punto de partida. Una recomendación para decidir.',
+    enlace: 'https://robertocantero-agente-indy.hf.space/',
+    accion: 'Preguntar a Indy',
+    estado: 'Acceso público',
+  },
+  {
+    nombre: 'Agente MVP',
+    tema: 'Baloncesto',
+    pregunta: 'La jornada NBA, a tu manera.',
+    descripcion: 'Analiza la jornada de la NBA con y sin spoilers. Puedo repasar lo que ha pasado o acercarme a los partidos sin que el resultado me arruine la sesión.',
+    ejemplo: 'La misma jornada, dos formas de seguirla: con resultados o sin spoilers.',
+    enlace: 'https://robertocantero-mvp-nba.static.hf.space/index.html',
+    accion: 'Consultar la jornada',
+    estado: 'Acceso público',
+  },
+  {
+    nombre: 'Radar Marvel Snap',
+    tema: 'Videojuegos',
+    pregunta: 'Otra forma de encontrar tu próximo mazo.',
+    descripcion: 'Busca nuevos mazos a diario para jugar a Marvel Snap. Reúno propuestas con distintas combinaciones de cartas para tener ideas cuando quiero cambiar mi forma de jugar.',
+    ejemplo: 'Nuevas combinaciones de cartas para probar en el juego.',
+    enlace: 'https://robertocantero82.github.io/mazos_snap/',
+    accion: 'Explorar los mazos',
+    estado: 'Acceso público',
+  },
+  {
+    nombre: 'La NBA dibujada',
+    tema: 'Datos y arte',
+    pregunta: '¿Y si un gráfico también fuera un cuadro?',
+    descripcion: 'En esta cuenta de X convierto cada jornada de la NBA en una imagen. El proceso parte de un gráfico, encuentra un objeto en su forma y lo transforma en un cuadro.',
+    ejemplo: 'De los datos de la jornada a un gráfico. Del gráfico a un objeto y a un cuadro.',
+    enlace: 'https://x.com/lanbadibujada',
+    accion: 'Ver los cuadros en X',
+    estado: 'Cuenta pública',
+  },
+  {
+    nombre: 'Radar de empleo editorial en España',
+    tema: 'Empleo',
+    pregunta: 'Las ofertas también aparecen entre publicaciones.',
+    descripcion: 'Una herramienta que utilizo para seguir ofertas de empleo de periodismo en redes sociales. Reúne búsquedas para consultar oportunidades editoriales en España desde un mismo lugar.',
+    ejemplo: 'Búsquedas organizadas para facilitar el seguimiento de ofertas en redes.',
+    enlace: undefined,
+    accion: undefined,
+    estado: 'Uso personal · Sin acceso público',
+  },
+];
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
+    <meta name="theme-color" content="#1B1836" />
+    <Seo titulo="Laboratorio | Nebula" descripcion="Mis proyectos con agentes, inteligencia artificial y automatización: cine, NBA, Marvel Snap y búsqueda de empleo editorial." />
+  </head>
+  <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera contenedor">
+      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
+        <svg width="110" height="32" viewBox="0 0 110 32" aria-hidden="true">
+          <circle cx="7" cy="8" r="3" fill="#D85A30" />
+          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
+        </svg>
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="/nebula/#articulos">Artículos</a>
+        <a href="/nebula/laboratorio/" aria-current="page">Laboratorio</a>
+        <a href="/nebula/#sobre-nebula">Sobre Nebula</a>
+      </nav>
+    </header>
+    <main id="contenido" class="contenedor">
+      <section class="introduccion" aria-labelledby="titulo-laboratorio">
+        <p class="indice">LABORATORIO · ROBERTO CANTERO</p>
+        <h1 id="titulo-laboratorio">Ideas que pongo<br />a trabajar.</h1>
+        <p class="entradilla">Además de contar historias con datos, creo herramientas con agentes, inteligencia artificial y automatización. Aquí reúno los proyectos que utilizo para explorar mis intereses y resolver necesidades del día a día.</p>
+        <p class="presentacion">Cine, baloncesto, videojuegos y búsqueda de empleo. Cinco proyectos que puedes conocer y, cuando tienen acceso público, probar por tu cuenta.</p>
+      </section>
+
+      <section class="proyectos" aria-labelledby="titulo-proyectos">
+        <div class="cabecera-proyectos">
+          <h2 id="titulo-proyectos">Del «¿y si…?» a ponerlo en marcha</h2>
+          <p class="indice">05 PROYECTOS</p>
+        </div>
+        <div class="coleccion">
+          {proyectos.map((proyecto, indice) => (
+            <article class="proyecto" aria-labelledby={`proyecto-${indice}`}>
+              <div class="meta"><span>{String(indice + 1).padStart(2, '0')} / {proyecto.tema}</span><span class="estado">{proyecto.estado}</span></div>
+              <h3 id={`proyecto-${indice}`}>{proyecto.nombre}</h3>
+              <p class="pregunta">{proyecto.pregunta}</p>
+              <p class="descripcion">{proyecto.descripcion}</p>
+              <p class="ejemplo">{proyecto.ejemplo}</p>
+              {proyecto.enlace ? (
+                <a class="accion" href={proyecto.enlace} target="_blank" rel="noopener noreferrer">{proyecto.accion}<span aria-hidden="true">↗</span><span class="solo-lectores"> (se abre en otra pestaña)</span></a>
+              ) : (
+                <p class="privado">Herramienta local de uso personal.</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="demostracion" aria-labelledby="titulo-demostracion">
+        <div class="cabecera-proyectos">
+          <div>
+            <p class="indice">LA NBA DIBUJADA · UN EJEMPLO REAL</p>
+            <h2 id="titulo-demostracion">Tres partidos. ¿Qué ves tú?</h2>
+          </div>
+        </div>
+        <p class="explicacion">Cada punto es un partido de la jornada del 20 de octubre de 2026. De izquierda a derecha cambia la diferencia final entre los equipos; de abajo arriba, los puntos que sumaron entre los dos. A partir de esas posiciones busco una figura.</p>
+        <div class="muestra">
+          <figure>
+            <svg viewBox="0 0 540 400" role="img" aria-labelledby="grafico-titulo grafico-descripcion">
+              <title id="grafico-titulo">Tres partidos convertidos en puntos</title>
+              <desc id="grafico-descripcion">Diferencia final y anotación conjunta, respectivamente: 8 y 234 puntos, 6 y 206, 12 y 220. Eje horizontal de 0 a 50; vertical de 150 a 280.</desc>
+              <g fill="none" stroke="#D9D5C8">
+                <path d="M70 50V310H490 M70 210H490 M70 110H490" />
+              </g>
+              <g fill="#6A6658" font-size="12" font-family="sans-serif">
+                <text x="55" y="314" text-anchor="end">150</text><text x="55" y="214" text-anchor="end">200</text><text x="55" y="114" text-anchor="end">250</text><text x="55" y="54" text-anchor="end">280</text>
+                <text x="70" y="335" text-anchor="middle">0</text><text x="154" y="335" text-anchor="middle">10</text><text x="238" y="335" text-anchor="middle">20</text><text x="322" y="335" text-anchor="middle">30</text><text x="406" y="335" text-anchor="middle">40</text><text x="490" y="335" text-anchor="middle">50</text>
+                <text x="280" y="375" text-anchor="middle">Diferencia final (puntos)</text><text x="70" y="25">Puntos entre los dos equipos</text>
+              </g>
+              <g fill="#446ddf" stroke="#F7F5F0" stroke-width="2">
+                <circle cx="137.2" cy="142" r="6" /><circle cx="120.4" cy="198" r="6" /><circle cx="170.8" cy="170" r="6" />
+              </g>
+            </svg>
+            <figcaption>Primero, los datos. Sin mover los puntos para encajar la figura.</figcaption>
+          </figure>
+          <details>
+            <summary>Descubrir el cuadro <span aria-hidden="true">↓</span></summary>
+            <figure>
+              <img src="/nebula/imagenes/laboratorio/velero-nba.png" width="1536" height="1024" loading="lazy" alt="Un velero con una pista de baloncesto en la cubierta navega por un pabellón imaginario inundado, con pinceladas azules y luces anaranjadas." />
+              <figcaption>Yo vi un velero. Con ayuda de la IA, lo convertí en este cuadro. La escena es imaginaria.</figcaption>
+            </figure>
+          </details>
+        </div>
+      </section>
+
+      <aside class="autor" aria-labelledby="titulo-autor">
+        <div>
+          <p class="indice">DETRÁS DEL LABORATORIO</p>
+          <h2 id="titulo-autor">Periodismo, datos y ganas de construir.</h2>
+          <p>Soy Roberto Cantero. En Nebula reúno mi trabajo periodístico y estos proyectos con IA. Son otra forma de mostrar cómo paso de una idea a una herramienta que puedo usar.</p>
+        </div>
+        <a class="accion" href="/nebula/trabaja-conmigo/">Más sobre mi trabajo <span aria-hidden="true">→</span></a>
+      </aside>
+    </main>
+    <footer class="pie-pagina contenedor">
+      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
+      <p>Periodismo y ciencia de datos</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .indice, .meta, .accion, .privado { font-family: var(--font-mono); }
+  .indice { color: var(--color-secondary-text); font-size: 11px; letter-spacing: .06em; }
+  .introduccion { max-width: 850px; padding: clamp(3rem, 8vw, 6rem) 0 3.5rem; }
+  h1 { font-size: clamp(3.2rem, 8vw, 6rem); line-height: 1; letter-spacing: -.035em; margin: 1.25rem 0 1.75rem; }
+  .entradilla { font-size: clamp(1.15rem, 2.3vw, 1.45rem); line-height: 1.65; max-width: 760px; }
+  .presentacion { color: var(--color-secondary-text); line-height: 1.7; max-width: 680px; }
+  .cabecera-proyectos { align-items: baseline; border-top: 1px solid var(--color-border); display: flex; gap: 1rem; justify-content: space-between; padding: 1.75rem 0; }
+  .cabecera-proyectos h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0; }
+  .cabecera-proyectos .indice { flex-shrink: 0; }
+  .coleccion { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .proyecto { border: 1px solid var(--color-border); border-top: 3px solid #446ddf; display: flex; flex-direction: column; padding: clamp(1.3rem, 3vw, 2rem); }
+  .meta { color: var(--color-secondary-text); display: flex; flex-wrap: wrap; font-size: 10px; gap: .75rem 1rem; justify-content: space-between; line-height: 1.6; }
+  .estado { color: #344f9b; }
+  h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; margin: 1.5rem 0 .65rem; }
+  .pregunta { font-weight: 700; line-height: 1.5; margin: 0 0 .75rem; }
+  .descripcion { line-height: 1.75; margin: 0 0 1.25rem; }
+  .ejemplo { border-left: 2px solid #446ddf; color: var(--color-secondary-text); font-size: .9rem; line-height: 1.65; margin: auto 0 1.5rem; padding-left: 1rem; }
+  .accion { align-items: center; color: #344f9b; display: inline-flex; font-size: 12px; gap: .8rem; line-height: 1.6; min-height: 44px; text-decoration-thickness: 1px; text-underline-offset: 5px; width: fit-content; }
+  .accion:hover { color: var(--color-ink); }
+  .accion:focus-visible, .navegacion a:focus-visible { outline: 2px solid #446ddf; outline-offset: 5px; }
+  .privado { color: var(--color-secondary-text); font-size: 11px; line-height: 1.6; margin: 0; min-height: 44px; padding-top: .75rem; }
+  .demostracion { margin-top: 4rem; }
+  .explicacion { line-height: 1.75; max-width: 760px; }
+  .muestra { align-items: start; display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; margin-top: 1.5rem; }
+  figure { margin: 0; }
+  figure svg { display: block; height: auto; width: 100%; }
+  figure img { display: block; height: auto; margin-top: 1rem; width: 100%; }
+  figcaption { color: var(--color-secondary-text); font-size: .85rem; line-height: 1.6; margin-top: .75rem; }
+  details { border-top: 2px solid #446ddf; padding-top: 1rem; }
+  summary { color: #344f9b; cursor: pointer; font-family: var(--font-mono); font-size: 13px; min-height: 44px; padding: .75rem 0; }
+  summary:focus-visible { outline: 2px solid #446ddf; outline-offset: 4px; }
+  .autor { align-items: center; border-bottom: 1px solid var(--color-border); border-top: 1px solid var(--color-border); display: flex; gap: 2.5rem; justify-content: space-between; margin-top: 4rem; padding: 2.5rem 0; }
+  .autor h2 { font-size: clamp(1.6rem, 3vw, 2rem); margin: .75rem 0; }
+  .autor p:not(.indice) { line-height: 1.7; max-width: 620px; }
+  .autor .accion { flex-shrink: 0; }
+  .navegacion [aria-current] { color: #344f9b; text-decoration: underline; text-underline-offset: 5px; }
+  .solo-lectores, .saltar:not(:focus) { clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+  .saltar:focus { background: var(--color-bg); left: 1rem; padding: 1rem; position: absolute; top: 1rem; z-index: 10; }
+  @media (max-width: 760px) {
+    .coleccion, .muestra { grid-template-columns: 1fr; }
+    .autor, .cabecera-proyectos { align-items: start; flex-direction: column; gap: .75rem; }
+  }
+  @media (max-width: 540px) {
+    .cabecera { align-items: start; flex-direction: column; gap: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem; }
+    .navegacion { flex-wrap: wrap; gap: 1rem; }
+    .navegacion a:last-child { display: inline; }
+  }
+</style>

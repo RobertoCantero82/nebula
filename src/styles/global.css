@@ -292,7 +292,8 @@ h1, h2, h3 {
 }
 
 @media (max-width: 460px) {
-  .navegacion a:last-child { display: none; }
+  .cabecera { align-items: start; flex-direction: column; gap: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .navegacion { flex-wrap: wrap; gap: 1rem; }
   .hero-pie { align-items: start; flex-direction: column; }
   .hero-dato, .tarjeta-dato { grid-template-columns: 1fr; }
 }
