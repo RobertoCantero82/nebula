@@ -52,6 +52,17 @@ Eso permite decisiones bastante concretas. Para una sesión de humor de hasta ho
 
 Las duraciones son referencias, no promesas sobre cualquier copia. Hay montajes distintos, restauraciones y fichas que discrepan. He contrastado los datos y, cuando una ficha enumera varias duraciones, utilizo la mayor. Antes de darle al botón de reproducir, conviene mirar cuánto dura tu versión. Por si acaso.
 
+<div style="position: relative; width: 100%; padding-top: 56.25%; margin: 2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/Y2oBSPIgOVA"
+    title="Vídeo de YouTube"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## Los clásicos no ganan por decreto
 
 La nostalgia suele entrar en estas conversaciones, casi sin querer. Ya cuestioné algunas ideas recibidas en [el análisis de *Matrix* y sus secuelas](/nebula/articulos/matrix-secuelas/). Si te preguntas si se hacía mejor terror antes, la respuesta es difusa. En esta selección, la película situada en el centro de las notas anteriores al año 2000 obtiene **3,61 estrellas sobre cinco**. Entre las estrenadas desde entonces, la cifra es **3,62**. Prácticamente un empate.
@@ -77,6 +88,17 @@ El mecanismo no esconde inteligencia artificial ni una fórmula de afinidad. Pri
 La **selección** mezcla clásicos, cine español y asiático, monstruos y suspense. No representa todo el género: la he **construido para ofrecer variedad**. Como en [la búsqueda de la película más otoñal](/nebula/articulos/peliculas-mas-otonales/), definir qué busco condiciona lo que encuentro. Las comparaciones describen estas 120 películas, y cambiar la selección o la frontera entre épocas puede cambiar el resultado.
 
 Los datos ayudan a descartar una película demasiado larga y a encontrar otra que quizá no tenías presente. La última decisión sigue siendo bastante humana: qué te apetece ver, con quién y cuánta oscuridad quieres llevarte después a la cama.
+
+<div style="position: relative; width: 100%; padding-top: 56.25%; margin: 2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/s99T4_lwLkA"
+    title="Vídeo de YouTube"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 12px;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## Fuentes y análisis
 
