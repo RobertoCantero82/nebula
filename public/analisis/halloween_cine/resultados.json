@@ -1,0 +1,114 @@
+{
+  "peliculas": 120,
+  "votos": 1074778,
+  "tiempos": [
+    {
+      "minutos": 90,
+      "peliculas": 27,
+      "con_wikidata": 26
+    },
+    {
+      "minutos": 100,
+      "peliculas": 56,
+      "con_wikidata": 58
+    },
+    {
+      "minutos": 120,
+      "peliculas": 104,
+      "con_wikidata": 104
+    }
+  ],
+  "epocas": [
+    {
+      "epoca": "Antes de 2000",
+      "peliculas": 70,
+      "nota_mediana": 3.6075829399295123,
+      "votos_mediana": 6014.0,
+      "duracion_mediana": 97.5
+    },
+    {
+      "epoca": "Desde 2000",
+      "peliculas": 50,
+      "nota_mediana": 3.623537690957631,
+      "votos_mediana": 2949.0,
+      "duracion_mediana": 104.0
+    }
+  ],
+  "sensibilidad": [
+    {
+      "minimo_votos": 0,
+      "frontera": 1990,
+      "n_antes": 51,
+      "n_despues": 69,
+      "mediana_antes": 3.6784394250513346,
+      "mediana_despues": 3.587797619047619
+    },
+    {
+      "minimo_votos": 0,
+      "frontera": 2000,
+      "n_antes": 70,
+      "n_despues": 50,
+      "mediana_antes": 3.6075829399295123,
+      "mediana_despues": 3.623537690957631
+    },
+    {
+      "minimo_votos": 0,
+      "frontera": 2010,
+      "n_antes": 88,
+      "n_despues": 32,
+      "mediana_antes": 3.619739679248106,
+      "mediana_despues": 3.6150512786860656
+    },
+    {
+      "minimo_votos": 500,
+      "frontera": 1990,
+      "n_antes": 49,
+      "n_despues": 61,
+      "mediana_antes": 3.6784394250513346,
+      "mediana_despues": 3.61657433056325
+    },
+    {
+      "minimo_votos": 500,
+      "frontera": 2000,
+      "n_antes": 67,
+      "n_despues": 43,
+      "mediana_antes": 3.61657433056325,
+      "mediana_despues": 3.6493314982304366
+    },
+    {
+      "minimo_votos": 500,
+      "frontera": 2010,
+      "n_antes": 84,
+      "n_despues": 26,
+      "mediana_antes": 3.6246159959197715,
+      "mediana_despues": 3.6430805286146226
+    },
+    {
+      "minimo_votos": 1000,
+      "frontera": 1990,
+      "n_antes": 47,
+      "n_despues": 53,
+      "mediana_antes": 3.6784394250513346,
+      "mediana_despues": 3.6241703539823007
+    },
+    {
+      "minimo_votos": 1000,
+      "frontera": 2000,
+      "n_antes": 63,
+      "n_despues": 37,
+      "mediana_antes": 3.61657433056325,
+      "mediana_despues": 3.697097081218274
+    },
+    {
+      "minimo_votos": 1000,
+      "frontera": 2010,
+      "n_antes": 79,
+      "n_despues": 21,
+      "mediana_antes": 3.626326963906582,
+      "mediana_despues": 3.672927847346452
+    }
+  ],
+  "humor": 18,
+  "humor_intenso": 10,
+  "menos_500": 10
+}
