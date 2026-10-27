@@ -1,0 +1,85 @@
+{
+  "archivo": 2254,
+  "identificados": 1678,
+  "con_intervalo": 1319,
+  "comparables": 1075,
+  "reduccion_mediana_pct": 42.85714285714286,
+  "grados": [
+    {
+      "death_unexp": 0.0,
+      "n": 114,
+      "mediana": 21.0,
+      "media": 66.36842105263158,
+      "minimo": 0.0,
+      "maximo": 804.0,
+      "p25": 11.25,
+      "p75": 70.5
+    },
+    {
+      "death_unexp": 1.0,
+      "n": 69,
+      "mediana": 20.0,
+      "media": 41.572463768115945,
+      "minimo": 1.0,
+      "maximo": 246.0,
+      "p25": 12.0,
+      "p75": 36.0
+    },
+    {
+      "death_unexp": 2.0,
+      "n": 108,
+      "mediana": 17.0,
+      "media": 44.620370370370374,
+      "minimo": 0.0,
+      "maximo": 420.0,
+      "p25": 9.0,
+      "p75": 57.0
+    },
+    {
+      "death_unexp": 3.0,
+      "n": 76,
+      "mediana": 17.0,
+      "media": 65.28947368421052,
+      "minimo": 0.0,
+      "maximo": 1800.0,
+      "p25": 8.0,
+      "p75": 55.25
+    },
+    {
+      "death_unexp": 4.0,
+      "n": 708,
+      "mediana": 12.0,
+      "media": 40.8728813559322,
+      "minimo": -3.0,
+      "maximo": 805.0,
+      "p25": 5.75,
+      "p75": 38.0
+    }
+  ],
+  "comprobaciones": [
+    {
+      "seleccion": "Principal",
+      "n": 1075,
+      "correlacion_log": -0.12558209437336113,
+      "correlacion_rangos": -0.13327014569098627
+    },
+    {
+      "seleccion": "Sin intervalos negativos",
+      "n": 1074,
+      "correlacion_log": -0.12442900072396264,
+      "correlacion_rangos": -0.13235685084035834
+    },
+    {
+      "seleccion": "Documentación precisa",
+      "n": 743,
+      "correlacion_log": -0.15038422965748804,
+      "correlacion_rangos": -0.15704240105848832
+    },
+    {
+      "seleccion": "Sin conexión familiar registrada",
+      "n": 272,
+      "correlacion_log": -0.17017243895945092,
+      "correlacion_rangos": -0.15286173069010048
+    }
+  ]
+}

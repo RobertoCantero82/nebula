@@ -1,0 +1,18 @@
+CODEBOOK — CORT_IT_open_data.csv
+Open-access data for: A Large-Scale Analysis of Temporal Patterns in Children's Purported Past-Life Memories
+This is the full case sample; most of the analyses in the accompanying paper use the subset where is_verified = TRUE.
+
+case_id                     Anonymized sequential case identifier (no correspondence to original database IDs).
+is_verified                 TRUE = previous person identified 
+intermp                     Intermission time: interval between previous person's death and subject's birth, in months (minimum -3; log10(intermp + 4) transformation applied in analysis code).
+death_unexp                 Unexpectedness of the previous person's death, rated 0 (anticipated >1 month) to 4 (completely unexpected).
+NATURAL_DEATH               Mode of death: 1 = natural, 0 = unnatural.
+agedhp                      Previous person's age at death, in months.
+stringent_verif             Stringent verification flag: TRUE = both date and mode of death precisely documented.
+no_or_wrong_memory          Memory contamination indicator: TRUE = subject had no memory of the death or remembered it inaccurately; FALSE = remembered accurately; blank = insufficient data.
+believeReinc_S              Subject's family belief in reincarnation prior to the case: 1 = yes, 0 = no.
+family_assoc                Degree of association between the two families, 0 (no connection) to 4 (same family).
+social_status_diff_recoded  Signed socioeconomic status difference (previous person minus subject), on recoded 1-9 scales where higher = higher status.
+
+
+Missing values are blank.
