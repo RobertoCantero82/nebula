@@ -52,6 +52,18 @@ Después llegó la captura contra los Clippers. Fue su cuarto rebote, justo el n
 
 **El cuarto partido rompió el guion**. Contra los Brooklyn Nets, el 21 de marzo, la acusación sostiene que la apuesta buscaba menos de 3,5 rebotes. Beasley consiguió **seis**. Los apostantes perdieron y uno de los implicados reclamó que le devolvieran el dinero o que se manipularan más encuentros. Seis rebotes parecen muchos junto a una línea de 3,5, pero Beasley llegó a esa cifra en 14 partidos.
 
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/DqAxIS-shWU?cc_load_policy=1&cc_lang_pref=es-US&hl=es"
+    title="Vídeo sobre el caso de apuestas de Malik Beasley"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 8px;"
+  ></iframe>
+</div>
+
 ## Los números no saben qué ocurrió
 
 El partido de tres puntos fue uno de los peores registros ofensivos de Beasley durante aquella temporada. El último, con 16 puntos y seis rebotes, fue precisamente el que hizo perder la apuesta descrita en la acusación. Aun así, ninguno de esos resultados permite saber por sí solo si hubo un amaño.
