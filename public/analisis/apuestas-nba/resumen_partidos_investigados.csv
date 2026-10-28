@@ -1,0 +1,5 @@
+FECHA,rival,objetivo,MIN,PTS,REB,percentil_puntos,percentil_rebotes
+2024-01-26,Cleveland Cavaliers,"menos de 3,5 rebotes",27,3,3,0.11392405063291139,0.4936708860759494
+2024-02-27,Charlotte Hornets,"menos de 12,5 puntos y más de 3,5 rebotes",26,6,4,0.26582278481012656,0.7468354430379747
+2024-03-10,Los Angeles Clippers,"más de 3,5 rebotes",39,17,4,0.810126582278481,0.7468354430379747
+2024-03-21,Brooklyn Nets,"menos de 3,5 rebotes",31,16,6,0.7468354430379747,0.9620253164556962
