@@ -1,0 +1,6 @@
+empresa,empleados,fecha,precision,fuente_url,alcance
+BYD,869622,2025-12-31,exacta,https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702828.pdf,Grupo consolidado
+Toyota,390927,2026-03-31,exacta,https://global.toyota/pages/global_toyota/ir/library/sec/20-F_202603_final.pdf,Grupo consolidado
+Ford,169000,2025-12-31,aproximada,https://www.sec.gov/Archives/edgar/data/37996/000003799626000015/f-20251231.htm,Empresa y Ford Credit
+General Motors,155000,2025-12-31,aproximada,https://www.sec.gov/Archives/edgar/data/1467858/000146785826000013/gm-20251231.htm,Grupo consolidado incluido GM Financial
+Tesla,134785,2025-12-31,exacta,https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf,Plantilla mundial
