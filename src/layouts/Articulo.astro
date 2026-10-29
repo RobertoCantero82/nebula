@@ -138,6 +138,11 @@ const datosEstructurados = {
       <ArticulosRelacionados articulos={relacionados} />
     </main>
 
+    <footer class="pie-pagina contenedor">
+      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
+      <p><a href="/nebula/privacidad/">Privacidad</a></p>
+    </footer>
+
     <script>
       const copiarEnlace = async () => {
         const estado = document.querySelector('[data-share-status]');

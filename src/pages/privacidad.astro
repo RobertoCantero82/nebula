@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
+    <meta name="theme-color" content="#1B1836" />
+    <Seo
+      titulo="Privacidad | Nebula"
+      descripcion="Información sobre la medición de audiencia y la privacidad de los lectores de Nebula."
+    />
+  </head>
+  <body>
+    <header class="cabecera contenedor">
+      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
+        <svg width="110" height="32" viewBox="0 0 110 32" aria-hidden="true">
+          <circle cx="7" cy="8" r="3" fill="#D85A30" />
+          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
+        </svg>
+      </a>
+      <a class="volver" href="/nebula/"><span aria-hidden="true">←</span> Volver a Nebula</a>
+    </header>
+
+    <main class="contenedor privacidad">
+      <p class="indice">PRIVACIDAD</p>
+      <h1>Cómo se mide la audiencia de Nebula</h1>
+      <p>Nebula utiliza Cloudflare Web Analytics para conocer, de forma agregada, cuántas visitas recibe la web, qué páginas se consultan, desde qué sitios llegan los lectores y qué tipos de dispositivo utilizan.</p>
+      <p>Esta herramienta no utiliza cookies, no crea perfiles publicitarios y no permite a Nebula identificar ni seguir a visitantes individuales. Cloudflare procesa los datos técnicos necesarios para elaborar estas estadísticas de audiencia y rendimiento.</p>
+      <p>La información se emplea exclusivamente para entender qué contenidos resultan útiles y mejorar el funcionamiento de la web. Puedes consultar cómo recoge y trata estos datos Cloudflare en su <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">política de privacidad</a>.</p>
+      <h2>Responsable y contacto</h2>
+      <p>El responsable de Nebula es Roberto Cantero. Para cualquier consulta relacionada con esta información puedes escribir a <a href="mailto:robertocanterogomez@gmail.com">robertocanterogomez@gmail.com</a>.</p>
+      <p class="actualizacion">Última actualización: 29 de octubre de 2026.</p>
+    </main>
+
+    <footer class="pie-pagina contenedor">
+      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
+      <p><a href="/nebula/privacidad/" aria-current="page">Privacidad</a></p>
+    </footer>
+    <CloudflareAnalytics />
+  </body>
+</html>
+
+<style>
+  .volver { font: 12px var(--font-mono); text-decoration: none; }
+  .privacidad { max-width: 760px; padding-bottom: 5rem; padding-top: 4rem; }
+  .privacidad h1 { font-size: clamp(2.2rem, 6vw, 4.5rem); line-height: 1; margin: 1rem 0 2rem; }
+  .privacidad h2 { font-size: 1.6rem; margin-top: 2.5rem; }
+  .privacidad p { font-size: 1.05rem; line-height: 1.75; }
+  .privacidad .indice, .privacidad .actualizacion { font-family: var(--font-mono); font-size: .75rem; }
+  .privacidad a, .pie-pagina a { color: inherit; text-underline-offset: 4px; }
+</style>
