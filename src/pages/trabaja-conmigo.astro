@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
+import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const ordenDestacados = [
   'iphone-duo-ipad-mini',
@@ -208,6 +209,7 @@ const datosEstructurados = {
       <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
       <p>Periodismo, tecnología y datos</p>
     </footer>
+    <CloudflareAnalytics />
   </body>
 </html>
 
