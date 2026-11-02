@@ -1,0 +1,3 @@
+grupo_en_registro,personas,precisión_global,tasa_falsos_positivos,tasa_falsos_negativos,falsos_positivos,falsos_negativos
+African-American,3175,0.6491338582677165,0.4233817701453104,0.2847682119205298,641,473
+Caucasian,2103,0.6718972895863052,0.22014051522248243,0.49635036496350365,282,408
