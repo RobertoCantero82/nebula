@@ -11,11 +11,25 @@ metodologia: "EDA documental del anuncio y los documentos públicos de Michigan,
 
 *Una persona puede pasar más horas encerrada, moverse con menos libertad o tener menos opciones de estudiar por una puntuación que intenta anticipar lo que hará. Desde diciembre, Michigan probará un nuevo sistema para ayudar a decidir el nivel de seguridad de sus presos. El Gobierno promete que predecirá la violencia alrededor de un 30 % mejor. Suena preciso. El problema es que no ha publicado lo necesario para comprobarlo.*
 
-La noticia circuló con una idea todavía más rotunda: una inteligencia artificial iba a predecir qué presos cometerían futuros delitos. No es exactamente eso. El [anuncio oficial de Michigan](https://www.michigan.gov/corrections/about/newsroom/press-releases/2026/10/29/new-prisoner-classification-system-announced-by-michigan-department-of-corrections) habla de riesgo de violencia dentro de prisión y de asignar uno de sus niveles de seguridad.
+La noticia circuló con una idea todavía más rotunda: **una inteligencia artificial iba a predecir qué presos cometerían futuros delitos**. No es exactamente eso. El [anuncio oficial de Michigan](https://www.michigan.gov/corrections/about/newsroom/press-releases/2026/10/29/new-prisoner-classification-system-announced-by-michigan-department-of-corrections) habla de riesgo de violencia dentro de prisión y de asignar uno de sus niveles de seguridad.
 
 No es la primera vez que un titular convierte una herramienta concreta en algo casi autónomo. En Nebula ya ocurrió al investigar [la supuesta inteligencia artificial “rebelde” que atacó un sistema del Gobierno australiano](/nebula/articulos/ia-rebelde-agente-no-acepto-un-no/): la historia real era menos cinematográfica, pero explicaba mucho mejor dónde estaba el riesgo.
 
 La diferencia importa. Esa clasificación determina cuánta vigilancia recibe una persona, cómo puede moverse y a qué actividades accede. El programa piloto empezará el próximo 1 de diciembre en varias cárceles masculinas y afectará a decisiones dentro de un sistema con unas 32.000 personas encarceladas.
+
+Michigan todavía no ha estrenado su sistema. **En las prisiones catalanas, un algoritmo parecido lleva quince años influyendo en decisiones penitenciarias**. Este documental muestra qué puede significar una puntuación de riesgo para la persona que la recibe.
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 2rem 0;">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/ZlqiLOU3qlA"
+    title="RisCanvi: la larga sombra del algoritmo que perfila a los presos en Catalunya"
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## Un porcentaje al que le falta la letra pequeña
 
@@ -114,25 +128,6 @@ La precisión global de COMPAS es parecida para las personas registradas como ne
 </script>
 
 Esto no demuestra cómo se comportará el nuevo sistema de Michigan. Demuestra qué debería publicar Michigan para que podamos juzgarlo: los dos tipos de error, sus denominadores y su reparto entre grupos, además del promedio general.
-
-<p>
-  Michigan todavía no ha estrenado su sistema. En las prisiones catalanas,
-  un algoritmo parecido lleva quince años influyendo en decisiones
-  penitenciarias. Este documental muestra qué puede significar una
-  puntuación de riesgo para la persona que la recibe.
-</p>
-
-<div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin: 2rem 0;">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/ZlqiLOU3qlA"
-    title="RisCanvi: la larga sombra del algoritmo que perfila a los presos en Catalunya"
-    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
-    loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
 
 ## La prueba empieza antes de que llegue la evidencia
 
