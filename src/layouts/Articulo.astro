@@ -5,8 +5,9 @@ import AutorPerfil from '../components/AutorPerfil.astro';
 import ArticulosRelacionados from '../components/ArticulosRelacionados.astro';
 import ReconocimientoEditorial from '../components/ReconocimientoEditorial.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
+import Cabecera from '../components/Cabecera.astro';
 
-const { titulo, descripcion, tema, fecha, cifraDestacada, etiquetaCifra, metodologia, imagenPortada, reconocimiento, relacionados = [] } = Astro.props;
+const { titulo, descripcion, tema, serie, fecha, cifraDestacada, etiquetaCifra, metodologia, imagenPortada, reconocimiento, relacionados = [] } = Astro.props;
 
 const origen = Astro.site ?? Astro.url.origin;
 const canonical = new URL(Astro.url.pathname, origen);
@@ -60,14 +61,7 @@ const datosEstructurados = {
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   </head>
   <body>
-    <header class="contenedor" style="display: flex; align-items: center; justify-content: space-between; padding-top: 1.5rem; padding-bottom: 1.5rem;">
-      <a href="/nebula/" style="text-decoration: none;">
-        <svg width="110" height="32" viewBox="0 0 110 32">
-          <circle cx="7" cy="8" r="3" fill="#D85A30" />
-          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
-        </svg>
-      </a>
-    </header>
+    <Cabecera activa={serie === 'trama' ? 'trama' : 'analisis'} />
 
     <div class="portada-articulo">
       {imagenPortada ? (
@@ -87,7 +81,7 @@ const datosEstructurados = {
 
     <main class="contenedor" style="padding-top: 2rem; padding-bottom: 3rem;">
       <div class="contenido-articulo">
-        <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; margin: 0 0 8px;">{tema}</p>
+        <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; margin: 0 0 8px;">{serie === 'trama' ? 'CINE | TRAMA' : tema}</p>
         <h1 style="font-size: clamp(28px, 4vw, 34px); line-height: 1.25; margin: 0 0 16px;">{titulo}</h1>
 
         {reconocimiento && (
@@ -139,7 +133,7 @@ const datosEstructurados = {
     </main>
 
     <footer class="pie-pagina contenedor">
-      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
+      <p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p>
       <p><a href="/nebula/privacidad/">Privacidad</a></p>
     </footer>
 

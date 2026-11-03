@@ -8,6 +8,7 @@ const articulos = defineCollection({
     descripcion: z.string(),
     tema: z.string(),
     fecha: z.date(),
+    serie: z.enum(['trama']).optional(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
     metodologia: z.string().optional(),

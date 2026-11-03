@@ -1,0 +1,3 @@
+movie_id,pelicula,titulo_movielens,generos,valoraciones,media,mediana,desviacion,percentil_popularidad,etiquetas_totales,etiquetas_unicas
+2717,Cazafantasmas 2,Ghostbusters II (1989),Comedy|Fantasy|Sci-Fi,10171,3.05,3.0,0.951,99.1,140,52
+31193,The Many Adventures of Winnie the Pooh,"Many Adventures of Winnie the Pooh, The (1977)",Animation|Children|Musical,788,3.687,4.0,1.04,94.09,13,9

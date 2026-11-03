@@ -2,143 +2,45 @@
 import { getCollection } from 'astro:content';
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
-import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
-import ReconocimientoEditorial from '../components/ReconocimientoEditorial.astro';
+import Cabecera from '../components/Cabecera.astro';
+import PerfilPortada from '../components/PerfilPortada.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const ahora = new Date();
-
-const articulos = (await getCollection('articulos'))
-  .filter((articulo) => articulo.data.fecha <= ahora)
-  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
-
-const destacado = articulos[0];
-
-const formatearFecha = (fecha: Date) =>
-  new Intl.DateTimeFormat('es-ES', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  }).format(fecha);
+const publicados = (await getCollection('articulos')).filter((a) => a.data.fecha <= ahora).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+const destacados = publicados.filter((a) => a.data.serie !== 'trama').slice(0, 2);
+const ultimaTrama = publicados.find((a) => a.data.serie === 'trama');
+const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(f);
 ---
-
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="google-site-verification" content="3fyojwDNsYwGe-FEioqtgTpOwTy2bIOAhfgq3bU-s3E" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2" />
-    <meta name="theme-color" content="#1B1836" />
-    <Seo
-      titulo="Nebula | Historias contadas con datos"
-      descripcion="Nebula une periodismo y ciencia de datos para contar historias sobre cultura, deporte, ciencia y tecnología."
-      imagen={destacado?.data.imagenPortada}
-    />
-  </head>
-  <body>
-    <header class="cabecera contenedor">
-      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
-        <svg width="110" height="32" viewBox="0 0 110 32" aria-hidden="true">
-          <circle cx="7" cy="8" r="3" fill="#D85A30" />
-          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
-        </svg>
-      </a>
-
-      <nav class="navegacion" aria-label="Navegación principal">
-        <a href="#articulos">Artículos</a>
-        <a href="/nebula/laboratorio/">Laboratorio</a>
-        <a href="#sobre-nebula">Sobre Nebula</a>
-      </nav>
-    </header>
-
-    <main>
-      <TrabajaConmigoBanner />
-
-      {destacado && (
-        <section class="hero contenedor" aria-labelledby="titular-destacado">
-          <a class="hero-imagen" href={`/nebula/articulos/${destacado.id}/`} tabindex="-1" aria-hidden="true">
-            {destacado.data.imagenPortada ? <img src={destacado.data.imagenPortada} alt="" /> : <div class="imagen-placeholder"></div>}
-            {destacado.data.reconocimiento && (
-              <ReconocimientoEditorial
-                etiqueta={destacado.data.reconocimiento.etiqueta}
-                detalle={destacado.data.reconocimiento.detalle}
-                sello
-              />
-            )}
-          </a>
-
-          <div class="hero-contenido">
-            <p class="sobretitulo">ÚLTIMO ANÁLISIS · {destacado.data.tema}</p>
-            <h1 id="titular-destacado"><a href={`/nebula/articulos/${destacado.id}/`}>{destacado.data.titulo}</a></h1>
-            <div class="hero-pie">
-              <span>{formatearFecha(destacado.data.fecha)}</span>
-              <a class="enlace-lectura" href={`/nebula/articulos/${destacado.id}/`}>Leer el análisis <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-
-          {destacado.data.cifraDestacada && (
-            <aside class="hero-dato" aria-label="Dato destacado">
-              <strong>{destacado.data.cifraDestacada}</strong>
-              <span>{destacado.data.etiquetaCifra}</span>
-            </aside>
-          )}
-        </section>
-      )}
-
-      <section class="seccion-articulos contenedor" id="articulos" aria-labelledby="titulo-articulos">
-        <div class="cabecera-seccion">
-          <div>
-            <p class="indice-seccion">01 · ARCHIVO</p>
-            <h2 id="titulo-articulos">Todos los artículos</h2>
-          </div>
-          <p>{articulos.length} {articulos.length === 1 ? 'historia publicada' : 'historias publicadas'}</p>
-        </div>
-
-        <div class="grid-articulos">
-          {articulos.map((articulo) => (
-            <a class="tarjeta-articulo" href={`/nebula/articulos/${articulo.id}/`}>
-              <div class="tarjeta-imagen">
-                {articulo.data.imagenPortada ? <img src={articulo.data.imagenPortada} alt="" loading="lazy" /> : <div class="imagen-placeholder"></div>}
-                {articulo.data.reconocimiento && (
-                  <ReconocimientoEditorial
-                    etiqueta={articulo.data.reconocimiento.etiqueta}
-                    detalle={articulo.data.reconocimiento.detalle}
-                    sello
-                  />
-                )}
-              </div>
-              <article>
-                <div class="tarjeta-meta">
-                  <span>{articulo.data.tema}</span>
-                  <time datetime={articulo.data.fecha.toISOString()}>{formatearFecha(articulo.data.fecha)}</time>
-                </div>
-                <h3>{articulo.data.titulo}</h3>
-                {articulo.data.cifraDestacada && (
-                  <div class="tarjeta-dato">
-                    <strong>{articulo.data.cifraDestacada}</strong>
-                    <span>{articulo.data.etiquetaCifra}</span>
-                  </div>
-                )}
-              </article>
-            </a>
-          ))}
-        </div>
-      </section>
-
-      <section class="sobre-nebula" id="sobre-nebula">
-        <div class="contenedor sobre-grid">
-          <div>
-            <h2>Periodismo para entender los datos, no solo mirarlos</h2>
-            <p>Nebula es un proyecto de Roberto Cantero que combina análisis de datos y narración periodística. Cada historia parte de una pregunta, explica su método y convierte las cifras en contexto.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="pie-pagina contenedor">
-      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
-      <p>Periodismo y ciencia de datos · <a href="/nebula/privacidad/">Privacidad</a></p>
-    </footer>
-    <CloudflareAnalytics />
-  </body>
-</html>
+<head><meta charset="utf-8"/><meta name="google-site-verification" content="3fyojwDNsYwGe-FEioqtgTpOwTy2bIOAhfgq3bU-s3E"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=2"/><meta name="theme-color" content="#1B1836"/><Seo titulo="Nebula | Historias contadas con datos" descripcion="Nebula une periodismo y ciencia de datos para contar historias sobre cultura, deporte, ciencia y tecnología." imagen={destacados[0]?.data.imagenPortada}/></head>
+<body>
+<Cabecera/>
+<main>
+  <PerfilPortada/>
+  <section class="ultimos contenedor" aria-labelledby="titulo-ultimos">
+    <div class="cabecera-seccion portada-cabecera"><div><p class="indice-seccion">ÚLTIMOS ANÁLISIS</p><h1 id="titulo-ultimos">Dos historias para empezar</h1></div><a href="/nebula/articulos/">Ver todos los análisis <span aria-hidden="true">→</span></a></div>
+    <div class="destacados-dobles">{destacados.map((articulo, indice) => <a class:list={["destacado-portada",{principal:indice===0}]} href={`/nebula/articulos/${articulo.id}/`}><div class="destacado-imagen">{articulo.data.imagenPortada&&<img src={articulo.data.imagenPortada} alt=""/>}</div><article><p>{articulo.data.tema} | {formatearFecha(articulo.data.fecha)}</p><h2>{articulo.data.titulo}</h2><span>{articulo.data.descripcion}</span><b>Leer el análisis <span aria-hidden="true">→</span></b></article></a>)}</div>
+  </section>
+  <section class="mvp-portada" aria-labelledby="titulo-mvp" data-mvp>
+    <div class="contenedor">
+      <header class="mvp-cabecera"><div><p>AGENTE M.V.P. | <span data-mvp-fecha>ÚLTIMA JORNADA</span></p><h2 id="titulo-mvp">La jornada NBA, sin destripes</h2></div><a href="https://robertocantero-mvp-nba.static.hf.space/index.html" target="_blank" rel="noopener noreferrer">Abrir M.V.P. <span aria-hidden="true">↗</span></a></header>
+      <div class="mvp-grid">
+        <div class="mvp-grafico"><div class="mvp-grafico-cabecera"><div><small>EL GRÁFICO DE LA JORNADA</small><strong data-mvp-partidos>Preparando los partidos</strong></div><button type="button" data-mvp-revelar aria-expanded="false">Revelar gráfico</button></div><div class="mvp-lienzo oculto" data-mvp-lienzo aria-live="polite"><p>El gráfico permanece oculto<small>Puede revelar diferencias finales y anotaciones</small></p><svg viewBox="0 0 640 300" role="img" aria-label="Diferencia final y anotación conjunta de los partidos" data-mvp-svg></svg></div><div class="mvp-pie"><span>Diferencia final y puntos anotados entre los dos equipos</span><a href="https://x.com/lanbadibujada" target="_blank" rel="noopener noreferrer">Ver La NBA Dibujada en X <span aria-hidden="true">↗</span></a></div></div>
+        <aside class="mvp-reto"><p>EL RETO DE LA JORNADA</p><h3 data-mvp-pregunta>Cargando la pregunta de la noche</h3><div data-mvp-opciones class="mvp-opciones"></div><div data-mvp-respuesta class="mvp-respuesta" aria-live="polite"></div></aside>
+      </div><p class="mvp-error" data-mvp-error hidden>No he podido actualizar la jornada. Puedes consultarla directamente en M.V.P.</p>
+    </div>
+  </section>
+  {ultimaTrama&&<section class="trama-portada contenedor" aria-labelledby="titulo-trama"><div class="trama-presentacion"><p>CINE | TRAMA</p><h2 id="titulo-trama">Dos películas. Una conexión que parecía imposible.</h2><span>En Trama utilizo datos, créditos y detalles de la pantalla para buscar el punto exacto en el que dos películas aparentemente alejadas terminan tocándose.</span><a href="/nebula/trama/">Ver todas las entregas <span aria-hidden="true">→</span></a></div><a class="trama-ultima" href={`/nebula/articulos/${ultimaTrama.id}/`}><div>{ultimaTrama.data.imagenPortada&&<img src={ultimaTrama.data.imagenPortada} alt="" loading="lazy"/>}</div><article><p>ÚLTIMA ENTREGA</p><h3>{ultimaTrama.data.titulo}</h3><span>{ultimaTrama.data.descripcion}</span><b>Descubrir la conexión <span aria-hidden="true">→</span></b></article></a></section>}
+  <section class="sobre-nebula"><div class="contenedor sobre-grid"><div><h2>Periodismo para entender los datos, no solo mirarlos</h2><p>Nebula es un proyecto de Roberto Cantero que combina análisis de datos y narración periodística. Cada historia parte de una pregunta, explica su método y convierte las cifras en contexto.</p></div></div></section>
+</main>
+<footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
+<script>
+const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/nebula/datos/mvp/ultima-jornada.json')}};const dibujar=partidos=>{const svg=raiz?.querySelector('[data-mvp-svg]');if(!svg||!partidos.length)return;const v=partidos.map(p=>({x:Math.abs(p.pts_local-p.pts_visitante),y:p.pts_local+p.pts_visitante}));const mx=Math.max(40,...v.map(d=>d.x)),min=Math.min(...v.map(d=>d.y))-10,max=Math.max(...v.map(d=>d.y))+10;const x=n=>55+n/mx*550,y=n=>255-(n-min)/Math.max(1,max-min)*210;svg.innerHTML=`<line x1="55" y1="255" x2="610" y2="255"/><line x1="55" y1="35" x2="55" y2="255"/><text x="332" y="290">Diferencia final</text><text x="90" y="22">Puntos conjuntos</text>${v.map(d=>`<circle cx="${x(d.x)}" cy="${y(d.y)}" r="6"/>`).join('')}`};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-fecha]').textContent=new Intl.DateTimeFormat('es-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(`${datos.fecha}T12:00:00Z`)).toUpperCase();raiz.querySelector('[data-mvp-partidos]').textContent=`${datos.resultados.length} partidos convertidos en puntos`;dibujar(datos.resultados||[]);const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});raiz?.querySelector('[data-mvp-revelar]')?.addEventListener('click',e=>{const l=raiz.querySelector('[data-mvp-lienzo]'),o=l.classList.toggle('oculto');e.currentTarget.textContent=o?'Revelar gráfico':'Ocultar gráfico';e.currentTarget.setAttribute('aria-expanded',String(!o))});
+</script>
+</body></html>
+<style>
+.ultimos{padding-bottom:clamp(4rem,8vw,6.5rem)}.portada-cabecera h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1;margin:0}.portada-cabecera>a{font:600 11px var(--font-mono);text-decoration:none}.destacados-dobles{display:grid;gap:1.5rem;grid-template-columns:1.35fr .65fr}.destacado-portada{background:#fff;border:1px solid var(--color-border);display:flex;flex-direction:column;text-decoration:none}.destacado-imagen{aspect-ratio:16/10;background:#eeeae1;overflow:hidden}.destacado-imagen img{height:100%;object-fit:cover;transition:transform .3s ease;width:100%}.destacado-portada article{display:flex;flex:1;flex-direction:column;padding:clamp(1.25rem,3vw,2rem)}.destacado-portada article>p,.trama-portada p{color:var(--color-accent);font:10px var(--font-mono);letter-spacing:.07em;margin:0}.destacado-portada h2{font-size:clamp(1.6rem,3vw,2.55rem);line-height:1.08;margin:.85rem 0}.destacado-portada:not(.principal) h2{font-size:clamp(1.45rem,2.4vw,2rem)}.destacado-portada article>span,.trama-portada article>span{color:var(--color-secondary-text);font-size:14px;line-height:1.5}.destacado-portada b,.trama-portada b{font:600 11px var(--font-mono);margin-top:auto;padding-top:1.5rem}.destacado-portada:hover img{transform:scale(1.025)}
+.mvp-portada{background:var(--color-ink);color:#fff;padding:clamp(3.5rem,8vw,6rem) 0}.mvp-cabecera{align-items:end;display:flex;justify-content:space-between;margin-bottom:2rem}.mvp-cabecera p,.mvp-reto>p{color:#a9b9f5;font:10px var(--font-mono);letter-spacing:.07em;margin:0}.mvp-cabecera h2{font-size:clamp(2rem,4vw,3.4rem);margin:.5rem 0 0}.mvp-cabecera>a{font:600 11px var(--font-mono)}.mvp-grid{display:grid;gap:2rem;grid-template-columns:1.5fr .75fr}.mvp-grafico{border-right:1px solid rgb(255 255 255/22%);padding-right:2rem}.mvp-grafico-cabecera{align-items:center;display:flex;justify-content:space-between}.mvp-grafico-cabecera div{display:grid;gap:.35rem}.mvp-grafico-cabecera small{color:#a9b9f5;font:9px var(--font-mono)}.mvp-grafico-cabecera strong{font:600 1.15rem var(--font-heading)}.mvp-grafico button,.mvp-opciones button{background:transparent;border:1px solid #77718b;color:#fff;cursor:pointer;font:11px var(--font-mono);padding:.7rem .9rem}.mvp-lienzo{background:#11101c;height:300px;margin-top:1rem;position:relative}.mvp-lienzo p{display:none}.mvp-lienzo.oculto p{align-items:center;background:#11101c;display:flex;flex-direction:column;font:600 1.5rem var(--font-heading);inset:0;justify-content:center;margin:0;position:absolute;z-index:2}.mvp-lienzo p small{color:#aaa5b8;font:11px var(--font-mono);margin-top:.5rem}.mvp-lienzo svg{height:100%;width:100%}.mvp-lienzo svg line{stroke:#5c576e}.mvp-lienzo svg circle{fill:#8ba5ff;stroke:#11101c;stroke-width:2}.mvp-lienzo svg text{fill:#aaa5b8;font:10px var(--font-mono);text-anchor:middle}.mvp-pie{color:#aaa5b8;display:flex;font:9px var(--font-mono);justify-content:space-between;margin-top:.75rem}.mvp-pie a{color:#fff}.mvp-reto h3{font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.15;margin:.8rem 0 1.25rem}.mvp-opciones{display:grid;gap:.6rem}.mvp-opciones button{min-height:44px;text-align:left}.mvp-opciones button.correcta{background:#fff;border-color:#fff;color:var(--color-ink)}.mvp-opciones button.fallo{border-color:#d85a30;color:#f3a88e}.mvp-respuesta{color:#d8d5e5;font-size:13px;line-height:1.5;margin-top:1rem}
+.trama-portada{display:grid;gap:clamp(2rem,6vw,5rem);grid-template-columns:.65fr 1.35fr;padding-bottom:clamp(4rem,9vw,7rem);padding-top:clamp(4rem,9vw,7rem)}.trama-presentacion{align-self:center}.trama-presentacion h2{font-size:clamp(2.2rem,4vw,3.7rem);line-height:1.02;margin:.8rem 0 1.25rem}.trama-presentacion>span{color:var(--color-secondary-text);display:block;line-height:1.65}.trama-presentacion>a{display:inline-block;font:600 11px var(--font-mono);margin-top:1.5rem}.trama-ultima{display:grid;grid-template-columns:1.1fr .9fr;text-decoration:none}.trama-ultima>div{background:#eeeae1;min-height:360px}.trama-ultima img{height:100%;object-fit:cover;width:100%}.trama-ultima article{background:#fff;border:1px solid var(--color-border);display:flex;flex-direction:column;justify-content:center;padding:2rem}.trama-ultima h3{font-size:clamp(1.6rem,2.7vw,2.3rem);line-height:1.1;margin:.8rem 0 1rem}@media(max-width:760px){.destacados-dobles,.mvp-grid,.trama-portada{grid-template-columns:1fr}.mvp-cabecera{align-items:start;gap:1rem}.mvp-grafico{border-bottom:1px solid rgb(255 255 255/22%);border-right:0;padding:0 0 2rem}.mvp-grafico-cabecera{align-items:start;gap:1rem}.mvp-pie{gap:1rem}.trama-ultima{grid-template-columns:1fr}.trama-ultima>div{min-height:260px}}
+</style>

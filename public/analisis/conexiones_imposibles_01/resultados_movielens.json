@@ -1,0 +1,150 @@
+{
+  "fuente": "MovieLens 32M",
+  "fecha_limite_datos": "2023-10-12",
+  "peliculas_catalogo": 84432,
+  "valoraciones_catalogo": 32000204,
+  "peliculas": [
+    {
+      "movie_id": 2717,
+      "pelicula": "Cazafantasmas 2",
+      "titulo_movielens": "Ghostbusters II (1989)",
+      "generos": "Comedy|Fantasy|Sci-Fi",
+      "valoraciones": 10171,
+      "media": 3.05,
+      "mediana": 3.0,
+      "desviacion": 0.951,
+      "percentil_popularidad": 99.1,
+      "etiquetas_totales": 140,
+      "etiquetas_unicas": 52
+    },
+    {
+      "movie_id": 31193,
+      "pelicula": "The Many Adventures of Winnie the Pooh",
+      "titulo_movielens": "Many Adventures of Winnie the Pooh, The (1977)",
+      "generos": "Animation|Children|Musical",
+      "valoraciones": 788,
+      "media": 3.687,
+      "mediana": 4.0,
+      "desviacion": 1.04,
+      "percentil_popularidad": 94.09,
+      "etiquetas_totales": 13,
+      "etiquetas_unicas": 9
+    }
+  ],
+  "usuarios_compartidos": 277,
+  "porcentaje_publico_cazafantasmas_que_valoro_ambas": 2.72,
+  "porcentaje_publico_pooh_que_valoro_ambas": 35.15,
+  "correlacion_entre_notas_compartidas": 0.257,
+  "diferencia_absoluta_media": 0.913,
+  "porcentaje_notas_a_medio_punto": 48.74,
+  "preferencias": {
+    "Empate": 52,
+    "Cazafantasmas 2": 46,
+    "Winnie the Pooh": 179
+  },
+  "generos_compartidos": [],
+  "similitud_jaccard_generos": 0.0,
+  "etiquetas_compartidas": [],
+  "top_etiquetas": {
+    "Cazafantasmas 2": [
+      [
+        "ghosts",
+        17
+      ],
+      [
+        "comedy",
+        14
+      ],
+      [
+        "bill murray",
+        9
+      ],
+      [
+        "dan aykroyd",
+        9
+      ],
+      [
+        "paranormal",
+        9
+      ],
+      [
+        "supernatural",
+        7
+      ],
+      [
+        "fantasy",
+        7
+      ],
+      [
+        "action",
+        4
+      ],
+      [
+        "sigourney weaver",
+        4
+      ],
+      [
+        "who ya gonna call????????????",
+        4
+      ],
+      [
+        "courtroom",
+        3
+      ],
+      [
+        "baby in peril",
+        3
+      ],
+      [
+        "sequel",
+        2
+      ],
+      [
+        "dan akroyd",
+        2
+      ],
+      [
+        "slow start",
+        2
+      ]
+    ],
+    "The Many Adventures of Winnie the Pooh": [
+      [
+        "disney",
+        4
+      ],
+      [
+        "series:pooh",
+        2
+      ],
+      [
+        "barbara luddy",
+        1
+      ],
+      [
+        "john fiedler",
+        1
+      ],
+      [
+        "sebastian cabot",
+        1
+      ],
+      [
+        "2d animation",
+        1
+      ],
+      [
+        "cartoon",
+        1
+      ],
+      [
+        "talking animals",
+        1
+      ],
+      [
+        "childhood memories",
+        1
+      ]
+    ]
+  }
+}

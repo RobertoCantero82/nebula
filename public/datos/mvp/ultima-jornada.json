@@ -1,0 +1,290 @@
+{
+  "fecha": "2026-11-02",
+  "portada": {
+    "tipo": "hito_fg3m_carrera",
+    "jugador": "LaMelo Ball",
+    "equipo": "MIN",
+    "numero": "1.000",
+    "unidad": "triples de carrera",
+    "contexto": "",
+    "titular": "LaMelo Ball (MIN) supera los 1.000 triples de carrera",
+    "por_que": "He seleccionado el hecho descrito en el titular entre los hitos de esta jornada. En ese partido, su protagonista sumó 34 puntos, 6 rebotes y 3 asistencias. Una marca destacada no implica por sí sola un récord histórico."
+  },
+  "resultados": [
+    {
+      "game_id": "0022600158",
+      "visitante": "OKC",
+      "visitante_nombre": "Oklahoma City Thunder",
+      "pts_visitante": 117,
+      "local": "CLE",
+      "local_nombre": "Cleveland Cavaliers",
+      "pts_local": 112,
+      "ganador": "OKC",
+      "estado": "Final",
+      "analisis": "Los Thunder se imponen a los Cavaliers por 117-112 gracias a los 43 puntos de Shai Gilgeous-Alexander. Donovan Mitchell aportó un doble-doble con 17 puntos y 11 asistencias para el equipo de Cleveland."
+    },
+    {
+      "game_id": "0022600159",
+      "visitante": "DET",
+      "visitante_nombre": "Detroit Pistons",
+      "pts_visitante": 124,
+      "local": "CHA",
+      "local_nombre": "Charlotte Hornets",
+      "pts_local": 91,
+      "ganador": "DET",
+      "estado": "Final",
+      "analisis": "Los Pistons aplastan a los Hornets por 124-91 con 33 puntos de Cade Cunningham. Duncan Robinson sumó 24 puntos encestando seis triples para los de Detroit."
+    },
+    {
+      "game_id": "0022600160",
+      "visitante": "ATL",
+      "visitante_nombre": "Atlanta Hawks",
+      "pts_visitante": 108,
+      "local": "IND",
+      "local_nombre": "Indiana Pacers",
+      "pts_local": 104,
+      "ganador": "ATL",
+      "estado": "Final",
+      "analisis": "Los Hawks vencen a los Pacers por 108-104 tras los 34 puntos de Nickeil Alexander-Walker. CJ McCollum se quedó a un rebote de completar el triple-doble con 13 puntos, 9 rebotes y 12 asistencias."
+    },
+    {
+      "game_id": "0022600161",
+      "visitante": "BKN",
+      "visitante_nombre": "Brooklyn Nets",
+      "pts_visitante": 90,
+      "local": "NYK",
+      "local_nombre": "New York Knicks",
+      "pts_local": 103,
+      "ganador": "NYK",
+      "estado": "Final",
+      "analisis": "Los Knicks ganan a los Nets por 103-90 apoyados en los 16 rebotes de Karl-Anthony Towns. Julius Randle firmó un doble-doble con 21 puntos y 11 rebotes para los de Brooklyn."
+    },
+    {
+      "game_id": "0022600162",
+      "visitante": "WAS",
+      "visitante_nombre": "Washington Wizards",
+      "pts_visitante": 103,
+      "local": "ORL",
+      "local_nombre": "Orlando Magic",
+      "pts_local": 94,
+      "ganador": "WAS",
+      "estado": "Final",
+      "analisis": "Los Wizards superan a los Magic por 103-94 con 27 puntos de Anthony Davis. Kyshawn George aportó 22 puntos y 5 asistencias para el conjunto de Washington."
+    },
+    {
+      "game_id": "0022600163",
+      "visitante": "CHI",
+      "visitante_nombre": "Chicago Bulls",
+      "pts_visitante": 107,
+      "local": "PHI",
+      "local_nombre": "Philadelphia 76ers",
+      "pts_local": 126,
+      "ganador": "PHI",
+      "estado": "Final",
+      "analisis": "Los Sixers vencen a los Bulls por 126-107 con 26 puntos de Tyrese Maxey. Jaylen Brown completó un doble-doble con 25 puntos y 11 rebotes para Filadelfia."
+    },
+    {
+      "game_id": "0022600164",
+      "visitante": "SAC",
+      "visitante_nombre": "Sacramento Kings",
+      "pts_visitante": 115,
+      "local": "DAL",
+      "local_nombre": "Dallas Mavericks",
+      "pts_local": 100,
+      "ganador": "SAC",
+      "estado": "Final",
+      "analisis": "Los Kings derrotan a los Mavericks por 115-100 con 25 puntos de Darius Acuff Jr. Malik Monk sumó 24 puntos y 7 asistencias para el equipo de Sacramento."
+    },
+    {
+      "game_id": "0022600165",
+      "visitante": "NOP",
+      "visitante_nombre": "New Orleans Pelicans",
+      "pts_visitante": 135,
+      "local": "MEM",
+      "local_nombre": "Memphis Grizzlies",
+      "pts_local": 134,
+      "ganador": "NOP",
+      "estado": "Final/OT",
+      "analisis": "Los Pelicans ganan a los Grizzlies por 135-134 con 40 puntos de Ty Jerome. Zion Williamson aportó 25 puntos y 11 rebotes para el equipo de Nueva Orleans."
+    },
+    {
+      "game_id": "0022600166",
+      "visitante": "MIL",
+      "visitante_nombre": "Milwaukee Bucks",
+      "pts_visitante": 100,
+      "local": "MIN",
+      "local_nombre": "Minnesota Timberwolves",
+      "pts_local": 112,
+      "ganador": "MIN",
+      "estado": "Final",
+      "analisis": "Los Timberwolves vencen a los Bucks por 112-100 con 34 puntos de LaMelo Ball. Ayo Dosunmu se quedó a dos rebotes del triple-doble con 19 puntos, 12 rebotes y 8 asistencias."
+    },
+    {
+      "game_id": "0022600167",
+      "visitante": "BOS",
+      "visitante_nombre": "Boston Celtics",
+      "pts_visitante": 93,
+      "local": "HOU",
+      "local_nombre": "Houston Rockets",
+      "pts_local": 109,
+      "ganador": "HOU",
+      "estado": "Final",
+      "analisis": "Los Rockets superan a los Celtics por 109-93 con 26 puntos y 10 asistencias de Alperen Sengun. Jabari Smith Jr. firmó un doble-doble con 14 puntos y 10 rebotes para Houston."
+    },
+    {
+      "game_id": "0022600168",
+      "visitante": "UTA",
+      "visitante_nombre": "Utah Jazz",
+      "pts_visitante": 97,
+      "local": "SAS",
+      "local_nombre": "San Antonio Spurs",
+      "pts_local": 119,
+      "ganador": "SAS",
+      "estado": "Final",
+      "analisis": "Los Spurs ganan a los Jazz por 119-97 con 22 puntos de Lauri Markkanen. Victor Wembanyama completó un doble-doble con 12 puntos y 11 rebotes para San Antonio."
+    },
+    {
+      "game_id": "0022600169",
+      "visitante": "POR",
+      "visitante_nombre": "Portland Trail Blazers",
+      "pts_visitante": 118,
+      "local": "DEN",
+      "local_nombre": "Denver Nuggets",
+      "pts_local": 110,
+      "ganador": "POR",
+      "estado": "Final",
+      "analisis": "Los Trail Blazers vencen a los Nuggets por 118-110 con 28 puntos de Deni Avdija. Donovan Clingan capturó 18 rebotes, siendo el mejor reboteador de la jornada."
+    },
+    {
+      "game_id": "0022600170",
+      "visitante": "PHX",
+      "visitante_nombre": "Phoenix Suns",
+      "pts_visitante": 113,
+      "local": "GSW",
+      "local_nombre": "Golden State Warriors",
+      "pts_local": 116,
+      "ganador": "GSW",
+      "estado": "Final",
+      "analisis": "Los Warriors ganan a los Suns por 116-113 con 34 puntos de Stephen Curry. Devin Booker sumó 26 puntos para el equipo de Phoenix en un final ajustado."
+    },
+    {
+      "game_id": "0022600171",
+      "visitante": "TOR",
+      "visitante_nombre": "Toronto Raptors",
+      "pts_visitante": 125,
+      "local": "LAC",
+      "local_nombre": "LA Clippers",
+      "pts_local": 118,
+      "ganador": "TOR",
+      "estado": "Final",
+      "analisis": "Los Raptors superan a los Clippers por 125-118 con 27 puntos de Immanuel Quickley. Scottie Barnes firmó un doble-doble con 22 puntos y 15 rebotes para Toronto."
+    },
+    {
+      "game_id": "0022600172",
+      "visitante": "MIA",
+      "visitante_nombre": "Miami Heat",
+      "pts_visitante": 117,
+      "local": "LAL",
+      "local_nombre": "Los Angeles Lakers",
+      "pts_local": 138,
+      "ganador": "LAL",
+      "estado": "Final",
+      "analisis": "Los Lakers vencen a los Heat por 138-117 con 42 puntos de Luka Dončić. Giannis Antetokounmpo aportó 30 puntos y 12 rebotes para el equipo de Miami."
+    }
+  ],
+  "highlights": [
+    "La anotación tiene un techo de 43 puntos. He contado 9 actuaciones de 30 o más; la más alta merece una mirada propia.",
+    "Desde el perímetro, alguien ha convertido 9 triples. He reservado su nombre y su hoja de tiro para después de descubrir la jornada.",
+    "En 2 actuaciones, los rebotes superan a los puntos pese a alcanzar dobles dígitos en ambos. Ahí he encontrado otra historia."
+  ],
+  "recomendacion": {
+    "partido": "Miami Heat @ Los Angeles Lakers",
+    "abbr": "MIA @ LAL",
+    "game_id": "0022600172",
+    "texto": "He elegido este encuentro por la anotación y el tiro exterior: reúne 2 actuaciones de 30 o más puntos y 3 actuaciones con dobles dígitos en al menos dos estadísticas. Mi foco está en las actuaciones individuales; dejo sus protagonistas y el desenlace para cuando lo veas."
+  },
+  "prediccion": null,
+  "quiz": {
+    "pregunta": "¿Qué jugador consiguió superar los 1.000 triples de carrera esta noche?",
+    "opciones": [
+      "LaMelo Ball",
+      "Shai Gilgeous-Alexander",
+      "Ajay Mitchell",
+      "Cade Cunningham"
+    ],
+    "correcta": "LaMelo Ball",
+    "correcta_idx": 0,
+    "explicacion": "LaMelo Ball (MIN) supera los 1.000 triples de carrera",
+    "origen": "jornada",
+    "contexto": [
+      "Además del dato de la pregunta, LaMelo Ball terminó con 34 puntos, 6 rebotes y 3 asistencias.",
+      "En el tiro firmó 12 canastas de 21 intentos, incluidos 6 triples de 13 intentos. Son cifras de este partido, no acumulados de temporada."
+    ],
+    "game_id": "0022600166"
+  },
+  "gate": {
+    "pregunta": "¿Qué jugador consiguió superar los 1.000 triples de carrera esta noche?",
+    "opciones": [
+      "LaMelo Ball",
+      "Shai Gilgeous-Alexander",
+      "Ajay Mitchell",
+      "Cade Cunningham"
+    ],
+    "correcta": "LaMelo Ball",
+    "correcta_idx": 0,
+    "explicacion": "LaMelo Ball (MIN) supera los 1.000 triples de carrera",
+    "origen": "jornada",
+    "contexto": [
+      "Además del dato de la pregunta, LaMelo Ball terminó con 34 puntos, 6 rebotes y 3 asistencias.",
+      "En el tiro firmó 12 canastas de 21 intentos, incluidos 6 triples de 13 intentos. Son cifras de este partido, no acumulados de temporada."
+    ],
+    "game_id": "0022600166"
+  },
+  "contrafactual": {
+    "jugador": "LaMelo Ball",
+    "equipo": "MIN",
+    "pts_noche": 34,
+    "media": 14.4,
+    "sigma": 5.5,
+    "z": 3.54,
+    "rango_esperado": [
+      9,
+      20
+    ],
+    "game_id": "0022600166",
+    "texto": "Si LaMelo Ball hubiera mantenido su media habitual de 14,4 puntos, la lectura de su partido habría sido bastante distinta. En ese escenario, se habría situado dentro del rango esperado de entre 9 y 20 puntos, una actuación sólida pero sin sorpresas para quien conoce su perfil ofensivo. Sin ese salto de calidad, el análisis se habría centrado en su juego interior y su capacidad para generar espacio, sin la necesidad de buscar explicaciones en una noche de inspiración atípica.\n\nLa realidad, sin embargo, fue otra: anotó 34 puntos, una cifra que se alejó 3,54 desviaciones típicas de su media. Esa diferencia no es un simple detalle estadístico, sino el factor que convirtió su actuación en un hito destacado. Hablando en plata, si hubiera marcado la mitad de lo que realmente hizo, sería un jugador más en la lista de anotadores; al superar con tanta claridad lo esperable, LaMelo Ball se convirtió en el protagonista indiscutible de la noche, redefiniendo por completo la percepción de su impacto en el encuentro."
+  },
+  "podio": [
+    {
+      "nombre": "Shai Gilgeous-Alexander",
+      "equipo": "OKC",
+      "pts": 43,
+      "reb": 3,
+      "ast": 8
+    },
+    {
+      "nombre": "Luka Dončić",
+      "equipo": "LAL",
+      "pts": 42,
+      "reb": 7,
+      "ast": 13
+    },
+    {
+      "nombre": "Ty Jerome",
+      "equipo": "MEM",
+      "pts": 40,
+      "reb": 5,
+      "ast": 5
+    }
+  ],
+  "preguntas_sugeridas": [
+    "¿Cuántos puntos anotó Shai Gilgeous-Alexander el 2026-11-02?",
+    "¿Cuántos puntos anotó Luka Dončić el 2026-11-02?",
+    "¿Cuántos puntos anotó Ty Jerome el 2026-11-02?"
+  ],
+  "nota_editorial": "He puesto el foco en Shai Gilgeous-Alexander, con 43 puntos. Para acompañar esa cifra, he revisado sus 3 rebotes y 8 asistencias. He ordenado el podio por puntos; en caso de empate, por asistencias y después por rebotes.",
+  "fuente_jornada": {
+    "nombre": "NBA · box score de la jornada",
+    "fecha": "2026-11-02"
+  }
+}

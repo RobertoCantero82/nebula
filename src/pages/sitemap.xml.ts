@@ -21,6 +21,9 @@ export const GET: APIRoute = async ({ site }) => {
     { url: base.href },
     { url: new URL('trabaja-conmigo/', base).href },
     { url: new URL('laboratorio/', base).href },
+    { url: new URL('articulos/', base).href },
+    { url: new URL('trama/', base).href },
+    { url: new URL('sobre-nebula/', base).href },
     { url: new URL('privacidad/', base).href },
     ...articulos.map((articulo) => ({
       url: new URL(`articulos/${articulo.id}/`, base).href,

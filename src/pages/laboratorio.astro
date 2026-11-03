@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
+import Cabecera from '../components/Cabecera.astro';
 
 const proyectos = [
   {
@@ -131,19 +132,7 @@ const proyectos = [
   </head>
   <body>
     <a class="saltar" href="#contenido">Saltar al contenido</a>
-    <header class="cabecera contenedor">
-      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
-        <svg width="110" height="32" viewBox="0 0 110 32" aria-hidden="true">
-          <circle cx="7" cy="8" r="3" fill="#D85A30" />
-          <text x="0" y="27" font-family="Zilla Slab" font-weight="600" font-size="24" fill="#1B1836">Nebula</text>
-        </svg>
-      </a>
-      <nav class="navegacion" aria-label="Navegación principal">
-        <a href="/nebula/#articulos">Artículos</a>
-        <a href="/nebula/laboratorio/" aria-current="page">Laboratorio</a>
-        <a href="/nebula/#sobre-nebula">Sobre Nebula</a>
-      </nav>
-    </header>
+    <Cabecera activa="laboratorio" />
     <main id="contenido" class="contenedor">
       <section class="introduccion" aria-labelledby="titulo-laboratorio">
         <p class="indice">LABORATORIO · ROBERTO CANTERO</p>
@@ -230,8 +219,8 @@ const proyectos = [
       </aside>
     </main>
     <footer class="pie-pagina contenedor">
-      <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
-      <p>Periodismo y ciencia de datos · <a href="/nebula/privacidad/">Privacidad</a></p>
+      <p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p>
+      <p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p>
     </footer>
     <CloudflareAnalytics />
   </body>
