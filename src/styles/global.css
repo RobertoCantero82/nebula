@@ -80,12 +80,68 @@ h1, h2, h3 {
   background: #F0EDE4;
 }
 
-.grafico-interactivo {
-  background: white;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 20px;
+.cuerpo-articulo .grafico-interactivo,
+.cuerpo-articulo figure[class*="grafico"],
+.cuerpo-articulo figure.voy-figura,
+.cuerpo-articulo figure.grb-figura,
+.cuerpo-articulo figure.mmx-comparacion,
+.cuerpo-articulo figure.byd-figura,
+.cuerpo-articulo .grafico-cocodrilos {
+  background: #f5f7fd;
+  border: 1px solid #c7d3f4;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(40, 66, 125, .06);
   margin: 28px 0;
+  padding: clamp(18px, 4vw, 27px);
+}
+
+.cuerpo-articulo > svg[role="img"] {
+  background: #f5f7fd;
+  border: 1px solid #c7d3f4;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(40, 66, 125, .06);
+  margin: 28px 0;
+  padding: clamp(18px, 4vw, 27px);
+}
+
+.cuerpo-articulo .grafico-interactivo > :first-child,
+.cuerpo-articulo figure[class*="grafico"] > :first-child,
+.cuerpo-articulo figure.voy-figura > :first-child,
+.cuerpo-articulo figure.grb-figura > :first-child,
+.cuerpo-articulo figure.mmx-comparacion > :first-child,
+.cuerpo-articulo figure.byd-figura > :first-child,
+.cuerpo-articulo .grafico-cocodrilos > :first-child {
+  margin-top: 0;
+}
+
+.cuerpo-articulo .grafico-interactivo > :last-child,
+.cuerpo-articulo figure[class*="grafico"] > :last-child,
+.cuerpo-articulo figure.voy-figura > :last-child,
+.cuerpo-articulo figure.grb-figura > :last-child,
+.cuerpo-articulo figure.mmx-comparacion > :last-child,
+.cuerpo-articulo figure.byd-figura > :last-child,
+.cuerpo-articulo .grafico-cocodrilos > :last-child {
+  margin-bottom: 0;
+}
+
+.cuerpo-articulo .grafico-interactivo canvas,
+.cuerpo-articulo .grafico-interactivo svg,
+.cuerpo-articulo figure[class*="grafico"] canvas,
+.cuerpo-articulo figure[class*="grafico"] svg {
+  max-width: 100%;
+}
+
+@media (max-width: 620px) {
+  .cuerpo-articulo .grafico-interactivo,
+  .cuerpo-articulo figure[class*="grafico"],
+  .cuerpo-articulo figure.voy-figura,
+  .cuerpo-articulo figure.grb-figura,
+  .cuerpo-articulo figure.mmx-comparacion,
+  .cuerpo-articulo figure.byd-figura,
+  .cuerpo-articulo .grafico-cocodrilos,
+  .cuerpo-articulo > svg[role="img"] {
+    border-radius: 14px;
+  }
 }
 
 .cuerpo-articulo strong {

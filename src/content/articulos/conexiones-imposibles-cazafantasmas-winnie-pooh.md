@@ -68,6 +68,11 @@ La transcripción describe la acción, pero no el estampado. Wikidata sabe quié
 
 Los datos han servido para medir lo improbable de la pareja: cero géneros, cero etiquetas, 277 espectadores comunes y cinco rodeos por los créditos. Pero la conexión ganadora pertenecía a quien decidió mirar. Primera apuesta resuelta.
 
+<figure class="imagen-articulo">
+  <img src="/nebula/imagenes/henry-deutschendorf-cazafantasmas-2.webp" alt="El bebé Óscar con una prenda amarilla de Winnie the Pooh en Cazafantasmas 2" loading="lazy" />
+  <figcaption>El detalle estaba delante de la cámara: el bebé Óscar lleva una prenda de Winnie the Pooh.</figcaption>
+</figure>
+
 ## Fuentes y análisis
 
 EDA con [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/), con valoraciones hasta el 12 de octubre de 2023, y datos estructurados CC0 de [Wikidata](https://www.wikidata.org/). Fichas de [Disney](https://movies.disney.com/the-many-adventures-of-winnie-the-pooh) y [Sony Pictures](https://www.sonypictures.com/movies/ghostbustersii). La prenda está documentada en la [ficha especializada de la secuencia](https://ghostbusters.fandom.com/wiki/Ghostbusters_II_%28Chapter_20%29%3A_Kidnapping_Oscar). MovieLens no representa a todo el público y Wikidata puede contener omisiones.
@@ -88,5 +93,5 @@ EDA con [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/
 </script>
 
 <style>
-.conexion-apuesta{margin:2rem 0;padding:1.4rem;border:1px solid #446ddf;border-radius:14px;background:rgba(68,109,223,.05)}.conexion-kicker{margin:0;color:#446ddf;font-size:.75rem;font-weight:800;letter-spacing:.1em}.conexion-opciones{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.conexion-opciones button{padding:.7rem 1rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#294da8;cursor:pointer}.conexion-opciones button:hover,.conexion-opciones button:focus-visible,.conexion-opciones button.seleccionado{background:#446ddf;color:#fff}.conexion-resultado{margin-bottom:0;color:#505569}.conexion-ruta{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;margin:2rem 0;padding:1.2rem;background:#f5f6fb;border-radius:12px;font-size:.9rem}.conexion-ruta span{padding:.45rem .65rem;border:1px solid #cbd4ed;border-radius:6px;background:#fff}.conexion-ruta .pelicula{border-color:#446ddf;color:#294da8;font-weight:700}.conexion-ruta i{color:#446ddf;font-style:normal;font-weight:800}
+.conexion-apuesta{margin:2rem 0;padding:1.4rem;border:1px solid #446ddf;border-radius:14px;background:rgba(68,109,223,.05)}.conexion-kicker{margin:0;color:#446ddf;font-size:.75rem;font-weight:800;letter-spacing:.1em}.conexion-opciones{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.conexion-opciones button{padding:.7rem 1rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#294da8;cursor:pointer}.conexion-opciones button:hover,.conexion-opciones button:focus-visible,.conexion-opciones button.seleccionado{background:#446ddf;color:#fff}.conexion-resultado{margin-bottom:0;color:#505569}.conexion-ruta{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;margin:2rem 0;padding:1.2rem;background:#f5f6fb;border-radius:12px;font-size:.9rem}.conexion-ruta span{padding:.45rem .65rem;border:1px solid #cbd4ed;border-radius:6px;background:#fff}.conexion-ruta .pelicula{border-color:#446ddf;color:#294da8;font-weight:700}.conexion-ruta i{color:#446ddf;font-style:normal;font-weight:800}.imagen-articulo{margin:2.2rem 0}.imagen-articulo img{display:block;width:100%;height:auto;border-radius:14px}.imagen-articulo figcaption{margin-top:.7rem;color:#6a6658;font-size:.88rem;line-height:1.45}
 </style>
