@@ -26,12 +26,13 @@ const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'num
   <section class="mvp-portada contenedor" aria-labelledby="titulo-mvp" data-mvp>
     <div class="mvp-modulo">
       <header class="mvp-barra">
-        <div class="mvp-marca"><span aria-hidden="true"></span><strong>M.V.P.</strong><small>EL BALONCESTO, A MI MANERA</small></div>
-        <p><span data-mvp-fecha>ÚLTIMA JORNADA</span></p>
+        <h2 id="titulo-mvp" class="mvp-marca"><span class="mvp-circulos" aria-hidden="true"><i></i><i></i><i></i></span><strong>AGENTE M.V.P.</strong></h2>
       </header>
       <div class="mvp-cancha">
-        <div class="mvp-banderin" aria-label="Resumen de la jornada"><span>JORNADA</span><strong data-mvp-partidos>—</strong><small>PARTIDOS</small></div>
-        <div class="mvp-presentacion"><p>AGENTE M.V.P.</p><h2 id="titulo-mvp">La jornada NBA, sin destripes</h2><span>Una pregunta para entrar en la jornada sin conocer todavía los marcadores.</span></div>
+        <div class="mvp-banderines">
+          <article class="mvp-banderin mvp-banderin-jornada"><span>JORNADA</span><strong data-mvp-jornada>ÚLTIMA MADRUGADA</strong><small>RESULTADOS SIN DESTRIPES</small></article>
+          <article class="mvp-banderin mvp-banderin-curiosidad"><span>CURIOSIDAD</span><p data-mvp-curiosidad>Buscando el dato más llamativo de la jornada.</p></article>
+        </div>
         <aside class="mvp-reto"><p>EL RETO DE LA JORNADA</p><h3 data-mvp-pregunta>Cargando la pregunta de la noche</h3><div data-mvp-opciones class="mvp-opciones"></div><div data-mvp-respuesta class="mvp-respuesta" aria-live="polite"></div><a href="https://robertocantero-mvp-nba.static.hf.space/index.html" target="_blank" rel="noopener noreferrer">Abrir la jornada en M.V.P. <span aria-hidden="true">↗</span></a></aside>
       </div>
       <p class="mvp-error" data-mvp-error hidden>No he podido actualizar la jornada. Puedes consultarla directamente en M.V.P.</p>
@@ -41,7 +42,7 @@ const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'num
 </main>
 <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
 <script>
-const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/nebula/datos/mvp/ultima-jornada.json')}};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-fecha]').textContent=new Intl.DateTimeFormat('es-ES',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(`${datos.fecha}T12:00:00Z`)).toUpperCase();raiz.querySelector('[data-mvp-partidos]').textContent=String(datos.resultados?.length||0);const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});
+const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/nebula/datos/mvp/ultima-jornada.json')}};const madrugada=fecha=>{const fin=new Date(`${fecha}T12:00:00Z`),inicio=new Date(fin);inicio.setUTCDate(inicio.getUTCDate()-1);const dia=n=>new Intl.DateTimeFormat('es-ES',{day:'numeric',timeZone:'UTC'}).format(n);const mes=n=>new Intl.DateTimeFormat('es-ES',{month:'long',timeZone:'UTC'}).format(n).toUpperCase();return inicio.getUTCMonth()===fin.getUTCMonth()?`MADRUGADA DEL ${dia(inicio)} AL ${dia(fin)} DE ${mes(fin)}`:`MADRUGADA DEL ${dia(inicio)} DE ${mes(inicio)} AL ${dia(fin)} DE ${mes(fin)}`};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-jornada]').textContent=madrugada(datos.fecha);raiz.querySelector('[data-mvp-curiosidad]').textContent=datos.highlights?.[0]||datos.portada?.titular||'Cada jornada esconde una historia que no aparece en el marcador.';const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});
 </script>
 </body></html>
 <style>
@@ -52,6 +53,56 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
 <style>
   .trama-portada { border-top: 1px solid var(--color-border); }
   .mvp-portada { margin-bottom: clamp(3rem, 7vw, 5rem); }
+  .mvp-barra { justify-content: flex-start; min-height: 58px; }
+  .mvp-marca { gap: .75rem; margin: 0; }
+  .mvp-marca strong { font-size: clamp(1rem, 1.8vw, 1.35rem); letter-spacing: .09em; }
+  .mvp-circulos { align-items: center; display: flex; height: 22px; width: 50px; }
+  .mvp-circulos i { border: 2px solid #e7a33f; border-radius: 50%; display: block; height: 18px; margin-left: -4px; width: 18px; }
+  .mvp-circulos i:first-child { margin-left: 0; }
+  .mvp-cancha {
+    align-items: stretch;
+    background-color: #494230;
+    background-image:
+      linear-gradient(45deg, rgb(23 38 31 / 12%) 25%, transparent 25%, transparent 75%, rgb(23 38 31 / 12%) 75%),
+      linear-gradient(-45deg, rgb(255 255 255 / 3%) 25%, transparent 25%, transparent 75%, rgb(255 255 255 / 3%) 75%);
+    background-position: 0 0, 42px 42px;
+    background-size: 84px 84px;
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    grid-template-columns: minmax(360px, .95fr) minmax(380px, 1.05fr);
+    padding: clamp(2rem, 4vw, 3.25rem);
+  }
+  .mvp-banderines { display: grid; gap: clamp(1rem, 2vw, 1.5rem); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mvp-banderin {
+    box-shadow: none;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 50% 100%, 0 86%);
+    justify-content: flex-start;
+    min-height: 220px;
+    padding: 1.5rem 1.15rem 2.6rem;
+  }
+  .mvp-banderin:after { display: none; }
+  .mvp-banderin:before { border: 1px solid rgb(23 58 48 / 35%); clip-path: polygon(0 0, 100% 0, 100% 86%, 50% 100%, 0 86%); content: ""; inset: 8px; position: absolute; }
+  .mvp-banderin > * { position: relative; z-index: 1; }
+  .mvp-banderin-jornada { background: #efe5c9; color: #173a30; }
+  .mvp-banderin-curiosidad { background: #d8cba8; color: #173a30; }
+  .mvp-banderin span { border-bottom: 1px solid rgb(23 58 48 / 35%); padding-bottom: .65rem; width: 100%; }
+  .mvp-banderin strong { font: 800 clamp(1.05rem, 1.7vw, 1.35rem)/1.15 "Arial Narrow", Impact, sans-serif; margin: 1.25rem 0 .8rem; text-transform: uppercase; }
+  .mvp-banderin small { font-size: 8px; line-height: 1.35; }
+  .mvp-banderin p { font: 700 clamp(.9rem, 1.3vw, 1.05rem)/1.32 var(--font-heading); margin: 1.15rem 0 0; }
+  .mvp-reto { align-self: center; padding: clamp(1.25rem, 2.5vw, 1.75rem); }
+  .mvp-reto h3 { font-size: clamp(1.2rem, 2vw, 1.65rem); }
+  :global(.mvp-opciones button) { background: #17362d; border: 1px solid #807257; color: #f3ead3; cursor: pointer; font: 10px var(--font-mono); min-height: 38px; padding: .55rem .7rem; text-align: left; }
+  :global(.mvp-opciones button:hover) { border-color: #e7a33f; }
+  :global(.mvp-opciones button.correcta) { background: #e7a33f; border-color: #e7a33f; color: #10251f; }
+  :global(.mvp-opciones button.fallo) { border-color: #d85a30; color: #f1a189; }
+  @media (max-width: 900px) {
+    .mvp-cancha { grid-template-columns: 1fr; }
+    .mvp-reto { grid-column: auto; }
+  }
+  @media (max-width: 560px) {
+    .mvp-cancha { padding: 1.25rem; }
+    .mvp-banderines { grid-template-columns: 1fr; }
+    .mvp-banderin { justify-self: stretch; width: auto; }
+  }
   .manifiesto-nebula { background: var(--color-accent); color: #fff; margin-bottom: clamp(2rem, 4vw, 3rem); }
   .manifiesto-nebula > .contenedor { align-items: center; display: flex; gap: 2rem; justify-content: space-between; min-height: clamp(76px, 8vw, 104px); }
   .manifiesto-nebula h2 { font-size: clamp(1.25rem, 2.6vw, 2rem); line-height: 1.1; margin: 0; }
