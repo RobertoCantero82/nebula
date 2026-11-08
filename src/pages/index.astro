@@ -33,7 +33,7 @@ const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'num
           <article class="mvp-banderin mvp-banderin-jornada"><span>JORNADA</span><strong data-mvp-jornada>ÚLTIMA MADRUGADA</strong><div class="mvp-total"><b data-mvp-partidos>0</b><small>PARTIDOS</small></div></article>
           <article class="mvp-banderin mvp-banderin-curiosidad"><span>PARTIDO RECOMENDADO</span><p data-mvp-recomendacion>Buscando el partido de la jornada.</p><small data-mvp-motivo>Una historia que merece descubrirse.</small></article>
         </div>
-        <aside class="mvp-reto"><p>EL RETO DE LA JORNADA</p><h3 data-mvp-pregunta>Cargando la pregunta de la noche</h3><div data-mvp-opciones class="mvp-opciones"></div><div data-mvp-respuesta class="mvp-respuesta" aria-live="polite"></div><a href="https://robertocantero-mvp-nba.static.hf.space/index.html" target="_blank" rel="noopener noreferrer">Abrir la jornada en M.V.P. <span aria-hidden="true">↗</span></a></aside>
+        <aside class="mvp-reto"><p>EL RETO DE LA JORNADA</p><h3 data-mvp-pregunta>Cargando la pregunta de la noche</h3><div data-mvp-opciones class="mvp-opciones"></div><div data-mvp-respuesta class="mvp-respuesta" aria-live="polite"></div><a class="mvp-cta" href="https://robertocantero-mvp-nba.static.hf.space/index.html" target="_blank" rel="noopener noreferrer"><span>¿QUIERES MÁS NBA?</span><strong>VISITA AGENTE MVP <i aria-hidden="true">→</i></strong></a></aside>
       </div>
       <p class="mvp-error" data-mvp-error hidden>No he podido actualizar la jornada. Puedes consultarla directamente en M.V.P.</p>
     </div>
@@ -95,6 +95,11 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
   .mvp-banderines .mvp-banderin-curiosidad > small { font-family: var(--font-mono); font-size: 8px; font-weight: 400; letter-spacing: .01em; line-height: 1.5; margin-top: .75rem; }
   .mvp-reto { align-self: center; padding: clamp(1.25rem, 2.5vw, 1.75rem); }
   .mvp-reto h3 { font-size: clamp(1.2rem, 2vw, 1.65rem); }
+  .mvp-reto .mvp-cta { align-items: center; background: #e7a33f; color: #10251f; display: flex; gap: 1rem; justify-content: space-between; margin-top: 1.1rem; padding: .85rem 1rem; text-decoration: none; }
+  .mvp-cta > span { font: 600 8px var(--font-mono); letter-spacing: .1em; }
+  .mvp-cta > strong { font: 800 clamp(.85rem, 1.4vw, 1rem)/1 "Arial Narrow", Impact, sans-serif; letter-spacing: .04em; }
+  .mvp-cta i { font-style: normal; margin-left: .35rem; transition: transform .2s ease; }
+  .mvp-cta:hover i, .mvp-cta:focus-visible i { display: inline-block; transform: translateX(4px); }
   :global(.mvp-opciones button) { background: #17362d; border: 1px solid #807257; color: #f3ead3; cursor: pointer; font: 10px var(--font-mono); min-height: 38px; padding: .55rem .7rem; text-align: left; }
   :global(.mvp-opciones button:hover) { border-color: #e7a33f; }
   :global(.mvp-opciones button.correcta) { background: #e7a33f; border-color: #e7a33f; color: #10251f; }
@@ -109,6 +114,7 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
     .mvp-marca small { display: block; }
     .mvp-banderines { grid-template-columns: 1fr; }
     .mvp-banderin { justify-self: stretch; width: auto; }
+    .mvp-reto .mvp-cta { align-items: flex-start; flex-direction: column; gap: .4rem; }
   }
   .manifiesto-nebula { background: var(--color-accent); color: #fff; margin-bottom: clamp(2rem, 4vw, 3rem); }
   .manifiesto-nebula > .contenedor { align-items: center; display: flex; gap: 2rem; justify-content: space-between; min-height: clamp(76px, 8vw, 104px); }
