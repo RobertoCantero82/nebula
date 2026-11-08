@@ -8,7 +8,7 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const ahora = new Date();
 const publicados = (await getCollection('articulos')).filter((a) => a.data.fecha <= ahora).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
-const destacados = publicados.filter((a) => a.data.serie !== 'trama').slice(0, 2);
+const destacados = publicados.filter((a) => a.data.serie !== 'trama').slice(0, 8);
 const ultimaTrama = publicados.find((a) => a.data.serie === 'trama');
 const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(f);
 ---
@@ -26,11 +26,11 @@ const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'num
   <section class="mvp-portada contenedor" aria-labelledby="titulo-mvp" data-mvp>
     <div class="mvp-modulo">
       <header class="mvp-barra">
-        <h2 id="titulo-mvp" class="mvp-marca"><span class="mvp-circulos" aria-hidden="true"><i></i><i></i><i></i></span><strong>AGENTE M.V.P.</strong></h2>
+        <h2 id="titulo-mvp" class="mvp-marca"><strong>AGENTE MVP</strong><small>(la jornada NBA, sin resultados ni gaitas)</small></h2>
       </header>
       <div class="mvp-cancha">
         <div class="mvp-banderines">
-          <article class="mvp-banderin mvp-banderin-jornada"><span>JORNADA</span><strong data-mvp-jornada>ÚLTIMA MADRUGADA</strong></article>
+          <article class="mvp-banderin mvp-banderin-jornada"><span>JORNADA</span><strong data-mvp-jornada>ÚLTIMA MADRUGADA</strong><small data-mvp-partidos></small></article>
           <article class="mvp-banderin mvp-banderin-curiosidad"><span>CURIOSIDAD</span><p data-mvp-curiosidad>Buscando el dato más llamativo de la jornada.</p></article>
         </div>
         <aside class="mvp-reto"><p>EL RETO DE LA JORNADA</p><h3 data-mvp-pregunta>Cargando la pregunta de la noche</h3><div data-mvp-opciones class="mvp-opciones"></div><div data-mvp-respuesta class="mvp-respuesta" aria-live="polite"></div><a href="https://robertocantero-mvp-nba.static.hf.space/index.html" target="_blank" rel="noopener noreferrer">Abrir la jornada en M.V.P. <span aria-hidden="true">↗</span></a></aside>
@@ -42,7 +42,7 @@ const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'num
 </main>
 <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
 <script>
-const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/nebula/datos/mvp/ultima-jornada.json')}};const madrugada=fecha=>{const inicio=new Date(`${fecha}T12:00:00Z`),fin=new Date(inicio);fin.setUTCDate(fin.getUTCDate()+1);const dia=n=>new Intl.DateTimeFormat('es-ES',{day:'numeric',timeZone:'UTC'}).format(n);const mes=n=>new Intl.DateTimeFormat('es-ES',{month:'long',timeZone:'UTC'}).format(n).toUpperCase();return inicio.getUTCMonth()===fin.getUTCMonth()?`MADRUGADA DEL ${dia(inicio)} AL ${dia(fin)} DE ${mes(fin)}`:`MADRUGADA DEL ${dia(inicio)} DE ${mes(inicio)} AL ${dia(fin)} DE ${mes(fin)}`};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-jornada]').textContent=madrugada(datos.fecha);raiz.querySelector('[data-mvp-curiosidad]').textContent=datos.highlights?.[0]||datos.portada?.titular||'Cada jornada esconde una historia que no aparece en el marcador.';const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});
+const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/nebula/datos/mvp/ultima-jornada.json')}};const madrugada=fecha=>{const inicio=new Date(`${fecha}T12:00:00Z`),fin=new Date(inicio);fin.setUTCDate(fin.getUTCDate()+1);const dia=n=>new Intl.DateTimeFormat('es-ES',{day:'numeric',timeZone:'UTC'}).format(n);const mes=n=>new Intl.DateTimeFormat('es-ES',{month:'long',timeZone:'UTC'}).format(n).toUpperCase();return inicio.getUTCMonth()===fin.getUTCMonth()?`MADRUGADA DEL ${dia(inicio)} AL ${dia(fin)} DE ${mes(fin)}`:`MADRUGADA DEL ${dia(inicio)} DE ${mes(inicio)} AL ${dia(fin)} DE ${mes(fin)}`};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-jornada]').textContent=madrugada(datos.fecha);raiz.querySelector('[data-mvp-partidos]').textContent=`${datos.resultados?.length||0} PARTIDOS`;const h=datos.highlights||[];raiz.querySelector('[data-mvp-curiosidad]').textContent=h.find(t=>/triple-doble|cuádruple-doble/i.test(t))||h.find(t=>/rebotes superan/i.test(t))||h[0]||datos.portada?.titular||'Cada jornada esconde una historia que no aparece en el marcador.';const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});
 </script>
 </body></html>
 <style>
@@ -56,6 +56,7 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
   .mvp-barra { justify-content: flex-start; min-height: 58px; }
   .mvp-marca { gap: .75rem; margin: 0; }
   .mvp-marca strong { font-size: clamp(1rem, 1.8vw, 1.35rem); letter-spacing: .09em; }
+  .mvp-marca small { color: #d3c9af; font: 9px var(--font-mono); letter-spacing: .04em; margin: 0; }
   .mvp-circulos { align-items: center; display: flex; height: 22px; width: 50px; }
   .mvp-circulos i { border: 2px solid #e7a33f; border-radius: 50%; display: block; height: 18px; margin-left: -4px; width: 18px; }
   .mvp-circulos i:first-child { margin-left: 0; }
@@ -87,6 +88,7 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
   .mvp-banderin span { border-bottom: 1px solid rgb(23 58 48 / 35%); padding-bottom: .65rem; width: 100%; }
   .mvp-banderin strong { font: 800 clamp(1.05rem, 1.7vw, 1.35rem)/1.15 "Arial Narrow", Impact, sans-serif; margin: 1.25rem 0 .8rem; text-transform: uppercase; }
   .mvp-banderin small { font-size: 8px; line-height: 1.35; }
+  .mvp-banderin-jornada small { border-top: 1px solid rgb(23 58 48 / 35%); letter-spacing: .12em; margin-top: auto; padding-top: .75rem; width: 100%; }
   .mvp-banderin p { font: 700 clamp(.9rem, 1.3vw, 1.05rem)/1.32 var(--font-heading); margin: 1.15rem 0 0; }
   .mvp-reto { align-self: center; padding: clamp(1.25rem, 2.5vw, 1.75rem); }
   .mvp-reto h3 { font-size: clamp(1.2rem, 2vw, 1.65rem); }
@@ -100,6 +102,8 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
   }
   @media (max-width: 560px) {
     .mvp-cancha { padding: 1.25rem; }
+    .mvp-marca { align-items: flex-start; flex-direction: column; gap: .3rem; }
+    .mvp-marca small { display: block; }
     .mvp-banderines { grid-template-columns: 1fr; }
     .mvp-banderin { justify-self: stretch; width: auto; }
   }
