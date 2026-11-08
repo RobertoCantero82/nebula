@@ -26,7 +26,7 @@ const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'num
   <section class="mvp-portada contenedor" aria-labelledby="titulo-mvp" data-mvp>
     <div class="mvp-modulo">
       <header class="mvp-barra">
-        <h2 id="titulo-mvp" class="mvp-marca"><strong>AGENTE MVP</strong><small>(la jornada NBA, sin resultados ni gaitas)</small></h2>
+        <h2 id="titulo-mvp" class="mvp-marca"><strong>AGENTE MVP</strong><small>(la jornada NBA contada con sus datos más curiosos)</small></h2>
       </header>
       <div class="mvp-cancha">
         <div class="mvp-banderines">
@@ -83,16 +83,16 @@ const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocan
   .mvp-banderin:after { display: none; }
   .mvp-banderin:before { border: 1px solid rgb(23 58 48 / 35%); clip-path: polygon(0 0, 100% 0, 100% 86%, 50% 100%, 0 86%); content: ""; inset: 8px; position: absolute; }
   .mvp-banderin > * { position: relative; z-index: 1; }
-  .mvp-banderin-jornada { background: #efe5c9; color: #173a30; }
-  .mvp-banderin-curiosidad { background: #efe5c9; color: #173a30; }
+  .mvp-banderines .mvp-banderin-jornada,
+  .mvp-banderines .mvp-banderin-curiosidad { background: #efe5c9; color: #173a30; }
   .mvp-banderin span { border-bottom: 1px solid rgb(23 58 48 / 35%); padding-bottom: .65rem; width: 100%; }
   .mvp-banderin strong { font: 800 clamp(1.05rem, 1.7vw, 1.35rem)/1.15 "Arial Narrow", Impact, sans-serif; margin: 1.25rem 0 .8rem; text-transform: uppercase; }
   .mvp-banderin small { font-size: 8px; line-height: 1.35; }
   .mvp-total { align-items: center; display: flex; flex-direction: column; margin-bottom: .75rem; margin-top: auto; }
   .mvp-total b { font: 400 clamp(4.5rem, 7vw, 6rem)/.78 "Arial Narrow", Impact, sans-serif; }
   .mvp-total small { font-weight: 400; letter-spacing: .12em; margin-top: .35rem; }
-  .mvp-banderin p { font: 800 clamp(1.05rem, 1.7vw, 1.35rem)/1.15 "Arial Narrow", Impact, sans-serif; margin: 1.25rem 0 .8rem; text-transform: uppercase; }
-  .mvp-banderin-curiosidad > small { font-family: var(--font-mono); font-size: 8px; font-weight: 400; letter-spacing: .01em; line-height: 1.5; margin-top: .75rem; }
+  .mvp-banderines .mvp-banderin-curiosidad > p { font: 800 clamp(1.05rem, 1.7vw, 1.35rem)/1.15 "Arial Narrow", Impact, sans-serif; margin: 1.25rem 0 .8rem; text-transform: uppercase; }
+  .mvp-banderines .mvp-banderin-curiosidad > small { font-family: var(--font-mono); font-size: 8px; font-weight: 400; letter-spacing: .01em; line-height: 1.5; margin-top: .75rem; }
   .mvp-reto { align-self: center; padding: clamp(1.25rem, 2.5vw, 1.75rem); }
   .mvp-reto h3 { font-size: clamp(1.2rem, 2vw, 1.65rem); }
   :global(.mvp-opciones button) { background: #17362d; border: 1px solid #807257; color: #f3ead3; cursor: pointer; font: 10px var(--font-mono); min-height: 38px; padding: .55rem .7rem; text-align: left; }
