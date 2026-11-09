@@ -6,6 +6,7 @@ fecha: 2026-10-30
 imagenPortada: '/nebula/imagenes/estallidos_rayos_gamma_portada.png'
 cifraDestacada: '238'
 etiquetaCifra: 'estallidos detectados al año de media'
+textoContinuo: "Cada año se detectan una media de 238 estallidos de rayos gamma"
 metodologia: 'EDA del catálogo FERMIGBRST de NASA HEASARC, actualizado el 28 de octubre de 2026. Analizo 4.408 estallidos registrados entre julio de 2008 y el 29 de octubre de 2026. Para la media anual utilizo los 17 años naturales completos de 2009 a 2025. Compruebo el reparto celeste con diez bandas de igual superficie y 20.000 simulaciones uniformes. Describo detecciones de Fermi, no todos los estallidos del universo, y no genero predicciones propias.'
 ---
 

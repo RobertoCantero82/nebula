@@ -6,6 +6,7 @@ fecha: 2026-11-04
 imagenPortada: '/nebula/imagenes/colegios_oscuridad_horario_verano_portada.png'
 cifraDestacada: '6,2 millones de menores'
 etiquetaCifra: 'afectados al menos una mañana'
+textoContinuo: "Cambiar al horario de verano podría afectar a 6,2 millones de menores"
 metodologia: 'EDA de 6.248.054 residentes de 5 a 17 años registrados por el INE en 2025 en 8.131 municipios con coordenadas del IGN. Usansolo, con 623, queda fuera por no aparecer todavía en esa capa. Calculo el amanecer local durante un calendario escolar común de 2026-2027 y comparo tres relojes para salidas a las 8:00, 8:30 y 9:00. La cifra es un escenario, no un recuento de trayectos observados.'
 ---
 

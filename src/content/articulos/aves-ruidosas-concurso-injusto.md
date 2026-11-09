@@ -6,6 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-10-13
 cifraDestacada: "7.724"
 etiquetaCifra: "intentos tuvo la primera ganadora"
+textoContinuo: "La primera ganadora del concurso tuvo 7.724 oportunidades para hacerse oír"
 metodologia: "EDA del suplemento DataS1 de Menezes y Podos, con 123 especies y medidas acústicas normalizadas a un metro. Comparo los máximos LAeq observados con LAeq_max30, la corrección publicada que iguala a 30 fragmentos por especie. El análisis describe asociaciones y no estima el límite anatómico de cada ave ni proclama una campeona mundial definitiva."
 ---
 

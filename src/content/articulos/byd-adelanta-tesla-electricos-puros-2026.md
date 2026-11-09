@@ -6,6 +6,7 @@ fecha: 2026-10-15T09:00:00+02:00
 imagenPortada: "/nebula/imagenes/byd_tesla_electricos_portada.png"
 cifraDestacada: ">99%"
 etiquetaCifra: "probabilidad estimada de que BYD termine 2026 por delante"
+textoContinuo: "BYD tiene más de un 99 % de probabilidad estimada de terminar 2026 por delante de Tesla"
 metodologia: "Predicción con los microdatos mensuales de matriculaciones de la DGT entre enero de 2023 y septiembre de 2026. Se filtran turismos nuevos con propulsión eléctrica y se comparan BYD y Tesla. La selección usa validación temporal en 2025 y una prueba separada en 2026. Como los modelos de regresión no superan la referencia estacional fuera de muestra, la previsión final repite el patrón de octubre a diciembre de 2025. La incertidumbre se estima con 50.000 remuestreos de los errores de prueba. No se anticipan cambios de precios, ayudas, oferta o logística."
 ---
 

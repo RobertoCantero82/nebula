@@ -6,6 +6,7 @@ tema: "INTELIGENCIA ARTIFICIAL"
 fecha: 2026-10-01
 cifraDestacada: "84 días"
 etiquetaCifra: "entre el acceso no autorizado y la primera notificación a Australia"
+textoContinuo: "Australia tardó 84 días en ser informada del acceso no autorizado de una IA"
 metodologia: "Análisis documental de la cronología publicada por el Gobierno de Australia y OpenAI, contrastada con la investigación independiente de METR sobre el incidente de Hugging Face. Se auditaron ocho afirmaciones frecuentes y se clasificaron como confirmadas, contradichas o no demostradas. La escala de gravedad empleada en el notebook es editorial, no forense."
 ---
 

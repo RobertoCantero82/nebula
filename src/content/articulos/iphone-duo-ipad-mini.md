@@ -6,6 +6,7 @@ tema: "TECNOLOGÍA"
 fecha: 2026-09-19
 cifraDestacada: "85,5%"
 etiquetaCifra: "superficie de la pantalla del iPad mini que ofrece el iPhone Duo al abrirse"
+textoContinuo: "Al abrirse, el iPhone Duo ofrece el 85,5 % de la superficie de un iPad mini"
 metodologia: "Análisis de las especificaciones oficiales de Apple, Samsung y Google. La muestra incluye seis dispositivos y nueve pantallas. La superficie de cada panel se estimó a partir de su diagonal y la relación de aspecto derivada de la resolución. Los resultados describen los modelos seleccionados y no representan todo el mercado."
 ---
 

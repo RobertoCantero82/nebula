@@ -6,6 +6,7 @@ fecha: 2026-10-07T09:00:00+02:00
 imagenPortada: "/nebula/imagenes/electricos_portada.png"
 cifraDestacada: "36"
 etiquetaCifra: "modelos eléctricos distintos, una sola versión por coche"
+textoContinuo: "36 modelos eléctricos demuestran que no existe un coche perfecto para todo el mundo"
 metodologia: "Muestra editorial de 36 modelos de coches eléctricos con una versión seleccionada por modelo y consulta documental del 3 de octubre de 2026. Se recopilan 23 tarifas, seis anteriores o pendientes de confirmar su vigencia; los rankings separan referencias antiguas, ofertas condicionadas y datos no verificados. Se usa WLTP combinado, no autonomía real. El indicador de kilómetros por 1.000 euros no mide calidad global. Los maleteros no se ordenan como medidas equivalentes y los datos europeos de GAC quedan separados del cruce económico hasta confirmar configuración española. No se han ensayado fiabilidad, habitabilidad, seguridad o calidad del software."
 ---
 

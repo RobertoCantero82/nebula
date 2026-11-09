@@ -11,7 +11,7 @@ const articulos = defineCollection({
     serie: z.enum(['trama']).optional(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
-    textoContinuo: z.string().optional(),
+    textoContinuo: z.string().min(1),
     metodologia: z.string().optional(),
     imagenPortada: z.string().optional(),
     reconocimiento: z.object({

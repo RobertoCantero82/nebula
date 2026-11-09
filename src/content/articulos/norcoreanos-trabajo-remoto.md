@@ -6,6 +6,7 @@ fecha: 2026-10-15T09:00:00+02:00
 imagenPortada: "/nebula/imagenes/norcoreanos_portada.png"
 cifraDestacada: "3"
 etiquetaCifra: "casos para entender el engaño"
+textoContinuo: "Tres casos explican cómo Corea del Norte ocultaba trabajadores tras empleos remotos"
 metodologia: "EDA documental de cuatro comunicados del Departamento de Justicia estadounidense sobre tres casos. Corte: 15 de octubre de 2026. Se conservan calificadores, unidades y estado judicial. Se elimina una actualización repetida para comparar referencias por caso. No se suman empresas únicas ni se estima la incidencia global. Los ingresos se distinguen de los daños y los equipos no se convierten en trabajadores."
 ---
 

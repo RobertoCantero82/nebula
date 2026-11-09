@@ -6,6 +6,7 @@ tema: "TECNOLOGÍA"
 fecha: 2026-09-25
 cifraDestacada: "9 de 13"
 etiquetaCifra: "proyectos analizados que funcionan como productos autoalojables"
+textoContinuo: "9 de los 13 proyectos analizados en GitHub funcionan como productos autoalojables"
 metodologia: "Análisis de los metadatos públicos de trece repositorios de GitHub consultados el 25 de septiembre de 2026. Las estrellas, forks, licencias y fechas proceden de la API de GitHub; las categorías de producto, autoalojamiento e inteligencia artificial son una clasificación editorial propia basada en la documentación de cada proyecto."
 ---
 

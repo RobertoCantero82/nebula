@@ -6,6 +6,7 @@ fecha: 2026-10-29
 imagenPortada: '/nebula/imagenes/byd_empleados_portada.png'
 cifraDestacada: '19.910'
 etiquetaCifra: 'empleados de ventaja aproximada sobre las cuatro compañías juntas'
+textoContinuo: "BYD supera en unos 19.910 empleados a Toyota, Ford, GM y Tesla juntas"
 metodologia: 'EDA descriptivo de las plantillas consolidadas más recientes publicadas por BYD, Toyota, Ford, General Motors y Tesla. Comparo el cierre de 2025 de BYD, Ford, GM y Tesla con el cierre de marzo de 2026 de Toyota. Ford y GM redondean a miles, por lo que la suma y la diferencia son aproximadas. Analizo además la plantilla de BYD entre 2021 y 2025 y su distribución por función y ubicación. No equiparo empleados con productividad ni genero predicciones.'
 ---
 

@@ -6,6 +6,7 @@ tema: "BALONCESTO"
 fecha: 2026-10-05T10:00:00+02:00
 cifraDestacada: "90"
 etiquetaCifra: "récords de franquicia analizados entre jugadores y equipos"
+textoContinuo: "El modelo compara 90 récords de franquicia para buscar los más amenazados esta temporada"
 metodologia: "Para este análisis revisé 90 posibles récords de la NBA 2026-27, tres por cada franquicia: algunos positivos y otros negativos. Después creé una puntuación que tiene en cuenta lo cerca que está cada marca, cuánto tendría que mejorar o empeorar el equipo o jugador, y lo raro que sería verla caer. Las cifras proceden principalmente de Basketball-Reference y del dataset preparado para este artículo. El modelo no adivina el futuro: solo ayuda a ordenar qué historias merece la pena seguir."
 ---
 

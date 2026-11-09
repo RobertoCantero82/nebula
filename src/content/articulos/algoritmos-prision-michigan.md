@@ -6,6 +6,7 @@ tema: "INTELIGENCIA ARTIFICIAL"
 fecha: 2026-11-02
 cifraDestacada: "1.018"
 etiquetaCifra: "personas señaladas como peligrosas que no reincidieron"
+textoContinuo: "El algoritmo de Michigan señaló como peligrosas a 1.018 personas que no reincidieron"
 metodologia: "EDA documental del anuncio y los documentos públicos de Michigan, acompañado de un análisis descriptivo de 6.172 evaluaciones COMPAS publicadas por ProPublica. La base de Florida se utiliza únicamente para explicar el efecto de los umbrales y el reparto de errores; no corresponde al nuevo sistema de Michigan y no permite auditarlo. Nebula no entrena ningún modelo ni genera predicciones propias."
 ---
 

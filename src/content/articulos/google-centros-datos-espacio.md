@@ -6,6 +6,7 @@ tema: "TECNOLOGÍA"
 fecha: 2026-10-02
 cifraDestacada: "1.800 vuelos"
 etiquetaCifra: "de Starship durante una década para acercar el lanzamiento a 200 dólares por kilogramo"
+textoContinuo: "Starship necesitaría 1.800 vuelos durante una década para acercar el lanzamiento a 200 dólares por kilo"
 metodologia: "Análisis de escenarios basado en las estimaciones públicas de Google Research, contrastadas con los 14 vuelos integrados de Starship realizados hasta septiembre de 2026. Se estudian la cadencia anual, la carga útil y la reducción del coste por kilogramo. Los escenarios muestran condiciones necesarias, no probabilidades estadísticas."
 ---
 

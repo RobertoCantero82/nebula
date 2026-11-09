@@ -6,6 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-10-09
 cifraDestacada: "27 años"
 etiquetaCifra: "estuvo archivada la pista química del posible planeta"
+textoContinuo: "La pista química del posible planeta permaneció archivada durante 27 años"
 metodologia: "EDA de las abundancias de 24 elementos publicadas por Williams et al. para HS 0209+0832: nueve cantidades medidas y 15 límites superiores. Comparo las detecciones no sostenidas por levitación radiativa con las abundancias solares y contextualizo la búsqueda de niobio en otras 33 enanas blancas y la periodicidad medida por TESS. No reproceso los espectros ni la curva de luz, no reproduzco los modelos atmosféricos y no confirmo directamente la existencia del planeta."
 ---
 

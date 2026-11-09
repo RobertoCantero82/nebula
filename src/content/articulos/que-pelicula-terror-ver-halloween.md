@@ -6,6 +6,7 @@ fecha: 2026-10-26T00:00:00+01:00
 imagenPortada: "/nebula/imagenes/halloween_cine_portada.png"
 cifraDestacada: "120"
 etiquetaCifra: "películas para encontrar la que encaja en tu noche"
+textoContinuo: "120 películas compiten por ser la mejor elección para tu noche de Halloween"
 metodologia: "EDA de una selección editorial de 120 títulos de 1922 a 2022, incluido el mediometraje La cabina. 1.074.778 votos de MovieLens 32M hasta octubre de 2023. Países y géneros de Wikidata; duraciones contrastadas con fichas de Wikipedia, utilizando el mayor valor cuando la ficha recoge varios. Familias, tono e intensidad son etiquetas editoriales subjetivas. Recomendación por filtros exactos y orden por nota media o número de votos, sin aprendizaje automático ni predicciones. No representa todo el género, no mide miedo, no indica clasificación por edades y no verifica disponibilidad en plataformas."
 ---
 

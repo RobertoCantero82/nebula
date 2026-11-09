@@ -6,6 +6,7 @@ tema: "CINE"
 fecha: 2026-09-24
 cifraDestacada: "96,7"
 etiquetaCifra: "puntos sobre 100: un empate entre dos películas inesperadas"
+textoContinuo: "Dos películas inesperadas empatan con 96,7 puntos como las más otoñales"
 metodologia: "Índice construido a partir de 265 películas candidatas y cinco dimensiones puntuadas entre 0 y 3: presencia del otoño, paisaje y paleta, clima y vestuario, rituales y espacios, y tono emocional. Se excluyeron las películas en las que Halloween era central, se realizó un cribado inicial de 264 títulos y una revisión individual con incrementos de medio punto de 112 candidatas. Las cinco dimensiones tienen el mismo peso y el resultado se transforma a una escala de 0 a 100."
 ---
 

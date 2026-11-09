@@ -6,6 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-10-14
 cifraDestacada: "10.000 veces"
 etiquetaCifra: "más antiguo que la Esfinge"
+textoContinuo: "El cocodrilo analizado es 10.000 veces más antiguo que la Esfinge"
 metodologia: "EDA de 386 ocurrencias de Gavialoidea registradas en Paleobiology Database, procedentes de 338 colecciones. Para las comparaciones a nivel de especie se utilizaron 228 ocurrencias de los últimos 120 millones de años y 223 pares únicos de colección y especie. Las edades se resumen mediante el punto medio de cada intervalo, los ambientes se agrupan en dos categorías amplias y solo se actualiza Tomistoma cairense a Herugavialis cairensis. El análisis describe el registro disponible, no corrige todos sus sesgos ni demuestra que el clima causara los cambios de diversidad."
 ---
 

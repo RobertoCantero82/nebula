@@ -6,6 +6,7 @@ fecha: 2026-10-19T08:00:00+02:00
 imagenPortada: "/nebula/imagenes/records_nba_segunda_parte_portada.png"
 cifraDestacada: "71 derrotas"
 etiquetaCifra: "necesitarían los Nets para superar su peor total en la NBA"
+textoContinuo: "Los Nets necesitarían perder 71 partidos para superar su peor temporada en la NBA"
 metodologia: "EDA de cinco récords positivos de club y cinco negativos, comparados con los totales de 2025-26. Para los negativos selecciono los cinco equipos con menos victorias de ese curso. Utilizo fuentes de la NBA, sus clubes y guías estadísticas, con consulta del 19 de octubre de 2026. Calculo diferencias entre temporadas y el total necesario para superar cada marca; no estimo probabilidades. Distingo derrotas totales, consecutivas y porcentaje de victorias. El notebook incluye los datos, las correcciones al radar anterior y las fuentes."
 ---
 

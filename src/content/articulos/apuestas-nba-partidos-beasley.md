@@ -6,6 +6,7 @@ tema: "BALONCESTO"
 fecha: 2026-10-28
 cifraDestacada: "1 rebote"
 etiquetaCifra: "separó una apuesta ganadora de una perdedora"
+textoContinuo: "Un solo rebote separó una apuesta ganadora de una perdedora"
 metodologia: "EDA de los 79 partidos de temporada regular disputados por Malik Beasley con Milwaukee Bucks en la temporada 2023-24, descargados de la API oficial de la NBA. Comparo los cuatro encuentros descritos en la acusación federal con la distribución completa de puntos y rebotes del jugador. El análisis no detecta amaños ni atribuye intenciones a partir de una estadística: un registro raro no demuestra una manipulación y uno habitual tampoco la descarta."
 ---
 

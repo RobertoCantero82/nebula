@@ -6,6 +6,7 @@ fecha: 2026-10-06T09:00:00+02:00
 imagenPortada: "/nebula/imagenes/baskonia_historia_portada.png"
 cifraDestacada: "368"
 etiquetaCifra: "victorias del Baskonia en las 26 temporadas de la Euroliga moderna"
+textoContinuo: "Baskonia suma 368 victorias en las 26 temporadas de la Euroliga moderna"
 metodologia: "Análisis de los resultados oficiales de las 26 temporadas de la Euroliga moderna entre 2000-01 y 2025-26: 696 partidos del Baskonia y la trayectoria completa de los clubes participantes. Para medir el valor de un mal inicio se estudiaron 176 equipos-temporada desde 2016-17 hasta 2025-26, comparando su balance tras 1, 3, 5 y 10 encuentros con el porcentaje final de victorias. La referencia al Top 8 es una aproximación basada en victorias y diferencia de puntos y no reproduce todos los desempates oficiales. El R² describe asociación dentro de la muestra y no implica causalidad."
 ---
 

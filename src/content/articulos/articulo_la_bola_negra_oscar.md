@@ -6,6 +6,7 @@ tema: "CINE"
 fecha: 2026-09-21
 cifraDestacada: "74,7 %"
 etiquetaCifra: "probabilidad estimada de alcanzar la preselección"
+textoContinuo: "El modelo estima un 74,7 % de probabilidades de que 'La bola negra' alcance la preselección de los Oscar"
 metodologia: "Modelo de machine learning basado en 1.264 candidaturas al Oscar internacional de las ediciones 84 a 98. Se utilizó una regresión logística con historial reciente del país y premios en Cannes, validación temporal y 500 remuestreos para estimar la incertidumbre."
 ---
 
