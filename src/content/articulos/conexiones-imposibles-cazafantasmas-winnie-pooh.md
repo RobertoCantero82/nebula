@@ -7,6 +7,7 @@ serie: "trama"
 fecha: 2026-11-02
 cifraDestacada: "277"
 etiquetaCifra: "espectadores puntuaron las dos películas"
+textoContinuo: "¿Qué crees que une 'Cazafantasmas 2' con 'Las muchas aventuras de Winnie the Pooh'?"
 metodologia: "EDA de 32.000.204 valoraciones sobre 84.432 películas de MovieLens 32M, etiquetas, géneros y créditos estructurados de Wikidata. Comparo Cazafantasmas 2 (MovieLens 2717, Wikidata Q492214) con The Many Adventures of Winnie the Pooh (MovieLens 31193, Wikidata Q498434). No genero predicciones."
 ---
 

@@ -23,10 +23,10 @@ const formatearFechaCorta = (f: Date) => new Intl.DateTimeFormat('es-ES', { day:
     <div class="continuo-ventana">
       <div class="continuo-pista" data-continuo-pista>
         <div class="continuo-grupo" data-continuo-grupo>
-          {publicados.map((articulo) => <a class:list={["continuo-item", { "es-trama": articulo.data.serie === 'trama' }]} href={`/nebula/articulos/${articulo.id}/`}><span class="continuo-tema">{articulo.data.tema}</span><time datetime={articulo.data.fecha.toISOString()}>{formatearFechaCorta(articulo.data.fecha)}</time>{articulo.data.cifraDestacada&&<><strong>{articulo.data.cifraDestacada}</strong><span class="continuo-etiqueta">{articulo.data.etiquetaCifra}</span><span class="continuo-separador" aria-hidden="true">·</span></>}<span class="continuo-titulo">{articulo.data.titulo}</span></a>)}
+          {publicados.map((articulo) => <a class:list={["continuo-item", { "es-trama": articulo.data.serie === 'trama' }]} href={`/nebula/articulos/${articulo.id}/`}><span class="continuo-tema">{articulo.data.tema}</span><time datetime={articulo.data.fecha.toISOString()}>{formatearFechaCorta(articulo.data.fecha)}</time>{articulo.data.textoContinuo?<span class="continuo-titulo continuo-titulo-trama">{articulo.data.textoContinuo}</span>:<>{articulo.data.cifraDestacada&&<><strong>{articulo.data.cifraDestacada}</strong><span class="continuo-etiqueta">{articulo.data.etiquetaCifra}</span><span class="continuo-separador" aria-hidden="true">·</span></>}<span class="continuo-titulo">{articulo.data.titulo}</span></>}</a>)}
         </div>
         <div class="continuo-grupo" aria-hidden="true">
-          {publicados.map((articulo) => <a class:list={["continuo-item", { "es-trama": articulo.data.serie === 'trama' }]} href={`/nebula/articulos/${articulo.id}/`} tabindex="-1"><span class="continuo-tema">{articulo.data.tema}</span><time>{formatearFechaCorta(articulo.data.fecha)}</time>{articulo.data.cifraDestacada&&<><strong>{articulo.data.cifraDestacada}</strong><span class="continuo-etiqueta">{articulo.data.etiquetaCifra}</span><span class="continuo-separador" aria-hidden="true">·</span></>}<span class="continuo-titulo">{articulo.data.titulo}</span></a>)}
+          {publicados.map((articulo) => <a class:list={["continuo-item", { "es-trama": articulo.data.serie === 'trama' }]} href={`/nebula/articulos/${articulo.id}/`} tabindex="-1"><span class="continuo-tema">{articulo.data.tema}</span><time>{formatearFechaCorta(articulo.data.fecha)}</time>{articulo.data.textoContinuo?<span class="continuo-titulo continuo-titulo-trama">{articulo.data.textoContinuo}</span>:<>{articulo.data.cifraDestacada&&<><strong>{articulo.data.cifraDestacada}</strong><span class="continuo-etiqueta">{articulo.data.etiquetaCifra}</span><span class="continuo-separador" aria-hidden="true">·</span></>}<span class="continuo-titulo">{articulo.data.titulo}</span></>}</a>)}
         </div>
       </div>
     </div>
@@ -186,6 +186,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
   .continuo-etiqueta { color: #fff; font: 400 14px/1.25 var(--font-body); }
   .continuo-separador { color: #8aa7ff; font: 600 18px/1 var(--font-heading); margin: 0 2px; }
   .continuo-titulo { font: 600 15px/1.2 var(--font-heading); max-width: 52ch; overflow: hidden; text-overflow: ellipsis; }
+  .continuo-titulo-trama { color: #fff; max-width: none; }
   .continuo-item:hover .continuo-titulo, .continuo-item:focus-visible .continuo-titulo { text-decoration: underline; text-underline-offset: 4px; }
   .continuo-control { background: #111a3b; border: 0; color: #fff; cursor: pointer; font: 12px var(--font-mono); position: relative; z-index: 2; }
   .continuo-control:focus-visible { outline: 2px solid #fff; outline-offset: -5px; }
