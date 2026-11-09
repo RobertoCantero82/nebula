@@ -186,14 +186,18 @@ h1, h2, h3 {
   align-items: center;
   border-bottom: 1px solid var(--color-border);
   display: grid;
-  gap: clamp(1.25rem, 2.5vw, 2.25rem);
-  grid-template-columns: 190px minmax(260px, 400px) minmax(0, 1fr);
+  gap: clamp(1.5rem, 2.5vw, 2.5rem);
+  grid-template-columns: 190px minmax(280px, 360px) minmax(500px, 1fr);
+  max-width: 1400px;
   min-height: 96px;
+  padding-left: clamp(1.5rem, 3vw, 3rem);
+  padding-right: clamp(1.5rem, 3vw, 3rem);
 }
 
 .marca { align-items: center; display: inline-flex; height: 56px; line-height: 0; text-decoration: none; }
 .navegacion { align-items: center; display: flex; font-size: 14px; gap: clamp(.75rem, 2vw, 2rem); justify-content: flex-end; min-height: 48px; }
 .navegacion a { text-decoration: none; }
+.navegacion a { white-space: nowrap; }
 .navegacion a:hover, .navegacion a:focus-visible { color: var(--color-accent); }
 
 .solo-lectores {
@@ -380,7 +384,7 @@ h1, h2, h3 {
   min-height: 100px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1150px) {
   .cabecera {
     grid-template-columns: 190px minmax(260px, 1fr);
     padding-bottom: 1rem;
