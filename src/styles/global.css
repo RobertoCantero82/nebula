@@ -418,6 +418,7 @@ h1, h2, h3 {
 
 @media (max-width: 460px) {
   .cabecera { align-items: start; grid-template-columns: 1fr; gap: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem; }
+  .marca { justify-self: center; }
   .buscador-nebula { width: 100%; }
   .resultados-busqueda { width: 100%; }
   .navegacion { flex-wrap: wrap; gap: 1rem; }
