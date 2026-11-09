@@ -6,7 +6,7 @@ fecha: 2026-11-06
 imagenPortada: '/nebula/imagenes/swift_reentrada_portada.png'
 cifraDestacada: '4 minutos'
 etiquetaCifra: 'entre la predicción y la caída'
-textoContinuo: "La predicción de la caída de Swift se desvió solo cuatro minutos"
+textoContinuo: "La predicción realizada para la caída de Swift se desvió solo cuatro minutos"
 metodologia: 'Predicción retrospectiva con 1.594 conjuntos de elementos orbitales TLE de Swift entre el 1 de enero de 2025 y el 3 de noviembre de 2026, solicitados al archivo histórico de CelesTrak. Convierto el movimiento medio en altura aproximada y conservo la última observación de cada día. Entreno hasta el 31 de agosto de 2026, valido del 1 de septiembre al 15 de octubre y reservo 18 observaciones desde el 16 de octubre como prueba. Comparo una regresión lineal de referencia con una relación de potencia entre el margen sobre 120 kilómetros y las horas restantes. La reentrada de referencia es la confirmada por NASA: 4 de noviembre de 2026 a las 12:39 UTC. Es un modelo retrospectivo de un solo satélite, no una herramienta de seguridad ni un predictor general.'
 ---
 
