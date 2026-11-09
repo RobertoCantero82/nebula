@@ -212,7 +212,7 @@ h1, h2, h3 {
   width: 1px;
 }
 
-.buscador-nebula { justify-self: stretch; min-width: 0; position: relative; width: 100%; z-index: 20; }
+.buscador-nebula { justify-self: center; max-width: 900px; min-width: 0; position: relative; width: 100%; z-index: 20; }
 .buscador-nebula-campo {
   align-items: center;
   background: #fff;
