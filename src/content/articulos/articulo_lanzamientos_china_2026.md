@@ -6,7 +6,7 @@ tema: "TECNOLOGÍA"
 fecha: 2026-09-22
 cifraDestacada: "110"
 etiquetaCifra: "lanzamientos estimados para China en 2026"
-textoContinuo: "China podría cerrar 2026 con 110 lanzamientos espaciales"
+textoContinuo: "China lanza cuatro cohetes en 45 horas: analizo los datos para saber si el país va camino de un récord"
 metodologia: "Análisis de 802 lanzamientos orbitales realizados desde bases chinas entre 1970 y el 20 de septiembre de 2026. La predicción combina el ritmo observado durante el año, la distribución histórica de lanzamientos antes y después de esa fecha, validación retrospectiva y 10.000 simulaciones."
 ---
 

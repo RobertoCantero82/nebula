@@ -6,7 +6,7 @@ fecha: 2026-10-08T09:00:00+02:00
 imagenPortada: "/nebula/imagenes/microsoft_inteligencia_hibrida_portada.png"
 cifraDestacada: "91%"
 etiquetaCifra: "de los AI PC analizados en Europa no alcanzaba la categoría Copilot+"
-textoContinuo: "El 91 % de los AI PC analizados en Europa no alcanzaba la categoría Copilot+"
+textoContinuo: "Microsoft quiere ejecutar la IA en tu ordenador, pero el 91 % de los equipos analizados en Europa no alcanzaba el nivel que exige la propia compañía"
 metodologia: "Análisis exploratorio de cifras publicadas por Gartner, Omdia, CONTEXT, Microsoft y medios especializados. Se comparan cuotas, revisiones de previsiones y requisitos técnicos. No se entrena ningún modelo ni se crea una predicción propia. Algunas cifras describen mercados, fechas y definiciones diferentes, por lo que no deben leerse como una única serie temporal."
 ---
 

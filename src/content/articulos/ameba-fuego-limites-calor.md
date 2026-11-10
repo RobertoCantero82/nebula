@@ -6,7 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-09-23
 cifraDestacada: "3,25 veces"
 etiquetaCifra: "más tarda en duplicarse a 63 °C que a 57 °C"
-textoContinuo: "A 63 °C, la ameba tarda 3,25 veces más en duplicarse que a 57 °C"
+textoContinuo: "Esta ameba resiste 70 °C, se reproduce a 63 °C y ha hecho tropezar a la propia NASA"
 metodologia: "Análisis de 924 observaciones de crecimiento de _Incendiamoeba cascadensis_, con 864 recuentos válidos, 116 cultivos y 17 temperaturas. Cada cultivo se normalizó respecto a su densidad del día 0. Los tiempos de duplicación proceden de los lotes de referencia seleccionados por los autores. Los ensayos de movimiento y resistencia térmica se contrastaron con el estudio original y las publicaciones de NASA."
 ---
 

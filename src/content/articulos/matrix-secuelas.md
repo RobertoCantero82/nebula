@@ -6,7 +6,7 @@ tema: "CINE"
 fecha: 2026-09-16
 cifraDestacada: "27.3% → 15.2%"
 etiquetaCifra: "peso de las líneas de Neo sobre el total de diálogo, de la primera a la tercera película"
-textoContinuo: "Neo pasa del 27,3 % al 15,2 % de las líneas de diálogo entre la primera y la tercera película de 'The Matrix'"
+textoContinuo: "3 mitos sobre 'The Matrix' se enfrentan a los datos: su revolución visual, su influencia cultural y la caída de sus secuelas"
 metodologia: "Análisis basado en datasets de TMDB (presupuestos y créditos de VFX), la API de arXiv, Google Ngrams, la API de YouTube y las transcripciones completas de las tres películas (dataset 'The Matrix' de Kaggle), procesadas con NLTK y spaCy. Proyecto completo disponible en el repositorio EDA Matrix Decodificada en GitHub."
 ---
 

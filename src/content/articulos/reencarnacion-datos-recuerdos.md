@@ -6,7 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-10-27
 cifraDestacada: "43%"
 etiquetaCifra: "menos tiempo entre muerte y nacimiento en los relatos"
-textoContinuo: "Los relatos reducen un 43 % el tiempo entre una muerte y el siguiente nacimiento"
+textoContinuo: "En los supuestos casos de reencarnación analizados, las muertes inesperadas se asocian con intervalos un 43 % más cortos hasta el siguiente nacimiento"
 metodologia: "EDA del archivo anónimo de 2.254 casos de Sadeghi, Pehlivanova y Cozzolino. Selecciono 1.678 casos con fallecido identificado; 1.319 tienen intervalo y 1.075 incluyen también el grado de muerte inesperada. Reproduzco medianas, cuantiles y correlación con log10(intervalo + 4), y compruebo filtros de documentación y contacto familiar. No verifico relatos ni demuestro reencarnación. No genero predicciones."
 ---
 

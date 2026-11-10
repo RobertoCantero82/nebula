@@ -6,7 +6,7 @@ fecha: 2026-10-16T09:00:00+02:00
 imagenPortada: "/nebula/imagenes/tesla_roadster_datos_portada.png"
 cifraDestacada: "7,9 metros"
 etiquetaCifra: "es la distancia teórica para alcanzar 100 km/h"
-textoContinuo: "El Tesla Roadster necesitaría solo 7,9 metros para alcanzar 100 km/h"
+textoContinuo: "El Tesla Roadster ya ha volado: su versión extrema usa 10 propulsores, supera 4,6 g y necesitaría solo 7,9 metros para alcanzar 100 km/h"
 metodologia: "EDA de las tres versiones anunciadas del Roadster, la prueba de 0 a 60 mph mostrada por Tesla y cuatro eléctricos de producción con tiempos publicados por sus fabricantes. Se distinguen demostraciones, objetivos futuros y prestaciones de producción. Las conversiones a fuerzas g y distancia suponen aceleración constante. También se comparan las especificaciones de 2017 y 2026, el calendario y el valor temporal de la reserva. No se predice la llegada del coche ni se equiparan protocolos de prueba diferentes."
 ---
 

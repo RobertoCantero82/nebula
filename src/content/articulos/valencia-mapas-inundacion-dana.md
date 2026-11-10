@@ -6,7 +6,7 @@ fecha: 2026-11-09
 imagenPortada: "/nebula/imagenes/valencia_mapas_inundacion_portada.png"
 cifraDestacada: "51,1 %"
 etiquetaCifra: "de las viviendas fuera de toda zona oficial"
-textoContinuo: "El 51,1 % de las viviendas afectadas en Valencia quedó fuera de toda zona oficial"
+textoContinuo: "El 51,1 % de las viviendas afectadas por la DANA en Valencia estaba fuera de las zonas que los mapas oficiales señalaban como inundables"
 metodologia: "EDA de los agregados municipales publicados por EasyxLab a partir de Copernicus EMS, Catastro, SNCZI, PATRICOVA e IGN. Analizo 84.789 viviendas dentro de la huella observada y la concentración territorial del desfase. La cifra cambia con la huella y la regla espacial: los escenarios centrales van del 38,9 % al 61,9 %."
 ---
 

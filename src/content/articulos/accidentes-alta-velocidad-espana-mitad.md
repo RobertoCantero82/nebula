@@ -6,7 +6,7 @@ fecha: 2026-11-05
 imagenPortada: "/nebula/imagenes/accidentes_alta_velocidad_portada.png"
 cifraDestacada: "47,6 %"
 etiquetaCifra: "con el criterio más amplio"
-textoContinuo: "España concentró el 47,6 % de las muertes en alta velocidad mundial con el criterio más amplio"
+textoContinuo: "El análisis de 15 accidentes desmiente la cifra más repetida: España no concentra más de la mitad de las muertes"
 metodologia: "EDA documental de 15 accidentes mortales con trenes de alta velocidad implicados, publicados por Verificat y contrastados con informes oficiales y fuentes enlazadas. Comparo cuatro criterios de inclusión y pruebo por separado el efecto de Angrois. No existe un registro mundial único y los datos de Adamuz y Urda siguen sujetos a revisión."
 ---
 

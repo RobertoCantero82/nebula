@@ -6,7 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-09-30
 cifraDestacada: "11.800 millones"
 etiquetaCifra: "de años desde la fusión de la Vía Láctea con la galaxia LKH"
-textoContinuo: "La Vía Láctea se fusionó con LKH hace unos 11.800 millones de años"
+textoContinuo: "Hace 11.800 millones de años, una galaxia enana chocó con la joven Vía Láctea y acabó formando parte de ella"
 metodologia: "Análisis descriptivo de una cronología de seis acontecimientos construida con las cifras publicadas por Massari et al. en Nature Astronomy y por NASA. Se comparan la fusión con LKH, Gaia-Sausage-Enceladus, Sagitario y la formación del Sistema Solar. El notebook contextualiza el hallazgo, pero no reproduce el modelo astrofísico ni el catálogo individual de los 39 cúmulos globulares estudiados."
 ---
 

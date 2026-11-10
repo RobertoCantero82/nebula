@@ -6,7 +6,7 @@ fecha: 2026-10-20
 imagenPortada: '/nebula/imagenes/moviles_resistencia_portada.png'
 cifraDestacada: '+128 %'
 etiquetaCifra: 'autonomía del Galaxy S25 frente al S6 en la prueba Wi-Fi'
-textoContinuo: "El Galaxy S25 ofrece un 128 % más de autonomía Wi-Fi que el Galaxy S6"
+textoContinuo: "¿Los móviles de antes duraban más? El Galaxy S25 ofrece un 128 % más de autonomía Wi-Fi que el S6, pero la resistencia no se decide con una sola cifra"
 metodologia: 'EDA de doce modelos de tres familias (iPhone, Galaxy S y Moto G) en 2015, 2018, 2021 y 2025. Comparo los resultados exactos de navegación Wi-Fi v1.3 de Notebookcheck y compruebo once datos de vídeo. Es un panel intencional, no representativo del mercado; cambian tamaños, navegadores, software y equipo de ensayo. Para el Nokia 3310 de 2000 utilizo su comunicado y manual, sin mezclar máximos de espera o conversación con horas de navegación. Separo las especificaciones de ciclos de Apple de las mediciones independientes y comparo instrucciones de sustitución de batería. No estimo años de vida ni declaro un ganador histórico en caídas.'
 ---
 

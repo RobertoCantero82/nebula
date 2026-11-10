@@ -6,7 +6,7 @@ tema: "CINE"
 fecha: 2026-09-28
 cifraDestacada: "77%"
 etiquetaCifra: "de las tecnologías analizadas ha alcanzado al menos la fase de prototipo"
-textoContinuo: "El 77 % de las tecnologías imaginadas por el cine ya ha llegado al menos a la fase de prototipo"
+textoContinuo: "De 100 tecnologías imaginadas en 27 películas, el 77 % ya ha llegado al menos a la fase de prototipo"
 metodologia: "Análisis exploratorio de 100 tecnologías representadas en 27 películas estrenadas entre 1927 y 2015. Cada tecnología fue clasificada editorialmente por categoría, estado en 2026, plausibilidad, visión narrativa y primer año de una realización comparable. Los estados y fechas se contrastaron con fuentes públicas de NASA, NIST, NIH, NHTSA, el Departamento de Energía de Estados Unidos y otras instituciones técnicas. La muestra es intencional y describe este conjunto, no todo el cine de ciencia ficción."
 ---
 

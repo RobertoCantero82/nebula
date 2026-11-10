@@ -6,7 +6,7 @@ fecha: 2026-11-10
 imagenPortada: "/nebula/imagenes/la_bola_negra_taquilla_portada.png"
 cifraDestacada: "40,1 M€"
 etiquetaCifra: "recaudación final estimada en España"
-textoContinuo: "Mi predicción sitúa la recaudación final de 'La bola negra' en 40,1 millones de euros"
+textoContinuo: "A 'La bola negra' le basta repetir su peor fin de semana para ser la película más taquillera de 2026 en España"
 metodologia: "Predicción basada en el crecimiento posterior a la séptima semana de 13 películas estrenadas en España en 2026 que seguían en el top 10 a esa altura y cuya trayectoria había terminado. El modelo de referencia supone que no hay más crecimiento. El modelo final multiplica el acumulado de la séptima semana por la mediana histórica. Se entrenó con nueve películas y se probó temporalmente con las cuatro más recientes. En prueba obtuvo un error absoluto medio de 456.744 euros y un error porcentual medio del 3,4 %."
 ---
 

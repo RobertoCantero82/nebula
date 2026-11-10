@@ -6,7 +6,7 @@ tema: "CIENCIA"
 fecha: 2026-10-23
 cifraDestacada: "127 personas"
 etiquetaCifra: "en la prueba final de predicción de edad"
-textoContinuo: "El modelo predijo la edad sobre una prueba final de 127 personas"
+textoContinuo: "¿Puede el ADN decir cuántos años tienes? El modelo falló 5,3 años de media y sus errores muestran por qué parecer más joven no significa haber rejuvenecido"
 metodologia: "Machine learning con GSE40279: 656 personas y 23.734 marcas candidatas fijadas por identificador, sin consultar edades. Separación por chip: 420 personas de entrenamiento, 109 de calibración y 127 de prueba. Regresión ridge elegida entre cuatro combinaciones mediante validación interna de cinco grupos. Selección de marcas, imputación y escala dentro de cada entrenamiento. Comparación con la mediana del entrenamiento. Validación interna de una cohorte histórica; no mide salud, longevidad ni rejuvenecimiento."
 ---
 

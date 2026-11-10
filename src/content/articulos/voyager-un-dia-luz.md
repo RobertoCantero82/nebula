@@ -6,7 +6,7 @@ fecha: 2026-10-22
 imagenPortada: '/nebula/imagenes/voyager_tiempo_portada.png'
 cifraDestacada: '47 h 52 min'
 etiquetaCifra: 'ida y vuelta aproximada de la señal de Voyager 1'
-textoContinuo: "Una señal tarda unas 47 horas y 52 minutos en ir y volver de Voyager 1"
+textoContinuo: "Voyager 1 está a casi un día luz: la señal tarda 47 horas y 52 minutos en ir y volver, pero en 2026 llegó a tardar menos aunque la sonda seguía alejándose del Sol"
 metodologia: 'EDA de efemérides geométricas de JPL Horizons. Comparo seis destinos el 22 de octubre de 2026 a las 00:00 UTC, 599 posiciones de Voyager 1 cada 30 días desde 1977 y 295 posiciones diarias de 2026 desde la Tierra y desde el Sol. Distancia dividida por la velocidad de la luz y doble demora como aproximación de ida y vuelta. No son mensajes observados ni una predicción propia. Excluyo filas posteriores al corte. El hito del 18 de noviembre es una previsión publicada por NASA.'
 ---
 
