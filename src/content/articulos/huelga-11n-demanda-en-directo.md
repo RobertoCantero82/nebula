@@ -12,7 +12,7 @@ metodologia: "EDA en directo de la demanda eléctrica nacional publicada por Red
 
 *España vive este 11 de noviembre su primera huelga general en catorce años. Cerca de 19 millones de asalariados están llamados a parar. Pero entre las cifras de sindicatos, empresas y administraciones hay un dato que no necesita preguntar a nadie: cuánta electricidad está consumiendo el país en cada momento.*
 
-La convocatoria no responde a una sola decisión. [CCOO y UGT la resumen en tres palabras: salarios, vivienda y precios](https://www.ugt.es/11n-huelga-general-salarios-vivienda-precios). Los sindicatos reclaman desbloquear la negociación colectiva, mejorar los sueldos y los servicios públicos y frenar el peso que la vivienda y el coste de la vida tienen sobre los hogares. La crisis de acceso a la vivienda aparece como el principal detonante.
+La convocatoria no responde a una sola decisión. [CCOO y UGT la resumen en tres palabras: salarios, vivienda y precios](https://www.ugt.es/11n-huelga-general-salarios-vivienda-precios). Los sindicatos reclaman desbloquear la negociación colectiva, mejorar los sueldos y los servicios públicos y frenar el peso que la vivienda y el coste de la vida tienen sobre los hogares. **La crisis de acceso a la vivienda aparece como el principal detonante**.
 
 También intervienen otras organizaciones, entre ellas CGT, CNT y sindicatos de inquilinas. El [BOE confirma dos convocatorias estatales](https://boe.es/diario_boe/txt.php?id=BOE-A-2026-23371&lang=es) para toda la jornada, desde las 00:00 hasta las 23:59. Eso describe quién convoca y por qué. Otra pregunta distinta es cuánto se ha detenido realmente la actividad.
 
