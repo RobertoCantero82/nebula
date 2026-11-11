@@ -21,7 +21,7 @@ pantallas:
     tipo: imagen-cine
     imagen: "/nebula/imagenes/actualidad/spielberg-et-1982-2002.jpg"
     altImagen: "Comparación de la persecución de E.T.: en la edición de 2002 los agentes llevan walkie-talkies y en la versión original de 1982 llevan armas"
-    pieImagen: "Arriba, la edición del aniversario de 2002. Abajo, el montaje original estrenado en 1982."
+    pieImagen: "Arriba, el montaje original estrenado en 1982. Abajo, la edición del aniversario de 2002."
     datos: ["Estreno de 1982", "20 años", "Edición de 2002"]
     texto:
       - "Para celebrar el aniversario, Universal restauró la película y preparó una versión ampliada con nuevos efectos y escenas añadidas."
