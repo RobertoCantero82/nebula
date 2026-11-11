@@ -135,7 +135,11 @@ El gráfico seguirá cambiando hasta el final de la jornada. Cuando llegue el ú
 
 <script>
 (() => {
-  const API='https://apidatos.ree.es/es/datos/demanda/demanda-tiempo-real?start_date=2026-11-11T00:00&end_date=2026-11-11T23:59&time_trunc=hour';
+  const API_DIA='https://apidatos.ree.es/es/datos/demanda/demanda-tiempo-real?start_date=2026-11-11T00:00&end_date=2026-11-11T23:59&time_trunc=hour';
+  const apiDirecto=()=>{
+    const fin=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date()).replace(' ','T');
+    return `https://apidatos.ree.es/es/datos/demanda/demanda-tiempo-real?start_date=2026-11-11T00:00&end_date=${fin}&time_trunc=hour`;
+  };
   const RESPALDO='/nebula/analisis/huelga-11n-demanda/datos/demanda_11n_respaldo.json';
   const directo=document.getElementById('h11-directo');
   const apuesta=document.querySelector('.h11-apuesta');
@@ -170,6 +174,8 @@ El gráfico seguirá cambiando hasta el final de la jornada. Cuando llegue el ú
     document.getElementById('h11-actualizacion').textContent=`Actualizado a las ${hora(ultima.iso)} · se renueva cada 5 minutos`;
     const final=ultima.t.getHours()===23&&ultima.t.getMinutes()>=50;
     document.getElementById('h11-estado').textContent=final?'Jornada completa':'Datos en directo';
+    const aviso=document.getElementById('h11-error'),retraso=(Date.now()-ultima.t.getTime())/60000;
+    if(!final&&retraso>15){aviso.hidden=false;aviso.textContent=`Red Eléctrica no publica un dato nuevo desde las ${hora(ultima.iso)}. La curva se actualizará automáticamente cuando la fuente reanude el servicio.`}else{aviso.hidden=true;aviso.textContent=''}
     document.getElementById('h11-lectura').textContent=`A las ${hora(ultima.iso)}, la demanda real es de ${numero(ultima.v,0)} MW: ${numero(Math.abs(ultima.dif),0)} MW ${ultima.dif<0?'por debajo':'por encima'} de lo previsto. La mayor caída observada hasta ahora es del ${numero(Math.abs(peor.pct))} % a las ${hora(peor.iso)}.`;
     const todas=[...series.Prevista,...series.Real],min=Math.min(...todas.map(p=>p.v))*0.96,max=Math.max(...todas.map(p=>p.v))*1.04,x0=64,x1=700,y0=76,y1=330;
     const inicio=new Date('2026-11-11T00:00:00+01:00'),fin=new Date('2026-11-12T00:00:00+01:00');
@@ -179,7 +185,7 @@ El gráfico seguirá cambiando hasta el final de la jornada. Cuando llegue el ú
     [0,6,12,18,24].forEach(h=>{const xx=x0+h/24*(x1-x0);rejilla.insertAdjacentHTML('beforeend',`<line class="h11-rejilla" x1="${xx}" y1="${y0}" x2="${xx}" y2="${y1}"/>`);ejes.insertAdjacentHTML('beforeend',`<text class="h11-eje" x="${xx}" y="355" text-anchor="middle">${String(h).padStart(2,'0')}:00</text>`)});
     [min,(min+max)/2,max].forEach(v=>{const yy=y(v);rejilla.insertAdjacentHTML('beforeend',`<line class="h11-rejilla" x1="${x0}" y1="${yy}" x2="${x1}" y2="${yy}"/>`);ejes.insertAdjacentHTML('beforeend',`<text class="h11-eje" x="56" y="${yy+4}" text-anchor="end">${numero(v/1000,0)}k</text>`)});
   };
-  const cargar=async()=>{let respaldo=false;try{let r=await fetch(API,{cache:'no-store'});if(!r.ok)throw new Error();dibujar(extraer(await r.json()))}catch{respaldo=true;try{let r=await fetch(RESPALDO,{cache:'no-store'});dibujar(extraer(await r.json()))}catch{document.getElementById('h11-error').hidden=false;document.getElementById('h11-error').textContent='No ha sido posible cargar la curva. Puedes consultarla directamente en Red Eléctrica.'}}if(respaldo&&document.getElementById('h11-error').hidden){document.getElementById('h11-error').hidden=false;document.getElementById('h11-error').textContent='La API no responde: mostramos la última copia guardada.'}};
+  const cargar=async()=>{let respaldo=false;try{const [rDia,rDirecto]=await Promise.all([fetch(API_DIA,{cache:'no-store'}),fetch(apiDirecto(),{cache:'no-store'})]);if(!rDia.ok||!rDirecto.ok)throw new Error();const dia=extraer(await rDia.json()),directo=extraer(await rDirecto.json());dia.Real=directo.Real;dibujar(dia)}catch{respaldo=true;try{let r=await fetch(RESPALDO,{cache:'no-store'});dibujar(extraer(await r.json()))}catch{document.getElementById('h11-error').hidden=false;document.getElementById('h11-error').textContent='No ha sido posible cargar la curva. Puedes consultarla directamente en Red Eléctrica.'}}if(respaldo){document.getElementById('h11-error').hidden=false;document.getElementById('h11-error').textContent='La API no responde: mostramos la última copia guardada.'}};
   cargar();setInterval(cargar,300000);
 })();
 </script>
