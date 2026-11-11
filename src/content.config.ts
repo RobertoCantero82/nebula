@@ -33,12 +33,17 @@ const actualidad = defineCollection({
     etiquetaCifra: z.string().optional(),
     fondoPortada: z.string().optional(),
     mostrarCifraInterior: z.boolean().optional(),
+    formato: z.enum(['base', 'visual']).optional(),
     pantallas: z.array(z.object({
       etiqueta: z.string(),
       titulo: z.string(),
       texto: z.array(z.string()).min(1),
-      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre']),
+      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre', 'secuencia-iconos', 'imagen-cine', 'interactivo-cine', 'grafico-tiempo']),
       datos: z.array(z.string()).optional(),
+      respuestas: z.array(z.string()).optional(),
+      imagen: z.string().optional(),
+      altImagen: z.string().optional(),
+      pieImagen: z.string().optional(),
     })).length(5),
     fuentes: z.array(z.object({
       nombre: z.string(),

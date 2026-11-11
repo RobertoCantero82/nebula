@@ -7,32 +7,41 @@ cifraDestacada: "20 años"
 etiquetaCifra: "entre las dos versiones"
 fondoPortada: "↺"
 mostrarCifraInterior: false
+formato: visual
 pantallas:
   - etiqueta: "01 | La persecución"
     titulo: "Elliott pedalea hacia la libertad. Delante tiene el bosque. Detrás, hombres armados."
-    tipo: recorrido
+    tipo: secuencia-iconos
     datos: ["Bicicletas", "Agentes", "Armas", "El vuelo"]
     texto:
       - "En la película estrenada en 1982, varios agentes federales apuntan con sus armas mientras Elliott y sus amigos intentan escapar con E.T."
       - "La amenaza forma parte del salto emocional de la escena: los niños están acorralados justo antes de que sus bicicletas se eleven."
   - etiqueta: "02 | La distancia"
     titulo: "Veinte años después, Spielberg volvió a mirar la escena con otros ojos."
-    tipo: linea
+    tipo: imagen-cine
+    imagen: "/nebula/imagenes/actualidad/spielberg-et-1982-2002.jpg"
+    altImagen: "Comparación de la persecución de E.T.: en la edición de 2002 los agentes llevan walkie-talkies y en la versión original de 1982 llevan armas"
+    pieImagen: "Arriba, la edición del aniversario de 2002. Abajo, el montaje original estrenado en 1982."
     datos: ["Estreno de 1982", "20 años", "Edición de 2002"]
     texto:
       - "Para celebrar el aniversario, Universal restauró la película y preparó una versión ampliada con nuevos efectos y escenas añadidas."
       - "Spielberg ya había explicado que le incomodaba ver un arma utilizada para detener a unos niños que huían en bicicleta."
   - etiqueta: "03 | El retoque"
-    titulo: "Las armas desaparecieron fotograma a fotograma. En sus manos aparecieron walkie-talkies."
-    tipo: lista
-    datos: ["Armas fuera", "Walkie-talkies dentro", "E.T. digital", "Escena del baño", "+5 minutos", "Un diálogo cambiado"]
+    titulo: "Las armas no fueron el único cambio. Toca para descubrir los demás."
+    tipo: interactivo-cine
+    datos: ["El rostro de E.T.", "Una escena recuperada", "Una palabra", "La duración"]
+    respuestas:
+      - "Los movimientos y algunas expresiones de E.T. se retocaron digitalmente para que resultaran más fluidos."
+      - "La reedición recuperó una escena en la que Elliott encuentra a E.T. dentro de la bañera."
+      - "En un diálogo sobre Halloween, la palabra «terrorista» fue sustituida por «hippie»."
+      - "El montaje del aniversario incorporó aproximadamente cinco minutos adicionales."
     texto:
       - "La sustitución digital fue el cambio más discutido, pero no el único. La edición retocó movimientos y expresiones de E.T. e incorporó material nuevo."
       - "También cambió la palabra «terrorista» por «hippie» en un diálogo sobre el disfraz de Halloween de Michael."
   - etiqueta: "04 | El regreso"
-    titulo: "Quiso suavizar una película para niños. Acabó defendiendo que no debía haberla tocado."
-    tipo: contraste
-    datos: ["Proteger al público", "Conservar la obra"]
+    titulo: "Tardó 20 años en cambiar E.T. y solo 9 en arrepentirse."
+    tipo: grafico-tiempo
+    datos: ["1982", "2002", "2011", "2023"]
     texto:
       - "Con el tiempo, Spielberg cambió de opinión. En 2011 recomendaba ver la versión original y reconocía que había vivido para arrepentirse del retoque."
       - "En 2023 fue aún más directo: calificó la sustitución como un error y sostuvo que una película no debería revisarse con los criterios de otra época."
