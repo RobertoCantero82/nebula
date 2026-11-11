@@ -66,9 +66,53 @@ Una caída del 10 % no significa que el 10 % de los trabajadores haya parado. Un
 
 La comparación tampoco puede hacerse simplemente con ayer. La borrasca Charles está alterando temperaturas, desplazamientos y horarios. Por eso utilizo la previsión de Red Eléctrica, que ya tiene en cuenta el calendario, la actividad esperada y la meteorología. Aun así, una previsión puede equivocarse.
 
-Tampoco estamos midiendo una falta de electricidad. El Gobierno ha fijado servicios mínimos para que sigan funcionando la generación, el transporte y la distribución. Si la curva baja, no es porque las centrales hayan decidido dejar al país sin suministro, sino porque hogares, comercios, oficinas e industrias están pidiendo menos energía de la esperada. La red se limita a seguir esa demanda y mantener el equilibrio.
+<figure class="video-huelga-11n">
+  <div class="video-huelga-11n__contenedor">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/lmZwjxU0eRA?rel=0"
+      title="Vídeo sobre la huelga general del 11N"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-Hay otra pieza que antes pesaba mucho menos. Parte de la electricidad producida por placas solares se consume dentro de viviendas y empresas sin pasar por la red. Red Eléctrica advierte de que su demanda no incluye todo ese autoconsumo. El termómetro sigue siendo útil, pero ya no mide exactamente el mismo país que en 2012.
+  <figcaption>
+    Las claves y reivindicaciones de la huelga general del 11N.
+  </figcaption>
+</figure>
+
+<style>
+.video-huelga-11n {
+  margin: 2.5rem 0;
+}
+
+.video-huelga-11n__contenedor {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #101626;
+}
+
+.video-huelga-11n__contenedor iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-huelga-11n figcaption {
+  margin-top: 0.65rem;
+  color: #586174;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+</style>
+
+**Tampoco estamos midiendo una falta de electricidad**. El Gobierno ha fijado servicios mínimos para que sigan funcionando la generación, el transporte y la distribución. Si la curva baja, no es porque las centrales hayan decidido dejar al país sin suministro, sino porque hogares, comercios, oficinas e industrias están pidiendo menos energía de la esperada. La red se limita a seguir esa demanda y mantener el equilibrio.
+
+Hay otra pieza que antes pesaba mucho menos. Parte de la electricidad producida por placas solares se consume dentro de viviendas y empresas sin pasar por la red. Red Eléctrica advierte de que su demanda no incluye todo ese autoconsumo. **El termómetro** sigue siendo útil, pero **ya no mide exactamente el mismo país que en 2012**.
 
 ## El espejo de las huelgas anteriores
 
