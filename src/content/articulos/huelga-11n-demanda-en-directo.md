@@ -12,7 +12,7 @@ metodologia: "EDA en directo de la demanda eléctrica nacional publicada por Red
 
 *España vive este 11 de noviembre su primera huelga general en catorce años. Cerca de 19 millones de asalariados están llamados a parar. Pero entre las cifras de sindicatos, empresas y administraciones hay un dato que no necesita preguntar a nadie: cuánta electricidad está consumiendo el país en cada momento.*
 
-La convocatoria no responde a una sola decisión. [CCOO y UGT la resumen en tres palabras: salarios, vivienda y precios](https://www.ugt.es/11n-huelga-general-salarios-vivienda-precios). Los sindicatos reclaman desbloquear la negociación colectiva, mejorar los sueldos y los servicios públicos y frenar el peso que la vivienda y el coste de la vida tienen sobre los hogares. **La crisis de acceso a la vivienda aparece como el principal detonante**.
+La convocatoria no responde a una sola decisión. [CCOO y UGT la resumen en tres palabras: salarios, vivienda y precios](https://www.ugt.es/11n-huelga-general-salarios-vivienda-precios). Los sindicatos reclaman desbloquear la negociación colectiva, mejorar los sueldos y los servicios públicos y frenar el peso que la vivienda y el coste de la vida tienen sobre los hogares. La crisis de acceso a la vivienda aparece como el principal detonante.
 
 También intervienen otras organizaciones, entre ellas CGT, CNT y sindicatos de inquilinas. El [BOE confirma dos convocatorias estatales](https://boe.es/diario_boe/txt.php?id=BOE-A-2026-23371&lang=es) para toda la jornada, desde las 00:00 hasta las 23:59. Eso describe quién convoca y por qué. Otra pregunta distinta es cuánto se ha detenido realmente la actividad.
 
@@ -28,10 +28,10 @@ También intervienen otras organizaciones, entre ellas CGT, CNT y sindicatos de 
     <button type="button" data-apuesta="99">Más del 15 %</button>
     <button type="button" data-apuesta="ver">Ver sin apostar</button>
   </div>
-  <p class="h11-apuesta__respuesta" aria-live="polite">El gráfico permanece oculto hasta que elijas.</p>
+  <p class="h11-apuesta__respuesta" aria-live="polite">Elige una opción y comprueba si tu intuición coincide con la curva.</p>
 </section>
 
-<section class="h11-directo" id="h11-directo" aria-labelledby="h11-directo-titulo" hidden>
+<section class="h11-directo" id="h11-directo" aria-labelledby="h11-directo-titulo">
   <div class="h11-directo__cabecera">
     <div><span class="h11-pulso" aria-hidden="true"></span><strong id="h11-estado">Cargando datos</strong></div>
     <p id="h11-actualizacion">Consultando Red Eléctrica…</p>
@@ -58,7 +58,7 @@ También intervienen otras organizaciones, entre ellas CGT, CNT y sindicatos de 
   <p id="h11-error" class="h11-error" hidden></p>
 </section>
 
-**La [curva de Red Eléctrica](https://www.ree.es/es/operacion/sistema-electrico/demanda-y-produccion-en-tiempo-real) se actualiza cada cinco minutos**. La línea gris representa lo que el operador esperaba para una jornada normal. La azul enseña lo que está ocurriendo. La distancia entre ambas es la pista que seguimos durante todo el día.
+La [curva de Red Eléctrica](https://www.ree.es/es/operacion/sistema-electrico/demanda-y-produccion-en-tiempo-real) se actualiza cada cinco minutos. La línea gris representa lo que el operador esperaba para una jornada normal. La azul enseña lo que está ocurriendo. La distancia entre ambas es la pista que seguimos durante todo el día.
 
 ## La luz no cuenta huelguistas
 
@@ -66,53 +66,9 @@ Una caída del 10 % no significa que el 10 % de los trabajadores haya parado. Un
 
 La comparación tampoco puede hacerse simplemente con ayer. La borrasca Charles está alterando temperaturas, desplazamientos y horarios. Por eso utilizo la previsión de Red Eléctrica, que ya tiene en cuenta el calendario, la actividad esperada y la meteorología. Aun así, una previsión puede equivocarse.
 
-<figure class="video-huelga-11n">
-  <div class="video-huelga-11n__contenedor">
-    <iframe
-      src="https://www.youtube-nocookie.com/embed/lmZwjxU0eRA?rel=0"
-      title="Vídeo sobre la huelga general del 11N"
-      loading="lazy"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
+Tampoco estamos midiendo una falta de electricidad. El Gobierno ha fijado servicios mínimos para que sigan funcionando la generación, el transporte y la distribución. Si la curva baja, no es porque las centrales hayan decidido dejar al país sin suministro, sino porque hogares, comercios, oficinas e industrias están pidiendo menos energía de la esperada. La red se limita a seguir esa demanda y mantener el equilibrio.
 
-  <figcaption>
-    Las claves y reivindicaciones de la huelga general del 11N.
-  </figcaption>
-</figure>
-
-<style>
-.video-huelga-11n {
-  margin: 2.5rem 0;
-}
-
-.video-huelga-11n__contenedor {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 14px;
-  background: #101626;
-}
-
-.video-huelga-11n__contenedor iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.video-huelga-11n figcaption {
-  margin-top: 0.65rem;
-  color: #586174;
-  font-size: 0.85rem;
-  line-height: 1.5;
-}
-</style>
-
-**Tampoco estamos midiendo una falta de electricidad**. El Gobierno ha fijado servicios mínimos para que sigan funcionando la generación, el transporte y la distribución. Si la curva baja, no es porque las centrales hayan decidido dejar al país sin suministro, sino porque hogares, comercios, oficinas e industrias están pidiendo menos energía de la esperada. La red se limita a seguir esa demanda y mantener el equilibrio.
-
-Hay otra pieza que antes pesaba mucho menos. Parte de la electricidad producida por placas solares se consume dentro de viviendas y empresas sin pasar por la red. Red Eléctrica advierte de que su demanda no incluye todo ese autoconsumo. **El termómetro** sigue siendo útil, pero **ya no mide exactamente el mismo país que en 2012**.
+Hay otra pieza que antes pesaba mucho menos. Parte de la electricidad producida por placas solares se consume dentro de viviendas y empresas sin pasar por la red. Red Eléctrica advierte de que su demanda no incluye todo ese autoconsumo. El termómetro sigue siendo útil, pero ya no mide exactamente el mismo país que en 2012.
 
 ## El espejo de las huelgas anteriores
 
