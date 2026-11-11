@@ -1,0 +1,13 @@
+{
+  "ultima_actualizacion": "2026-11-11T07:35:00.000+01:00",
+  "observaciones": 92,
+  "real_mw": 28110.0,
+  "prevista_mw": 30607.0,
+  "diferencia_mw": -2497.0,
+  "diferencia_pct": -8.158,
+  "mayor_caida_pct": -8.812,
+  "momento_mayor_caida": "2026-11-11T07:00:00.000+01:00",
+  "deficit_acumulado_mwh": 7496.83,
+  "exceso_acumulado_mwh": 0.0,
+  "provisional": true
+}
