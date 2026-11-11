@@ -1,12 +1,14 @@
 ---
-titulo: "Un hueso pasó 15 años escondido en su apéndice. Lo extraño es que no provocó apendicitis"
-descripcion: "Un caso clínico publicado en 2013 relata cómo un fragmento de hueso de tres centímetros quedó atrapado durante años sin causar inflamación."
+titulo: "Un hombre se tragó un hueso y lo olvidó. Quince años después, los médicos descubrieron dónde estaba"
+descripcion: "Una molestia abdominal condujo a los médicos hasta un objeto de tres centímetros que llevaba años escondido en su cuerpo sin causar inflamación."
 categoria: ciencia
 fecha: 2026-11-11
 cifraDestacada: "15 años"
 etiquetaCifra: "dentro del apéndice"
+fondoPortada: "?"
+mostrarCifraInterior: false
 pantallas:
-  - etiqueta: "01 · El viaje"
+  - etiqueta: "01 | El viaje"
     titulo: "Casi todo lo que tragamos continúa su camino. Este hueso tomó un desvío."
     tipo: recorrido
     datos:
@@ -17,7 +19,7 @@ pantallas:
     texto:
       - "La mayoría de los objetos capaces de llegar al estómago atraviesa después el aparato digestivo y sale del cuerpo sin provocar consecuencias."
       - "Este fragmento encontró la entrada del apéndice, quedó atrapado en su interior y ya no pudo regresar al intestino."
-  - etiqueta: "02 · El tiempo"
+  - etiqueta: "02 | El tiempo"
     titulo: "La explicación estaba escondida en una comida que apenas recordaba."
     tipo: linea
     datos:
@@ -27,20 +29,20 @@ pantallas:
     texto:
       - "El paciente recordó que, unos 15 años antes, había tragado accidentalmente un hueso mientras comía un plato de arroz con azafrán y tuétano."
       - "No existe una grabación de aquel recorrido: los 15 años proceden del recuerdo que el propio paciente comunicó a los médicos."
-  - etiqueta: "03 · La pista"
-    titulo: "La primera visita al hospital no resolvió el misterio."
-    tipo: lista
+  - etiqueta: "03 | La pista"
+    titulo: "Las primeras pruebas no encontraron nada. Ocho meses después, apareció la pista."
+    tipo: hospital
     datos:
       - "Dolor leve"
       - "Sin fiebre"
       - "Analítica normal"
       - "Ecografía normal"
-      - "8 meses después"
+      - "8 meses"
       - "2,5 × 3 cm"
     texto:
       - "El hombre, de 45 años, acudió con una molestia en la parte inferior derecha del abdomen. Los síntomas recordaban a una apendicitis, pero las pruebas no mostraron inflamación."
       - "Ocho meses después, una radiografía y una tomografía revelaron una forma redonda dentro de un apéndice dilatado. Medía aproximadamente 2,5 por 3 centímetros."
-  - etiqueta: "04 · La paradoja"
+  - etiqueta: "04 | La paradoja"
     titulo: "Había un hueso en el apéndice, pero no una apendicitis."
     tipo: contraste
     datos:
@@ -49,7 +51,7 @@ pantallas:
     texto:
       - "Los cirujanos retiraron el apéndice mediante laparoscopia y encontraron el hueso rodeado por una masa fecal calcificada."
       - "El tejido solo presentaba un ligero engrosamiento muscular causado por la presión mantenida. El examen microscópico no encontró signos de inflamación."
-  - etiqueta: "05 · El matiz"
+  - etiqueta: "05 | El matiz"
     titulo: "Una historia extraordinaria no convierte lo raro en frecuente."
     tipo: cierre
     texto:

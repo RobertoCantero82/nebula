@@ -4,17 +4,10 @@ import Seo from '../components/Seo.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const { pieza } = Astro.props;
-const { titulo, descripcion, categoria, fecha, cifraDestacada, etiquetaCifra, pantallas, fuentes } = pieza.data;
+const { titulo, descripcion, categoria, fecha, cifraDestacada, etiquetaCifra, fondoPortada, mostrarCifraInterior, pantallas, fuentes } = pieza.data;
 const nombreCategoria = categoria.charAt(0).toUpperCase() + categoria.slice(1);
 const fechaLarga = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(fecha);
 const fechaCarpeta = pieza.id.split('/')[0];
-const iconos: Record<string, string> = {
-  recorrido: '↓',
-  linea: '—',
-  lista: '·',
-  contraste: '≠',
-  cierre: '✓',
-};
 ---
 
 <!doctype html>
@@ -40,19 +33,17 @@ const iconos: Record<string, string> = {
 
     <main>
       <section class="pantalla pantalla-portada" id="portada" data-pantalla>
-        <div class="numero-fondo" aria-hidden="true">{cifraDestacada ?? 'HOY'}</div>
+        <div class="numero-fondo" aria-hidden="true">{fondoPortada ?? cifraDestacada ?? 'HOY'}</div>
         <div class="contenido portada-contenido">
-          <p class="ceja">{nombreCategoria} · Caso clínico recuperado</p>
+          <p class="ceja">{nombreCategoria}</p>
           <h1>{titulo}</h1>
           <p class="descripcion">{descripcion}</p>
-          {cifraDestacada && <div class="dato-portada"><strong>{cifraDestacada}</strong><span>{etiquetaCifra}</span></div>}
         </div>
         <a class="seguir" href="#pantalla-1">Desplegar la historia <span aria-hidden="true">↓</span></a>
       </section>
 
       {pantallas.map((pantalla, indice) => (
-        <section class:list={['pantalla', `pantalla-${pantalla.tipo}`]} id={`pantalla-${indice + 1}`} data-pantalla>
-          <div class="marca-pantalla" aria-hidden="true"><span>0{indice + 1}</span><b>{iconos[pantalla.tipo]}</b></div>
+        <section class:list={['pantalla', `pantalla-${pantalla.tipo}`, `pantalla-paso-${indice + 1}`]} id={`pantalla-${indice + 1}`} data-pantalla>
           <div class="contenido">
             <p class="ceja">{pantalla.etiqueta}</p>
             <h2>{pantalla.titulo}</h2>
@@ -72,6 +63,19 @@ const iconos: Record<string, string> = {
 
             {pantalla.tipo === 'lista' && pantalla.datos && (
               <div class="visual visual-lista">{pantalla.datos.map((dato) => <span>{dato}</span>)}</div>
+            )}
+
+            {pantalla.tipo === 'hospital' && pantalla.datos && (
+              <div class="visual visual-hospital" aria-label="Evolución de las pruebas médicas">
+                <div class="historia-clinica">
+                  <b>Primera visita</b>
+                  <span>{pantalla.datos[0]}</span><span>{pantalla.datos[1]}</span><span>{pantalla.datos[2]}</span><span>{pantalla.datos[3]}</span>
+                </div>
+                <div class="espera-clinica"><strong>{pantalla.datos[4]}</strong><i aria-hidden="true">→</i></div>
+                <div class="escaner-clinico">
+                  <b>TC</b><div aria-hidden="true"><i></i></div><strong>{pantalla.datos[5]}</strong><span>objeto localizado</span>
+                </div>
+              </div>
             )}
 
             {pantalla.tipo === 'contraste' && pantalla.datos && (
@@ -114,15 +118,16 @@ const iconos: Record<string, string> = {
   .barra-superior{align-items:center;background:rgb(243 240 232 / 94%);border-bottom:1px solid rgb(23 22 46 / 20%);display:grid;grid-template-columns:1fr auto 1fr;left:0;padding:.75rem clamp(1rem,3vw,2.5rem);position:fixed;right:0;top:0;z-index:20}
   .marca img{display:block;height:auto;width:112px}.barra-superior>div{align-items:center;display:flex;font:600 9px var(--font-mono);gap:.75rem;letter-spacing:.08em;text-transform:uppercase}.barra-superior>div span{color:#d85a30}.volver{font:600 9px var(--font-mono);justify-self:end;text-decoration:none;text-transform:uppercase}
   .progreso{display:flex;flex-direction:column;gap:.75rem;position:fixed;right:clamp(.7rem,2vw,1.5rem);top:50%;transform:translateY(-50%);z-index:18}.progreso a{align-items:center;background:#f3f0e8;border:1px solid rgb(23 22 46 / 24%);border-radius:50%;display:flex;height:30px;justify-content:center;text-decoration:none;width:30px}.progreso span{font:8px var(--font-mono)}.progreso a[aria-current]{background:#d85a30;border-color:#d85a30;color:#fff}
-  .pantalla{align-items:center;display:flex;min-height:100svh;overflow:hidden;padding:6.5rem clamp(2rem,8vw,8rem) 5rem;position:relative;scroll-snap-align:start}.pantalla:nth-child(even){background:#446ddf;color:#fff}.pantalla:nth-child(odd):not(.pantalla-portada){background:#d85a30;color:#fff}.contenido{margin:0 auto;max-width:1120px;width:100%}.ceja{font:600 10px var(--font-mono);letter-spacing:.12em;margin:0 0 1.5rem;text-transform:uppercase}.pantalla-portada .ceja{color:#d85a30}.pantalla:nth-child(odd):not(.pantalla-portada) .ceja{color:#fff}.pantalla h1{font-size:clamp(3rem,7.4vw,7.4rem);letter-spacing:-.055em;line-height:.88;margin:0;max-width:13ch}.pantalla h2{font-size:clamp(2.6rem,6vw,6.5rem);letter-spacing:-.05em;line-height:.9;margin:0;max-width:13ch}.descripcion{font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.55;margin:2rem 0 0;max-width:52ch}.numero-fondo{color:rgb(216 90 48 / 9%);font:700 clamp(12rem,34vw,34rem)/.7 var(--font-heading);letter-spacing:-.1em;position:absolute;right:-2vw;top:22%;white-space:nowrap}.portada-contenido{position:relative;z-index:1}.dato-portada{align-items:baseline;display:flex;gap:1rem;margin-top:2.5rem}.dato-portada strong{color:#446ddf;font:600 clamp(3rem,7vw,7rem)/.85 var(--font-heading);letter-spacing:-.05em}.dato-portada span{color:#d85a30;font:600 10px var(--font-mono);max-width:18ch;text-transform:uppercase}.seguir{bottom:1.5rem;font:600 9px var(--font-mono);letter-spacing:.08em;position:absolute;right:clamp(2rem,8vw,8rem);text-decoration:none;text-transform:uppercase}.pantalla:not(.pantalla-portada) .seguir{color:#fff}.pantalla-portada .seguir{color:#d85a30}.seguir span{margin-left:.5rem}
-  .marca-pantalla{align-items:center;display:flex;gap:1rem;left:clamp(1rem,3vw,2.5rem);position:absolute;top:6.5rem}.marca-pantalla span{font:600 10px var(--font-mono)}.marca-pantalla b{font-size:1.5rem;font-weight:400}
+  .pantalla{align-items:center;display:flex;min-height:100svh;overflow:hidden;padding:6.5rem clamp(2rem,8vw,8rem) 5rem;position:relative;scroll-snap-align:start}.pantalla-paso-1{background:#446ddf;color:#fff}.pantalla-paso-2,.pantalla-paso-4{background:#f3f0e8;color:#17162e}.pantalla-paso-3{background:#d85a30;color:#fff}.contenido{margin:0 auto;max-width:1120px;width:100%}.ceja{font:600 10px var(--font-mono);letter-spacing:.12em;margin:0 0 1.5rem;text-transform:uppercase}.pantalla-portada .ceja{color:#d85a30}.pantalla-paso-1 .ceja,.pantalla-paso-3 .ceja{color:#fff}.pantalla-paso-2 .ceja{color:#446ddf}.pantalla-paso-4 .ceja{color:#d85a30}.pantalla h1{font-size:clamp(3rem,7.4vw,7.4rem);letter-spacing:-.055em;line-height:.88;margin:0;max-width:13ch}.pantalla h2{font-size:clamp(2.6rem,6vw,6.5rem);letter-spacing:-.05em;line-height:.9;margin:0;max-width:13ch}.descripcion{font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.55;margin:2rem 0 0;max-width:52ch}.numero-fondo{color:rgb(216 90 48 / 9%);font:700 clamp(12rem,34vw,34rem)/.7 var(--font-heading);letter-spacing:-.1em;position:absolute;right:8vw;top:22%;white-space:nowrap}.portada-contenido{position:relative;z-index:1}.dato-portada{align-items:baseline;display:flex;gap:1rem;margin-top:2.5rem}.dato-portada strong{color:#446ddf;font:600 clamp(3rem,7vw,7rem)/.85 var(--font-heading);letter-spacing:-.05em}.dato-portada span{color:#d85a30;font:600 10px var(--font-mono);max-width:18ch;text-transform:uppercase}.seguir{bottom:1.5rem;font:600 9px var(--font-mono);letter-spacing:.08em;position:absolute;right:clamp(2rem,8vw,8rem);text-decoration:none;text-transform:uppercase}.pantalla-paso-1 .seguir,.pantalla-paso-3 .seguir,.pantalla-paso-5 .seguir{color:#fff}.pantalla-portada .seguir,.pantalla-paso-2 .seguir,.pantalla-paso-4 .seguir{color:#d85a30}.seguir span{margin-left:.5rem}
   .visual{margin:clamp(2rem,5vw,4rem) 0}.visual-recorrido{align-items:center;display:flex;gap:1rem}.visual-recorrido span{border:1px solid currentColor;border-radius:999px;font:600 clamp(.7rem,1.2vw,.9rem) var(--font-mono);padding:.85rem 1.2rem;text-transform:uppercase}.visual-recorrido i{font-style:normal;transform:rotate(-90deg)}.visual-recorrido b{font-size:3rem;margin-left:.25rem}
   .visual-linea{align-items:center;display:grid;gap:1rem;grid-template-columns:auto minmax(150px,1fr) auto;max-width:850px}.visual-linea>span{font:600 11px var(--font-mono)}.visual-linea>div{align-items:center;display:flex}.visual-linea i{background:currentColor;border-radius:50%;height:13px;width:13px}.visual-linea>div:before,.visual-linea>div:after{background:currentColor;content:"";height:1px;flex:1}.visual-linea strong{border:1px solid currentColor;border-radius:999px;font:600 clamp(1rem,2vw,1.5rem) var(--font-mono);padding:1rem 1.5rem;white-space:nowrap}
   .visual-lista{display:grid;gap:1px;grid-template-columns:repeat(3,minmax(0,1fr));max-width:900px}.visual-lista span{align-items:center;border:1px solid currentColor;display:flex;font:600 clamp(.75rem,1.4vw,1rem) var(--font-mono);justify-content:center;min-height:92px;padding:1rem;text-align:center;text-transform:uppercase}
+  .visual-hospital{align-items:stretch;display:grid;gap:clamp(1.5rem,4vw,4rem);grid-template-columns:1fr auto 1fr;max-width:1000px}.historia-clinica{border:2px solid currentColor;display:grid;grid-template-columns:1fr 1fr;padding:1.25rem;position:relative}.historia-clinica:before{background:currentColor;content:"";height:12px;left:25%;position:absolute;right:25%;top:-7px}.historia-clinica b{border-bottom:1px solid currentColor;font:600 10px var(--font-mono);grid-column:1/-1;letter-spacing:.1em;margin-bottom:.75rem;padding-bottom:.75rem;text-transform:uppercase}.historia-clinica span{font:600 clamp(.75rem,1.2vw,.95rem) var(--font-mono);padding:.55rem 0;text-transform:uppercase}.historia-clinica span:before{content:"○";margin-right:.5rem}.espera-clinica{align-items:center;display:flex;flex-direction:column;justify-content:center}.espera-clinica strong{font:600 clamp(1.4rem,3vw,2.6rem) var(--font-heading);max-width:5ch;text-align:center}.espera-clinica i{font-size:2rem;font-style:normal;margin-top:1rem}.escaner-clinico{align-items:center;border:2px solid currentColor;display:grid;gap:.5rem;grid-template-columns:auto 1fr;padding:1.25rem}.escaner-clinico>b{font:600 10px var(--font-mono);letter-spacing:.1em}.escaner-clinico>div{aspect-ratio:1;border:1px solid currentColor;border-radius:50%;grid-column:1/-1;justify-self:center;position:relative;width:min(160px,70%)}.escaner-clinico>div:before,.escaner-clinico>div:after{background:currentColor;content:"";left:50%;position:absolute;top:50%;transform:translate(-50%,-50%)}.escaner-clinico>div:before{height:1px;width:72%}.escaner-clinico>div:after{height:72%;width:1px}.escaner-clinico>div i{background:#446ddf;border:4px solid #f3f0e8;border-radius:48% 52% 45% 55%;height:34px;left:61%;position:absolute;top:55%;transform:translate(-50%,-50%) rotate(24deg);width:42px;z-index:1}.escaner-clinico strong{font:600 clamp(1.4rem,3vw,2.6rem) var(--font-heading)}.escaner-clinico span{font:600 9px var(--font-mono);text-transform:uppercase}
+  .pantalla-paso-3 h2{font-size:clamp(2.2rem,4.6vw,4.7rem);max-width:17ch}.pantalla-paso-3 .visual{margin:clamp(1.5rem,3vw,2.5rem) 0}
   .visual-contraste{align-items:center;display:grid;gap:2rem;grid-template-columns:1fr auto 1fr;margin:clamp(3rem,7vw,6rem) 0;max-width:1000px}.visual-contraste strong{font:600 clamp(2.3rem,6vw,6rem)/.9 var(--font-heading);letter-spacing:-.04em}.visual-contraste strong:last-child{text-align:right}.visual-contraste i{font:400 clamp(2rem,4vw,4rem) var(--font-heading)}
   .texto-ritmo{display:grid;gap:clamp(1.25rem,3vw,2.5rem);grid-template-columns:repeat(auto-fit,minmax(230px,1fr));max-width:1050px}.texto-ritmo p{border-top:1px solid currentColor;font-size:clamp(1rem,1.7vw,1.3rem);line-height:1.5;margin:0;padding-top:1rem}.fuentes{border-top:4px solid currentColor;margin-top:clamp(2rem,5vw,4rem);max-width:950px;padding-top:1.25rem}.fuentes>p{font:600 9px var(--font-mono);letter-spacing:.1em}.fuentes a{align-items:center;border-top:1px solid rgb(255 255 255 / 40%);display:grid;gap:.3rem;grid-template-columns:1fr auto;padding:1rem 0;text-decoration:none}.fuentes a strong{font-size:1.1rem}.fuentes a span{font-size:.85rem;grid-column:1}.fuentes a i{font-style:normal;grid-column:2;grid-row:1/3}.pantalla-cierre{background:linear-gradient(135deg,#446ddf 0 58%,#d85a30 58% 100%)!important;color:#fff!important}.pantalla-cierre .ceja{color:#fff!important}.pantalla-cierre .seguir{color:#fff!important}
   @media(max-width:720px){
-    .barra-superior{grid-template-columns:1fr auto}.barra-superior>div{display:none}.volver{font-size:8px}.progreso{display:none}.pantalla{min-height:100svh;padding:6.5rem 1.5rem 4.5rem}.pantalla h1{font-size:clamp(2.8rem,14vw,4.7rem)}.pantalla h2{font-size:clamp(2.5rem,12vw,4rem)}.marca-pantalla{display:none}.seguir{right:1.5rem}.visual-recorrido{align-items:flex-start;flex-direction:column}.visual-recorrido i{margin-left:2rem;transform:none}.visual-lista{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-linea{grid-template-columns:1fr}.visual-linea>div{order:2}.visual-linea>span:last-child{order:3;text-align:right}.visual-contraste{grid-template-columns:1fr}.visual-contraste strong:last-child{text-align:left}.visual-contraste i{transform:rotate(90deg)}.texto-ritmo{grid-template-columns:1fr}.numero-fondo{font-size:52vw;top:32%}
+    .barra-superior{grid-template-columns:1fr auto}.barra-superior>div{display:none}.volver{font-size:8px}.progreso{display:none}.pantalla{min-height:100svh;padding:6.5rem 1.5rem 4.5rem}.pantalla h1{font-size:clamp(2.8rem,14vw,4.7rem)}.pantalla h2{font-size:clamp(2.5rem,12vw,4rem)}.seguir{right:1.5rem}.visual-recorrido{align-items:flex-start;flex-direction:column}.visual-recorrido i{margin-left:2rem;transform:none}.visual-lista{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-hospital{grid-template-columns:1fr}.espera-clinica{flex-direction:row;gap:1rem}.espera-clinica strong{max-width:none}.espera-clinica i{margin:0;transform:rotate(90deg)}.visual-linea{grid-template-columns:1fr}.visual-linea>div{order:2}.visual-linea>span:last-child{order:3;text-align:right}.visual-contraste{grid-template-columns:1fr}.visual-contraste strong:last-child{text-align:left}.visual-contraste i{transform:rotate(90deg)}.texto-ritmo{grid-template-columns:1fr}.numero-fondo{font-size:52vw;right:1rem;top:32%}
   }
   @media(prefers-reduced-motion:reduce){:global(html){scroll-behavior:auto;scroll-snap-type:none}}
 </style>

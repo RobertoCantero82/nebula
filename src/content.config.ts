@@ -11,6 +11,8 @@ const articulos = defineCollection({
     serie: z.enum(['trama']).optional(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
+    fondoPortada: z.string().optional(),
+    mostrarCifraInterior: z.boolean().optional(),
     textoContinuo: z.string().min(1),
     metodologia: z.string().optional(),
     imagenPortada: z.string().optional(),
@@ -35,7 +37,7 @@ const actualidad = defineCollection({
       etiqueta: z.string(),
       titulo: z.string(),
       texto: z.array(z.string()).min(1),
-      tipo: z.enum(['recorrido', 'linea', 'lista', 'contraste', 'cierre']),
+      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre']),
       datos: z.array(z.string()).optional(),
     })).length(5),
     fuentes: z.array(z.object({
