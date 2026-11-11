@@ -31,6 +31,18 @@ const actualidad = defineCollection({
     hora: z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/).optional(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
+    pantallas: z.array(z.object({
+      etiqueta: z.string(),
+      titulo: z.string(),
+      texto: z.array(z.string()).min(1),
+      tipo: z.enum(['recorrido', 'linea', 'lista', 'contraste', 'cierre']),
+      datos: z.array(z.string()).optional(),
+    })).length(5),
+    fuentes: z.array(z.object({
+      nombre: z.string(),
+      url: z.string().url(),
+      detalle: z.string().optional(),
+    })).min(1),
   }),
 });
 

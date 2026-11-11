@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import Actualidad from '../../layouts/Actualidad.astro';
+
+export async function getStaticPaths() {
+  const piezas = await getCollection('actualidad');
+
+  return piezas.map((pieza) => ({
+    params: { slug: pieza.id },
+    props: { pieza },
+  }));
+}
+
+const { pieza } = Astro.props;
+---
+
+<Actualidad pieza={pieza} />
