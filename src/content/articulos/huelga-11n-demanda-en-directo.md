@@ -58,7 +58,7 @@ También intervienen otras organizaciones, entre ellas CGT, CNT y sindicatos de 
   <p id="h11-error" class="h11-error" hidden></p>
 </section>
 
-La [curva de Red Eléctrica](https://www.ree.es/es/operacion/sistema-electrico/demanda-y-produccion-en-tiempo-real) se actualiza cada cinco minutos. La línea gris representa lo que el operador esperaba para una jornada normal. La azul enseña lo que está ocurriendo. La distancia entre ambas es la pista que seguimos durante todo el día.
+**La [curva de Red Eléctrica](https://www.ree.es/es/operacion/sistema-electrico/demanda-y-produccion-en-tiempo-real) se actualiza cada cinco minutos**. La línea gris representa lo que el operador esperaba para una jornada normal. La azul enseña lo que está ocurriendo. La distancia entre ambas es la pista que seguimos durante todo el día.
 
 ## La luz no cuenta huelguistas
 
