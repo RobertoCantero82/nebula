@@ -38,7 +38,7 @@ const actualidad = defineCollection({
       etiqueta: z.string(),
       titulo: z.string(),
       texto: z.array(z.string()).min(1),
-      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre', 'secuencia-iconos', 'imagen-cine', 'interactivo-cine', 'grafico-tiempo']),
+      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre', 'secuencia-iconos', 'secuencia-xpeng', 'secuencia-hueso', 'secuencia-gameboy', 'imagen-cine', 'interactivo-cine', 'interactivo-xpeng', 'interactivo-datos', 'grafico-tiempo', 'grafico-alcance', 'grafico-comparacion']),
       datos: z.array(z.string()).optional(),
       respuestas: z.array(z.string()).optional(),
       imagen: z.string().optional(),

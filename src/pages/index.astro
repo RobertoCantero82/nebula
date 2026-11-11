@@ -49,10 +49,7 @@ const seccionesActualidad = [
   </section>
   <section class="actualidad-portada contenedor" aria-labelledby="titulo-actualidad">
     <header class="actualidad-cabecera">
-      <div>
-        <p>NEBULA · ACTUALIDAD</p>
-        <h1 id="titulo-actualidad">Cuatro historias para entender el día</h1>
-      </div>
+      <h1 id="titulo-actualidad">Actualidad</h1>
       <time datetime={fechaHoy}>{new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(ahora)}</time>
     </header>
     <div class="actualidad-cuadricula">
@@ -75,21 +72,6 @@ const seccionesActualidad = [
     <div class="grid-articulos">{destacados.map((articulo) => <a class="tarjeta-articulo" href={`/nebula/articulos/${articulo.id}/`}><div class="tarjeta-imagen">{articulo.data.imagenPortada&&<img src={articulo.data.imagenPortada} alt=""/>}{articulo.id === 'huelga-11n-demanda-en-directo'&&<span class="sticker-directo" aria-label="Artículo con datos en directo"><i aria-hidden="true"></i>EN DIRECTO</span>}</div><article><div class="tarjeta-meta"><span>{articulo.data.tema}</span><time datetime={articulo.data.fecha.toISOString()}>{formatearFecha(articulo.data.fecha)}</time></div><h3>{articulo.data.titulo}</h3>{articulo.data.cifraDestacada&&<div class="tarjeta-dato"><strong>{articulo.data.cifraDestacada}</strong><span>{articulo.data.etiquetaCifra}</span></div>}</article></a>)}</div>
   </section>
   {ultimaTrama&&<section class="trama-portada contenedor" aria-labelledby="titulo-trama"><div class="trama-presentacion"><h2 id="titulo-trama">Trama</h2><span>En Trama utilizo datos, créditos y detalles de la pantalla para buscar el punto exacto en el que dos películas aparentemente alejadas terminan tocándose.</span><a href="/nebula/trama/">Ver todas las entregas <span aria-hidden="true">→</span></a></div><a class="trama-ultima" href={`/nebula/articulos/${ultimaTrama.id}/`}><div>{ultimaTrama.data.imagenPortada&&<img src={ultimaTrama.data.imagenPortada} alt="" loading="lazy"/>}</div><article><p>ÚLTIMA ENTREGA</p><h3>{ultimaTrama.data.titulo}</h3><span>{ultimaTrama.data.descripcion}</span><b>Descubrir la conexión <span aria-hidden="true">→</span></b></article></a></section>}
-  <section class="mvp-portada contenedor" aria-labelledby="titulo-mvp" data-mvp>
-    <div class="mvp-modulo">
-      <header class="mvp-barra">
-        <h2 id="titulo-mvp" class="mvp-marca"><strong>AGENTE MVP</strong><small>(la jornada NBA contada con sus datos más curiosos)</small></h2>
-      </header>
-      <div class="mvp-cancha">
-        <div class="mvp-banderines">
-          <article class="mvp-banderin mvp-banderin-jornada"><span>JORNADA</span><strong data-mvp-jornada>ÚLTIMA MADRUGADA</strong><div class="mvp-total"><b data-mvp-partidos>0</b><small>PARTIDOS</small></div></article>
-          <article class="mvp-banderin mvp-banderin-curiosidad"><span>PARTIDO RECOMENDADO</span><p data-mvp-recomendacion>Buscando el partido de la jornada.</p><small data-mvp-motivo>Una historia que merece descubrirse.</small></article>
-        </div>
-        <aside class="mvp-reto"><p>EL RETO DE LA JORNADA</p><h3 data-mvp-pregunta>Cargando la pregunta de la noche</h3><div data-mvp-opciones class="mvp-opciones"></div><div data-mvp-respuesta class="mvp-respuesta" aria-live="polite"></div><a class="mvp-cta" href="https://robertocantero-mvp-nba.static.hf.space/index.html" target="_blank" rel="noopener noreferrer"><span>¿QUIERES MÁS NBA?</span><strong>VISITA AGENTE MVP <i aria-hidden="true">→</i></strong></a></aside>
-      </div>
-      <p class="mvp-error" data-mvp-error hidden>No he podido actualizar la jornada. Puedes consultarla directamente en M.V.P.</p>
-    </div>
-  </section>
   <TrabajaConmigoBanner/>
 </main>
 <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
@@ -101,9 +83,8 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
 <style>
 .actualidad-portada{padding-bottom:clamp(4rem,8vw,6.5rem);padding-top:clamp(3.5rem,7vw,5.5rem)}
 .actualidad-cabecera{align-items:end;border-bottom:4px solid #1b1836;display:flex;gap:2rem;justify-content:space-between;padding-bottom:1.25rem}
-.actualidad-cabecera p{color:#446ddf;font:600 10px var(--font-mono);letter-spacing:.1em;margin:0 0 .65rem}
-.actualidad-cabecera h1{font-size:clamp(2rem,4.5vw,4.2rem);line-height:.98;margin:0;max-width:760px}
-.actualidad-cabecera>time{font:600 10px var(--font-mono);letter-spacing:.05em;text-align:right;text-transform:uppercase}
+.actualidad-cabecera h1{color:#d85a30;font:600 clamp(1.35rem,2.5vw,2.1rem) var(--font-heading);letter-spacing:-.02em;line-height:1;margin:0;text-transform:uppercase}
+.actualidad-cabecera>time{color:#446ddf;font:600 10px var(--font-mono);letter-spacing:.05em;text-align:right;text-transform:uppercase}
 .actualidad-cuadricula{border-bottom:1px solid #1b1836;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
 .actualidad-casilla{border-right:1px solid #1b1836;color:#1b1836;display:flex;flex-direction:column;min-height:390px;padding:clamp(1.25rem,3vw,2.25rem);position:relative;text-decoration:none}
 .actualidad-casilla:nth-child(even){border-right:0}
@@ -135,6 +116,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
 .trama-portada{display:grid;gap:clamp(2rem,6vw,5rem);grid-template-columns:.65fr 1.35fr;padding-bottom:clamp(4rem,9vw,7rem);padding-top:clamp(4rem,9vw,7rem)}.trama-presentacion{align-self:center}.trama-presentacion h2{font-size:clamp(2.2rem,4vw,3.7rem);line-height:1.02;margin:.8rem 0 1.25rem}.trama-presentacion>span{color:var(--color-secondary-text);display:block;line-height:1.65}.trama-presentacion>a{display:inline-block;font:600 11px var(--font-mono);margin-top:1.5rem}.trama-ultima{display:grid;grid-template-columns:1.1fr .9fr;text-decoration:none}.trama-ultima>div{background:#eeeae1;min-height:360px}.trama-ultima img{height:100%;object-fit:cover;width:100%}.trama-ultima article{background:#fff;border:1px solid var(--color-border);display:flex;flex-direction:column;justify-content:center;padding:2rem}.trama-ultima h3{font-size:clamp(1.6rem,2.7vw,2.3rem);line-height:1.1;margin:.8rem 0 1rem}@media(max-width:900px){.mvp-cancha{grid-template-columns:120px 1fr}.mvp-banderin{min-height:150px}.mvp-banderin:after{border-left-width:60px;border-right-width:60px}.mvp-reto{grid-column:1/-1}}@media(max-width:760px){.trama-portada{grid-template-columns:1fr}.trama-ultima{grid-template-columns:1fr}.trama-ultima>div{min-height:260px}}@media(max-width:560px){.mvp-marca small{display:none}.mvp-cancha{grid-template-columns:1fr;padding-bottom:1.25rem}.mvp-banderin{justify-self:center;width:120px}.mvp-banderin:after{border-left-width:60px;border-right-width:60px}.mvp-presentacion{text-align:center}.mvp-reto{grid-column:auto}.mvp-opciones{grid-template-columns:1fr}}
 </style>
 <style>
+  .ultimos .indice-seccion, .trama-presentacion h2 { color: #446ddf; }
   .trama-portada { border-top: 1px solid var(--color-border); }
   .mvp-portada { border-top: 1px solid var(--color-border); margin-bottom: clamp(3rem, 7vw, 5rem); padding-top: clamp(4rem, 9vw, 7rem); }
   .mvp-barra { justify-content: flex-start; min-height: 58px; }

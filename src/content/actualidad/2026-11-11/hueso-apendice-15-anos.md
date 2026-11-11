@@ -7,50 +7,43 @@ cifraDestacada: "15 años"
 etiquetaCifra: "dentro del apéndice"
 fondoPortada: "?"
 mostrarCifraInterior: false
+formato: visual
 pantallas:
   - etiqueta: "01 | El viaje"
     titulo: "Casi todo lo que tragamos continúa su camino. Este hueso tomó un desvío."
-    tipo: recorrido
-    datos:
-      - "Boca"
-      - "Estómago"
-      - "Intestino"
-      - "Apéndice"
+    tipo: secuencia-hueso
+    datos: ["Boca", "Estómago", "Intestino", "Apéndice"]
     texto:
       - "La mayoría de los objetos capaces de llegar al estómago atraviesa después el aparato digestivo y sale del cuerpo sin provocar consecuencias."
       - "Este fragmento encontró la entrada del apéndice, quedó atrapado en su interior y ya no pudo regresar al intestino."
-  - etiqueta: "02 | El tiempo"
-    titulo: "La explicación estaba escondida en una comida que apenas recordaba."
-    tipo: linea
-    datos:
-      - "La comida"
-      - "15 años"
-      - "La operación"
+  - etiqueta: "02 | La imagen"
+    titulo: "La respuesta apareció en cuatro imágenes del abdomen."
+    tipo: imagen-cine
+    imagen: "/nebula/imagenes/actualidad/hueso-apendice-pruebas-clinicas.png"
+    altImagen: "Radiografía, tomografía, vista laparoscópica del apéndice dilatado y hueso rodeado por un fecaloma calcificado"
+    pieImagen: "Dolor abdominal. A: la radiografía del abdomen inferior muestra una formación redondeada y radiopaca en la fosa ilíaca derecha. B: la tomografía muestra un defecto de llenado redondeado en la misma zona. C: vista laparoscópica del apéndice dilatado por la presencia de un cuerpo extraño. D: el hueso de tuétano dentro de un fecaloma calcificado."
     texto:
-      - "El paciente recordó que, unos 15 años antes, había tragado accidentalmente un hueso mientras comía un plato de arroz con azafrán y tuétano."
-      - "No existe una grabación de aquel recorrido: los 15 años proceden del recuerdo que el propio paciente comunicó a los médicos."
+      - "La radiografía y la tomografía situaron una forma redonda dentro de un apéndice dilatado. Medía aproximadamente 2,5 por 3 centímetros."
+      - "Durante la laparoscopia, los cirujanos encontraron el hueso rodeado por una masa fecal calcificada."
   - etiqueta: "03 | La pista"
-    titulo: "Las primeras pruebas no encontraron nada. Ocho meses después, apareció la pista."
-    tipo: hospital
-    datos:
-      - "Dolor leve"
-      - "Sin fiebre"
-      - "Analítica normal"
-      - "Ecografía normal"
-      - "8 meses"
-      - "2,5 × 3 cm"
+    titulo: "Las señales habituales no estaban allí. Toca cada prueba para reconstruir la primera visita."
+    tipo: interactivo-datos
+    datos: ["Dolor", "Fiebre", "Analítica", "Ecografía"]
+    respuestas:
+      - "La molestia era leve y estaba en la parte inferior derecha del abdomen."
+      - "El paciente no tenía fiebre."
+      - "La analítica no mostró alteraciones."
+      - "La primera ecografía no encontró inflamación ni explicó el dolor."
     texto:
-      - "El hombre, de 45 años, acudió con una molestia en la parte inferior derecha del abdomen. Los síntomas recordaban a una apendicitis, pero las pruebas no mostraron inflamación."
-      - "Ocho meses después, una radiografía y una tomografía revelaron una forma redonda dentro de un apéndice dilatado. Medía aproximadamente 2,5 por 3 centímetros."
+      - "El hombre, de 45 años, acudió al hospital con síntomas que podían recordar a una apendicitis, pero las primeras pruebas no permitieron localizar el problema."
+      - "Ocho meses después, las nuevas imágenes hicieron visible el cuerpo extraño."
   - etiqueta: "04 | La paradoja"
-    titulo: "Había un hueso en el apéndice, pero no una apendicitis."
-    tipo: contraste
-    datos:
-      - "Hueso dentro"
-      - "Inflamación"
+    titulo: "La historia contiene dos esperas: una recordada y otra documentada."
+    tipo: grafico-comparacion
+    datos: ["≈180 meses", "8 meses", "Recuerdo del paciente", "Entre las dos visitas"]
     texto:
-      - "Los cirujanos retiraron el apéndice mediante laparoscopia y encontraron el hueso rodeado por una masa fecal calcificada."
-      - "El tejido solo presentaba un ligero engrosamiento muscular causado por la presión mantenida. El examen microscópico no encontró signos de inflamación."
+      - "El paciente recordó que había tragado accidentalmente un hueso unos 15 años antes, mientras comía arroz con azafrán y tuétano. Esa fecha procede de su memoria, no de un seguimiento médico continuo."
+      - "Los ocho meses, en cambio, separan la primera consulta de las pruebas que revelaron el objeto. El tejido no mostraba signos de inflamación."
   - etiqueta: "05 | El matiz"
     titulo: "Una historia extraordinaria no convierte lo raro en frecuente."
     tipo: cierre
