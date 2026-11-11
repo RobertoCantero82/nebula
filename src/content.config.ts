@@ -11,8 +11,6 @@ const articulos = defineCollection({
     serie: z.enum(['trama']).optional(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
-    fondoPortada: z.string().optional(),
-    mostrarCifraInterior: z.boolean().optional(),
     textoContinuo: z.string().min(1),
     metodologia: z.string().optional(),
     imagenPortada: z.string().optional(),
@@ -33,6 +31,8 @@ const actualidad = defineCollection({
     hora: z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/).optional(),
     cifraDestacada: z.string().optional(),
     etiquetaCifra: z.string().optional(),
+    fondoPortada: z.string().optional(),
+    mostrarCifraInterior: z.boolean().optional(),
     pantallas: z.array(z.object({
       etiqueta: z.string(),
       titulo: z.string(),

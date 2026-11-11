@@ -5,7 +5,8 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const { pieza } = Astro.props;
 const { titulo, descripcion, categoria, fecha, cifraDestacada, etiquetaCifra, fondoPortada, mostrarCifraInterior, pantallas, fuentes } = pieza.data;
-const nombreCategoria = categoria.charAt(0).toUpperCase() + categoria.slice(1);
+const nombresCategoria = { tecnologia: 'Tecnología', ciencia: 'Ciencia', cine: 'Cine', cultura: 'Cultura' };
+const nombreCategoria = nombresCategoria[categoria];
 const fechaLarga = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(fecha);
 const fechaCarpeta = pieza.id.split('/')[0];
 ---
