@@ -68,10 +68,10 @@ const seccionesActualidad = [
     </div>
   </section>
   <section class="ultimos contenedor" aria-labelledby="titulo-ultimos">
-    <div class="cabecera-seccion"><div><p class="indice-seccion">ÚLTIMOS ANÁLISIS</p><h1 id="titulo-ultimos" class="sr-only">Últimos análisis</h1></div><a href="/nebula/articulos/">Ver todos los análisis <span aria-hidden="true">→</span></a></div>
+    <div class="cabecera-seccion cabecera-portada"><h1 id="titulo-ultimos">Últimos análisis</h1><a href="/nebula/articulos/">Ver todos los análisis <span aria-hidden="true">→</span></a></div>
     <div class="grid-articulos">{destacados.map((articulo) => <a class="tarjeta-articulo" href={`/nebula/articulos/${articulo.id}/`}><div class="tarjeta-imagen">{articulo.data.imagenPortada&&<img src={articulo.data.imagenPortada} alt=""/>}{articulo.id === 'huelga-11n-demanda-en-directo'&&<span class="sticker-directo" aria-label="Artículo con datos en directo"><i aria-hidden="true"></i>EN DIRECTO</span>}</div><article><div class="tarjeta-meta"><span>{articulo.data.tema}</span><time datetime={articulo.data.fecha.toISOString()}>{formatearFecha(articulo.data.fecha)}</time></div><h3>{articulo.data.titulo}</h3>{articulo.data.cifraDestacada&&<div class="tarjeta-dato"><strong>{articulo.data.cifraDestacada}</strong><span>{articulo.data.etiquetaCifra}</span></div>}</article></a>)}</div>
   </section>
-  {ultimaTrama&&<section class="trama-portada contenedor" aria-labelledby="titulo-trama"><div class="trama-presentacion"><h2 id="titulo-trama">Trama</h2><span>En Trama utilizo datos, créditos y detalles de la pantalla para buscar el punto exacto en el que dos películas aparentemente alejadas terminan tocándose.</span><a href="/nebula/trama/">Ver todas las entregas <span aria-hidden="true">→</span></a></div><a class="trama-ultima" href={`/nebula/articulos/${ultimaTrama.id}/`}><div>{ultimaTrama.data.imagenPortada&&<img src={ultimaTrama.data.imagenPortada} alt="" loading="lazy"/>}</div><article><p>ÚLTIMA ENTREGA</p><h3>{ultimaTrama.data.titulo}</h3><span>{ultimaTrama.data.descripcion}</span><b>Descubrir la conexión <span aria-hidden="true">→</span></b></article></a></section>}
+  {ultimaTrama&&<section class="trama-portada contenedor" aria-labelledby="titulo-trama"><div class="cabecera-portada trama-cabecera"><h2 id="titulo-trama">Trama</h2><a href="/nebula/trama/">Ver todos los artículos <span aria-hidden="true">→</span></a></div><div class="trama-contenido"><div class="trama-presentacion"><span>En Trama utilizo datos, créditos y detalles de la pantalla para buscar el punto exacto en el que dos películas aparentemente alejadas terminan tocándose.</span></div><a class="trama-ultima" href={`/nebula/articulos/${ultimaTrama.id}/`}><div>{ultimaTrama.data.imagenPortada&&<img src={ultimaTrama.data.imagenPortada} alt="" loading="lazy"/>}</div><article><p>ÚLTIMA ENTREGA</p><h3>{ultimaTrama.data.titulo}</h3><span>{ultimaTrama.data.descripcion}</span><b>Descubrir la conexión <span aria-hidden="true">→</span></b></article></a></div></section>}
   <TrabajaConmigoBanner/>
 </main>
 <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
@@ -254,6 +254,48 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
     .continuo-tema { font-size: 9px; }
     .continuo-etiqueta { font-size: 13px; }
     .continuo-titulo { font-size: 14px; max-width: 34ch; }
+  }
+  .actualidad-cabecera h1,
+  .actualidad-cabecera > time,
+  .cabecera-portada h1,
+  .cabecera-portada h2 {
+    font-size: clamp(1.35rem, 2.5vw, 2.1rem);
+    line-height: 1;
+  }
+  .actualidad-cabecera > time { font-family: var(--font-mono); }
+  .cabecera-portada {
+    align-items: flex-end;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-bottom: 1.25rem;
+  }
+  .cabecera-portada h1,
+  .cabecera-portada h2 {
+    color: #d85a30;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    letter-spacing: -.02em;
+    margin: 0;
+  }
+  .cabecera-portada > a {
+    color: #446ddf;
+    font: 600 11px var(--font-mono);
+    text-decoration: none;
+  }
+  .trama-portada { display: block; }
+  .trama-contenido {
+    display: grid;
+    gap: clamp(2rem, 6vw, 5rem);
+    grid-template-columns: .65fr 1.35fr;
+    padding-top: clamp(2rem, 5vw, 4rem);
+  }
+  .trama-presentacion { align-self: center; }
+  @media (max-width: 760px) {
+    .actualidad-cabecera, .cabecera-portada { align-items: flex-start; flex-direction: column; gap: .8rem; }
+    .actualidad-cabecera > time { text-align: left; }
+    .trama-contenido { grid-template-columns: 1fr; }
   }
   @media (prefers-reduced-motion: reduce) {
     .continuo-ventana { overflow-x: auto; }
