@@ -21,4 +21,17 @@ const articulos = defineCollection({
   }),
 });
 
-export const collections = { articulos };
+const actualidad = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/actualidad' }),
+  schema: z.object({
+    titulo: z.string(),
+    descripcion: z.string(),
+    categoria: z.enum(['tecnologia', 'ciencia', 'cine', 'cultura']),
+    fecha: z.date(),
+    hora: z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/).optional(),
+    cifraDestacada: z.string().optional(),
+    etiquetaCifra: z.string().optional(),
+  }),
+});
+
+export const collections = { articulos, actualidad };
