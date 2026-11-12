@@ -1,5 +1,5 @@
 ---
-titulo: "Un climatizador solar recupera el truco del botijo para combatir los 48 grados del Sahel"
+titulo: "El aire acondicionado del futuro se parece mucho a algo que ya usaban nuestros abuelos"
 descripcion: "El prototipo de Didier Dinamou combina terracota, agua, una bomba y un ventilador. Su creador afirma que puede dejar una habitación en 25 °C."
 categoria: extra
 fecha: 2026-11-12

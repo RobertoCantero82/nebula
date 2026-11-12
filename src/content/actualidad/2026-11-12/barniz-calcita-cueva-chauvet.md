@@ -1,5 +1,5 @@
 ---
-titulo: "La cueva guardó sus dibujos durante 37.000 años bajo un barniz que nadie podía ver"
+titulo: "Estas pinturas llevan 37.000 años esperando a que encendiéramos la luz adecuada"
 descripcion: "La luz ultravioleta ha revelado una fina capa de calcita sobre parte del arte de Chauvet y nuevas pistas sobre cómo dibujaban sus autores."
 categoria: ciencia
 fecha: 2026-11-12

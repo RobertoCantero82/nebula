@@ -1,5 +1,5 @@
 ---
-titulo: "IBM quiere unir dos cerebros cuánticos para superar los 1.000 cúbits en 2027"
+titulo: "El próximo ordenador cuántico de IBM no quiere crecer solo"
 descripcion: "Nighthawk r3 tendrá 520 cúbits y está diseñado para ejecutar 10.000 operaciones cuánticas. El salto importante será conectarlo con un segundo procesador."
 categoria: tecnologia
 fecha: 2026-11-12

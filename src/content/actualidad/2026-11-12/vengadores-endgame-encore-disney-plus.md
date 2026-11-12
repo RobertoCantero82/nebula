@@ -1,5 +1,5 @@
 ---
-titulo: "Marvel convierte el final de 'Endgame' en la primera puerta de 'Doomsday'"
+titulo: "Marvel ha vuelto al final de 'Endgame' siete años después"
 descripcion: "La edición Encore llega a Disney+ el 13 de noviembre con un adelanto de la próxima película de los Vengadores. No es un nuevo montaje completo."
 categoria: cine
 fecha: 2026-11-12
