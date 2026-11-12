@@ -56,7 +56,6 @@ const seccionesActualidad = [
       {seccionesActualidad.map(({ clave, nombre, numero, pieza }) => pieza ? (
         <a class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/nebula/actualidad/${pieza.id}/`}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span>{pieza.data.hora && <time>{pieza.data.hora}</time>}</div>
-          {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
           <h2>{pieza.data.titulo}</h2>
         </a>
       ) : (
@@ -92,7 +91,6 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
 .actualidad-casilla:last-child{border-right:0}
 .actualidad-meta{align-items:center;display:flex;font:600 10px var(--font-mono);justify-content:space-between;letter-spacing:.08em;text-transform:uppercase}
 .actualidad-meta i{background:#446ddf;border-radius:50%;height:8px;width:8px}
-.actualidad-casilla>strong{color:#446ddf;font:600 clamp(1.45rem,2.6vw,2.2rem)/1 var(--font-heading);letter-spacing:-.04em;margin:auto 0 1rem;white-space:nowrap}
 .actualidad-casilla h2{font-size:clamp(1rem,1.45vw,1.2rem);line-height:1.18;margin:0;max-width:23ch}
 .actualidad-casilla>p{color:var(--color-secondary-text);line-height:1.5;margin:0;max-width:52ch}
 .actualidad-casilla>b{font:600 10px var(--font-mono);margin-top:1.5rem;text-transform:uppercase}
@@ -101,8 +99,8 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
 .actualidad-espera p{color:var(--color-secondary-text);font-size:13px;margin:1rem 0 0;max-width:28ch}
 .actualidad-casilla.esta-vacia{background-image:radial-gradient(circle at 1px 1px,rgb(68 109 223/13%) 1px,transparent 0);background-size:18px 18px}
 .actualidad-casilla.tiene-pieza{background:#fff;transition:background-color .2s ease,color .2s ease}
+.actualidad-casilla.tiene-pieza h2{align-self:center;margin:auto 0;max-width:22ch;text-align:center}
 .actualidad-casilla.tiene-pieza:hover,.actualidad-casilla.tiene-pieza:focus-visible{background:#446ddf;color:#fff}
-.actualidad-casilla.tiene-pieza:hover>strong,.actualidad-casilla.tiene-pieza:focus-visible>strong{color:#fff}
 .actualidad-casilla.tiene-pieza:hover>p,.actualidad-casilla.tiene-pieza:focus-visible>p{color:rgb(255 255 255/82%)}
 @media(max-width:700px){
   .actualidad-cabecera{align-items:start;flex-direction:column;gap:1rem}
