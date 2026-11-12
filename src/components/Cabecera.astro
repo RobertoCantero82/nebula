@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 
 const { activa = '' } = Astro.props;
 const enlaces = [
+  { nombre: 'Actualidad', ruta: '/nebula/actualidad/', clave: 'actualidad' },
   { nombre: 'Análisis', ruta: '/nebula/articulos/', clave: 'analisis' },
   { nombre: 'Trama', ruta: '/nebula/trama/', clave: 'trama' },
   { nombre: 'Laboratorio', ruta: '/nebula/laboratorio/', clave: 'laboratorio' },
@@ -20,7 +21,9 @@ const limpiarTexto = (texto = '') => texto
   .trim();
 
 const articulos = await getCollection('articulos');
-const indiceBusqueda = articulos
+const actualidad = await getCollection('actualidad');
+const indiceBusqueda = [
+  ...articulos
   .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime())
   .map((articulo) => ({
     titulo: articulo.data.titulo,
@@ -28,7 +31,17 @@ const indiceBusqueda = articulos
     tema: articulo.data.serie === 'trama' ? 'CINE | TRAMA' : articulo.data.tema,
     ruta: `/nebula/articulos/${articulo.id}/`,
     texto: limpiarTexto(articulo.body),
-  }));
+  })),
+  ...actualidad
+    .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime())
+    .map((pieza) => ({
+      titulo: pieza.data.titulo,
+      descripcion: pieza.data.descripcion,
+      tema: `ACTUALIDAD | ${pieza.data.categoria.toUpperCase()}`,
+      ruta: `/nebula/actualidad/${pieza.id}/`,
+      texto: limpiarTexto(pieza.body),
+    })),
+];
 
 const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
 ---

@@ -1,6 +1,6 @@
 ---
 imagenPortada: "/nebula/imagenes/conexiones_imposibles_02.png"
-titulo: "'Big' y 'Men in Black' están conectadas: a través de los datos o hay algo más?"
+titulo: "'Big' y 'Men in Black' están conectadas: ¿a través de los datos o hay algo más?"
 descripcion: "15.741 espectadores, un director, dos hermanos y una canción que llevaba nueve años esperando."
 tema: "CINE"
 serie: "trama"

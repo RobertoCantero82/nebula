@@ -1,0 +1,71 @@
+---
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+import Seo from '../../components/Seo.astro';
+import Cabecera from '../../components/Cabecera.astro';
+import CloudflareAnalytics from '../../components/CloudflareAnalytics.astro';
+
+const ahora = new Date();
+const piezas = (await getCollection('actualidad'))
+  .filter((pieza) => pieza.data.fecha <= ahora)
+  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+const grupos = Object.entries(Object.groupBy(piezas, (pieza) => pieza.data.fecha.toISOString().slice(0, 10)));
+const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
+  timeZone: 'Europe/Madrid',
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+}).format(valor);
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
+    <Seo titulo="Archivo de actualidad | Nebula" descripcion="Las noticias breves de ciencia, tecnología, cine y cultura publicadas en Nebula." />
+  </head>
+  <body>
+    <Cabecera activa="actualidad" />
+    <main class="contenedor archivo-actualidad">
+      <header>
+        <p>ARCHIVO</p>
+        <h1>Actualidad</h1>
+        <span>{piezas.length} noticias breves publicadas en Nebula.</span>
+      </header>
+      {grupos.map(([, publicaciones]) => publicaciones && publicaciones.length > 0 && (
+        <section class="dia-actualidad" aria-labelledby={`dia-${publicaciones[0].data.fecha.toISOString().slice(0, 10)}`}>
+          <h2 id={`dia-${publicaciones[0].data.fecha.toISOString().slice(0, 10)}`}>{fecha(publicaciones[0].data.fecha)}</h2>
+          <div>
+            {publicaciones.map((pieza) => (
+              <a href={`/nebula/actualidad/${pieza.id}/`}>
+                <span>{pieza.data.categoria}</span>
+                {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
+                <h3>{pieza.data.titulo}</h3>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </main>
+    <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/nebula/privacidad/">Privacidad</a></p></footer>
+    <CloudflareAnalytics />
+  </body>
+</html>
+
+<style>
+  .archivo-actualidad{padding-bottom:6rem;padding-top:clamp(3rem,8vw,6rem)}
+  .archivo-actualidad>header{border-bottom:1px solid var(--color-border);margin-bottom:2.5rem;padding-bottom:2.5rem}
+  .archivo-actualidad>header p{color:var(--color-accent);font:11px var(--font-mono);letter-spacing:.09em;margin:0}
+  .archivo-actualidad h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.9;margin:1rem 0}
+  .archivo-actualidad>header span{color:var(--color-secondary-text);font-size:1.05rem}
+  .dia-actualidad{border-bottom:1px solid var(--color-border);display:grid;gap:clamp(1.5rem,4vw,4rem);grid-template-columns:minmax(180px,.6fr) minmax(0,2fr);padding:2rem 0}
+  .dia-actualidad h2{font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.2;margin:0;text-transform:capitalize}
+  .dia-actualidad>div{display:grid}
+  .dia-actualidad a{align-items:center;border-top:1px solid var(--color-border);display:grid;gap:1.25rem;grid-template-columns:90px 100px minmax(0,1fr);padding:1rem 0;text-decoration:none}
+  .dia-actualidad a:first-child{border-top:0;padding-top:0}
+  .dia-actualidad a>span{color:#446ddf;font:600 10px var(--font-mono);text-transform:uppercase}
+  .dia-actualidad a>strong{color:#446ddf;font:600 1.4rem var(--font-heading)}
+  .dia-actualidad h3{font-size:clamp(1rem,1.7vw,1.3rem);line-height:1.2;margin:0}
+  @media(max-width:700px){.dia-actualidad{grid-template-columns:1fr}.dia-actualidad a{grid-template-columns:1fr;gap:.5rem}}
+</style>

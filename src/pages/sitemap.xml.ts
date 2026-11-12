@@ -17,17 +17,25 @@ export const GET: APIRoute = async ({ site }) => {
   const articulos = (await getCollection('articulos')).filter(
     (articulo) => articulo.data.fecha <= ahora
   );
+  const actualidad = (await getCollection('actualidad')).filter(
+    (pieza) => pieza.data.fecha <= ahora
+  );
   const paginas = [
     { url: base.href },
     { url: new URL('trabaja-conmigo/', base).href },
     { url: new URL('laboratorio/', base).href },
     { url: new URL('articulos/', base).href },
+    { url: new URL('actualidad/', base).href },
     { url: new URL('trama/', base).href },
     { url: new URL('sobre-nebula/', base).href },
     { url: new URL('privacidad/', base).href },
     ...articulos.map((articulo) => ({
       url: new URL(`articulos/${articulo.id}/`, base).href,
       fecha: articulo.data.fecha.toISOString().slice(0, 10),
+    })),
+    ...actualidad.map((pieza) => ({
+      url: new URL(`actualidad/${pieza.id}/`, base).href,
+      fecha: pieza.data.fecha.toISOString().slice(0, 10),
     })),
   ];
 
