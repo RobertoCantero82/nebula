@@ -1,13 +1,17 @@
 {
-  "ultima_actualizacion": "2026-11-11T07:35:00.000+01:00",
-  "observaciones": 92,
-  "real_mw": 28110.0,
-  "prevista_mw": 30607.0,
-  "diferencia_mw": -2497.0,
-  "diferencia_pct": -8.158,
-  "mayor_caida_pct": -8.812,
-  "momento_mayor_caida": "2026-11-11T07:00:00.000+01:00",
-  "deficit_acumulado_mwh": 7496.83,
-  "exceso_acumulado_mwh": 0.0,
-  "provisional": true
+  "ultima_actualizacion": "2026-11-11T23:55:00.000+01:00",
+  "observaciones": 288,
+  "real_mw": 26349.0,
+  "prevista_mw": 26340.0,
+  "diferencia_mw": 9.0,
+  "diferencia_pct": 0.034,
+  "mayor_caida_pct": -9.02,
+  "momento_mayor_caida": "2026-11-11T08:00:00.000+01:00",
+  "deficit_acumulado_mwh": 27591.17,
+  "exceso_acumulado_mwh": 153.67,
+  "energia_real_mwh": 703416.5,
+  "energia_prevista_mwh": 730854.0,
+  "diferencia_diaria_mwh": -27437.5,
+  "diferencia_diaria_pct": -3.754,
+  "provisional": false
 }
