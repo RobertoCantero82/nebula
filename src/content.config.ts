@@ -26,7 +26,7 @@ const actualidad = defineCollection({
   schema: z.object({
     titulo: z.string(),
     descripcion: z.string(),
-    categoria: z.enum(['tecnologia', 'ciencia', 'cine', 'cultura']),
+    categoria: z.enum(['tecnologia', 'ciencia', 'cine', 'cultura', 'extra']),
     fecha: z.date(),
     hora: z.string().regex(/^([01]\d|2[0-3]):[0-5]\d$/).optional(),
     cifraDestacada: z.string().optional(),
@@ -38,12 +38,13 @@ const actualidad = defineCollection({
       etiqueta: z.string(),
       titulo: z.string(),
       texto: z.array(z.string()).min(1),
-      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre', 'secuencia-iconos', 'secuencia-xpeng', 'secuencia-hueso', 'secuencia-gameboy', 'imagen-cine', 'interactivo-cine', 'interactivo-xpeng', 'interactivo-datos', 'grafico-tiempo', 'grafico-alcance', 'grafico-comparacion']),
+      tipo: z.enum(['recorrido', 'linea', 'lista', 'hospital', 'contraste', 'cierre', 'secuencia-iconos', 'secuencia-xpeng', 'secuencia-hueso', 'secuencia-gameboy', 'imagen-cine', 'video-youtube', 'interactivo-cine', 'interactivo-xpeng', 'interactivo-datos', 'grafico-tiempo', 'grafico-alcance', 'grafico-comparacion']),
       datos: z.array(z.string()).optional(),
       respuestas: z.array(z.string()).optional(),
       imagen: z.string().optional(),
       altImagen: z.string().optional(),
       pieImagen: z.string().optional(),
+      videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
     })).length(5),
     fuentes: z.array(z.object({
       nombre: z.string(),

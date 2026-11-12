@@ -25,7 +25,7 @@ const seccionesActualidad = [
   { clave: 'tecnologia', nombre: 'Tecnología', numero: '01' },
   { clave: 'ciencia', nombre: 'Ciencia', numero: '02' },
   { clave: 'cine', nombre: 'Cine', numero: '03' },
-  { clave: 'cultura', nombre: 'Cultura', numero: '04' },
+  { clave: 'extra', nombre: 'Extra', numero: '04' },
 ].map((seccion) => ({ ...seccion, pieza: actualidadHoy.find((pieza) => pieza.data.categoria === seccion.clave) }));
 ---
 <html lang="es">
