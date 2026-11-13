@@ -37,8 +37,32 @@ h1, h2, h3 {
 }
 
 .contenido-articulo {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.contenido-articulo > h1,
+.contenido-articulo > p:first-child,
+.contenido-articulo > details,
+.cuerpo-articulo > p,
+.cuerpo-articulo > h2,
+.cuerpo-articulo > h3,
+.cuerpo-articulo > h4,
+.cuerpo-articulo > ul,
+.cuerpo-articulo > ol,
+.cuerpo-articulo > blockquote {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 820px;
+}
+
+.cuerpo-articulo > .grafico-interactivo,
+.cuerpo-articulo > figure,
+.cuerpo-articulo > svg[role="img"],
+.cuerpo-articulo > table,
+.cuerpo-articulo > section,
+.cuerpo-articulo > div[role="img"] {
+  width: 100%;
 }
 
 .grid-articulos {
