@@ -1,5 +1,5 @@
 ---
-titulo: "Esta estrella explotaba cada 113 días y seguía viva: el culpable estaba escondido a su lado"
+titulo: "Esta estrella explotaba cada cierto tiempo y seguía viva: el culpable estaba escondido a su lado"
 descripcion: "Los astrónomos aprendieron a predecir sus estallidos y esperaron el momento exacto para descubrir su origen."
 categoria: extra
 fecha: 2026-11-13
