@@ -59,7 +59,7 @@ Comparten mucha gente, pero el público no resuelve el misterio.
 
 El camino solo necesita un nombre:
 
-<div class="conexion-ruta" role="img" aria-label="Big conecta con Men in Black mediante Barry Sonnenfeld"><span class="pelicula">Big</span><i>→</i><span>Barry Sonnenfeld</span><i>→</i><span class="pelicula">Men in Black</span></div>
+<div class="grafico-interactivo conexion-ruta" role="img" aria-label="Big conecta con Men in Black mediante Barry Sonnenfeld"><span class="pelicula">Big</span><i>→</i><span>Barry Sonnenfeld</span><i>→</i><span class="pelicula">Men in Black</span></div>
 
 Podríamos detenernos aquí. No es una asociación imaginada ni una cadena de conocidos: la misma persona ocupa un puesto principal en las dos películas. Pero todavía queda otra respuesta.
 
@@ -123,5 +123,5 @@ EDA con [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/
 </script>
 
 <style>
-.conexion-apuesta{margin:2rem 0;padding:1.4rem;border:1px solid #446ddf;border-radius:14px;background:rgba(68,109,223,.05)}.conexion-kicker{margin:0;color:#446ddf;font-size:.75rem;font-weight:800;letter-spacing:.1em}.conexion-opciones{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.conexion-opciones button{padding:.7rem 1rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#294da8;cursor:pointer}.conexion-opciones button:hover,.conexion-opciones button:focus-visible,.conexion-opciones button.seleccionado{background:#446ddf;color:#fff}.conexion-resultado{margin-bottom:0;color:#505569}.conexion-ruta{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;margin:2rem 0;padding:1.2rem;background:#f5f6fb;border-radius:12px;font-size:.9rem}.conexion-ruta span{padding:.45rem .65rem;border:1px solid #cbd4ed;border-radius:6px;background:#fff}.conexion-ruta .pelicula{border-color:#446ddf;color:#294da8;font-weight:700}.conexion-ruta i{color:#446ddf;font-style:normal;font-weight:800}
+.conexion-apuesta{margin:28px 0;padding:clamp(18px,4vw,27px);border:1px solid #c7d3f4;border-radius:18px;background:#f5f7fd;box-shadow:0 8px 24px rgba(40,66,125,.06)}.conexion-kicker{margin:0;color:#446ddf;font-size:.75rem;font-weight:800;letter-spacing:.1em}.conexion-opciones{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0}.conexion-opciones button{padding:.7rem 1rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#294da8;cursor:pointer}.conexion-opciones button:hover,.conexion-opciones button:focus-visible,.conexion-opciones button.seleccionado{background:#446ddf;color:#fff}.conexion-resultado{margin-bottom:0;color:#505569}.conexion-ruta{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.55rem;font-size:.9rem}.conexion-ruta span{padding:.45rem .65rem;border:1px solid #cbd4ed;border-radius:6px;background:#fff}.conexion-ruta .pelicula{border-color:#446ddf;color:#294da8;font-weight:700}.conexion-ruta i{color:#446ddf;font-style:normal;font-weight:800}@media(max-width:620px){.conexion-apuesta{border-radius:14px}}
 </style>
