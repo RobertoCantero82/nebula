@@ -74,9 +74,9 @@ Podríamos detenernos aquí. No es una asociación imaginada ni una cadena de co
 
 Anne Spielberg escribió *Big* junto a Gary Ross. Su hermano Steven fue productor ejecutivo de *Men in Black*. Una película llega a la otra atravesando una sola familia.
 
-<div style="margin:2rem 0;overflow:hidden;border-radius:12px;aspect-ratio:16/9">
+<div style="margin:2rem auto;max-width:900px;overflow:hidden;border-radius:18px;aspect-ratio:16/9">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/w7zmrSwm-vg"
+    src="https://www.youtube-nocookie.com/embed/fiBLgEx6svA"
     title="Vídeo relacionado con Big y Men in Black"
     loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
