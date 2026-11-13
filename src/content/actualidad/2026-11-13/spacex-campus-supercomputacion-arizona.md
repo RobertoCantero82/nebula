@@ -10,9 +10,9 @@ mostrarCifraInterior: false
 formato: visual
 pantallas:
   - etiqueta: "01 | La escala"
-    titulo: "Nueve edificios, 747 acres y una potencia comparable a la de varias centrales eléctricas."
+    titulo: "Nueve edificios, 302 hectáreas y una potencia comparable a la de varias centrales eléctricas."
     tipo: recorrido
-    datos: ["9 edificios", "747 acres", "4 fases", "6 GW"]
+    datos: ["9 edificios", "747 hectáreas", "4 fases", "6 GW"]
     texto:
       - "Tombstone Resources, una empresa vinculada a SpaceX, ha solicitado permiso para construir un campus de supercomputación e inteligencia artificial junto a la central Apache, en el condado de Cochise, Arizona."
       - "El plan contempla hasta nueve edificios levantados en cuatro fases. A plena capacidad, el solicitante calcula una demanda eléctrica de seis gigavatios."
