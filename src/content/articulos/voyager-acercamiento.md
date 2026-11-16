@@ -1,5 +1,5 @@
 ---
-titulo: "Es posible que la Voyager 1 se acerque a la Tierra si sigue alejándose del Sol?"
+titulo: "¿Es posible que la Voyager 1 se acerque a la Tierra si sigue alejándose del Sol?"
 descripcion: "Parece imposible: seguir escapando al espacio y estar cada vez más cerca de la Tierra. Las trayectorias de la Voyager permiten entenderlo."
 tema: "CIENCIA"
 fecha: 2026-11-16
