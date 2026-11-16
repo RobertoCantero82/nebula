@@ -85,7 +85,7 @@ const datosEstructurados = {
         <h1 style="font-size: clamp(28px, 4vw, 34px); line-height: 1.25; margin: 0 0 16px;">{titulo}</h1>
 
         {descripcion && (
-          <p style="font-size: clamp(17px, 2vw, 20px); line-height: 1.5; color: var(--color-secondary-text); margin: 0 0 24px;">
+          <p class="descripcion-articulo">
             {descripcion}
           </p>
         )}
@@ -107,7 +107,7 @@ const datosEstructurados = {
           </div>
         )}
 
-        <article class="cuerpo-articulo" style="font-size: 16px; line-height: 1.7;">
+        <article class="cuerpo-articulo">
           <slot />
         </article>
 
@@ -179,3 +179,47 @@ const datosEstructurados = {
     <CloudflareAnalytics />
   </body>
 </html>
+
+<style>
+  .descripcion-articulo {
+    max-width: 980px;
+    margin: 0 auto 24px;
+    font-size: clamp(19px, 2vw, 22px);
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--color-secondary-text);
+  }
+
+  .cuerpo-articulo {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .cuerpo-articulo > :global(h2),
+  .cuerpo-articulo > :global(h3),
+  .cuerpo-articulo > :global(h4) {
+    text-align: center;
+    line-height: 1.3;
+    margin-top: 2em;
+    margin-bottom: 0.85em;
+    overflow-wrap: break-word;
+  }
+
+  .cuerpo-articulo > :global(h2) {
+    font-size: clamp(28px, 3vw, 34px);
+  }
+
+  .cuerpo-articulo > :global(h3) {
+    font-size: clamp(24px, 2.5vw, 28px);
+  }
+
+  .cuerpo-articulo > :global(h4) {
+    font-size: clamp(22px, 2vw, 24px);
+  }
+
+  @media (min-width: 768px) {
+    .cuerpo-articulo {
+      font-size: 20px;
+    }
+  }
+</style>
