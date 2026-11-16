@@ -1,5 +1,5 @@
 ---
-titulo: "Amazon pierde 40 satélites de internet en un lanzamiento fallido de Vulcan"
+titulo: "Amazon pierde decenas de satélites de internet en un lanzamiento fallido de Vulcan"
 descripcion: "El cohete sufrió un fallo a los diez minutos de vuelo. Era la primera de 38 misiones contratadas con Vulcan para ampliar la red Amazon Leo."
 categoria: tecnologia
 fecha: 2026-11-16
