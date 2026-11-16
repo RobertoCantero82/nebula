@@ -3,7 +3,7 @@ titulo: "Michael Mann quiere recuperar el guion de «Heat» y la productora lo h
 descripcion: "New Regency pide que se anulen tres avisos con los que el cineasta intenta recuperar derechos. La clave está en cómo se escribieron los materiales originales."
 categoria: cine
 fecha: 2026-11-16
-cifraDestacada: "3"
+cifraDestacada: "3 avisos"
 etiquetaCifra: "avisos de recuperación de derechos en disputa"
 fondoPortada: "HEAT"
 mostrarCifraInterior: false

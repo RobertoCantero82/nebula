@@ -3,7 +3,7 @@ titulo: "Han encontrado una forma de fotografiar lo que ocurre en una billonési
 descripcion: "Once imágenes tomadas a intervalos variables permiten conectar el primer efecto de un láser con las ondas y los fragmentos que aparecen después."
 categoria: ciencia
 fecha: 2026-11-16
-cifraDestacada: "11"
+cifraDestacada: "11 imágenes"
 etiquetaCifra: "imágenes de un mismo suceso"
 fondoPortada: "11"
 mostrarCifraInterior: false

@@ -3,7 +3,7 @@ titulo: "Amazon pierde decenas de satélites de internet en un lanzamiento falli
 descripcion: "El cohete sufrió un fallo a los diez minutos de vuelo. Era la primera de 38 misiones contratadas con Vulcan para ampliar la red Amazon Leo."
 categoria: tecnologia
 fecha: 2026-11-16
-cifraDestacada: "40"
+cifraDestacada: "40 decepciones"
 etiquetaCifra: "satélites perdidos"
 fondoPortada: "40"
 mostrarCifraInterior: false
