@@ -84,6 +84,12 @@ const datosEstructurados = {
         <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; margin: 0 0 8px;">{serie === 'trama' ? 'CINE | TRAMA' : tema}</p>
         <h1 style="font-size: clamp(28px, 4vw, 34px); line-height: 1.25; margin: 0 0 16px;">{titulo}</h1>
 
+        {descripcion && (
+          <p style="font-size: clamp(17px, 2vw, 20px); line-height: 1.5; color: var(--color-secondary-text); margin: 0 0 24px;">
+            {descripcion}
+          </p>
+        )}
+
         {reconocimiento && (
           <ReconocimientoEditorial
             etiqueta={reconocimiento.etiqueta}
