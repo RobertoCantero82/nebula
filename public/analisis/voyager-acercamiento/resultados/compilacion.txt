@@ -1,0 +1,90 @@
+[2m12:58:05[22m [34m[content][39m Syncing content
+[2m12:58:05[22m [34m[content][39m Synced content
+[2m12:58:05[22m [34m[types][39m Generated [2m1.04s[22m
+[2m12:58:05[22m [34m[build][39m output: [34m"static"[39m
+[2m12:58:05[22m [34m[build][39m mode: [34m"static"[39m
+[2m12:58:05[22m [34m[build][39m directory: [34mC:\Users\rober\.codex\.chatgpt-projects\g-p-6ad090e405e88191a9e4af8083de727d\voyager-verificacion-web\dist\[39m
+[2m12:58:05[22m [34m[build][39m Collecting build info...
+[2m12:58:05[22m [34m[build][39m [32m✓ Completed in 1.06s.[39m
+[2m12:58:05[22m [34m[build][39m Building static entrypoints...
+[2m12:58:05[22m [34m[vite][39m [32m✓ built in 410ms[39m
+[2m12:58:05[22m [34m[vite][39m [32m✓ built in 29ms[39m
+[2m12:58:05[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/index.html[22m [2m(+48ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-11/coche-volador-xpeng-2027/index.html[22m [2m(+6ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-11/game-boy-color-gigante/index.html[22m [2m(+3ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-11/hueso-apendice-15-anos/index.html[22m [2m(+3ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-11/spielberg-et-armas-walkie-talkies/index.html[22m [2m(+4ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-12/barniz-calcita-cueva-chauvet/index.html[22m [2m(+4ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-12/climatizador-solar-terracota-camerun/index.html[22m [2m(+3ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-12/ibm-nighthawk-r3-1000-qubits/index.html[22m [2m(+3ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-12/vengadores-endgame-encore-disney-plus/index.html[22m [2m(+3ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-13/estrella-impostora-companero-oculto/index.html[22m [2m(+3ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-13/nasca-entierro-ciclopia-trisomia-13/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-13/spacex-campus-supercomputacion-arizona/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-13/the-spot-claire-danes-ewan-mcgregor/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-16/fotografia-ultrarrapida-once-imagenes/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-16/gato-schrodinger-barandes/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-16/heat-michael-mann-derechos-guion/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/actualidad/2026-11-16/vulcan-amazon-leo/index.html[22m [2m(+2ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/index.html[22m [2m(+16ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/accidentes-alta-velocidad-espana-mitad/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/algoritmos-prision-michigan/index.html[22m [2m(+14ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/ameba-fuego-limites-calor/index.html[22m [2m(+20ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/apuestas-nba-partidos-beasley/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/articulo_la_bola_negra_oscar/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/articulo_lanzamientos_china_2026/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/aves-ruidosas-concurso-injusto/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/baskonia-gigante-euroliga/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/baskonia-reconstruccion/index.html[22m [2m(+12ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/big-men-in-black-conectadas/index.html[22m [2m(+11ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/byd-adelanta-tesla-electricos-puros-2026/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/byd-empleados-fabricantes/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/cocodrilo-esfinge-maquina-tiempo/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/colegios-oscuridad-horario-verano/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/conexiones-imposibles-cazafantasmas-winnie-pooh/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/edad-adn-reloj-epigenetico/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/electricos-el-coche-que-encaja-en-tu-vida/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/estallidos-rayos-gamma-cielo/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/google-centros-datos-espacio/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/huelga-11n-demanda-en-directo/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/ia-rebelde-agente-no-acepto-un-no/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/insectos-california-sin-nombre/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/iphone-duo-ipad-mini/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/la-bola-negra-taquilla-prediccion/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/la-galaxia-lkh-via-lactea/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/los-moviles-de-ahora-no-aguantan-nada/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/matrix-secuelas/index.html[22m [2m(+8ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/microsoft-inteligencia-hibrida-pc-ia/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/mmx-fobos-misiones-marte/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/norcoreanos-trabajo-remoto/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/peliculas-mas-otonales/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/planeta-fenix-niobio-estrella-muerta/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/que-pelicula-terror-ver-halloween/index.html[22m [2m(+12ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/records-nba-predicciones-locas-2026-27/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/records-nba-segunda-parte-2026-27/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/reencarnacion-datos-recuerdos/index.html[22m [2m(+16ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/software-que-viene-github/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/starship-de-prototipo-a-orbita/index.html[22m [2m(+14ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/swift-reentrada-prediccion/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/tecnologias-cine-futuro/index.html[22m [2m(+10ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/tesla-roadster-vuela-datos-espectaculo/index.html[22m [2m(+9ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/valencia-mapas-inundacion-dana/index.html[22m [2m(+17ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/voyager-acercamiento/index.html[22m [2m(+13ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/articulos/voyager-un-dia-luz/index.html[22m [2m(+13ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/colabora/index.html[22m [2m(+14ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/laboratorio/index.html[22m [2m(+15ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/privacidad/index.html[22m [2m(+6ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/robots.txt[22m [2m(+4ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/sitemap.xml[22m [2m(+4ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/sobre-nebula/index.html[22m [2m(+15ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/trabaja-conmigo/index.html[22m [2m(+7ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/trama/index.html[22m [2m(+15ms)[22m 
+[2m12:58:06[22m   [34m├─[39m [2m/index.html[22m [2m(+27ms)[22m 
+[2m12:58:06[22m [32m✓ Completed in 920ms.
+[39m
+[2m12:58:06[22m [34m[build][39m [32m✓ Completed in 1.46s.[39m
+[2m12:58:06[22m [34m[build][39m 69 page(s) built in [1m2.56s[22m
+[2m12:58:06[22m [34m[build][39m [1mComplete![22m

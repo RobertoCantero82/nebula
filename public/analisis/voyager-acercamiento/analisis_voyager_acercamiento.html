@@ -1,0 +1,246 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Voyager 1 · EDA de Nebula</title><style>body{max-width:960px;margin:auto;padding:30px 22px;background:#faf8f2;color:#172342;font:17px/1.65 system-ui}h1{font-size:clamp(28px,5vw,46px);line-height:1.15}h2{margin-top:40px}a{color:#355bc6}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.6 monospace;background:#edf0f6;padding:16px;border-radius:8px}svg{width:100%;height:auto}summary{cursor:pointer}code{font-size:.9em}</style><body><h1>¿Puede Voyager 1 acercarse a la Tierra mientras se aleja del Sol?</h1>
+<p><strong>Categoría: EDA (análisis exploratorio de datos).</strong></p>
+<p>Compruebo una hipótesis concreta: la separación entre la Tierra y Voyager 1 puede disminuir mientras aumenta la distancia entre la sonda y el Sol. Analizo efemérides oficiales de NASA/JPL, no mediciones diarias independientes ni una predicción propia. Fijo el corte en el 16 de noviembre de 2026 a las 00:00 UTC.</p>
+<h2>Ruta de lectura y glosario
+1. Conservo y leo las respuestas originales.
+2. Comparo distancias y su variación.
+3. Afino los cambios de signo de 2026.
+4. Separo la contribución del movimiento terrestre.
+5. Compruebo la repetición histórica y la calidad.</h2>
+<p><strong>Efemérides:</strong> tablas de posiciones y velocidades calculadas. <strong>Velocidad radial:</strong> cuánto cambia la distancia por segundo; negativa significa que se reduce. <strong>Heliocéntrico:</strong> respecto al Sol. <strong>Geocéntrico:</strong> respecto al centro de la Tierra. <strong>UTC:</strong> escala temporal usada para las fechas. <strong>Trayectoria geométrica:</strong> posiciones simultáneas, sin corrección por el tiempo de viaje de la luz.</p>
+<h2>Origen, alcance y limitaciones
+Uso Voyager 1 (identificador -31), el centro de la Tierra (399) y el centro del Sol (10), en el mismo marco de referencia eclíptico J2000. Cada fila diaria representa un instante a las 00:00 UTC; no representa un día completo medido. Las variables X/Y/Z están en kilómetros y VX/VY/VZ en kilómetros por segundo; RG es distancia, RR su variación y LT equivale a distancia/c.</h2>
+<p>Horizons describe 1977–1980 como una reconstrucción aproximada por tramos. Desde 1981 utiliza un ajuste realizado en 2022 sobre datos de seguimiento de 1981–1992, prolongado mediante cálculo orbital. Por eso separo el histórico completo de la comparación editorial de años completos 1990–2025. Esta última tampoco convierte las efemérides posteriores a 1992 en observaciones independientes. No calculo intervalos de incertidumbre que la fuente no proporciona para estas distancias.</p>
+<p>Fuentes: <a href="https://ssd.jpl.nasa.gov/horizons/manual.html">Horizons</a>, <a href="https://ssd-api.jpl.nasa.gov/doc/horizons.html">API</a>, <a href="https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/">hito del día luz</a>. Los originales y parámetros están en <code>fuentes/</code>.</p><h1>1. Preparación: leo y documento las tablas</h1>
+<p>Antes de calcular, conservo los originales sin cambios. Localizo los bloques entre las marcas de inicio y final de Horizons y convierto sus columnas numéricas. No relleno huecos ni suavizo las curvas. Mantengo solo fechas hasta el corte autorizado.</p><details><summary>Ver código ejecutado</summary><pre># importo herramientas de la biblioteca estándar para evitar dependencias externas
+from pathlib import Path
+from datetime import datetime, timezone
+import csv
+import json
+import math
+import statistics
+import hashlib
+
+# fijo el directorio de trabajo y conservo separados datos, fuentes y resultados
+raiz = Path.cwd()
+resultados = raiz / &quot;resultados&quot;
+resultados.mkdir(exist_ok=True)
+nombres = [&quot;jd&quot;, &quot;x&quot;, &quot;y&quot;, &quot;z&quot;, &quot;vx&quot;, &quot;vy&quot;, &quot;vz&quot;, &quot;lt&quot;, &quot;distancia&quot;, &quot;radial&quot;]
+
+def leer_horizons(nombre):
+    # leo las columnas originales y convierto el día juliano UTC a fecha civil
+    respuesta = json.loads((raiz / &quot;fuentes&quot; / nombre).read_text(encoding=&quot;utf-8&quot;))
+    texto = respuesta[&quot;result&quot;]
+    bloque = texto.split(&quot;$$SOE&quot;)[1].split(&quot;$$EOE&quot;)[0].strip()
+    filas = []
+    for linea in bloque.splitlines():
+        campos = [campo.strip() for campo in linea.split(&quot;,&quot;)]
+        valores = [float(campos[0])] + [float(campo) for campo in campos[2:11]]
+        fila = dict(zip(nombres, valores))
+        fila[&quot;fecha&quot;] = datetime.fromtimestamp((fila[&quot;jd&quot;] - 2440587.5) * 86400, timezone.utc).isoformat()
+        fila[&quot;anio&quot;] = int(fila[&quot;fecha&quot;][:4])
+        filas.append(fila)
+    return filas
+
+def guardar_csv(nombre, filas):
+    # conservo todas las columnas utilizadas para que pueda auditar cada cálculo
+    with (raiz / &quot;datos&quot; / nombre).open(&quot;w&quot;, encoding=&quot;utf-8&quot;, newline=&quot;&quot;) as archivo:
+        escritor = csv.DictWriter(archivo, fieldnames=list(filas[0]))
+        escritor.writeheader()
+        escritor.writerows(filas)
+
+tierra = leer_horizons(&quot;horizons_tierra.json&quot;)
+sol = leer_horizons(&quot;horizons_sol.json&quot;)
+horas = leer_horizons(&quot;horizons_tierra_2026_horario.json&quot;)
+control_tierra = leer_horizons(&quot;horizons_tierra_heliocentrica_2026.json&quot;)
+assert len(tierra) == len(sol) == 17969
+assert len(horas) == 7657
+assert all(a[&quot;jd&quot;] == b[&quot;jd&quot;] for a, b in zip(tierra, sol))
+assert all(b[&quot;jd&quot;] - a[&quot;jd&quot;] == 1 for a, b in zip(tierra, tierra[1:]))
+assert len({fila[&quot;jd&quot;] for fila in tierra}) == len(tierra)
+assert all(math.isfinite(fila[col]) for fila in tierra + sol + horas for col in nombres)
+assert tierra[-1][&quot;fecha&quot;] == &quot;2026-11-16T00:00:00+00:00&quot;
+guardar_csv(&quot;voyager_tierra_diario.csv&quot;, tierra)
+guardar_csv(&quot;voyager_sol_diario.csv&quot;, sol)
+guardar_csv(&quot;voyager_tierra_2026_horario.csv&quot;, horas)
+print(f&quot;Leo {len(tierra):,} instantes diarios por referencia y {len(horas):,} instantes horarios de 2026.&quot;)
+print(&quot;Cobertura:&quot;, tierra[0][&quot;fecha&quot;], &quot;a&quot;, tierra[-1][&quot;fecha&quot;])</pre></details><pre class="salida">Leo 17,969 instantes diarios por referencia y 7,657 instantes horarios de 2026.
+Cobertura: 1977-09-06T00:00:00+00:00 a 2026-11-16T00:00:00+00:00
+</pre><h1>2. Análisis: defino qué significa acercarse</h1>
+<p>Una distancia positiva no dice si aumenta o disminuye. Por eso miro su variación: si RR es negativa respecto a la Tierra y positiva respecto al Sol, la hipótesis se cumple. No comparo velocidades totales de referencias distintas.</p><details><summary>Ver código ejecutado</summary><pre># cruzo las dos referencias en el mismo instante antes de clasificar
+cruce = []
+for geo, helio in zip(tierra, sol):
+    fila = {&quot;fecha&quot;: geo[&quot;fecha&quot;], &quot;jd&quot;: geo[&quot;jd&quot;], &quot;anio&quot;: geo[&quot;anio&quot;],
+            &quot;distancia_tierra_km&quot;: geo[&quot;distancia&quot;], &quot;distancia_sol_km&quot;: helio[&quot;distancia&quot;],
+            &quot;radial_tierra_km_s&quot;: geo[&quot;radial&quot;], &quot;radial_sol_km_s&quot;: helio[&quot;radial&quot;],
+            &quot;acerca_tierra_aleja_sol&quot;: geo[&quot;radial&quot;] &lt; 0 &lt; helio[&quot;radial&quot;]}
+    cruce.append(fila)
+guardar_csv(&quot;comparacion_diaria.csv&quot;, cruce)
+actual = [fila for fila in cruce if fila[&quot;anio&quot;] == 2026]
+negativos = [fila for fila in actual if fila[&quot;acerca_tierra_aleja_sol&quot;]]
+print(&quot;Instantes diarios de 2026 que cumplen la hipótesis:&quot;, len(negativos))
+print(&quot;Primero y último muestreo negativos:&quot;, negativos[0][&quot;fecha&quot;], negativos[-1][&quot;fecha&quot;])
+print(&quot;Menor variación respecto a la Tierra:&quot;, round(min(f[&quot;radial_tierra_km_s&quot;] for f in actual), 3), &quot;km/s&quot;)
+print(&quot;Menor variación respecto al Sol:&quot;, round(min(f[&quot;radial_sol_km_s&quot;] for f in actual), 3), &quot;km/s&quot;)</pre></details><pre class="salida">Instantes diarios de 2026 que cumplen la hipótesis: 94
+Primero y último muestreo negativos: 2026-01-21T00:00:00+00:00 2026-04-24T00:00:00+00:00
+Menor variación respecto a la Tierra: -7.639 km/s
+Menor variación respecto al Sol: 16.882 km/s
+</pre><h1>3. Afino los límites de 2026</h1>
+<p>Contar 94 instantes diarios no equivale a medir exactamente 94 días. Busco el paso por cero en los registros horarios e interpolo dentro de cada hora. Estimo así la duración del episodio y la reducción de distancia. La precisión numérica no representa la incertidumbre física de la trayectoria.</p><details><summary>Ver código ejecutado</summary><pre>def cambios_signo(filas):
+    # interpolo entre vecinos de signo contrario, sin extrapolar fuera del archivo
+    limites = []
+    for anterior, posterior in zip(filas, filas[1:]):
+        if anterior[&quot;radial&quot;] * posterior[&quot;radial&quot;] &lt; 0:
+            fraccion = -anterior[&quot;radial&quot;] / (posterior[&quot;radial&quot;] - anterior[&quot;radial&quot;])
+            limites.append({campo: anterior[campo] + fraccion * (posterior[campo] - anterior[campo])
+                            for campo in [&quot;jd&quot;, &quot;distancia&quot;]})
+    return limites
+
+def interpolar(filas, jd, columna):
+    # uso únicamente los dos registros que encierran el instante solicitado
+    for anterior, posterior in zip(filas, filas[1:]):
+        if anterior[&quot;jd&quot;] &lt;= jd &lt;= posterior[&quot;jd&quot;]:
+            fraccion = (jd - anterior[&quot;jd&quot;]) / (posterior[&quot;jd&quot;] - anterior[&quot;jd&quot;])
+            return anterior[columna] + fraccion * (posterior[columna] - anterior[columna])
+    raise ValueError(&quot;instante fuera de cobertura&quot;)
+
+def fecha_jd(jd):
+    # expreso los límites aproximados en utc para evitar ambigüedad de calendario
+    return datetime.fromtimestamp((jd - 2440587.5) * 86400, timezone.utc).isoformat()
+
+limites = cambios_signo(horas)
+assert len(limites) == 2
+inicio, fin = limites
+duracion = fin[&quot;jd&quot;] - inicio[&quot;jd&quot;]
+reduccion = inicio[&quot;distancia&quot;] - fin[&quot;distancia&quot;]
+aumento_sol = interpolar(sol, fin[&quot;jd&quot;], &quot;distancia&quot;) - interpolar(sol, inicio[&quot;jd&quot;], &quot;distancia&quot;)
+resumen = {&quot;inicio_utc_aproximado&quot;: fecha_jd(inicio[&quot;jd&quot;]), &quot;fin_utc_aproximado&quot;: fecha_jd(fin[&quot;jd&quot;]),
+           &quot;duracion_dias&quot;: duracion, &quot;reduccion_tierra_km&quot;: reduccion, &quot;aumento_sol_km&quot;: aumento_sol,
+           &quot;reduccion_porcentaje&quot;: reduccion / inicio[&quot;distancia&quot;] * 100,
+           &quot;reduccion_distancia_dividida_c_segundos&quot;: reduccion / 299792.458,
+           &quot;muestreos_diarios_negativos_2026&quot;: len(negativos)}
+print(json.dumps(resumen, ensure_ascii=False, indent=2))</pre></details><pre class="salida">{
+  &quot;inicio_utc_aproximado&quot;: &quot;2026-01-20T14:22:39.391433+00:00&quot;,
+  &quot;fin_utc_aproximado&quot;: &quot;2026-04-24T02:42:08.227942+00:00&quot;,
+  &quot;duracion_dias&quot;: 93.51352820033208,
+  &quot;reduccion_tierra_km&quot;: 40688819.10564804,
+  &quot;aumento_sol_km&quot;: 136402956.65997696,
+  &quot;reduccion_porcentaje&quot;: 0.1599626420504663,
+  &quot;reduccion_distancia_dividida_c_segundos&quot;: 135.7232912965677,
+  &quot;muestreos_diarios_negativos_2026&quot;: 94
+}
+</pre><h1>4. Compruebo la explicación: la Tierra también se mueve</h1>
+<p>No basta con atribuir el efecto a la Tierra por intuición. Resto los vectores de Voyager vistos desde el Sol y desde la Tierra para recuperar el movimiento terrestre. Compruebo el resultado contra una consulta independiente de la Tierra respecto al Sol. Después proyecto cada velocidad sobre la línea que une la Tierra y la sonda: solo esa parte aumenta o reduce su separación.</p><details><summary>Ver código ejecutado</summary><pre># separo contribuciones a la variación de distancia sobre una misma línea de visión
+control_por_jd = {fila[&quot;jd&quot;]: fila for fila in control_tierra}
+contribuciones = []
+errores_posicion = []
+errores_velocidad = []
+for geo, helio in zip(tierra, sol):
+    if geo[&quot;anio&quot;] != 2026:
+        continue
+    direccion = [geo[eje] / geo[&quot;distancia&quot;] for eje in [&quot;x&quot;, &quot;y&quot;, &quot;z&quot;]]
+    velocidad_voyager = [helio[eje] for eje in [&quot;vx&quot;, &quot;vy&quot;, &quot;vz&quot;]]
+    velocidad_tierra = [helio[eje] - geo[eje] for eje in [&quot;vx&quot;, &quot;vy&quot;, &quot;vz&quot;]]
+    aporte_voyager = sum(a * b for a, b in zip(velocidad_voyager, direccion))
+    aporte_tierra = -sum(a * b for a, b in zip(velocidad_tierra, direccion))
+    control = control_por_jd[geo[&quot;jd&quot;]]
+    errores_posicion.append(max(abs((helio[eje] - geo[eje]) - control[eje]) for eje in [&quot;x&quot;, &quot;y&quot;, &quot;z&quot;]))
+    errores_velocidad.append(max(abs((helio[eje] - geo[eje]) - control[eje]) for eje in [&quot;vx&quot;, &quot;vy&quot;, &quot;vz&quot;]))
+    contribuciones.append({&quot;fecha&quot;: geo[&quot;fecha&quot;], &quot;jd&quot;: geo[&quot;jd&quot;],
+                           &quot;aporte_voyager_km_s&quot;: aporte_voyager,
+                           &quot;aporte_tierra_km_s&quot;: aporte_tierra,
+                           &quot;suma_km_s&quot;: aporte_voyager + aporte_tierra,
+                           &quot;radial_publicada_km_s&quot;: geo[&quot;radial&quot;]})
+error_cierre = max(abs(f[&quot;suma_km_s&quot;] - f[&quot;radial_publicada_km_s&quot;]) for f in contribuciones)
+assert error_cierre &lt; 1e-9
+assert max(errores_posicion) &lt; 0.01
+assert max(errores_velocidad) &lt; 1e-8
+guardar_csv(&quot;contribuciones_2026.csv&quot;, contribuciones)
+mas_cercana = min(contribuciones, key=lambda fila: fila[&quot;radial_publicada_km_s&quot;])
+print(&quot;Día de mayor acercamiento por segundo (muestreo diario):&quot;, mas_cercana)
+print(&quot;Error máximo al recomponer la velocidad radial:&quot;, error_cierre, &quot;km/s&quot;)
+print(&quot;Diferencia máxima con la consulta terrestre independiente:&quot;, max(errores_posicion), &quot;km y&quot;, max(errores_velocidad), &quot;km/s&quot;)</pre></details><pre class="salida">Día de mayor acercamiento por segundo (muestreo diario): {&#x27;fecha&#x27;: &#x27;2026-03-08T00:00:00+00:00&#x27;, &#x27;jd&#x27;: 2461107.5, &#x27;aporte_voyager_km_s&#x27;: 16.888660263285832, &#x27;aporte_tierra_km_s&#x27;: -24.52811472671972, &#x27;suma_km_s&#x27;: -7.639454463433889, &#x27;radial_publicada_km_s&#x27;: -7.63945446343389}
+Error máximo al recomponer la velocidad radial: 2.1316282072803006e-14 km/s
+Diferencia máxima con la consulta terrestre independiente: 1.3589859008789062e-05 km y 2.4868995751603507e-14 km/s
+</pre><h1>5. Comparo años completos y compruebo robustez</h1>
+<p>Para no presentar 2026 como un año terminado, comparo por separado los años completos 1990–2025. El recuento diario aproxima la duración; no sustituye los límites horarios de 2026. También compruebo la variación de distancia con diferencias entre días y comparo los límites horarios con los obtenidos a resolución diaria.</p><details><summary>Ver código ejecutado</summary><pre># resumo cada año sin mezclar periodos completos y parciales
+anuales = []
+for anio in sorted({f[&quot;anio&quot;] for f in cruce}):
+    grupo = [f for f in cruce if f[&quot;anio&quot;] == anio]
+    anuales.append({&quot;anio&quot;: anio, &quot;muestreos&quot;: len(grupo),
+                    &quot;muestreos_acercamiento&quot;: sum(f[&quot;acerca_tierra_aleja_sol&quot;] for f in grupo),
+                    &quot;radial_tierra_min_km_s&quot;: min(f[&quot;radial_tierra_km_s&quot;] for f in grupo),
+                    &quot;radial_sol_min_km_s&quot;: min(f[&quot;radial_sol_km_s&quot;] for f in grupo)})
+historico = [f for f in anuales if 1990 &lt;= f[&quot;anio&quot;] &lt;= 2025]
+assert len(historico) == 36
+assert all(f[&quot;muestreos&quot;] in [365, 366] for f in historico)
+assert all(f[&quot;muestreos_acercamiento&quot;] &gt; 0 and f[&quot;radial_sol_min_km_s&quot;] &gt; 0 for f in historico)
+limites_diarios = cambios_signo([f for f in tierra if f[&quot;anio&quot;] == 2026])
+diferencia_limites_minutos = [abs(a[&quot;jd&quot;] - b[&quot;jd&quot;]) * 1440 for a, b in zip(limites, limites_diarios)]
+errores_diferencias = []
+for anterior, central, posterior in zip(tierra, tierra[1:], tierra[2:]):
+    if central[&quot;anio&quot;] &gt;= 1990:
+        aproximacion = (posterior[&quot;distancia&quot;] - anterior[&quot;distancia&quot;]) / ((posterior[&quot;jd&quot;] - anterior[&quot;jd&quot;]) * 86400)
+        errores_diferencias.append(abs(aproximacion - central[&quot;radial&quot;]))
+assert max(errores_diferencias) &lt; 0.02
+assert max(diferencia_limites_minutos) &lt; 15
+resumen.update({&quot;anios_completos_con_episodio&quot;: len(historico),
+                &quot;min_muestreos_1990_2025&quot;: min(f[&quot;muestreos_acercamiento&quot;] for f in historico),
+                &quot;max_muestreos_1990_2025&quot;: max(f[&quot;muestreos_acercamiento&quot;] for f in historico),
+                &quot;diferencia_limites_diario_horario_minutos&quot;: diferencia_limites_minutos,
+                &quot;error_max_derivada_central_km_s&quot;: max(errores_diferencias),
+                &quot;error_max_cierre_km_s&quot;: error_cierre})
+guardar_csv(&quot;resumen_anual.csv&quot;, anuales)
+(resultados / &quot;resumen.json&quot;).write_text(json.dumps(resumen, ensure_ascii=False, indent=2), encoding=&quot;utf-8&quot;)
+print(&quot;Años completos con acercamiento:&quot;, len(historico), &quot;de&quot;, len(historico))
+print(&quot;Muestreos negativos por año:&quot;, resumen[&quot;min_muestreos_1990_2025&quot;], &quot;a&quot;, resumen[&quot;max_muestreos_1990_2025&quot;])
+print(&quot;Diferencia entre límites diarios y horarios (minutos):&quot;, diferencia_limites_minutos)
+print(&quot;Mayor diferencia de velocidad frente a la derivada numérica:&quot;, max(errores_diferencias), &quot;km/s&quot;)</pre></details><pre class="salida">Años completos con acercamiento: 36 de 36
+Muestreos negativos por año: 93 a 94
+Diferencia entre límites diarios y horarios (minutos): [3.102467581629753, 0.9979936480522156]
+Mayor diferencia de velocidad frente a la derivada numérica: 0.0013792696080301425 km/s
+</pre><h1>6. Visualizo el resultado sin ocultar las referencias</h1>
+<p>En el gráfico comparo cuánto cambia la distancia por segundo. Por debajo de cero hay acercamiento; por encima, alejamiento. Mantengo idéntica unidad para ambas referencias. En la tabla de resultados distingo estas variaciones de la reducción acumulada durante el episodio.</p><details><summary>Ver código ejecutado</summary><pre>from html import escape
+
+# dibujo gráficos vectoriales a partir de todos los registros diarios de 2026
+def grafico_svg(titulo, descripcion, series, etiquetas_y, minimo, maximo, nombre):
+    ancho, alto = 900, 480
+    izquierda, derecha, arriba, abajo = 82, 26, 96, 85
+    x = lambda jd: izquierda + (jd - actual[0][&quot;jd&quot;]) / (actual[-1][&quot;jd&quot;] - actual[0][&quot;jd&quot;]) * (ancho - izquierda - derecha)
+    y = lambda valor: arriba + (maximo - valor) / (maximo - minimo) * (alto - arriba - abajo)
+    partes = [f&#x27;&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 {ancho} {alto}&quot; role=&quot;img&quot; aria-labelledby=&quot;{nombre}-titulo {nombre}-desc&quot;&gt;&#x27;,
+              f&#x27;&lt;title id=&quot;{nombre}-titulo&quot;&gt;{escape(titulo)}&lt;/title&gt;&lt;desc id=&quot;{nombre}-desc&quot;&gt;{escape(descripcion)}&lt;/desc&gt;&#x27;,
+              &#x27;&lt;rect width=&quot;900&quot; height=&quot;480&quot; fill=&quot;#faf8f2&quot;/&gt;&#x27;,
+              f&#x27;&lt;text x=&quot;28&quot; y=&quot;32&quot; font-family=&quot;sans-serif&quot; font-size=&quot;22&quot; fill=&quot;#172342&quot;&gt;{escape(titulo)}&lt;/text&gt;&#x27;,
+              f&#x27;&lt;text x=&quot;28&quot; y=&quot;58&quot; font-family=&quot;sans-serif&quot; font-size=&quot;15&quot; fill=&quot;#46506a&quot;&gt;{escape(descripcion)}&lt;/text&gt;&#x27;]
+    for valor in etiquetas_y:
+        partes += [f&#x27;&lt;path d=&quot;M {izquierda} {y(valor):.2f} H {ancho-derecha}&quot; stroke=&quot;#d9dce4&quot;/&gt;&#x27;,
+                   f&#x27;&lt;text x=&quot;{izquierda-12}&quot; y=&quot;{y(valor)+5:.2f}&quot; text-anchor=&quot;end&quot; font-family=&quot;sans-serif&quot; font-size=&quot;15&quot; fill=&quot;#46506a&quot;&gt;{valor:g}&lt;/text&gt;&#x27;]
+    partes.append(f&#x27;&lt;path d=&quot;M {izquierda} {y(0):.2f} H {ancho-derecha}&quot; stroke=&quot;#172342&quot; stroke-dasharray=&quot;4 4&quot;/&gt;&#x27;)
+    for indice, (etiqueta, color, datos) in enumerate(series):
+        puntos = &quot; &quot;.join(f&#x27;{x(jd):.2f},{y(valor):.2f}&#x27; for jd, valor in datos)
+        partes.append(f&#x27;&lt;polyline fill=&quot;none&quot; stroke=&quot;{color}&quot; stroke-width=&quot;3&quot; points=&quot;{puntos}&quot;/&gt;&#x27;)
+        partes.append(f&#x27;&lt;text x=&quot;{82+indice*340}&quot; y=&quot;448&quot; font-family=&quot;sans-serif&quot; font-size=&quot;16&quot; fill=&quot;{color}&quot;&gt;{escape(etiqueta)}&lt;/text&gt;&#x27;)
+    for mes, etiqueta in [(1,&quot;ene&quot;),(3,&quot;mar&quot;),(5,&quot;may&quot;),(7,&quot;jul&quot;),(9,&quot;sep&quot;),(11,&quot;nov&quot;)]:
+        fecha = f&quot;2026-{mes:02d}-01&quot;
+        fila = next(f for f in actual if f[&quot;fecha&quot;].startswith(fecha))
+        partes.append(f&#x27;&lt;text x=&quot;{x(fila[&quot;jd&quot;]):.2f}&quot; y=&quot;420&quot; text-anchor=&quot;middle&quot; font-family=&quot;sans-serif&quot; font-size=&quot;15&quot; fill=&quot;#46506a&quot;&gt;{etiqueta}&lt;/text&gt;&#x27;)
+    partes.append(&#x27;&lt;/svg&gt;&#x27;)
+    texto = &quot;&quot;.join(partes)
+    (resultados / f&quot;{nombre}.svg&quot;).write_text(texto, encoding=&quot;utf-8&quot;)
+    return texto
+
+svg_velocidad = grafico_svg(&quot;La distancia a la Tierra disminuye durante parte del año&quot;, &quot;Variación de distancia en km/s · 1 de enero a 16 de noviembre de 2026&quot;, [
+    (&quot;Respecto a la Tierra&quot;, &quot;#446ddf&quot;, [(f[&quot;jd&quot;],f[&quot;radial_tierra_km_s&quot;]) for f in actual]),
+    (&quot;Respecto al Sol&quot;, &quot;#785c34&quot;, [(f[&quot;jd&quot;],f[&quot;radial_sol_km_s&quot;]) for f in actual])], [-10,0,10,20,30,40], -12, 45, &quot;variacion_distancia&quot;)
+# separo el acercamiento de la Tierra de un regreso hacia el Sol
+print(&quot;Escribo resultados/variacion_distancia.svg con ambas referencias y la línea cero.&quot;)
+print(&quot;Resultado: 40,7 millones de km menos hasta la Tierra y 136,4 millones más hasta el Sol durante el episodio.&quot;)</pre></details><pre class="salida">Escribo resultados/variacion_distancia.svg con ambas referencias y la línea cero.
+Resultado: 40,7 millones de km menos hasta la Tierra y 136,4 millones más hasta el Sol durante el episodio.
+</pre><h1>7. Conclusión y límites de lo que puedo afirmar</h1>
+<p><strong>La hipótesis se cumple en las efemérides consultadas.</strong> En 2026 encuentro un episodio de unos 93,5 días: la separación con la Tierra disminuye aproximadamente 40,7 millones de kilómetros y la distancia al Sol aumenta unos 136,4 millones. No interpreto el resultado como un regreso.</p>
+<p>Al separar matemáticamente ambas contribuciones, compruebo que el movimiento de la Tierra explica el cambio de signo: durante parte de su órbita, su avance proyectado hacia la sonda supera el alejamiento proyectado de esta. No comparo sin más la velocidad orbital total de la Tierra y la velocidad total de Voyager.</p>
+<p>En todos los años completos 1990–2025 encuentro instantes de acercamiento, entre 93 y 94 muestreos diarios por año. Ese recuento no equivale a una duración exacta. En 2026 la reducción es aproximadamente el 0,16 % de la separación al comienzo del episodio. Dividir la reducción de distancia entre la velocidad de la luz da unos 136 segundos; es una equivalencia geométrica, no una medición del tiempo real de una comunicación.</p>
+<p>No demuestro una maniobra de la nave, un cambio de destino ni una nueva medición científica. No calculo fechas futuras ni la vida útil de la misión. Los instantes interpolados tienen precisión de cálculo, no una incertidumbre orbital cuantificada.</p>
+<p>El hito del día luz lo atribuyo a la NASA. Mi aportación consiste en cuantificar y explicar la diferencia entre alejarse del Sol y alejarse de la Tierra.</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" role="img" aria-labelledby="variacion_distancia-titulo variacion_distancia-desc"><title id="variacion_distancia-titulo">La distancia a la Tierra disminuye durante parte del año</title><desc id="variacion_distancia-desc">Variación de distancia en km/s · 1 de enero a 16 de noviembre de 2026</desc><rect width="900" height="480" fill="#faf8f2"/><text x="28" y="32" font-family="sans-serif" font-size="22" fill="#172342">La distancia a la Tierra disminuye durante parte del año</text><text x="28" y="58" font-family="sans-serif" font-size="15" fill="#46506a">Variación de distancia en km/s · 1 de enero a 16 de noviembre de 2026</text><path d="M 82 384.51 H 874" stroke="#d9dce4"/><text x="70" y="389.51" text-anchor="end" font-family="sans-serif" font-size="15" fill="#46506a">-10</text><path d="M 82 332.05 H 874" stroke="#d9dce4"/><text x="70" y="337.05" text-anchor="end" font-family="sans-serif" font-size="15" fill="#46506a">0</text><path d="M 82 279.60 H 874" stroke="#d9dce4"/><text x="70" y="284.60" text-anchor="end" font-family="sans-serif" font-size="15" fill="#46506a">10</text><path d="M 82 227.14 H 874" stroke="#d9dce4"/><text x="70" y="232.14" text-anchor="end" font-family="sans-serif" font-size="15" fill="#46506a">20</text><path d="M 82 174.68 H 874" stroke="#d9dce4"/><text x="70" y="179.68" text-anchor="end" font-family="sans-serif" font-size="15" fill="#46506a">30</text><path d="M 82 122.23 H 874" stroke="#d9dce4"/><text x="70" y="127.23" text-anchor="end" font-family="sans-serif" font-size="15" fill="#46506a">40</text><path d="M 82 332.05 H 874" stroke="#172342" stroke-dasharray="4 4"/><polyline fill="none" stroke="#446ddf" stroke-width="3" points="82.00,295.18 84.48,297.23 86.97,299.27 89.45,301.29 91.93,303.30 94.41,305.29 96.90,307.26 99.38,309.22 101.86,311.16 104.34,313.08 106.83,314.98 109.31,316.86 111.79,318.72 114.28,320.56 116.76,322.37 119.24,324.16 121.72,325.93 124.21,327.67 126.69,329.38 129.17,331.06 131.66,332.71 134.14,334.33 136.62,335.93 139.10,337.49 141.59,339.02 144.07,340.51 146.55,341.98 149.03,343.41 151.52,344.81 154.00,346.17 156.48,347.51 158.97,348.82 161.45,350.09 163.93,351.33 166.41,352.55 168.90,353.73 171.38,354.88 173.86,356.00 176.34,357.08 178.83,358.13 181.31,359.15 183.79,360.13 186.28,361.08 188.76,361.98 191.24,362.86 193.72,363.69 196.21,364.48 198.69,365.24 201.17,365.96 203.66,366.63 206.14,367.27 208.62,367.86 211.10,368.42 213.59,368.93 216.07,369.40 218.55,369.83 221.03,370.23 223.52,370.58 226.00,370.90 228.48,371.18 230.97,371.43 233.45,371.63 235.93,371.81 238.41,371.94 240.90,372.04 243.38,372.10 245.86,372.13 248.34,372.11 250.83,372.06 253.31,371.97 255.79,371.84 258.28,371.68 260.76,371.47 263.24,371.23 265.72,370.94 268.21,370.61 270.69,370.25 273.17,369.84 275.66,369.39 278.14,368.91 280.62,368.38 283.10,367.81 285.59,367.21 288.07,366.57 290.55,365.89 293.03,365.18 295.52,364.43 298.00,363.65 300.48,362.84 302.97,362.00 305.45,361.12 307.93,360.21 310.41,359.27 312.90,358.30 315.38,357.29 317.86,356.26 320.34,355.19 322.83,354.09 325.31,352.96 327.79,351.79 330.28,350.60 332.76,349.37 335.24,348.11 337.72,346.82 340.21,345.49 342.69,344.14 345.17,342.75 347.66,341.33 350.14,339.88 352.62,338.40 355.10,336.90 357.59,335.37 360.07,333.81 362.55,332.23 365.03,330.63 367.52,329.01 370.00,327.36 372.48,325.69 374.97,324.01 377.45,322.30 379.93,320.58 382.41,318.83 384.90,317.06 387.38,315.28 389.86,313.47 392.34,311.65 394.83,309.81 397.31,307.95 399.79,306.07 402.28,304.17 404.76,302.25 407.24,300.32 409.72,298.36 412.21,296.39 414.69,294.40 417.17,292.40 419.66,290.38 422.14,288.35 424.62,286.31 427.10,284.25 429.59,282.19 432.07,280.12 434.55,278.04 437.03,275.95 439.52,273.87 442.00,271.77 444.48,269.67 446.97,267.57 449.45,265.46 451.93,263.34 454.41,261.23 456.90,259.11 459.38,256.98 461.86,254.86 464.34,252.73 466.83,250.59 469.31,248.46 471.79,246.32 474.28,244.18 476.76,242.04 479.24,239.89 481.72,237.75 484.21,235.60 486.69,233.46 489.17,231.32 491.66,229.18 494.14,227.04 496.62,224.92 499.10,222.80 501.59,220.68 504.07,218.58 506.55,216.49 509.03,214.41 511.52,212.35 514.00,210.29 516.48,208.24 518.97,206.21 521.45,204.19 523.93,202.17 526.41,200.18 528.90,198.19 531.38,196.22 533.86,194.25 536.34,192.31 538.83,190.37 541.31,188.45 543.79,186.54 546.28,184.64 548.76,182.76 551.24,180.90 553.72,179.04 556.21,177.21 558.69,175.39 561.17,173.59 563.66,171.82 566.14,170.06 568.62,168.33 571.10,166.62 573.59,164.93 576.07,163.28 578.55,161.64 581.03,160.03 583.52,158.45 586.00,156.89 588.48,155.36 590.97,153.85 593.45,152.37 595.93,150.91 598.41,149.48 600.90,148.07 603.38,146.69 605.86,145.33 608.34,144.00 610.83,142.70 613.31,141.42 615.79,140.17 618.28,138.94 620.76,137.74 623.24,136.57 625.72,135.43 628.21,134.32 630.69,133.23 633.17,132.19 635.66,131.17 638.14,130.19 640.62,129.24 643.10,128.33 645.59,127.45 648.07,126.61 650.55,125.80 653.03,125.03 655.52,124.30 658.00,123.59 660.48,122.93 662.97,122.29 665.45,121.69 667.93,121.13 670.41,120.59 672.90,120.09 675.38,119.63 677.86,119.19 680.34,118.79 682.83,118.43 685.31,118.09 687.79,117.79 690.28,117.53 692.76,117.29 695.24,117.10 697.72,116.94 700.21,116.82 702.69,116.73 705.17,116.69 707.66,116.68 710.14,116.72 712.62,116.79 715.10,116.90 717.59,117.06 720.07,117.25 722.55,117.48 725.03,117.74 727.52,118.05 730.00,118.39 732.48,118.76 734.97,119.18 737.45,119.62 739.93,120.11 742.41,120.62 744.90,121.18 747.38,121.76 749.86,122.38 752.34,123.03 754.83,123.72 757.31,124.44 759.79,125.19 762.28,125.98 764.76,126.80 767.24,127.66 769.72,128.55 772.21,129.48 774.69,130.45 777.17,131.45 779.66,132.49 782.14,133.57 784.62,134.69 787.10,135.83 789.59,137.02 792.07,138.23 794.55,139.48 797.03,140.76 799.52,142.07 802.00,143.42 804.48,144.79 806.97,146.19 809.45,147.62 811.93,149.08 814.41,150.56 816.90,152.07 819.38,153.61 821.86,155.17 824.34,156.76 826.83,158.37 829.31,160.01 831.79,161.67 834.28,163.36 836.76,165.08 839.24,166.82 841.72,168.59 844.21,170.39 846.69,172.21 849.17,174.06 851.66,175.93 854.14,177.83 856.62,179.75 859.10,181.69 861.59,183.65 864.07,185.63 866.55,187.63 869.03,189.65 871.52,191.69 874.00,193.74"/><text x="82" y="448" font-family="sans-serif" font-size="16" fill="#446ddf">Respecto a la Tierra</text><polyline fill="none" stroke="#785c34" stroke-width="3" points="82.00,243.49 84.48,243.49 86.97,243.49 89.45,243.49 91.93,243.49 94.41,243.49 96.90,243.49 99.38,243.49 101.86,243.49 104.34,243.49 106.83,243.49 109.31,243.49 111.79,243.49 114.28,243.49 116.76,243.49 119.24,243.49 121.72,243.49 124.21,243.49 126.69,243.49 129.17,243.49 131.66,243.49 134.14,243.49 136.62,243.49 139.10,243.49 141.59,243.49 144.07,243.49 146.55,243.49 149.03,243.49 151.52,243.49 154.00,243.49 156.48,243.49 158.97,243.49 161.45,243.49 163.93,243.49 166.41,243.49 168.90,243.49 171.38,243.49 173.86,243.49 176.34,243.49 178.83,243.49 181.31,243.49 183.79,243.49 186.28,243.49 188.76,243.49 191.24,243.49 193.72,243.49 196.21,243.49 198.69,243.49 201.17,243.49 203.66,243.49 206.14,243.49 208.62,243.49 211.10,243.49 213.59,243.49 216.07,243.49 218.55,243.49 221.03,243.49 223.52,243.49 226.00,243.49 228.48,243.49 230.97,243.49 233.45,243.49 235.93,243.49 238.41,243.49 240.90,243.49 243.38,243.49 245.86,243.49 248.34,243.49 250.83,243.49 253.31,243.49 255.79,243.49 258.28,243.49 260.76,243.49 263.24,243.49 265.72,243.49 268.21,243.49 270.69,243.49 273.17,243.49 275.66,243.49 278.14,243.49 280.62,243.49 283.10,243.49 285.59,243.49 288.07,243.49 290.55,243.49 293.03,243.49 295.52,243.49 298.00,243.49 300.48,243.49 302.97,243.49 305.45,243.49 307.93,243.49 310.41,243.49 312.90,243.49 315.38,243.49 317.86,243.49 320.34,243.49 322.83,243.49 325.31,243.49 327.79,243.49 330.28,243.49 332.76,243.49 335.24,243.49 337.72,243.49 340.21,243.49 342.69,243.49 345.17,243.49 347.66,243.49 350.14,243.49 352.62,243.49 355.10,243.49 357.59,243.49 360.07,243.49 362.55,243.49 365.03,243.49 367.52,243.49 370.00,243.49 372.48,243.49 374.97,243.49 377.45,243.49 379.93,243.49 382.41,243.49 384.90,243.49 387.38,243.49 389.86,243.49 392.34,243.49 394.83,243.49 397.31,243.49 399.79,243.49 402.28,243.49 404.76,243.49 407.24,243.49 409.72,243.49 412.21,243.49 414.69,243.49 417.17,243.49 419.66,243.49 422.14,243.49 424.62,243.49 427.10,243.49 429.59,243.49 432.07,243.49 434.55,243.49 437.03,243.49 439.52,243.49 442.00,243.49 444.48,243.49 446.97,243.49 449.45,243.49 451.93,243.49 454.41,243.49 456.90,243.49 459.38,243.49 461.86,243.49 464.34,243.49 466.83,243.49 469.31,243.49 471.79,243.49 474.28,243.49 476.76,243.49 479.24,243.49 481.72,243.49 484.21,243.49 486.69,243.49 489.17,243.49 491.66,243.49 494.14,243.49 496.62,243.49 499.10,243.49 501.59,243.49 504.07,243.49 506.55,243.49 509.03,243.49 511.52,243.49 514.00,243.49 516.48,243.49 518.97,243.49 521.45,243.50 523.93,243.50 526.41,243.50 528.90,243.50 531.38,243.50 533.86,243.50 536.34,243.50 538.83,243.50 541.31,243.50 543.79,243.50 546.28,243.50 548.76,243.50 551.24,243.50 553.72,243.50 556.21,243.50 558.69,243.50 561.17,243.50 563.66,243.50 566.14,243.50 568.62,243.50 571.10,243.50 573.59,243.50 576.07,243.50 578.55,243.50 581.03,243.50 583.52,243.50 586.00,243.50 588.48,243.50 590.97,243.50 593.45,243.50 595.93,243.50 598.41,243.50 600.90,243.50 603.38,243.50 605.86,243.50 608.34,243.50 610.83,243.50 613.31,243.50 615.79,243.50 618.28,243.50 620.76,243.50 623.24,243.50 625.72,243.50 628.21,243.50 630.69,243.50 633.17,243.50 635.66,243.50 638.14,243.50 640.62,243.50 643.10,243.50 645.59,243.50 648.07,243.50 650.55,243.50 653.03,243.50 655.52,243.50 658.00,243.50 660.48,243.50 662.97,243.50 665.45,243.50 667.93,243.50 670.41,243.50 672.90,243.50 675.38,243.50 677.86,243.50 680.34,243.50 682.83,243.50 685.31,243.50 687.79,243.50 690.28,243.50 692.76,243.50 695.24,243.50 697.72,243.50 700.21,243.50 702.69,243.50 705.17,243.50 707.66,243.50 710.14,243.50 712.62,243.50 715.10,243.50 717.59,243.50 720.07,243.50 722.55,243.50 725.03,243.50 727.52,243.50 730.00,243.50 732.48,243.50 734.97,243.50 737.45,243.50 739.93,243.50 742.41,243.50 744.90,243.50 747.38,243.50 749.86,243.50 752.34,243.50 754.83,243.50 757.31,243.50 759.79,243.50 762.28,243.50 764.76,243.50 767.24,243.50 769.72,243.50 772.21,243.50 774.69,243.50 777.17,243.50 779.66,243.50 782.14,243.50 784.62,243.50 787.10,243.50 789.59,243.50 792.07,243.50 794.55,243.50 797.03,243.50 799.52,243.50 802.00,243.50 804.48,243.50 806.97,243.50 809.45,243.50 811.93,243.50 814.41,243.50 816.90,243.50 819.38,243.50 821.86,243.50 824.34,243.50 826.83,243.50 829.31,243.50 831.79,243.50 834.28,243.50 836.76,243.50 839.24,243.50 841.72,243.50 844.21,243.50 846.69,243.50 849.17,243.50 851.66,243.50 854.14,243.50 856.62,243.50 859.10,243.50 861.59,243.50 864.07,243.50 866.55,243.50 869.03,243.50 871.52,243.50 874.00,243.50"/><text x="422" y="448" font-family="sans-serif" font-size="16" fill="#785c34">Respecto al Sol</text><text x="82.00" y="420" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#46506a">ene</text><text x="228.48" y="420" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#46506a">mar</text><text x="379.93" y="420" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#46506a">may</text><text x="531.38" y="420" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#46506a">jul</text><text x="685.31" y="420" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#46506a">sep</text><text x="836.76" y="420" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#46506a">nov</text></svg></body></html>

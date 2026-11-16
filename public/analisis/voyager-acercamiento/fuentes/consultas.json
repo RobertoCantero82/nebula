@@ -1,0 +1,9 @@
+{
+  "fecha_consulta": "2026-11-16",
+  "archivos": {
+    "horizons_tierra.json": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%271977-09-06%27&STOP_TIME=%272026-11-16%27&STEP_SIZE=%271+d%27&VEC_TABLE=%273%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "horizons_sol.json": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%4010%27&START_TIME=%271977-09-06%27&STOP_TIME=%272026-11-16%27&STEP_SIZE=%271+d%27&VEC_TABLE=%273%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "horizons_tierra_2026_horario.json": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27-31%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%40399%27&START_TIME=%272026-01-01%27&STOP_TIME=%272026-11-16%27&STEP_SIZE=%271+h%27&VEC_TABLE=%273%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27",
+    "horizons_tierra_heliocentrica_2026.json": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&EPHEM_TYPE=%27VECTORS%27&CENTER=%27500%4010%27&START_TIME=%272026-01-01%27&STOP_TIME=%272026-11-16%27&STEP_SIZE=%271+d%27&VEC_TABLE=%273%27&CSV_FORMAT=%27YES%27&TIME_TYPE=%27UT%27"
+  }
+}

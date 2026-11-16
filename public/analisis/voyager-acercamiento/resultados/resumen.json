@@ -1,0 +1,19 @@
+{
+  "inicio_utc_aproximado": "2026-01-20T14:22:39.391433+00:00",
+  "fin_utc_aproximado": "2026-04-24T02:42:08.227942+00:00",
+  "duracion_dias": 93.51352820033208,
+  "reduccion_tierra_km": 40688819.10564804,
+  "aumento_sol_km": 136402956.65997696,
+  "reduccion_porcentaje": 0.1599626420504663,
+  "reduccion_distancia_dividida_c_segundos": 135.7232912965677,
+  "muestreos_diarios_negativos_2026": 94,
+  "anios_completos_con_episodio": 36,
+  "min_muestreos_1990_2025": 93,
+  "max_muestreos_1990_2025": 94,
+  "diferencia_limites_diario_horario_minutos": [
+    3.102467581629753,
+    0.9979936480522156
+  ],
+  "error_max_derivada_central_km_s": 0.0013792696080301425,
+  "error_max_cierre_km_s": 2.1316282072803006e-14
+}
