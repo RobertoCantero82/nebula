@@ -6,6 +6,15 @@ import Cabecera from '../components/Cabecera.astro';
 import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
+const contenidoEspera = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="actualidad-radar" aria-hidden="true" focusable="false" width="64" height="64">
+  <g fill="none" stroke="#171943" stroke-linecap="round">
+    <path d="M46.8 49.3A24 24 0 1 1 48.9 16" stroke-width="4"/>
+    <path d="M42.2 43.9A16.5 16.5 0 1 1 44.3 21" stroke-width="4"/>
+    <path d="M36.8 38.3A9 9 0 1 1 38.5 27" stroke-width="4"/>
+  </g>
+  <path class="actualidad-radar-aguja" d="M31.5 32.5 52 12" fill="none" stroke="#F05A2A" stroke-linecap="round" stroke-width="8"/>
+</svg><span>En desarrollo</span><p>Este espacio se completará con la actualidad de hoy.</p>`;
+
 const ahora = new Date();
 const publicados = (await getCollection('articulos')).filter((a) => a.data.fecha <= ahora).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
 const actualidad = await getCollection('actualidad');
@@ -52,11 +61,11 @@ const seccionesActualidad = [
       <h1 id="titulo-actualidad">Actualidad</h1>
       <time datetime={fechaHoy} data-fecha-actualidad>{new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(ahora)}</time>
     </header>
+    <template data-actualidad-espera><div class="actualidad-espera" set:html={contenidoEspera} /></template>
     <div class="actualidad-cuadricula">
       {seccionesActualidad.map(({ clave, nombre, numero, pieza }) => pieza ? (
         <a class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/nebula/actualidad/${pieza.id}/`}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span>{pieza.data.hora && <time>{pieza.data.hora}</time>}</div>
-          <span class="actualidad-sticker">Nueva</span>
           <div class="actualidad-contenido">
             {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
             <h2>{pieza.data.titulo}</h2>
@@ -65,7 +74,7 @@ const seccionesActualidad = [
       ) : (
         <article class:list={['actualidad-casilla', `actualidad-${clave}`, 'esta-vacia']}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span><i aria-hidden="true"></i></div>
-          <div class="actualidad-espera"><span>En desarrollo<span class="actualidad-puntos" aria-hidden="true"><b>.</b><b>.</b><b>.</b></span></span><p>Este espacio se completará con la actualidad de hoy.</p></div>
+          <div class="actualidad-espera" set:html={contenidoEspera} />
         </article>
       ))}
     </div>
@@ -88,13 +97,9 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
     const meta=casilla.querySelector('.actualidad-meta').cloneNode(true);
     meta.querySelector('time')?.remove();
     const punto=document.createElement('i');punto.setAttribute('aria-hidden','true');meta.append(punto);
-    const contenido=document.createElement('div');contenido.className='actualidad-espera';
-    const titulo=document.createElement('span');titulo.textContent='En desarrollo';
-    const puntos=document.createElement('span');puntos.className='actualidad-puntos';puntos.setAttribute('aria-hidden','true');
-    for(let i=0;i<3;i++){const punto=document.createElement('b');punto.textContent='.';puntos.append(punto)}
-    titulo.append(puntos);
-    const texto=document.createElement('p');texto.textContent='Este espacio se completará con la actualidad de hoy.';
-    contenido.append(titulo,texto);espera.append(meta,contenido);
+    const plantilla=portadaActualidad.querySelector('template[data-actualidad-espera]');
+    const contenido=plantilla.content.cloneNode(true);
+    espera.append(meta,contenido);
     for(const atributo of casilla.getAttributeNames().filter(nombre=>nombre.startsWith('data-astro-cid-'))){
       espera.setAttribute(atributo,'');espera.querySelectorAll('*').forEach(nodo=>nodo.setAttribute(atributo,''));
     }
@@ -320,23 +325,20 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
 
 <style is:global>
   .actualidad-casilla { min-width: 0; }
-  .actualidad-espera > span { line-height: 1.2; }
-  .actualidad-sticker {
-    align-self: flex-end; background: #446ddf; color: #fff;
-    border-radius: 999px; padding: .4rem .65rem; margin-top: .85rem;
-    font: 600 10px var(--font-mono); letter-spacing: .06em;
-    text-transform: uppercase; transform: rotate(-6deg);
-    animation: actualidad-pegatina .8s ease-out both;
+  .actualidad-espera {
+    align-items: center; display: flex; flex: 1; flex-direction: column;
+    justify-content: center; gap: .85rem; margin: 0; padding-top: 1rem;
+    text-align: center; width: 100%;
   }
-  .actualidad-puntos { display: inline-flex; margin-left: .12em; }
-  .actualidad-puntos b { display: inline-block; font-weight: inherit; animation: actualidad-punto 1.5s ease-in-out 3; }
-  .actualidad-puntos b:nth-child(2) { animation-delay: .16s; }
-  .actualidad-puntos b:nth-child(3) { animation-delay: .32s; }
+  .actualidad-espera > span { color: #446ddf; font: 600 clamp(1.35rem, 2vw, 1.8rem)/1.2 var(--font-heading); letter-spacing: -.03em; }
+  .actualidad-espera p { color: var(--color-secondary-text); font-size: 13px; margin: 0; max-width: 28ch; }
+  .actualidad-radar { display: block; flex-shrink: 0; height: 64px; width: 64px; overflow: visible; }
+  .actualidad-radar-aguja {
+    animation: actualidad-radar-giro 4s linear infinite;
+    transform-box: view-box; transform-origin: 31.5px 32.5px;
+  }
   .actualidad-casilla.tiene-pieza:focus-visible { outline: 3px solid #1b1836; outline-offset: -3px; }
-  .actualidad-casilla.tiene-pieza:hover .actualidad-sticker,
-  .actualidad-casilla.tiene-pieza:focus-visible .actualidad-sticker { background: #fff; color: #446ddf; }
-  @keyframes actualidad-punto { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-.18em); } }
-  @keyframes actualidad-pegatina { 0% { transform: rotate(-12deg) scale(.9); } 60% { transform: rotate(-3deg) scale(1.04); } 100% { transform: rotate(-6deg) scale(1); } }
+  @keyframes actualidad-radar-giro { to { transform: rotate(360deg); } }
   @media (max-width: 900px) {
     .actualidad-cuadricula { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .actualidad-casilla:nth-child(2) { border-right: 0; }
@@ -347,6 +349,6 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
     .actualidad-meta { font-size: 9px; letter-spacing: 0; gap: .25rem; }
   }
   @media (prefers-reduced-motion: reduce) {
-    .actualidad-sticker, .actualidad-puntos b { animation: none; }
+    .actualidad-radar-aguja { animation: none; }
   }
 </style>
