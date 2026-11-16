@@ -56,6 +56,7 @@ const seccionesActualidad = [
       {seccionesActualidad.map(({ clave, nombre, numero, pieza }) => pieza ? (
         <a class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/nebula/actualidad/${pieza.id}/`}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span>{pieza.data.hora && <time>{pieza.data.hora}</time>}</div>
+          <span class="actualidad-sticker">Nueva</span>
           <div class="actualidad-contenido">
             {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
             <h2>{pieza.data.titulo}</h2>
@@ -64,7 +65,7 @@ const seccionesActualidad = [
       ) : (
         <article class:list={['actualidad-casilla', `actualidad-${clave}`, 'esta-vacia']}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span><i aria-hidden="true"></i></div>
-          <div class="actualidad-espera"><span>Próxima historia</span><p>Este espacio se completará con la actualidad de hoy.</p></div>
+          <div class="actualidad-espera"><span>En desarrollo<span class="actualidad-puntos" aria-hidden="true"><b>.</b><b>.</b><b>.</b></span></span><p>Este espacio se completará con la actualidad de hoy.</p></div>
         </article>
       ))}
     </div>
@@ -80,7 +81,26 @@ const seccionesActualidad = [
 <script>
 const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/nebula/datos/mvp/ultima-jornada.json')}};const madrugada=fecha=>{const inicio=new Date(`${fecha}T12:00:00Z`),fin=new Date(inicio);fin.setUTCDate(fin.getUTCDate()+1);const dia=n=>new Intl.DateTimeFormat('es-ES',{day:'numeric',timeZone:'UTC'}).format(n);const mes=n=>new Intl.DateTimeFormat('es-ES',{month:'long',timeZone:'UTC'}).format(n).toUpperCase();return inicio.getUTCMonth()===fin.getUTCMonth()?`MADRUGADA DEL ${dia(inicio)} AL ${dia(fin)} DE ${mes(fin)}`:`MADRUGADA DEL ${dia(inicio)} DE ${mes(inicio)} AL ${dia(fin)} DE ${mes(fin)}`};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-jornada]').textContent=madrugada(datos.fecha);raiz.querySelector('[data-mvp-partidos]').textContent=datos.resultados?.length||0;raiz.querySelector('[data-mvp-recomendacion]').textContent=datos.recomendacion?.partido?.replace(' @ ',' — ')||'Una jornada para elegir sobre la marcha.';const texto=datos.recomendacion?.texto||'',foco=texto.match(/por (.*?):/)?.[1]?.replace(/\b(?:la|el|las|los)\s+/g,''),razon=texto.match(/: reúne (.*?)\./)?.[1];raiz.querySelector('[data-mvp-motivo]').textContent=foco&&razon?`Promete una noche de ${foco}, con ${razon}.`:foco?`Promete una noche de ${foco}.`:'Una historia que merece descubrirse.';const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});
 const continuo=document.querySelector('[data-continuo]');const pista=continuo?.querySelector('[data-continuo-pista]');const grupo=continuo?.querySelector('[data-continuo-grupo]');const control=continuo?.querySelector('[data-continuo-control]');const ajustarContinuo=()=>{if(!pista||!grupo)return;pista.style.setProperty('--continuo-recorrido',`${grupo.scrollWidth}px`);pista.style.setProperty('--continuo-duracion',`${Math.max(90,grupo.scrollWidth/34)}s`)};ajustarContinuo();document.fonts?.ready.then(ajustarContinuo);window.addEventListener('resize',ajustarContinuo);control?.addEventListener('click',()=>{const pausado=continuo.toggleAttribute('data-pausado');control.setAttribute('aria-label',pausado?'Reanudar titulares':'Pausar titulares');control.querySelector('span').textContent=pausado?'▶':'Ⅱ'});
-const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const fechaActualidad=portadaActualidad?.querySelector('[data-fecha-actualidad]');const fechaMadrid=()=>{const partes=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const valor=tipo=>partes.find(parte=>parte.type===tipo)?.value;return `${valor('year')}-${valor('month')}-${valor('day')}`};const actualizarActualidad=()=>{if(!portadaActualidad||!fechaActualidad)return;const ahora=new Date();const hoy=fechaMadrid();fechaActualidad.dateTime=hoy;fechaActualidad.textContent=new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(ahora);portadaActualidad.toggleAttribute('data-sin-actualidad',portadaActualidad.dataset.actualidadFecha!==hoy)};actualizarActualidad();window.setInterval(actualizarActualidad,30000);
+const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const fechaActualidad=portadaActualidad?.querySelector('[data-fecha-actualidad]');const fechaMadrid=()=>{const partes=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Madrid',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const valor=tipo=>partes.find(parte=>parte.type===tipo)?.value;return `${valor('year')}-${valor('month')}-${valor('day')}`};const actualizarActualidad=()=>{if(!portadaActualidad||!fechaActualidad)return;const ahora=new Date();const hoy=fechaMadrid();fechaActualidad.dateTime=hoy;fechaActualidad.textContent=new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',weekday:'long',day:'numeric',month:'long',year:'numeric'}).format(ahora);if(portadaActualidad.dataset.actualidadFecha!==hoy){
+  portadaActualidad.querySelectorAll('.actualidad-casilla.tiene-pieza').forEach(casilla=>{
+    const espera=document.createElement('article');
+    espera.className=casilla.className.replace('tiene-pieza','esta-vacia');
+    const meta=casilla.querySelector('.actualidad-meta').cloneNode(true);
+    meta.querySelector('time')?.remove();
+    const punto=document.createElement('i');punto.setAttribute('aria-hidden','true');meta.append(punto);
+    const contenido=document.createElement('div');contenido.className='actualidad-espera';
+    const titulo=document.createElement('span');titulo.textContent='En desarrollo';
+    const puntos=document.createElement('span');puntos.className='actualidad-puntos';puntos.setAttribute('aria-hidden','true');
+    for(let i=0;i<3;i++){const punto=document.createElement('b');punto.textContent='.';puntos.append(punto)}
+    titulo.append(puntos);
+    const texto=document.createElement('p');texto.textContent='Este espacio se completará con la actualidad de hoy.';
+    contenido.append(titulo,texto);espera.append(meta,contenido);
+    for(const atributo of casilla.getAttributeNames().filter(nombre=>nombre.startsWith('data-astro-cid-'))){
+      espera.setAttribute(atributo,'');espera.querySelectorAll('*').forEach(nodo=>nodo.setAttribute(atributo,''));
+    }
+    casilla.replaceWith(espera);
+  });
+}};actualizarActualidad();window.setInterval(actualizarActualidad,30000);
 </script>
 </body></html>
 <style>
@@ -88,8 +108,8 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
 .actualidad-cabecera{align-items:end;border-bottom:1px solid var(--color-border);display:flex;gap:2rem;justify-content:space-between;padding-bottom:1.25rem}
 .actualidad-cabecera h1{color:#d85a30;font:600 clamp(1.35rem,2.5vw,2.1rem)/1 var(--font-heading);letter-spacing:-.02em;margin:0}
 .actualidad-cabecera>time{color:#446ddf;font:600 11px var(--font-mono);letter-spacing:0;text-align:right;text-transform:uppercase}
-.actualidad-cuadricula{border-bottom:1px solid var(--color-border);display:grid;grid-template-columns:repeat(4,minmax(210px,1fr));overflow-x:auto}
-.actualidad-portada[data-sin-actualidad] .actualidad-cuadricula{display:none}
+.actualidad-cuadricula{border-bottom:1px solid var(--color-border);display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+
 .actualidad-casilla{border-right:1px solid var(--color-border);color:#1b1836;display:flex;flex-direction:column;min-height:250px;padding:1.25rem;position:relative;text-decoration:none}
 .actualidad-casilla:last-child{border-right:0}
 .actualidad-meta{align-items:center;display:flex;font:600 10px var(--font-mono);justify-content:space-between;letter-spacing:.08em;text-transform:uppercase}
@@ -295,5 +315,38 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
     .continuo-pista { animation: none; }
     .continuo-grupo[aria-hidden="true"] { display: none; }
     .continuo-control { display: none; }
+  }
+</style>
+
+<style is:global>
+  .actualidad-casilla { min-width: 0; }
+  .actualidad-espera > span { line-height: 1.2; }
+  .actualidad-sticker {
+    align-self: flex-end; background: #446ddf; color: #fff;
+    border-radius: 999px; padding: .4rem .65rem; margin-top: .85rem;
+    font: 600 10px var(--font-mono); letter-spacing: .06em;
+    text-transform: uppercase; transform: rotate(-6deg);
+    animation: actualidad-pegatina .8s ease-out both;
+  }
+  .actualidad-puntos { display: inline-flex; margin-left: .12em; }
+  .actualidad-puntos b { display: inline-block; font-weight: inherit; animation: actualidad-punto 1.5s ease-in-out 3; }
+  .actualidad-puntos b:nth-child(2) { animation-delay: .16s; }
+  .actualidad-puntos b:nth-child(3) { animation-delay: .32s; }
+  .actualidad-casilla.tiene-pieza:focus-visible { outline: 3px solid #1b1836; outline-offset: -3px; }
+  .actualidad-casilla.tiene-pieza:hover .actualidad-sticker,
+  .actualidad-casilla.tiene-pieza:focus-visible .actualidad-sticker { background: #fff; color: #446ddf; }
+  @keyframes actualidad-punto { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-.18em); } }
+  @keyframes actualidad-pegatina { 0% { transform: rotate(-12deg) scale(.9); } 60% { transform: rotate(-3deg) scale(1.04); } 100% { transform: rotate(-6deg) scale(1); } }
+  @media (max-width: 900px) {
+    .actualidad-cuadricula { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .actualidad-casilla:nth-child(2) { border-right: 0; }
+    .actualidad-casilla:nth-child(-n+2) { border-bottom: 1px solid var(--color-border); }
+  }
+  @media (max-width: 380px) {
+    .actualidad-casilla { padding: .85rem; }
+    .actualidad-meta { font-size: 9px; letter-spacing: 0; gap: .25rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .actualidad-sticker, .actualidad-puntos b { animation: none; }
   }
 </style>
