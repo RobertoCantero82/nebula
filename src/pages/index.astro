@@ -8,9 +8,9 @@ import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const contenidoEspera = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="actualidad-radar" aria-hidden="true" focusable="false" width="64" height="64">
   <g fill="none" stroke="#171943" stroke-linecap="round">
-    <path d="M46.8 49.3A24 24 0 1 1 48.9 16" stroke-width="4"/>
-    <path d="M42.2 43.9A16.5 16.5 0 1 1 44.3 21" stroke-width="4"/>
-    <path d="M36.8 38.3A9 9 0 1 1 38.5 27" stroke-width="4"/>
+    <circle cx="31.5" cy="32.5" r="24" stroke-width="4"/>
+    <circle cx="31.5" cy="32.5" r="16.5" stroke-width="4"/>
+    <circle cx="31.5" cy="32.5" r="9" stroke-width="4"/>
   </g>
   <path class="actualidad-radar-aguja" d="M31.5 32.5 52 12" fill="none" stroke="#F05A2A" stroke-linecap="round" stroke-width="8"/>
 </svg><span>En desarrollo</span><p>Este espacio se completará con la actualidad de hoy.</p>`;
@@ -117,7 +117,10 @@ const portadaActualidad=document.querySelector('[data-actualidad-fecha]');const 
 
 .actualidad-casilla{border-right:1px solid var(--color-border);color:#1b1836;display:flex;flex-direction:column;min-height:250px;padding:1.25rem;position:relative;text-decoration:none}
 .actualidad-casilla:last-child{border-right:0}
-.actualidad-meta{align-items:center;display:flex;font:600 10px var(--font-mono);justify-content:space-between;letter-spacing:.08em;text-transform:uppercase}
+.actualidad-meta{align-items:center;display:flex;font:600 10px var(--font-mono);justify-content:center;letter-spacing:.08em;position:relative;text-align:center;text-transform:uppercase;width:100%}
+.actualidad-meta>span{display:block;text-align:center;width:100%}
+.actualidad-meta>i{position:absolute;right:0}
+.actualidad-meta>time{position:absolute;right:0;top:calc(100% + .35rem)}
 .actualidad-meta i{background:#446ddf;border-radius:50%;height:8px;width:8px}
 .actualidad-contenido{display:grid;flex:1;grid-template-rows:1fr auto 1rem minmax(5.7rem,auto) 1fr;justify-items:center;width:100%}
 .actualidad-contenido>strong{align-self:end;color:#446ddf;font:600 clamp(1.45rem,2.6vw,2.2rem)/1 var(--font-heading);grid-row:2;letter-spacing:-.04em;white-space:nowrap}
