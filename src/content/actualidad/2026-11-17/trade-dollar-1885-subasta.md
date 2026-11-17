@@ -1,10 +1,10 @@
 ---
-titulo: "Solo se conocen cinco: este dólar de 1885 podría superar los 1,8 millones de euros"
-descripcion: "Una moneda que no figura en los registros oficiales de acuñación sale a subasta. Su rareza está documentada; las circunstancias exactas de su fabricación siguen abiertas."
+titulo: "Solo se conocen cinco: este dólar podría superar los 1,8 millones de euros"
+descripcion: "Una moneda que no figura en los registros oficiales de acuñación sale a subasta."
 categoria: extra
 fecha: 2026-11-17
 cifraDestacada: "5 monedas"
-etiquetaCifra: "ejemplares conocidos de 1885"
+etiquetaCifra: "de 1885"
 fondoPortada: "1885"
 mostrarCifraInterior: false
 formato: visual
@@ -14,7 +14,7 @@ pantallas:
     tipo: recorrido
     datos: ["Fecha: 1885", "Solo cinco conocidos", "Sin registro oficial", "A subasta"]
     texto:
-      - "Stack’s Bowers ofrece este 17 de noviembre uno de los cinco dólares comerciales de plata de 1885 que se conocen. La pieza pertenece a una colección familiar de Alabama."
+      - "Stack’s Bowers ofrece, este 17 de noviembre, uno de los cinco dólares comerciales de plata de 1885 que se conocen. La pieza pertenece a una colección familiar de Alabama."
       - "Popular Science señala que podría superar el equivalente a 1,8 millones de euros. Es una expectativa previa a la venta, no un precio de adjudicación confirmado."
   - etiqueta: "02 | La pieza"
     titulo: "La fecha se ve perfectamente. Lo que falta es el registro oficial de su fabricación."
