@@ -1,0 +1,19 @@
+{
+  "categoria": "EDA",
+  "universo": 25,
+  "consulta": "2026-11-17",
+  "resultados": {
+    "Conservador, sin Skyfall": 22,
+    "Capturas documentadas": 23,
+    "Capturas y encierro-trampa": 24
+  },
+  "no_documentadas": [
+    "Quantum of Solace"
+  ],
+  "encierro_trampa": [
+    "No Time to Die"
+  ],
+  "casos_contextuales": [
+    "Skyfall"
+  ]
+}

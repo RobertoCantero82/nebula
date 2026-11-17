@@ -1,0 +1,14 @@
+pelicula_id,uso,editor,url,localizador,nota_propia,acceso
+bond_04,captura,007.com,https://www.007.com/page/45/?cat=cars,Focus Of The Week: Fiona Volpe,La descripción oficial detalla la retención a punta de pistola y el traslado en coche.,indice_recuperado_en_busqueda; apertura_directa_no_disponible
+bond_10,captura,Forbes,https://www.forbes.com/sites/johnmariani/2022/12/05/james-bonds-tastes-the-spy-who-loved-me/,Captura en el Liparus,La descripción indica que los captura la tripulación del petrolero.,texto_recuperado_en_busqueda
+bond_14,captura,007.com,https://www.007.com/page/6/?cat=posters&id=dad,A View To A Kill — Ten Iconic Moments: Rolling the Roller,La descripción oficial señala que Zorin mantiene cautivo a Bond y lo mete en el coche que se hunde.,indice_recuperado_en_busqueda; apertura_directa_no_disponible
+bond_14,captura,MI6-HQ,https://www.mi6-hq.com/sections/movies/avtak_synopsis,A View To A Kill - Synopsis,Sinopsis alternativa de la película para revisar la secuencia.,pagina_consultada
+bond_03,captura,007.com,https://www.007.com/focus-week-oddjob/,Focus Of The Week: Oddjob,La fuente oficial describe el encierro de Bond y Oddjob en Fort Knox.,pagina_recuperada
+bond_13,captura,007.com,https://www.007.com/focus-of-the-week-the-acrostar-bede-jet/,The Acrostar Bede Jet,"Otra captura de Bond, al fallar su suplantación del coronel Toro en el prólogo. No sumo una segunda película.",pagina_recuperada
+bond_02,rescate_ejemplo,Wikipedia,https://en.wikipedia.org/wiki/From_Russia_with_Love_(film),Plot: enfrentamiento con Klebb,Tatiana dispara a Klebb durante su ataque a Bond.,pagina_consultada
+bond_03,rescate_ejemplo,Wikipedia,https://en.wikipedia.org/wiki/Goldfinger_(film),Plot: bomba de Fort Knox,Un especialista desactiva la bomba que Bond no logra neutralizar.,pagina_consultada
+bond_04,rescate_ejemplo,Wikipedia,https://en.wikipedia.org/wiki/Thunderball_(film),Plot: lucha en el Disco Volante,Domino dispara a Largo cuando éste está a punto de matar a Bond.,pagina_consultada
+bond_16,rescate_ejemplo,Wikipedia,https://en.wikipedia.org/wiki/Licence_to_Kill,Plot: trituradora,Pam Bouvier dispara a Dario y facilita que Bond lo venza.,pagina_consultada
+bond_19,rescate_ejemplo,Wikipedia,https://en.wikipedia.org/wiki/The_World_Is_Not_Enough,Plot: liberación en la torre,Zukovsky emplea su arma oculta para liberar a Bond.,pagina_consultada
+bond_21,rescate_ejemplo,Wikipedia,https://en.wikipedia.org/wiki/Casino_Royale_(2006_film),Plot: envenenamiento y tortura,Vesper evita que Bond muera envenenado; Mr. White impide su ejecución. No presupongo intenciones altruistas.,pagina_consultada
+bond_21,rescate_ejemplo,007.com,https://www.007.com/page/49/?a=lists&c=index&catid=12&m=content,Focus Of The Week: Mr. White,La fuente oficial explica que White salva la vida de Bond al matar a Le Chiffre.,indice_recuperado_en_busqueda; apertura_directa_no_disponible
