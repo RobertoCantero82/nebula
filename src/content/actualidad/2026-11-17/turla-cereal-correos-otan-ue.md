@@ -3,6 +3,8 @@ titulo: "Querían espiar correos de la OTAN y la UE: el programa se escondía en
 descripcion: "ESET atribuye a Turla una herramienta que seleccionaba correspondencia institucional. Rumanía afirma que frenó el ataque y no identificó extracción de datos sensibles."
 categoria: tecnologia
 fecha: 2026-11-17
+cifraDestacada: "2025"
+etiquetaCifra: "el año del ataque"
 fondoPortada: "Cereal"
 mostrarCifraInterior: false
 formato: visual
