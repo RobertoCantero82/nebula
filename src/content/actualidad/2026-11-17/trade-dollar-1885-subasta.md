@@ -1,5 +1,5 @@
 ---
-titulo: "Solo se conocen cinco: este dólar podría superar los 1,8 millones de euros"
+titulo: "Solo se conocen cinco: esta moneda podría superar los 1,8 millones de euros"
 descripcion: "Una moneda que no figura en los registros oficiales de acuñación sale a subasta."
 categoria: extra
 fecha: 2026-11-17
