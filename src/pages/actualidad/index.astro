@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { estaPublicada } from '../../utils/publicacion';
 import '../../styles/global.css';
 import Seo from '../../components/Seo.astro';
 import Cabecera from '../../components/Cabecera.astro';
@@ -7,7 +8,7 @@ import CloudflareAnalytics from '../../components/CloudflareAnalytics.astro';
 
 const ahora = new Date();
 const piezas = (await getCollection('actualidad'))
-  .filter((pieza) => pieza.data.fecha <= ahora)
+  .filter((pieza) => estaPublicada(pieza.data, ahora))
   .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
 const grupos = Object.entries(Object.groupBy(piezas, (pieza) => pieza.data.fecha.toISOString().slice(0, 10)));
 const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {

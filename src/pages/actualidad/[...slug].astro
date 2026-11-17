@@ -1,9 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+import { estaPublicada } from '../../utils/publicacion';
 import Actualidad from '../../layouts/Actualidad.astro';
 
 export async function getStaticPaths() {
-  const piezas = await getCollection('actualidad');
+  const ahora = new Date();
+  const piezas = (await getCollection('actualidad')).filter(pieza => estaPublicada(pieza.data, ahora));
 
   return piezas.map((pieza) => ({
     params: { slug: pieza.id },

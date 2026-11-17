@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { estaPublicada } from '../utils/publicacion';
 import '../styles/global.css';
 import Seo from '../components/Seo.astro';
 import Cabecera from '../components/Cabecera.astro';
@@ -17,7 +18,7 @@ const contenidoEspera = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64
 
 const ahora = new Date();
 const publicados = (await getCollection('articulos')).filter((a) => a.data.fecha <= ahora).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
-const actualidad = await getCollection('actualidad');
+const actualidad = (await getCollection('actualidad')).filter(pieza => estaPublicada(pieza.data, ahora));
 const destacados = publicados.filter((a) => a.data.serie !== 'trama').slice(0, 8);
 const ultimasTramas = publicados.filter((a) => a.data.serie === 'trama').slice(0, 2);
 const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(f);

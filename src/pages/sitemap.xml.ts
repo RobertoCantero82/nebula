@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { estaPublicada } from '../utils/publicacion';
 
 const escaparXml = (valor: string) =>
   valor.replace(/[<>&'\"]/g, (caracter) => ({
@@ -18,7 +19,7 @@ export const GET: APIRoute = async ({ site }) => {
     (articulo) => articulo.data.fecha <= ahora
   );
   const actualidad = (await getCollection('actualidad')).filter(
-    (pieza) => pieza.data.fecha <= ahora
+    (pieza) => estaPublicada(pieza.data, ahora)
   );
   const paginas = [
     { url: base.href },

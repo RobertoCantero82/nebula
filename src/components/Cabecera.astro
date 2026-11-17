@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { estaPublicada } from '../utils/publicacion';
 
 const { activa = '' } = Astro.props;
 const enlaces = [
@@ -20,8 +21,9 @@ const limpiarTexto = (texto = '') => texto
   .replace(/\s+/g, ' ')
   .trim();
 
-const articulos = await getCollection('articulos');
-const actualidad = await getCollection('actualidad');
+const ahora = new Date();
+const articulos = (await getCollection('articulos')).filter(articulo => estaPublicada(articulo.data, ahora));
+const actualidad = (await getCollection('actualidad')).filter(pieza => estaPublicada(pieza.data, ahora));
 const indiceBusqueda = [
   ...articulos
   .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime())
