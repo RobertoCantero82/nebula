@@ -14,13 +14,13 @@ pantallas:
     tipo: recorrido
     datos: ["Luz solar", "Acetona", "CO₂", "Material para crecer"]
     texto:
-      - "La bacteria _Porticoccus arcticus_ vive en aguas superficiales del océano Ártico. Un equipo de la Universidad Concordia ha encontrado indicios de una estrategia poco habitual para sobrevivir allí: obtener energía de la luz y combinar acetona con CO₂ para fabricar compuestos que necesita la célula."
+      - "La bacteria *Porticoccus arcticus* vive en aguas superficiales del océano Ártico. Un equipo de la Universidad Concordia ha encontrado indicios de una estrategia poco habitual para sobrevivir allí: obtener energía de la luz y combinar acetona con CO₂ para fabricar compuestos que necesita la célula."
   - etiqueta: "02 | El entorno"
     titulo: "El hallazgo viene del mar de Beaufort, al norte del Yukón, un territorio silvestre, montañoso y escasamente poblado en el noroeste de Canadá."
     tipo: imagen-cine
     imagen: "/nebula/imagenes/actualidad/bacteria-artica-luz-acetona.png"
     altImagen: "Recreación conceptual de una bacteria ampliada en agua azul del Ártico, con luz solar que entra entre el hielo"
-    pieImagen: "Ilustración conceptual generada con IA para Nebula. Combina escalas microscópicas y ambientales; no es una micrografía ni reproduce la anatomía comprobada de Porticoccus arcticus."
+    pieImagen: "Ilustración conceptual generada con IA para Nebula. Combina escalas microscópicas y ambientales; no es una micrografía ni reproduce la anatomía comprobada de *Porticoccus arcticus*."
     texto:
       - "En esas aguas puede faltar materia orgánica aprovechable. La acetona, aunque nos recuerde al quitaesmalte, también se produce de forma natural en el mar: la generan organismos como las microalgas y ciertas reacciones de la luz con materia disuelta."
   - etiqueta: "03 | Los ingredientes"
