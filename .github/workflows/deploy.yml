@@ -1,16 +1,15 @@
 name: Deploy Nebula
 
+
 on:
   push:
     branches: [main]
   schedule:
-    # horas locales de España; reintentos para recuperar posibles retrasos
-    - cron: "0,5,15 9,10,11,12,14 * * *"
-      timezone: "Europe/Madrid"
-    # actualizo el cambio de día de la portada
-    - cron: "5 0 * * *"
-      timezone: "Europe/Madrid"
+    # horarios UTC, equivalentes al invierno español
+    - cron: "0,15,30 8,9,10,11,13 * * *"
+    - cron: "5 23 * * *"
   workflow_dispatch:
+
 
 permissions:
   contents: read
