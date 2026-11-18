@@ -1,6 +1,6 @@
 ---
 imagenPortada: "/nebula/imagenes/conexiones_imposibles_01.png"
-titulo: "'Cazafantasmas 2' y 'Las aventuras de Winnie Pooh' están conectadas: ¿con datos o algo más?"
+titulo: "'Cazafantasmas 2' y 'Las aventuras de Winnie Pooh' están conectadas: ¿adivinas cómo?"
 descripcion: "32 millones de valoraciones, cinco rutas y un pequeño detalle frente a la cámara. Hagan sus apuestas."
 tema: "CINE"
 serie: "trama"
