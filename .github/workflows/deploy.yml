@@ -6,7 +6,7 @@ on:
     branches: [main]
   schedule:
     # horarios UTC, equivalentes al invierno español
-    - cron: "0,15,30 8,9,10,11,12,13,14,15 * * *"
+    - cron: "0,15,30 8,9,10,11,12,13,14,15,16 * * *"
     - cron: "5 23 * * *"
   workflow_dispatch:
 

@@ -1,0 +1,14 @@
+pelicula,campo,valor,fuente,tipo_evidencia
+Arrival,anio,2016,https://watch.afi.com/movie/arrival-1,hecho
+Hamnet,anio,2025,https://www.focusfeatures.com/hamnet,hecho
+Arrival,direccion,Denis Villeneuve,https://watch.afi.com/movie/arrival-1,credito
+Hamnet,direccion,Chloé Zhao,https://www.focusfeatures.com/hamnet,credito
+Arrival,guion,Eric Heisserer,https://watch.afi.com/movie/arrival-1,credito
+Hamnet,guion,Chloé Zhao; Maggie O’Farrell,https://www.focusfeatures.com/hamnet,credito
+Arrival,origen_literario,"La historia de tu vida, Ted Chiang",https://watch.afi.com/movie/arrival-1,hecho
+Hamnet,origen_literario,"Hamnet, Maggie O’Farrell",https://www.motionpictures.org/2025/12/hamnet-composer-max-richter-on-the-song-that-gave-director-chloe-zhao-an-epiphany-rewrote-the-films-ending/,hecho
+Arrival,partitura_original,Jóhann Jóhannsson,https://www.deccaclassics.com/en/catalogue/products/arrival-soundtrack-johannsson-884,credito
+Hamnet,partitura_original,Max Richter,https://www.deutschegrammophon.com/en/artists/max-richter/news/max-richter-today-releases-his-original-soundtrack-for-hamnet-277522,credito
+Arrival,pieza_compartida,On the Nature of Daylight,https://philipsheppard.com/project/arrival/,testimonio_participante
+Hamnet,pieza_compartida,On the Nature of Daylight,https://www.deutschegrammophon.com/en/artists/max-richter/news/max-richter-today-releases-his-original-soundtrack-for-hamnet-277522,catalogo_y_testimonio
+Obra,publicacion_original,2004,https://www.deutschegrammophon.com/en/catalogue/products/the-blue-notebooks-20-year-edition-max-richter-13650,hecho
