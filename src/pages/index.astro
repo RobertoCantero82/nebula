@@ -66,7 +66,7 @@ const seccionesActualidad = [
     <div class="actualidad-cuadricula">
       {seccionesActualidad.map(({ clave, nombre, numero, pieza }) => pieza ? (
         <a class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/nebula/actualidad/${pieza.id}/`}>
-          <div class="actualidad-meta"><span>{numero} · {nombre}</span>{pieza.data.hora && <time>{pieza.data.hora}</time>}</div>
+          <div class="actualidad-meta"><span>{numero} · {nombre}</span></div>
           <div class="actualidad-contenido">
             {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
             <h2>{pieza.data.titulo}</h2>
