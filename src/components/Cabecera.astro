@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import { estaPublicada } from '../utils/publicacion';
+import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
 
 const { activa = '' } = Astro.props;
 const enlaces = [
@@ -23,7 +23,7 @@ const limpiarTexto = (texto = '') => texto
 
 const ahora = new Date();
 const articulos = (await getCollection('articulos')).filter(articulo => estaPublicada(articulo.data, ahora));
-const actualidad = (await getCollection('actualidad')).filter(pieza => estaPublicada(pieza.data, ahora));
+const actualidad = await getCollection('actualidad');
 const indiceBusqueda = [
   ...articulos
   .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime())
@@ -37,6 +37,7 @@ const indiceBusqueda = [
   ...actualidad
     .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime())
     .map((pieza) => ({
+      publicar: fechaPublicacion(pieza.data).getTime(),
       titulo: pieza.data.titulo,
       descripcion: pieza.data.descripcion,
       tema: `ACTUALIDAD | ${pieza.data.categoria.toUpperCase()}`,
@@ -90,6 +91,8 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
     campo.removeAttribute('aria-activedescendant');
   };
 
+  document.addEventListener('nebula:publicacion', () => { if (campo === document.activeElement) dibujar(); });
+
   const abrirResultado = (posicion = 0) => {
     const elegido = coincidencias[posicion];
     if (elegido) window.location.href = elegido.ruta;
@@ -107,6 +110,7 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
 
     const terminos = consulta.split(/\s+/).filter(Boolean);
     coincidencias = indice
+      .filter(articulo => !articulo.publicar || articulo.publicar <= Date.now())
       .map((articulo) => {
         const titulo = normalizar(articulo.titulo);
         const descripcion = normalizar(articulo.descripcion);

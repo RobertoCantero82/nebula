@@ -1,0 +1,65 @@
+<style is:global>
+  [data-publicar][hidden], .dia-actualidad[hidden] { display: none !important; }
+</style>
+<script>
+  const diaMadrid = (fecha: Date) => new Intl.DateTimeFormat('sv-SE', {
+    timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(fecha);
+  let firmaAnterior = '';
+  const actualizar = () => {
+    const ahora = new Date();
+    const instante = ahora.getTime();
+    const hoy = diaMadrid(ahora);
+    const portada = document.querySelector<HTMLElement>('[data-actualidad-fecha]');
+    if (portada) {
+      const fecha = portada.querySelector<HTMLTimeElement>('[data-fecha-actualidad]');
+      if (fecha) {
+        fecha.dateTime = hoy;
+        fecha.textContent = new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(ahora);
+      }
+      const plantillas = [...portada.querySelectorAll<HTMLTemplateElement>('[data-noticia-plantilla]')];
+      portada.querySelectorAll<HTMLElement>('.actualidad-cuadricula > [data-casilla]').forEach(casilla => {
+        const elegida = plantillas.filter(p => p.dataset.dia === hoy && p.dataset.categoria === casilla.dataset.casilla && Number(p.dataset.instante) <= instante)
+          .sort((a, b) => Number(b.dataset.instante) - Number(a.dataset.instante))[0];
+        if ((casilla.dataset.noticia || '') === (elegida?.dataset.id || '')) return;
+        if (elegida) {
+          casilla.replaceWith(elegida.content.cloneNode(true));
+        } else {
+          const vacia = document.createElement('article');
+          vacia.className = casilla.className.replace('tiene-pieza', 'esta-vacia');
+          vacia.dataset.casilla = casilla.dataset.casilla;
+          vacia.dataset.noticia = '';
+          const meta = casilla.querySelector('.actualidad-meta')!.cloneNode(true);
+          const espera = portada.querySelector<HTMLTemplateElement>('[data-actualidad-espera]')!.content.cloneNode(true);
+          vacia.append(meta, espera);
+          for (const atributo of casilla.getAttributeNames().filter(n => n.startsWith('data-astro-cid-'))) {
+            vacia.setAttribute(atributo, '');
+          }
+          casilla.replaceWith(vacia);
+        }
+      });
+      portada.dataset.actualidadFecha = hoy;
+    }
+    const enlaces = [...document.querySelectorAll<HTMLElement>('[data-publicar]')];
+    enlaces.forEach(enlace => { enlace.hidden = Number(enlace.dataset.publicar) > instante; });
+    document.querySelectorAll<HTMLElement>('.dia-actualidad').forEach(dia => {
+      dia.hidden = ![...dia.querySelectorAll<HTMLElement>('[data-publicar]')].some(enlace => !enlace.hidden);
+    });
+    const total = document.querySelector('[data-total-noticias]');
+    if (total) total.textContent = `${enlaces.filter(e => !e.hidden).length} noticias breves publicadas en Nebula.`;
+    const bloqueo = document.querySelector<HTMLElement>('[data-desbloquear]');
+    if (bloqueo) {
+      document.documentElement.toggleAttribute('data-noticia-pendiente', instante < Number(bloqueo.dataset.desbloquear));
+    }
+    const firma = `${hoy}|${enlaces.filter(e => !e.hidden).length}|${[...document.querySelectorAll<HTMLElement>('[data-noticia-plantilla]')].filter(e => Number(e.dataset.instante) <= instante).length}`;
+    if (firma !== firmaAnterior) {
+      firmaAnterior = firma;
+      document.dispatchEvent(new Event('nebula:publicacion'));
+    }
+  };
+  actualizar();
+  window.setInterval(actualizar, 1000);
+  window.addEventListener('pageshow', actualizar);
+  window.addEventListener('focus', actualizar);
+  document.addEventListener('visibilitychange', actualizar);
+</script>

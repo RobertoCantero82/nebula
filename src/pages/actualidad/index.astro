@@ -1,14 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
-import { estaPublicada } from '../../utils/publicacion';
+import { fechaPublicacion, estaPublicada } from '../../utils/publicacion';
 import '../../styles/global.css';
+import RelojActualidad from '../../components/RelojActualidad.astro';
 import Seo from '../../components/Seo.astro';
 import Cabecera from '../../components/Cabecera.astro';
 import CloudflareAnalytics from '../../components/CloudflareAnalytics.astro';
 
 const ahora = new Date();
 const piezas = (await getCollection('actualidad'))
-  .filter((pieza) => estaPublicada(pieza.data, ahora))
   .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
 const grupos = Object.entries(Object.groupBy(piezas, (pieza) => pieza.data.fecha.toISOString().slice(0, 10)));
 const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
@@ -32,14 +32,14 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
       <header>
         <p>ARCHIVO</p>
         <h1>Actualidad</h1>
-        <span>{piezas.length} noticias breves publicadas en Nebula.</span>
+        <span data-total-noticias>{piezas.filter(p => estaPublicada(p.data, ahora)).length} noticias breves publicadas en Nebula.</span>
       </header>
       {grupos.map(([, publicaciones]) => publicaciones && publicaciones.length > 0 && (
-        <section class="dia-actualidad" aria-labelledby={`dia-${publicaciones[0].data.fecha.toISOString().slice(0, 10)}`}>
+        <section hidden={!publicaciones.some(p => estaPublicada(p.data, ahora))} class="dia-actualidad" aria-labelledby={`dia-${publicaciones[0].data.fecha.toISOString().slice(0, 10)}`}>
           <h2 id={`dia-${publicaciones[0].data.fecha.toISOString().slice(0, 10)}`}>{fecha(publicaciones[0].data.fecha)}</h2>
           <div>
             {publicaciones.map((pieza) => (
-              <a href={`/nebula/actualidad/${pieza.id}/`}>
+              <a data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)} href={`/nebula/actualidad/${pieza.id}/`}>
                 <span>{pieza.data.categoria}</span>
                 {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
                 <h3>{pieza.data.titulo}</h3>
@@ -50,7 +50,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
       ))}
     </main>
     <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/nebula/privacidad/">Privacidad</a></p></footer>
-    <CloudflareAnalytics />
+    <CloudflareAnalytics /><RelojActualidad />
   </body>
 </html>
 
