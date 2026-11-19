@@ -4,7 +4,7 @@ titulo: "'Hamnet' y 'Arrival' esconden una conexión que quizá has sentido sin 
 descripcion: "Shakespeare, una lingüista y nueve años de distancia. Dos películas aparentemente alejadas comparten un detalle que cambia la forma de acercarse a ellas."
 tema: "CINE"
 serie: "trama"
-fecha: fecha: 2026-11-19T17:00:00+01:00
+fecha: 2026-11-19T17:00:00+01:00
 cifraDestacada: "9 años"
 etiquetaCifra: "entre dos películas más cercanas de lo que parecen"
 textoContinuo: "'Hamnet' y 'Arrival': 9 años de distancia y una conexión que quizá has sentido sin darte cuenta."
