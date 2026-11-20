@@ -165,7 +165,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
 
             {pantalla.tipo === 'video-youtube' && pantalla.videoId && (
               <figure class="visual video-actualidad">
-                <div><iframe src={`https://www.youtube-nocookie.com/embed/${pantalla.videoId}?rel=0`} title={pantalla.titulo} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <div><iframe src={`https://www.youtube-nocookie.com/embed/${pantalla.videoId}?rel=0${pantalla.videoIdiomaSubtitulos ? `&cc_load_policy=1&cc_lang_pref=${pantalla.videoIdiomaSubtitulos}&hl=${pantalla.videoIdiomaSubtitulos}` : ''}`} title={pantalla.titulo} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
                 {pantalla.pieImagen && <figcaption>{pantalla.pieImagen}</figcaption>}
               </figure>
             )}

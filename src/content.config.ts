@@ -46,6 +46,7 @@ const actualidad = defineCollection({
       pieImagen: z.string().optional(),
       videoXId: z.string().regex(/^\d{15,22}$/).optional(),
       videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(),
+      videoIdiomaSubtitulos: z.string().regex(/^[a-z]{2}$/).optional(),
     })).length(5),
     fuentes: z.array(z.object({
       nombre: z.string(),
