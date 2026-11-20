@@ -4,7 +4,7 @@ descripcion: "El Cybercab cuesta 29.990 dólares, pero necesita una cuota para f
 categoria: extra
 fecha: 2026-11-20
 hora: "15:00"
-cifraDestacada: "299 $"
+cifraDestacada: "299 dólares"
 etiquetaCifra: "al mes para viajar"
 fondoPortada: "299 $/mes"
 mostrarCifraInterior: false
