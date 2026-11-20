@@ -2,7 +2,7 @@
 titulo: "Netflix tiene miles de títulos. ¿Cuántos se llevan la mitad de lo que vemos?"
 descripcion: "He ordenado las horas vistas de películas y temporadas para descubrir cuánto pesan los grandes éxitos. El resultado va más allá del top 10."
 tema: "CINE"
-fecha: 2026-11-20
+fecha: 2026-11-20T17:00:00+01:00
 imagenPortada: "/nebula/imagenes/netflix_miles_titulos_portada.png"
 cifraDestacada: "775 títulos"
 etiquetaCifra: "reúnen la mitad de las horas vistas"
