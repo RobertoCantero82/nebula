@@ -3,7 +3,7 @@ titulo: "El gran negocio de Ashton Kutcher no está en Hollywood"
 descripcion: "La salida a bolsa de Anthropic dispara el valor de una inversión del fondo que cofundó el actor. Pero eso no permite saber cuánto dinero le corresponde."
 categoria: cine
 fecha: 2026-11-20
-hora: "11:00"
+hora: "13:00"
 cifraDestacada: "×16"
 etiquetaCifra: "el valor de la inversión"
 fondoPortada: "Ashton Kutcher"
