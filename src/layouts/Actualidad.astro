@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { fechaPublicacion } from '../utils/publicacion';
 import RelojActualidad from '../components/RelojActualidad.astro';
 import Seo from '../components/Seo.astro';
+import Cabecera from '../components/Cabecera.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 const { pieza } = Astro.props;
@@ -36,11 +37,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
       <a href="/nebula/">Volver a Nebula</a>
     </aside>
     <RelojActualidad />
-    <header class="barra-superior">
-      <a class="marca" href="/nebula/" aria-label="Volver a la portada de Nebula"><img src="/nebula/imagenes/logo-nebula-v2.png" width="172" height="57" alt="Nebula" /></a>
-      <div><span>ACTUALIDAD</span><time datetime={fechaCarpeta}>{fechaLarga}</time></div>
-      <a class="volver" href="/nebula/#titulo-actualidad">Las cuatro noticias <span aria-hidden="true">↗</span></a>
-    </header>
+    <Cabecera activa="actualidad" />
 
     <nav class="progreso" aria-label="Recorrido de la noticia">
       <a href="#portada" aria-label="Portada"><span>00</span></a>
@@ -257,7 +254,9 @@ const fechaCarpeta = pieza.id.split('/')[0];
     <CloudflareAnalytics />
 
     <script>
-      const pantallas = [...document.querySelectorAll('[data-pantalla]')];
+import { alCargarPagina } from '../scripts/ciclo-pagina';
+alCargarPagina((escuchar, alSalir) => {
+const pantallas = [...document.querySelectorAll('[data-pantalla]')];
       const enlaces = [...document.querySelectorAll('.progreso a')];
       const observador = new IntersectionObserver((entradas) => {
         entradas.forEach((entrada) => {
@@ -289,7 +288,11 @@ const fechaCarpeta = pieza.id.split('/')[0];
           ficha?.classList.toggle('muestra-vuelo', boton.dataset.indice === '1');
         }));
       });
-    </script>
+    
+ alSalir(() => observador.disconnect());
+
+});
+</script>
   </body>
 </html>
 

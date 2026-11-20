@@ -65,7 +65,9 @@ const ejemplos = [
 </main>
 <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
 <script>
-  document.querySelector('#form-colabora')?.addEventListener('submit', (evento) => {
+import { alCargarPagina } from '../scripts/ciclo-pagina';
+alCargarPagina((escuchar, alSalir) => {
+document.querySelector('#form-colabora')?.addEventListener('submit', (evento) => {
     evento.preventDefault(); const form = new FormData(evento.currentTarget as HTMLFormElement);
     const asunto = `Propuesta para Nebula: ${form.get('empresa')} · ${form.get('tipo')}`;
     const cuerpo = [`Nombre: ${form.get('nombre')}`, `Empresa: ${form.get('empresa')}`, `Correo: ${form.get('email')}`, `Producto, servicio o proyecto: ${form.get('proyecto')}`, `Tipo de colaboración: ${form.get('tipo')}`, '', String(form.get('mensaje'))].join('\n');
@@ -82,6 +84,8 @@ const ejemplos = [
       ? 'Datos disponibles de los últimos 30 días.'
       : 'Todavía no existe un histórico verificado para este periodo. Lo construiremos con cortes mensuales.';
   }));
+
+});
 </script>
 </body></html>
 <style>

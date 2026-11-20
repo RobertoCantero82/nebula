@@ -59,12 +59,14 @@
     if (bloqueo) {
       document.documentElement.toggleAttribute('data-noticia-pendiente', instante < Number(bloqueo.dataset.desbloquear));
     }
+    if (!bloqueo) document.documentElement.removeAttribute('data-noticia-pendiente');
     const firma = `${hoy}|${enlaces.filter(e => !e.hidden).length}|${[...document.querySelectorAll<HTMLElement>('[data-noticia-plantilla]')].filter(e => Number(e.dataset.instante) <= instante).length}`;
     if (firma !== firmaAnterior) {
       firmaAnterior = firma;
       document.dispatchEvent(new Event('nebula:publicacion'));
     }
   };
+  document.addEventListener('astro:page-load', actualizar);
   actualizar();
   window.setInterval(actualizar, 1000);
   window.addEventListener('pageshow', actualizar);

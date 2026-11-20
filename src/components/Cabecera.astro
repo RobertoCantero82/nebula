@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import MusicaNebula from './MusicaNebula.astro';
 import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
 
 const { activa = '' } = Astro.props;
@@ -49,9 +50,7 @@ const indiceBusqueda = [
 const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
 ---
 <header class="cabecera contenedor">
-  <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
-    <img class="marca-logo" src="/nebula/imagenes/logo-nebula-v2.png" width="172" height="57" alt="" />
-  </a>
+  <MusicaNebula />
   <div class="buscador-nebula" data-buscador>
     <label class="solo-lectores" for="busqueda-nebula">Buscar artículos por palabra clave</label>
     <div class="buscador-nebula-campo">
@@ -74,7 +73,10 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
 <script type="application/json" id="indice-busqueda-nebula" set:html={indiceSeguro}></script>
 
 <script>
-  const raiz = document.querySelector('[data-buscador]');
+import { navigate } from 'astro:transitions/client';
+import { alCargarPagina } from '../scripts/ciclo-pagina';
+alCargarPagina((escuchar, alSalir) => {
+const raiz = document.querySelector('[data-buscador]');
   const campo = raiz?.querySelector('input');
   const resultados = raiz?.querySelector('[role="listbox"]');
   const estado = raiz?.querySelector('.estado-busqueda');
@@ -91,11 +93,11 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
     campo.removeAttribute('aria-activedescendant');
   };
 
-  document.addEventListener('nebula:publicacion', () => { if (campo === document.activeElement) dibujar(); });
+  escuchar(document, 'nebula:publicacion', () => { if (campo === document.activeElement) dibujar(); });
 
   const abrirResultado = (posicion = 0) => {
     const elegido = coincidencias[posicion];
-    if (elegido) window.location.href = elegido.ruta;
+    if (elegido) void navigate(elegido.ruta);
   };
 
   const dibujar = () => {
@@ -183,13 +185,15 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
       campo?.focus();
     }
   });
-  document.addEventListener('click', (evento) => {
+  escuchar(document, 'click', (evento) => {
     if (raiz && !raiz.contains(evento.target)) cerrar();
   });
-  document.addEventListener('keydown', (evento) => {
+  escuchar(document, 'keydown', (evento) => {
     if (evento.key === '/' && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
       evento.preventDefault();
       campo?.focus();
     }
   });
+
+});
 </script>
