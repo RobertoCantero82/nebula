@@ -1,0 +1,325 @@
+{
+  "conjunto": {
+    "registros": 17370,
+    "total": 97664500000,
+    "horas_otros": 859900000,
+    "mitad": 775,
+    "porcentaje_titulos_mitad": 4.461715601611975,
+    "cuotas": {
+      "10": 4.6438572869364,
+      "100": 18.905026903327208,
+      "1000": 55.29696051277588
+    },
+    "top": [
+      {
+        "titulo": "Bridgerton: Season 4",
+        "formato": "series",
+        "horas": 889800000
+      },
+      {
+        "titulo": "Stranger Things 5",
+        "formato": "series",
+        "horas": 578400000
+      },
+      {
+        "titulo": "Teach You a Lesson: Limited Series // 참교육: 리미티드 시리즈",
+        "formato": "series",
+        "horas": 514700000
+      },
+      {
+        "titulo": "His & Hers: Limited Series",
+        "formato": "series",
+        "horas": 454300000
+      },
+      {
+        "titulo": "ONE PIECE: Season 2",
+        "formato": "series",
+        "horas": 383500000
+      },
+      {
+        "titulo": "Can This Love Be Translated?: Limited Series // 이 사랑 통역 되나요?: 리미티드 시리즈",
+        "formato": "series",
+        "horas": 377700000
+      },
+      {
+        "titulo": "Pursuit of Jade: Season 1 // 逐玉: 第 1 季",
+        "formato": "series",
+        "horas": 356700000
+      },
+      {
+        "titulo": "I Will Find You: Limited Series",
+        "formato": "series",
+        "horas": 350500000
+      },
+      {
+        "titulo": "Run Away: Limited Series",
+        "formato": "series",
+        "horas": 315300000
+      },
+      {
+        "titulo": "The Night Agent: Season 3",
+        "formato": "series",
+        "horas": 314500000
+      }
+    ]
+  },
+  "series": {
+    "registros": 8193,
+    "total": 74354300000,
+    "horas_otros": 757000000,
+    "mitad": 473,
+    "porcentaje_titulos_mitad": 5.773221042353229,
+    "cuotas": {
+      "10": 6.099714475154766,
+      "100": 23.583706658525465,
+      "1000": 67.08556196480903
+    },
+    "top": [
+      {
+        "titulo": "Bridgerton: Season 4",
+        "formato": "series",
+        "horas": 889800000
+      },
+      {
+        "titulo": "Stranger Things 5",
+        "formato": "series",
+        "horas": 578400000
+      },
+      {
+        "titulo": "Teach You a Lesson: Limited Series // 참교육: 리미티드 시리즈",
+        "formato": "series",
+        "horas": 514700000
+      },
+      {
+        "titulo": "His & Hers: Limited Series",
+        "formato": "series",
+        "horas": 454300000
+      },
+      {
+        "titulo": "ONE PIECE: Season 2",
+        "formato": "series",
+        "horas": 383500000
+      },
+      {
+        "titulo": "Can This Love Be Translated?: Limited Series // 이 사랑 통역 되나요?: 리미티드 시리즈",
+        "formato": "series",
+        "horas": 377700000
+      },
+      {
+        "titulo": "Pursuit of Jade: Season 1 // 逐玉: 第 1 季",
+        "formato": "series",
+        "horas": 356700000
+      },
+      {
+        "titulo": "I Will Find You: Limited Series",
+        "formato": "series",
+        "horas": 350500000
+      },
+      {
+        "titulo": "Run Away: Limited Series",
+        "formato": "series",
+        "horas": 315300000
+      },
+      {
+        "titulo": "The Night Agent: Season 3",
+        "formato": "series",
+        "horas": 314500000
+      }
+    ]
+  },
+  "peliculas": {
+    "registros": 9177,
+    "total": 23310200000,
+    "horas_otros": 102900000,
+    "mitad": 468,
+    "porcentaje_titulos_mitad": 5.099705786204642,
+    "cuotas": {
+      "10": 7.824042693756382,
+      "100": 24.473406491578796,
+      "1000": 67.40825904539643
+    },
+    "top": [
+      {
+        "titulo": "War Machine",
+        "formato": "peliculas",
+        "horas": 266800000
+      },
+      {
+        "titulo": "The Rip",
+        "formato": "peliculas",
+        "horas": 256400000
+      },
+      {
+        "titulo": "Swapped",
+        "formato": "peliculas",
+        "horas": 222400000
+      },
+      {
+        "titulo": "KPop Demon Hunters",
+        "formato": "peliculas",
+        "horas": 217300000
+      },
+      {
+        "titulo": "Apex",
+        "formato": "peliculas",
+        "horas": 204200000
+      },
+      {
+        "titulo": "People We Meet on Vacation",
+        "formato": "peliculas",
+        "horas": 152900000
+      },
+      {
+        "titulo": "Thrash",
+        "formato": "peliculas",
+        "horas": 143300000
+      },
+      {
+        "titulo": "Dhurandhar // धुरंधर",
+        "formato": "peliculas",
+        "horas": 127000000
+      },
+      {
+        "titulo": "Peaky Blinders: The Immortal Man",
+        "formato": "peliculas",
+        "horas": 121500000
+      },
+      {
+        "titulo": "Office Romance",
+        "formato": "peliculas",
+        "horas": 112000000
+      }
+    ]
+  },
+  "sensibilidad_visualizaciones": {
+    "series": {
+      "registros": 8193,
+      "total": 10441700000,
+      "horas_otros": 0,
+      "mitad": 567,
+      "porcentaje_titulos_mitad": 6.92054192603442,
+      "cuotas": {
+        "10": 5.586255111715525,
+        "100": 21.905436854152104,
+        "1000": 63.11137075380445
+      },
+      "top": [
+        {
+          "titulo": "His & Hers: Limited Series",
+          "formato": "series",
+          "visualizaciones": 104000000
+        },
+        {
+          "titulo": "Bridgerton: Season 4",
+          "formato": "series",
+          "visualizaciones": 100200000
+        },
+        {
+          "titulo": "I Will Find You: Limited Series",
+          "formato": "series",
+          "visualizaciones": 63900000
+        },
+        {
+          "titulo": "Stranger Things 5",
+          "formato": "series",
+          "visualizaciones": 55600000
+        },
+        {
+          "titulo": "Run Away: Limited Series",
+          "formato": "series",
+          "visualizaciones": 50300000
+        },
+        {
+          "titulo": "Teach You a Lesson: Limited Series // 참교육: 리미티드 시리즈",
+          "formato": "series",
+          "visualizaciones": 48200000
+        },
+        {
+          "titulo": "ONE PIECE: Season 2",
+          "formato": "series",
+          "visualizaciones": 47300000
+        },
+        {
+          "titulo": "Man on Fire: Season 1",
+          "formato": "series",
+          "visualizaciones": 40400000
+        },
+        {
+          "titulo": "Ms. Rachel: Season 1",
+          "formato": "series",
+          "visualizaciones": 37300000
+        },
+        {
+          "titulo": "The Night Agent: Season 3",
+          "formato": "series",
+          "visualizaciones": 36100000
+        }
+      ]
+    },
+    "peliculas": {
+      "registros": 9177,
+      "total": 12948700000,
+      "horas_otros": 0,
+      "mitad": 474,
+      "porcentaje_titulos_mitad": 5.165086629617522,
+      "cuotas": {
+        "10": 8.019337848587117,
+        "100": 24.770826415006912,
+        "1000": 66.97120174225985
+      },
+      "top": [
+        {
+          "titulo": "War Machine",
+          "formato": "peliculas",
+          "visualizaciones": 146900000
+        },
+        {
+          "titulo": "The Rip",
+          "formato": "peliculas",
+          "visualizaciones": 136100000
+        },
+        {
+          "titulo": "Swapped",
+          "formato": "peliculas",
+          "visualizaciones": 130800000
+        },
+        {
+          "titulo": "KPop Demon Hunters",
+          "formato": "peliculas",
+          "visualizaciones": 130400000
+        },
+        {
+          "titulo": "Apex",
+          "formato": "peliculas",
+          "visualizaciones": 129000000
+        },
+        {
+          "titulo": "Thrash",
+          "formato": "peliculas",
+          "visualizaciones": 100000000
+        },
+        {
+          "titulo": "People We Meet on Vacation",
+          "formato": "peliculas",
+          "visualizaciones": 77700000
+        },
+        {
+          "titulo": "The Crash",
+          "formato": "peliculas",
+          "visualizaciones": 65200000
+        },
+        {
+          "titulo": "Peaky Blinders: The Immortal Man",
+          "formato": "peliculas",
+          "visualizaciones": 63900000
+        },
+        {
+          "titulo": "Office Romance",
+          "formato": "peliculas",
+          "visualizaciones": 58400000
+        }
+      ]
+    }
+  },
+  "sha256_original": "bcfda87e87d09d923472a1e1b30d5c7c799457aacba41310a9d223e834fe2f5f"
+}
