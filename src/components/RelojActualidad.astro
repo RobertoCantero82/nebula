@@ -17,6 +17,14 @@
         fecha.dateTime = hoy;
         fecha.textContent = new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(ahora);
       }
+      const diaSemana = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Madrid', weekday: 'short' }).format(ahora);
+      const esFinDeSemana = diaSemana === 'Sat' || diaSemana === 'Sun';
+      const descanso = portada.querySelector<HTMLElement>('[data-actualidad-descanso]');
+      const cuadricula = portada.querySelector<HTMLElement>('.actualidad-cuadricula');
+      if (descanso && cuadricula) {
+        descanso.hidden = !esFinDeSemana;
+        cuadricula.hidden = esFinDeSemana;
+      }
       const plantillas = [...portada.querySelectorAll<HTMLTemplateElement>('[data-noticia-plantilla]')];
       portada.querySelectorAll<HTMLElement>('.actualidad-cuadricula > [data-casilla]').forEach(casilla => {
         const elegida = plantillas.filter(p => p.dataset.dia === hoy && p.dataset.categoria === casilla.dataset.casilla && Number(p.dataset.instante) <= instante)

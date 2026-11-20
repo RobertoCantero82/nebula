@@ -18,6 +18,8 @@ const contenidoEspera = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64
 </svg><span>En desarrollo</span><p>Este espacio se completará con la actualidad de hoy.</p>`;
 
 const ahora = new Date();
+const diaSemanaMadrid = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Madrid', weekday: 'short' }).format(ahora);
+const esFinDeSemana = diaSemanaMadrid === 'Sat' || diaSemanaMadrid === 'Sun';
 const publicados = (await getCollection('articulos')).filter((a) => a.data.fecha <= ahora).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
 const todasLasNoticias = await getCollection('actualidad');
 const actualidad = todasLasNoticias.filter(pieza => estaPublicada(pieza.data, ahora));
@@ -65,7 +67,17 @@ const seccionesActualidad = [
       <time datetime={fechaHoy} data-fecha-actualidad>{new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(ahora)}</time>
     </header>
     <template data-actualidad-espera><div class="actualidad-espera" set:html={contenidoEspera} /></template>
-    <div class="actualidad-cuadricula">
+    <div class="actualidad-descanso" data-actualidad-descanso hidden={!esFinDeSemana}>
+      <svg class="actualidad-pausa" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true" focusable="false">
+        <circle cx="32" cy="32" r="27" fill="none" stroke="currentColor" stroke-width="2" />
+        <path d="M26 23v18m12-18v18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="5" />
+      </svg>
+      <p class="actualidad-descanso-etiqueta">Volvemos el lunes</p>
+      <h2>El fin de semana también se descansa</h2>
+      <p>La actualidad vuelve el lunes. Mientras tanto, tienes historias por descubrir en Nebula.</p>
+      <a href="/nebula/articulos/">Explorar los análisis <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="actualidad-cuadricula" hidden={esFinDeSemana}>
       {seccionesActualidad.map(({ clave, nombre, numero, pieza }) => pieza ? (
         <a data-casilla={clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/nebula/actualidad/${pieza.id}/`}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span></div>
@@ -357,4 +369,48 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
   @media (prefers-reduced-motion: reduce) {
     .actualidad-radar-aguja { animation: none; }
   }
+</style>
+
+<style>
+  .actualidad-cuadricula[hidden], .actualidad-descanso[hidden] { display: none !important; }
+  .actualidad-descanso {
+    align-items: center;
+    background-image: radial-gradient(circle at 1px 1px, rgb(68 109 223 / 10%) 1px, transparent 0);
+    background-size: 18px 18px;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1rem, 4vw, 2rem);
+    text-align: center;
+  }
+  .actualidad-pausa { color: #446ddf; flex-shrink: 0; }
+  .actualidad-descanso .actualidad-descanso-etiqueta {
+    color: var(--color-ink);
+    font: 600 10px/1.5 var(--font-mono);
+    letter-spacing: .08em;
+    margin: 1.25rem 0 .65rem;
+    text-transform: uppercase;
+  }
+  .actualidad-descanso h2 {
+    color: var(--color-ink);
+    font: 600 clamp(1.65rem, 3.5vw, 2.5rem)/1.12 var(--font-heading);
+    letter-spacing: -.03em;
+    margin: 0;
+    max-width: 24ch;
+    text-wrap: balance;
+  }
+  .actualidad-descanso > p:not(.actualidad-descanso-etiqueta) {
+    color: var(--color-secondary-text);
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 1rem 0 1.4rem;
+    max-width: 49ch;
+  }
+  .actualidad-descanso > a {
+    color: #3558bd;
+    font: 600 11px/1.5 var(--font-mono);
+    padding: .75rem .25rem;
+    text-underline-offset: 4px;
+  }
+  .actualidad-descanso > a:focus-visible { outline: 3px solid var(--color-ink); outline-offset: 4px; }
 </style>
