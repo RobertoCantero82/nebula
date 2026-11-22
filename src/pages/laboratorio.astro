@@ -6,119 +6,83 @@ import Cabecera from '../components/Cabecera.astro';
 
 const proyectos = [
   {
-    nombre: 'Agente Indy',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/agente-indy.png',
-      alt: 'Pantalla de inicio de Agente Indy, con su mascota de sombrero y el botón Chat con Indy sobre un fondo de ilustraciones de aventuras.',
-      ancho: 1466,
-      alto: 888,
-    },
-    tema: 'Cine',
-    pregunta: '¿Merece la pena ver esa película?',
-    descripcion: 'Le digo una película y me ayuda a decidir si verla. Una forma de utilizar la inteligencia artificial para resolver esa duda que aparece antes de darle al play.',
-    ejemplo: 'Una película como punto de partida. Una recomendación para decidir.',
-    enlace: 'https://robertocantero-agente-indy.hf.space/',
-    accion: 'Preguntar a Indy',
-    estado: 'Acceso público',
+    id: 'indy', nombre: 'Indy', tema: 'Cine · Inteligencia artificial', estado: 'Acceso público',
+    titular: 'Antes de darle al play, pregunta a Indy.',
+    descripcion: 'He creado un compañero de conversación para esa duda que aparece antes de ver una película: ¿merecerá la pena? Un título es el punto de partida para hablar de cine y decidir qué ver.',
+    imagen: 'agente-indy.png', ancho: 1466, alto: 888,
+    alt: 'Inicio de Indy: un perro con sombrero de explorador y el botón Chat con Indy sobre un fondo de aventuras.',
+    pie: 'Un título, una conversación y una decisión pendiente.',
+    enlace: 'https://robertocantero-agente-indy.hf.space/', accion: 'Hablar con Indy',
+    detalle: 'Qué puedes hacer',
+    puntos: ['Abrir el chat y empezar por una película.', 'Utilizar la conversación para ayudarte a decidir qué ver.'],
+    limite: 'Es una herramienta de inteligencia artificial: sus respuestas pueden contener errores.',
   },
   {
-    nombre: 'Agente MVP',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/agente-mvp.png',
-      alt: 'Agente MVP en modo Resultados: resumen de la jornada NBA, análisis partido a partido y acceso a Pregunta a M.V.P.',
-      ancho: 1405,
-      alto: 881,
-    },
-    tema: 'Baloncesto',
-    pregunta: 'La jornada NBA, a tu manera.',
-    descripcion: 'Analiza la jornada de la NBA con y sin spoilers. También incluye un buscador global: escribo una pregunta y rastrea los datos de todos los partidos de la temporada actual para responderla.',
-    ejemplo: 'Puedo seguir la jornada con o sin resultados y consultar los datos de toda la temporada actual desde el buscador global.',
-    enlace: 'https://robertocantero-mvp-nba.static.hf.space/index.html',
-    accion: 'Consultar la jornada',
-    estado: 'Acceso público',
+    id: 'mvp', nombre: 'Agente MVP', tema: 'Baloncesto · Datos', estado: 'Acceso público',
+    titular: 'La NBA también se disfruta sin saber el resultado.',
+    descripcion: 'Reúno la jornada NBA en una herramienta para seguir los partidos con o sin spoilers. También puedo hacer preguntas y consultar los datos de los encuentros de la temporada actual.',
+    imagen: 'agente_mvp.webp', ancho: 1280, alto: 623,
+    alt: 'Nueva portada de Agente MVP con el titular de la jornada NBA, seis partidos y controles para revelar u ocultar los resultados.',
+    pie: 'La jornada, sus historias y los datos para seguir preguntando.',
+    enlace: 'https://robertocantero-mvp-nba.static.hf.space/index.html', accion: 'Explorar la jornada',
+    detalle: 'Qué puedes hacer',
+    puntos: ['Consultar jornadas y revelar los resultados cuando quieras.', 'Explorar los partidos y preguntar por los datos de la temporada actual.'],
+    limite: 'Las fechas de los partidos corresponden a Estados Unidos. La información depende de los datos disponibles en la herramienta.',
   },
   {
-    nombre: 'Radar Marvel Snap',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/radar-marvel-snap.png',
-      alt: 'Radar Marvel Snap con filtros de cartas y arquetipos, dos mazos con sus cartas y estadísticas, y opciones para copiar el mazo y consultar su fuente.',
-      ancho: 1790,
-      alto: 908,
-    },
-    tema: 'Videojuegos',
-    pregunta: 'Otra forma de encontrar tu próximo mazo.',
-    descripcion: 'Busca nuevos mazos a diario para jugar a Marvel Snap. Reúno propuestas con distintas combinaciones de cartas para tener ideas cuando quiero cambiar mi forma de jugar.',
-    ejemplo: 'Nuevas combinaciones de cartas para probar en el juego.',
-    enlace: 'https://robertocantero82.github.io/mazos_snap/',
-    accion: 'Explorar los mazos',
-    estado: 'Acceso público',
+    id: 'snap', nombre: 'Radar Marvel Snap', tema: 'Videojuegos · Automatización', estado: 'Acceso público',
+    titular: 'Tu próximo mazo empieza con las cartas que tienes.',
+    descripcion: 'He preparado un radar para descubrir combinaciones de cartas, comparar sus estadísticas y encontrar ideas para jugar. El filtro de cartas que te faltan ayuda a buscar mazos que puedas montar con tu colección.',
+    imagen: 'radar-marvel-snap.png', ancho: 1790, alto: 908,
+    alt: 'Radar Marvel Snap: filtros por cartas y arquetipos, mazos con sus estadísticas y acceso a sus fuentes.',
+    pie: 'Menos búsquedas sueltas. Más combinaciones para probar.',
+    enlace: 'https://robertocantero82.github.io/mazos_snap/', accion: 'Encontrar un mazo',
+    detalle: 'Qué puedes hacer',
+    puntos: ['Buscar cartas, mazos o arquetipos y ordenar los resultados.', 'Excluir las cartas que no tienes y copiar un mazo para probarlo.'],
+    limite: 'Las estadísticas describen las partidas recogidas por las fuentes; no garantizan el resultado de tus partidas.',
   },
   {
-    nombre: 'La NBA dibujada',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/la-nba-dibujada.png',
-      alt: 'Publicación de La NBA dibujada en X: los once partidos del 21 de octubre se convierten en un gráfico con forma de perro y en un cuadro de un perro viendo baloncesto desde la grada.',
-      ancho: 705,
-      alto: 496,
-    },
-    tema: 'Datos y arte',
-    pregunta: '¿Y si un gráfico también fuera un cuadro?',
-    descripcion: 'En esta cuenta de X convierto cada jornada de la NBA en una imagen. El proceso parte de un gráfico, encuentra un objeto en su forma y lo transforma en un cuadro.',
-    ejemplo: 'De los datos de la jornada a un gráfico. Del gráfico a un objeto y a un cuadro.',
-    enlace: 'https://x.com/lanbadibujada',
-    accion: 'Ver los cuadros en X',
-    estado: 'Cuenta pública',
+    id: 'lofi', nombre: 'Nebula LoFi', tema: 'Música · Creación', estado: 'Canal público',
+    titular: 'Ponle música a lo que estás haciendo.',
+    descripcion: 'En Nebula también hay espacio para bajar el ritmo. Reúno música lofi y escenarios que acompañan las horas de estudio, trabajo o descanso. Puedes escuchar una sesión aquí o seguir explorando el canal.',
+    imagen: 'nebula_lofi.jpg', ancho: 480, alto: 360,
+    alt: 'Portada de la sesión de música de Nebula LoFi en YouTube.',
+    pie: 'Una sesión de más de dos horas para encontrar tu ritmo.',
+    enlace: 'https://www.youtube.com/@nebulalofimusica', accion: 'Ir al canal',
+    detalle: 'Sobre la escucha',
+    puntos: ['Cargar el reproductor y escuchar la sesión sin salir del Laboratorio.', 'Visitar YouTube para explorar el canal.'],
+    limite: 'El reproductor de YouTube se carga únicamente cuando lo solicitas. La música no empieza al abrir esta página.',
   },
   {
-    nombre: 'Radar de empleo editorial en España',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/radar-empleo.png',
-      alt: 'Radar de empleo editorial en España con búsquedas para X, LinkedIn, Facebook e Instagram y etiquetas para encontrar ofertas de periodismo.',
-      ancho: 1388,
-      alto: 920,
-    },
-    tema: 'Empleo',
-    pregunta: 'Las ofertas también aparecen entre publicaciones.',
-    descripcion: 'Una herramienta que utilizo para seguir ofertas de empleo de periodismo en redes sociales. Reúne búsquedas para consultar oportunidades editoriales en España desde un mismo lugar.',
-    ejemplo: 'Búsquedas organizadas para facilitar el seguimiento de ofertas en redes.',
-    enlace: undefined,
-    accion: undefined,
-    estado: 'Uso personal · Sin acceso público',
+    id: 'rebobina', nombre: 'Rebobina', tema: 'Cine de los 80 y 90 · Catálogo', estado: 'Proyecto local',
+    titular: 'Vuelve al videoclub. Sin devolver la película el lunes.',
+    descripcion: 'He preparado un catálogo de películas de 1980 a 1999 para redescubrir el cine con el que crecí. Puedo buscar títulos, recorrer los estrenos y organizar mi propia estantería con las que quiero ver o ya he visto.',
+    imagen: 'rebobina.png', ancho: 1884, alto: 928,
+    alt: 'Catálogo de Rebobina con filtros por título, año, mes y género y películas como Pulp Fiction, Matrix y Seven.',
+    pie: 'Una captura del catálogo real. El proyecto todavía no tiene acceso público.',
+    enlace: '/nebula/imagenes/laboratorio/rebobina.png', accion: 'Ampliar demostración',
+    detalle: 'Qué incluye el catálogo',
+    puntos: ['Filtros para explorar películas de 1980 a 1999.', 'Una estantería personal para organizar las películas pendientes y vistas.'],
+    limite: 'La selección utiliza los votos actuales de IMDb como orientación de popularidad. No es un registro de lo más visto en aquellas décadas ni reproduce películas.',
   },
   {
-    nombre: 'Agente de empleo editorial',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/empleo-email.png',
-      alt: 'Ejemplo del boletín de empleo por correo: oportunidades seleccionadas, criterios de búsqueda y una oferta de Data Scientist Junior con una valoración de afinidad.',
-      ancho: 1323,
-      alto: 647,
-    },
-    tema: 'Empleo y automatización',
-    pregunta: 'Las ofertas que encajan conmigo, en mi correo.',
-    descripcion: 'He creado un agente que busca ofertas de periodismo, redacción y edición en España. Consulta portales de empleo, filtra las oportunidades según mi perfil y me envía una selección por correo electrónico.',
-    ejemplo: 'De la búsqueda al boletín: reúne ofertas, valora su encaje y evita volver a enviarme las mismas.',
-    enlace: undefined,
-    accion: undefined,
-    estado: 'Uso personal · Sin acceso público',
-    nota: 'Agente de uso personal con envío por correo.',
+    id: 'vhs-club', nombre: 'VHS Club', tema: 'Google TV · Aplicación', estado: 'En desarrollo',
+    titular: 'Tus películas. Tus series. Tu propio videoclub.',
+    descripcion: 'Estoy desarrollando una aplicación para Google TV que convertirá las películas y series de tu Google Drive en un videoclub de estética noventera. La idea: recorrer tu colección con el mando y reproducirla directamente en el televisor.',
+    imagen: 'vhs_club_concepto.webp', ancho: 1280, alto: 720,
+    alt: 'Concepto visual de VHS Club: un videoclub de estilo noventero con un dependiente, estanterías de películas y luces de neón.',
+    pie: 'Concepto visual del proyecto. No es una captura de una aplicación funcional.',
+    enlace: undefined, accion: undefined,
+    detalle: 'Qué estoy construyendo',
+    puntos: ['Primera fase prevista: conectar Google Drive, organizar la colección y reproducir los archivos.', 'Navegación con el mando de Google TV y una ambientación de videoclub noventero.', 'Más adelante: seguimiento de películas y series, subtítulos y personalización.'],
+    limite: 'El proyecto está en su fase inicial. Estas funciones están previstas; todavía no hay una versión disponible para descargar.',
   },
-  {
-    nombre: 'Rebobina · Cine de los 80 y 90',
-    captura: {
-      src: '/nebula/imagenes/laboratorio/rebobina.png',
-      alt: 'La estantería de Rebobina con filtros por título, año, mes y género, y películas como Cadena perpetua, El club de la lucha, Forrest Gump, Pulp Fiction, Matrix y Seven.',
-      ancho: 1885,
-      alto: 928,
-    },
-    tema: 'Cine y memoria',
-    pregunta: 'Volver al videoclub de mi infancia.',
-    descripcion: 'He preparado un catálogo de películas de 1980 a 1999 para redescubrir el cine con el que crecí. Puedo recorrer los estrenos por año y mes, buscar títulos y guardar mi propia estantería con las que quiero ver o ya he visto.',
-    ejemplo: 'La selección se orienta por los votos actuales de IMDb: una pista de popularidad, no un registro de lo más visto en aquellas décadas.',
-    enlace: undefined,
-    accion: undefined,
-    estado: 'Uso personal · Sin acceso público',
-    nota: 'Catálogo interactivo de uso personal.',
-  },
+];
+
+const otros = [
+  { nombre: 'La NBA dibujada', tema: 'Datos y arte', imagen: 'la-nba-dibujada.png', alt: 'Un gráfico de partidos NBA se transforma en un cuadro de un perro viendo baloncesto.', descripcion: 'Convierto los datos de una jornada NBA en un gráfico y busco una figura en sus puntos. Con ayuda de la IA, esa figura se transforma en un cuadro.', enlace: 'https://x.com/lanbadibujada', accion: 'Ver los cuadros en X' },
+  { nombre: 'Radar de empleo editorial', tema: 'Herramienta local', imagen: 'radar-empleo.png', alt: 'Búsquedas organizadas de empleo editorial en distintas redes sociales.', descripcion: 'Organizo búsquedas para encontrar ofertas de periodismo, redacción y edición en redes sociales desde un mismo lugar.', enlace: undefined, accion: undefined },
+  { nombre: 'Agente de empleo editorial', tema: 'Automatización de uso personal', imagen: 'empleo-email.png', alt: 'Ejemplo de un boletín de ofertas de empleo seleccionadas por afinidad.', descripcion: 'Un agente que busca oportunidades, filtra su encaje con mi perfil y me envía una selección por correo, evitando repetir las ofertas.', enlace: undefined, accion: undefined },
 ];
 ---
 
@@ -128,51 +92,89 @@ const proyectos = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
     <meta name="theme-color" content="#1B1836" />
-    <Seo titulo="Laboratorio | Nebula" descripcion="Mis proyectos con agentes, inteligencia artificial y automatización: cine, NBA, Marvel Snap y búsqueda de empleo editorial." />
+    <Seo titulo="Laboratorio | Nebula" descripcion="Explora mis proyectos de cine, NBA, Marvel Snap y música: Indy, Agente MVP, Radar Marvel Snap, Nebula LoFi, Rebobina y VHS Club, en desarrollo." />
   </head>
   <body>
     <a class="saltar" href="#contenido">Saltar al contenido</a>
     <Cabecera activa="laboratorio" />
-    <main id="contenido" class="contenedor">
-      <section class="introduccion" aria-labelledby="titulo-laboratorio">
-        <p class="indice">LABORATORIO · ROBERTO CANTERO</p>
-        <h1 id="titulo-laboratorio">Ideas que pongo<br />a trabajar.</h1>
-        <p class="entradilla">Además de contar historias con datos, creo herramientas con agentes, inteligencia artificial y automatización. Aquí reúno los proyectos que utilizo para explorar mis intereses y resolver necesidades del día a día.</p>
-        <p class="presentacion">Cine, baloncesto, videojuegos y búsqueda de empleo. Siete proyectos que puedes conocer y, cuando tienen acceso público, probar por tu cuenta.</p>
+    <main id="contenido" class="contenedor laboratorio">
+      <header class="introduccion">
+        <div>
+          <p class="indice">LABORATORIO · ROBERTO CANTERO</p>
+          <h1>Ideas que pongo<br />a trabajar.</h1>
+          <p class="entradilla">Un cinéfilo con dudas, una jornada NBA pendiente y unas cuantas cartas por combinar.</p>
+          <p class="presentacion">Creo herramientas y experiencias alrededor de las cosas que me gustan. Aquí puedes descubrirlas, probar las que tienen acceso público y echar un vistazo a lo que estoy construyendo.</p>
+        </div>
+        <nav class="indice-proyectos" aria-label="Explora los proyectos">
+          <p class="indice">SEIS IDEAS EN MARCHA</p>
+          {proyectos.map((proyecto, i) => (
+            <a href={`#${proyecto.id}`}><span class="numero">{String(i + 1).padStart(2, '0')}</span><span>{proyecto.nombre}</span><span aria-hidden="true">↘</span></a>
+          ))}
+          <p class="nota-indice">4 públicos · 1 local · 1 en desarrollo</p>
+        </nav>
+      </header>
+
+      <section class="coleccion" aria-label="Proyectos del Laboratorio">
+        {proyectos.map((proyecto, i) => (
+          <article id={proyecto.id} class:list={['proyecto', { 'proyecto-inverso': i % 2 === 1, 'proyecto-desarrollo': proyecto.id === 'vhs-club' }]} aria-labelledby={`titulo-${proyecto.id}`}>
+            <div class="cabecera-proyecto">
+              <p class="indice"><span class="numero">{String(i + 1).padStart(2, '0')}</span> / {proyecto.tema}</p>
+              <p class:list={['estado', { 'estado-desarrollo': proyecto.id === 'vhs-club', 'estado-local': proyecto.id === 'rebobina' }]}>{proyecto.estado}</p>
+            </div>
+            <div class="cuerpo-proyecto">
+              <figure class="visual">
+                {proyecto.id === 'lofi' ? (
+                  <div class="reproductor" data-lofi>
+                    <button type="button" class="portada-lofi" data-cargar-lofi aria-label="Cargar el reproductor de Nebula LoFi" aria-describedby="aviso-lofi">
+                      <img src="https://i.ytimg.com/vi/MXaqhtwawNs/hqdefault.jpg" alt={proyecto.alt} width={proyecto.ancho} height={proyecto.alto} loading="lazy" />
+                      <span class="lofi-sombra" aria-hidden="true"></span>
+                      <span class="lofi-etiqueta" aria-hidden="true">NEBULA LOFI · DALE UN RESPIRO AL DÍA</span>
+                      <span class="lofi-play"><span aria-hidden="true">▶</span> Cargar reproductor</span>
+                    </button>
+                  </div>
+                ) : (
+                  <a class="ampliar" href={`/nebula/imagenes/laboratorio/${proyecto.imagen}`} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar ${proyecto.id === 'vhs-club' ? 'concepto visual de' : 'captura de'} ${proyecto.nombre} (se abre en otra pestaña)`}>
+                    <img src={`/nebula/imagenes/laboratorio/${proyecto.imagen}`} alt={proyecto.alt} width={proyecto.ancho} height={proyecto.alto} loading="lazy" />
+                    <span class="ampliar-etiqueta" aria-hidden="true">{proyecto.id === 'vhs-club' ? 'VER EL CONCEPTO' : 'AMPLIAR CAPTURA'} ↗</span>
+                  </a>
+                )}
+                <figcaption>{proyecto.pie}</figcaption>
+              </figure>
+              <div class="texto-proyecto">
+                <h2 id={`titulo-${proyecto.id}`}>{proyecto.nombre}</h2>
+                <p class="gancho">{proyecto.titular}</p>
+                <p class="descripcion">{proyecto.descripcion}</p>
+                {proyecto.enlace ? (
+                  <a class="accion" href={proyecto.enlace} target="_blank" rel="noopener noreferrer">{proyecto.accion}<span aria-hidden="true">↗</span><span class="solo-lectores"> (se abre en otra pestaña)</span></a>
+                ) : (
+                  <p class="aviso-desarrollo">En desarrollo · Todavía no disponible para descargar.</p>
+                )}
+                <details class="detalle">
+                  <summary>{proyecto.detalle}<span class="mas" aria-hidden="true">+</span></summary>
+                  <ul>{proyecto.puntos.map(punto => <li>{punto}</li>)}</ul>
+                  <p class="limite" id={proyecto.id === 'lofi' ? 'aviso-lofi' : undefined}>{proyecto.limite}</p>
+                </details>
+              </div>
+            </div>
+          </article>
+        ))}
       </section>
 
-      <section class="proyectos" aria-labelledby="titulo-proyectos">
-        <div class="cabecera-proyectos">
-          <h2 id="titulo-proyectos">Del «¿y si…?» a ponerlo en marcha</h2>
-          <p class="indice">07 PROYECTOS</p>
-        </div>
-        <div class="coleccion">
-          {proyectos.map((proyecto, indice) => (
-            <article class="proyecto" aria-labelledby={`proyecto-${indice}`}>
-              <div class="meta"><span>{String(indice + 1).padStart(2, '0')} / {proyecto.tema}</span><span class="estado">{proyecto.estado}</span></div>
-              <h3 id={`proyecto-${indice}`}>{proyecto.nombre}</h3>
-              {proyecto.captura && (
-                <figure class="captura-proyecto">
-                  <a href={proyecto.captura.src} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar captura de ${proyecto.nombre} (se abre en otra pestaña)`}>
-                    <img src={proyecto.captura.src} alt={proyecto.captura.alt} width={proyecto.captura.ancho} height={proyecto.captura.alto} loading="lazy" />
-                  </a>
-                  <figcaption><a href={proyecto.captura.src} target="_blank" rel="noopener noreferrer">Ampliar captura<span class="solo-lectores"> (se abre en otra pestaña)</span></a></figcaption>
-                </figure>
-              )}
-              <p class="pregunta">{proyecto.pregunta}</p>
-              <p class="descripcion">{proyecto.descripcion}</p>
-              <p class="ejemplo">{proyecto.ejemplo}</p>
-              {proyecto.enlace ? (
-                <a class="accion" href={proyecto.enlace} target="_blank" rel="noopener noreferrer">{proyecto.accion}<span aria-hidden="true">↗</span><span class="solo-lectores"> (se abre en otra pestaña)</span></a>
-              ) : (
-                <p class="privado">{proyecto.nota ?? 'Herramienta local de uso personal.'}</p>
-              )}
+      <details class="otros">
+        <summary><span>Otros experimentos</span><span class="indice">03 PROYECTOS <span aria-hidden="true">+</span></span></summary>
+        <p class="otros-intro">También construyo herramientas para buscar trabajo y explorar otras formas de contar historias con datos.</p>
+        <div class="otros-grid">
+          {otros.map(proyecto => (
+            <article class="otro-proyecto">
+              <p class="indice">{proyecto.tema}</p>
+              <img src={`/nebula/imagenes/laboratorio/${proyecto.imagen}`} alt={proyecto.alt} loading="lazy" width="640" height="400" />
+              <h3>{proyecto.nombre}</h3>
+              <p>{proyecto.descripcion}</p>
+              {proyecto.enlace ? <a class="accion" href={proyecto.enlace} target="_blank" rel="noopener noreferrer">{proyecto.accion} ↗<span class="solo-lectores"> (se abre en otra pestaña)</span></a> : <p class="indice">Uso personal · Sin acceso público</p>}
             </article>
           ))}
         </div>
-      </section>
-
-      <section class="demostracion" aria-labelledby="titulo-demostracion">
+        <section class="demostracion" aria-labelledby="titulo-demostracion">
         <div class="cabecera-proyectos">
           <div>
             <p class="indice">LA NBA DIBUJADA · UN EJEMPLO REAL</p>
@@ -208,76 +210,134 @@ const proyectos = [
           </details>
         </div>
       </section>
+      </details>
 
       <aside class="autor" aria-labelledby="titulo-autor">
-        <div>
-          <p class="indice">DETRÁS DEL LABORATORIO</p>
-          <h2 id="titulo-autor">Periodismo, datos y ganas de construir.</h2>
-          <p>Soy Roberto Cantero. En Nebula reúno mi trabajo periodístico y estos proyectos con IA. Son otra forma de mostrar cómo paso de una idea a una herramienta que puedo usar.</p>
-        </div>
+        <div><p class="indice">DETRÁS DEL LABORATORIO</p><h2 id="titulo-autor">Periodismo, datos y ganas de construir.</h2><p>Soy Roberto Cantero. Estas herramientas nacen de mis aficiones y de preguntas del día a día. Cada una es una forma de convertir lo que aprendo en algo que puedo utilizar y compartir.</p></div>
         <a class="accion" href="/nebula/trabaja-conmigo/">Más sobre mi trabajo <span aria-hidden="true">→</span></a>
       </aside>
     </main>
-    <footer class="pie-pagina contenedor">
-      <p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p>
-      <p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p>
-    </footer>
+    <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer>
     <CloudflareAnalytics />
+    <script>
+      // cargo el reproductor únicamente después de una acción explícita
+      document.addEventListener('click', (evento) => {
+        const objetivo = evento.target;
+        if (!(objetivo instanceof Element)) return;
+        const boton = objetivo.closest<HTMLButtonElement>('[data-cargar-lofi]');
+        const contenedor = boton?.closest<HTMLElement>('[data-lofi]');
+        if (!boton || !contenedor) return;
+        const musica = (window as Window & { __nebulaMusica?: { audio: HTMLAudioElement } }).__nebulaMusica;
+        musica?.audio.pause();
+        const iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube-nocookie.com/embed/MXaqhtwawNs?rel=0';
+        iframe.title = 'Nebula LoFi: música para estudiar, trabajar y relajarte';
+        iframe.allow = 'encrypted-media; picture-in-picture; fullscreen';
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        contenedor.replaceChildren(iframe);
+        iframe.focus();
+      });
+    </script>
   </body>
 </html>
 
 <style>
-  .captura-proyecto { margin: .5rem 0 1.5rem; }
-  .captura-proyecto img { border: 1px solid var(--color-border); display: block; height: auto; margin: 0; width: 100%; }
-  .captura-proyecto > a { cursor: zoom-in; display: block; }
-  .captura-proyecto a:focus-visible { outline: 2px solid #446ddf; outline-offset: 4px; }
-  .captura-proyecto figcaption { font-family: var(--font-mono); font-size: 10px; margin-top: .6rem; }
-  .captura-proyecto figcaption a { color: #344f9b; display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: 4px; }
-  .indice, .meta, .accion, .privado { font-family: var(--font-mono); }
-  .indice { color: var(--color-secondary-text); font-size: 11px; letter-spacing: .06em; }
-  .introduccion { max-width: 850px; padding: clamp(3rem, 8vw, 6rem) 0 3.5rem; }
-  h1 { font-size: clamp(3.2rem, 8vw, 6rem); line-height: 1; letter-spacing: -.035em; margin: 1.25rem 0 1.75rem; }
-  .entradilla { font-size: clamp(1.15rem, 2.3vw, 1.45rem); line-height: 1.65; max-width: 760px; }
-  .presentacion { color: var(--color-secondary-text); line-height: 1.7; max-width: 680px; }
-  .cabecera-proyectos { align-items: baseline; border-top: 1px solid var(--color-border); display: flex; gap: 1rem; justify-content: space-between; padding: 1.75rem 0; }
-  .cabecera-proyectos h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0; }
-  .cabecera-proyectos .indice { flex-shrink: 0; }
-  .coleccion { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .proyecto { border: 1px solid var(--color-border); border-top: 3px solid #446ddf; display: flex; flex-direction: column; padding: clamp(1.3rem, 3vw, 2rem); }
-  .meta { color: var(--color-secondary-text); display: flex; flex-wrap: wrap; font-size: 10px; gap: .75rem 1rem; justify-content: space-between; line-height: 1.6; }
-  .estado { color: #344f9b; }
-  h3 { font-size: clamp(1.6rem, 3vw, 2.1rem); line-height: 1.15; margin: 1.5rem 0 .65rem; }
-  .pregunta { font-weight: 700; line-height: 1.5; margin: 0 0 .75rem; }
-  .descripcion { line-height: 1.75; margin: 0 0 1.25rem; }
-  .ejemplo { border-left: 2px solid #446ddf; color: var(--color-secondary-text); font-size: .9rem; line-height: 1.65; margin: auto 0 1.5rem; padding-left: 1rem; }
-  .accion { align-items: center; color: #344f9b; display: inline-flex; font-size: 12px; gap: .8rem; line-height: 1.6; min-height: 44px; text-decoration-thickness: 1px; text-underline-offset: 5px; width: fit-content; }
+  .laboratorio { --azul: #446ddf; --azul-texto: #344f9b; }
+  .indice, .numero, .estado, .accion, .nota-indice, .aviso-desarrollo, .ampliar-etiqueta, .lofi-etiqueta, .lofi-play, .detalle summary { font-family: var(--font-mono); }
+  .indice { color: var(--color-secondary-text); font-size: 10px; line-height: 1.7; letter-spacing: .055em; text-transform: uppercase; }
+  .introduccion { display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; padding: clamp(3rem, 7vw, 5rem) 0 4rem; }
+  h1 { font-size: clamp(3rem, 6.6vw, 5.6rem); line-height: .98; letter-spacing: -.04em; margin: 1.2rem 0 1.6rem; }
+  .entradilla { font-size: clamp(1.15rem, 2vw, 1.35rem); line-height: 1.6; margin-bottom: 1rem; }
+  .presentacion { color: var(--color-secondary-text); line-height: 1.8; font-size: .98rem; max-width: 560px; }
+  .indice-proyectos { padding: 1.25rem 0 0 1.75rem; border-left: 1px solid var(--color-border); }
+  .indice-proyectos > .indice { margin: 0 0 1rem; }
+  .indice-proyectos a { display: grid; grid-template-columns: 2rem 1fr auto; align-items: center; gap: .7rem; border-top: 1px solid var(--color-border); min-height: 50px; text-decoration: none; font-size: 1.1rem; }
+  .indice-proyectos a:hover { color: var(--azul-texto); }
+  .numero { color: var(--azul-texto); font-size: 11px; }
+  .nota-indice { color: var(--color-secondary-text); font-size: 9px; line-height: 1.8; margin: 1rem 0 0; }
+  .proyecto { border-top: 1px solid var(--color-border); padding: 1.4rem 0 3.5rem; scroll-margin-top: 1.5rem; }
+  .cabecera-proyecto { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .cabecera-proyecto p { margin: 0; }
+  .cabecera-proyecto .numero { margin-right: .4rem; }
+  .estado { display: inline-flex; align-items: center; gap: .45rem; font-size: 9px; line-height: 1.6; color: var(--azul-texto); border: 1px solid #cbd4ed; padding: .3rem .6rem; white-space: nowrap; }
+  .estado::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+  .estado-local { color: #605d52; border-color: var(--color-border); }
+  .estado-desarrollo { color: #8c421f; border-color: #ddc6b5; background: #f6ece2; }
+  .cuerpo-proyecto { display: grid; grid-template-columns: 1.25fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+  .proyecto-inverso .cuerpo-proyecto { grid-template-columns: 1fr 1.25fr; }
+  .proyecto-inverso .visual { order: 2; }
+  .visual { margin: 0; min-width: 0; }
+  .ampliar { display: block; position: relative; aspect-ratio: 16 / 9; background: #efede6; border: 1px solid var(--color-border); overflow: hidden; }
+  .ampliar img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .25s ease; }
+  .ampliar:hover img { transform: scale(1.018); }
+  .ampliar-etiqueta { position: absolute; right: 0; bottom: 0; display: block; color: var(--azul-texto); background: var(--color-bg); border-top: 1px solid var(--color-border); border-left: 1px solid var(--color-border); text-align: right; font-size: 9px; padding: .65rem .8rem; }
+  figcaption { color: var(--color-secondary-text); font-size: .76rem; line-height: 1.6; margin: .7rem 0 0; }
+  .texto-proyecto { min-width: 0; }
+  .texto-proyecto h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.02; letter-spacing: -.025em; margin: -.1rem 0 1rem; }
+  .gancho { font-size: clamp(1.1rem, 1.6vw, 1.25rem); line-height: 1.5; margin: 0 0 1rem; font-weight: 700; }
+  .descripcion { font-size: .95rem; line-height: 1.8; margin: 0 0 1.25rem; }
+  .accion { display: inline-flex; gap: 1rem; align-items: center; min-height: 44px; color: var(--azul-texto); font-size: 11px; line-height: 1.6; text-decoration-thickness: 1px; text-underline-offset: 5px; }
   .accion:hover { color: var(--color-ink); }
-  .accion:focus-visible, .navegacion a:focus-visible { outline: 2px solid #446ddf; outline-offset: 5px; }
-  .privado { color: var(--color-secondary-text); font-size: 11px; line-height: 1.6; margin: 0; min-height: 44px; padding-top: .75rem; }
-  .demostracion { margin-top: 4rem; }
-  .explicacion { line-height: 1.75; max-width: 760px; }
-  .muestra { align-items: start; display: grid; gap: 2rem; grid-template-columns: 1fr 1fr; margin-top: 1.5rem; }
-  figure { margin: 0; }
-  figure svg { display: block; height: auto; width: 100%; }
-  figure img { display: block; height: auto; margin-top: 1rem; width: 100%; }
-  figcaption { color: var(--color-secondary-text); font-size: .85rem; line-height: 1.6; margin-top: .75rem; }
-  details { border-top: 2px solid #446ddf; padding-top: 1rem; }
-  summary { color: #344f9b; cursor: pointer; font-family: var(--font-mono); font-size: 13px; min-height: 44px; padding: .75rem 0; }
-  summary:focus-visible { outline: 2px solid #446ddf; outline-offset: 4px; }
-  .autor { align-items: center; border-bottom: 1px solid var(--color-border); border-top: 1px solid var(--color-border); display: flex; gap: 2.5rem; justify-content: space-between; margin-top: 4rem; padding: 2.5rem 0; }
-  .autor h2 { font-size: clamp(1.6rem, 3vw, 2rem); margin: .75rem 0; }
-  .autor p:not(.indice) { line-height: 1.7; max-width: 620px; }
+  .detalle { border-top: 1px solid var(--color-border); margin-top: 1.3rem; }
+  .detalle summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 0; min-height: 44px; cursor: pointer; font-size: 10px; color: var(--azul-texto); list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  .mas { font-size: 18px; line-height: 1; }
+  .detalle[open] .mas { transform: rotate(45deg); }
+  .detalle ul { padding-left: 1.2rem; margin: .5rem 0 1rem; font-size: .85rem; line-height: 1.8; }
+  .detalle li + li { margin-top: .5rem; }
+  .limite { color: var(--color-secondary-text); font-size: .78rem; line-height: 1.75; }
+  .aviso-desarrollo { color: #8c421f; font-size: 10px; line-height: 1.8; padding: .65rem 0; margin: 0; }
+  .reproductor { width: 100%; aspect-ratio: 16 / 9; background: #1b1836; border: 1px solid var(--color-border); }
+  .portada-lofi { display: block; position: relative; width: 100%; height: 100%; padding: 0; border: 0; background: #1b1836; color: white; cursor: pointer; overflow: hidden; }
+  .portada-lofi img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .lofi-sombra { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(15,14,30,.55), transparent 40%, rgba(15,14,30,.65)); }
+  .lofi-etiqueta { position: absolute; top: 1rem; left: 1rem; right: 1rem; font-size: 9px; letter-spacing: .05em; text-align: left; }
+  .lofi-play { position: absolute; left: 50%; bottom: 1.25rem; transform: translateX(-50%); display: flex; align-items: center; gap: .7rem; font-size: 10px; line-height: 1.6; padding: .8rem 1rem; background: #f7f5f0; color: #1b1836; white-space: nowrap; }
+  .lofi-play > span { color: var(--azul-texto); }
+  .reproductor :global(iframe) { border: 0; width: 100%; height: 100%; display: block; }
+  .proyecto-desarrollo { padding-bottom: 3rem; }
+  .otros { border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); margin: 1rem 0 0; }
+  .otros > summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; padding: 1.5rem 0; min-height: 60px; font-family: var(--font-heading); font-size: 1.75rem; list-style: none; }
+  .otros-intro { color: var(--color-secondary-text); max-width: 650px; line-height: 1.8; }
+  .otros-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; padding: 1rem 0 2rem; }
+  .otro-proyecto { min-width: 0; }
+  .otro-proyecto img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #efede6; border: 1px solid var(--color-border); }
+  .otro-proyecto h3 { font-size: 1.5rem; line-height: 1.2; margin: 1rem 0; }
+  .otro-proyecto p:not(.indice) { font-size: .85rem; line-height: 1.8; }
+  .autor { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 3rem 0; }
+  .autor h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: .75rem 0; }
+  .autor p:not(.indice) { line-height: 1.8; max-width: 610px; font-size: .95rem; }
   .autor .accion { flex-shrink: 0; }
-  .navegacion [aria-current] { color: #344f9b; text-decoration: underline; text-underline-offset: 5px; }
+  .demostracion { border-top: 1px solid var(--color-border); padding: 1.5rem 0 2rem; }
+  .demostracion h2 { font-size: 2rem; }
+  .explicacion { font-size: .9rem; line-height: 1.8; max-width: 700px; }
+  .muestra { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .muestra figure { margin: 0; }
+  .muestra svg, .muestra img { display: block; width: 100%; height: auto; }
+  .muestra summary { min-height: 44px; padding: .75rem 0; cursor: pointer; color: var(--azul-texto); }
+  a:focus-visible, button:focus-visible, summary:focus-visible, .reproductor :global(iframe:focus-visible) { outline: 3px solid var(--azul); outline-offset: 5px; }
   .solo-lectores, .saltar:not(:focus) { clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
   .saltar:focus { background: var(--color-bg); left: 1rem; padding: 1rem; position: absolute; top: 1rem; z-index: 10; }
   @media (max-width: 760px) {
-    .coleccion, .muestra { grid-template-columns: 1fr; }
-    .autor, .cabecera-proyectos { align-items: start; flex-direction: column; gap: .75rem; }
+    .introduccion { grid-template-columns: 1fr; gap: 1.5rem; padding-bottom: 2.5rem; }
+    .indice-proyectos { border-left: 0; padding: 0; }
+    .indice-proyectos a { min-height: 48px; }
+    .cuerpo-proyecto, .proyecto-inverso .cuerpo-proyecto { grid-template-columns: 1fr; gap: 1.5rem; }
+    .proyecto-inverso .visual { order: 0; }
+    .proyecto { padding-bottom: 2.5rem; }
+    .cabecera-proyecto { align-items: flex-start; gap: .7rem; }
+    .cabecera-proyecto .indice { max-width: 65%; }
+    .estado { font-size: 8px; }
+    .proyecto-desarrollo .texto-proyecto { display: block; }
+    .otros-grid, .muestra { grid-template-columns: 1fr; }
+    .otro-proyecto + .otro-proyecto { padding-top: 1rem; border-top: 1px solid var(--color-border); }
+    .autor { align-items: flex-start; flex-direction: column; gap: .5rem; padding: 2rem 0; }
+    .otros > summary { font-size: 1.4rem; }
   }
-  @media (max-width: 540px) {
-    .cabecera { align-items: start; flex-direction: column; gap: 1rem; padding-top: 1.25rem; padding-bottom: 1.25rem; }
-    .navegacion { flex-wrap: wrap; gap: 1rem; }
-    .navegacion a:last-child { display: inline; }
+  @media (prefers-reduced-motion: reduce) {
+    .ampliar img { transition: none; }
+    .ampliar:hover img { transform: none; }
+    :global(html) { scroll-behavior: auto; }
   }
 </style>
