@@ -6,6 +6,23 @@ import Seo from '../components/Seo.astro';
 import Cabecera from '../components/Cabecera.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
+
+function formatoTexto(valor: unknown): string {
+  const texto = String(valor ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  function enfasis(fragmento: string): string {
+    return fragmento.replace(/(\*\*\*|___)(?=\S)([\s\S]*?\S)\1(?![*_])|(\*\*|__)(?=\S)([\s\S]*?\S)\3(?![*_])|(?<!\*)\*(?=\S)([^*]*?\S)\*(?!\*)|(?<![\p{L}\p{N}_])_(?=\S)([^_]*?\S)_(?![\p{L}\p{N}_])/gu,
+      (_coincidencia, triple, ambos, doble, fuerte, cursiva, cursivaGuion) => {
+        if (triple) return '<strong class="enfasis-editorial"><em class="enfasis-editorial">' + enfasis(ambos) + '</em></strong>';
+        if (doble) return '<strong class="enfasis-editorial">' + enfasis(fuerte) + '</strong>';
+        return '<em class="enfasis-editorial">' + enfasis(cursiva ?? cursivaGuion) + '</em>';
+      });
+  }
+  return enfasis(texto);
+}
+function textoPlano(valor: unknown): string {
+  return formatoTexto(valor).replace(/<[^>]*>/g, '').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+}
+
 const { pieza } = Astro.props;
 const { titulo, descripcion, categoria, fecha, cifraDestacada, etiquetaCifra, fondoPortada, mostrarCifraInterior, formato = 'base', pantallas, fuentes } = pieza.data;
 const nombresCategoria = { tecnologia: 'Tecnología', ciencia: 'Ciencia', cine: 'Cine', cultura: 'Cultura', extra: 'Extra' };
@@ -29,7 +46,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
     <meta name="theme-color" content="#446ddf" />
-    <Seo titulo={`${titulo} | Nebula`} descripcion={descripcion} />
+    <Seo titulo={`${textoPlano(titulo)} | Nebula`} descripcion={textoPlano(descripcion)} />
   </head>
   <body class={`actualidad actualidad-${categoria} formato-${formato}`}>
     <aside data-aviso-programada data-desbloquear={fechaPublicacion(pieza.data).getTime()}>
@@ -41,16 +58,16 @@ const fechaCarpeta = pieza.id.split('/')[0];
 
     <nav class="progreso" aria-label="Recorrido de la noticia">
       <a href="#portada" aria-label="Portada"><span>00</span></a>
-      {pantallas.map((pantalla, indice) => <a href={`#pantalla-${indice + 1}`} aria-label={pantalla.etiqueta}><span>0{indice + 1}</span></a>)}
+      {pantallas.map((pantalla, indice) => <a href={`#pantalla-${indice + 1}`} aria-label={textoPlano(pantalla.etiqueta)}><span>0{indice + 1}</span></a>)}
     </nav>
 
     <main>
       <section class="pantalla pantalla-portada" id="portada" data-pantalla>
-        <div class="numero-fondo" aria-hidden="true">{fondoPortada ?? cifraDestacada ?? 'HOY'}</div>
+        <div class="numero-fondo" aria-hidden="true"><Fragment set:html={formatoTexto(fondoPortada ?? cifraDestacada ?? 'HOY')} /></div>
         <div class="contenido portada-contenido">
           <p class="ceja">{nombreCategoria}</p>
-          <h1>{titulo}</h1>
-          {formato !== 'visual' && <p class="descripcion">{descripcion}</p>}
+          <h1><Fragment set:html={formatoTexto(titulo)} /></h1>
+          {formato !== 'visual' && <p class="descripcion"><Fragment set:html={formatoTexto(descripcion)} /></p>}
         </div>
         <a class="seguir" href="#pantalla-1">Desplegar la historia <span aria-hidden="true">↓</span></a>
       </section>
@@ -58,45 +75,45 @@ const fechaCarpeta = pieza.id.split('/')[0];
       {pantallas.map((pantalla, indice) => (
         <section class:list={['pantalla', `pantalla-${pantalla.tipo}`, `pantalla-paso-${indice + 1}`]} id={`pantalla-${indice + 1}`} data-pantalla>
           <div class="contenido">
-            <p class="ceja">{pantalla.etiqueta}</p>
-            <h2>{pantalla.titulo}</h2>
+            <p class="ceja"><Fragment set:html={formatoTexto(pantalla.etiqueta)} /></p>
+            <h2><Fragment set:html={formatoTexto(pantalla.titulo)} /></h2>
 
             {pantalla.tipo === 'recorrido' && pantalla.datos && (
-              <div class="visual visual-recorrido" aria-label={pantalla.datos.join(', después ')}>
-                {pantalla.datos.map((dato, posicion) => <><span>{dato}</span>{posicion < pantalla.datos.length - 1 && <i aria-hidden="true">↓</i>}</>)}
+              <div class="visual visual-recorrido" aria-label={pantalla.datos.map(textoPlano).join(', después ')}>
+                {pantalla.datos.map((dato, posicion) => <><span><Fragment set:html={formatoTexto(dato)} /></span>{posicion < pantalla.datos.length - 1 && <i aria-hidden="true">↓</i>}</>)}
                 <b aria-hidden="true">×</b>
               </div>
             )}
 
             {pantalla.tipo === 'linea' && pantalla.datos && (
               <div class="visual visual-linea">
-                <span>{pantalla.datos[0]}</span><div><i></i><strong>{pantalla.datos[1]}</strong><i></i></div><span>{pantalla.datos[2]}</span>
+                <span><Fragment set:html={formatoTexto(pantalla.datos[0])} /></span><div><i></i><strong><Fragment set:html={formatoTexto(pantalla.datos[1])} /></strong><i></i></div><span><Fragment set:html={formatoTexto(pantalla.datos[2])} /></span>
               </div>
             )}
 
             {pantalla.tipo === 'lista' && pantalla.datos && (
-              <div class="visual visual-lista">{pantalla.datos.map((dato) => <span>{dato}</span>)}</div>
+              <div class="visual visual-lista">{pantalla.datos.map((dato) => <span><Fragment set:html={formatoTexto(dato)} /></span>)}</div>
             )}
 
             {pantalla.tipo === 'hospital' && pantalla.datos && (
               <div class="visual visual-hospital" aria-label="Evolución de las pruebas médicas">
                 <div class="historia-clinica">
                   <b>Primera visita</b>
-                  <span>{pantalla.datos[0]}</span><span>{pantalla.datos[1]}</span><span>{pantalla.datos[2]}</span><span>{pantalla.datos[3]}</span>
+                  <span><Fragment set:html={formatoTexto(pantalla.datos[0])} /></span><span><Fragment set:html={formatoTexto(pantalla.datos[1])} /></span><span><Fragment set:html={formatoTexto(pantalla.datos[2])} /></span><span><Fragment set:html={formatoTexto(pantalla.datos[3])} /></span>
                 </div>
-                <div class="espera-clinica"><strong>{pantalla.datos[4]}</strong><i aria-hidden="true">→</i></div>
+                <div class="espera-clinica"><strong><Fragment set:html={formatoTexto(pantalla.datos[4])} /></strong><i aria-hidden="true">→</i></div>
                 <div class="escaner-clinico">
-                  <b>TC</b><div aria-hidden="true"><i></i></div><strong>{pantalla.datos[5]}</strong><span>objeto localizado</span>
+                  <b>TC</b><div aria-hidden="true"><i></i></div><strong><Fragment set:html={formatoTexto(pantalla.datos[5])} /></strong><span>objeto localizado</span>
                 </div>
               </div>
             )}
 
             {pantalla.tipo === 'contraste' && pantalla.datos && (
-              <div class="visual visual-contraste"><strong>{pantalla.datos[0]}</strong><i aria-hidden="true">≠</i><strong>{pantalla.datos[1]}</strong></div>
+              <div class="visual visual-contraste"><strong><Fragment set:html={formatoTexto(pantalla.datos[0])} /></strong><i aria-hidden="true">≠</i><strong><Fragment set:html={formatoTexto(pantalla.datos[1])} /></strong></div>
             )}
 
             {pantalla.tipo === 'secuencia-iconos' && pantalla.datos && (
-              <div class="visual visual-iconos" aria-label={pantalla.datos.join(', después ')}>
+              <div class="visual visual-iconos" aria-label={pantalla.datos.map(textoPlano).join(', después ')}>
                 {pantalla.datos.map((dato, posicion) => <div class="paso-icono">
                   <span class="icono-web" aria-hidden="true">
                     {posicion === 0 && <svg viewBox="0 0 100 100"><circle cx="28" cy="72" r="17"/><circle cx="74" cy="72" r="17"/><path d="M28 72 43 42h19l12 30M43 42l25 30M43 42 28 72M38 55h28M49 32h15"/></svg>}
@@ -104,14 +121,14 @@ const fechaCarpeta = pieza.id.split('/')[0];
                     {posicion === 2 && <svg viewBox="0 0 100 100"><path d="M16 56h44l14-12h12v20H74L60 56v17H38V64H16z"/><path class="detalle" d="M46 73v13M54 73l8 13"/></svg>}
                     {posicion === 3 && <svg viewBox="0 0 100 100"><path d="M12 68c21-5 34-20 43-43 8 23 18 35 33 42"/><circle cx="37" cy="65" r="12"/><circle cx="72" cy="65" r="12"/><path d="M37 65 49 45h13l10 20M49 45l23 20"/><path class="detalle" d="M8 82h84"/></svg>}
                   </span>
-                  <strong>{dato}</strong>
+                  <strong><Fragment set:html={formatoTexto(dato)} /></strong>
                   {posicion < pantalla.datos.length - 1 && <i aria-hidden="true">→</i>}
                 </div>)}
               </div>
             )}
 
             {pantalla.tipo === 'secuencia-xpeng' && pantalla.datos && (
-              <div class="visual visual-iconos visual-iconos-xpeng" aria-label={pantalla.datos.join(', después ')}>
+              <div class="visual visual-iconos visual-iconos-xpeng" aria-label={pantalla.datos.map(textoPlano).join(', después ')}>
                 {pantalla.datos.map((dato, posicion) => <div class="paso-icono">
                   <span class="icono-web" aria-hidden="true">
                     {posicion === 0 && <svg viewBox="0 0 100 100"><path d="M10 62h9l10-19h42l14 19h5v17H10z"/><circle cx="30" cy="79" r="10"/><circle cx="72" cy="79" r="10"/><path class="detalle" d="M28 43h44M50 43V28"/></svg>}
@@ -119,14 +136,14 @@ const fechaCarpeta = pieza.id.split('/')[0];
                     {posicion === 2 && <svg viewBox="0 0 100 100"><path d="M12 66h12l8-14h35l11 14h8v13H12z"/><circle cx="31" cy="79" r="8"/><circle cx="70" cy="79" r="8"/><path class="detalle" d="M47 50V29h24M62 20l9 9-9 9"/></svg>}
                     {posicion === 3 && <svg viewBox="0 0 100 100"><path d="M36 50h28l9 9-9 9H36l-9-9z"/><path d="M50 50V25M50 68v15M36 50 20 38M64 50l16-12M36 68 20 80M64 68l16 12"/><circle class="detalle" cx="50" cy="59" r="6"/></svg>}
                   </span>
-                  <strong>{dato}</strong>
+                  <strong><Fragment set:html={formatoTexto(dato)} /></strong>
                   {posicion < pantalla.datos.length - 1 && <i aria-hidden="true">→</i>}
                 </div>)}
               </div>
             )}
 
             {(pantalla.tipo === 'secuencia-hueso' || pantalla.tipo === 'secuencia-gameboy') && pantalla.datos && (
-              <div class="visual visual-iconos" aria-label={pantalla.datos.join(', después ')}>
+              <div class="visual visual-iconos" aria-label={pantalla.datos.map(textoPlano).join(', después ')}>
                 {pantalla.datos.map((dato, posicion) => <div class="paso-icono">
                   <span class="icono-web" aria-hidden="true">
                     {pantalla.tipo === 'secuencia-hueso' && posicion === 0 && <svg viewBox="0 0 100 100"><path d="M20 48c15-18 45-18 60 0-15 20-45 20-60 0Z"/><path class="detalle" d="M35 50c10 7 20 7 30 0"/></svg>}
@@ -138,7 +155,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
                     {pantalla.tipo === 'secuencia-gameboy' && posicion === 2 && <svg viewBox="0 0 100 100"><rect x="18" y="18" width="64" height="64" rx="6"/><path d="m30 38 10 10-10 10M50 59h20"/><path class="detalle" d="M50 34h20"/></svg>}
                     {pantalla.tipo === 'secuencia-gameboy' && posicion === 3 && <svg viewBox="0 0 100 100"><path d="M28 35h44c10 0 18 10 15 20l-7 23c-2 8-12 9-17 2l-7-10H44l-7 10c-5 7-15 6-17-2l-7-23c-3-10 5-20 15-20Z"/><path d="M29 52h16M37 44v16"/><circle class="detalle" cx="68" cy="50" r="4"/><circle class="detalle" cx="77" cy="59" r="4"/></svg>}
                   </span>
-                  <strong>{dato}</strong>{posicion < pantalla.datos.length - 1 && <i aria-hidden="true">→</i>}
+                  <strong><Fragment set:html={formatoTexto(dato)} /></strong>{posicion < pantalla.datos.length - 1 && <i aria-hidden="true">→</i>}
                 </div>)}
               </div>
             )}
@@ -146,7 +163,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
             {pantalla.tipo === 'imagen-cine' && pantalla.imagen && (
               <figure class="visual imagen-cine">
                 <img src={pantalla.imagen} alt={pantalla.altImagen ?? ''} />
-                {pantalla.pieImagen && <figcaption>{pantalla.pieImagen}</figcaption>}
+                {pantalla.pieImagen && <figcaption><Fragment set:html={formatoTexto(pantalla.pieImagen)} /></figcaption>}
               </figure>
             )}
 
@@ -155,26 +172,26 @@ const fechaCarpeta = pieza.id.split('/')[0];
                 <blockquote class="twitter-tweet" data-dnt="true" data-conversation="none" data-lang="es">
                   <a href={`https://x.com/i/status/${pantalla.videoXId}`}>Ver el vídeo de esta noticia en X</a>
                 </blockquote>
-                {pantalla.pieImagen && <figcaption>{pantalla.pieImagen}</figcaption>}
+                {pantalla.pieImagen && <figcaption><Fragment set:html={formatoTexto(pantalla.pieImagen)} /></figcaption>}
                 <a class="video-x-alternativa" href={`https://x.com/i/status/${pantalla.videoXId}`} target="_blank" rel="noopener noreferrer">Abrir el vídeo en X (nueva pestaña)</a>
               </figure>
             )}
 
             {pantalla.tipo === 'video-youtube' && pantalla.videoId && (
               <figure class="visual video-actualidad">
-                <div><iframe src={`https://www.youtube-nocookie.com/embed/${pantalla.videoId}?rel=0${pantalla.videoIdiomaSubtitulos ? `&cc_load_policy=1&cc_lang_pref=${pantalla.videoIdiomaSubtitulos}&hl=${pantalla.videoIdiomaSubtitulos}` : ''}`} title={pantalla.titulo} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-                {pantalla.pieImagen && <figcaption>{pantalla.pieImagen}</figcaption>}
+                <div><iframe src={`https://www.youtube-nocookie.com/embed/${pantalla.videoId}?rel=0${pantalla.videoIdiomaSubtitulos ? `&cc_load_policy=1&cc_lang_pref=${pantalla.videoIdiomaSubtitulos}&hl=${pantalla.videoIdiomaSubtitulos}` : ''}`} title={textoPlano(pantalla.titulo)} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                {pantalla.pieImagen && <figcaption><Fragment set:html={formatoTexto(pantalla.pieImagen)} /></figcaption>}
               </figure>
             )}
 
             {pantalla.tipo === 'interactivo-cine' && pantalla.datos && pantalla.respuestas && (
               <div class="visual cambios-ocultos" data-cambios-ocultos>
                 <div class="cambios-ocultos__opciones" role="group" aria-label="Otros cambios de la edición de 2002">
-                  {pantalla.datos.map((dato, indice) => <button type="button" class:list={{ activo: indice === 0 }} data-respuesta={pantalla.respuestas?.[indice]} aria-pressed={indice === 0 ? 'true' : 'false'}><span>0{indice + 1}</span>{dato}</button>)}
+                  {pantalla.datos.map((dato, indice) => <button type="button" class:list={{ activo: indice === 0 }} data-respuesta-html={formatoTexto(pantalla.respuestas?.[indice])} aria-pressed={indice === 0 ? 'true' : 'false'}><span>0{indice + 1}</span><Fragment set:html={formatoTexto(dato)} /></button>)}
                 </div>
                 <div class="cambios-ocultos__revelacion" aria-live="polite">
                   <span aria-hidden="true" data-numero-cambio>01</span>
-                  <p data-texto-cambio>{pantalla.respuestas[0]}</p>
+                  <p data-texto-cambio><Fragment set:html={formatoTexto(pantalla.respuestas[0])} /></p>
                 </div>
               </div>
             )}
@@ -182,20 +199,20 @@ const fechaCarpeta = pieza.id.split('/')[0];
             {pantalla.tipo === 'interactivo-datos' && pantalla.datos && pantalla.respuestas && (
               <div class="visual cambios-ocultos" data-cambios-ocultos>
                 <div class="cambios-ocultos__opciones" role="group" aria-label="Explorar los datos de la noticia">
-                  {pantalla.datos.map((dato, indice) => <button type="button" class:list={{ activo: indice === 0 }} data-respuesta={pantalla.respuestas?.[indice]} aria-pressed={indice === 0 ? 'true' : 'false'}><span>0{indice + 1}</span>{dato}</button>)}
+                  {pantalla.datos.map((dato, indice) => <button type="button" class:list={{ activo: indice === 0 }} data-respuesta-html={formatoTexto(pantalla.respuestas?.[indice])} aria-pressed={indice === 0 ? 'true' : 'false'}><span>0{indice + 1}</span><Fragment set:html={formatoTexto(dato)} /></button>)}
                 </div>
-                <div class="cambios-ocultos__revelacion" aria-live="polite"><span aria-hidden="true" data-numero-cambio>01</span><p data-texto-cambio>{pantalla.respuestas[0]}</p></div>
+                <div class="cambios-ocultos__revelacion" aria-live="polite"><span aria-hidden="true" data-numero-cambio>01</span><p data-texto-cambio><Fragment set:html={formatoTexto(pantalla.respuestas[0])} /></p></div>
               </div>
             )}
 
             {pantalla.tipo === 'interactivo-xpeng' && pantalla.datos && pantalla.respuestas && (
               <div class="visual sistema-xpeng" data-sistema-xpeng>
                 <div class="sistema-xpeng__selector" role="group" aria-label="Comparar las dos partes del Land Aircraft Carrier">
-                  {pantalla.datos.map((dato, indice) => <button type="button" class:list={{ activo: indice === 0 }} data-respuesta={pantalla.respuestas?.[indice]} data-indice={indice} aria-pressed={indice === 0 ? 'true' : 'false'}><span>0{indice + 1}</span>{dato}</button>)}
+                  {pantalla.datos.map((dato, indice) => <button type="button" class:list={{ activo: indice === 0 }} data-respuesta-html={formatoTexto(pantalla.respuestas?.[indice])} data-indice={indice} aria-pressed={indice === 0 ? 'true' : 'false'}><span>0{indice + 1}</span><Fragment set:html={formatoTexto(dato)} /></button>)}
                 </div>
                 <div class="sistema-xpeng__ficha" aria-live="polite" data-ficha-xpeng>
                   <div class="sistema-xpeng__dibujo terrestre" aria-hidden="true"><i></i><i></i><i></i></div>
-                  <p data-texto-xpeng>{pantalla.respuestas[0]}</p>
+                  <p data-texto-xpeng><Fragment set:html={formatoTexto(pantalla.respuestas[0])} /></p>
                 </div>
               </div>
             )}
@@ -205,10 +222,10 @@ const fechaCarpeta = pieza.id.split('/')[0];
                 <div class="grafico-tiempo__cabecera"><span>TIEMPO TRANSCURRIDO</span><strong>41 años de historia</strong></div>
                 <div class="grafico-tiempo__eje" aria-hidden="true">
                   <i class="tramo tramo-original"></i><i class="tramo tramo-cambio"></i><i class="tramo tramo-regreso"></i>
-                  <div class="hito hito-1982"><b></b><strong>{pantalla.datos[0]}</strong><span>Estreno original</span></div>
-                  <div class="hito hito-2002"><b></b><strong>{pantalla.datos[1]}</strong><span>Cambia las armas</span></div>
-                  <div class="hito hito-2011"><b></b><strong>{pantalla.datos[2]}</strong><span>Admite que se arrepiente</span></div>
-                  <div class="hito hito-2023"><b></b><strong>{pantalla.datos[3]}</strong><span>Lo llama «un error»</span></div>
+                  <div class="hito hito-1982"><b></b><strong><Fragment set:html={formatoTexto(pantalla.datos[0])} /></strong><span>Estreno original</span></div>
+                  <div class="hito hito-2002"><b></b><strong><Fragment set:html={formatoTexto(pantalla.datos[1])} /></strong><span>Cambia las armas</span></div>
+                  <div class="hito hito-2011"><b></b><strong><Fragment set:html={formatoTexto(pantalla.datos[2])} /></strong><span>Admite que se arrepiente</span></div>
+                  <div class="hito hito-2023"><b></b><strong><Fragment set:html={formatoTexto(pantalla.datos[3])} /></strong><span>Lo llama «un error»</span></div>
                   <em class="intervalo intervalo-20">20 años</em><em class="intervalo intervalo-9">9 años</em><em class="intervalo intervalo-12">12 años</em>
                 </div>
                 <figcaption>El montaje modificado permaneció nueve años sin una rectificación pública del director.</figcaption>
@@ -219,8 +236,8 @@ const fechaCarpeta = pieza.id.split('/')[0];
               <figure class="visual grafico-alcance" aria-label="Comparación del alcance anunciado por carretera y en vuelo">
                 <div class="grafico-alcance__cabecera"><span>ALCANCE ANUNCIADO POR LA EMPRESA</span><strong>Dos escalas muy distintas</strong></div>
                 <div class="grafico-alcance__filas">
-                  <div><span>Por carretera</span><i><b style="width:100%"></b></i><strong>{pantalla.datos[0]}</strong></div>
-                  <div><span>En vuelo</span><i><b style="width:3%"></b></i><strong>{pantalla.datos[1]}</strong></div>
+                  <div><span>Por carretera</span><i><b style="width:100%"></b></i><strong><Fragment set:html={formatoTexto(pantalla.datos[0])} /></strong></div>
+                  <div><span>En vuelo</span><i><b style="width:3%"></b></i><strong><Fragment set:html={formatoTexto(pantalla.datos[1])} /></strong></div>
                 </div>
                 <figcaption>La barra compara las cifras comunicadas por XPeng. El dato terrestre corresponde al alcance combinado bajo el ciclo chino CLTC.</figcaption>
               </figure>
@@ -228,21 +245,21 @@ const fechaCarpeta = pieza.id.split('/')[0];
 
             {pantalla.tipo === 'grafico-comparacion' && pantalla.datos && (
               <figure class="visual grafico-comparacion" aria-label={`Comparación entre ${pantalla.datos[2]} y ${pantalla.datos[3]}`}>
-                <div class="grafico-comparacion__cabecera"><span>COMPARACIÓN A ESCALA</span><strong>{pantalla.datos[0]} frente a {pantalla.datos[1]}</strong></div>
+                <div class="grafico-comparacion__cabecera"><span>COMPARACIÓN A ESCALA</span><strong><Fragment set:html={formatoTexto(pantalla.datos[0])} /> frente a <Fragment set:html={formatoTexto(pantalla.datos[1])} /></strong></div>
                 <div class="grafico-comparacion__filas">
-                  <div><span>{pantalla.datos[2]}</span><i><b style="width: 5%"></b></i><strong>{pantalla.datos[0]}</strong></div>
-                  <div><span>{pantalla.datos[3]}</span><i><b style="width: 100%"></b></i><strong>{pantalla.datos[1]}</strong></div>
+                  <div><span><Fragment set:html={formatoTexto(pantalla.datos[2])} /></span><i><b style="width: 5%"></b></i><strong><Fragment set:html={formatoTexto(pantalla.datos[0])} /></strong></div>
+                  <div><span><Fragment set:html={formatoTexto(pantalla.datos[3])} /></span><i><b style="width: 100%"></b></i><strong><Fragment set:html={formatoTexto(pantalla.datos[1])} /></strong></div>
                 </div>
-                <figcaption>{pantalla.texto[1]}</figcaption>
+                <figcaption><Fragment set:html={formatoTexto(pantalla.texto[1])} /></figcaption>
               </figure>
             )}
 
-            <div class="texto-ritmo">{pantalla.texto.map((parrafo) => <p>{parrafo}</p>)}</div>
+            <div class="texto-ritmo">{pantalla.texto.map((parrafo) => <p><Fragment set:html={formatoTexto(parrafo)} /></p>)}</div>
 
             {pantalla.tipo === 'cierre' && (
               <div class="fuentes">
                 <p>FUENTES CONSULTADAS</p>
-                {fuentes.map((fuente) => <a href={fuente.url} target="_blank" rel="noopener noreferrer"><strong>{fuente.nombre}</strong>{fuente.detalle && <span>{fuente.detalle}</span>}<i aria-hidden="true">↗</i></a>)}
+                {fuentes.map((fuente) => <a href={fuente.url} target="_blank" rel="noopener noreferrer"><strong><Fragment set:html={formatoTexto(fuente.nombre)} /></strong>{fuente.detalle && <span><Fragment set:html={formatoTexto(fuente.detalle)} /></span>}<i aria-hidden="true">↗</i></a>)}
               </div>
             )}
           </div>
@@ -273,7 +290,7 @@ const pantallas = [...document.querySelectorAll('[data-pantalla]')];
         const numero = modulo.querySelector('[data-numero-cambio]');
         botones.forEach((boton) => boton.addEventListener('click', () => {
           botones.forEach((otro) => { otro.classList.toggle('activo', otro === boton); otro.setAttribute('aria-pressed', String(otro === boton)); });
-          if (lectura) lectura.textContent = boton.dataset.respuesta ?? '';
+          if (lectura) lectura.innerHTML = boton.dataset.respuestaHtml ?? '';
           if (numero) numero.textContent = `0${botones.indexOf(boton) + 1}`;
         }));
       });
@@ -284,7 +301,7 @@ const pantallas = [...document.querySelectorAll('[data-pantalla]')];
         const ficha = modulo.querySelector('[data-ficha-xpeng]');
         botones.forEach((boton) => boton.addEventListener('click', () => {
           botones.forEach((otro) => { otro.classList.toggle('activo', otro === boton); otro.setAttribute('aria-pressed', String(otro === boton)); });
-          if (lectura) lectura.textContent = boton.dataset.respuesta ?? '';
+          if (lectura) lectura.innerHTML = boton.dataset.respuestaHtml ?? '';
           ficha?.classList.toggle('muestra-vuelo', boton.dataset.indice === '1');
         }));
       });
@@ -297,6 +314,9 @@ const pantallas = [...document.querySelectorAll('[data-pantalla]')];
 </html>
 
 <style>
+  :global(.enfasis-editorial){color:inherit;font-family:inherit;font-size:inherit;line-height:inherit;letter-spacing:inherit}
+  :global(em.enfasis-editorial){font-style:italic}
+  :global(strong.enfasis-editorial){font-weight:800}
   .video-x-actualidad{margin:0 auto 2rem;max-width:550px;width:100%;min-width:0}
   .video-x-actualidad blockquote{margin:0 auto;padding:1rem;border:1px solid currentColor;overflow-wrap:anywhere}
   .video-x-actualidad :global(.twitter-tweet){margin:0 auto!important;max-width:100%!important;min-width:0!important}
@@ -334,4 +354,19 @@ const pantallas = [...document.querySelectorAll('[data-pantalla]')];
     .barra-superior{grid-template-columns:1fr auto}.barra-superior>div{display:none}.volver{font-size:8px}.progreso{display:none}.pantalla{min-height:100svh;padding:6.5rem 1.5rem 4.5rem}.pantalla h1{font-size:clamp(2.8rem,14vw,4.7rem)}.pantalla h2{font-size:clamp(2.5rem,12vw,4rem)}.seguir{right:1.5rem}.visual-recorrido{align-items:flex-start;flex-direction:column}.visual-recorrido i{margin-left:2rem;transform:none}.visual-lista{grid-template-columns:repeat(2,minmax(0,1fr))}.visual-hospital{grid-template-columns:1fr}.espera-clinica{flex-direction:row;gap:1rem}.espera-clinica strong{max-width:none}.espera-clinica i{margin:0;transform:rotate(90deg)}.visual-linea{grid-template-columns:1fr}.visual-linea>div{order:2}.visual-linea>span:last-child{order:3;text-align:right}.visual-contraste{grid-template-columns:1fr}.visual-contraste strong:last-child{text-align:left}.visual-contraste i{transform:rotate(90deg)}.texto-ritmo{grid-template-columns:1fr}.numero-fondo{font-size:52vw;right:1rem;top:32%}.visual-iconos{grid-template-columns:1fr 1fr}.paso-icono+.paso-icono{border-left:1px solid currentColor}.paso-icono:nth-child(n+3){border-top:0}.paso-icono>i{bottom:0;right:50%;top:auto;transform:translate(50%,50%) rotate(90deg)}.cambio-cine{grid-template-columns:1fr}.selector-version{flex-direction:row}.selector-version button{flex:1}.fotograma-cambio{grid-template-columns:120px 1fr;padding:1rem}.agente-cine{transform:scale(.7);transform-origin:left center}.objeto-cine{left:120px;transform:scale(.7);transform-origin:left center}.fotograma-cambio p{font-size:1rem;padding-left:1rem}.cambios-ocultos{grid-template-columns:1fr}.cambios-ocultos__revelacion{min-height:190px}.sistema-xpeng{grid-template-columns:1fr}.sistema-xpeng__selector{flex-direction:row}.sistema-xpeng__selector button{flex:1}.sistema-xpeng__ficha{grid-template-columns:1fr;min-height:320px}.sistema-xpeng__ficha p{border-left:0;border-top:1px solid currentColor;padding:1rem 0 0}.grafico-alcance__cabecera{align-items:start;flex-direction:column;gap:.4rem}.grafico-alcance__filas>div{grid-template-columns:1fr auto}.grafico-alcance__filas i{grid-column:1/-1;grid-row:2}.grafico-tiempo__cabecera{align-items:start;flex-direction:column;gap:.4rem}.grafico-tiempo__eje{height:390px;margin:1.5rem 0}.grafico-tiempo__eje:before{height:auto;left:18px;top:0;bottom:0;width:5px}.tramo{height:auto;left:18px!important;width:5px}.tramo-original{top:0;height:49%}.tramo-cambio{top:49%;height:22%}.tramo-regreso{top:71%;height:29%}.hito{left:0!important;top:auto;transform:none!important;width:100%}.hito b{float:left;margin:0 1rem 0 5px!important}.hito strong,.hito span{text-align:left!important}.hito-1982{top:0}.hito-2002{top:45%}.hito-2011{top:68%}.hito-2023{bottom:0}.intervalo{left:42px!important;transform:none}.intervalo-20{top:24%}.intervalo-9{top:58%}.intervalo-12{top:84%}
   }
   @media(prefers-reduced-motion:reduce){:global(html){scroll-behavior:auto;scroll-snap-type:none}}
+
+  .pantalla-paso-4 .visual-contraste strong {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    line-height: 1.25;
+    letter-spacing: normal;
+  }
+
+  .pantalla-paso-4 .visual-contraste i {
+    font-size: 1.8rem;
+  }
+
+  .pantalla-paso-4 .visual-contraste {
+    margin: 2rem auto;
+    gap: 1.5rem;
+  }
 </style>
