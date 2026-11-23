@@ -14,7 +14,7 @@ pantallas:
     titulo: "Las diapositivas vuelven. Esta vez, colgadas de tus llaves."
     tipo: lista
     texto:
-      - "Parece una de aquellas diapositivas que se colocaban en un proyector. En realidad, el Kodak SlideTag es un pequeño marco digital que también ayuda a localizar los objetos a los que lo enganchas."
+      - "Este invento parece un objeto de otro siglo. En realidad, el Kodak SlideTag es un pequeño marco digital que también ayuda a localizar los objetos a los que lo enganchas."
       - "Lo comercializa Reto bajo licencia de Kodak. Mide 4,6 centímetros de alto y pesa 16,6 gramos, según su ficha técnica."
   - etiqueta: "02 | La pantalla"
     titulo: "Tus fotos salen del móvil y se van de paseo."
