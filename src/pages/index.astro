@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
 import '../styles/global.css';
 import RelojActualidad from '../components/RelojActualidad.astro';
+import Cosme from '../components/Cosme.astro';
 import Seo from '../components/Seo.astro';
 import Cabecera from '../components/Cabecera.astro';
 import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
@@ -93,6 +94,7 @@ const seccionesActualidad = [
         </article>
       ))}
     </div>
+    <Cosme />
     {todasLasNoticias.map(pieza => {
       const seccion = seccionesActualidad.find(s => s.clave === pieza.data.categoria);
       return seccion && <template data-noticia-plantilla data-dia={pieza.data.fecha.toISOString().slice(0, 10)} data-categoria={seccion.clave} data-instante={fechaPublicacion(pieza.data).getTime()} data-id={pieza.id}>

@@ -1,0 +1,9 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+import Cabecera from '../components/Cabecera.astro';
+import Cosme from '../components/Cosme.astro';
+import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
+---
+<html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5"/><Seo titulo="Más Cosme | Nebula" descripcion="Cosme contra la actualidad. Tres viñetas de sátira sobre tecnología, ciencia, cine y cultura digital, de lunes a viernes."/></head><body><Cabecera activa="cosme"/><main class="contenedor cosme-pagina"><header><h1>Más Cosme</h1><p>Cosme contra la actualidad</p></header><Cosme archivo /></main><footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/></body></html>
+<style>.cosme-pagina{padding-top:clamp(2rem,5vw,4rem);padding-bottom:5rem}.cosme-pagina>header{margin-bottom:2.5rem}.cosme-pagina h1{color:#d85a30;font-size:clamp(2.5rem,6vw,4.5rem);line-height:1;margin:0 0 .75rem}.cosme-pagina>header p{font:600 12px/1.5 var(--font-mono);color:#446ddf;margin:0}</style>

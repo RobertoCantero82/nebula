@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # copias locales de musica
 /copias_musica/
+
+# copiales locales de cosme
+copias_cosme/
