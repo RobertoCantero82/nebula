@@ -28,7 +28,23 @@ const destacados = publicados.filter((a) => a.data.serie !== 'trama').slice(0, 8
 const ultimasTramas = publicados.filter((a) => a.data.serie === 'trama').slice(0, 2);
 const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(f);
 const formatearFechaCorta = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(f).replace('.', '').toUpperCase();
-const fragmentarCifras = (texto: string) => texto.split(/(\d[\d.,]*)/g).filter(Boolean);
+// elijo una palabra del titular y conservo el texto original completo
+const fragmentarTitular = (titulo: string) => {
+  const palabras = [...titulo.matchAll(/[\p{L}\p{N}]+(?:[-’'][\p{L}\p{N}]+)*/gu)];
+  const preferidas = ['Kodak', 'Neptuno', 'Marvel', 'Marianas', 'Voyager', 'Tesla', 'Matrix', 'átomo'];
+  const elegida = preferidas.map(palabra => palabras.find(p => p[0].toLocaleLowerCase('es') === palabra.toLocaleLowerCase('es'))).find(Boolean)
+    ?? palabras.filter(p => /\p{L}/u.test(p[0])).sort((a, b) => b[0].length - a[0].length)[0];
+  if (!elegida) return { antes: titulo, palabra: '', despues: '' };
+  const inicio = elegida.index!;
+  return { antes: titulo.slice(0, inicio), palabra: elegida[0], despues: titulo.slice(inicio + elegida[0].length) };
+};
+const diasContinuo = [...new Set(todasLasNoticias.map(pieza => pieza.data.fecha.toISOString().slice(0, 10)))].sort().reverse();
+const noticiasPorDia = diasContinuo.map(dia => ({
+  dia,
+  fecha: formatearFechaCorta(new Date(`${dia}T12:00:00Z`)),
+  noticias: todasLasNoticias.filter(pieza => pieza.data.fecha.toISOString().slice(0, 10) === dia)
+    .sort((a, b) => fechaPublicacion(b.data).getTime() - fechaPublicacion(a.data).getTime()),
+}));
 const fechaHoy = new Intl.DateTimeFormat('sv-SE', {
   timeZone: 'Europe/Madrid',
   year: 'numeric',
@@ -48,19 +64,21 @@ const seccionesActualidad = [
 <body>
 <Cabecera/>
 <main>
-  <section class="continuo-nebula" aria-label="Todo el archivo de Nebula" data-continuo>
-    <div class="continuo-marca" aria-hidden="true"><strong>ARCHIVO</strong></div>
+  <section class="continuo-nebula" aria-label="Titulares de Actualidad por día" data-continuo>
+    <div class="continuo-marca" aria-hidden="true"><strong>ACTUALIDAD</strong></div>
     <div class="continuo-ventana">
       <div class="continuo-pista" data-continuo-pista>
-        <div class="continuo-grupo" data-continuo-grupo>
-          {publicados.map((articulo) => <a class:list={["continuo-item", { "es-trama": articulo.data.serie === 'trama' }]} href={`/articulos/${articulo.id}/`}><span class="continuo-tema">{articulo.data.tema}</span><time datetime={articulo.data.fecha.toISOString()}>{formatearFechaCorta(articulo.data.fecha)}</time>{articulo.data.textoContinuo?<span class="continuo-titulo continuo-titulo-trama">{fragmentarCifras(articulo.data.textoContinuo).map((parte) => /^\d/.test(parte) ? <strong class="continuo-cifra">{parte}</strong> : parte)}</span>:<>{articulo.data.cifraDestacada&&<><strong>{articulo.data.cifraDestacada}</strong><span class="continuo-etiqueta">{articulo.data.etiquetaCifra}</span><span class="continuo-separador" aria-hidden="true">·</span></>}<span class="continuo-titulo">{articulo.data.titulo}</span></>}</a>)}
-        </div>
-        <div class="continuo-grupo" aria-hidden="true">
-          {publicados.map((articulo) => <a class:list={["continuo-item", { "es-trama": articulo.data.serie === 'trama' }]} href={`/articulos/${articulo.id}/`} tabindex="-1"><span class="continuo-tema">{articulo.data.tema}</span><time>{formatearFechaCorta(articulo.data.fecha)}</time>{articulo.data.textoContinuo?<span class="continuo-titulo continuo-titulo-trama">{fragmentarCifras(articulo.data.textoContinuo).map((parte) => /^\d/.test(parte) ? <strong class="continuo-cifra">{parte}</strong> : parte)}</span>:<>{articulo.data.cifraDestacada&&<><strong>{articulo.data.cifraDestacada}</strong><span class="continuo-etiqueta">{articulo.data.etiquetaCifra}</span><span class="continuo-separador" aria-hidden="true">·</span></>}<span class="continuo-titulo">{articulo.data.titulo}</span></>}</a>)}
-        </div>
+        {[false, true].map(copia => <div class="continuo-grupo" data-continuo-grupo={!copia || undefined} aria-hidden={copia ? 'true' : undefined}>
+          {noticiasPorDia.map(({ dia, fecha, noticias }) => <div class="continuo-dia" data-continuo-dia hidden={!noticias.some(pieza => estaPublicada(pieza.data, ahora))}>
+            <time class="continuo-fecha" datetime={dia}>{fecha}</time>
+            {noticias.map(pieza => <a class="continuo-item" href={`/actualidad/${pieza.id}/`} tabindex={copia ? -1 : undefined} data-continuo-instante={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)}>
+              <span class="continuo-titulo">{pieza.data.titulo}</span>
+            </a>)}
+          </div>)}
+        </div>)}
       </div>
     </div>
-    <button class="continuo-control" type="button" aria-label="Pausar titulares" data-continuo-control><span aria-hidden="true">Ⅱ</span></button>
+    <button class="continuo-control" type="button" aria-label="Pausar titulares" aria-pressed="false" data-continuo-control><span aria-hidden="true">Ⅱ</span></button>
   </section>
   <section class="actualidad-portada contenedor" aria-labelledby="titulo-actualidad" data-actualidad-fecha={fechaHoy}>
     <header class="actualidad-cabecera">
@@ -83,8 +101,7 @@ const seccionesActualidad = [
         <a data-casilla={clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/actualidad/${pieza.id}/`}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span></div>
           <div class="actualidad-contenido">
-            {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
-            <h2>{pieza.data.titulo}</h2>
+            <h2>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h2>
           </div>
         </a>
       ) : (
@@ -101,8 +118,7 @@ const seccionesActualidad = [
         <a data-casilla={seccion.clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${seccion.clave}`, 'tiene-pieza']} href={`/actualidad/${pieza.id}/`}>
           <div class="actualidad-meta"><span>{seccion.numero} · {seccion.nombre}</span></div>
           <div class="actualidad-contenido">
-            {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
-            <h2>{pieza.data.titulo}</h2>
+            <h2>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h2>
           </div>
         </a>
       </template>;
@@ -120,7 +136,36 @@ const seccionesActualidad = [
 import { alCargarPagina } from '../scripts/ciclo-pagina';
 alCargarPagina((escuchar, alSalir) => {
 const raiz=document.querySelector('[data-mvp]');const remoto='https://robertocantero-mvp-nba.static.hf.space/data';const json=async u=>{const r=await fetch(u);if(!r.ok)throw new Error();return r.json()};const jornada=async()=>{try{const m=await json(`${remoto}/manifest.json`);const f=[...m].sort((a,b)=>b.localeCompare(a))[0];return await json(`${remoto}/contenido_${f}.json`)}catch{return json('/datos/mvp/ultima-jornada.json')}};const madrugada=fecha=>{const inicio=new Date(`${fecha}T12:00:00Z`),fin=new Date(inicio);fin.setUTCDate(fin.getUTCDate()+1);const dia=n=>new Intl.DateTimeFormat('es-ES',{day:'numeric',timeZone:'UTC'}).format(n);const mes=n=>new Intl.DateTimeFormat('es-ES',{month:'long',timeZone:'UTC'}).format(n).toUpperCase();return inicio.getUTCMonth()===fin.getUTCMonth()?`MADRUGADA DEL ${dia(inicio)} AL ${dia(fin)} DE ${mes(fin)}`:`MADRUGADA DEL ${dia(inicio)} DE ${mes(inicio)} AL ${dia(fin)} DE ${mes(fin)}`};jornada().then(datos=>{if(!raiz)return;raiz.querySelector('[data-mvp-jornada]').textContent=madrugada(datos.fecha);raiz.querySelector('[data-mvp-partidos]').textContent=datos.resultados?.length||0;raiz.querySelector('[data-mvp-recomendacion]').textContent=datos.recomendacion?.partido?.replace(' @ ',' — ')||'Una jornada para elegir sobre la marcha.';const texto=datos.recomendacion?.texto||'',foco=texto.match(/por (.*?):/)?.[1]?.replace(/\b(?:la|el|las|los)\s+/g,''),razon=texto.match(/: reúne (.*?)\./)?.[1];raiz.querySelector('[data-mvp-motivo]').textContent=foco&&razon?`Promete una noche de ${foco}, con ${razon}.`:foco?`Promete una noche de ${foco}.`:'Una historia que merece descubrirse.';const q=datos.quiz||datos.gate;raiz.querySelector('[data-mvp-pregunta]').textContent=q.pregunta;const opciones=raiz.querySelector('[data-mvp-opciones]');q.opciones.forEach((op,i)=>{const b=document.createElement('button');b.type='button';b.textContent=op;b.addEventListener('click',()=>{opciones.querySelectorAll('button').forEach((n,j)=>{n.disabled=true;n.classList.toggle('correcta',j===q.correcta_idx);n.classList.toggle('fallo',n===b&&j!==q.correcta_idx)});raiz.querySelector('[data-mvp-respuesta]').textContent=i===q.correcta_idx?`Correcto. ${q.explicacion}`:`La respuesta es ${q.opciones[q.correcta_idx]}. ${q.explicacion}`});opciones.appendChild(b)})}).catch(()=>{if(raiz)raiz.querySelector('[data-mvp-error]').hidden=false});
-const continuo=document.querySelector('[data-continuo]');const pista=continuo?.querySelector('[data-continuo-pista]');const grupo=continuo?.querySelector('[data-continuo-grupo]');const control=continuo?.querySelector('[data-continuo-control]');const ajustarContinuo=()=>{if(!pista||!grupo)return;pista.style.setProperty('--continuo-recorrido',`${grupo.scrollWidth}px`);pista.style.setProperty('--continuo-duracion',`${Math.max(90,grupo.scrollWidth/34)}s`)};ajustarContinuo();document.fonts?.ready.then(ajustarContinuo);escuchar(window, 'resize',ajustarContinuo);control?.addEventListener('click',()=>{const pausado=continuo.toggleAttribute('data-pausado');control.setAttribute('aria-label',pausado?'Reanudar titulares':'Pausar titulares');control.querySelector('span').textContent=pausado?'▶':'Ⅱ'});
+const continuo = document.querySelector<HTMLElement>('[data-continuo]');
+const pista = continuo?.querySelector<HTMLElement>('[data-continuo-pista]');
+const grupo = continuo?.querySelector<HTMLElement>('[data-continuo-grupo]');
+const control = continuo?.querySelector<HTMLButtonElement>('[data-continuo-control]');
+const ajustarContinuo = () => {
+  if (!pista || !grupo) return;
+  pista.style.setProperty('--continuo-recorrido', `${grupo.scrollWidth}px`);
+  pista.style.setProperty('--continuo-duracion', `${Math.max(90, grupo.scrollWidth / 34)}s`);
+};
+const actualizarContinuo = () => {
+  if (!continuo) return;
+  const instante = Date.now();
+  continuo.querySelectorAll<HTMLElement>('[data-continuo-instante]').forEach(enlace => {
+    enlace.hidden = Number(enlace.dataset.continuoInstante) > instante;
+  });
+  continuo.querySelectorAll<HTMLElement>('[data-continuo-dia]').forEach(dia => {
+    dia.hidden = ![...dia.querySelectorAll<HTMLElement>('[data-continuo-instante]')].some(enlace => !enlace.hidden);
+  });
+  ajustarContinuo();
+};
+actualizarContinuo();
+document.fonts?.ready.then(ajustarContinuo);
+escuchar(window, 'resize', ajustarContinuo);
+escuchar(document, 'nebula:publicacion', actualizarContinuo);
+control && escuchar(control, 'click', () => {
+  const pausado = continuo!.toggleAttribute('data-pausado');
+  control.setAttribute('aria-label', pausado ? 'Reanudar titulares' : 'Pausar titulares');
+  control.setAttribute('aria-pressed', String(pausado));
+  control.querySelector('span')!.textContent = pausado ? '▶' : 'Ⅱ';
+});
 
 });
 </script>
@@ -137,7 +182,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
 .actualidad-meta{align-items:center;display:flex;font:600 10px var(--font-mono);justify-content:center;letter-spacing:.08em;position:relative;text-align:center;text-transform:uppercase;width:100%}
 .actualidad-meta>span{display:block;text-align:center;width:100%}
 .actualidad-meta>time{position:absolute;right:0;top:calc(100% + .35rem)}
-.actualidad-contenido{display:grid;flex:1;grid-template-rows:1fr auto 1rem minmax(5.7rem,auto) 1fr;justify-items:center;width:100%}
+.actualidad-contenido{align-items:center;display:flex;flex:1;justify-content:center;padding:1.5rem 0;width:100%}
 .actualidad-contenido>strong{align-self:end;color:#446ddf;font:600 clamp(1.45rem,2.6vw,2.2rem)/1 var(--font-heading);grid-row:2;letter-spacing:-.04em;white-space:nowrap}
 .actualidad-casilla h2{font-size:clamp(1rem,1.45vw,1.2rem);line-height:1.18;margin:0;max-width:23ch}
 .actualidad-casilla>p{color:var(--color-secondary-text);line-height:1.5;margin:0;max-width:52ch}
@@ -147,8 +192,9 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
 .actualidad-espera p{color:var(--color-secondary-text);font-size:13px;margin:1rem 0 0;max-width:28ch}
 .actualidad-casilla.esta-vacia{background-image:radial-gradient(circle at 1px 1px,rgb(68 109 223/13%) 1px,transparent 0);background-size:18px 18px}
 .actualidad-casilla.tiene-pieza{background:#fff;transition:background-color .2s ease,color .2s ease}
-.actualidad-casilla.tiene-pieza h2{align-self:start;grid-row:4;max-width:22ch;text-align:center}
-.actualidad-casilla.tiene-pieza:hover,.actualidad-casilla.tiene-pieza:focus-visible{background:#446ddf;color:#fff}
+.actualidad-casilla.tiene-pieza h2{color:#1b1836;font-size:clamp(1.15rem,1.65vw,1.4rem);line-height:1.3;max-width:22ch;text-align:center;text-wrap:balance;overflow-wrap:anywhere}
+.actualidad-palabra{color:#446ddf}
+.actualidad-casilla.tiene-pieza:hover,.actualidad-casilla.tiene-pieza:focus-visible{background:#f0f3fc;color:#1b1836}
 .actualidad-casilla.tiene-pieza:hover .actualidad-contenido>strong,.actualidad-casilla.tiene-pieza:focus-visible .actualidad-contenido>strong{color:#fff}
 .actualidad-casilla.tiene-pieza:hover>p,.actualidad-casilla.tiene-pieza:focus-visible>p{color:rgb(255 255 255/82%)}
 @media (min-width: 701px) and (max-width: 900px) {
@@ -244,7 +290,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
     border-top: 4px solid #446ddf;
     color: #fff;
     display: grid;
-    grid-template-columns: 108px minmax(0, 1fr) 46px;
+    grid-template-columns: 128px minmax(0, 1fr) 46px;
     height: 86px;
     overflow: hidden;
     position: relative;
@@ -274,7 +320,10 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
     width: max-content;
     will-change: transform;
   }
-  .continuo-grupo { align-items: stretch; display: flex; }
+  .continuo-grupo, .continuo-dia { align-items: stretch; display: flex; }
+  .continuo-dia[hidden], .continuo-item[hidden] { display: none !important; }
+  .continuo-fecha { align-items:center; background:rgb(68 109 223 / 18%); color:#aebfff; display:flex; flex-shrink:0; font:600 10px var(--font-mono); padding:0 22px; white-space:nowrap; }
+  .continuo-item:focus-visible { outline:2px solid #8aa7ff; outline-offset:-5px; }
   .continuo-item {
     align-items: center;
     display: flex;
@@ -292,7 +341,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
   .continuo-item strong { color: #fff; font: 600 clamp(1.25rem, 2vw, 1.7rem)/1 var(--font-heading); }
   .continuo-etiqueta { color: #fff; font: 400 14px/1.25 var(--font-body); }
   .continuo-separador { color: #8aa7ff; font: 600 18px/1 var(--font-heading); margin: 0 2px; }
-  .continuo-titulo { font: 600 15px/1.2 var(--font-heading); max-width: 52ch; overflow: hidden; text-overflow: ellipsis; }
+  .continuo-titulo { color:#fff; font: 600 15px/1.3 var(--font-heading); }
   .continuo-titulo-trama { color: #fff; max-width: none; }
   .continuo-titulo .continuo-cifra { color: #ff956d; font: inherit; }
   .continuo-item:hover .continuo-titulo, .continuo-item:focus-visible .continuo-titulo { text-decoration: underline; text-underline-offset: 4px; }
@@ -301,7 +350,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
   .continuo-nebula:hover .continuo-pista, .continuo-nebula:focus-within .continuo-pista, .continuo-nebula[data-pausado] .continuo-pista { animation-play-state: paused; }
   @keyframes continuo-mover { to { transform: translate3d(calc(-1 * var(--continuo-recorrido)), 0, 0); } }
   @media (max-width: 620px) {
-    .continuo-nebula { grid-template-columns: 82px minmax(0, 1fr) 38px; height: 78px; }
+    .continuo-nebula { grid-template-columns: 100px minmax(0, 1fr) 38px; height: 78px; }
     .continuo-pista { height: 70px; }
     .continuo-marca { padding-right: 8px; }
     .continuo-marca span { font-size: 8px; }
@@ -309,7 +358,7 @@ const continuo=document.querySelector('[data-continuo]');const pista=continuo?.q
     .continuo-item { gap: 10px; padding: 0 20px; }
     .continuo-tema { font-size: 9px; }
     .continuo-etiqueta { font-size: 13px; }
-    .continuo-titulo { font-size: 14px; max-width: 34ch; }
+    .continuo-titulo { font-size: 14px; }
   }
   .cabecera-portada h1,
   .cabecera-portada h2 {
