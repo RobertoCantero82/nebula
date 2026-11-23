@@ -3,7 +3,7 @@ titulo: "Marvel aún tenía un nombre guardado para 'Vengadores: Doomsday'"
 descripcion: "La promoción de otra película ha servido para anunciar una incorporación al reparto. Su personaje dejó una conversación pendiente en su última aparición."
 categoria: cine
 fecha: 2026-11-23
-hora: "09:00"
+hora: "11:00"
 cifraDestacada: "2021"
 etiquetaCifra: "el comienzo de su historia"
 fondoPortada: "2021"
