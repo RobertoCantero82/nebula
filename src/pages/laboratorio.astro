@@ -21,8 +21,8 @@ const proyectos = [
     id: 'mvp', nombre: 'Agente MVP', tema: 'Baloncesto · Datos', estado: 'Acceso público',
     titular: 'La NBA también se disfruta sin saber el resultado.',
     descripcion: 'Reúno la jornada NBA en una herramienta para seguir los partidos con o sin spoilers. También puedo hacer preguntas y consultar los datos de los encuentros de la temporada actual.',
-    imagen: 'agente_mvp.webp', ancho: 1280, alto: 623,
-    alt: 'Nueva portada de Agente MVP con el titular de la jornada NBA, seis partidos y controles para revelar u ocultar los resultados.',
+    imagen: 'agente-mvp.png', ancho: 1405, alto: 881,
+    alt: 'Agente MVP con el resumen de una jornada NBA, el análisis de los partidos y su buscador de preguntas.',
     pie: 'La jornada, sus historias y los datos para seguir preguntando.',
     enlace: 'https://robertocantero-mvp-nba.static.hf.space/index.html', accion: 'Explorar la jornada',
     detalle: 'Qué puedes hacer',
@@ -57,7 +57,7 @@ const proyectos = [
     id: 'rebobina', nombre: 'Rebobina', tema: 'Cine de los 80 y 90 · Catálogo', estado: 'Proyecto local',
     titular: 'Vuelve al videoclub. Sin devolver la película el lunes.',
     descripcion: 'He preparado un catálogo de películas de 1980 a 1999 para redescubrir el cine con el que crecí. Puedo buscar títulos, recorrer los estrenos y organizar mi propia estantería con las que quiero ver o ya he visto.',
-    imagen: 'rebobina.png', ancho: 1884, alto: 928,
+    imagen: 'rebobina.png', ancho: 1885, alto: 928,
     alt: 'Catálogo de Rebobina con filtros por título, año, mes y género y películas como Pulp Fiction, Matrix y Seven.',
     pie: 'Una captura del catálogo real. El proyecto todavía no tiene acceso público.',
     enlace: '/nebula/imagenes/laboratorio/rebobina.png', accion: 'Ampliar demostración',
@@ -69,7 +69,7 @@ const proyectos = [
     id: 'vhs-club', nombre: 'VHS Club', tema: 'Google TV · Aplicación', estado: 'En desarrollo',
     titular: 'Tus películas. Tus series. Tu propio videoclub.',
     descripcion: 'Estoy desarrollando una aplicación para Google TV que convertirá las películas y series de tu Google Drive en un videoclub de estética noventera. La idea: recorrer tu colección con el mando y reproducirla directamente en el televisor.',
-    imagen: 'vhs_club_concepto.webp', ancho: 1280, alto: 720,
+    imagen: 'vhs_club_concepto.png', ancho: 1672, alto: 941,
     alt: 'Concepto visual de VHS Club: un videoclub de estilo noventero con un dependiente, estanterías de películas y luces de neón.',
     pie: 'Concepto visual del proyecto. No es una captura de una aplicación funcional.',
     enlace: undefined, accion: undefined,
@@ -268,10 +268,10 @@ const otros = [
   .proyecto-inverso .cuerpo-proyecto { grid-template-columns: 1fr 1.25fr; }
   .proyecto-inverso .visual { order: 2; }
   .visual { margin: 0; min-width: 0; }
-  .ampliar { display: block; position: relative; aspect-ratio: 16 / 9; background: #efede6; border: 1px solid var(--color-border); overflow: hidden; }
-  .ampliar img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .25s ease; }
+  .ampliar { display: block; position: relative; background: #efede6; border: 1px solid var(--color-border); overflow: hidden; }
+  .ampliar img { display: block; width: 100%; height: auto; transition: transform .25s ease; }
   .ampliar:hover img { transform: scale(1.018); }
-  .ampliar-etiqueta { position: absolute; right: 0; bottom: 0; display: block; color: var(--azul-texto); background: var(--color-bg); border-top: 1px solid var(--color-border); border-left: 1px solid var(--color-border); text-align: right; font-size: 9px; padding: .65rem .8rem; }
+  .ampliar-etiqueta { display: block; color: var(--azul-texto); background: var(--color-bg); border-top: 1px solid var(--color-border); text-align: right; font-size: 9px; padding: .65rem .8rem; }
   figcaption { color: var(--color-secondary-text); font-size: .76rem; line-height: 1.6; margin: .7rem 0 0; }
   .texto-proyecto { min-width: 0; }
   .texto-proyecto h2 { font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.02; letter-spacing: -.025em; margin: -.1rem 0 1rem; }
@@ -297,12 +297,19 @@ const otros = [
   .lofi-play > span { color: var(--azul-texto); }
   .reproductor :global(iframe) { border: 0; width: 100%; height: 100%; display: block; }
   .proyecto-desarrollo { padding-bottom: 3rem; }
+  .proyecto-desarrollo .cuerpo-proyecto { grid-template-columns: 1fr; gap: 1.75rem; }
+  .proyecto-desarrollo .visual { order: 0; }
+  .proyecto-desarrollo .texto-proyecto { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; }
+  .proyecto-desarrollo h2, .proyecto-desarrollo .gancho { grid-column: 1; }
+  .proyecto-desarrollo .descripcion { grid-column: 2; grid-row: 1 / 4; }
+  .proyecto-desarrollo .aviso-desarrollo { grid-column: 1; }
+  .proyecto-desarrollo .detalle { grid-column: 1 / -1; }
   .otros { border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border); margin: 1rem 0 0; }
   .otros > summary { display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; padding: 1.5rem 0; min-height: 60px; font-family: var(--font-heading); font-size: 1.75rem; list-style: none; }
   .otros-intro { color: var(--color-secondary-text); max-width: 650px; line-height: 1.8; }
   .otros-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; padding: 1rem 0 2rem; }
   .otro-proyecto { min-width: 0; }
-  .otro-proyecto img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; background: #efede6; border: 1px solid var(--color-border); }
+  .otro-proyecto img { width: 100%; height: auto; aspect-ratio: 1.6; object-fit: contain; background: #efede6; border: 1px solid var(--color-border); }
   .otro-proyecto h3 { font-size: 1.5rem; line-height: 1.2; margin: 1rem 0; }
   .otro-proyecto p:not(.indice) { font-size: .85rem; line-height: 1.8; }
   .autor { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 3rem 0; }
