@@ -1,27 +1,31 @@
 ---
 import tiras from '../../public/cosme/tiras.json';
+import { fechaPublicacion } from '../utils/publicacion';
+const instanteTira = (tira: { fecha: string; hora?: string }) => fechaPublicacion({ fecha: new Date(`${tira.fecha}T00:00:00Z`), hora: tira.hora || '00:00' }).getTime();
 const { archivo = false } = Astro.props;
 const dia = (fecha: Date) => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit' }).format(fecha);
 const hoy = dia(new Date());
 const semana = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Madrid', weekday: 'short' }).format(new Date());
 const finde = ['Sat', 'Sun'].includes(semana);
-const entregas = [...tiras].filter(t => t.fecha <= hoy).sort((a, b) => b.fecha.localeCompare(a.fecha));
+const entregas = [...tiras].sort((a, b) => instanteTira(b) - instanteTira(a));
+const disponibles = entregas.filter(t => instanteTira(t) <= Date.now());
+const ultima = disponibles[0];
 const fechaVisible = (fecha: string) => new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${fecha}T12:00:00Z`));
 ---
 <section class:list={['cosme', { 'cosme-archivo': archivo }]} data-cosme data-archivo={String(archivo)} hidden={!archivo && finde} aria-label={archivo ? 'Archivo de Cosme' : 'Cosme contra la actualidad'}>
   <div class="cosme-marco">
   {!archivo && <header class="cosme-cabecera"><h2 class="cosme-sticker">Cosme <span>contra la actualidad</span></h2></header>}
   <div class="cosme-entregas" data-cosme-entregas>
-    {entregas.map((tira, i) => <article class="cosme-entrega" data-cosme-fecha={tira.fecha} hidden={!archivo && i > 0}>
+    {entregas.map((tira, i) => <article class="cosme-entrega" data-cosme-fecha={tira.fecha} data-cosme-publicacion={instanteTira(tira)} hidden={instanteTira(tira) > Date.now() || (!archivo && tira !== ultima)}>
       {archivo && <h2 class="cosme-fecha"><time datetime={tira.fecha}>{fechaVisible(tira.fecha)}</time></h2>}
       <img class="cosme-horizontal" src={tira.imagen} alt={tira.vinetas.join(' ')} width={tira.ancho} height={tira.alto} loading="lazy" decoding="async" />
       <div class="cosme-vertical">{tira.vinetas.map((texto, indice) => <div class="cosme-panel" style={`--panel:${indice};--ratio:${tira.ancho / 3}/${tira.alto}`}><img src={tira.imagen} alt={`Viñeta ${indice + 1} de 3. ${texto}`} width={tira.ancho} height={tira.alto} loading="lazy" decoding="async" /></div>)}</div>
     </article>)}
   </div>
   </div>
-  {!archivo && <p class="cosme-aviso" data-cosme-aviso hidden={!entregas.length || entregas[0].fecha === hoy} role="status">Una nueva aventura de Cosme llegará hoy…</p>}
-  <p class="cosme-vacio" data-cosme-vacio hidden={entregas.length > 0}>La primera aventura de Cosme llegará pronto.</p>
-  {!archivo && <a class="cosme-mas" href="/mas-cosme/">Más Cosme <span aria-hidden="true">→</span></a>}
+
+  <p class="cosme-vacio" data-cosme-vacio hidden={disponibles.length > 0}>La primera aventura de Cosme llegará pronto.</p>
+  {!archivo && <div class="cosme-pie"><p class="cosme-aviso" data-cosme-aviso hidden={!ultima || ultima.fecha === hoy} role="status">Esta es la tira de ayer, la próxima aventura de Cosme está por llegar...</p><a class="cosme-mas" href="/mas-cosme/">Más Cosme <span aria-hidden="true">→</span></a></div>}
 </section>
 <style>
   .cosme{margin-top:2.25rem;padding-top:0;border-top:0}
@@ -32,22 +36,25 @@ const fechaVisible = (fecha: string) => new Intl.DateTimeFormat('es-ES', { timeZ
   .cosme-sticker::before{content:'';position:absolute;inset:4px;border:1px dashed currentColor;border-radius:1px;pointer-events:none}
   .cosme-sticker::after{content:'';position:absolute;inset:-1px;pointer-events:none;background-image:radial-gradient(circle at 2px 3px,var(--color-bg,#f7f5f0) 0 .65px,transparent .9px),radial-gradient(circle at 7px 4px,var(--color-bg,#f7f5f0) 0 .7px,transparent 1px),radial-gradient(circle at 4px 9px,var(--color-bg,#f7f5f0) 0 .55px,transparent .85px);background-size:7px 11px,13px 9px,11px 17px;opacity:.7}
   .cosme-sticker span{font:700 clamp(.5rem,.9vw,.58rem)/1.25 var(--font-mono);letter-spacing:.04em}
-  .cosme-aviso{position:relative;max-width:29ch;background:#fff7e8;border:2px solid #1b1836;border-radius:18px;box-shadow:3px 3px 0 #446ddf;padding:.6rem .85rem;margin:1rem 0 0 auto;font:600 11px/1.5 var(--font-mono);color:#1b1836;animation:cosme-vaiven 4s ease-in-out infinite}
-  .cosme-aviso::after{content:'';position:absolute;bottom:-7px;right:22px;width:10px;height:10px;background:#fff7e8;border-right:2px solid #1b1836;border-bottom:2px solid #1b1836;transform:rotate(45deg)}
+  .cosme-pie{display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;padding-top:.8rem}
+  .cosme-aviso{display:flex;align-items:flex-start;gap:.65rem;flex:1;min-width:0;max-width:none;background:none;border:0;border-radius:0;box-shadow:none;padding:.5rem 0;margin:0;font:500 11px/1.6 var(--font-mono);color:#3558bd}
+  .cosme-aviso::before{content:'';display:block;flex:0 0 7px;width:7px;height:7px;border-radius:50%;background:#d85a30;margin-top:.32rem;animation:cosme-pulso 3.8s ease-in-out infinite}
+  .cosme-aviso::after{content:none}
   .cosme-horizontal{display:block;width:100%;height:auto}
   .cosme-vertical{display:none}
-  .cosme-mas{display:block;width:fit-content;margin:.8rem 0 0 auto;padding:.5rem 0;color:#3558bd;font:600 11px/1.5 var(--font-mono);text-underline-offset:4px}
+  .cosme-mas{display:block;width:fit-content;margin:0 0 0 auto;flex-shrink:0;padding:.5rem 0;color:#3558bd;font:600 11px/1.5 var(--font-mono);text-underline-offset:4px}
   .cosme-mas:focus-visible{outline:3px solid #1b1836;outline-offset:5px}
   .cosme-archivo{margin:0;border:0;padding:0}
   .cosme-archivo .cosme-entrega+.cosme-entrega{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--color-border)}
   .cosme-fecha{font:600 12px/1.5 var(--font-mono);color:#446ddf;margin:0 0 1rem}
   .cosme-vacio{font:14px/1.6 var(--font-body);color:var(--color-secondary-text)}
-  @keyframes cosme-vaiven{0%,100%{transform:rotate(-1deg)}50%{transform:translateY(-3px) rotate(1deg)}}
-  @media(max-width:700px){.cosme-horizontal{display:none}.cosme-vertical{display:grid;gap:.65rem}.cosme-panel{position:relative;overflow:hidden;aspect-ratio:var(--ratio);background:#fff7e8}.cosme-panel img{display:block;width:300%;max-width:none;height:auto;transform:translateX(calc(var(--panel) * -100% / 3))}.cosme-sticker{font-size:1.65rem;width:166px;left:-.35rem;top:-1.25rem}.cosme-aviso{max-width:none;margin-top:1.25rem}}
-  @media(prefers-reduced-motion:reduce){.cosme-aviso{animation:none}}
+  @keyframes cosme-pulso{0%,100%{opacity:.45;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}
+  @media(max-width:700px){.cosme-horizontal{display:none}.cosme-vertical{display:grid;gap:.65rem}.cosme-panel{position:relative;overflow:hidden;aspect-ratio:var(--ratio);background:#fff7e8}.cosme-panel img{display:block;width:300%;max-width:none;height:auto;transform:translateX(calc(var(--panel) * -100% / 3))}.cosme-sticker{font-size:1.65rem;width:166px;left:-.35rem;top:-1.25rem}.cosme-pie{flex-direction:column;gap:.25rem}.cosme-aviso{width:100%}.cosme-mas{align-self:flex-end}}
+  @media(prefers-reduced-motion:reduce){.cosme-aviso::before{animation:none;opacity:1;transform:none}}
 </style>
 <script>
 import { alCargarPagina } from '../scripts/ciclo-pagina';
+import { fechaPublicacion } from '../utils/publicacion';
 alCargarPagina((escuchar, alSalir) => {
   const raiz = document.querySelector<HTMLElement>('[data-cosme]');
   if (!raiz) return;
@@ -59,9 +66,9 @@ alCargarPagina((escuchar, alSalir) => {
     const semana = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Madrid', weekday: 'short' }).format(ahora);
     raiz.hidden = !archivo && ['Sat', 'Sun'].includes(semana);
     let visible = false;
-    const entregas = [...raiz.querySelectorAll<HTMLElement>('[data-cosme-fecha]')].sort((a, b) => b.dataset.cosmeFecha!.localeCompare(a.dataset.cosmeFecha!));
+    const entregas = [...raiz.querySelectorAll<HTMLElement>('[data-cosme-fecha]')].sort((a, b) => Number(b.dataset.cosmePublicacion) - Number(a.dataset.cosmePublicacion));
     for (const entrega of entregas) {
-      const disponible = entrega.dataset.cosmeFecha! <= hoy;
+      const disponible = Number(entrega.dataset.cosmePublicacion) <= ahora.getTime();
       entrega.hidden = !disponible || (!archivo && visible);
       if (disponible) visible = true;
     }
@@ -82,8 +89,13 @@ alCargarPagina((escuchar, alSalir) => {
       if (!contenedor || !modelo) return;
       for (const tira of tiras) {
         if (!/^\d{4}-\d{2}-\d{2}$/.test(tira.fecha) || typeof tira.imagen !== 'string' || !tira.imagen.startsWith('/imagenes/cosme/') || !Array.isArray(tira.vinetas) || tira.vinetas.length !== 3 || !tira.vinetas.every(t => typeof t === 'string') || !(tira.ancho > 0 && tira.alto > 0)) continue;
+        if (tira.hora !== undefined && !/^([01]\d|2[0-3]):[0-5]\d$/.test(tira.hora)) continue;
+        let instante: number;
+        try { instante = fechaPublicacion({ fecha: new Date(`${tira.fecha}T00:00:00Z`), hora: tira.hora || '00:00' }).getTime(); } catch { continue; }
+        if (!Number.isFinite(instante)) continue;
         let entrega = [...contenedor.querySelectorAll<HTMLElement>('[data-cosme-fecha]')].find(e => e.dataset.cosmeFecha === tira.fecha);
         if (!entrega) { entrega = modelo.cloneNode(true) as HTMLElement; entrega.hidden = true; entrega.dataset.cosmeFecha = tira.fecha; contenedor.append(entrega); }
+        entrega.dataset.cosmePublicacion = String(instante);
         const imagen = entrega.querySelector<HTMLImageElement>('.cosme-horizontal')!;
         if (imagen.getAttribute('src') !== tira.imagen) imagen.src = tira.imagen;
         imagen.alt = tira.vinetas.join(' '); imagen.width = tira.ancho; imagen.height = tira.alto;
@@ -96,7 +108,7 @@ alCargarPagina((escuchar, alSalir) => {
         const fecha = entrega.querySelector<HTMLTimeElement>('time');
         if (fecha) { fecha.dateTime = tira.fecha; fecha.textContent = new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(`${tira.fecha}T12:00:00Z`)); }
       }
-      [...contenedor.querySelectorAll<HTMLElement>('[data-cosme-fecha]')].sort((a, b) => b.dataset.cosmeFecha!.localeCompare(a.dataset.cosmeFecha!)).forEach(e => contenedor.append(e));
+      [...contenedor.querySelectorAll<HTMLElement>('[data-cosme-fecha]')].sort((a, b) => Number(b.dataset.cosmePublicacion) - Number(a.dataset.cosmePublicacion)).forEach(e => contenedor.append(e));
       actualizar();
     } catch { /* conservo la tira disponible si falla la conexión */ }
   };
