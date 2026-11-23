@@ -65,6 +65,7 @@ const seccionesActualidad = [
 <body>
 <Cabecera/>
 <main>
+  <SaludoPortada />
   <section class="continuo-nebula" aria-label="Titulares de Actualidad por día" data-continuo>
     <div class="continuo-marca" aria-hidden="true"><strong>ACTUALIDAD</strong></div>
     <div class="continuo-ventana">
@@ -81,7 +82,6 @@ const seccionesActualidad = [
     </div>
     <button class="continuo-control" type="button" aria-label="Pausar titulares" aria-pressed="false" data-continuo-control><span aria-hidden="true">Ⅱ</span></button>
   </section>
-  <SaludoPortada />
   <section class="actualidad-portada contenedor" aria-labelledby="titulo-actualidad" data-actualidad-fecha={fechaHoy}>
     <header class="actualidad-cabecera cabecera-portada">
       <h1 id="titulo-actualidad">Actualidad</h1>
@@ -475,7 +475,7 @@ control && escuchar(control, 'click', () => {
 </style>
 
 <style>
-  .actualidad-portada { padding-top:0; }
+  .actualidad-portada { padding-top:clamp(2rem,4vw,3rem); }
   .actualidad-cabecera.cabecera-portada,
   .ultimos .cabecera-portada,
   .trama-portada .cabecera-portada {
