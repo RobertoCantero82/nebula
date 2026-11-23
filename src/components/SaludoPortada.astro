@@ -1,24 +1,69 @@
 ---
-const ahora = new Date();
+const frases = [
+  'Ahí fuera pasan cosas rarísimas. Hemos dejado unas cuantas por aquí.',
+  'No sabemos qué te ha traído hasta aquí, pero tenemos algunas pistas para que te quedes.',
+  'Puedes entrar con preguntas. Lo de salir con respuestas ya lo iremos viendo.',
+  'Pasa, nos había quedado una historia por contarte.',
+  'Hoy el mundo ha vuelto a ponerse extraño. Hemos tomado notas.',
+  'Ponte cómodo. Hay un detalle que merece una segunda mirada.',
+  'Has llegado a Nebula. La curiosidad no necesita reserva.',
+  'Si venías a echar un vistazo, cuidado. Algunas historias llevan a otras.',
+  'Aquí las preguntas tienen la costumbre de abrir puertas.',
+  'Bienvenido a Nebula. Hemos encontrado algo que quizá quieras ver.',
+  'Pasa. El mundo no viene con instrucciones, pero deja bastantes pistas.',
+  'Hay días en los que conviene mirar dos veces. Este podría ser uno.',
+  'No hace falta saber por dónde empezar. Basta con que algo te pique la curiosidad.',
+  'Todo parecía bastante normal hasta que empezamos a mirar los datos.',
+  'Bienvenido. La historia que buscas puede que todavía no sepas que la buscas.',
+  'Puedes dejar las certezas en la entrada. Luego comprobamos cuáles siguen en pie.',
+  'Tenemos algunas preguntas abiertas. Pasa, que hay sitio para una más.',
+  'Hay algo raro en esta historia. Por eso nos hemos quedado a mirarla.',
+  'Bienvenido a Nebula. Por aquí seguimos tirando del hilo.',
+  'A veces la pista estaba delante de nosotros. Solo faltaba prestarle atención.',
+  'El mundo sigue a lo suyo. Nosotros hemos parado a hacerle unas preguntas.',
+  'No prometemos explicarlo todo. Pero hay algo que hoy podemos entender mejor.',
+  'Pasa sin llamar. Las historias ya estaban esperando.',
+  'Esta parecía una pregunta pequeña. Luego abrimos el cuaderno.',
+  'Hay historias que empiezan con una cifra. Lo interesante viene después.',
+  'Bienvenido a Nebula. Si algo no encaja, vamos por buen camino para hacer una pregunta.',
+  'Hemos encendido la luz. Ahora toca ver qué había en ese rincón.',
+  'Pasa. Puede que encuentres una conexión donde no esperabas ninguna.',
+  'Lo curioso de mirar de cerca es que casi siempre aparece otra pregunta.',
+  'Bienvenido. Hemos apartado un poco de ruido para que se escuche la historia.',
+  'Todavía quedan cosas por descubrir. Algunas están un poco más abajo.',
+  'Puedes quedarte un rato. El siguiente hallazgo no tiene por qué estar muy lejos.',
+];
 const zona = 'Europe/Madrid';
+const ahora = new Date();
+const dia = new Intl.DateTimeFormat('sv-SE', { timeZone: zona, year: 'numeric', month: '2-digit', day: '2-digit' }).format(ahora);
+const indice = Math.floor(Date.parse(`${dia}T00:00:00Z`) / 86400000) % frases.length;
 const hora = Number(new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: 'numeric', hourCycle: 'h23' }).format(ahora));
 const saludo = hora >= 6 && hora < 14 ? 'Buenos días' : hora >= 14 && hora < 21 ? 'Buenas tardes' : 'Buenas noches';
 const fecha = new Intl.DateTimeFormat('es-ES', { timeZone: zona, weekday: 'long', day: 'numeric', month: 'long' }).format(ahora);
 const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(ahora);
 ---
 <div class="saludo-portada contenedor">
-  <p data-saludo-portada>{saludo}. Hoy es {fecha}, y son las {reloj}. Bienvenido a Nebula.</p>
+  <div class="bienvenida" data-bienvenida data-frases={JSON.stringify(frases)}>
+    <p class="bienvenida-frase" data-saludo-portada>{saludo}. {frases[indice]}</p>
+    <p class="bienvenida-fecha" data-bienvenida-fecha>Hoy es {fecha} y son las {reloj}.</p>
+  </div>
 </div>
 <style>
-  .saludo-portada { padding-top:clamp(1.5rem,3vw,2rem); padding-bottom:clamp(1.5rem,3vw,2.25rem); }
-  .saludo-portada p { color:#446ddf; font:600 clamp(.95rem,1.6vw,1.15rem)/1.65 var(--font-heading); margin:0; text-wrap:pretty; }
+  .saludo-portada { padding-top:clamp(1.25rem,3vw,1.75rem); padding-bottom:clamp(1.75rem,3vw,2.25rem); }
+  .bienvenida { background:#1b1836; border-top:3px solid #446ddf; padding:clamp(1.1rem,2.5vw,1.6rem) clamp(1rem,3vw,2rem); text-align:center; }
+  .bienvenida-frase { color:#f7f5f0; font:600 clamp(1.1rem,1.9vw,1.4rem)/1.45 var(--font-heading); margin:0 auto; max-width:65ch; text-wrap:pretty; }
+  .bienvenida-fecha { color:#b2c6ff; font:400 clamp(.85rem,1.2vw,.95rem)/1.5 var(--font-body); margin:.6rem 0 0; }
 </style>
 <script>
   import { alCargarPagina } from '../scripts/ciclo-pagina';
   alCargarPagina((escuchar, alSalir) => {
-    const elemento = document.querySelector<HTMLElement>('[data-saludo-portada]');
-    if (!elemento) return;
+    const modulo = document.querySelector<HTMLElement>('[data-bienvenida]');
+    if (!modulo) return;
+    const frase = modulo.querySelector<HTMLElement>('[data-saludo-portada]')!;
+    const fecha = modulo.querySelector<HTMLElement>('[data-bienvenida-fecha]')!;
+    const frases: string[] = JSON.parse(modulo.dataset.frases || '[]');
     const zona = 'Europe/Madrid';
+    const formatoDia = new Intl.DateTimeFormat('sv-SE', { timeZone: zona, year: 'numeric', month: '2-digit', day: '2-digit' });
     const formatoFecha = new Intl.DateTimeFormat('es-ES', { timeZone: zona, weekday: 'long', day: 'numeric', month: 'long' });
     const formatoReloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
     const formatoHora = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: 'numeric', hourCycle: 'h23' });
@@ -26,8 +71,11 @@ const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit'
       const ahora = new Date();
       const hora = Number(formatoHora.format(ahora));
       const saludo = hora >= 6 && hora < 14 ? 'Buenos días' : hora >= 14 && hora < 21 ? 'Buenas tardes' : 'Buenas noches';
-      const texto = `${saludo}. Hoy es ${formatoFecha.format(ahora)}, y son las ${formatoReloj.format(ahora)}. Bienvenido a Nebula.`;
-      if (elemento.textContent !== texto) elemento.textContent = texto;
+      const indice = Math.floor(Date.parse(`${formatoDia.format(ahora)}T00:00:00Z`) / 86400000) % frases.length;
+      const texto = `${saludo}. ${frases[indice]}`;
+      const momento = `Hoy es ${formatoFecha.format(ahora)} y son las ${formatoReloj.format(ahora)}.`;
+      if (frase.textContent !== texto) frase.textContent = texto;
+      if (fecha.textContent !== momento) fecha.textContent = momento;
     };
     actualizar();
     const intervalo = window.setInterval(actualizar, 1000);
