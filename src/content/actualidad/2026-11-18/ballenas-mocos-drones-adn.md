@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El soplo"
     titulo: "Esas gotas llevan algo más que agua."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/ballena-soplo-adn.jpg"
+    imagen: "/imagenes/actualidad/ballena-soplo-adn.jpg"
     altImagen: "Vista aérea de una ballena en el mar azul, rodeada por una nube de gotas de su soplo en la que se forma un pequeño arcoíris."
     pieImagen: "Las gotas expulsadas al respirar pueden contener ADN de la ballena y de los microorganismos de sus vías respiratorias."
     texto:

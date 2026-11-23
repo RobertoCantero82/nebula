@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/bolanegra_portada.png"
+imagenPortada: "/imagenes/bolanegra_portada.png"
 titulo: "¿Llegará 'La bola negra' a los Oscar? Mi modelo le da muchas opciones de entrar en la preselección"
 descripcion: "Un modelo entrenado con 1.264 candidaturas estima las opciones de La bola negra de alcanzar la preselección y la nominación al Oscar."
 tema: "CINE"
@@ -18,7 +18,7 @@ Pero representar a un país no equivale a estar nominada. Antes deberá entrar e
 
 Para intentar responderla he construido un modelo de machine learning con las películas presentadas al Oscar internacional durante las últimas quince ediciones. El resultado sitúa a *La bola negra* como una candidata fuerte: **un 74,7 % de probabilidades de alcanzar la preselección y un 62 % de obtener la nominación**.
 
-La idea se parece a la que utilicé al [contrastar tres mitos sobre *The Matrix*](/nebula/articulos/matrix-secuelas/): convertir una afirmación atractiva en una hipótesis que los datos puedan sostener, matizar o desmontar.
+La idea se parece a la que utilicé al [contrastar tres mitos sobre *The Matrix*](/articulos/matrix-secuelas/): convertir una afirmación atractiva en una hipótesis que los datos puedan sostener, matizar o desmontar.
 
 Son cifras llamativas, pero no certezas. Los intervalos de incertidumbre son amplios y el modelo depende mucho de una señal concreta: el premio de Cannes.
 
@@ -205,7 +205,7 @@ El modelo traduce ese impulso en un 74,7 % de opciones de alcanzar la preselecci
 
 ***La bola negra* es una candidata fuerte**. La estadística permite explicar por qué. Decidir si llegará hasta la ceremonia sigue estando en manos de los votantes.
 
-**Puedes revisar las probabilidades, los intervalos y el efecto de Cannes** en el [notebook de Jupyter del modelo de *La bola negra*](/nebula/analisis/modelo-bola-negra-oscar.ipynb).
+**Puedes revisar las probabilidades, los intervalos y el efecto de Cannes** en el [notebook de Jupyter del modelo de *La bola negra*](/analisis/modelo-bola-negra-oscar.ipynb).
 
 ---
 

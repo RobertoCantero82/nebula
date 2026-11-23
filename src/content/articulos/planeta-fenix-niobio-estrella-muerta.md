@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/planeta_fenix_portada.png"
+imagenPortada: "/imagenes/planeta_fenix_portada.png"
 titulo: "Una estrella murió. Sus restos pueden haber formado un planeta"
 descripcion: "Niobio, ausencia de hierro y una señal que se repite cada 4,4 días sostienen una explicación nunca observada alrededor de una enana blanca."
 tema: "CIENCIA"
@@ -110,6 +110,6 @@ La explicación de segunda generación conecta la química inusual, el material 
 
 Por eso el titular más preciso no es que una estrella muerta haya dado a luz un planeta. Los datos permiten afirmar algo más prudente: **HS 0209+0832 reúne una combinación excepcional de pistas compatible con el primer candidato a planeta de segunda generación alrededor de una enana blanca**.
 
-Puedes revisar las abundancias, reproducir los gráficos y seguir cada decisión en el [notebook de Jupyter del planeta Fénix](/nebula/analisis/planeta-fenix/notebooks/01_planeta_fenix_eda.ipynb). Los [datos procesados](/nebula/analisis/planeta-fenix/data/processed/abundancias_hs0209.csv) también están disponibles.
+Puedes revisar las abundancias, reproducir los gráficos y seguir cada decisión en el [notebook de Jupyter del planeta Fénix](/analisis/planeta-fenix/notebooks/01_planeta_fenix_eda.ipynb). Los [datos procesados](/analisis/planeta-fenix/data/processed/abundancias_hs0209.csv) también están disponibles.
 
 Fuentes: [estudio en *Nature Astronomy*](https://doi.org/10.1038/s41550-026-02983-7), [prepublicación en arXiv](https://arxiv.org/abs/2610.07161), [comunicado de ESA/Hubble](https://esahubble.org/news/heic2613/) y [artículo de partida en Xataka](https://www.xataka.com/espacio/estrella-muerta-ha-dado-a-luz-planeta-puede-que-sol-haga-futuro).

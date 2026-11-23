@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/matrix_portada.png"
+imagenPortada: "/imagenes/matrix_portada.png"
 titulo: "'The Matrix' a examen: tres mitos de la saga contrastados con datos"
 descripcion: "Presupuestos, efectos visuales, lenguaje y diálogos permiten comprobar tres creencias sobre The Matrix y sus secuelas."
 tema: "CINE"
@@ -12,7 +12,7 @@ metodologia: "Análisis basado en datasets de TMDB (presupuestos y créditos de 
 
 En 1999, **'The Matrix'** planteó una pregunta incómoda sobre la realidad y, de paso, **cambió la forma en que Hollywood hacía cine de ciencia ficción**. Más de 25 años después, tres creencias sobre la saga se han asentado en el imaginario colectivo: que revolucionó el género, que su filosofía caló en la cultura popular y que sus secuelas fueron peores. He contrastado las tres con datos reales. ¿Cuáles crees que habrán sido las conclusiones?
 
-Convertir una intuición cultural en variables medibles es también la base de [mi índice para encontrar la película más otoñal](/nebula/articulos/peliculas-mas-otonales/) y del [modelo sobre las opciones de *La bola negra* en los Oscar](/nebula/articulos/articulo_la_bola_negra_oscar/).
+Convertir una intuición cultural en variables medibles es también la base de [mi índice para encontrar la película más otoñal](/articulos/peliculas-mas-otonales/) y del [modelo sobre las opciones de *La bola negra* en los Oscar](/articulos/articulo_la_bola_negra_oscar/).
 
 ## 1. ¿Revolucionó el género de la ciencia ficción?
 
@@ -152,4 +152,4 @@ En la primera película, los monólogos más largos los pronuncian el antagonist
 
 Enfrentar a los mitos que circulaban sobre 'The Matrix' con los datos es un ejercicio sumamente estimulante. Podríamos decir que la saga sí cambió el género, no de la noche a la mañana, pero de forma medible en presupuestos y en equipos de efectos visuales. Su pregunta filosófica central sí trascendió la pantalla, aunque no por la vía académica que cabría esperar, sino a través de YouTube, en dos idiomas y con picos de interés que coinciden con la actualidad tecnológica más que con la propia saga. Y **sus secuelas no fueron peores, fueron simplemente menos capaces de mantener al espectador cerca de su protagonista**. Un cuarto de siglo después, la píldora roja sigue generando la misma pregunta incómoda con la que empezó todo: ¿Vivimos en una simulación?
 
-**Puedes revisar las tablas, los cálculos y las visualizaciones** en el [notebook de Jupyter del análisis de *Matrix*](/nebula/analisis/analisis-matrix.ipynb).
+**Puedes revisar las tablas, los cálculos y las visualizaciones** en el [notebook de Jupyter del análisis de *Matrix*](/analisis/analisis-matrix.ipynb).

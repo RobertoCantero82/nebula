@@ -44,14 +44,14 @@ const fechaCarpeta = pieza.id.split('/')[0];
       html[data-noticia-pendiente] [data-aviso-programada] { display: block; padding: 4rem 2rem; font: 1.2rem/1.6 Georgia, serif; }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
     <meta name="theme-color" content="#446ddf" />
     <Seo titulo={`${textoPlano(titulo)} | Nebula`} descripcion={textoPlano(descripcion)} />
   </head>
   <body class={`actualidad actualidad-${categoria} formato-${formato}`}>
     <aside data-aviso-programada data-desbloquear={fechaPublicacion(pieza.data).getTime()}>
       <p>Esta noticia todavía no está disponible. Aparecerá automáticamente al llegar su momento de publicación.</p>
-      <a href="/nebula/">Volver a Nebula</a>
+      <a href="/">Volver a Nebula</a>
     </aside>
     <RelojActualidad />
     <Cabecera activa="actualidad" />
@@ -263,7 +263,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
               </div>
             )}
           </div>
-          {indice < pantallas.length - 1 ? <a class="seguir" href={`#pantalla-${indice + 2}`}><span class="sr-only">Continuar</span><span aria-hidden="true">↓</span></a> : <a class="seguir final" href="/nebula/#titulo-actualidad">Volver a la edición de hoy <span aria-hidden="true">↗</span></a>}
+          {indice < pantallas.length - 1 ? <a class="seguir" href={`#pantalla-${indice + 2}`}><span class="sr-only">Continuar</span><span aria-hidden="true">↓</span></a> : <a class="seguir final" href="/#titulo-actualidad">Volver a la edición de hoy <span aria-hidden="true">↗</span></a>}
         </section>
       ))}
     </main>

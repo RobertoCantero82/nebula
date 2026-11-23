@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/conexiones_imposibles_01.png"
+imagenPortada: "/imagenes/conexiones_imposibles_01.png"
 titulo: "'Cazafantasmas 2' y 'Las aventuras de Winnie Pooh' están conectadas: ¿adivinas cómo?"
 descripcion: "32 millones de valoraciones, cinco rutas y un pequeño detalle frente a la cámara. Hagan sus apuestas."
 tema: "CINE"
@@ -72,7 +72,7 @@ La transcripción describe la acción, pero no el estampado. Wikidata sabe quié
 Los datos han servido para medir lo improbable de la pareja: cero géneros, cero etiquetas, 277 espectadores comunes y cinco rodeos por los créditos. Pero la conexión ganadora pertenecía a quien decidió mirar. Primera apuesta resuelta.
 
 <figure class="imagen-articulo">
-  <img src="/nebula/imagenes/henry-deutschendorf-cazafantasmas-2.webp" alt="El bebé Óscar con una prenda amarilla de Winnie the Pooh en Cazafantasmas 2" loading="lazy" />
+  <img src="/imagenes/henry-deutschendorf-cazafantasmas-2.webp" alt="El bebé Óscar con una prenda amarilla de Winnie the Pooh en Cazafantasmas 2" loading="lazy" />
   <figcaption>El detalle estaba delante de la cámara: el bebé Óscar lleva una prenda de Winnie the Pooh.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ Los datos han servido para medir lo improbable de la pareja: cero géneros, cero
 
 EDA con [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/), con valoraciones hasta el 12 de octubre de 2023, y datos estructurados CC0 de [Wikidata](https://www.wikidata.org/). Fichas de [Disney](https://movies.disney.com/the-many-adventures-of-winnie-the-pooh) y [Sony Pictures](https://www.sonypictures.com/movies/ghostbustersii). La prenda está documentada en la [ficha especializada de la secuencia](https://ghostbusters.fandom.com/wiki/Ghostbusters_II_%28Chapter_20%29%3A_Kidnapping_Oscar). MovieLens no representa a todo el público y Wikidata puede contener omisiones.
 
-[Notebook ejecutado](/nebula/analisis/conexiones_imposibles_01/conexiones_imposibles_01_eda.ipynb) | [Resumen de películas](/nebula/analisis/conexiones_imposibles_01/resumen_movielens.csv) | [Valoraciones compartidas](/nebula/analisis/conexiones_imposibles_01/valoraciones_compartidas.csv) | [Rutas de créditos](/nebula/analisis/conexiones_imposibles_01/rutas_wikidata.csv) | [Metodología](/nebula/analisis/conexiones_imposibles_01/README.md).
+[Notebook ejecutado](/analisis/conexiones_imposibles_01/conexiones_imposibles_01_eda.ipynb) | [Resumen de películas](/analisis/conexiones_imposibles_01/resumen_movielens.csv) | [Valoraciones compartidas](/analisis/conexiones_imposibles_01/valoraciones_compartidas.csv) | [Rutas de créditos](/analisis/conexiones_imposibles_01/rutas_wikidata.csv) | [Metodología](/analisis/conexiones_imposibles_01/README.md).
 
 <script>
   document.querySelectorAll(".conexion-apuesta").forEach((apuesta) => {

@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La reunión"
     titulo: "Los héroes de una despedida multitudinaria vuelven a ocupar la antesala del próximo estreno."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/vengadores-endgame-encore.jpg"
+    imagen: "/imagenes/actualidad/vengadores-endgame-encore.jpg"
     altImagen: "Montaje en blanco y negro de los personajes de Vengadores Endgame con las gemas del infinito iluminadas"
     pieImagen: "Los personajes reunidos en Vengadores: Endgame. Imagen facilitada para la pieza."
     texto:

@@ -3,7 +3,7 @@ titulo: 'Hemos llegado al suelo de Marte. ¿Por qué sus lunas siguen pendientes
 descripcion: 'La misión japonesa MMX viaja hacia Fobos. Repaso 49 campañas para entender qué hemos aprendido a conseguir y qué sigue sin estrenarse.'
 tema: 'CIENCIA'
 fecha: 2026-10-21
-imagenPortada: '/nebula/imagenes/mmx_fobos_portada.png'
+imagenPortada: '/imagenes/mmx_fobos_portada.png'
 cifraDestacada: '7 de 9'
 etiquetaCifra: 'campañas entre los años 2000–2020 lograron trabajar en el suelo de Marte'
 textoContinuo: "7 de 9 campañas lograron trabajar en el suelo de Marte entre 2000 y 2020, pero ninguna misión ha conseguido hacerlo en sus lunas"
@@ -252,7 +252,7 @@ La llegada al entorno marciano en 2027 y el regreso con muestras en 2031 siguen 
 
 He contrastado la [cronología de NASA/NSSDCA](https://nssdc.gsfc.nasa.gov/planetary/chronology_mars.html) con la [historia de misiones de JPL](https://www.jpl.nasa.gov/news/press_kits/insight/landing/appendix/history/), las [misiones Phobos](https://nssdc.gsfc.nasa.gov/planetary/phobos.html) y la documentación de las agencias enlazada en cada fila del inventario. La clasificación es propia: no mide todos los objetivos científicos ni atribuye una causa a la mejora histórica.
 
-Puedes consultar el [notebook ejecutado](/nebula/analisis/mmx_fobos/analisis_misiones_marte.ipynb), los [datos completos en CSV](/nebula/analisis/mmx_fobos/misiones_manual.csv), las [decisiones y limitaciones](/nebula/analisis/mmx_fobos/README.md) y el [registro de fuentes](/nebula/analisis/mmx_fobos/fuentes.json). Corte del análisis: 21 de octubre de 2026.
+Puedes consultar el [notebook ejecutado](/analisis/mmx_fobos/analisis_misiones_marte.ipynb), los [datos completos en CSV](/analisis/mmx_fobos/misiones_manual.csv), las [decisiones y limitaciones](/analisis/mmx_fobos/README.md) y el [registro de fuentes](/analisis/mmx_fobos/fuentes.json). Corte del análisis: 21 de octubre de 2026.
 
 
 <style>

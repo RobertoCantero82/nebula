@@ -14,7 +14,7 @@ const ejemplos = [
 <html lang="es">
 <head>
   <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5"/>
   <Seo titulo="Colabora con Nebula" descripcion="Pruebas de producto, historias con datos y colaboraciones editoriales independientes sobre tecnología, ciencia, cine y movilidad eléctrica."/>
 </head>
 <body>
@@ -41,7 +41,7 @@ const ejemplos = [
 
   <section class="principio contenedor"><p class="etiqueta">EL COMPROMISO</p><blockquote>“Independencia no significa confrontación.”</blockquote><p>Nebula analiza cada producto y cada historia con honestidad, respeto y voluntad de aportar. Si encontramos algo mejorable, buscamos entenderlo, contextualizarlo y explicarlo de forma útil.</p></section>
 
-  <section class="ejemplos contenedor" aria-labelledby="ejemplos-titulo"><header><div><p class="etiqueta">EL TONO, EN LA PRÁCTICA</p><h2 id="ejemplos-titulo">Historias que ya cuentan cómo trabaja Nebula</h2></div><p>Estos artículos son ejemplos editoriales y no fueron colaboraciones patrocinadas.</p></header><div class="ejemplos-grid">{ejemplos.map(e => <a href={`/nebula/articulos/${e.ruta}/`}><img src={`/nebula/imagenes/${e.imagen}`} alt="" loading="lazy"/><span>{e.tema}</span><h3>{e.titulo}</h3><small>Leer el artículo →</small></a>)}</div></section>
+  <section class="ejemplos contenedor" aria-labelledby="ejemplos-titulo"><header><div><p class="etiqueta">EL TONO, EN LA PRÁCTICA</p><h2 id="ejemplos-titulo">Historias que ya cuentan cómo trabaja Nebula</h2></div><p>Estos artículos son ejemplos editoriales y no fueron colaboraciones patrocinadas.</p></header><div class="ejemplos-grid">{ejemplos.map(e => <a href={`/articulos/${e.ruta}/`}><img src={`/imagenes/${e.imagen}`} alt="" loading="lazy"/><span>{e.tema}</span><h3>{e.titulo}</h3><small>Leer el artículo →</small></a>)}</div></section>
 
   <section class="oportunidades"><div class="contenedor"><p class="etiqueta">AHORA MISMO</p><h2>Buscamos colaboraciones que empiecen por probar y aprender</h2><div class="oportunidades-grid"><article><h3>Productos y vehículos</h3><p>Cesiones para pruebas, especialmente en tecnología y movilidad eléctrica.</p></article><article><h3>Servicios y aplicaciones</h3><p>Acceso suficiente para utilizarlos de verdad y analizar su propuesta.</p></article><article><h3>Afiliación</h3><p>Solo sobre productos o servicios analizados y con aviso transparente.</p></article><article><h3>Sorteos</h3><p>Como complemento opcional de una prueba. La empresa aporta una unidad adicional y la envía directamente a la persona ganadora.</p></article></div><p class="futuro">También estudiamos historias con datos y series patrocinadas cuando existe un encaje editorial claro.</p></div></section>
 
@@ -57,13 +57,13 @@ const ejemplos = [
     <label>Producto, servicio o proyecto<input name="proyecto" required/></label>
     <label>Tipo de colaboración<select name="tipo" required><option value="">Selecciona una opción</option><option>Cesión de producto</option><option>Prueba de servicio</option><option>Historia con datos</option><option>Patrocinio de una serie</option><option>Afiliación</option><option>Otra propuesta</option></select></label>
     <label class="ancho">Mensaje<textarea name="mensaje" rows="6" required></textarea></label>
-    <label class="privacidad ancho"><input name="privacidad" type="checkbox" required/> <span>He leído la <a href="/nebula/privacidad/">política de privacidad</a> y acepto que mis datos se utilicen para responder a esta propuesta.</span></label>
+    <label class="privacidad ancho"><input name="privacidad" type="checkbox" required/> <span>He leído la <a href="/privacidad/">política de privacidad</a> y acepto que mis datos se utilicen para responder a esta propuesta.</span></label>
     <button class="ancho" type="submit">Preparar correo <span aria-hidden="true">→</span></button><p class="nota ancho">Al pulsar se abrirá tu aplicación de correo con la propuesta preparada. Podrás revisarla antes de enviarla.</p>
   </form></div></section>
 
   <section class="faq contenedor"><header><p class="etiqueta">PREGUNTAS FRECUENTES</p><h2>Cuatro respuestas rápidas</h2></header><details><summary>¿Nebula acepta cualquier producto?</summary><p>No. Debe encajar con tecnología, ciencia, cine, movilidad eléctrica o con una historia que pueda abordarse mediante datos.</p></details><details><summary>¿La empresa puede revisar el artículo?</summary><p>Puede ayudar a comprobar un dato técnico puntual cuando sea necesario, pero no intervenir en las conclusiones ni aprobar la publicación.</p></details><details><summary>¿Cuánto dura una prueba?</summary><p>Se acuerda en cada caso. Un producto sencillo puede necesitar horas; un vehículo, una aplicación o un servicio pueden requerir varios días.</p></details><details><summary>¿Qué ocurre con el producto después?</summary><p>La devolución o conservación se acuerda antes de la cesión. Si debe volver, se concretan el plazo y la logística por escrito.</p></details></section>
 </main>
-<footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/nebula/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
+<footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/privacidad/">Privacidad</a></p></footer><CloudflareAnalytics/>
 <script>
 import { alCargarPagina } from '../scripts/ciclo-pagina';
 alCargarPagina((escuchar, alSalir) => {

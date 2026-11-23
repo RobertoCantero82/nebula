@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El paisaje"
     titulo: "Tres composiciones sobreviven en una cueva donde hasta una pisada obliga a trabajar desde lejos."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/chauvet-paneles.webp"
+    imagen: "/imagenes/actualidad/chauvet-paneles.webp"
     altImagen: "Vista panorámica del Panel de los Caballos, la Alcoba de los Leones y el Panel de los Renos en la cueva de Chauvet"
     pieImagen: "De izquierda a derecha, el Panel de los Caballos, la Alcoba de los Leones y el Panel de los Renos. Imagen: Carole Fritz, CNRS."
     texto:

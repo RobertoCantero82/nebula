@@ -20,7 +20,7 @@ pantallas:
   - etiqueta: "02 | El músculo"
     titulo: "Una pista para entender por qué el músculo aguanta más."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/l_baiba_musculos_fatiga.jpg"
+    imagen: "/imagenes/actualidad/l_baiba_musculos_fatiga.jpg"
     altImagen: "Imagen microscópica de una sección de músculo, con fibras delimitadas en verde y zonas teñidas de azul y magenta."
     pieImagen: "Sección muscular empleada para ilustrar los cambios en las fibras. Crédito: profesor Lee Roberts / Universidad de Leeds. Los colores corresponden a la tinción de laboratorio."
     texto:

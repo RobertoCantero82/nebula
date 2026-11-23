@@ -60,7 +60,7 @@ const proyectos = [
     imagen: 'rebobina.png', ancho: 1885, alto: 928,
     alt: 'Catálogo de Rebobina con filtros por título, año, mes y género y películas como Pulp Fiction, Matrix y Seven.',
     pie: 'Una captura del catálogo real. El proyecto todavía no tiene acceso público.',
-    enlace: '/nebula/imagenes/laboratorio/rebobina.png', accion: 'Ampliar demostración',
+    enlace: '/imagenes/laboratorio/rebobina.png', accion: 'Ampliar demostración',
     detalle: 'Qué incluye el catálogo',
     puntos: ['Filtros para explorar películas de 1980 a 1999.', 'Una estantería personal para organizar las películas pendientes y vistas.'],
     limite: 'La selección utiliza los votos actuales de IMDb como orientación de popularidad. No es un registro de lo más visto en aquellas décadas ni reproduce películas.',
@@ -90,7 +90,7 @@ const otros = [
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
     <meta name="theme-color" content="#1B1836" />
     <Seo titulo="Laboratorio | Nebula" descripcion="Explora mis proyectos de cine, NBA, Marvel Snap y música: Indy, Agente MVP, Radar Marvel Snap, Nebula LoFi, Rebobina y VHS Club, en desarrollo." />
   </head>
@@ -133,8 +133,8 @@ const otros = [
                     </button>
                   </div>
                 ) : (
-                  <a class="ampliar" href={`/nebula/imagenes/laboratorio/${proyecto.imagen}`} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar ${proyecto.id === 'vhs-club' ? 'concepto visual de' : 'captura de'} ${proyecto.nombre} (se abre en otra pestaña)`}>
-                    <img src={`/nebula/imagenes/laboratorio/${proyecto.imagen}`} alt={proyecto.alt} width={proyecto.ancho} height={proyecto.alto} loading="lazy" />
+                  <a class="ampliar" href={`/imagenes/laboratorio/${proyecto.imagen}`} target="_blank" rel="noopener noreferrer" aria-label={`Ampliar ${proyecto.id === 'vhs-club' ? 'concepto visual de' : 'captura de'} ${proyecto.nombre} (se abre en otra pestaña)`}>
+                    <img src={`/imagenes/laboratorio/${proyecto.imagen}`} alt={proyecto.alt} width={proyecto.ancho} height={proyecto.alto} loading="lazy" />
                     <span class="ampliar-etiqueta" aria-hidden="true">{proyecto.id === 'vhs-club' ? 'VER EL CONCEPTO' : 'AMPLIAR CAPTURA'} ↗</span>
                   </a>
                 )}
@@ -167,7 +167,7 @@ const otros = [
           {otros.map(proyecto => (
             <article class="otro-proyecto">
               <p class="indice">{proyecto.tema}</p>
-              <img src={`/nebula/imagenes/laboratorio/${proyecto.imagen}`} alt={proyecto.alt} loading="lazy" width="640" height="400" />
+              <img src={`/imagenes/laboratorio/${proyecto.imagen}`} alt={proyecto.alt} loading="lazy" width="640" height="400" />
               <h3>{proyecto.nombre}</h3>
               <p>{proyecto.descripcion}</p>
               {proyecto.enlace ? <a class="accion" href={proyecto.enlace} target="_blank" rel="noopener noreferrer">{proyecto.accion} ↗<span class="solo-lectores"> (se abre en otra pestaña)</span></a> : <p class="indice">Uso personal · Sin acceso público</p>}
@@ -204,7 +204,7 @@ const otros = [
           <details>
             <summary>Descubrir el cuadro <span aria-hidden="true">↓</span></summary>
             <figure>
-              <img src="/nebula/imagenes/laboratorio/velero-nba.png" width="1536" height="1024" loading="lazy" alt="Un velero con una pista de baloncesto en la cubierta navega por un pabellón imaginario inundado, con pinceladas azules y luces anaranjadas." />
+              <img src="/imagenes/laboratorio/velero-nba.png" width="1536" height="1024" loading="lazy" alt="Un velero con una pista de baloncesto en la cubierta navega por un pabellón imaginario inundado, con pinceladas azules y luces anaranjadas." />
               <figcaption>Yo vi un velero. Con ayuda de la IA, lo convertí en este cuadro. La escena es imaginaria.</figcaption>
             </figure>
           </details>
@@ -214,10 +214,10 @@ const otros = [
 
       <aside class="autor" aria-labelledby="titulo-autor">
         <div><p class="indice">DETRÁS DEL LABORATORIO</p><h2 id="titulo-autor">Periodismo, datos y ganas de construir.</h2><p>Soy Roberto Cantero. Estas herramientas nacen de mis aficiones y de preguntas del día a día. Cada una es una forma de convertir lo que aprendo en algo que puedo utilizar y compartir.</p></div>
-        <a class="accion" href="/nebula/trabaja-conmigo/">Más sobre mi trabajo <span aria-hidden="true">→</span></a>
+        <a class="accion" href="/trabaja-conmigo/">Más sobre mi trabajo <span aria-hidden="true">→</span></a>
       </aside>
     </main>
-    <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/nebula/privacidad/">Privacidad</a></p></footer>
+    <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p>Periodismo y ciencia de datos | <a href="/privacidad/">Privacidad</a></p></footer>
     <CloudflareAnalytics />
     <script>
       // cargo el reproductor únicamente después de una acción explícita

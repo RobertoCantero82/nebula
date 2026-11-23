@@ -3,7 +3,7 @@ titulo: "Baskonia ya ha vuelto de sitios peores: 26 temporadas de datos contra e
 descripcion: "176 precedentes de la era moderna permiten medir la grandeza europea del Baskonia y cuánto significa realmente un mal comienzo."
 tema: "BALONCESTO"
 fecha: 2026-10-06T09:00:00+02:00
-imagenPortada: "/nebula/imagenes/baskonia_historia_portada.png"
+imagenPortada: "/imagenes/baskonia_historia_portada.png"
 cifraDestacada: "368"
 etiquetaCifra: "victorias del Baskonia en las 26 temporadas de la Euroliga moderna"
 textoContinuo: "Baskonia ya ha vuelto de sitios peores: 26 temporadas de datos contra el pesimismo"
@@ -208,7 +208,7 @@ Pero la historia sí establece qué puede exigir un club de sí mismo.
 
 Baskonia pertenece a la Euroliga porque ha competido durante 26 temporadas, ha ganado 368 partidos, ha alcanzado seis veces la última gran frontera del torneo y ha sobrevivido a todas las transformaciones económicas y deportivas del baloncesto europeo.
 
-Ha cambiado de nombre, de entrenador, de plantilla y de ciclo. Lo que no ha cambiado es su capacidad para reconstruirse cuando parecía haber quedado atrás. [El análisis anterior sobre sus plantillas](/nebula/articulos/baskonia-reconstruccion/) mostró hasta qué punto esa reconstrucción es constante: el club pierde de media más de la mitad de la anotación del curso anterior cada verano y, aun así, ha seguido encontrando formas de competir.
+Ha cambiado de nombre, de entrenador, de plantilla y de ciclo. Lo que no ha cambiado es su capacidad para reconstruirse cuando parecía haber quedado atrás. [El análisis anterior sobre sus plantillas](/articulos/baskonia-reconstruccion/) mostró hasta qué punto esa reconstrucción es constante: el club pierde de media más de la mitad de la anotación del curso anterior cada verano y, aun así, ha seguido encontrando formas de competir.
 
 Por eso todavía es pronto para dejar de creer.
 
@@ -222,6 +222,6 @@ Una mala noche puede explicar el enfado.
 
 **No puede explicar al Baskonia.**
 
-Puedes reproducir la clasificación histórica, modificar el corte de jornadas y revisar todos los precedentes en el [notebook de Jupyter del análisis histórico del Baskonia](/nebula/analisis/baskonia-historia-euroliga.ipynb).
+Puedes reproducir la clasificación histórica, modificar el corte de jornadas y revisar todos los precedentes en el [notebook de Jupyter del análisis histórico del Baskonia](/analisis/baskonia-historia-euroliga.ipynb).
 
 Fuentes: resultados de la [API de EuroLeague Basketball](https://api-live.euroleague.net/), [perfil histórico de Baskonia en la Euroliga](https://admin.euroleague.net/competition/teams/showteam?clubcode=bas&lang=en&p=3&seasoncode=E2001&tabid=88) y registros del [EuroLeague Media Centre](https://mediacentre.euroleague.net/mediacentre/en/press_releases/5).

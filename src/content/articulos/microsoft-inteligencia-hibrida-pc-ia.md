@@ -3,7 +3,7 @@ titulo: "Microsoft quiere ejecutar la IA en tu ordenador. El problema es el orde
 descripcion: "Los AI PC se multiplican, pero muchos no alcanzan el nivel exigido por Copilot+. Analizamos las cifras detrás de la nueva estrategia de Windows."
 tema: "INTELIGENCIA ARTIFICIAL"
 fecha: 2026-10-08T09:00:00+02:00
-imagenPortada: "/nebula/imagenes/microsoft_inteligencia_hibrida_portada.png"
+imagenPortada: "/imagenes/microsoft_inteligencia_hibrida_portada.png"
 cifraDestacada: "91%"
 etiquetaCifra: "de los AI PC analizados en Europa no alcanzaba la categoría Copilot+"
 textoContinuo: "Microsoft quiere ejecutar la IA en tu ordenador, pero el 91 % de los equipos analizados en Europa no alcanzaba el nivel que exige la propia compañía"
@@ -84,6 +84,6 @@ Pero el comprador debe mirar algo más que la pegatina. La NPU, la memoria y el 
 
 La conclusión del EDA es sencilla: **el nombre “AI PC” se normalizará antes que una capacidad común para todos esos equipos**. Microsoft está enseñando hacia dónde quiere llevar Windows. El mercado todavía reúne bajo la misma etiqueta máquinas muy distintas.
 
-Puedes revisar las cifras, las fuentes y todos los pasos en el [notebook de Jupyter del análisis](/nebula/analisis/microsoft-inteligencia-hibrida/eda_inteligencia_hibrida.ipynb). También está disponible el [paquete reproducible con el cuaderno y los datos](/nebula/analisis/microsoft-inteligencia-hibrida/microsoft-inteligencia-hibrida-eda.zip).
+Puedes revisar las cifras, las fuentes y todos los pasos en el [notebook de Jupyter del análisis](/analisis/microsoft-inteligencia-hibrida/eda_inteligencia_hibrida.ipynb). También está disponible el [paquete reproducible con el cuaderno y los datos](/analisis/microsoft-inteligencia-hibrida/microsoft-inteligencia-hibrida-eda.zip).
 
 Fuentes principales: [Microsoft](https://news.microsoft.com/source/latam/noticias-de-microsoft/windows-inteligencia-hibrida/), [Omdia](https://omdia.tech.informa.com/pr/2026/sep/us-pc-shipments-grew-1point0percent-in-2q26-while-full-year-market-forecast-to-decline-10point7-percent), [Ars Technica](https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/) y [TechRadar, con datos de CONTEXT](https://www.techradar.com/pro/ai-pcs-are-here-but-businesses-arent-exactly-rushing-to-buy-them-just-yet).

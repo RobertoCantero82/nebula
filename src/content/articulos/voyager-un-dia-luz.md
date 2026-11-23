@@ -3,7 +3,7 @@ titulo: 'Voyager 1 está a casi un día luz. ¿Por qué a veces tarda menos en c
 descripcion: 'La sonda se aleja del Sol, pero durante parte de 2026 se acercó a la Tierra. Los datos de NASA explican esa aparente contradicción.'
 tema: 'CIENCIA'
 fecha: 2026-10-22
-imagenPortada: '/nebula/imagenes/voyager_tiempo_portada.png'
+imagenPortada: '/imagenes/voyager_tiempo_portada.png'
 cifraDestacada: '47 h 52 min'
 etiquetaCifra: 'ida y vuelta aproximada de la señal de Voyager 1'
 textoContinuo: "Voyager 1 está a casi un día luz: la señal tarda 47 horas y 52 minutos en ir y volver, pero en 2026 llegó a tardar menos aunque la sonda seguía alejándose del Sol"
@@ -201,7 +201,7 @@ La próxima vez que una respuesta tarde unos segundos, Voyager ofrece una compar
 
 - [NASA: el próximo día luz de Voyager 1](https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/).
 - [JPL Horizons: posiciones y distancias](https://ssd.jpl.nasa.gov/horizons/) y [definiciones de las tablas](https://ssd.jpl.nasa.gov/horizons/manual.html).
-- [Notebook ejecutado](/nebula/analisis/voyager_tiempo/analisis_voyager.ipynb), [datos de comparación](/nebula/analisis/voyager_tiempo/comparacion.csv), [serie diaria](/nebula/analisis/voyager_tiempo/diario_2026.csv) y [guía de reproducción](/nebula/analisis/voyager_tiempo/README.md).
+- [Notebook ejecutado](/analisis/voyager_tiempo/analisis_voyager.ipynb), [datos de comparación](/analisis/voyager_tiempo/comparacion.csv), [serie diaria](/analisis/voyager_tiempo/diario_2026.csv) y [guía de reproducción](/analisis/voyager_tiempo/README.md).
 
 <style>
 .voy-bloque{border:1px solid #becbec;border-radius:14px;padding:1.2rem;margin:1.8rem 0;background:#f5f7fd;min-width:0}.voy-bloque legend{font-weight:700;padding:0 .5rem}.voy-bloque select,.voy-bloque button{font:inherit;padding:.65rem .8rem;border:1px solid #446ddf;border-radius:8px;background:white;color:#23439b}.voy-bloque button[aria-pressed="true"]{background:#446ddf;color:white}.voy-opciones{display:flex;gap:.65rem;flex-wrap:wrap}.voy-bloque :focus-visible{outline:3px solid #a76d3c;outline-offset:3px}.voy-nota{font-size:.85em;color:#535d70}.voy-tabla{overflow-x:auto}.voy-tabla table{width:100%;border-collapse:collapse;font-size:.9em}.voy-tabla td,.voy-tabla th{padding:.6rem;text-align:left;border-bottom:1px solid #d5def1}.voy-figura{margin:2rem 0}.voy-figura svg{width:100%;height:auto;display:block}.voy-figura text{font-size:15px;fill:#536075;font-family:system-ui,sans-serif}.voy-figura figcaption{font-size:.95em;line-height:1.5}.voy-leyenda{font-size:.85em;display:flex;flex-wrap:wrap;gap:.3rem 1rem}.voy-leyenda span:first-child{color:#446ddf}.voy-leyenda span:last-child{color:#946039}

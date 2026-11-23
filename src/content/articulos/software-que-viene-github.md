@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/github_portada.png"
+imagenPortada: "/imagenes/github_portada.png"
 titulo: "El software que viene ya se está construyendo en GitHub"
 descripcion: "Trece repositorios muestran el avance de los productos autoalojables, los agentes de IA y las alternativas abiertas al software de suscripción."
 tema: "TECNOLOGÍA"
@@ -115,4 +115,4 @@ Ninguna estrella garantiza que un proyecto vaya a convertirse en empresa, están
 
 La señal más clara de esta selección no es que todo vaya a ser gratuito o autoalojado. Es que el código abierto ya no se conforma con proporcionar piezas: **quiere diseñar la experiencia completa**. Y, en el terreno de la IA, empieza a preocuparse menos por generar algo y más por conseguir que ese resultado sirva para trabajar.
 
-**Puedes consultar los datos, reproducir los gráficos y revisar la clasificación editorial** en el [notebook de Jupyter del análisis](/nebula/analisis/senales-desde-github.ipynb).
+**Puedes consultar los datos, reproducir los gráficos y revisar la clasificación editorial** en el [notebook de Jupyter del análisis](/analisis/senales-desde-github.ipynb).

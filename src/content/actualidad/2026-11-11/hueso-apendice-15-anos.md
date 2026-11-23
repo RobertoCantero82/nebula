@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La imagen"
     titulo: "La respuesta apareció en cuatro imágenes del abdomen."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/hueso-apendice-pruebas-clinicas.png"
+    imagen: "/imagenes/actualidad/hueso-apendice-pruebas-clinicas.png"
     altImagen: "Radiografía, tomografía, vista laparoscópica del apéndice dilatado y hueso rodeado por un fecaloma calcificado"
     pieImagen: "Dolor abdominal. A: la radiografía del abdomen inferior muestra una formación redondeada y radiopaca en la fosa ilíaca derecha. B: la tomografía muestra un defecto de llenado redondeado en la misma zona. C: vista laparoscópica del apéndice dilatado por la presencia de un cuerpo extraño. D: el hueso de tuétano dentro de un fecaloma calcificado."
     texto:

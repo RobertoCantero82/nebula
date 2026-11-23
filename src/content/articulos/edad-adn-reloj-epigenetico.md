@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/edad_adn_portada_v3.png"
+imagenPortada: "/imagenes/edad_adn_portada_v3.png"
 titulo: "¿Puede el ADN decir cuántos años tienes? Entrené un modelo para comprobarlo"
 descripcion: "Lo puse a prueba con muestras de sangre de 127 personas que no había utilizado para entrenarlo. Sus errores cuentan algo que la precisión media esconde."
 tema: "CIENCIA"
@@ -360,8 +360,8 @@ Para acompañar cada edad calculada, añadí un margen de unos 9,6 años por enc
 
 La búsqueda del rejuvenecimiento que protagoniza National Geographic en su número de noviembre exige distinguir dos cosas: que un modelo calcule una edad menor y que el cuerpo haya rejuvenecido. Mi prueba solo permite hablar de la primera. A los mayores de 80 años les asignó siete años menos de media, sin haber ensayado ningún tratamiento. Una edad predicha más joven, por sí sola, no demuestra rejuvenecimiento.
 
-Comprobar qué significa realmente una cifra también cambió otras historias de Nebula: la de [una ameba que soporta temperaturas extremas, pero no conserva todas sus capacidades](/nebula/articulos/ameba-fuego-limites-calor/), y la de [un fósil que cuenta una historia mucho más antigua que la Esfinge](/nebula/articulos/cocodrilo-esfinge-maquina-tiempo/). En ciencia, **el dato que llama la atención es el principio de la historia**. Después hay que averiguar qué permite concluir.
+Comprobar qué significa realmente una cifra también cambió otras historias de Nebula: la de [una ameba que soporta temperaturas extremas, pero no conserva todas sus capacidades](/articulos/ameba-fuego-limites-calor/), y la de [un fósil que cuenta una historia mucho más antigua que la Esfinge](/articulos/cocodrilo-esfinge-maquina-tiempo/). En ciencia, **el dato que llama la atención es el principio de la historia**. Después hay que averiguar qué permite concluir.
 
-Puedes revisar el [notebook ejecutado](/nebula/analisis/edad-adn/edad_adn.ipynb), las [predicciones de prueba](/nebula/analisis/edad-adn/resultados/predicciones_prueba.csv) y la [guía con los datos y el código](/nebula/analisis/edad-adn/README.md). La fuente original es el [repositorio público GSE40279](/nebula/analisis/edad-adn/data/fuentes.json), disponible en [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE40279).
+Puedes revisar el [notebook ejecutado](/analisis/edad-adn/edad_adn.ipynb), las [predicciones de prueba](/analisis/edad-adn/resultados/predicciones_prueba.csv) y la [guía con los datos y el código](/analisis/edad-adn/README.md). La fuente original es el [repositorio público GSE40279](/analisis/edad-adn/data/fuentes.json), disponible en [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE40279).
 
-También puedes descargar el [paquete reproducible completo (56 MB)](/nebula/analisis/edad-adn/edad-adn-reproducible.zip).
+También puedes descargar el [paquete reproducible completo (56 MB)](/analisis/edad-adn/edad-adn-reproducible.zip).

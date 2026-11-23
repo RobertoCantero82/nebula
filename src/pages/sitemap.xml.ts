@@ -12,8 +12,8 @@ const escaparXml = (valor: string) =>
   })[caracter] ?? caracter);
 
 export const GET: APIRoute = async ({ site }) => {
-  const origen = site ?? new URL('https://robertocantero82.github.io');
-  const base = new URL('/nebula/', origen);
+  const origen = site ?? new URL('https://diarionebula.es');
+  const base = new URL('/', origen);
   const ahora = new Date();
   const articulos = (await getCollection('articulos')).filter(
     (articulo) => articulo.data.fecha <= ahora

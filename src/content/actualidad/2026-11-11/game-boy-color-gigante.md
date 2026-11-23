@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La imagen"
     titulo: "Dos consolas ocupan ahora el espacio que antes cabía en una mochila."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/game-boy-color-gigantes.png"
+    imagen: "/imagenes/actualidad/game-boy-color-gigantes.png"
     altImagen: "Dos personas prueban dos réplicas gigantes y funcionales de Game Boy Color, una verde y otra amarilla"
     pieImagen: "Las dos réplicas gigantes y funcionales construidas por Paige Powell y Nick Alvarez."
     texto:

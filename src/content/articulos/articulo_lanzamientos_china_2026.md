@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/lanzamientoschina_portada.png"
+imagenPortada: "/imagenes/lanzamientoschina_portada.png"
 titulo: "China lanza cuatro cohetes en 45 horas: analizo los datos para saber si el país va camino de un récord"
 descripcion: "El análisis de 802 lanzamientos orbitales estima si la aceleración espacial de China puede terminar 2026 con un nuevo récord."
 tema: "TECNOLOGÍA"
@@ -18,7 +18,7 @@ La secuencia, recogida por [Space.com](https://www.space.com/space-exploration/l
 
 Para comprobarlo he analizado los registros históricos de [Launch Library 2](https://thespacedevs.com/llapi), una base de datos abierta especializada en misiones espaciales. El resultado confirma que **China** no solo lanza más cohetes: también **ha reducido drásticamente el tiempo que transcurre entre ellos**.
 
-Es una pregunta distinta, pero parte del mismo enfoque que [la comparación del iPhone Duo con móviles y tabletas](/nebula/articulos/iphone-duo-ipad-mini/): traducir una impresión tecnológica en medidas que puedan contrastarse.
+Es una pregunta distinta, pero parte del mismo enfoque que [la comparación del iPhone Duo con móviles y tabletas](/articulos/iphone-duo-ipad-mini/): traducir una impresión tecnológica en medidas que puedan contrastarse.
 
 ## Cuatro misiones completamente diferentes
 
@@ -278,7 +278,7 @@ Si mantiene el ritmo, **el país podría terminar 2026** alrededor de los **110 
 
 La **carrera espacial china** ya no se explica únicamente por grandes misiones aisladas. También **se mide en frecuencia, capacidad industrial y en una infraestructura capaz de volver a lanzar apenas unas horas después**.
 
-**El resumen de datos, los cálculos y los gráficos están disponibles** en el [notebook de Jupyter del análisis](/nebula/analisis/analisis-lanzamientos-china.ipynb). También puedes consultar el [cuaderno con la predicción para 2026](/nebula/analisis/prediccion-lanzamientos-china-2026.ipynb).
+**El resumen de datos, los cálculos y los gráficos están disponibles** en el [notebook de Jupyter del análisis](/analisis/analisis-lanzamientos-china.ipynb). También puedes consultar el [cuaderno con la predicción para 2026](/analisis/prediccion-lanzamientos-china-2026.ipynb).
 
 ---
 

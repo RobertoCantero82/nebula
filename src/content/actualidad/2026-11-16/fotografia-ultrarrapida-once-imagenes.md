@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El problema"
     titulo: "Disparar siempre al mismo ritmo obliga a elegir qué parte de la historia quieres ver."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/Concept%20of%20logarithmic%20ultrafast%20photography%20across%20multiple%20timescales.jpg"
+    imagen: "/imagenes/actualidad/Concept%20of%20logarithmic%20ultrafast%20photography%20across%20multiple%20timescales.jpg"
     altImagen: "Ilustración de una secuencia de imágenes alrededor de un destello, con intervalos muy cortos al principio y progresivamente más largos después"
     pieImagen: "Ilustración conceptual del método, no una fotografía del experimento. Crédito: Keitaro Shimada y colaboradores / Universidad de Tokio."
     texto:

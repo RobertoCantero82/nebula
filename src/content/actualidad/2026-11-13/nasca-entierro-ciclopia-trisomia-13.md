@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | Los huesos"
     titulo: "Una única cavidad ocupaba el centro del rostro y faltaban estructuras que deberían haberse formado."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/nasca-ja13a-craneo.jpg"
+    imagen: "/imagenes/actualidad/nasca-ja13a-craneo.jpg"
     altImagen: "Distintas vistas del cráneo, la mandíbula, las vértebras y los omóplatos del individuo JA13A"
     pieImagen: "Restos óseos del individuo JA13A. Imagen: Proceedings of the National Academy of Sciences, 2026; DOI 10.1073/pnas.2625042123."
     texto:

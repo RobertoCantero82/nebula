@@ -20,7 +20,7 @@ pantallas:
   - etiqueta: "02 | El sospechoso"
     titulo: "Incluso al acercarse al Sol, seguiría lejísimos."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/planeta_x2_neptuno.png"
+    imagen: "/imagenes/actualidad/planeta_x2_neptuno.png"
     altImagen: "Ilustración en acuarela de un planeta helado azul grisáceo, casi en sombra, con un fino creciente iluminado y pequeños fragmentos de hielo alrededor."
     pieImagen: "Ilustración conceptual generada con IA para Nebula. Se desconoce el aspecto del hipotético planeta X2; no es una observación ni una representación a escala."
     texto:

@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/starship_portada.png"
+imagenPortada: "/imagenes/starship_portada.png"
 titulo: "De explotar en el aire a desplegar 26 satélites: los datos que explican la evolución de Starship"
 descripcion: "Los datos de sus 14 vuelos revelan el accidentado camino de SpaceX hasta la órbita."
 tema: "TECNOLOGÍA"
@@ -21,7 +21,7 @@ El 28 de septiembre de 2026, 1.257 días después, el [vuelo 14 alcanzó la órb
 
 Entre ambos vuelos hubo explosiones, amerizajes, capturas del booster y cambios de arquitectura. Para entender esa evolución **he analizado diez capacidades**: separación de etapas, llegada al espacio, ascenso completo, retorno y captura del booster, reentrada, amerizaje de la nave, despliegue de carga, reencendido espacial e inserción orbital.
 
-Es el mismo enfoque utilizado para estudiar [la aceleración de los lanzamientos chinos](/nebula/articulos/articulo_lanzamientos_china_2026/): sustituir una impresión tecnológica por medidas que puedan compararse.
+Es el mismo enfoque utilizado para estudiar [la aceleración de los lanzamientos chinos](/articulos/articulo_lanzamientos_china_2026/): sustituir una impresión tecnológica por medidas que puedan compararse.
 
 ## El progreso no suele ir en línea recta
 
@@ -117,4 +117,4 @@ Solo siete de los catorce vuelos ampliaron la frontera técnica estudiada. Los d
 
 La llegada a órbita no elimina los problemas pendientes ni convierte a Starship en un sistema completamente reutilizable. Sí muestra algo más concreto: **el vehículo orbital surgió de acumular avances que rara vez aparecieron juntos** y que, en varias ocasiones, parecieron desaparecer antes de regresar.
 
-Puedes revisar los datos, reproducir los gráficos y consultar la clasificación de los hitos técnicos en el **[notebook de Jupyter del análisis de Starship](/nebula/analisis/analisis-evolucion-starship.ipynb)**.
+Puedes revisar los datos, reproducir los gráficos y consultar la clasificación de los hitos técnicos en el **[notebook de Jupyter del análisis de Starship](/analisis/analisis-evolucion-starship.ipynb)**.

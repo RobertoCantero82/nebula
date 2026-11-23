@@ -3,7 +3,7 @@ titulo: "¿Se paró España? La curva eléctrica mide el impacto de la huelga de
 descripcion: "La demanda de electricidad permite observar cuánto se separó la actividad real de una jornada normal."
 tema: "TECNOLOGÍA"
 fecha: 2026-11-11
-imagenPortada: "/nebula/imagenes/huelga_11n_demanda_portada.png"
+imagenPortada: "/imagenes/huelga_11n_demanda_portada.png"
 cifraDestacada: "−3,75 %"
 etiquetaCifra: "de demanda eléctrica frente a la previsión en el conjunto del día"
 textoContinuo: "La curva eléctrica mide el impacto de la huelga general del 11N"
@@ -135,7 +135,7 @@ El gráfico queda como una fotografía eléctrica del 11N y permite comprobar cu
 - [REData API de Red Eléctrica](https://www.ree.es/es/datos/apidatos) y [explicación de sus curvas en tiempo real](https://www.ree.es/es/operacion/sistema-electrico/demanda-y-produccion-en-tiempo-real).
 - [Convocatoria y reivindicaciones de CCOO](https://huelga.ccoo.es/) y [UGT](https://www.ugt.es/11n-huelga-general-salarios-vivienda-precios).
 - [Servicios mínimos del sector eléctrico publicados en el BOE](https://boe.es/diario_boe/txt.php?id=BOE-A-2026-23371&lang=es).
-- [Notebook ejecutado](/nebula/analisis/huelga-11n-demanda/huelga_11n_demanda.ipynb), [datos de respaldo](/nebula/analisis/huelga-11n-demanda/datos/demanda_11n_respaldo.json) y [serie procesada](/nebula/analisis/huelga-11n-demanda/resultados/demanda_11n_procesada.csv).
+- [Notebook ejecutado](/analisis/huelga-11n-demanda/huelga_11n_demanda.ipynb), [datos de respaldo](/analisis/huelga-11n-demanda/datos/demanda_11n_respaldo.json) y [serie procesada](/analisis/huelga-11n-demanda/resultados/demanda_11n_procesada.csv).
 
 <style>
 .h11-apuesta,.h11-directo{margin:2.2rem 0;padding:1.35rem;border:1px solid #446ddf;border-radius:14px;background:rgba(68,109,223,.045)}.h11-apuesta h3{margin-top:0}.h11-apuesta__opciones{display:flex;flex-wrap:wrap;gap:.6rem}.h11-apuesta button{font:inherit;padding:.65rem .9rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#294da9;cursor:pointer}.h11-apuesta button:hover,.h11-apuesta button:focus-visible,.h11-apuesta button[aria-pressed="true"]{background:#446ddf;color:#fff}.h11-apuesta__respuesta{min-height:1.5em;margin-bottom:0;font-weight:600}.h11-directo__cabecera{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-bottom:1rem;border-bottom:1px solid #446ddf33}.h11-directo__cabecera p{margin:0;color:#586174;font-size:.86rem}.h11-metricas{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1.1rem 0}.h11-metricas article{padding:1rem;border-radius:10px;background:#fff}.h11-metricas span,.h11-metricas small{display:block;color:#626b7c}.h11-metricas strong{display:block;margin:.2rem 0;font-size:1.65rem;color:#1b1836;font-variant-numeric:tabular-nums}.h11-grafico{margin:1.4rem 0 0}.h11-grafico svg{display:block;width:100%;height:auto;overflow:visible;font-family:var(--font-body)}.h11-titulo{font:600 20px var(--font-heading);fill:currentColor}.h11-subtitulo,.h11-eje{font-size:12px;fill:#697386}.h11-rejilla{stroke:#dfe4f0;stroke-width:1}.h11-linea{fill:none;stroke-linecap:round;stroke-linejoin:round}.h11-linea--prevista{stroke:#aeb5c2;stroke-width:3}.h11-linea--real{stroke:#446ddf;stroke-width:4}.h11-grafico figcaption{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.5rem;color:#586174;font-size:.84rem}.h11-leyenda{display:inline-block;width:1.4rem;height:3px;margin-right:.3rem;vertical-align:middle}.h11-leyenda--real{background:#446ddf}.h11-leyenda--prevista{background:#aeb5c2}.h11-lectura{padding:1rem;border-left:4px solid #446ddf;background:#fff;font-weight:600}.h11-error{color:#8a342b}.h11-directo[hidden]{display:none}@media(max-width:620px){.h11-apuesta__opciones{display:grid}.h11-apuesta button{width:100%}.h11-directo__cabecera{display:block}.h11-directo__cabecera p{margin-top:.35rem}.h11-metricas{grid-template-columns:1fr}.h11-metricas article{display:grid;grid-template-columns:1fr auto;align-items:end}.h11-metricas small{grid-column:1/-1}.h11-metricas strong{font-size:1.4rem}}
@@ -144,7 +144,7 @@ El gráfico queda como una fotografía eléctrica del 11N y permite comprobar cu
 <script>
 (() => {
   const API_DIA='https://apidatos.ree.es/es/datos/demanda/demanda-tiempo-real?start_date=2026-11-11T00:00&end_date=2026-11-11T23:59&time_trunc=hour';
-  const RESPALDO='/nebula/analisis/huelga-11n-demanda/datos/demanda_11n_respaldo.json';
+  const RESPALDO='/analisis/huelga-11n-demanda/datos/demanda_11n_respaldo.json';
   const directo=document.getElementById('h11-directo');
   const apuesta=document.querySelector('.h11-apuesta');
   if(!directo||!apuesta)return;

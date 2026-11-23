@@ -20,7 +20,7 @@ pantallas:
   - etiqueta: "02 | La otra carrera"
     titulo: "Detrás del actor hay un fondo que apostó por la IA."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/ashton_kutcher_anthropic.png"
+    imagen: "/imagenes/actualidad/ashton_kutcher_anthropic.png"
     altImagen: "Ilustración en acuarela de Ashton Kutcher mirando un pequeño microchip azul sobre la palma de su mano."
     pieImagen: "Ilustración simbólica generada con inteligencia artificial para Nebula. No representa una fotografía ni un encuentro real."
     texto:

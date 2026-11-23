@@ -3,7 +3,7 @@ titulo: "Valencia tenía mapas de inundación: la mitad de las viviendas afectad
 descripcion: "La cifra provincial oculta dos realidades opuestas: municipios casi enteros dentro del riesgo previsto y otros que apenas aparecían."
 tema: "SOCIEDAD"
 fecha: 2026-11-09
-imagenPortada: "/nebula/imagenes/valencia_mapas_inundacion_portada.png"
+imagenPortada: "/imagenes/valencia_mapas_inundacion_portada.png"
 cifraDestacada: "51,1 %"
 etiquetaCifra: "de las viviendas fuera de toda zona oficial"
 textoContinuo: "El 51,1 % de las viviendas afectadas por la DANA en Valencia estaba fuera de las zonas que los mapas oficiales señalaban como inundables"
@@ -84,7 +84,7 @@ Mi análisis parte de los resultados municipales publicados para responder otra 
 
 No. La cifra provincial mezcla municipios con historias opuestas. En Sedaví, las 1.878 viviendas contabilizadas dentro de la huella quedaron fuera de las zonas oficiales. En Picanya fueron el 95,8 % y en Alberic, el 93,7 %.
 
-En Paiporta, el porcentaje bajó al 71,9 %, pero el tamaño del golpe lo cambia todo: hablamos de **8.619 viviendas**. Es la misma precaución que necesitaba [la supuesta concentración mundial de muertes en la alta velocidad española](/nebula/articulos/accidentes-alta-velocidad-espana-mitad/): un porcentaje puede cambiar de significado cuando miramos cuántos casos hay detrás.
+En Paiporta, el porcentaje bajó al 71,9 %, pero el tamaño del golpe lo cambia todo: hablamos de **8.619 viviendas**. Es la misma precaución que necesitaba [la supuesta concentración mundial de muertes en la alta velocidad española](/articulos/accidentes-alta-velocidad-espana-mitad/): un porcentaje puede cambiar de significado cuando miramos cuántos casos hay detrás.
 
 En el extremo contrario, Massanassa y Beniparrell tenían prácticamente todas las viviendas de la huella dentro de una zona estatal de peligro. Albalat de la Ribera y Alcàntera de Xúquer tampoco registran viviendas fuera en los datos publicados.
 
@@ -127,7 +127,7 @@ La primera es **dónde termina la inundación**. Copernicus reconstruyó su huel
 
 La segunda es **qué hacemos con una casa atravesada por el borde**. Podemos contarla cuando cualquier parte del edificio toca la zona de peligro o exigir que su punto central quede dentro. Parece un detalle, pero miles de edificios están cerca de esas fronteras.
 
-Al combinar dos huellas y tres reglas razonables, el resultado se mueve entre **el 38,9 % y el 61,9 %**. No es un margen de error estadístico. Es una [prueba de sensibilidad, como la utilizada para comparar los horarios escolares](/nebula/articulos/colegios-oscuridad-horario-verano/): repetimos la cuenta con decisiones distintas para comprobar cuánto depende de ellas la conclusión.
+Al combinar dos huellas y tres reglas razonables, el resultado se mueve entre **el 38,9 % y el 61,9 %**. No es un margen de error estadístico. Es una [prueba de sensibilidad, como la utilizada para comparar los horarios escolares](/articulos/colegios-oscuridad-horario-verano/): repetimos la cuenta con decisiones distintas para comprobar cuánto depende de ellas la conclusión.
 
 Hay una cautela todavía mayor. La capa estatal utilizada figura actualizada el 20 de diciembre de 2024, después de la catástrofe. La versión vigente el día de la DANA estaba fechada en 2022, pero no pudo recuperarse. Por eso este análisis no demuestra con precisión qué sabía cada mapa aquel 29 de octubre.
 
@@ -138,7 +138,7 @@ Sí demuestra que la frase «Valencia sabía dónde se inundaría» necesita muc
 - [Copernicus EMSR773: huella de la inundación](https://storymaps.arcgis.com/stories/9ff57e9320dd440eb2ce8d20e62c92cd).
 - [EasyxLab: método, datos agregados y limitaciones](https://github.com/easybytehub/easyxlab/tree/main/studies/s19-dana-flood-mapped-vs-observed).
 - [Revisión del PATRICOVA anunciada en 2026](https://www.europapress.es/comunitat-valenciana/noticia-nuevo-patricova-aumenta-61-superficie-inundable-zona-dana-fija-medidas-elevar-nuevas-viviendas-20261015122611.html).
-- [Notebook ejecutado](/nebula/analisis/valencia-mapas-inundacion/analisis_mapas_inundacion_valencia.ipynb), [datos municipales](/nebula/analisis/valencia-mapas-inundacion/municipios.csv) y [guía de reproducción](/nebula/analisis/valencia-mapas-inundacion/README.md).
+- [Notebook ejecutado](/analisis/valencia-mapas-inundacion/analisis_mapas_inundacion_valencia.ipynb), [datos municipales](/analisis/valencia-mapas-inundacion/municipios.csv) y [guía de reproducción](/analisis/valencia-mapas-inundacion/README.md).
 
 <style>
 .selector-municipio{margin:2rem 0;padding:clamp(1rem,4vw,1.6rem);border:1px solid #c7d3f4;border-radius:16px;background:#f5f7fd;color:#24304a}.selector-municipio h3{margin-top:0}.selector-municipio>div{display:flex;gap:.55rem;flex-wrap:wrap}.selector-municipio button{font:inherit;padding:.58rem .85rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#274ba9;cursor:pointer}.selector-municipio button[aria-pressed="true"]{background:#446ddf;color:#fff}.selector-municipio>strong{display:block;margin:1.3rem 0 .5rem;font-size:clamp(2.4rem,9vw,4rem);color:#3157bd}.selector-municipio>i{display:block;overflow:hidden;height:15px;border-radius:10px;background:#dfe5f5}.selector-municipio>i b{display:block;height:100%;border-radius:inherit;background:#446ddf;transition:width .35s ease}.selector-municipio p{margin:.8rem 0}.selector-municipio small{color:#596477;line-height:1.45}.concentracion-mapas{margin:2.2rem 0;padding:clamp(1.2rem,4vw,2rem);border:1px solid #c7d3f4;border-radius:18px;background:#f5f7fd;color:#24304a;box-shadow:0 10px 28px rgba(40,66,125,.08)}.concentracion-mapas figcaption{margin-bottom:1.25rem;line-height:1.5}.concentracion-mapas>div{display:flex;overflow:hidden;height:52px;border-radius:12px}.concentracion-mapas span,.concentracion-mapas i,.concentracion-mapas em{display:flex;align-items:center;justify-content:center;font-style:normal}.concentracion-mapas span{background:#446ddf;color:#fff}.concentracion-mapas i{background:#7f9be8;color:#fff}.concentracion-mapas em{background:#dfe5f5;color:#354052}.concentracion-mapas b{font-size:.78em}.concentracion-mapas p{margin-bottom:0;font-size:.78em;line-height:1.45;color:#596477}@media(prefers-reduced-motion:reduce){.selector-municipio>i b{transition:none}}@media(max-width:520px){.concentracion-mapas{border-radius:14px}.concentracion-mapas i b{display:none}}

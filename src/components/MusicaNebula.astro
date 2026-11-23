@@ -7,7 +7,7 @@ const pistas = readdirSync('public/musica/')
 <div class="musica-marca" data-musica-nebula data-pistas={JSON.stringify(pistas)}>
   <button class="marca musica-boton" type="button" aria-label="Reproducir música de Nebula" aria-pressed="false" aria-describedby="musica-aviso">
     <span class="musica-logo">
-      <img src="/nebula/imagenes/logo-nebula-v2.png" width="172" height="57" alt="Nebula" />
+      <img src="/imagenes/logo-nebula-v2.png" width="172" height="57" alt="Nebula" />
       <svg class="musica-radar" viewBox="480 0 390 370" aria-hidden="true">
         <g fill="none" stroke="#121334" stroke-width="13"><circle cx="650" cy="210" r="136"/><circle cx="650" cy="210" r="94"/><circle cx="650" cy="210" r="52"/></g>
         <g class="musica-aguja"><path d="M650 210 817 40" stroke="#ff5a12" stroke-width="39" stroke-linecap="round"/></g>
@@ -15,7 +15,7 @@ const pistas = readdirSync('public/musica/')
     </span>
   </button>
   <p id="musica-aviso" aria-live="polite">¿Te apetece música? Pulsa el logo</p>
-  <a class="musica-inicio" href="/nebula/">Inicio</a>
+  <a class="musica-inicio" href="/">Inicio</a>
 </div>
 <style>
   .musica-marca{justify-self:center;text-align:center;max-width:100%}

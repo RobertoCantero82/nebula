@@ -3,7 +3,7 @@ titulo: "El mejor coche eléctrico no existe: 36 modelos para encontrar el que e
 descripcion: "Precio, familia, parejas y tecnología: una comparación de 36 eléctricos con las nuevas marcas chinas en España, sin mezclar versiones ni ayudas."
 tema: "TECNOLOGÍA"
 fecha: 2026-10-07T09:00:00+02:00
-imagenPortada: "/nebula/imagenes/electricos_portada.png"
+imagenPortada: "/imagenes/electricos_portada.png"
 cifraDestacada: "36"
 etiquetaCifra: "modelos eléctricos distintos, una sola versión por coche"
 textoContinuo: "36 modelos eléctricos demuestran que no existe un coche perfecto para todo el mundo"
@@ -176,6 +176,6 @@ La muestra incorpora BYD, MG, Leapmotor, XPENG, Omoda, Jaecoo, Changan y GAC. Si
 
 Antes de elegir, escribe tus trayectos habituales, cómo cargarás y qué debe caber dentro. Después compara versiones concretas: nunca el precio de acceso con la autonomía de la batería más cara.
 
-Puedes revisar los 36 modelos y reproducir las comparaciones en el [notebook de Jupyter](/nebula/analisis/electricos/analisis_coches_electricos.ipynb). Para ejecutarlo, descarga el [paquete con el cuaderno, datos y fuentes](/nebula/analisis/electricos/analisis-electricos-nebula.zip).
+Puedes revisar los 36 modelos y reproducir las comparaciones en el [notebook de Jupyter](/analisis/electricos/analisis_coches_electricos.ipynb). Para ejecutarlo, descarga el [paquete con el cuaderno, datos y fuentes](/analisis/electricos/analisis-electricos-nebula.zip).
 
 **Comprar bien no consiste en pagar por todas las posibilidades, sino por las que realmente vas a usar.**

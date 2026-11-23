@@ -3,7 +3,7 @@ titulo: "Los 10 récords NBA que el machine learning ve más cerca de romperse e
 descripcion: "Un triple más puede traer otro récord. Unas derrotas más, también. Diez marcas muestran las dos caras de hacer historia en la NBA."
 tema: "BALONCESTO"
 fecha: 2026-10-19T08:00:00+02:00
-imagenPortada: "/nebula/imagenes/records_nba_segunda_parte_portada.png"
+imagenPortada: "/imagenes/records_nba_segunda_parte_portada.png"
 cifraDestacada: "71 derrotas"
 etiquetaCifra: "necesitarían los Nets para superar su peor total en la NBA"
 textoContinuo: "5 récords para celebrar y 5 para olvidar muestran las dos maneras de hacer historia en la NBA"
@@ -14,7 +14,7 @@ metodologia: "EDA de cinco récords positivos de club y cinco negativos, compara
 
 Luka Dončić necesita un triple más que la temporada pasada para mejorar su marca con los Lakers. Indiana necesitaría una derrota más para empeorar la suya. La distancia cabe en un dedo, pero nadie quiere estar en el segundo lado.
 
-Después de la [primera entrega](/nebula/articulos/records-nba-predicciones-locas-2026-27/), reúno diez marcas para seguir en 2026-27: cinco positivas y cinco negativas. **¿Qué separa una temporada histórica de una que todos querrían olvidar?**
+Después de la [primera entrega](/articulos/records-nba-predicciones-locas-2026-27/), reúno diez marcas para seguir en 2026-27: cinco positivas y cinco negativas. **¿Qué separa una temporada histórica de una que todos querrían olvidar?**
 
 <div style="position: relative; aspect-ratio: 16 / 9; margin: 28px 0;">
   <iframe
@@ -95,9 +95,9 @@ Por eso miro los récords negativos con cuidado. Estar cerca el año anterior no
 
 Los diez casos ofrecen motivos para seguir la temporada. Unos invitan a contar canastas y otros a respirar después de una victoria. **Hacer historia puede ser una fiesta o un alivio cuando, por fin, deja de ocurrir.**
 
-Puedes consultar los cálculos y las fuentes en el [notebook de esta segunda parte](/nebula/analisis/records-nba-segunda-parte/records_nba_segunda_parte_eda.ipynb) y descargar los [datos de los diez récords](/nebula/analisis/records-nba-segunda-parte/records_segunda_parte.csv).
+Puedes consultar los cálculos y las fuentes en el [notebook de esta segunda parte](/analisis/records-nba-segunda-parte/records_nba_segunda_parte_eda.ipynb) y descargar los [datos de los diez récords](/analisis/records-nba-segunda-parte/records_segunda_parte.csv).
 
-Fuentes: [Lakers](https://www.nba.com/lakers/news/luka-doncic-earns-sixth-all-nba-first-team-honor), [Phoenix](https://cdn-uat.nba.com/news/2026-27-season-preview-phx), [NBA Communications](https://pr.nba.com/hawks-nickeil-alexander-walker-named-2025-26-kia-nba-most-improved-player/), [Pacers](/nebula/analisis/records-nba-segunda-parte/fuentes/pacers_guia_20261019.pdf), [Warriors](/nebula/analisis/records-nba-segunda-parte/fuentes/warriors_20261019.pdf) y [lista completa de referencias](/nebula/analisis/records-nba-segunda-parte/auditoria_fuentes.csv).
+Fuentes: [Lakers](https://www.nba.com/lakers/news/luka-doncic-earns-sixth-all-nba-first-team-honor), [Phoenix](https://cdn-uat.nba.com/news/2026-27-season-preview-phx), [NBA Communications](https://pr.nba.com/hawks-nickeil-alexander-walker-named-2025-26-kia-nba-most-improved-player/), [Pacers](/analisis/records-nba-segunda-parte/fuentes/pacers_guia_20261019.pdf), [Warriors](/analisis/records-nba-segunda-parte/fuentes/warriors_20261019.pdf) y [lista completa de referencias](/analisis/records-nba-segunda-parte/auditoria_fuentes.csv).
 
 <style>
   .filas-records-nba { list-style: none; padding: 0; margin: 1.2rem 0 .4rem; }

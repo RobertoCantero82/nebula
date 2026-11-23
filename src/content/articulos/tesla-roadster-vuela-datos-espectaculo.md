@@ -3,7 +3,7 @@ titulo: "El Tesla Roadster ya ha volado. Estas son las cifras que explican la lo
 descripcion: "La versión más extrema recurre a diez propulsores, supera 4,6 g de aceleración y no está aprobada para circular por vías públicas."
 tema: "TECNOLOGÍA"
 fecha: 2026-10-16T09:00:00+02:00
-imagenPortada: "/nebula/imagenes/tesla_roadster_datos_portada.png"
+imagenPortada: "/imagenes/tesla_roadster_datos_portada.png"
 cifraDestacada: "7,9 metros"
 etiquetaCifra: "es la distancia teórica para alcanzar 100 km/h"
 textoContinuo: "El Tesla Roadster ya ha volado: su versión extrema usa 10 propulsores, supera 4,6 g y necesitaría solo 7,9 metros para alcanzar 100 km/h"
@@ -167,4 +167,4 @@ La espera también tiene precio. La **reserva del Performance** exige 50.000 dó
 
 El Roadster que he visto es real como prototipo. Su vuelo también. Sus cifras más extremas, su homologación y su calendario continúan en el futuro. **Puedo alucinar con la demostración y exigir pruebas para las promesas al mismo tiempo.**
 
-Puedes revisar los cálculos, las fuentes y las limitaciones en el [notebook ejecutado](/nebula/analisis/tesla-roadster-datos/tesla_roadster_datos.ipynb) y descargar la [tabla de aceleraciones](/nebula/analisis/tesla-roadster-datos/data/aceleracion_fabricantes.csv).
+Puedes revisar los cálculos, las fuentes y las limitaciones en el [notebook ejecutado](/analisis/tesla-roadster-datos/tesla_roadster_datos.ipynb) y descargar la [tabla de aceleraciones](/analisis/tesla-roadster-datos/data/aceleracion_fabricantes.csv).

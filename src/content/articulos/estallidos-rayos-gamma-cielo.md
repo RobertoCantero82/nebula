@@ -3,7 +3,7 @@ titulo: 'Ningún lugar del cielo está a salvo de una explosión cósmica'
 descripcion: 'Un análisis de 4.408 estallidos de rayos gamma muestra por qué cualquier dirección puede encender la próxima alarma.'
 tema: 'CIENCIA'
 fecha: 2026-10-30
-imagenPortada: '/nebula/imagenes/estallidos_rayos_gamma_portada.png'
+imagenPortada: '/imagenes/estallidos_rayos_gamma_portada.png'
 cifraDestacada: '238'
 etiquetaCifra: 'estallidos detectados al año de media'
 textoContinuo: "Cada año se detectan una media de 238 estallidos de rayos gamma y pueden aparecer en cualquier dirección del cielo"
@@ -133,7 +133,7 @@ El universo no reserva sus mayores fogonazos para un solo rincón del cielo. Des
 
 - [Catálogo Fermi GBM Burst de NASA HEASARC](https://heasarc.gsfc.nasa.gov/W3Browse/fermi/fermigbrst.html) y [portal de datos de Fermi](https://fermi.gsfc.nasa.gov/ssc/data/access/).
 - [Estudio de GRB 260310A](https://arxiv.org/abs/2605.23818).
-- [Notebook del análisis](/nebula/analisis/estallidos-rayos-gamma/analisis_estallidos_rayos_gamma.ipynb), [datos utilizados](/nebula/analisis/estallidos-rayos-gamma/fermi_gbm_estallidos.csv), [respuesta original de NASA](/nebula/analisis/estallidos-rayos-gamma/fermi_gbm_catalogo_raw.xml) y [guía de reproducción](/nebula/analisis/estallidos-rayos-gamma/README.md).
+- [Notebook del análisis](/analisis/estallidos-rayos-gamma/analisis_estallidos_rayos_gamma.ipynb), [datos utilizados](/analisis/estallidos-rayos-gamma/fermi_gbm_estallidos.csv), [respuesta original de NASA](/analisis/estallidos-rayos-gamma/fermi_gbm_catalogo_raw.xml) y [guía de reproducción](/analisis/estallidos-rayos-gamma/README.md).
 
 <style>
 .grb-figura{margin:2rem 0}.grb-figura figcaption{font-size:.95em;line-height:1.5;margin-bottom:.8rem}.grb-barras{display:flex;align-items:flex-end;gap:clamp(2px,.55vw,7px);height:230px;padding:16px 8px 28px;border-left:1px solid #cbd3e5;border-bottom:1px solid #cbd3e5}.grb-barra{flex:1;min-width:4px;background:#446ddf;border-radius:3px 3px 0 0;position:relative}.grb-barra span{position:absolute;top:100%;left:50%;transform:translate(-50%,7px) rotate(-55deg);font-size:10px;color:#586174}.grb-bloque{border:1px solid #becbec;border-radius:14px;padding:1.2rem;margin:1.8rem 0;background:#f5f7fd}.grb-bloque legend{font-weight:700;padding:0 .5rem}.grb-opciones{display:flex;gap:.65rem;flex-wrap:wrap}.grb-opciones button{font:inherit;padding:.65rem .8rem;border:1px solid #446ddf;border-radius:8px;background:white;color:#23439b}.grb-opciones button[aria-pressed="true"]{background:#446ddf;color:white}.grb-bloque :focus-visible{outline:3px solid #a76d3c;outline-offset:3px}#grb-cielo{display:block;width:100%;height:auto;background:#faf7ef;border-radius:50%;border:1px solid #d9d1bf}.grb-nota{font-size:.82em;color:#586174}
@@ -146,6 +146,6 @@ document.addEventListener('DOMContentLoaded',()=>{
  if(barras) Object.entries(anios).forEach(([anio,n])=>{const b=document.createElement('div');b.className='grb-barra';b.style.height=`${n/271*100}%`;b.title=`${anio}: ${n} estallidos`;b.innerHTML=`<span>${anio}</span>`;barras.appendChild(b);});
  document.querySelectorAll('[data-grb]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-grb]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));const r=document.getElementById('grb-respuesta');r.textContent=b.dataset.grb==='todas'?'Exacto. El catálogo no muestra una dirección privilegiada.':b.dataset.grb==='plano'?'La intuición galáctica falla: no aparece una franja dominante junto a la Vía Láctea.':'Las dos mitades están casi empatadas: 50,4 % frente a 49,6 %.';}));
  const canvas=document.getElementById('grb-cielo');
- if(canvas) fetch('/nebula/analisis/estallidos-rayos-gamma/fermi_gbm_estallidos.csv').then(r=>r.text()).then(texto=>{const ctx=canvas.getContext('2d');ctx.fillStyle='#446ddf';ctx.globalAlpha=.35;texto.trim().split('\n').slice(1).forEach(linea=>{const c=linea.split(',');const lon=Number(c[4]),lat=Number(c[5]);if(!Number.isFinite(lon)||!Number.isFinite(lat))return;const l=((lon+180)%360)-180;const x=canvas.width/2-l/180*canvas.width*.46;const y=canvas.height/2-lat/90*canvas.height*.43;ctx.beginPath();ctx.arc(x,y,1.45,0,Math.PI*2);ctx.fill();});}).catch(()=>{});
+ if(canvas) fetch('/analisis/estallidos-rayos-gamma/fermi_gbm_estallidos.csv').then(r=>r.text()).then(texto=>{const ctx=canvas.getContext('2d');ctx.fillStyle='#446ddf';ctx.globalAlpha=.35;texto.trim().split('\n').slice(1).forEach(linea=>{const c=linea.split(',');const lon=Number(c[4]),lat=Number(c[5]);if(!Number.isFinite(lon)||!Number.isFinite(lat))return;const l=((lon+180)%360)-180;const x=canvas.width/2-l/180*canvas.width*.46;const y=canvas.height/2-lat/90*canvas.height*.43;ctx.beginPath();ctx.arc(x,y,1.45,0,Math.PI*2);ctx.fill();});}).catch(()=>{});
 });
 </script>

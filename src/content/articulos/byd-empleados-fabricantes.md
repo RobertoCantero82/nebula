@@ -3,7 +3,7 @@ titulo: 'BYD no tiene un millón de empleados, pero aún supera a Toyota, Ford, 
 descripcion: 'La empresa rozó el millón en 2024. Sus últimas cuentas rebajan la plantilla y dejan la comparación mucho más ajustada.'
 tema: 'ECONOMÍA'
 fecha: 2026-10-29
-imagenPortada: '/nebula/imagenes/byd_empleados_portada.png'
+imagenPortada: '/imagenes/byd_empleados_portada.png'
 cifraDestacada: '19.910'
 etiquetaCifra: 'empleados de ventaja aproximada sobre las cuatro compañías juntas'
 textoContinuo: "BYD no tiene un millón de empleados, pero todavía supera en unos 19.910 a Toyota, Ford, GM y Tesla juntas"
@@ -57,7 +57,7 @@ Para entender la escala, Tesla es la más pequeña de las cinco plantillas y har
   ></iframe>
 </div>
 
-En Nebula ya he analizado la [carrera entre BYD y Tesla en España](https://robertocantero82.github.io/nebula/articulos/byd-adelanta-tesla-electricos-puros-2026/) y he comparado [36 coches eléctricos](https://robertocantero82.github.io/nebula/articulos/electricos-el-coche-que-encaja-en-tu-vida/) para distintos tipos de conductor. Allí contaba ventas y modelos; aquí cuento a las personas y los procesos que hay detrás.
+En Nebula ya he analizado la [carrera entre BYD y Tesla en España](https://diarionebula.es/articulos/byd-adelanta-tesla-electricos-puros-2026/) y he comparado [36 coches eléctricos](https://diarionebula.es/articulos/electricos-el-coche-que-encaja-en-tu-vida/) para distintos tipos de conductor. Allí contaba ventas y modelos; aquí cuento a las personas y los procesos que hay detrás.
 
 Puedes reconstruir la comparación. Quita una empresa, añade otra o reúne las cuatro.
 
@@ -89,7 +89,7 @@ Por eso no convierto empleados por vehículo en una clasificación de eficiencia
 
 La corrección deja una historia mejor que el número redondo. BYD ya no tiene un millón de empleados. Tiene **869.622**, después de perder casi cien mil en un año. Y aun con esa caída sigue reuniendo dentro de su perímetro laboral algo extraordinario: aproximadamente más personas que Toyota, Ford, General Motors y Tesla juntas.
 
-Puedes consultar el [notebook ejecutado](/nebula/analisis/byd_empleados/analisis_byd_empleados_ejecutado.ipynb) y los [datos utilizados](/nebula/analisis/byd_empleados/comparacion_plantillas.csv).
+Puedes consultar el [notebook ejecutado](/analisis/byd_empleados/analisis_byd_empleados_ejecutado.ipynb) y los [datos utilizados](/analisis/byd_empleados/comparacion_plantillas.csv).
 
 <style>
   .byd-figura { margin: 2rem 0; }

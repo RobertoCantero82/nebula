@@ -3,7 +3,7 @@ titulo: 'El satélite Swift iba a caer a la Tierra: ¿con cuánta antelación pu
 descripcion: 'Reconstruí sus últimas semanas en órbita. Al principio, el modelo falló por más de cuatro días; poco antes de la reentrada, rozó el acierto.'
 tema: 'CIENCIA'
 fecha: 2026-11-06
-imagenPortada: '/nebula/imagenes/swift_reentrada_portada.png'
+imagenPortada: '/imagenes/swift_reentrada_portada.png'
 cifraDestacada: '4 minutos'
 etiquetaCifra: 'entre la predicción y la caída'
 textoContinuo: "La predicción de la caída de Swift pasó de equivocarse por más de 4 días a desviarse solo 4 minutos poco antes de la reentrada"
@@ -12,7 +12,7 @@ metodologia: 'Predicción retrospectiva con 1.594 conjuntos de elementos orbital
 
 El 16 de octubre, m**i modelo creía que al observatorio Swift le quedaban 23 días y medio en órbita**. En realidad, le quedaban 19. Se equivocaba por más de cuatro días. Dos semanas después, el error había bajado a menos de dos horas. El reloj parecía estar aprendiendo a toda velocidad.
 
-Swift terminó cayendo sobre la atmósfera el 4 de noviembre de 2026 a las 12:39 UTC, después de casi 22 años observando [estallidos de rayos gamma, algunas de las explosiones más violentas del universo](/nebula/articulos/estallidos-rayos-gamma-cielo/), y otros fenómenos fugaces. La mayor parte del satélite se quemó durante la entrada. Su final dejó una pregunta bastante terrenal: ¿cuándo podemos saber que una máquina que gira alrededor del planeta está a punto de caer?
+Swift terminó cayendo sobre la atmósfera el 4 de noviembre de 2026 a las 12:39 UTC, después de casi 22 años observando [estallidos de rayos gamma, algunas de las explosiones más violentas del universo](/articulos/estallidos-rayos-gamma-cielo/), y otros fenómenos fugaces. La mayor parte del satélite se quemó durante la entrada. Su final dejó una pregunta bastante terrenal: ¿cuándo podemos saber que una máquina que gira alrededor del planeta está a punto de caer?
 
 He intentado responderla con **1.594 observaciones orbitales** publicadas entre enero de 2025 y la víspera de la reentrada.
 
@@ -113,13 +113,13 @@ Además, **este ejercicio conoce el final porque mira hacia atrás**. He ocultad
 
 Ahí está precisamente la lección. Tres semanas antes, una cifra concreta podía aparentar una seguridad que los datos no tenían. En los últimos días, el reloj se estrechó, pero nunca dejó de moverse.
 
-Swift pasó dos décadas reaccionando en segundos a explosiones situadas a miles de millones de años luz. Era una misión muy distinta a [Voyager 1, que necesita casi un día para que su señal alcance la Tierra](/nebula/articulos/voyager-un-dia-luz/), pero ambas recuerdan **lo difícil que resulta medir el tiempo en el espacio**. Para anticipar las últimas horas de Swift hubo que esperar hasta tenerlo casi encima.
+Swift pasó dos décadas reaccionando en segundos a explosiones situadas a miles de millones de años luz. Era una misión muy distinta a [Voyager 1, que necesita casi un día para que su señal alcance la Tierra](/articulos/voyager-un-dia-luz/), pero ambas recuerdan **lo difícil que resulta medir el tiempo en el espacio**. Para anticipar las últimas horas de Swift hubo que esperar hasta tenerlo casi encima.
 
 ## Fuentes y análisis
 
 - [NASA: reentrada del observatorio Swift](https://science.nasa.gov/blogs/swift/2026/11/02/nasas-swift-observatory-to-re-enter-atmosphere/) y [reto de modelización de la termosfera](https://ccmc.gsfc.nasa.gov/challenges/swift-challenge/).
 - [Archivo histórico de elementos orbitales de CelesTrak](https://celestrak.org/norad/archives/).
-- [Notebook ejecutado](/nebula/analisis/swift_reentrada/analisis_swift_reentrada.ipynb), [datos TLE originales](/nebula/analisis/swift_reentrada/datos/sat000028485.json) y [guía de reproducción](/nebula/analisis/swift_reentrada/README.md).
+- [Notebook ejecutado](/analisis/swift_reentrada/analisis_swift_reentrada.ipynb), [datos TLE originales](/analisis/swift_reentrada/datos/sat000028485.json) y [guía de reproducción](/analisis/swift_reentrada/README.md).
 
 <style>
 .grafico-swift{margin:2.4rem 0}.grafico-swift svg{display:block;width:100%;height:auto;font-family:var(--font-body);overflow:visible}.grafico-swift .grafico-titulo{fill:currentColor;font-family:var(--font-heading);font-size:20px;font-weight:600}.grafico-swift .grafico-subtitulo{fill:#555;font-size:13px}.grafico-swift .grafico-rejilla line{stroke:#dfe4f0;stroke-width:1}.grafico-swift .grafico-rejilla .linea-cero{stroke:#77829a;stroke-width:1.5;stroke-dasharray:5 5}.grafico-swift .grafico-eje{fill:#697386;font-size:12px}.grafico-swift .grafico-linea{fill:none;stroke:#446ddf;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.grafico-swift .grafico-puntos circle{fill:#446ddf;stroke:#fff;stroke-width:2}.grafico-swift .grafico-puntos .punto-adelanto{fill:#314ea4}.grafico-swift .grafico-anotacion{fill:currentColor;font-size:13px;font-weight:700}.grafico-swift .grafico-nota{fill:#697386;font-size:11px}.swift-bloque{border:1px solid #446ddf;border-radius:14px;padding:1.4rem;margin:2.4rem 0;background:rgba(68,109,223,.05)}.swift-bloque input{width:100%;accent-color:#446ddf}.swift-relojes{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.swift-relojes div{background:#fff;border-radius:10px;padding:1rem}.swift-relojes span{display:block;font-size:.85em;color:#586174}.swift-relojes strong{font-size:1.2em;color:#23439b}.swift-nota{font-size:.82em;color:#586174}@media(max-width:620px){.grafico-swift{margin:2rem 0}.swift-relojes{grid-template-columns:1fr}}

@@ -3,7 +3,7 @@ titulo: "¿Es posible que la Voyager 1 se acerque a la Tierra si sigue alejándo
 descripcion: "Parece imposible: seguir escapando al espacio y estar cada vez más cerca de la Tierra. Las trayectorias de la Voyager permiten entenderlo."
 tema: "CIENCIA"
 fecha: 2026-11-16
-imagenPortada: "/nebula/imagenes/voyager_acercamiento_portada.png"
+imagenPortada: "/imagenes/voyager_acercamiento_portada.png"
 cifraDestacada: "93,5 días"
 etiquetaCifra: "acercándose a la Tierra"
 textoContinuo: "La Voyager se acercó 40 millones de kilómetros a la Tierra sin cambiar de rumbo. Los datos explican cómo"
@@ -14,7 +14,7 @@ metodologia: "EDA de efemérides geométricas de NASA/JPL Horizons, con corte el
 
 La actualidad ofrece una buena excusa para comprobarlo. La NASA sitúa para el 18 de noviembre de 2026 el momento en el que la sonda alcanzará un día luz de distancia de la Tierra: una separación que la luz tarda 24 horas en recorrer. Es un hito enorme para una misión lanzada en septiembre de 1977. Pero esa cifra no cuenta cómo cambia la distancia durante el año.
 
-En Nebula he comparado las posiciones y velocidades que publica Horizons, el sistema de cálculo de trayectorias del Jet Propulsion Laboratory de la [NASA](https://robertocantero82.github.io/nebula/articulos/ameba-fuego-limites-calor/). La pregunta era sencilla: **¿puede reducirse la separación entre la Tierra y la Voyager mientras la nave sigue alejándose del Sol?**
+En Nebula he comparado las posiciones y velocidades que publica Horizons, el sistema de cálculo de trayectorias del Jet Propulsion Laboratory de la [NASA](https://diarionebula.es/articulos/ameba-fuego-limites-calor/). La pregunta era sencilla: **¿puede reducirse la separación entre la Tierra y la Voyager mientras la nave sigue alejándose del Sol?**
 
 ## Tres meses más cerca
 
@@ -83,7 +83,7 @@ También conviene entender la fuente. Horizons no ofrece aquí una medición ind
 
 **La Voyager sigue su camino mientras la Tierra continúa el suyo**. Para entender si algo se aleja, incluso a semejante distancia, hace falta completar la pregunta: ¿de quién?
 
-Puedes revisar el **[notebook reproducible](/nebula/analisis/voyager-acercamiento/analisis_voyager_acercamiento.ipynb)** y la **[tabla diaria de comparación](/nebula/analisis/voyager-acercamiento/datos/comparacion_diaria.csv)**.
+Puedes revisar el **[notebook reproducible](/analisis/voyager-acercamiento/analisis_voyager_acercamiento.ipynb)** y la **[tabla diaria de comparación](/analisis/voyager-acercamiento/datos/comparacion_diaria.csv)**.
 
 Fuentes: [Horizons y su documentación](https://ssd.jpl.nasa.gov/horizons/manual.html), [API de Horizons](https://ssd-api.jpl.nasa.gov/doc/horizons.html), [NASA: el hito de un día luz](https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/), [estado de las Voyager](https://science.nasa.gov/mission/voyager/where-are-voyager-1-and-voyager-2-now/) y [noticia de partida de Live Science](https://www.livescience.com/space/space-exploration/out-there-moving-into-the-unknown-as-voyager-1-reaches-one-light-day-from-earth-scientists-reflect-on-its-past-and-its-future).
 

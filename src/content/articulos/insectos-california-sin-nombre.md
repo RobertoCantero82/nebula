@@ -7,7 +7,7 @@ cifraDestacada: "93 de cada 100"
 etiquetaCifra: "grupos genéticos no tienen identificación de especie"
 textoContinuo: "El ADN distingue 42.305 grupos de insectos en California, pero el 93,3 % no tiene identificación de especie."
 metodologia: "EDA de 892.274 ejemplares con código BIN, procedentes de la tabla suplementaria publicada por la California Insect Barcoding Initiative. Reduzco los registros a 42.305 grupos genéticos únicos y defino el índice de anonimato como el porcentaje de BIN sin identificación válida en la columna de especie. Comparo órdenes, familias, ecorregiones y tramos de abundancia observada. Un BIN funciona como aproximación operativa a una especie, pero no demuestra por sí solo que sea una especie nueva."
-imagenPortada: "/nebula/imagenes/insectos_california_anonimato_portada.png"
+imagenPortada: "/imagenes/insectos_california_anonimato_portada.png"
 ---
 
 *En California hay miles de insectos que la ciencia puede distinguir sin saber cómo llamarlos. Tienen fotografía, lugar de captura y un código genético propio. Lo que falta, muchas veces, es el nombre de la especie.*
@@ -73,7 +73,7 @@ La relación no demuestra que la rareza sea la causa. Un insecto puede aparecer 
 
 California ya posee una biblioteca genética capaz de separar decenas de miles de formas de vida. Ahora queda la parte lenta: revisar ejemplares, compararlos con colecciones históricas y describir especies cuando corresponda. El código de barras permite saber que dos insectos son distintos. **Ponerles nombre sigue necesitando tiempo y especialistas.**
 
-Puedes consultar el [notebook completo](/nebula/analisis/insectos-california-anonimato/insectos_california_indice_anonimato_eda.ipynb), los [resultados procesados](/nebula/analisis/insectos-california-anonimato/catalogo_bins.csv) y la [tabla original en Dryad](https://doi.org/10.5061/dryad.qrfj6q5zs).
+Puedes consultar el [notebook completo](/analisis/insectos-california-anonimato/insectos_california_indice_anonimato_eda.ipynb), los [resultados procesados](/analisis/insectos-california-anonimato/catalogo_bins.csv) y la [tabla original en Dryad](https://doi.org/10.5061/dryad.qrfj6q5zs).
 
 Fuentes: [artículo científico en Ecography](https://doi.org/10.1002/ecog.08572), [datos originales en Dryad](https://doi.org/10.5061/dryad.qrfj6q5zs), [código de los investigadores](https://github.com/Austin-Baker/CIBI-biodiversity) y [Natural History Museum of Los Angeles County](https://nhmlac.org/press/scientists-discover-there-are-way-more-bugs-california-you-thought).
 

@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/tecnologias_cine_portada-v2.png"
+imagenPortada: "/imagenes/tecnologias_cine_portada-v2.png"
 titulo: "El cine que inventó el futuro: de 'Planeta prohibido' a 'Her'"
 descripcion: "Un análisis de 100 tecnologías imaginadas por 27 películas revela qué predicciones llegaron a la vida real, cuáles siguen en el laboratorio y dónde el cine continúa décadas por delante."
 tema: "CINE"
@@ -29,9 +29,9 @@ Para poder separar lo alucinate del cine con los conceptos disponibles en nuestr
 
 Después clasifiqué cada caso en cinco estados: ficción, investigación, prototipo, uso real y tecnología cotidiana. El objetivo no es decidir qué guionista predijo mejor el futuro, sino responder una pregunta más útil: **¿en qué campos consigue el cine anticipar una función real y en cuáles continúa dependiendo de un milagro científico?**
 
-Es una forma de convertir una intuición cultural en variables medibles, como hice al [contrastar tres mitos sobre *The Matrix*](/nebula/articulos/matrix-secuelas/) y al buscar [las señales del software que viene en GitHub](/nebula/articulos/software-que-viene-github/).
+Es una forma de convertir una intuición cultural en variables medibles, como hice al [contrastar tres mitos sobre *The Matrix*](/articulos/matrix-secuelas/) y al buscar [las señales del software que viene en GitHub](/articulos/software-que-viene-github/).
 
-Es el mismo enfoque que utilicé al [contrastar tres mitos sobre *The Matrix*](/nebula/articulos/matrix-secuelas/) y al buscar [las señales del software que viene en GitHub](/nebula/articulos/software-que-viene-github/): convertir una intuición sobre el futuro en una pregunta que los datos puedan matizar.
+Es el mismo enfoque que utilicé al [contrastar tres mitos sobre *The Matrix*](/articulos/matrix-secuelas/) y al buscar [las señales del software que viene en GitHub](/articulos/software-que-viene-github/): convertir una intuición sobre el futuro en una pregunta que los datos puedan matizar.
 
 ## 1. Casi la mitad ya está aquí
 
@@ -269,4 +269,4 @@ Por eso, *Planeta prohibido* sigue siendo una referencia tan útil. Se equivocó
 
 Setenta años después, Robby todavía parece extraordinario. No porque ninguna de sus funciones exista, sino porque seguimos intentando conseguir que todas convivan dentro del mismo sistema sin que el monstruo invisible vuelva a aparecer.
 
-**Puedes consultar las 100 tecnologías, reproducir los gráficos y revisar la clasificación editorial** en el [notebook de Jupyter del análisis](/nebula/analisis/eda-tecnologias-del-cine.ipynb).
+**Puedes consultar las 100 tecnologías, reproducir los gráficos y revisar la clasificación editorial** en el [notebook de Jupyter del análisis](/analisis/eda-tecnologias-del-cine.ipynb).

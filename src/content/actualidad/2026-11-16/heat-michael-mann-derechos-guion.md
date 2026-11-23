@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El origen"
     titulo: "La película llegó en 1995. Los textos que la hicieron posible venían de antes."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/poster%20Heat.jpg"
+    imagen: "/imagenes/actualidad/poster%20Heat.jpg"
     altImagen: "Imagen promocional de Heat en tonos azules, con Al Pacino, Robert De Niro y Val Kilmer sobre una escena urbana nocturna"
     pieImagen: "Heat (1995), escrita y dirigida por Michael Mann. Material promocional de la película."
     texto:

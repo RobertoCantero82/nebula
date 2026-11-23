@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La imagen"
     titulo: "Esta foto es solo una parte de lo que observa Hera."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/hera-didymos.png"
+    imagen: "/imagenes/actualidad/hera-didymos.png"
     altImagen: "Didymos en blanco y negro sobre el fondo oscuro del espacio, con bloques de roca, zonas más lisas y una cresta alrededor del ecuador."
     pieImagen: "Didymos, fotografiado desde 28,5 kilómetros por la cámara de Hera. Imagen facilitada por la ESA."
     texto:

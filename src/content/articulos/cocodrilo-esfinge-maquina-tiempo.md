@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/cocodrilo_egipto_portada.png"
+imagenPortada: "/imagenes/cocodrilo_egipto_portada.png"
 titulo: "El cocodrilo que convirtió la Esfinge en una máquina del tiempo"
 descripcion: "Un fósil reclasificado un siglo después revela que la piedra de Guiza nació cuando el norte de Egipto estaba bajo un mar tropical."
 tema: "CIENCIA"
@@ -118,7 +118,7 @@ El verdadero vínculo es más profundo: **la misma geología conserva un mundo y
 
 El fósil no convierte a la Esfinge en contemporánea de los cocodrilos. La convierte en una ventana accidental hacia un Egipto sin desierto, pirámides ni seres humanos.
 
-Puedes revisar los 386 registros, reproducir las cinco visualizaciones y seguir cada decisión en el [notebook de Jupyter del cocodrilo de Egipto](/nebula/analisis/cocodrilo-egipto/01_eda_cocodrilo_egipto.ipynb). La [instantánea original de Paleobiology Database](/nebula/analisis/cocodrilo-egipto/data/raw/pbdb_gavialoidea.csv) también está disponible.
+Puedes revisar los 386 registros, reproducir las cinco visualizaciones y seguir cada decisión en el [notebook de Jupyter del cocodrilo de Egipto](/analisis/cocodrilo-egipto/01_eda_cocodrilo_egipto.ipynb). La [instantánea original de Paleobiology Database](/analisis/cocodrilo-egipto/data/raw/pbdb_gavialoidea.csv) también está disponible.
 
 Fuentes: [estudio en *Royal Society Open Science*](https://doi.org/10.1098/rsos.261173), [Paleobiology Database](https://paleobiodb.org/), [Science News](https://www.sciencenews.org/article/extinct-crocodilian-rocks-great-sphinx) y [Smithsonian Magazine](https://www.smithsonianmag.com/smart-news/a-century-ago-an-extinct-crocidilians-skull-was-found-in-the-rocks-that-built-the-sphinx-turns-out-it-belonged-to-a-new-species-180989641/).
 

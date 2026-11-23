@@ -19,7 +19,7 @@ const destacados = ordenDestacados
   .filter((articulo) => articulo !== undefined);
 
 const origen = Astro.site ?? Astro.url.origin;
-const urlPerfil = new URL('/nebula/trabaja-conmigo/', origen);
+const urlPerfil = new URL('/trabaja-conmigo/', origen);
 const datosEstructurados = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
@@ -28,7 +28,7 @@ const datosEstructurados = {
     '@type': 'Person',
     name: 'Roberto Cantero',
     url: urlPerfil.href,
-    image: new URL('/nebula/imagenes/roberto-cantero.jpg', origen).href,
+    image: new URL('/imagenes/roberto-cantero.jpg', origen).href,
     jobTitle: 'Periodista especializado en tecnología, ciencia y datos',
     description: 'Periodista con casi una década de experiencia creando contenido especializado en tecnología y ciencia, formado también en análisis y visualización de datos.',
     homeLocation: {
@@ -55,18 +55,18 @@ const datosEstructurados = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
     <meta name="theme-color" content="#1B1836" />
     <Seo
       titulo="Trabaja conmigo | Roberto Cantero"
       descripcion="Roberto Cantero es periodista especializado en tecnología y ciencia, con experiencia en análisis de producto, contenido y periodismo de datos."
-      imagen="/nebula/imagenes/roberto-cantero.jpg"
+      imagen="/imagenes/roberto-cantero.jpg"
     />
     <script type="application/ld+json" set:html={JSON.stringify(datosEstructurados)} />
   </head>
   <body>
     <header class="cabecera contenedor">
-      <a class="marca" href="/nebula/" aria-label="Ir a la portada de Nebula">
+      <a class="marca" href="/" aria-label="Ir a la portada de Nebula">
         <svg width="132" height="38" viewBox="0 0 132 38" aria-hidden="true">
           <g fill="none" stroke="#D85A30" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="31" cy="7.5" r="4.5" stroke-width="1" />
@@ -77,7 +77,7 @@ const datosEstructurados = {
           <text x="0" y="32" font-family="Zilla Slab" font-weight="600" font-size="28" letter-spacing="1.1" fill="#1B1836">Nebula</text>
         </svg>
       </a>
-      <a class="volver" href="/nebula/"><span aria-hidden="true">←</span> Volver a Nebula</a>
+      <a class="volver" href="/"><span aria-hidden="true">←</span> Volver a Nebula</a>
     </header>
 
     <main>
@@ -88,13 +88,13 @@ const datosEstructurados = {
           <p class="entradilla">Tras casi una década escribiendo sobre tecnología y ciencia, he creado Nebula para unir experiencia editorial, análisis de producto y ciencia de datos.</p>
           <div class="perfil-acciones">
             <a class="boton boton-principal" href="mailto:robertocanterogomez@gmail.com?subject=Oportunidad%20profesional%20para%20Roberto%20Cantero">Escríbeme <span aria-hidden="true">→</span></a>
-            <a class="boton boton-secundario" href="/nebula/roberto-cantero-cv.pdf" download>Descargar CV</a>
+            <a class="boton boton-secundario" href="/roberto-cantero-cv.pdf" download>Descargar CV</a>
           </div>
           <p class="disponibilidad"><span aria-hidden="true"></span> Vitoria-Gasteiz, alrededores y remoto</p>
         </div>
 
         <figure class="perfil-foto">
-          <img src="/nebula/imagenes/roberto-cantero.jpg" alt="Retrato de Roberto Cantero en una calle" />
+          <img src="/imagenes/roberto-cantero.jpg" alt="Retrato de Roberto Cantero en una calle" />
         </figure>
       </section>
 
@@ -161,7 +161,7 @@ const datosEstructurados = {
 
         <div class="casos">
           {destacados.map((articulo, indice) => articulo && (
-            <a class="caso" href={`/nebula/articulos/${articulo.id}/`}>
+            <a class="caso" href={`/articulos/${articulo.id}/`}>
               <div class="caso-imagen">
                 {articulo.data.imagenPortada && <img src={articulo.data.imagenPortada} alt="" loading="lazy" />}
                 <span>0{indice + 1}</span>
@@ -204,7 +204,7 @@ const datosEstructurados = {
             <a class="contacto-principal" href="mailto:robertocanterogomez@gmail.com?subject=Oportunidad%20profesional%20para%20Roberto%20Cantero">robertocanterogomez@gmail.com <span aria-hidden="true">→</span></a>
             <a href="https://www.linkedin.com/in/robertocanterog/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
             <a href="https://robertocantero.carrd.co" target="_blank" rel="noreferrer">Portfolio <span aria-hidden="true">↗</span></a>
-            <a href="/nebula/roberto-cantero-cv.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
+            <a href="/roberto-cantero-cv.pdf" download>Descargar CV <span aria-hidden="true">↓</span></a>
           </div>
         </div>
       </section>
@@ -212,7 +212,7 @@ const datosEstructurados = {
 
     <footer class="pie-pagina contenedor">
       <p>© {new Date().getFullYear()} Nebula · Roberto Cantero</p>
-      <p>Periodismo, tecnología y datos · <a href="/nebula/privacidad/">Privacidad</a></p>
+      <p>Periodismo, tecnología y datos · <a href="/privacidad/">Privacidad</a></p>
     </footer>
     <CloudflareAnalytics />
   </body>

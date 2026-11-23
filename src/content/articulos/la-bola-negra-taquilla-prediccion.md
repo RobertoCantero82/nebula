@@ -3,7 +3,7 @@ titulo: "A 'La bola negra' le basta repetir su peor fin de semana para ser la pe
 descripcion: "Lleva siete semanas como número uno y acumula 38,5 millones de euros en los cines españoles. Los datos indican que todavía no ha tocado techo."
 tema: "CINE"
 fecha: 2026-11-10
-imagenPortada: "/nebula/imagenes/la_bola_negra_taquilla_portada.png"
+imagenPortada: "/imagenes/la_bola_negra_taquilla_portada.png"
 cifraDestacada: "40,1 M€"
 etiquetaCifra: "recaudación final estimada en España"
 textoContinuo: "A 'La bola negra' le basta repetir su peor fin de semana para ser la película más taquillera de 2026 en España"
@@ -48,7 +48,7 @@ La película comenzó con 4,9 millones durante su primer fin de semana. En el se
 
 La subida de la segunda semana importa. Es un gran indicador de que **la atención inicial no se agotó con el estreno**. El público siguió llegando después, algo compatible con el efecto de las recomendaciones, la conversación alrededor de la película y los premios que ya arrastraba.
 
-Nebula ya había estudiado esa otra carrera: [un modelo anterior le concedió muchas opciones de entrar en la preselección de los Oscar](/nebula/articulos/articulo_la_bola_negra_oscar/). Esta vez la pregunta no está en Hollywood, sino en las salas españolas.
+Nebula ya había estudiado esa otra carrera: [un modelo anterior le concedió muchas opciones de entrar en la preselección de los Oscar](/articulos/articulo_la_bola_negra_oscar/). Esta vez la pregunta no está en Hollywood, sino en las salas españolas.
 
 ## Lo que suele quedar después de la séptima semana
 
@@ -134,7 +134,7 @@ Sin embargo, eso no significa que el éxito esté garantizado. Un estreno potent
 
 - [Histórico semanal de Cinerama](https://cinerama.es/taquilla/historico/) y [ficha de *La bola negra*](https://cinerama.es/peliculas/la-bola-negra/), con cifras atribuidas a Comscore Movies.
 - [Taquilla y espectadores del ICAA](https://www.cultura.gob.es/cultura/areas/cine/datos/taquilla-espectadores.html).
-- [Notebook ejecutado](/nebula/analisis/la-bola-negra-taquilla/prediccion_taquilla_la_bola_negra.ipynb) y [datos reutilizados](/nebula/analisis/la-bola-negra-taquilla/datos/historial_completo_peliculas_cinerama.csv).
+- [Notebook ejecutado](/analisis/la-bola-negra-taquilla/prediccion_taquilla_la_bola_negra.ipynb) y [datos reutilizados](/analisis/la-bola-negra-taquilla/datos/historial_completo_peliculas_cinerama.csv).
 
 <style>
 .grafico-bola{margin:2.5rem 0}.grafico-bola svg{display:block;width:100%;height:auto;font-family:var(--font-body);overflow:visible}.grafico-bola .grafico-titulo{fill:currentColor;font-family:var(--font-heading);font-size:20px;font-weight:600}.grafico-bola .grafico-subtitulo{fill:#586174;font-size:13px}.grafico-bola .grafico-rejilla line{stroke:#dfe4f0;stroke-width:1}.grafico-bola .grafico-eje,.grafico-bola .grafico-nota{fill:#697386;font-size:12px}.grafico-bola .grafico-linea{fill:none;stroke:#446ddf;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.grafico-bola .grafico-puntos circle{fill:#446ddf;stroke:#fff;stroke-width:2}.grafico-bola .grafico-anotacion{fill:currentColor;font-size:14px;font-weight:700}.grafico-bola .grafico-etiqueta{fill:#454d5d;font-size:13px}.grafico-bola .barra-actual{fill:#b8bec9}.grafico-bola .barra-modelo{fill:#446ddf}.grafico-bola .intervalo{stroke:#222;stroke-width:2}.bola-apuesta{margin:2.2rem 0;padding:1.35rem;border:1px solid #446ddf;border-radius:14px;background:rgba(68,109,223,.05)}.bola-apuesta h3{margin-top:0}.bola-apuesta__opciones{display:flex;flex-wrap:wrap;gap:.65rem}.bola-apuesta button{border:1px solid #446ddf;border-radius:999px;padding:.65rem 1rem;background:#fff;color:#23439b;cursor:pointer;font:inherit}.bola-apuesta button:hover,.bola-apuesta button:focus-visible,.bola-apuesta button[aria-pressed="true"]{background:#446ddf;color:#fff}.bola-apuesta__resultado{min-height:1.5em;margin-bottom:0;font-weight:600}@media(max-width:620px){.grafico-bola{margin:2rem 0}.bola-apuesta__opciones{display:grid}.bola-apuesta button{width:100%}}

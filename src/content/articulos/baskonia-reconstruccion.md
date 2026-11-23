@@ -3,7 +3,7 @@ titulo: "Las reconstrucciones en el Baskonia se suceden cada verano, pero ¿son 
 descripcion: "Diez temporadas de Euroliga permiten medir cuánto talento pierde Baskonia cada verano y si esa rotación explica realmente sus resultados."
 tema: "BALONCESTO"
 fecha: 2026-09-18
-imagenPortada: "/nebula/imagenes/baskonia_portada.png"
+imagenPortada: "/imagenes/baskonia_portada.png"
 cifraDestacada: "51,3%"
 etiquetaCifra: "porcentaje medio de la anotación anterior que Baskonia pierde cada verano"
 textoContinuo: "Baskonia pierde cada verano el 51,3 % de la anotación de la plantilla anterior, pero los datos no muestran que esa reconstrucción explique sus resultados en Euroliga"
@@ -14,7 +14,7 @@ El Baskonia lleva años conviviendo con una certeza incómoda: cuando encuentra 
 
 He analizado las diez temporadas disputadas desde el cambio de formato de 2016-17 hasta 2025-26. El resultado confirma la magnitud de la rotación, pero también desmonta su explicación más evidente. **Baskonia pierde de media el 51,3% de los puntos producidos por la plantilla anterior cada verano**, aunque esa fuga no presenta una relación clara con el porcentaje de victorias de la temporada siguiente.
 
-Es el mismo tipo de contraste que aparece en [el análisis de los mitos sobre las secuelas de *Matrix*](/nebula/articulos/matrix-secuelas/): los datos pueden confirmar la sensación inicial y, al mismo tiempo, corregir la explicación que parecía más obvia.
+Es el mismo tipo de contraste que aparece en [el análisis de los mitos sobre las secuelas de *Matrix*](/articulos/matrix-secuelas/): los datos pueden confirmar la sensación inicial y, al mismo tiempo, corregir la explicación que parecía más obvia.
 
 ## 1. La reconstrucción permanente sí existe
 
@@ -120,4 +120,4 @@ Los datos confirman la intuición del aficionado y corrigen su diagnóstico. Bas
 
 La capacidad histórica del club para detectar y desarrollar talento ha compensado muchas salidas. El límite aparece cuando esa reinvención produce equipos capaces de anotar, pero no de contener al rival. **El reto** no consiste únicamente en conservar estrellas. **Consiste en reconstruir sin perder el equilibrio**.
 
-**Puedes reproducir las comparaciones y correlaciones del artículo** en el [notebook de Jupyter del análisis del Baskonia](/nebula/analisis/analisis-baskonia-euroliga.ipynb).
+**Puedes reproducir las comparaciones y correlaciones del artículo** en el [notebook de Jupyter del análisis del Baskonia](/analisis/analisis-baskonia-euroliga.ipynb).

@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/conexiones_imposibles_02.png"
+imagenPortada: "/imagenes/conexiones_imposibles_02.png"
 titulo: "'Big' y 'Men in Black' están conectadas: ¿a través de los datos o hay algo más?"
 descripcion: "15.741 espectadores, un director, dos hermanos y una canción que llevaba nueve años esperando."
 tema: "CINE"
@@ -114,7 +114,7 @@ Los datos no han fracasado. Han encontrado 15.741 espectadores, 14 etiquetas com
 
 EDA con [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/), con valoraciones hasta el 12 de octubre de 2023. Créditos y canciones de [AFI Catalog](https://catalog.afi.com/Film/58497-BIG), [Amblin](https://amblin.com/movie/men-in-black/) y [Sony Pictures Museum](https://www.sonypicturesmuseum.com/collection/film/692/men-in-black.html). La presencia de *Forget Me Nots* en la escena de la cama elástica también aparece recogida en la [entrevista de Interlochen Public Radio a Patrice Rushen](https://www.interlochenpublicradio.org/2022-09-22/patrice-rushen-takes-the-stage-with-interlochen-students). MovieLens no representa a todo el público y sus etiquetas pueden contener omisiones.
 
-[Notebook ejecutado](/nebula/analisis/conexiones_imposibles_02/conexiones_imposibles_02_eda.ipynb) | [Resumen de películas](/nebula/analisis/conexiones_imposibles_02/resumen_movielens.csv) | [Valoraciones compartidas](/nebula/analisis/conexiones_imposibles_02/valoraciones_compartidas.csv) | [Conexiones comprobadas](/nebula/analisis/conexiones_imposibles_02/conexiones_comprobadas.csv) | [Metodología](/nebula/analisis/conexiones_imposibles_02/README.md).
+[Notebook ejecutado](/analisis/conexiones_imposibles_02/conexiones_imposibles_02_eda.ipynb) | [Resumen de películas](/analisis/conexiones_imposibles_02/resumen_movielens.csv) | [Valoraciones compartidas](/analisis/conexiones_imposibles_02/valoraciones_compartidas.csv) | [Conexiones comprobadas](/analisis/conexiones_imposibles_02/conexiones_comprobadas.csv) | [Metodología](/analisis/conexiones_imposibles_02/README.md).
 
 <script>
   document.querySelectorAll(".conexion-apuesta").forEach((apuesta) => {

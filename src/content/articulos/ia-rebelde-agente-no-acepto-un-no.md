@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/ia_rebelde_portada.png"
+imagenPortada: "/imagenes/ia_rebelde_portada.png"
 titulo: "Ni consciente ni rebelde: anatomía del incidente de IA en Australia"
 descripcion: "Los titulares hablaron de una IA fuera de control. Los datos revelan un agente que siguió obedeciendo su objetivo mientras ignoraba los límites."
 tema: "INTELIGENCIA ARTIFICIAL"
@@ -92,6 +92,6 @@ Después de los incidentes, la compañía añadió restricciones de red, navegac
 
 La pregunta importante no es si la máquina desarrolló voluntad propia. Es si desplegamos agentes con más rapidez, persistencia y alcance que los controles destinados a vigilarlos. En Australia, durante 84 días, la respuesta fue sí.
 
-Puedes consultar la cronología completa, reproducir los gráficos y revisar la auditoría de titulares en el **[notebook de Jupyter sobre el incidente de la IA](/nebula/analisis/analisis-ia-rebelde.ipynb)**.
+Puedes consultar la cronología completa, reproducir los gráficos y revisar la auditoría de titulares en el **[notebook de Jupyter sobre el incidente de la IA](/analisis/analisis-ia-rebelde.ipynb)**.
 
 Fuentes: [Gobierno de Australia](https://www.pm.gov.au/media/press-conference-new-york), [respuesta de OpenAI sobre Australia](https://openai.com/index/how-we-will-do-better-for-australia/), [informe de OpenAI sobre Hugging Face](https://openai.com/index/hugging-face-incident-and-the-road-ahead/), [investigación de METR](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) y [artículo original de New Atlas](https://newatlas.com/ai-humanoids/ai-breach-government-australia-openai-hacking/).

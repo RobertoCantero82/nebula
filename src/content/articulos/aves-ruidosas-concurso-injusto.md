@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/aves_ruidosas_portada.png"
+imagenPortada: "/imagenes/aves_ruidosas_portada.png"
 titulo: "El concurso para encontrar el ave más ruidosa tenía una regla injusta"
 descripcion: "Tres aves parecían disputarse el récord mundial. Al darles las mismas oportunidades, la campeona cambió."
 tema: "CIENCIA"
@@ -277,6 +277,6 @@ Todavía queda otra cautela: 30 fragmentos equivalen a solo **0,6 segundos** acu
 
 Los récords parecen cifras puras, pero siempre tienen reglas. A veces, el dato más sorprendente no es quién ganó. Es descubrir que la competición ya estaba inclinada antes de empezar.
 
-Puedes revisar las 123 especies, reproducir los gráficos y seguir cada decisión en el [notebook de Jupyter de las aves ruidosas](/nebula/analisis/aves-ruidosas/analisis_aves_ruidosas.ipynb). El [archivo suplementario utilizado](/nebula/analisis/aves-ruidosas/datos/DataS1.xlsx) también está disponible.
+Puedes revisar las 123 especies, reproducir los gráficos y seguir cada decisión en el [notebook de Jupyter de las aves ruidosas](/analisis/aves-ruidosas/analisis_aves_ruidosas.ipynb). El [archivo suplementario utilizado](/analisis/aves-ruidosas/datos/DataS1.xlsx) también está disponible.
 
 Fuentes: [estudio en *Evolution*](https://doi.org/10.1093/evolut/qpag153), [comunicado de UMass Amherst](https://www.umass.edu/news/article/umass-amherst-biologists-may-have-discovered-two-worlds-loudest-birds) y [artículo de partida en SciTechDaily](https://scitechdaily.com/biologists-may-have-discovered-two-of-the-worlds-loudest-birds/).

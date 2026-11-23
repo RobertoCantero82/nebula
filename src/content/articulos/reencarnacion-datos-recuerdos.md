@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/reencarnacion_portada.png"
+imagenPortada: "/imagenes/reencarnacion_portada.png"
 titulo: "¿Qué revelan realmente 1.678 supuestos casos de reencarnación?"
 descripcion: "Estos relatos sitúan los nuevos nacimientos más cerca de las muertes inesperadas. Los datos revelan el verdadero alcance del patrón."
 tema: "CIENCIA"
@@ -121,7 +121,7 @@ De los 1.678 casos con una persona identificada, 1.319 incluyen el intervalo. Cu
 
 Son 603 casos identificados que no entran por faltar al menos uno de esos datos: casi el 36%. Eso no borra el resultado. Significa que describe a quienes sí tienen información suficiente. Si los expedientes incompletos fueran diferentes, la imagen del conjunto podría cambiar. Este análisis no permite saber cuánto.
 
-El problema no es exclusivo de estos relatos. Cuando [un reloj epigenético intenta calcular la edad del cuerpo](/nebula/articulos/edad-adn-reloj-epigenetico/), el resultado también depende de qué se mide y de los datos usados para compararlo. Algo parecido ocurre con [el registro fósil de los antiguos gaviales](/nebula/articulos/cocodrilo-esfinge-maquina-tiempo/): los periodos más estudiados pueden parecer más diversos simplemente porque conservamos más información sobre ellos. En los tres casos, una cifra solo se entiende bien cuando sabemos qué datos la sostienen y cuáles han quedado fuera.
+El problema no es exclusivo de estos relatos. Cuando [un reloj epigenético intenta calcular la edad del cuerpo](/articulos/edad-adn-reloj-epigenetico/), el resultado también depende de qué se mide y de los datos usados para compararlo. Algo parecido ocurre con [el registro fósil de los antiguos gaviales](/articulos/cocodrilo-esfinge-maquina-tiempo/): los periodos más estudiados pueden parecer más diversos simplemente porque conservamos más información sobre ellos. En los tres casos, una cifra solo se entiende bien cuando sabemos qué datos la sostienen y cuáles han quedado fuera.
 
 Tampoco aparecen países ni fechas de recogida en el archivo público. Por tanto, **no puedo comprobar si el patrón cambia entre lugares o épocas, ni separar su posible influencia**. Reunir muchos relatos no elimina automáticamente las diferencias en cómo se comunicaron, investigaron y registraron.
 
@@ -148,8 +148,8 @@ Los datos permiten estudiar cómo se relacionan las características registradas
 
 - [Estudio original: Sadeghi, Pehlivanova y Cozzolino](https://doi.org/10.1037/cns0000493).
 - [Datos, diccionario y código de los autores, versión 1](https://zenodo.org/records/22677480).
-- [Notebook ejecutado de Nebula](/nebula/analisis/reencarnacion/reencarnacion_eda.ipynb).
-- [Datos originales](/nebula/analisis/reencarnacion/CORT_IT_open_data.csv), [diccionario](/nebula/analisis/reencarnacion/CORT_IT_codebook.txt) e [instrucciones para reproducir](/nebula/analisis/reencarnacion/README.md).
+- [Notebook ejecutado de Nebula](/analisis/reencarnacion/reencarnacion_eda.ipynb).
+- [Datos originales](/analisis/reencarnacion/CORT_IT_open_data.csv), [diccionario](/analisis/reencarnacion/CORT_IT_codebook.txt) e [instrucciones para reproducir](/analisis/reencarnacion/README.md).
 
 <style>
 .apuesta-solapamiento {

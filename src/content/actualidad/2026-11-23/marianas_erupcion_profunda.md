@@ -20,7 +20,7 @@ pantallas:
   - etiqueta: "02 | La prueba"
     titulo: "Estas rocas estaban a más de seis kilómetros bajo el agua."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/marianas_depositos_volcanicos.webp"
+    imagen: "/imagenes/actualidad/marianas_depositos_volcanicos.webp"
     altImagen: "Figura 8 del estudio: fotografías submarinas de depósitos a 6.148 y 6.334 metros, muestras de rocas recuperadas y una imagen microscópica de sus fragmentos."
     pieImagen: "Arriba: depósitos a 6.148 m (A) y 6.334 m (B). Debajo: muestras y detalle microscópico. Figura 8, Stern y colaboradores (2026), Frontiers in Earth Science, DOI: 10.3389/feart.2026.1929806. CC BY. Figura completa, sin modificaciones."
     texto:

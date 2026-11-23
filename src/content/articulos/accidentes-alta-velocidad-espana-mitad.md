@@ -3,14 +3,14 @@ titulo: "¿Más de la mitad de las muertes en la alta velocidad mundial ocurrier
 descripcion: "La misma cuenta sitúa a España entre el 34,8 % y el 72,8 % según qué entendamos por accidente de alta velocidad."
 tema: "SOCIEDAD"
 fecha: 2026-11-05
-imagenPortada: "/nebula/imagenes/accidentes_alta_velocidad_portada.png"
+imagenPortada: "/imagenes/accidentes_alta_velocidad_portada.png"
 cifraDestacada: "47,6 %"
 etiquetaCifra: "con el criterio más amplio"
 textoContinuo: "El análisis de 15 accidentes desmiente la cifra más repetida: España no concentra más de la mitad de las muertes"
 metodologia: "EDA documental de 15 accidentes mortales con trenes de alta velocidad implicados, publicados por Verificat y contrastados con informes oficiales y fuentes enlazadas. Comparo cuatro criterios de inclusión y pruebo por separado el efecto de Angrois. No existe un registro mundial único y los datos de Adamuz y Urda siguen sujetos a revisión."
 ---
 
-**[Una división puede estar bien hecha y dar una respuesta engañosa.](/nebula/articulos/algoritmos-prision-michigan/)** En los últimos días, varias voces han asegurado que España concentra más de la mitad, incluso siete de cada diez, de las muertes ocurridas en accidentes de alta velocidad en todo el mundo. La afirmación parece fácil de comprobar: contamos, sumamos y dividimos. Pero antes hay que responder algo bastante menos sencillo. ¿Qué es exactamente un accidente de alta velocidad?
+**[Una división puede estar bien hecha y dar una respuesta engañosa.](/articulos/algoritmos-prision-michigan/)** En los últimos días, varias voces han asegurado que España concentra más de la mitad, incluso siete de cada diez, de las muertes ocurridas en accidentes de alta velocidad en todo el mundo. La afirmación parece fácil de comprobar: contamos, sumamos y dividimos. Pero antes hay que responder algo bastante menos sencillo. ¿Qué es exactamente un accidente de alta velocidad?
 
 La pregunta merece cuidado. Detrás de cada fila de este análisis hay personas fallecidas, familias y accidentes con circunstancias distintas. Esto no es una clasificación de países ni permite repartir culpas. Es una comprobación de una cifra que ha entrado en el debate público.
 
@@ -62,7 +62,7 @@ Ninguna calculadora está fallando. **Ha cambiado el denominador**, la cantidad 
 
 El caso gallego demuestra la fragilidad del titular. Si retiro únicamente Angrois del recuento amplio, España pasa de 195 a 115 fallecidos. El total mundial baja de 410 a 330 y el porcentaje español cae al **34,8 %**.
 
-No es una razón para borrar aquel accidente. Es una [prueba de sensibilidad](/nebula/articulos/colegios-oscuridad-horario-verano/): permite medir cuánto depende la conclusión de una sola decisión discutible. Si una frase cambia de verdadera a falsa al mover una fila, necesita explicar esa fila.
+No es una razón para borrar aquel accidente. Es una [prueba de sensibilidad](/articulos/colegios-oscuridad-horario-verano/): permite medir cuánto depende la conclusión de una sola decisión discutible. Si una frase cambia de verdadera a falsa al mover una fila, necesita explicar esa fila.
 
 También hay otro problema. «Víctimas» puede significar fallecidos y heridos. Las declaraciones y los cálculos publicados comparan muertes. No existe una cifra mundial homogénea de heridos para los mismos quince casos, así que llamar víctimas a ese resultado ensancha lo que realmente sabemos.
 
@@ -90,7 +90,7 @@ La cifra no solo cuenta accidentes. También cuenta dónde decidimos colocar la 
 - [Definición europea de servicios de alta velocidad](https://www.era.europa.eu/era-railway-terminology-collection/highspeedpassengerservices/term/sera_eu_transport).
 - [Verificat: origen y comprobación de la afirmación](https://www.verificat.cat/es/dato-70-por-ciento-muertes-alta-velocidad-mundo-espana/).
 - [Cronología contrastada de accidentes e informes](https://trainsnews.com/rail-accidents).
-- [Notebook ejecutado](/nebula/analisis/accidentes-alta-velocidad/analisis_accidentes_alta_velocidad.ipynb), [datos utilizados](/nebula/analisis/accidentes-alta-velocidad/accidentes_alta_velocidad.csv), [resultados por criterio](/nebula/analisis/accidentes-alta-velocidad/resumen_escenarios.csv) y [guía de reproducción](/nebula/analisis/accidentes-alta-velocidad/README.md).
+- [Notebook ejecutado](/analisis/accidentes-alta-velocidad/analisis_accidentes_alta_velocidad.ipynb), [datos utilizados](/analisis/accidentes-alta-velocidad/accidentes_alta_velocidad.csv), [resultados por criterio](/analisis/accidentes-alta-velocidad/resumen_escenarios.csv) y [guía de reproducción](/analisis/accidentes-alta-velocidad/README.md).
 
 <style>
 .criterios-av{margin:2rem 0;padding:clamp(1rem,4vw,1.6rem);border:1px solid #c7d3f4;border-radius:16px;background:#f5f7fd;color:#24304a}.criterios-av h3{margin-top:0}.criterios-av__botones{display:flex;gap:.6rem;flex-wrap:wrap}.criterios-av__botones button{font:inherit;padding:.62rem .9rem;border:1px solid #446ddf;border-radius:999px;background:#fff;color:#274ba9;cursor:pointer}.criterios-av__botones button[aria-pressed="true"]{background:#446ddf;color:#fff}.criterios-av__botones button:focus-visible{outline:3px solid #c58a2b;outline-offset:3px}.criterios-av__resultado{display:grid;grid-template-columns:auto 1fr;gap:.25rem .8rem;align-items:baseline;margin:1.5rem 0 .9rem}.criterios-av__resultado strong{font-size:clamp(2rem,8vw,3.5rem);color:#3157bd}.criterios-av__resultado span{line-height:1.35}.criterios-av__resultado i{grid-column:1/-1;display:block;overflow:hidden;height:14px;border-radius:10px;background:#dfe5f5}.criterios-av__resultado b{display:block;height:100%;border-radius:inherit;background:#446ddf;transition:width .35s ease}.criterios-av p{margin:.8rem 0}.criterios-av small{display:block;line-height:1.45;color:#596477}@media(prefers-reduced-motion:reduce){.criterios-av__resultado b{transition:none}}

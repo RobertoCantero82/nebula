@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La arquitectura"
     titulo: "Un procesador grande hoy; dos procesadores enlazados mañana."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/nighthawk-r3-ilustracion.png"
+    imagen: "/imagenes/actualidad/nighthawk-r3-ilustracion.png"
     altImagen: "Ilustración editorial de tres módulos de computación cuántica conectados dentro de un sistema criogénico"
     pieImagen: "Representación editorial de una arquitectura cuántica modular. Imagen generada para Nebula; no reproduce el aspecto real del procesador."
     texto:

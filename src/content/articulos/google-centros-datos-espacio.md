@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/google_datos_portada.png"
+imagenPortada: "/imagenes/google_datos_portada.png"
 titulo: "Google ya ha puesto su IA en órbita. Ahora viene la parte casi imposible con SpaceX"
 descripcion: "Project Suncatcher ya ha enviado una TPU a órbita, pero convertir el experimento en un centro de datos exige una cadencia de Starship difícil de imaginar."
 tema: "TECNOLOGÍA"
@@ -38,7 +38,7 @@ La utilización real importa mucho. Con 150 toneladas por misión serían necesa
 
 ## De cinco vuelos al año a más de dos al día
 
-El contraste con la historia reciente es enorme. Starship ha realizado 14 vuelos integrados desde 2023. Su récord anual es de cinco misiones y solo [alcanzó la órbita en septiembre de 2026](/nebula/articulos/starship-de-prototipo-a-orbita/).
+El contraste con la historia reciente es enorme. Starship ha realizado 14 vuelos integrados desde 2023. Su récord anual es de cinco misiones y solo [alcanzó la órbita en septiembre de 2026](/articulos/starship-de-prototipo-a-orbita/).
 
 Una media de 180 lanzamientos anuales tampoco explica toda la dificultad. Si la década comienza con cinco vuelos y la actividad crece de forma constante, la cadencia tendría que aumentar alrededor de un **75% cada año**. La trayectoria acabaría con unos **775 lanzamientos en 2035**, algo más de dos diarios.
 
@@ -110,6 +110,6 @@ Antes de 2036 probablemente veremos pequeños grupos orbitales capaces de ejecut
 
 La predicción cambiará si Starship supera tres pruebas: reutilización rápida, más de cien vuelos anuales y un coste verificable próximo a 200 dólares por kilogramo. Hasta entonces, **Suncatcher es un experimento serio construido sobre una infraestructura que todavía no existe a la escala necesaria**.
 
-Puedes reproducir los escenarios, modificar la carga útil y revisar todas las hipótesis en el [notebook de Jupyter del análisis de los centros de datos orbitales](/nebula/analisis/analisis-centros-datos-orbitales.ipynb).
+Puedes reproducir los escenarios, modificar la carga útil y revisar todas las hipótesis en el [notebook de Jupyter del análisis de los centros de datos orbitales](/analisis/analisis-centros-datos-orbitales.ipynb).
 
 Fuentes: [Google Research](https://research.google/blog/exploring-a-space-based-scalable-ai-infrastructure-system-design/), [actualización de Project Suncatcher](https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/) y [TechCrunch](https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/).

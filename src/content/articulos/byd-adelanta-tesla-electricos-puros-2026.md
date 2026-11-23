@@ -3,7 +3,7 @@ titulo: "Tesla ganó septiembre. BYD puede quedarse con todo el año"
 descripcion: "BYD llega al último trimestre con 746 eléctricos de ventaja. Analizamos 6,8 millones de registros para calcular si Tesla todavía puede remontar."
 tema: "TECNOLOGÍA"
 fecha: 2026-10-15T09:00:00+02:00
-imagenPortada: "/nebula/imagenes/byd_tesla_electricos_portada.png"
+imagenPortada: "/imagenes/byd_tesla_electricos_portada.png"
 cifraDestacada: ">99%"
 etiquetaCifra: "probabilidad estimada de que BYD termine 2026 por delante"
 textoContinuo: "BYD tiene más de un 99 % de probabilidad estimada de terminar 2026 por delante de Tesla"
@@ -93,5 +93,5 @@ Una probabilidad alta no convierte diciembre en un trámite. El modelo no conoce
 
 La conclusión razonable es más estrecha: con la ventaja ya acumulada y un último trimestre parecido al anterior, **BYD debería cerrar 2026 como la marca con más turismos eléctricos puros matriculados en España**. Tesla puede volver a ganar un mes. Para ganar el año necesitaría algo bastante mayor que uno de sus acelerones habituales.
 
-Puedes revisar cada paso en el [notebook ejecutado](/nebula/analisis/byd-tesla-electricos/analisis_byd_tesla_electricos.ipynb), descargar la [serie mensual](/nebula/analisis/byd-tesla-electricos/matriculaciones_mensuales.csv) y consultar el [código de extracción](/nebula/analisis/byd-tesla-electricos/preparar_datos.py).
+Puedes revisar cada paso en el [notebook ejecutado](/analisis/byd-tesla-electricos/analisis_byd_tesla_electricos.ipynb), descargar la [serie mensual](/analisis/byd-tesla-electricos/matriculaciones_mensuales.csv) y consultar el [código de extracción](/analisis/byd-tesla-electricos/preparar_datos.py).
 

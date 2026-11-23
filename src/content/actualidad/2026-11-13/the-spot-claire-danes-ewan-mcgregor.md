@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La pareja"
     titulo: "La pregunta no es solo quién lo hizo. También es cuánto puede soportar una relación cuando aparece la culpa."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/the-spot-danes-mcgregor.webp"
+    imagen: "/imagenes/actualidad/the-spot-danes-mcgregor.webp"
     altImagen: "Ewan McGregor y Claire Danes en una escena de la serie 'The Spot'"
     pieImagen: "Ewan McGregor y Claire Danes en 'The Spot'. Imagen: Hulu."
     texto:

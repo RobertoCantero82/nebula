@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/algoritmos_prision_portada.png"
+imagenPortada: "/imagenes/algoritmos_prision_portada.png"
 titulo: "Michigan promete predecir mejor la violencia en prisión. El 30 % que anuncia es imposible de comprobar"
 descripcion: "El nuevo sistema decidirá niveles de seguridad sin que se conozcan su métrica ni el reparto de sus errores."
 tema: "INTELIGENCIA ARTIFICIAL"
@@ -14,7 +14,7 @@ metodologia: "EDA documental del anuncio y los documentos públicos de Michigan,
 
 La noticia circuló con una idea todavía más rotunda: **una inteligencia artificial iba a predecir qué presos cometerían futuros delitos**. No es exactamente eso. El [anuncio oficial de Michigan](https://www.michigan.gov/corrections/about/newsroom/press-releases/2026/10/29/new-prisoner-classification-system-announced-by-michigan-department-of-corrections) habla de riesgo de violencia dentro de prisión y de asignar uno de sus niveles de seguridad.
 
-No es la primera vez que un titular convierte una herramienta concreta en algo casi autónomo. En Nebula ya ocurrió al investigar [la supuesta inteligencia artificial “rebelde” que atacó un sistema del Gobierno australiano](/nebula/articulos/ia-rebelde-agente-no-acepto-un-no/): la historia real era menos cinematográfica, pero explicaba mucho mejor dónde estaba el riesgo.
+No es la primera vez que un titular convierte una herramienta concreta en algo casi autónomo. En Nebula ya ocurrió al investigar [la supuesta inteligencia artificial “rebelde” que atacó un sistema del Gobierno australiano](/articulos/ia-rebelde-agente-no-acepto-un-no/): la historia real era menos cinematográfica, pero explicaba mucho mejor dónde estaba el riesgo.
 
 La diferencia importa. Esa clasificación determina cuánta vigilancia recibe una persona, cómo puede moverse y a qué actividades accede. El programa piloto empezará el próximo 1 de diciembre en varias cárceles masculinas y afectará a decisiones dentro de un sistema con unas 32.000 personas encarceladas.
 
@@ -90,7 +90,7 @@ Mueve el corte para comprobar cómo cambia la decisión:
 
 Subir el corte parece prudente porque reduce las falsas alarmas. En 8 quedan 297. Pero las reincidencias no señaladas ascienden a 1.962. No existe un botón que borre el error. Solo decidimos cuál toleramos más y quién asume sus consecuencias.
 
-Los promedios también pueden ocultar a quién perjudica más una predicción. En el análisis de Nebula sobre [el reloj de ADN que calcula la edad de una persona](/nebula/articulos/edad-adn-reloj-epigenetico/), el modelo sumaba años a los jóvenes y se los restaba a los mayores. Un error medio aceptable no garantizaba que fallase igual para todos.
+Los promedios también pueden ocultar a quién perjudica más una predicción. En el análisis de Nebula sobre [el reloj de ADN que calcula la edad de una persona](/articulos/edad-adn-reloj-epigenetico/), el modelo sumaba años a los jóvenes y se los restaba a los mayores. Un error medio aceptable no garantizaba que fallase igual para todos.
 
 ## El promedio esconde a quién falla
 
@@ -136,6 +136,6 @@ Un algoritmo puede ordenar miles de expedientes con rapidez y detectar cambios q
 
 **El titular decía que una inteligencia artificial predeciría futuros delitos**. La realidad comprobada es más estrecha: Michigan probará una herramienta para clasificar riesgo de violencia dentro de prisión. La promesa del 30 % podría acabar siendo cierta, pero hoy le **faltan las pruebas públicas que permitirían saberlo**.
 
-Puedes consultar los cálculos, cambiar todos los umbrales y revisar las limitaciones en el **[notebook del análisis](/nebula/analisis/algoritmos-prision/analisis_algoritmos_prision.ipynb)**. Los datos utilizados están disponibles en la **[copia pública de la base COMPAS](/nebula/analisis/algoritmos-prision/datos/compas-scores-two-years.csv)**.
+Puedes consultar los cálculos, cambiar todos los umbrales y revisar las limitaciones en el **[notebook del análisis](/analisis/algoritmos-prision/analisis_algoritmos_prision.ipynb)**. Los datos utilizados están disponibles en la **[copia pública de la base COMPAS](/analisis/algoritmos-prision/datos/compas-scores-two-years.csv)**.
 
 Fuentes: [Departamento de Prisiones de Michigan](https://www.michigan.gov/corrections/about/newsroom/press-releases/2026/10/29/new-prisoner-classification-system-announced-by-michigan-department-of-corrections), [Recidiviz](https://www.recidiviz.org/platform-modules/dynamic-classification), [metodología de ProPublica](https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm), [datos y código originales](https://github.com/propublica/compas-analysis) y [noticia de partida de Futurism](https://futurism.com/artificial-intelligence/prisons-ai-prediction-incarceration-algorithm).

@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La comparación"
     titulo: "En 2001 no había una fuente de rayos X. En marzo de 2026 apareció justo durante otro estallido."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/at-2016blu-rayos-x.png"
+    imagen: "/imagenes/actualidad/at-2016blu-rayos-x.png"
     altImagen: "Comparación de AT 2016blu en reposo y durante un estallido mediante imágenes de rayos X y luz visible"
     pieImagen: "AT 2016blu en reposo y durante el estallido de 2026. Rayos X: NASA/CXC/University of Virginia/M. Aghakhanloo et al.; luz visible: NSF/KAIT."
     texto:

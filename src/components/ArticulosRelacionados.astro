@@ -11,7 +11,7 @@ const { articulos = [] } = Astro.props;
 
     <div class="relacionados-grid">
       {articulos.map((articulo) => (
-        <a href={`/nebula/articulos/${articulo.id}/`}>
+        <a href={`/articulos/${articulo.id}/`}>
           <div class="relacionado-imagen">
             {articulo.data.imagenPortada
               ? <img src={articulo.data.imagenPortada} alt="" loading="lazy" />

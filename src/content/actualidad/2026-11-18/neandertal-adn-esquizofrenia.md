@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La pista"
     titulo: "La diferencia incluye cuatro letras de ADN que faltan."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/neandertal-adn-esquizofrenia.jpg"
+    imagen: "/imagenes/actualidad/neandertal-adn-esquizofrenia.jpg"
     altImagen: "Vista frontal de un cráneo de aspecto neandertal, iluminado en tonos cálidos sobre un fondo oscuro."
     pieImagen: "Imagen de contexto. El estudio compara ADN antiguo con datos genéticos y cerebrales de personas actuales."
     texto:

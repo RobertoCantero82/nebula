@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | Dentro del átomo"
     titulo: "Tiene algo parecido a una diminuta brújula."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/atomo_espin_misterio.png"
+    imagen: "/imagenes/actualidad/atomo_espin_misterio.png"
     altImagen: "Acuarela conceptual de una punta de microscopio sobre una pequeña esfera cobriza, acompañada de trazos azules que sugieren señales de radio."
     pieImagen: "Ilustración conceptual generada con IA para Nebula. No representa una imagen del experimento ni la estructura real del átomo."
     texto:

@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/apuestas_nba_beasley_portada.png"
+imagenPortada: "/imagenes/apuestas_nba_beasley_portada.png"
 titulo: "¿Se puede reconocer un partido amañado de la NBA mirando sus estadísticas?"
 descripcion: "Cuatro encuentros de Malik Beasley están bajo sospecha. Los números cuentan una historia mucho menos evidente de lo esperado."
 tema: "BALONCESTO"
@@ -71,7 +71,7 @@ El partido de tres puntos fue uno de los peores registros ofensivos de Beasley d
 
 Las estadísticas solo cuentan qué ocurrió en la pista. Para explicar por qué ocurrió hacen falta otras pruebas, como los mensajes entre los implicados, las cantidades apostadas y el recorrido del dinero. Por eso, **un resultado habitual puede formar parte de un delito y una actuación extraña puede ser simplemente una mala noche**.
 
-Una diferencia mínima puede cambiar por completo una historia en la NBA. [Un solo triple puede romper un récord de franquicia](/nebula/articulos/records-nba-predicciones-locas-2026-27/) y [una derrota puede convertir una temporada en la peor de un equipo](/nebula/articulos/records-nba-segunda-parte-2026-27/). En este caso, un rebote separaba una apuesta ganadora de una perdedora.
+Una diferencia mínima puede cambiar por completo una historia en la NBA. [Un solo triple puede romper un récord de franquicia](/articulos/records-nba-predicciones-locas-2026-27/) y [una derrota puede convertir una temporada en la peor de un equipo](/articulos/records-nba-segunda-parte-2026-27/). En este caso, un rebote separaba una apuesta ganadora de una perdedora.
 
 Las apuestas individuales viven precisamente de esa ambigüedad. No necesitan que un equipo pierda ni que una estrella falle veinte tiros. La diferencia puede caber en una posesión aparentemente banal para casi todos. A veces todo se decide en una acción que el público olvidaría al salir del pabellón: **un rebote cuando quedan 1,1 segundos**.
 
@@ -79,8 +79,8 @@ Las apuestas individuales viven precisamente de esa ambigüedad. No necesitan qu
 
 - [Acusación y comunicado de la Fiscalía del Distrito Este de Nueva York](https://www.justice.gov/usao-edny/pr/former-national-basketball-association-players-current-player-agent-and-three-other)
 - [Registro de partidos obtenido mediante la API oficial de estadísticas de la NBA](https://www.nba.com/stats)
-- [Notebook reproducible](/nebula/analisis/apuestas-nba/analisis_apuestas_nba.ipynb)
-- [Datos de los 79 partidos](/nebula/analisis/apuestas-nba/datos_malik_beasley_2023_24.csv)
+- [Notebook reproducible](/analisis/apuestas-nba/analisis_apuestas_nba.ipynb)
+- [Datos de los 79 partidos](/analisis/apuestas-nba/datos_malik_beasley_2023_24.csv)
 
 <script>
   window.addEventListener('DOMContentLoaded', () => {

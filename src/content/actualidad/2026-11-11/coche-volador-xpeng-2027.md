@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El despegue"
     titulo: "La fotografía completa la idea: un vehículo transporta al otro."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/xpeng-land-aircraft-carrier.webp"
+    imagen: "/imagenes/actualidad/xpeng-land-aircraft-carrier.webp"
     altImagen: "Vehículo terrestre Land Aircraft Carrier de XPeng junto a su módulo aéreo en vuelo"
     pieImagen: "El vehículo terrestre permanece en el suelo mientras el módulo de dos plazas vuela de forma independiente. Imagen: XPeng / ARIDGE."
     datos: ["Módulo guardado", "5 minutos", "Listo para volar"]

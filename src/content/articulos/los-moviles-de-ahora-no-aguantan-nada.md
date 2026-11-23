@@ -3,7 +3,7 @@ titulo: '"Los móviles de ahora no aguantan nada": ¿seguro que antes duraban m�
 descripcion: 'El Nokia 3310 entra en el debate. Comparo doce smartphones de una década y separo autonomía, desgaste y reparación.'
 tema: 'TECNOLOGÍA'
 fecha: 2026-10-20
-imagenPortada: '/nebula/imagenes/moviles_resistencia_portada.png'
+imagenPortada: '/imagenes/moviles_resistencia_portada.png'
 cifraDestacada: '+128 %'
 etiquetaCifra: 'autonomía del Galaxy S25 frente al S6 en la prueba Wi-Fi'
 textoContinuo: "¿Los móviles de antes duraban más? El Galaxy S25 ofrece un 128 % más de autonomía Wi-Fi que el S6, pero la resistencia no se decide con una sola cifra"
@@ -212,7 +212,7 @@ Decir que los móviles de ahora duran menos es quedarse a medias. En los modelos
 
 ## Fuentes y cuadernos
 
-Puedes revisar la [preparación de los datos](/nebula/analisis/moviles-resistencia/01_preparacion_moviles.ipynb), el [EDA ejecutado](/nebula/analisis/moviles-resistencia/02_eda_moviles.ipynb), la [tabla de autonomía](/nebula/analisis/moviles-resistencia/data/processed/autonomia.csv) y las [fuentes y limitaciones](/nebula/analisis/moviles-resistencia/README.md). La [carpeta completa comprimida](/nebula/analisis/moviles-resistencia/moviles_resistencia.zip) contiene los cuadernos y los datos necesarios para reproducirlos sin conexión a las fuentes originales, una vez instaladas las dependencias.
+Puedes revisar la [preparación de los datos](/analisis/moviles-resistencia/01_preparacion_moviles.ipynb), el [EDA ejecutado](/analisis/moviles-resistencia/02_eda_moviles.ipynb), la [tabla de autonomía](/analisis/moviles-resistencia/data/processed/autonomia.csv) y las [fuentes y limitaciones](/analisis/moviles-resistencia/README.md). La [carpeta completa comprimida](/analisis/moviles-resistencia/moviles_resistencia.zip) contiene los cuadernos y los datos necesarios para reproducirlos sin conexión a las fuentes originales, una vez instaladas las dependencias.
 
 <style>
   .moviles-apuesta,.moviles-grafico{margin:2rem 0;padding:1.4rem;border:1px solid #446ddf40;border-radius:14px;background:#446ddf06;min-width:0}

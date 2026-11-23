@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El contexto"
     titulo: "El estreno de Vulcan para Amazon acabó sin satélites en órbita."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/Vulcan%20Cert-2.jpg"
+    imagen: "/imagenes/actualidad/Vulcan%20Cert-2.jpg"
     altImagen: "Un cohete Vulcan despega entre llamas y humo junto a la torre de lanzamiento, en una fotografía de archivo de la misión Cert-2 de 2024"
     pieImagen: "Foto de archivo: lanzamiento de Vulcan Cert-2 en 2024. No corresponde al vuelo fallido. Imagen: United Launch Alliance."
     texto:

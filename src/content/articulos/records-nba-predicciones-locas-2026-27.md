@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/records_nba_portada.png"
+imagenPortada: "/imagenes/records_nba_portada.png"
 titulo: "Los 10 récords NBA que el machine learning ve más cerca de romperse esta temporada: Parte I"
 descripcion: "Un modelo ha rastreado 90 récords de franquicia y señala cuáles pueden caer esta temporada: algunos parecen imposibles, pero los datos dicen lo contrario."
 tema: "BALONCESTO"
@@ -219,6 +219,6 @@ Por eso el caso de Giddey es tan fuerte: la cifra histórica es reconocible, la 
 
 La NBA siempre vende estrellas, pero las franquicias también se cuentan por sus tablas históricas. A veces basta una línea nueva en esa tabla para saber que algo raro ha pasado.
 
-**Puedes revisar el ranking completo, reproducir el índice de locura y consultar las candidatas guardadas para una segunda parte** en el [notebook de Jupyter del análisis de récords NBA](/nebula/analisis/records-nba-predicciones-locas-ml.ipynb).
+**Puedes revisar el ranking completo, reproducir el índice de locura y consultar las candidatas guardadas para una segunda parte** en el [notebook de Jupyter del análisis de récords NBA](/analisis/records-nba-predicciones-locas-ml.ipynb).
 
 Fuentes: [Basketball-Reference](https://www.basketball-reference.com/), radar propio de récords de franquicia NBA 2026-27 y notebook de análisis enlazado en este artículo.

@@ -20,7 +20,7 @@ pantallas:
   - etiqueta: "02 | Antes de Bond"
     titulo: "Antes de compartir personaje, fueron padre e hijo."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/brosnan_pattinson_bond.png"
+    imagen: "/imagenes/actualidad/brosnan_pattinson_bond.png"
     altImagen: "Ilustración en acuarela de Pierce Brosnan entregando una pajarita a Robert Pattinson como símbolo del relevo de James Bond."
     pieImagen: "Ilustración generada con inteligencia artificial para Nebula. Representación simbólica del relevo, no una fotografía de un encuentro real."
     texto:

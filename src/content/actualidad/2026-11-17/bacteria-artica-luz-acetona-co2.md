@@ -18,7 +18,7 @@ pantallas:
   - etiqueta: "02 | El entorno"
     titulo: "El hallazgo viene del mar de Beaufort, al norte del Yukón, un territorio silvestre, montañoso y escasamente poblado en el noroeste de Canadá."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/bacteria-artica-luz-acetona.png"
+    imagen: "/imagenes/actualidad/bacteria-artica-luz-acetona.png"
     altImagen: "Recreación conceptual de una bacteria ampliada en agua azul del Ártico, con luz solar que entra entre el hielo"
     pieImagen: "Ilustración conceptual generada con IA para Nebula. Combina escalas microscópicas y ambientales; no es una micrografía ni reproduce la anatomía comprobada de *Porticoccus arcticus*."
     texto:

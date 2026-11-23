@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | El lugar"
     titulo: "La instalación ocuparía una enorme parcela junto a una central, carreteras y un paisaje con muy poca agua."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/spacex-campus-cochise.webp"
+    imagen: "/imagenes/actualidad/spacex-campus-cochise.webp"
     altImagen: "Recreación del campus de supercomputación proyectado en el condado de Cochise, Arizona"
     pieImagen: "Recreación del campus de supercomputación de Cochise. Imagen: SpaceX."
     texto:

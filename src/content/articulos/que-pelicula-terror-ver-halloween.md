@@ -3,7 +3,7 @@ titulo: "¿Qué película de terror deberías ver este Halloween?"
 descripcion: "Este recomendador contiene decenas de películas y tiene en cuenta tus gustos y el tiempo que tienes."
 tema: "CINE"
 fecha: 2026-10-26T00:00:00+01:00
-imagenPortada: "/nebula/imagenes/halloween_cine_portada.png"
+imagenPortada: "/imagenes/halloween_cine_portada.png"
 cifraDestacada: "120"
 etiquetaCifra: "películas para encontrar la que encaja en tu noche"
 textoContinuo: "120 películas para encontrar la que encaja con tus gustos en Halloween"
@@ -35,10 +35,10 @@ Para este Halloween he reunido **120 títulos**, desde *Nosferatu* hasta *Hábla
 <p id="halloween-estado" role="status" aria-live="polite" tabindex="-1">Preparando el catálogo…</p>
 <div id="halloween-resultados"></div>
 <button id="halloween-mas" type="button" hidden>Ver otras tres coincidencias</button>
-<noscript>Necesitas activar JavaScript para usar el recomendador. Puedes consultar el <a href="/nebula/analisis/halloween_cine/peliculas_analizadas.csv">catálogo en CSV</a> o el notebook al final del artículo.</noscript>
+<noscript>Necesitas activar JavaScript para usar el recomendador. Puedes consultar el <a href="/analisis/halloween_cine/peliculas_analizadas.csv">catálogo en CSV</a> o el notebook al final del artículo.</noscript>
 <details><summary>Cómo elijo las recomendaciones</summary><p>Aplico todos tus filtros sin cambiarlos. Entre las coincidencias, ordeno por media de estrellas sin redondear; los empates se resuelven por votos y después por identificador. Si eliges votos, ordeno primero por participación. Muestro tres resultados y puedes pedir más. Las familias, el tono y la intensidad son etiquetas editoriales. No utilizo un modelo predictivo.</p></details>
 </section>
-<script type="module" src="/nebula/analisis/halloween_cine/recomendador_halloween.js"></script>
+<script type="module" src="/analisis/halloween_cine/recomendador_halloween.js"></script>
 
 
 ## Tu reloj también tiene sus propios gustos
@@ -66,7 +66,7 @@ Las duraciones son referencias, no promesas sobre cualquier copia. Hay montajes 
 
 ## Los clásicos no ganan por decreto
 
-La nostalgia suele entrar en estas conversaciones, casi sin querer. Ya cuestioné algunas ideas recibidas en [el análisis de *Matrix* y sus secuelas](/nebula/articulos/matrix-secuelas/). Si te preguntas si se hacía mejor terror antes, la respuesta es difusa. En esta selección, la película situada en el centro de las notas anteriores al año 2000 obtiene **3,61 estrellas sobre cinco**. Entre las estrenadas desde entonces, la cifra es **3,62**. Prácticamente un empate.
+La nostalgia suele entrar en estas conversaciones, casi sin querer. Ya cuestioné algunas ideas recibidas en [el análisis de *Matrix* y sus secuelas](/articulos/matrix-secuelas/). Si te preguntas si se hacía mejor terror antes, la respuesta es difusa. En esta selección, la película situada en el centro de las notas anteriores al año 2000 obtiene **3,61 estrellas sobre cinco**. Entre las estrenadas desde entonces, la cifra es **3,62**. Prácticamente un empate.
 
 Ese valor central se llama mediana: ordeno las notas y miro la del medio, dando el mismo peso a cada película. Así evito que un título muy conocido decida por todos los demás. Son 70 películas en el primer grupo y 50 en el segundo.
 
@@ -86,7 +86,7 @@ El mecanismo no esconde inteligencia artificial ni una fórmula de afinidad. Pri
 
 ## Una invitación, no un veredicto
 
-La **selección** mezcla clásicos, cine español y asiático, monstruos y suspense. No representa todo el género: la he **construido para ofrecer variedad**. Como en [la búsqueda de la película más otoñal](/nebula/articulos/peliculas-mas-otonales/), definir qué busco condiciona lo que encuentro. Las comparaciones describen estas 120 películas, y cambiar la selección o la frontera entre épocas puede cambiar el resultado.
+La **selección** mezcla clásicos, cine español y asiático, monstruos y suspense. No representa todo el género: la he **construido para ofrecer variedad**. Como en [la búsqueda de la película más otoñal](/articulos/peliculas-mas-otonales/), definir qué busco condiciona lo que encuentro. Las comparaciones describen estas 120 películas, y cambiar la selección o la frontera entre épocas puede cambiar el resultado.
 
 Los datos ayudan a descartar una película demasiado larga y a encontrar otra que quizá no tenías presente. La última decisión sigue siendo bastante humana: qué te apetece ver, con quién y cuánta oscuridad quieres llevarte después a la cama.
 
@@ -103,11 +103,11 @@ Los datos ayudan a descartar una película demasiado larga y a encontrar otra qu
 
 ## Fuentes y análisis
 
-EDA con selección editorial de 120 películas. Consulta de metadatos: 26 de octubre de 2026. Valoraciones históricas: [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/), con votos hasta el 12 de octubre de 2023. Referencia: Harper y Konstan (2015), [The MovieLens Datasets: History and Context](https://doi.org/10.1145/2827872). Los datos transformados conservan la [licencia de MovieLens](/nebula/analisis/halloween_cine/LICENCIA_MOVIELENS.txt); GroupLens no respalda este proyecto.
+EDA con selección editorial de 120 películas. Consulta de metadatos: 26 de octubre de 2026. Valoraciones históricas: [MovieLens 32M, GroupLens](https://grouplens.org/datasets/movielens/32m/), con votos hasta el 12 de octubre de 2023. Referencia: Harper y Konstan (2015), [The MovieLens Datasets: History and Context](https://doi.org/10.1145/2827872). Los datos transformados conservan la [licencia de MovieLens](/analisis/halloween_cine/LICENCIA_MOVIELENS.txt); GroupLens no respalda este proyecto.
 
 Países y géneros: [Wikidata](https://www.wikidata.org/), datos estructurados CC0. Duraciones contrastadas y argumentos: fichas de Wikipedia enlazadas individualmente en los resultados y los datos. Sinopsis propias; familias, tono e intensidad de elaboración editorial. No utilizo la nota como medida del miedo ni el número de votos como popularidad mundial.
 
-[Notebook ejecutado](/nebula/analisis/halloween_cine/halloween_cine_eda.ipynb) · [Datos analizados](/nebula/analisis/halloween_cine/peliculas_analizadas.csv) · [Votos agregados](/nebula/analisis/halloween_cine/votos_histograma.csv) · [Descargar análisis reproducible completo](/nebula/analisis/halloween_cine/halloween_cine_reproducible.zip) · [Metodología y guía](/nebula/analisis/halloween_cine/README.md).
+[Notebook ejecutado](/analisis/halloween_cine/halloween_cine_eda.ipynb) · [Datos analizados](/analisis/halloween_cine/peliculas_analizadas.csv) · [Votos agregados](/analisis/halloween_cine/votos_histograma.csv) · [Descargar análisis reproducible completo](/analisis/halloween_cine/halloween_cine_reproducible.zip) · [Metodología y guía](/analisis/halloween_cine/README.md).
 
 <style>
 #halloween-recomendador {margin:2rem 0;padding:clamp(18px,4vw,30px);background:#f5f6fb;border:1px solid #dce2f3;border-radius:10px;color:#24243b}

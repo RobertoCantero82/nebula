@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/pelis_otono_portada.png"
+imagenPortada: "/imagenes/pelis_otono_portada.png"
 titulo: "¿Cuál es la película más otoñal? Un índice entre hojas, lluvia y melancolía"
 descripcion: "Un índice aplicado a 265 películas revela cuáles capturan mejor el paisaje, los rituales y la melancolía del otoño."
 tema: "CINE"
@@ -28,7 +28,7 @@ Las cinco dimensiones pesan lo mismo. La suma, cuyo máximo es 15, se transforma
 
 La primera codificación permitió revisar 264 películas, pero produjo demasiados perfiles idénticos. Por eso realicé una segunda evaluación individual de **112 candidatas**, incluidas las 46 situadas justo por debajo del corte provisional. Esa revisión recuperó cuatro títulos que también alcanzaban los 90 puntos y evitó que el primer filtro decidiera por sí solo la clasificación.
 
-Es un proceso parecido al que utilicé en [el análisis de las secuelas de *Matrix*](/nebula/articulos/matrix-secuelas/): empezar con una intuición reconocible, convertirla en variables y comprobar si los datos sostienen la historia que creíamos conocer.
+Es un proceso parecido al que utilicé en [el análisis de las secuelas de *Matrix*](/articulos/matrix-secuelas/): empezar con una intuición reconocible, convertirla en variables y comprobar si los datos sostienen la historia que creíamos conocer.
 
 ## Dos películas comparten el otoño perfecto
 
@@ -319,7 +319,7 @@ El índice tampoco dice si una película es buena ni si te va a gustar. Mide una
 
 ## El análisis, abierto
 
-**Todo el proceso está disponible** para quien quiera revisar las decisiones, reproducir los cálculos o proponer otros pesos. Puedes [descargar el notebook de Jupyter](/nebula/analisis/indice-otonalidad-peliculas.ipynb) y consultar también el [CSV con las evaluaciones refinadas](/nebula/analisis/evaluaciones-otonalidad-refinadas.csv).
+**Todo el proceso está disponible** para quien quiera revisar las decisiones, reproducir los cálculos o proponer otros pesos. Puedes [descargar el notebook de Jupyter](/analisis/indice-otonalidad-peliculas.ipynb) y consultar también el [CSV con las evaluaciones refinadas](/analisis/evaluaciones-otonalidad-refinadas.csv).
 
 El cuaderno documenta el cribado inicial, la revisión de posibles falsos negativos, la construcción del ranking y el análisis de sensibilidad. La codificación incluye inevitablemente juicio humano; hacerla visible permite discutirla en lugar de esconderla detrás de una cifra.
 

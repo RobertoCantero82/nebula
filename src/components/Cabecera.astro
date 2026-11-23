@@ -5,12 +5,12 @@ import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
 
 const { activa = '' } = Astro.props;
 const enlaces = [
-  { nombre: 'Actualidad', ruta: '/nebula/actualidad/', clave: 'actualidad' },
-  { nombre: 'Análisis', ruta: '/nebula/articulos/', clave: 'analisis' },
-  { nombre: 'Trama', ruta: '/nebula/trama/', clave: 'trama' },
-  { nombre: 'Laboratorio', ruta: '/nebula/laboratorio/', clave: 'laboratorio' },
-  { nombre: 'Colabora', ruta: '/nebula/colabora/', clave: 'colabora' },
-  { nombre: 'Sobre Nebula', ruta: '/nebula/sobre-nebula/', clave: 'sobre' },
+  { nombre: 'Actualidad', ruta: '/actualidad/', clave: 'actualidad' },
+  { nombre: 'Análisis', ruta: '/articulos/', clave: 'analisis' },
+  { nombre: 'Trama', ruta: '/trama/', clave: 'trama' },
+  { nombre: 'Laboratorio', ruta: '/laboratorio/', clave: 'laboratorio' },
+  { nombre: 'Colabora', ruta: '/colabora/', clave: 'colabora' },
+  { nombre: 'Sobre Nebula', ruta: '/sobre-nebula/', clave: 'sobre' },
 ];
 
 const limpiarTexto = (texto = '') => texto
@@ -32,7 +32,7 @@ const indiceBusqueda = [
     titulo: articulo.data.titulo,
     descripcion: articulo.data.descripcion,
     tema: articulo.data.serie === 'trama' ? 'CINE | TRAMA' : articulo.data.tema,
-    ruta: `/nebula/articulos/${articulo.id}/`,
+    ruta: `/articulos/${articulo.id}/`,
     texto: limpiarTexto(articulo.body),
   })),
   ...actualidad
@@ -42,7 +42,7 @@ const indiceBusqueda = [
       titulo: pieza.data.titulo,
       descripcion: pieza.data.descripcion,
       tema: `ACTUALIDAD | ${pieza.data.categoria.toUpperCase()}`,
-      ruta: `/nebula/actualidad/${pieza.id}/`,
+      ruta: `/actualidad/${pieza.id}/`,
       texto: limpiarTexto(pieza.body),
     })),
 ];

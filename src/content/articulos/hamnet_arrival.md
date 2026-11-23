@@ -1,5 +1,5 @@
 ---
-imagenPortada: "/nebula/imagenes/hamnet_arrival.png"
+imagenPortada: "/imagenes/hamnet_arrival.png"
 titulo: "'Hamnet' y 'Arrival' esconden una conexión que quizá has sentido sin darte cuenta"
 descripcion: "Shakespeare, una lingüista y nueve años de distancia. Dos películas aparentemente alejadas comparten un detalle que cambia la forma de acercarse a ellas."
 tema: "CINE"
@@ -96,7 +96,7 @@ Fichas de [Hamnet, Focus Features](https://www.focusfeatures.com/hamnet) y [Arri
 
 <details class="trama-revelacion"><summary>Fuentes de la conexión revelada (contienen el nombre de la pieza)</summary><p><a href="https://philipsheppard.com/project/arrival/">Philip Sheppard, intérprete participante en Arrival</a>; <a href="https://www.deutschegrammophon.com/en/artists/max-richter/news/max-richter-today-releases-his-original-soundtrack-for-hamnet-277522">Deutsche Grammophon, álbum oficial de Hamnet</a>; <a href="https://www.deutschegrammophon.com/en/catalogue/products/the-blue-notebooks-20-year-edition-max-richter-13650">Deutsche Grammophon, The Blue Notebooks</a>; <a href="https://www.deccaclassics.com/en/catalogue/products/arrival-soundtrack-johannsson-884">Decca, partitura de Jóhann Jóhannsson</a>; <a href="https://www.motionpictures.org/2025/12/hamnet-composer-max-richter-on-the-song-that-gave-director-chloe-zhao-an-epiphany-rewrote-the-films-ending/">entrevista de The Credits a Richter</a>. Esta última fuente sí describe el desenlace de Hamnet.</p></details>
 
-[Notebook reproducible (revela la conexión)](/nebula/analisis/hamnet_arrival/hamnet_arrival_eda.ipynb) · [Datos y fuentes (revelan la conexión)](/nebula/analisis/hamnet_arrival/hamnet_arrival_datos.csv)
+[Notebook reproducible (revela la conexión)](/analisis/hamnet_arrival/hamnet_arrival_eda.ipynb) · [Datos y fuentes (revelan la conexión)](/analisis/hamnet_arrival/hamnet_arrival_datos.csv)
 
 <style>
 .trama-fechas,.trama-revelacion{margin:2rem 0;padding:clamp(16px,4vw,26px);border:1px solid #c7d3f4;border-radius:14px;background:#faf9f5}.trama-fechas figcaption{font-weight:700}.trama-fechas>div{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0}.trama-fechas span{display:grid;gap:5px}.trama-fechas strong{font-size:clamp(24px,5vw,40px);color:#3153ad}.trama-fechas b{font-size:14px;color:#3153ad}.trama-fechas p{font-size:.85rem}.trama-aviso{padding:18px;border-left:4px solid #446ddf;background:#f1f4fc;margin:2rem 0}.trama-revelacion summary{cursor:pointer;font-weight:700;color:#294b9d;padding:6px;line-height:1.5}.trama-revelacion summary:focus-visible{outline:3px solid #446ddf;outline-offset:5px}.trama-video{aspect-ratio:16/9;margin-top:24px}.trama-video iframe{border:0;width:100%;height:100%}@media(max-width:420px){.trama-fechas>div{gap:8px}.trama-fechas b{font-size:12px}}

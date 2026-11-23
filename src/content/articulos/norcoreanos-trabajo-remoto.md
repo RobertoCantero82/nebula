@@ -3,7 +3,7 @@ titulo: "El negocio norcoreano que se escondía detrás de un empleo remoto"
 descripcion: "Nombres prestados, portátiles y empresas que no sabían a quién contrataban."
 tema: "TECNOLOGÍA"
 fecha: 2026-10-15T09:00:00+02:00
-imagenPortada: "/nebula/imagenes/norcoreanos_portada.png"
+imagenPortada: "/imagenes/norcoreanos_portada.png"
 cifraDestacada: "3"
 etiquetaCifra: "casos para entender el engaño"
 textoContinuo: "3 casos explican cómo Corea del Norte ocultaba trabajadores tras empleos remotos"
@@ -205,6 +205,6 @@ Conviene mirar con cuidado el dinero. Los tres millones de daños recogidos en e
 
 Estos expedientes no permiten sospechar de cualquier compañero remoto, pero sí muestran una **grieta** concreta: **saber dónde está un ordenador no equivale a saber quién lo utiliza**. A veces, el portátil llega a la dirección correcta. Sin embargo, la confianza se entrega a la persona equivocada.
 
-Puedes revisar y reproducir el [notebook de Jupyter](/nebula/analisis/norcoreanos_eda.ipynb), con la [tabla de cifras](/nebula/analisis/cifras_documentales.csv) y el [registro de fuentes](/nebula/analisis/fuentes.csv). Para ejecutarlo, descarga los tres archivos en la misma carpeta.
+Puedes revisar y reproducir el [notebook de Jupyter](/analisis/norcoreanos_eda.ipynb), con la [tabla de cifras](/analisis/cifras_documentales.csv) y el [registro de fuentes](/analisis/fuentes.csv). Para ejecutarlo, descarga los tres archivos en la misma carpeta.
 
 Fuentes: Departamento de Justicia de Estados Unidos, [caso Chapman, mayo de 2024](https://www.justice.gov/archives/opa/pr/charges-and-seizures-brought-fraud-scheme-aimed-denying-revenue-workers-associated-north), [acusaciones de junio de 2025](https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote), [sentencias del caso Wang, abril de 2026](https://www.justice.gov/opa/pr/two-us-nationals-sentenced-facilitating-fraudulent-remote-information-technology-worker) y [operación anunciada en octubre de 2026](https://www.justice.gov/opa/pr/justice-department-announces-coordinated-actions-combat-north-korean-remote-it-worker).

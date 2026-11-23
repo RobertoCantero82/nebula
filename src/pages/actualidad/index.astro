@@ -23,7 +23,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/nebula/favicon.svg?v=5" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
     <Seo titulo="Archivo de actualidad | Nebula" descripcion="Las noticias breves de ciencia, tecnología, cine y cultura publicadas en Nebula." />
   </head>
   <body>
@@ -39,7 +39,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
           <h2 id={`dia-${publicaciones[0].data.fecha.toISOString().slice(0, 10)}`}>{fecha(publicaciones[0].data.fecha)}</h2>
           <div>
             {publicaciones.map((pieza) => (
-              <a data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)} href={`/nebula/actualidad/${pieza.id}/`}>
+              <a data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)} href={`/actualidad/${pieza.id}/`}>
                 <span>{pieza.data.categoria}</span>
                 {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
                 <h3>{pieza.data.titulo}</h3>
@@ -49,7 +49,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
         </section>
       ))}
     </main>
-    <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/nebula/privacidad/">Privacidad</a></p></footer>
+    <footer class="pie-pagina contenedor"><p>© {new Date().getFullYear()} Nebula | Roberto Cantero</p><p><a href="/privacidad/">Privacidad</a></p></footer>
     <CloudflareAnalytics /><RelojActualidad />
   </body>
 </html>

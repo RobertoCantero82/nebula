@@ -19,7 +19,7 @@ pantallas:
   - etiqueta: "02 | La pieza"
     titulo: "La fecha se ve perfectamente. Lo que falta es el registro oficial de su fabricación."
     tipo: imagen-cine
-    imagen: "/nebula/imagenes/actualidad/1885-Trade-Dollar.webp"
+    imagen: "/imagenes/actualidad/1885-Trade-Dollar.webp"
     altImagen: "Anverso y reverso del dólar comercial de plata de 1885: una figura de la Libertad sentada y un águila con las alas extendidas"
     pieImagen: "Dólar comercial de 1885, con sus dos caras. Imagen facilitada para esta pieza. Crédito: Stack’s Bowers Galleries, vía Popular Science."
     texto:

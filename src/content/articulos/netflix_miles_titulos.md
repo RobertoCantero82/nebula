@@ -3,7 +3,7 @@ titulo: "Netflix tiene miles de títulos. ¿Cuántos se llevan la mitad de lo qu
 descripcion: "He ordenado las horas vistas de películas y temporadas para descubrir cuánto pesan los grandes éxitos. El resultado va más allá del top 10."
 tema: "CINE"
 fecha: 2026-11-20T17:00:00+01:00
-imagenPortada: "/nebula/imagenes/netflix_miles_titulos_portada.png"
+imagenPortada: "/imagenes/netflix_miles_titulos_portada.png"
 cifraDestacada: "775 títulos"
 etiquetaCifra: "reúnen la mitad de las horas vistas"
 textoContinuo: "Tenemos miles de títulos para elegir, pero ¿cuánto de lo que vemos se concentra en unos pocos?"
@@ -66,8 +66,8 @@ Y, sobre todo, no demuestra que cada suscriptor vea poca variedad o que las reco
 ## Fuentes y archivos
 
 - [Informe original de Netflix, primer semestre de 2026](https://about.netflix.com/en/news/what-we-watched-the-first-half-of-2026).
-- [Excel original conservado para reproducir el análisis](/nebula/analisis/netflix_concentracion/netflix_2026_s1.xlsx).
-- [Notebook de preparación](/nebula/analisis/netflix_concentracion/01_preparacion_datos.ipynb) y [notebook del EDA](/nebula/analisis/netflix_concentracion/02_eda.ipynb).
-- [Datos en CSV](/nebula/analisis/netflix_concentracion/netflix_2026_s1.csv), [cálculos en Python](/nebula/analisis/netflix_concentracion/preparar_datos.py) y [resultados](/nebula/analisis/netflix_concentracion/resultados.json).
+- [Excel original conservado para reproducir el análisis](/analisis/netflix_concentracion/netflix_2026_s1.xlsx).
+- [Notebook de preparación](/analisis/netflix_concentracion/01_preparacion_datos.ipynb) y [notebook del EDA](/analisis/netflix_concentracion/02_eda.ipynb).
+- [Datos en CSV](/analisis/netflix_concentracion/netflix_2026_s1.csv), [cálculos en Python](/analisis/netflix_concentracion/preparar_datos.py) y [resultados](/analisis/netflix_concentracion/resultados.json).
 
 Los cuadernos y el programa usan únicamente la biblioteca estándar de Python. El archivo original y el programa deben estar junto a los cuadernos. Este es un análisis exploratorio de datos, sin predicciones.

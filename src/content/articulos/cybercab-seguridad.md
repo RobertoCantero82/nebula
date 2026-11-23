@@ -3,7 +3,7 @@ titulo: "¿El taxi sin conductor de Tesla conduce mejor o se enfrenta a menos di
 descripcion: "Los accidentes del Cybercab parecen ofrecer una respuesta. Al mirar dónde ocurren y a qué velocidad, la comparación se complica."
 tema: "TECNOLOGÍA"
 fecha: 2026-11-18T14:00:00+01:00
-imagenPortada: "/nebula/imagenes/cybercab_seguridad_portada.png"
+imagenPortada: "/imagenes/cybercab_seguridad_portada.png"
 cifraDestacada: "8 accidentes"
 etiquetaCifra: "del Cybercab, caso a caso"
 textoContinuo: "¿El taxi de Tesla conduce mejor o se enfrenta a menos dificultades? Reviso 8 accidentes del Cybercab"
@@ -108,5 +108,5 @@ La respuesta, por tanto, sigue abierta. Los registros muestran circunstancias di
 - [Diccionario oficial de los campos](https://static.nhtsa.gov/odi/ffdd/sgo-2021-01/SGO-2021-01_Data_Element_Definitions.pdf).
 - [Metodología del informe de seguridad de Tesla](https://www.tesla.com/robotaxi/safety). Tiene una selección distinta; sus kilómetros no se utilizan para calcular tasas con estos incidentes.
 - [Noticia de Electrek que motivó la pregunta](https://electrek.co/2026/11/16/tesla-cybercab-crashes-speed-problem/).
-- [Descargar notebook reproducible](/nebula/analisis/cybercab-seguridad/analisis_cybercab_seguridad.ipynb) · [Leer cuaderno ejecutado](/nebula/analisis/cybercab-seguridad/analisis_cybercab_seguridad.html).
-- [Los ocho casos del Cybercab en CSV](/nebula/analisis/cybercab-seguridad/resultados/cybercab_ocho_casos.csv) · [Resultados y auditoría](/nebula/analisis/cybercab-seguridad/resultados/resultados.json).
+- [Descargar notebook reproducible](/analisis/cybercab-seguridad/analisis_cybercab_seguridad.ipynb) · [Leer cuaderno ejecutado](/analisis/cybercab-seguridad/analisis_cybercab_seguridad.html).
+- [Los ocho casos del Cybercab en CSV](/analisis/cybercab-seguridad/resultados/cybercab_ocho_casos.csv) · [Resultados y auditoría](/analisis/cybercab-seguridad/resultados/resultados.json).
