@@ -4,6 +4,7 @@ import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
 import '../styles/global.css';
 import RelojActualidad from '../components/RelojActualidad.astro';
 import Cosme from '../components/Cosme.astro';
+import SaludoPortada from '../components/SaludoPortada.astro';
 import Seo from '../components/Seo.astro';
 import Cabecera from '../components/Cabecera.astro';
 import TrabajaConmigoBanner from '../components/TrabajaConmigoBanner.astro';
@@ -80,10 +81,11 @@ const seccionesActualidad = [
     </div>
     <button class="continuo-control" type="button" aria-label="Pausar titulares" aria-pressed="false" data-continuo-control><span aria-hidden="true">Ⅱ</span></button>
   </section>
+  <SaludoPortada />
   <section class="actualidad-portada contenedor" aria-labelledby="titulo-actualidad" data-actualidad-fecha={fechaHoy}>
-    <header class="actualidad-cabecera">
+    <header class="actualidad-cabecera cabecera-portada">
       <h1 id="titulo-actualidad">Actualidad</h1>
-      <time datetime={fechaHoy} data-fecha-actualidad>{new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(ahora)}</time>
+      <a href="/actualidad/">Ver todas las noticias <span aria-hidden="true">→</span></a>
     </header>
     <template data-actualidad-espera><div class="actualidad-espera" set:html={contenidoEspera} /></template>
     <div class="actualidad-descanso" data-actualidad-descanso hidden={!esFinDeSemana}>
@@ -470,4 +472,34 @@ control && escuchar(control, 'click', () => {
     text-underline-offset: 4px;
   }
   .actualidad-descanso > a:focus-visible { outline: 3px solid var(--color-ink); outline-offset: 4px; }
+</style>
+
+<style>
+  .actualidad-portada { padding-top:0; }
+  .actualidad-cabecera.cabecera-portada,
+  .ultimos .cabecera-portada,
+  .trama-portada .cabecera-portada {
+    display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:baseline;
+    gap:1rem; padding-bottom:1.25rem;
+  }
+  .actualidad-cabecera.cabecera-portada > h1,
+  .ultimos .cabecera-portada > h1,
+  .trama-portada .cabecera-portada > h2 {
+    min-width:0; margin:0; line-height:1.15;
+  }
+  .actualidad-cabecera.cabecera-portada > a,
+  .ultimos .cabecera-portada > a,
+  .trama-portada .cabecera-portada > a {
+    color:#446ddf; font:600 11px/1.5 var(--font-mono);
+    text-align:right; text-decoration:none; justify-self:end;
+  }
+  .cabecera-portada > a:focus-visible { outline:3px solid #446ddf; outline-offset:4px; }
+  @media(max-width:480px) {
+    .actualidad-cabecera.cabecera-portada,
+    .ultimos .cabecera-portada,
+    .trama-portada .cabecera-portada { gap:.65rem; grid-template-columns:minmax(0,1fr) minmax(0,14ch); }
+    .actualidad-cabecera.cabecera-portada > a,
+    .ultimos .cabecera-portada > a,
+    .trama-portada .cabecera-portada > a { font-size:10px; }
+  }
 </style>

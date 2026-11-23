@@ -1,0 +1,38 @@
+---
+const ahora = new Date();
+const zona = 'Europe/Madrid';
+const hora = Number(new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: 'numeric', hourCycle: 'h23' }).format(ahora));
+const saludo = hora >= 6 && hora < 14 ? 'Buenos días' : hora >= 14 && hora < 21 ? 'Buenas tardes' : 'Buenas noches';
+const fecha = new Intl.DateTimeFormat('es-ES', { timeZone: zona, weekday: 'long', day: 'numeric', month: 'long' }).format(ahora);
+const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).format(ahora);
+---
+<div class="saludo-portada contenedor">
+  <p data-saludo-portada>{saludo}. Hoy es {fecha}, y son las {reloj}. Bienvenido a Nebula.</p>
+</div>
+<style>
+  .saludo-portada { padding-top:clamp(1.5rem,3vw,2rem); padding-bottom:clamp(1.5rem,3vw,2.25rem); }
+  .saludo-portada p { color:#446ddf; font:600 clamp(.95rem,1.6vw,1.15rem)/1.65 var(--font-heading); margin:0; text-wrap:pretty; }
+</style>
+<script>
+  import { alCargarPagina } from '../scripts/ciclo-pagina';
+  alCargarPagina((escuchar, alSalir) => {
+    const elemento = document.querySelector<HTMLElement>('[data-saludo-portada]');
+    if (!elemento) return;
+    const zona = 'Europe/Madrid';
+    const formatoFecha = new Intl.DateTimeFormat('es-ES', { timeZone: zona, weekday: 'long', day: 'numeric', month: 'long' });
+    const formatoReloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
+    const formatoHora = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: 'numeric', hourCycle: 'h23' });
+    const actualizar = () => {
+      const ahora = new Date();
+      const hora = Number(formatoHora.format(ahora));
+      const saludo = hora >= 6 && hora < 14 ? 'Buenos días' : hora >= 14 && hora < 21 ? 'Buenas tardes' : 'Buenas noches';
+      const texto = `${saludo}. Hoy es ${formatoFecha.format(ahora)}, y son las ${formatoReloj.format(ahora)}. Bienvenido a Nebula.`;
+      if (elemento.textContent !== texto) elemento.textContent = texto;
+    };
+    actualizar();
+    const intervalo = window.setInterval(actualizar, 1000);
+    alSalir(() => window.clearInterval(intervalo));
+    escuchar(window, 'focus', actualizar);
+    escuchar(document, 'visibilitychange', actualizar);
+  });
+</script>
