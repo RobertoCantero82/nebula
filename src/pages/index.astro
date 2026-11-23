@@ -98,13 +98,13 @@ const seccionesActualidad = [
     </div>
     <div class="actualidad-cuadricula" hidden={esFinDeSemana}>
       {seccionesActualidad.map(({ clave, nombre, numero, pieza }) => pieza ? (
-        <a data-casilla={clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']} href={`/actualidad/${pieza.id}/`}>
+        <article data-casilla={clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span></div>
           <div class="actualidad-contenido">
             <h2>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h2>
           </div>
-          <span class="actualidad-leer">Leer noticia <span aria-hidden="true">→</span></span>
-        </a>
+          <a class="actualidad-leer" href={`/actualidad/${pieza.id}/`} aria-label={`Leer noticia: ${pieza.data.titulo}`}>Leer noticia <span aria-hidden="true">→</span></a>
+        </article>
       ) : (
         <article data-casilla={clave} data-noticia="" class:list={['actualidad-casilla', `actualidad-${clave}`, 'esta-vacia']}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span></div>
@@ -116,13 +116,13 @@ const seccionesActualidad = [
     {todasLasNoticias.map(pieza => {
       const seccion = seccionesActualidad.find(s => s.clave === pieza.data.categoria);
       return seccion && <template data-noticia-plantilla data-dia={pieza.data.fecha.toISOString().slice(0, 10)} data-categoria={seccion.clave} data-instante={fechaPublicacion(pieza.data).getTime()} data-id={pieza.id}>
-        <a data-casilla={seccion.clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${seccion.clave}`, 'tiene-pieza']} href={`/actualidad/${pieza.id}/`}>
+        <article data-casilla={seccion.clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${seccion.clave}`, 'tiene-pieza']}>
           <div class="actualidad-meta"><span>{seccion.numero} · {seccion.nombre}</span></div>
           <div class="actualidad-contenido">
             <h2>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h2>
           </div>
-          <span class="actualidad-leer">Leer noticia <span aria-hidden="true">→</span></span>
-        </a>
+          <a class="actualidad-leer" href={`/actualidad/${pieza.id}/`} aria-label={`Leer noticia: ${pieza.data.titulo}`}>Leer noticia <span aria-hidden="true">→</span></a>
+        </article>
       </template>;
     })}
   </section>
@@ -196,11 +196,8 @@ control && escuchar(control, 'click', () => {
 .actualidad-casilla.tiene-pieza{background:#fff;transition:background-color .2s ease,color .2s ease}
 .actualidad-casilla.tiene-pieza h2{color:#1b1836;font-size:clamp(1.15rem,1.65vw,1.4rem);line-height:1.3;max-width:22ch;text-align:center;text-wrap:balance;overflow-wrap:anywhere}
 .actualidad-palabra{color:#446ddf}
-.actualidad-leer{align-self:center;color:#446ddf;font:600 11px/1.5 var(--font-mono);padding:.5rem 0;text-align:center}
-.actualidad-casilla:hover .actualidad-leer,.actualidad-casilla:focus-visible .actualidad-leer{text-decoration:underline;text-underline-offset:4px}
-.actualidad-casilla.tiene-pieza:hover,.actualidad-casilla.tiene-pieza:focus-visible{background:#f0f3fc;color:#1b1836}
-.actualidad-casilla.tiene-pieza:hover .actualidad-contenido>strong,.actualidad-casilla.tiene-pieza:focus-visible .actualidad-contenido>strong{color:#fff}
-.actualidad-casilla.tiene-pieza:hover>p,.actualidad-casilla.tiene-pieza:focus-visible>p{color:rgb(255 255 255/82%)}
+.actualidad-leer{align-self:center;color:#446ddf;font:600 11px/1.5 var(--font-mono);padding:.5rem 0;text-align:center;text-decoration:none}
+.actualidad-leer:hover,.actualidad-leer:focus-visible{text-decoration:underline;text-underline-offset:4px}
 @media (min-width: 701px) and (max-width: 900px) {
   .actualidad-cuadricula { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .actualidad-casilla:nth-child(even) { border-right: 0; }
@@ -419,7 +416,7 @@ control && escuchar(control, 'click', () => {
     animation: actualidad-radar-giro 4s linear infinite;
     transform-box: view-box; transform-origin: 31.5px 32.5px;
   }
-  .actualidad-casilla.tiene-pieza:focus-visible { outline: 3px solid #1b1836; outline-offset: -3px; }
+  .actualidad-leer:focus-visible { outline: 3px solid #1b1836; outline-offset: 4px; }
   @keyframes actualidad-radar-giro { to { transform: rotate(360deg); } }
 
   @media (max-width: 380px) {
