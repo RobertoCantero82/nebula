@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import { temas, temaPrincipal } from '../../utils/temas';
+import { fechaPublicacion, estaPublicada } from '../../utils/publicacion';
+import '../../styles/global.css';
+import Cabecera from '../../components/Cabecera.astro';
+import Seo from '../../components/Seo.astro';
+import RelojActualidad from '../../components/RelojActualidad.astro';
+import CloudflareAnalytics from '../../components/CloudflareAnalytics.astro';
+
+export function getStaticPaths() {
+  return temas.map(tema => ({ params: { tema: tema.clave }, props: { tema } }));
+}
+const { tema } = Astro.props;
+const ahora = new Date();
+const articulos = await getCollection('articulos');
+const noticias = await getCollection('actualidad');
+const historias = [
+  ...articulos.map(pieza => ({ pieza, ruta: `/articulos/${pieza.id}/`, seccion: pieza.data.serie === 'trama' ? 'Trama' : 'Historias con datos' })),
+  ...noticias.map(pieza => ({ pieza, ruta: `/actualidad/${pieza.id}/`, seccion: 'Actualidad' })),
+].filter(({ pieza }) => temaPrincipal(pieza.data) === tema.clave)
+  .sort((a, b) => fechaPublicacion(b.pieza.data).getTime() - fechaPublicacion(a.pieza.data).getTime());
+const fecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/Madrid', day: 'numeric', month: 'long', year: 'numeric' }).format(f);
+---
+<html lang="es">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5"/><Seo titulo={`${tema.nombre} | Nebula`} descripcion={tema.descripcion}/></head>
+<body>
+  <Cabecera activa={tema.clave}/>
+  <main class="contenedor archivo-tema">
+    <header><p>TEMAS</p><h1>{tema.nombre}</h1><span>{tema.descripcion}</span></header>
+    <nav class="otros-temas" aria-label="Elegir tema">{temas.map(t => <a href={`/temas/${t.clave}/`} aria-current={tema.clave === t.clave ? 'page' : undefined}>{t.nombre}</a>)}</nav>
+    <div class="historias-tema">
+      {historias.map(({ pieza, ruta, seccion }) => <article class="historia-tema" data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)}>
+        <div class="historia-meta"><span>{seccion}</span><time datetime={pieza.data.fecha.toISOString()}>{fecha(pieza.data.fecha)}</time></div>
+        <h2><a href={ruta}>{pieza.data.titulo}</a></h2>
+        <p>{pieza.data.descripcion}</p>
+        <a class="historia-leer" href={ruta} aria-label={`Leer: ${pieza.data.titulo}`}>Leer historia <span aria-hidden="true">→</span></a>
+      </article>)}
+    </div>
+    <a class="volver" href="/">Volver a la portada →</a>
+  </main>
+  <footer class="pie-pagina contenedor"><p>© {ahora.getFullYear()} Nebula | Roberto Cantero</p><a href="/privacidad/">Privacidad</a></footer>
+  <CloudflareAnalytics/><RelojActualidad/>
+</body>
+</html>
+<style>
+.archivo-tema{padding-top:clamp(2rem,5vw,4rem);padding-bottom:4rem}
+.archivo-tema>header{border-bottom:1px solid var(--color-border);padding-bottom:1.75rem}
+.archivo-tema>header p{color:#d85a30;font:600 11px var(--font-mono);letter-spacing:.08em}
+.archivo-tema h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1;margin:.6rem 0 1rem}
+.archivo-tema>header span{color:#555363;line-height:1.6}
+.otros-temas{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1.5rem 0}
+.otros-temas a,.historia-leer,.volver{color:#3558bd;font:600 11px/1.5 var(--font-mono);text-underline-offset:4px}
+.otros-temas a[aria-current="page"]{color:#1b1836;text-decoration:none}
+.historias-tema{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem;margin-bottom:2rem}
+.historia-tema{min-width:0;border:1px solid var(--color-border);background:#fff;padding:1.5rem}
+.historia-meta{display:flex;justify-content:space-between;gap:1rem;font:10px/1.5 var(--font-mono);color:#555363}
+.historia-meta>span{color:#3558bd}
+.historia-tema h2{font-size:clamp(1.3rem,2vw,1.65rem);line-height:1.25}
+.historia-tema h2 a{text-decoration:none}
+.historia-tema h2 a:hover{text-decoration:underline;text-underline-offset:4px}
+.historia-tema p{font-size:14px;line-height:1.6;color:#555363}
+a:focus-visible{outline:3px solid #446ddf;outline-offset:4px}
+@media(max-width:700px){.historias-tema{grid-template-columns:1fr}.historia-meta{flex-wrap:wrap}}
+</style>

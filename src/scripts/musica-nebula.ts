@@ -22,7 +22,7 @@ if (raiz) {
     raiz.toggleAttribute('data-sonando', sonando);
     boton.setAttribute('aria-pressed', String(sonando));
     boton.setAttribute('aria-label', sonando ? 'Pausar música de Nebula' : 'Reproducir música de Nebula');
-    aviso.textContent = texto || (sonando ? 'Suena Nebula · Pulsa para pausar' : actual ? 'Música en pausa · Pulsa para continuar' : '¿Te apetece música? Pulsa el logo');
+    aviso.textContent = texto || 'Pulsa en el logo para encender o apagar la música';
   };
   const siguiente = () => {
     if (!cola.length) {
