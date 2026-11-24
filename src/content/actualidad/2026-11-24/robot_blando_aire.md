@@ -3,7 +3,7 @@ titulo: "Este robot corre a casi 17 km/h sin electrónica: su secreto viene de l
 descripcion: "Tiene seis patas, se imprime en una pieza y se mueve con aire a presión. El prototipo de la Universidad de California en San Diego aún depende de un compresor externo."
 categoria: extra
 fecha: 2026-11-24
-hora: "02:00"
+hora: "12:00"
 cifraDestacada: "17 km/h"
 etiquetaCifra: "velocidad máxima aproximada"
 fondoPortada: "Aire"
@@ -15,15 +15,15 @@ pantallas:
     tipo: recorrido
     datos: ["Impreso en 3D", "Sin electrónica", "Movido por aire"]
     texto:
-      - "Yichen Zhai y Michael T. Tolley han creado en la Universidad de California en San Diego un robot blando que alcanza 4,72 metros por segundo: casi 17 km/h."
-      - "Su cuerpo se imprime en una sola pieza. El estudio, publicado el 18 de noviembre en Science Robotics, demuestra que puede correr sin un circuito electrónico que coordine sus patas."
+      - "Yichen Zhai y Michael T. Tolley han creado en la Universidad de California en San Diego un **robot blando** que alcanza 4,72 metros por segundo: casi 17 km/h."
+      - "Su cuerpo **se imprime en una sola pieza**. El estudio, publicado el 18 de noviembre en Science Robotics, demuestra que puede correr sin un circuito electrónico que coordine sus patas."
   - etiqueta: "02 | En movimiento"
     titulo: "Así se mueve el robot que funciona con aire."
     tipo: video-youtube
     videoId: "Vp91APtbR0E"
     pieImagen: "Vídeo de la demostración. Fuente de los resultados: Universidad de California en San Diego y Science Robotics."
     texto:
-      - "El equipo lo ha probado en arena, grava, césped y hormigón. También ha demostrado que puede nadar y caminar bajo el agua."
+      - "El equipo lo ha **probado en arena, grava, césped y hormigón**. También ha demostrado que puede nadar y caminar bajo el agua."
       - "La universidad lo presenta como el robot fabricado íntegramente con materiales blandos más rápido construido hasta ahora."
   - etiqueta: "03 | El mecanismo"
     titulo: "El aire aporta la fuerza y también marca el ritmo."
@@ -41,13 +41,13 @@ pantallas:
     tipo: contraste
     datos: ["Antes: 0,04 m/s", "Ahora: 4,72 m/s"]
     texto:
-      - "El primer robot del equipo, desarrollado en 2022, avanzaba a cuatro centímetros por segundo. El nuevo llega a 4,72 metros por segundo. Son velocidades máximas de dos diseños distintos."
+      - "El **primer robot** del equipo, desarrollado en 2022, avanzaba a **cuatro centímetros por segundo o 0,144 km/h**. El nuevo llega a 4,72 metros por segundo. Son velocidades máximas de dos diseños distintos."
       - "El cambio exige soportar más presión y aprovechar mejor el aire antes de expulsarlo."
   - etiqueta: "05 | Lo pendiente"
     titulo: "Corre sin electrónica. Aún necesita estar conectado."
     tipo: cierre
     texto:
-      - "El prototipo depende de un compresor externo. El siguiente reto es reducir el consumo para llevar su propia reserva de aire y mejorar el control de los movimientos."
+      - "El prototipo depende de un compresor externo. El **siguiente reto** es **reducir el consumo** para llevar su propia reserva de aire y mejorar el control de los movimientos."
       - "Los investigadores plantean futuras misiones en entornos con radiación o campos magnéticos intensos. Son posibles aplicaciones, todavía por demostrar."
 fuentes:
   - nombre: "Universidad de California en San Diego | Comunicado original"
