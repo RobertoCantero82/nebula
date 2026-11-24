@@ -89,6 +89,7 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
 </header>
 
 <style>
+  .cabecera { border-bottom:0; }
   .menu-nebula { position:relative; width:min(100%,900px); justify-self:center; text-align:center; z-index:30; }
   .menu-disparador { appearance:none; background:none; border:0; color:#1b1836; cursor:pointer; font:600 18px/1.5 var(--font-mono); padding:.5rem 1rem; display:inline-flex; align-items:center; gap:.7rem; }
   .menu-panel { position:absolute; top:calc(100% + .6rem); left:50%; transform:translateX(-50%); width:min(680px,100%); max-height:min(65vh,560px); overflow-y:auto; display:grid; grid-template-columns:minmax(125px,.8fr) minmax(0,2fr); text-align:left; background:#f7f5f0; border:1px solid #d9d5c8; box-shadow:0 18px 45px rgb(27 24 54 / 18%); }
