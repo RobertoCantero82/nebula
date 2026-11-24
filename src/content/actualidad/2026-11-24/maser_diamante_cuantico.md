@@ -1,5 +1,6 @@
 ---
 titulo: "Un invento de 1954 vuelve con un diamante para ayudar a los ordenadores cuánticos"
+palabraDestacada: "diamante"
 descripcion: "Un amplificador experimental multiplica por más de mil la potencia de señales de microondas. La promesa está en leer mejor la información cuántica."
 categoria: ciencia
 fecha: 2026-11-24

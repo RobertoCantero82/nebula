@@ -1,5 +1,6 @@
 ---
 titulo: "'La vida es demasiado corta para hacer películas de mierda': un exdirector de Marvel explica por qué se marchó"
+palabraDestacada: "exdirector de Marvel"
 descripcion: "Bassam Tariq recuerda un proyecto que preparaba sin un guion sólido y una situación incómoda: responder ante sus actores por decisiones que no tomaba él."
 categoria: cine
 fecha: 2026-11-24

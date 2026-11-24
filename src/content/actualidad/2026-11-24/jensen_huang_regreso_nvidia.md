@@ -1,5 +1,6 @@
 ---
 titulo: "Jensen Huang vuelve a NVIDIA. Las preguntas que provocaron su salida siguen ahí"
+palabraDestacada: "Jensen Huang"
 descripcion: "Trump intervino para recuperar al fundador del gigante de los chips. La bolsa celebra el regreso, pero las investigaciones sobre seguridad y exportaciones continúan."
 categoria: tecnologia
 fecha: 2026-11-24

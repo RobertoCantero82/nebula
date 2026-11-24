@@ -30,8 +30,17 @@ const ultimasTramas = publicados.filter((a) => a.data.serie === 'trama').slice(0
 const formatearFecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(f);
 const formatearFechaCorta = (f: Date) => new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(f).replace('.', '').toUpperCase();
 // elijo una palabra del titular y conservo el texto original completo
-const fragmentarTitular = (titulo: string) => {
+const fragmentarTitular = (titulo: string, palabraDestacada?: string) => {
   const palabras = [...titulo.matchAll(/[\p{L}\p{N}]+(?:[-’'][\p{L}\p{N}]+)*/gu)];
+  if (palabraDestacada !== undefined) {
+    const seleccion = palabraDestacada.trim();
+    if (!seleccion) return { antes: titulo, palabra: '', despues: '' };
+    const literal = seleccion.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const elegida = new RegExp('(?<![\\p{L}\\p{N}_])' + literal + '(?![\\p{L}\\p{N}_])', 'iu').exec(titulo);
+    if (!elegida) return { antes: titulo, palabra: '', despues: '' };
+    const inicio = elegida.index!;
+    return { antes: titulo.slice(0, inicio), palabra: elegida[0], despues: titulo.slice(inicio + elegida[0].length) };
+  }
   const preferidas = ['Kodak', 'Neptuno', 'Marvel', 'Marianas', 'Voyager', 'Tesla', 'Matrix', 'átomo'];
   const elegida = preferidas.map(palabra => palabras.find(p => p[0].toLocaleLowerCase('es') === palabra.toLocaleLowerCase('es'))).find(Boolean)
     ?? palabras.filter(p => /\p{L}/u.test(p[0])).sort((a, b) => b[0].length - a[0].length)[0];
@@ -103,7 +112,7 @@ const seccionesActualidad = [
         <article data-casilla={clave} data-noticia={pieza.id} class:list={['actualidad-casilla', `actualidad-${clave}`, 'tiene-pieza']}>
           <div class="actualidad-meta"><span>{numero} · {nombre}</span></div>
           <div class="actualidad-contenido">
-            <h2>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h2>
+            <h2>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo, pieza.data.palabraDestacada); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h2>
           </div>
           <a class="actualidad-leer" href={`/actualidad/${pieza.id}/`} aria-label={`Leer noticia: ${pieza.data.titulo}`}>Leer noticia <span aria-hidden="true">→</span></a>
         </article>

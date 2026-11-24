@@ -25,6 +25,7 @@ const actualidad = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/actualidad' }),
   schema: z.object({
     titulo: z.string(),
+    palabraDestacada: z.string().trim().optional(),
     descripcion: z.string(),
     categoria: z.enum(['tecnologia', 'ciencia', 'cine', 'cultura', 'extra']),
     fecha: z.date(),

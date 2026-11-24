@@ -1,5 +1,6 @@
 ---
 titulo: "Este robot corre a casi 17 km/h sin electrónica: su secreto viene de las máquinas de vapor"
+palabraDestacada: "robot"
 descripcion: "Tiene seis patas, se imprime en una pieza y se mueve con aire a presión. El prototipo de la Universidad de California en San Diego aún depende de un compresor externo."
 categoria: extra
 fecha: 2026-11-24
