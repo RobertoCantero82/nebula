@@ -56,6 +56,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
     </aside>
     <RelojActualidad />
     <Cabecera activa="actualidad" />
+    <VolverPortada />
 
     <nav class="progreso" aria-label="Recorrido de la noticia">
       <a href="#portada" aria-label="Portada"><span>00</span></a>
@@ -66,7 +67,6 @@ const fechaCarpeta = pieza.id.split('/')[0];
       <section class="pantalla pantalla-portada" id="portada" data-pantalla>
         <div class="numero-fondo" aria-hidden="true"><Fragment set:html={formatoTexto(fondoPortada ?? cifraDestacada ?? 'HOY')} /></div>
         <div class="contenido portada-contenido">
-          <VolverPortada />
           <p class="ceja">{nombreCategoria}</p>
           <h1><Fragment set:html={formatoTexto(titulo)} /></h1>
           {formato !== 'visual' && <p class="descripcion"><Fragment set:html={formatoTexto(descripcion)} /></p>}
@@ -370,4 +370,6 @@ const pantallas = [...document.querySelectorAll('[data-pantalla]')];
     margin: 2rem auto;
     gap: 1.5rem;
   }
+  /* acerco la apertura de la noticia a la navegación */
+  .pantalla.pantalla-portada{align-items:flex-start;padding-top:clamp(1.5rem,4vw,3rem)}
 </style>

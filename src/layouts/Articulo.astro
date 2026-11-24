@@ -63,6 +63,7 @@ const datosEstructurados = {
   </head>
   <body>
     <Cabecera activa={serie === 'trama' ? 'trama' : 'analisis'} />
+    <VolverPortada />
 
     <div class="portada-articulo">
       {imagenPortada ? (
@@ -82,7 +83,6 @@ const datosEstructurados = {
 
     <main class="contenedor" style="padding-top: 2rem; padding-bottom: 3rem;">
       <div class="contenido-articulo">
-        <VolverPortada />
         <p style="font-family: var(--font-mono); font-size: 12px; color: var(--color-accent-2); letter-spacing: 0.5px; text-align: center; margin: 0 0 8px;">{serie === 'trama' ? 'CINE | TRAMA' : tema}</p>
         <h1 style="font-size: clamp(32px, 4vw, 48px); line-height: 1.25; text-align: center; margin: 0 0 16px;">{titulo}</h1>
 
