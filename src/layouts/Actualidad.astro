@@ -4,6 +4,7 @@ import { fechaPublicacion } from '../utils/publicacion';
 import RelojActualidad from '../components/RelojActualidad.astro';
 import Seo from '../components/Seo.astro';
 import Cabecera from '../components/Cabecera.astro';
+import VolverPortada from '../components/VolverPortada.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 
@@ -65,6 +66,7 @@ const fechaCarpeta = pieza.id.split('/')[0];
       <section class="pantalla pantalla-portada" id="portada" data-pantalla>
         <div class="numero-fondo" aria-hidden="true"><Fragment set:html={formatoTexto(fondoPortada ?? cifraDestacada ?? 'HOY')} /></div>
         <div class="contenido portada-contenido">
+          <VolverPortada />
           <p class="ceja">{nombreCategoria}</p>
           <h1><Fragment set:html={formatoTexto(titulo)} /></h1>
           {formato !== 'visual' && <p class="descripcion"><Fragment set:html={formatoTexto(descripcion)} /></p>}

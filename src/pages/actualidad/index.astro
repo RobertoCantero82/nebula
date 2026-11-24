@@ -7,6 +7,17 @@ import Seo from '../../components/Seo.astro';
 import Cabecera from '../../components/Cabecera.astro';
 import CloudflareAnalytics from '../../components/CloudflareAnalytics.astro';
 
+// elijo una palabra del titular y conservo el texto original completo
+const fragmentarTitular = (titulo: string) => {
+  const palabras = [...titulo.matchAll(/[\p{L}\p{N}]+(?:[-’'][\p{L}\p{N}]+)*/gu)];
+  const preferidas = ['Kodak', 'Neptuno', 'Marvel', 'Marianas', 'Voyager', 'Tesla', 'Matrix', 'átomo'];
+  const elegida = preferidas.map(palabra => palabras.find(p => p[0].toLocaleLowerCase('es') === palabra.toLocaleLowerCase('es'))).find(Boolean)
+    ?? palabras.filter(p => /\p{L}/u.test(p[0])).sort((a, b) => b[0].length - a[0].length)[0];
+  if (!elegida) return { antes: titulo, palabra: '', despues: '' };
+  const inicio = elegida.index!;
+  return { antes: titulo.slice(0, inicio), palabra: elegida[0], despues: titulo.slice(inicio + elegida[0].length) };
+};
+
 const ahora = new Date();
 const piezas = (await getCollection('actualidad'))
   .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
@@ -41,8 +52,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
             {publicaciones.map((pieza) => (
               <a data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)} href={`/actualidad/${pieza.id}/`}>
                 <span>{pieza.data.categoria}</span>
-                {pieza.data.cifraDestacada && <strong>{pieza.data.cifraDestacada}</strong>}
-                <h3>{pieza.data.titulo}</h3>
+                <h3>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h3>
               </a>
             ))}
           </div>
@@ -63,10 +73,11 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
   .dia-actualidad{border-bottom:1px solid var(--color-border);display:grid;gap:clamp(1.5rem,4vw,4rem);grid-template-columns:minmax(180px,.6fr) minmax(0,2fr);padding:2rem 0}
   .dia-actualidad h2{font-size:clamp(1.15rem,2vw,1.45rem);line-height:1.2;margin:0;text-transform:capitalize}
   .dia-actualidad>div{display:grid}
-  .dia-actualidad a{align-items:center;border-top:1px solid var(--color-border);display:grid;gap:1.25rem;grid-template-columns:90px 100px minmax(0,1fr);padding:1rem 0;text-decoration:none}
+  .dia-actualidad a{align-items:center;border-top:1px solid var(--color-border);display:grid;gap:1.25rem;grid-template-columns:90px minmax(0,1fr);padding:1rem 0;text-decoration:none}
   .dia-actualidad a:first-child{border-top:0;padding-top:0}
   .dia-actualidad a>span{color:#446ddf;font:600 10px var(--font-mono);text-transform:uppercase}
-  .dia-actualidad a>strong{color:#446ddf;font:600 1.4rem var(--font-heading)}
+  .actualidad-palabra{color:#446ddf}
+  .dia-actualidad a:focus-visible{outline:2px solid #446ddf;outline-offset:4px}
   .dia-actualidad h3{font-size:clamp(1rem,1.7vw,1.3rem);line-height:1.2;margin:0}
   @media(max-width:700px){.dia-actualidad{grid-template-columns:1fr}.dia-actualidad a{grid-template-columns:1fr;gap:.5rem}}
 </style>
