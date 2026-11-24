@@ -1,0 +1,153 @@
+{
+  "fecha_corte": "2026-11-24",
+  "categoria": "EDA",
+  "unidad": "afirmación seleccionada",
+  "total_fichas": 24,
+  "estados": {
+    "detalle_reportado": 16,
+    "hipotesis": 6,
+    "contexto_oficial": 2
+  },
+  "fichas_por_fuente": {
+    "Disney+": 2,
+    "Good Morning America": 7,
+    "GamesRadar+": 14,
+    "SlashFilm": 9,
+    "ScreenCrush": 3,
+    "Ars Technica": 8
+  },
+  "fichas_con_una_sola_pagina": [
+    "P05",
+    "P06",
+    "P09",
+    "P10",
+    "P16",
+    "P18",
+    "P22",
+    "P23",
+    "P24"
+  ],
+  "hipotesis_con_una_sola_pagina": 4,
+  "grupos_editoriales": 5,
+  "grupos_por_pista": {
+    "P01": 2,
+    "P02": 3,
+    "P03": 3,
+    "P04": 2,
+    "P05": 1,
+    "P06": 1,
+    "P07": 2,
+    "P08": 2,
+    "P09": 1,
+    "P10": 1,
+    "P11": 3,
+    "P12": 2,
+    "P13": 2,
+    "P14": 2,
+    "P15": 2,
+    "P16": 1,
+    "P17": 2,
+    "P18": 1,
+    "P19": 3,
+    "P20": 2,
+    "P21": 2,
+    "P22": 1,
+    "P23": 1,
+    "P24": 1
+  },
+  "solapamientos": [
+    {
+      "a": "Disney+",
+      "b": "Good Morning America",
+      "comunes": 0,
+      "union": 9
+    },
+    {
+      "a": "Disney+",
+      "b": "GamesRadar+",
+      "comunes": 0,
+      "union": 16
+    },
+    {
+      "a": "Disney+",
+      "b": "SlashFilm",
+      "comunes": 0,
+      "union": 11
+    },
+    {
+      "a": "Disney+",
+      "b": "ScreenCrush",
+      "comunes": 0,
+      "union": 5
+    },
+    {
+      "a": "Disney+",
+      "b": "Ars Technica",
+      "comunes": 0,
+      "union": 10
+    },
+    {
+      "a": "Good Morning America",
+      "b": "GamesRadar+",
+      "comunes": 4,
+      "union": 17
+    },
+    {
+      "a": "Good Morning America",
+      "b": "SlashFilm",
+      "comunes": 1,
+      "union": 15
+    },
+    {
+      "a": "Good Morning America",
+      "b": "ScreenCrush",
+      "comunes": 1,
+      "union": 9
+    },
+    {
+      "a": "Good Morning America",
+      "b": "Ars Technica",
+      "comunes": 3,
+      "union": 12
+    },
+    {
+      "a": "GamesRadar+",
+      "b": "SlashFilm",
+      "comunes": 7,
+      "union": 16
+    },
+    {
+      "a": "GamesRadar+",
+      "b": "ScreenCrush",
+      "comunes": 1,
+      "union": 16
+    },
+    {
+      "a": "GamesRadar+",
+      "b": "Ars Technica",
+      "comunes": 4,
+      "union": 18
+    },
+    {
+      "a": "SlashFilm",
+      "b": "ScreenCrush",
+      "comunes": 0,
+      "union": 12
+    },
+    {
+      "a": "SlashFilm",
+      "b": "Ars Technica",
+      "comunes": 1,
+      "union": 16
+    },
+    {
+      "a": "ScreenCrush",
+      "b": "Ars Technica",
+      "comunes": 1,
+      "union": 10
+    }
+  ],
+  "revision_visual_completa": 0,
+  "pistas_con_tiempo_de_subtitulo": 4,
+  "sha256_pistas": "d28146c19f00287bdd2f66de7c0327ecc8f1983c72d85f9b2f72c55958706809"
+}

@@ -1,0 +1,847 @@
+[
+  {
+    "titulo": "La casa de Steve",
+    "zona": "El pasado",
+    "estado": "detalle_reportado",
+    "afirmacion": "Steve y Peggy conversan sobre el secreto familiar.",
+    "limite": "La apertura doméstica desplaza la atención hacia su vida después de Endgame.",
+    "fuentes": "gma;ars",
+    "personajes": "Steve;Peggy",
+    "antecedente": "Endgame",
+    "tramo": "apertura",
+    "id": "P01",
+    "segundo": null,
+    "revision_visual": "parcial: Steve y diálogo familiar observados; no se ha revisado la escena completa",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": 16,
+    "base_tiempo": "subtítulos automáticos de YouTube; punto aproximado del diálogo, no inicio de plano ni identidad visual verificada",
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ]
+    }
+  },
+  {
+    "titulo": "El hijo ha crecido",
+    "zona": "El pasado",
+    "estado": "detalle_reportado",
+    "afirmacion": "La cobertura describe al hijo de Steve como adolescente.",
+    "limite": "El salto de edad abre una pregunta sobre el tiempo transcurrido.",
+    "fuentes": "gma;gr;sc",
+    "personajes": "Steve;Peggy",
+    "antecedente": "Endgame",
+    "tramo": "apertura",
+    "id": "P02",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ],
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "sc": [
+        "Párrafos introductorios anteriores al vídeo: Tierra-828 y nombre James"
+      ]
+    }
+  },
+  {
+    "titulo": "Una visita de otro mundo",
+    "zona": "El pasado",
+    "estado": "detalle_reportado",
+    "afirmacion": "Los Cuatro Fantásticos llegan a la casa familiar.",
+    "limite": "La visita conecta la vida privada de Steve con el conflicto colectivo.",
+    "fuentes": "gma;ars;gr",
+    "personajes": "Steve;Cuatro Fantásticos",
+    "antecedente": "",
+    "tramo": "apertura",
+    "id": "P03",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ],
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ]
+    }
+  },
+  {
+    "titulo": "El recuerdo de Tony",
+    "zona": "El pasado",
+    "estado": "detalle_reportado",
+    "afirmacion": "Reaparece el reactor del homenaje a Tony Stark.",
+    "limite": "Una imagen recuperada no demuestra que Tony vuelva a la vida.",
+    "fuentes": "gma;gr",
+    "personajes": "Tony",
+    "antecedente": "Endgame",
+    "tramo": "recuerdos",
+    "id": "P04",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ],
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ]
+    }
+  },
+  {
+    "titulo": "Las Gemas del pasado",
+    "zona": "El pasado",
+    "estado": "detalle_reportado",
+    "afirmacion": "La cobertura identifica el maletín de las Gemas del Infinito.",
+    "limite": "El montaje vuelve sobre las decisiones tomadas en Endgame.",
+    "fuentes": "gma",
+    "personajes": "Steve",
+    "antecedente": "Endgame",
+    "tramo": "recuerdos",
+    "id": "P05",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ]
+    }
+  },
+  {
+    "titulo": "¿James Rogers?",
+    "zona": "El pasado",
+    "estado": "hipotesis",
+    "afirmacion": "ScreenCrush propone James como nombre del hijo.",
+    "limite": "El nombre queda sin confirmar en las fuentes oficiales consultadas.",
+    "fuentes": "sc",
+    "personajes": "Steve;Peggy",
+    "antecedente": "",
+    "tramo": "sin localizar",
+    "id": "P06",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [
+      "P02"
+    ],
+    "localizadores": {
+      "sc": [
+        "Párrafos introductorios anteriores al vídeo: Tierra-828 y nombre James"
+      ]
+    }
+  },
+  {
+    "titulo": "Un discurso para todos",
+    "zona": "La reunión",
+    "estado": "detalle_reportado",
+    "afirmacion": "Thor pide cooperación a los héroes reunidos.",
+    "limite": "El discurso presenta divisiones dentro del grupo.",
+    "fuentes": "gr;ars",
+    "personajes": "Thor",
+    "antecedente": "",
+    "tramo": "reunion",
+    "id": "P07",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": 113,
+    "base_tiempo": "subtítulos automáticos de YouTube; punto aproximado del diálogo, no inicio de plano ni identidad visual verificada",
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ]
+    }
+  },
+  {
+    "titulo": "Sam frente a Cíclope",
+    "zona": "La reunión",
+    "estado": "detalle_reportado",
+    "afirmacion": "Se describe un choque entre Sam Wilson y Cíclope.",
+    "limite": "El enfrentamiento no explica por sí solo su causa ni su desenlace.",
+    "fuentes": "gr;sf",
+    "personajes": "Sam;Cíclope",
+    "antecedente": "",
+    "tramo": "combate",
+    "id": "P08",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "El abrazo pendiente",
+    "zona": "La reunión",
+    "estado": "detalle_reportado",
+    "afirmacion": "Steve abraza a Bucky mientras Sam observa.",
+    "limite": "El reencuentro reúne a tres personajes con una historia compartida.",
+    "fuentes": "gr",
+    "personajes": "Steve;Bucky;Sam",
+    "antecedente": "",
+    "tramo": "reunion",
+    "id": "P09",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ]
+    }
+  },
+  {
+    "titulo": "Bob está al fondo",
+    "zona": "La reunión",
+    "estado": "detalle_reportado",
+    "afirmacion": "GamesRadar identifica a Bob sentado entre los héroes.",
+    "limite": "Una presencia discreta tampoco mide su importancia en la película.",
+    "fuentes": "gr",
+    "personajes": "Bob",
+    "antecedente": "Thunderbolts*",
+    "tramo": "reunion",
+    "id": "P10",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ]
+    }
+  },
+  {
+    "titulo": "Kate entra en el mapa",
+    "zona": "La reunión",
+    "estado": "detalle_reportado",
+    "afirmacion": "Kate Bishop aparece brevemente, según la cobertura.",
+    "limite": "Su presencia no confirma una reunión de los Jóvenes Vengadores.",
+    "fuentes": "gma;gr;sf",
+    "personajes": "Kate",
+    "antecedente": "Ojo de Halcón",
+    "tramo": "sin localizar",
+    "id": "P11",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ],
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "Cassie también aparece",
+    "zona": "La reunión",
+    "estado": "detalle_reportado",
+    "afirmacion": "Los análisis identifican un plano breve de Cassie Lang.",
+    "limite": "Que coincidan jóvenes héroes no demuestra que formen un equipo.",
+    "fuentes": "gr;sf",
+    "personajes": "Cassie",
+    "antecedente": "",
+    "tramo": "sin localizar",
+    "id": "P12",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "Las figuras encapuchadas",
+    "zona": "La amenaza",
+    "estado": "detalle_reportado",
+    "afirmacion": "Doom aparece acompañado de figuras encapuchadas.",
+    "limite": "La identidad individual de esas figuras requiere pruebas adicionales.",
+    "fuentes": "gr;ars",
+    "personajes": "Doom",
+    "antecedente": "",
+    "tramo": "amenaza",
+    "id": "P13",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ]
+    }
+  },
+  {
+    "titulo": "Mundos al borde",
+    "zona": "La amenaza",
+    "estado": "detalle_reportado",
+    "afirmacion": "GamesRadar describe mundos próximos a colisionar.",
+    "limite": "El plano no identifica por sí solo las Tierras implicadas.",
+    "fuentes": "gr;sf",
+    "personajes": "",
+    "antecedente": "",
+    "tramo": "amenaza",
+    "id": "P14",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "Vidas que Doom reclama",
+    "zona": "La amenaza",
+    "estado": "detalle_reportado",
+    "afirmacion": "Doom acusa a los héroes de vivir vidas robadas.",
+    "limite": "La acusación expresa la perspectiva del villano; no prueba su versión.",
+    "fuentes": "gma;ars",
+    "personajes": "Doom",
+    "antecedente": "",
+    "tramo": "amenaza",
+    "id": "P15",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": 84,
+    "base_tiempo": "subtítulos automáticos de YouTube; punto aproximado del diálogo, no inicio de plano ni identidad visual verificada",
+    "depende_de": [],
+    "localizadores": {
+      "gma": [
+        "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+        "Párrafos sobre Steinfeld y la acusación de Doom"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ]
+    }
+  },
+  {
+    "titulo": "¿La culpa es de Steve?",
+    "zona": "La amenaza",
+    "estado": "hipotesis",
+    "afirmacion": "SlashFilm vincula decisiones de Endgame con la tragedia de Doom.",
+    "limite": "El vínculo causal completo sigue siendo una interpretación.",
+    "fuentes": "sf",
+    "personajes": "Steve;Doom",
+    "antecedente": "Endgame",
+    "tramo": "sin localizar",
+    "id": "P16",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [
+      "P15"
+    ],
+    "localizadores": {
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "¿La misma Tierra?",
+    "zona": "La amenaza",
+    "estado": "hipotesis",
+    "afirmacion": "ScreenCrush sitúa a Steve y a los Cuatro Fantásticos en Tierra-828.",
+    "limite": "La localización necesita confirmación independiente del montaje.",
+    "fuentes": "sc;ars",
+    "personajes": "Steve;Cuatro Fantásticos",
+    "antecedente": "",
+    "tramo": "sin localizar",
+    "id": "P17",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [
+      "P03"
+    ],
+    "localizadores": {
+      "sc": [
+        "Párrafos introductorios anteriores al vídeo: Tierra-828 y nombre James"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ]
+    }
+  },
+  {
+    "titulo": "Doom no equivale a Tony",
+    "zona": "La amenaza",
+    "estado": "contexto_oficial",
+    "afirmacion": "Disney no confirma conexión entre Tony Stark y Victor von Doom.",
+    "limite": "Compartir actor no confirma que compartan identidad.",
+    "fuentes": "disney",
+    "personajes": "Doom;Tony",
+    "antecedente": "",
+    "tramo": "contexto",
+    "id": "P18",
+    "segundo": null,
+    "revision_visual": "no_aplicable",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "disney": [
+        "What is Avengers: Doomsday about?",
+        "Robert Downey Jr. as Doctor Doom"
+      ]
+    }
+  },
+  {
+    "titulo": "El grito de Cíclope",
+    "zona": "El horizonte",
+    "estado": "detalle_reportado",
+    "afirmacion": "Cíclope llama a sus X-Men en el avance.",
+    "limite": "La llamada funciona como un momento de reunión.",
+    "fuentes": "gr;ars;sf",
+    "personajes": "Cíclope",
+    "antecedente": "",
+    "tramo": "combate",
+    "id": "P19",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": 141,
+    "base_tiempo": "subtítulos automáticos de YouTube; punto aproximado del diálogo, no inicio de plano ni identidad visual verificada",
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ],
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "Rayos amarillos",
+    "zona": "El horizonte",
+    "estado": "detalle_reportado",
+    "afirmacion": "Thor aparece rodeado de relámpagos amarillos.",
+    "limite": "El color es un detalle descrito; su origen exige otra prueba.",
+    "fuentes": "gr;sf",
+    "personajes": "Thor",
+    "antecedente": "",
+    "tramo": "combate",
+    "id": "P20",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ],
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "¿El poder de Odín?",
+    "zona": "El horizonte",
+    "estado": "hipotesis",
+    "afirmacion": "SlashFilm interpreta los rayos como un poder heredado de Odín.",
+    "limite": "La identificación del poder no queda confirmada por el color.",
+    "fuentes": "sf;gr",
+    "personajes": "Thor",
+    "antecedente": "",
+    "tramo": "sin localizar",
+    "id": "P21",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [
+      "P20"
+    ],
+    "localizadores": {
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ],
+      "gr": [
+        "Steve Rogers returns",
+        "Thor’s leadership",
+        "Doom’s witches",
+        "X-Men",
+        "Worlds colliding",
+        "Tony Stark",
+        "Cyclops vs. Sam Wilson",
+        "Sam, Bucky, and Steve reunion",
+        "Bob",
+        "Thor’s powers",
+        "Kate Bishop",
+        "Cassie Lang"
+      ]
+    }
+  },
+  {
+    "titulo": "¿Un equipo joven?",
+    "zona": "El horizonte",
+    "estado": "hipotesis",
+    "afirmacion": "SlashFilm plantea una posible reunión de Jóvenes Vengadores.",
+    "limite": "Las apariciones de Kate y Cassie no bastan para confirmarla.",
+    "fuentes": "sf",
+    "personajes": "Kate;Cassie",
+    "antecedente": "",
+    "tramo": "sin localizar",
+    "id": "P22",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [
+      "P11",
+      "P12"
+    ],
+    "localizadores": {
+      "sf": [
+        "Doom is the Avengers’ fault",
+        "The Young Avengers join the fight against Doom",
+        "Thor will use a new power, and it’s probably the Odinforce",
+        "Cyclops vs. Sam Wilson",
+        "Earth faces a significant incursion"
+      ]
+    }
+  },
+  {
+    "titulo": "¿Wanda bajo la capucha?",
+    "zona": "El horizonte",
+    "estado": "hipotesis",
+    "afirmacion": "Ars Technica plantea que Wanda esté entre las figuras encapuchadas.",
+    "limite": "No identifico a una figura solo porque encaje con una teoría.",
+    "fuentes": "ars",
+    "personajes": "Wanda;Doom",
+    "antecedente": "",
+    "tramo": "sin localizar",
+    "id": "P23",
+    "segundo": null,
+    "revision_visual": "pendiente",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [
+      "P13"
+    ],
+    "localizadores": {
+      "ars": [
+        "Avengers, X-Men, etc., assemble!"
+      ]
+    }
+  },
+  {
+    "titulo": "Tres universos",
+    "zona": "El horizonte",
+    "estado": "contexto_oficial",
+    "afirmacion": "Disney anuncia un cruce de héroes de tres universos.",
+    "limite": "El marco general no resuelve quién causó el conflicto.",
+    "fuentes": "disney",
+    "personajes": "",
+    "antecedente": "",
+    "tramo": "contexto",
+    "id": "P24",
+    "segundo": null,
+    "revision_visual": "no_aplicable",
+    "fecha_corte": "2026-11-24",
+    "revision_documental": "contrastada en el texto de las páginas citadas",
+    "segundo_transcripcion": null,
+    "base_tiempo": null,
+    "depende_de": [],
+    "localizadores": {
+      "disney": [
+        "What is Avengers: Doomsday about?",
+        "Robert Downey Jr. as Doctor Doom"
+      ]
+    }
+  }
+]

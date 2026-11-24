@@ -1,0 +1,21 @@
+{
+  "fecha": "2026-11-24",
+  "correcciones": [
+    "Retiro ScreenCrush de P01: su texto introductorio no describe la conversación",
+    "Añado SlashFilm a P08 y P14 por sus apartados específicos",
+    "Distingo seis páginas de cinco grupos editoriales",
+    "Distingo tiempos de subtítulos de tiempos de planos"
+  ],
+  "trailer": {
+    "url": "https://www.youtube.com/watch?v=Za9hdie_SPg",
+    "canal": "Marvel España",
+    "duracion_segundos": 195,
+    "titulo_observado": "Vengadores: Doomsday | Tráiler Final | Jueves 17 de diciembre solo en cines",
+    "transcripcion": "automática; revisada para localizar diálogos, no distribuida íntegramente"
+  },
+  "limitaciones": [
+    "No hay revisión visual completa de las 24 fichas",
+    "No he visto vídeos de analistas",
+    "No hay portada final"
+  ]
+}

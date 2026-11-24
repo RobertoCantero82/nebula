@@ -1,0 +1,97 @@
+[
+  {
+    "id": "disney",
+    "nombre": "Disney+",
+    "url": "https://www.disneyplus.com/explore/articles/avengers-doomsday",
+    "tipo": "primaria",
+    "fecha": "2026-11-23",
+    "fecha_consulta": "2026-11-24",
+    "secciones_consultadas": [
+      "What is Avengers: Doomsday about?",
+      "Robert Downey Jr. as Doctor Doom"
+    ],
+    "acceso": "texto de la página; no vídeo de análisis",
+    "grupo_editorial": "Disney"
+  },
+  {
+    "id": "gma",
+    "nombre": "Good Morning America",
+    "url": "https://www.goodmorningamerica.com/culture/story/avengers-doomsday-final-trailer-released-138375955",
+    "tipo": "cobertura",
+    "fecha": "2026-11-23",
+    "fecha_consulta": "2026-11-24",
+    "secciones_consultadas": [
+      "Párrafos sobre la conversación familiar, la visita, los recuerdos y el hijo adolescente",
+      "Párrafos sobre Steinfeld y la acusación de Doom"
+    ],
+    "acceso": "texto de la página; no vídeo de análisis",
+    "grupo_editorial": "Disney"
+  },
+  {
+    "id": "gr",
+    "nombre": "GamesRadar+",
+    "url": "https://www.gamesradar.com/entertainment/marvel-movies/avengers-doomsday-final-trailer-breakdown/",
+    "tipo": "analisis",
+    "fecha": "2026-11-24",
+    "fecha_consulta": "2026-11-24",
+    "secciones_consultadas": [
+      "Steve Rogers returns",
+      "Thor’s leadership",
+      "Doom’s witches",
+      "X-Men",
+      "Worlds colliding",
+      "Tony Stark",
+      "Cyclops vs. Sam Wilson",
+      "Sam, Bucky, and Steve reunion",
+      "Bob",
+      "Thor’s powers",
+      "Kate Bishop",
+      "Cassie Lang"
+    ],
+    "acceso": "texto de la página; no vídeo de análisis",
+    "grupo_editorial": "Future"
+  },
+  {
+    "id": "sf",
+    "nombre": "SlashFilm",
+    "url": "https://www.slashfilm.com/2325581/avengers-doomsday-final-trailer-breakdown-biggest-reveals/",
+    "tipo": "analisis",
+    "fecha": "2026-11-23",
+    "fecha_consulta": "2026-11-24",
+    "secciones_consultadas": [
+      "Doom is the Avengers’ fault",
+      "The Young Avengers join the fight against Doom",
+      "Thor will use a new power, and it’s probably the Odinforce",
+      "Cyclops vs. Sam Wilson",
+      "Earth faces a significant incursion"
+    ],
+    "acceso": "texto de la página; no vídeo de análisis",
+    "grupo_editorial": "Static Media"
+  },
+  {
+    "id": "sc",
+    "nombre": "ScreenCrush",
+    "url": "https://screencrush.com/avengers-doomsday-final-trailer-full-easter-egg-breakdown/",
+    "tipo": "analisis",
+    "fecha": "2026-11-23",
+    "fecha_consulta": "2026-11-24",
+    "secciones_consultadas": [
+      "Párrafos introductorios anteriores al vídeo: Tierra-828 y nombre James"
+    ],
+    "acceso": "texto de la página; no vídeo de análisis",
+    "grupo_editorial": "Townsquare Media"
+  },
+  {
+    "id": "ars",
+    "nombre": "Ars Technica",
+    "url": "https://arstechnica.com/culture/2026/11/marvel-crams-every-superhero-ever-into-avengers-doomsday-final-trailer/",
+    "tipo": "analisis",
+    "fecha": "2026-11-23",
+    "fecha_consulta": "2026-11-24",
+    "secciones_consultadas": [
+      "Avengers, X-Men, etc., assemble!"
+    ],
+    "acceso": "texto de la página; no vídeo de análisis",
+    "grupo_editorial": "Condé Nast"
+  }
+]
