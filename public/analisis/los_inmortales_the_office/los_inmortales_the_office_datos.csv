@@ -1,0 +1,14 @@
+obra,campo,valor,fuente,tipo_evidencia
+Los inmortales,anio,1986,https://catalog.afi.com/Catalog/moviedetails/57357,catalogo_institucional
+Los inmortales,formato,pelicula,https://catalog.afi.com/Catalog/moviedetails/57357,catalogo_institucional
+Los inmortales,director,Russell Mulcahy,https://catalog.afi.com/Catalog/moviedetails/57357,credito
+Los inmortales,protagonista,Connor MacLeod,https://catalog.afi.com/Catalog/moviedetails/57357,credito
+Los inmortales,personaje_libro,Brenda Wyatt,https://catalog.afi.com/Catalog/moviedetails/57357,credito
+Los inmortales,interprete_brenda,Roxanne Hart,https://catalog.afi.com/Catalog/moviedetails/57357,credito
+Los inmortales,nombre_en_libro,Brenda J Wyatt,fotografia_aportada_en_conversacion,observacion_visual
+Los inmortales,transcripcion_legible,"Born in Scranton, Pennsylvania",fotografia_aportada_en_conversacion,observacion_visual
+Los inmortales,ciudad_nacimiento_personaje,Scranton,fotografia_aportada_en_conversacion,observacion_visual
+The Office (EE. UU.),anio,2005,https://www.nbcuniversal.com/article/celebrating-20-years-office,fuente_responsable
+The Office (EE. UU.),estreno,2005-03-24,https://www.nbcuniversal.com/article/celebrating-20-years-office,fuente_responsable
+The Office (EE. UU.),ciudad_sucursal,Scranton,https://www.nbcuniversal.com/article/celebrating-20-years-office,fuente_responsable
+The Office (EE. UU.),empresa,Dunder Mifflin,https://www.nbcuniversal.com/article/celebrating-20-years-office,fuente_responsable
