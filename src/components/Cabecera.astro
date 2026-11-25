@@ -1,9 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import MusicaNebula from './MusicaNebula.astro';
+import VolverPortada from './VolverPortada.astro';
 import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
 
 const { activa = '' } = Astro.props;
+const esPortada = Astro.url.pathname.replace(/\/+$/, '') === import.meta.env.BASE_URL.replace(/\/+$/, '');
 const gruposMenu = [
   { id: 'secciones', nombre: 'Secciones', enlaces: [
     { nombre: 'Actualidad', descripcion: 'Noticias breves para descubrir qué está pasando.', ruta: '/actualidad/', clave: 'actualidad' },
@@ -93,6 +95,7 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
     </div>
   </nav>
 </header>
+{!esPortada && <VolverPortada />}
 
 <style>
   .cabecera { border-bottom:0; padding-bottom:.25rem; }

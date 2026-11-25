@@ -6,7 +6,6 @@ import ArticulosRelacionados from '../components/ArticulosRelacionados.astro';
 import ReconocimientoEditorial from '../components/ReconocimientoEditorial.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 import Cabecera from '../components/Cabecera.astro';
-import VolverPortada from '../components/VolverPortada.astro';
 
 const { titulo, descripcion, tema, serie, fecha, cifraDestacada, etiquetaCifra, metodologia, imagenPortada, reconocimiento, relacionados = [] } = Astro.props;
 
@@ -63,7 +62,6 @@ const datosEstructurados = {
   </head>
   <body>
     <Cabecera activa={serie === 'trama' ? 'trama' : 'analisis'} />
-    <VolverPortada />
 
     <div class="portada-articulo">
       {imagenPortada ? (

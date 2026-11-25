@@ -4,7 +4,6 @@ import { fechaPublicacion } from '../utils/publicacion';
 import RelojActualidad from '../components/RelojActualidad.astro';
 import Seo from '../components/Seo.astro';
 import Cabecera from '../components/Cabecera.astro';
-import VolverPortada from '../components/VolverPortada.astro';
 import CloudflareAnalytics from '../components/CloudflareAnalytics.astro';
 
 
@@ -56,7 +55,6 @@ const fechaCarpeta = pieza.id.split('/')[0];
     </aside>
     <RelojActualidad />
     <Cabecera activa="actualidad" />
-    <VolverPortada />
 
     <nav class="progreso" aria-label="Recorrido de la noticia">
       <a href="#portada" aria-label="Portada"><span>00</span></a>
