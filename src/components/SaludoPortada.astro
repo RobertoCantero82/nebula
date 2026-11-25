@@ -1,55 +1,255 @@
 ---
 const frases = [
-  "Que las fuentes te acompañen.",
-  "La verdad está ahí fuera. Empieza a buscarla por aquí.",
-  "Houston, tienes una noticia por descubrir.",
-  "Sigue al conejo blanco. El primer enlace lo tienes aquí.",
-  "¿Datos? Donde vas, vas a necesitar datos.",
-  "Siempre te quedará la hemeroteca.",
-  "Vas a leer cosas que no creerías. Por eso te dejamos las fuentes.",
-  "La primera regla del clic: no te quedes en el titular.",
-  "Vas a necesitar una pantalla más grande. O bajar un poco más.",
-  "Hasta el último enlace y más allá. Tú eliges hasta dónde leer.",
-  "Te haremos una pregunta que no podrás rechazar.",
-  "Carpe diem. Aprovecha el día para descubrir algo.",
-  "Solo puede quedar uno. ¿Con qué titular te quedas hoy?",
-  "Se acerca el invierno. Ponte al día antes de que llegue.",
-  "No es la isla de Lost, pero aquí también vas a hacerte preguntas.",
-  "El de las noticias que todavía no has leído. Dale al siguiente episodio.",
-  "Teléfono, mi casa. Ya que lo tienes en la mano, lee algo bueno.",
-  "La actualidad es como una caja de bombones. Abre y descubre qué te toca.",
-  "Ya no estás en Kansas. Estás a un clic de descubrir algo.",
-  "Nos encanta que tus preguntas salgan bien. Empieza por una.",
-  "¿Me estás leyendo a mí? Entonces sigue, que hay más.",
-  "Elemental, querido lector. La pista está un poco más abajo.",
-  "Volverás. Pero antes, échale un ojo a esta historia.",
-  "Por si no volvemos a leernos: buenas tardes y buenas noches.",
-  "La curiosidad es fuerte en ti. Dale una buena historia.",
-  "Lee o no leas, pero no te quedes solo en el titular.",
-  "Un gran clic conlleva una gran responsabilidad. Elige qué lees.",
-  "Descubre el lado luminoso de tu pantalla.",
-  "Que la suerte esté siempre de tu parte. Y las fuentes, a tu alcance.",
-  "Tu nombre es Lector. Lector curioso.",
-  "Pide tu actualidad agitada, no manipulada.",
-  "No son tus años, son tus lecturas. Suma una más.",
-  "¿Por qué tan serio? También puedes disfrutar informándote.",
-  "Elige: seguir deslizando o encontrar algo que merezca la pena.",
-  "¿Puedes encajar la verdad? Empieza por leerla entera.",
-  "Pide que te enseñen los datos. Aquí puedes empezar por ellos.",
-  "Mi tesoro… Tu próximo hallazgo puede estar en esta portada.",
-  "No se entra así como así en Mordor. Aquí puedes pasar sin llamar.",
-  "Un enlace para encontrarlas a todas. Elige tu primera historia.",
-  "Un Lannister siempre paga sus deudas. Tú puedes saldar las tuyas con la actualidad.",
-  "Lo que leas hoy tendrá su eco en tu próxima conversación.",
-  "Asómate a la actualidad. Puedes hacerlo sin subirte a la proa del Titanic.",
-  "Que nadie te deje en un rincón. Entra en la conversación.",
-  "Tienes que volver, Jack. Te has dejado una noticia sin leer.",
-  "Nos vemos en otra pestaña, hermano. Antes, descubre esta historia.",
-  "¡Bazinga! Ya tienes una excusa para aprender algo nuevo.",
-  "Eso es lo que dice… la fuente original. Puedes leerla tú también.",
-  "Elige la pastilla roja. Hoy puedes empezar por una noticia.",
-  "Tienes un amigo en mí. Y unas cuantas historias aquí debajo.",
-  "¿A dónde vas? Para ponerte al día no necesitas un DeLorean."
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Star Wars",
+    "despues": ", que las fuentes te acompañen."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Expediente X",
+    "despues": ", la verdad está ahí fuera. Empieza a buscarla por aquí."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "Apolo 13",
+    "despues": ": Houston, tienes una noticia por descubrir."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Matrix",
+    "despues": ", sigue al conejo blanco. El primer enlace lo tienes aquí."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Regreso al futuro",
+    "despues": ", donde vas, vas a necesitar datos."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Casablanca",
+    "despues": ", siempre te quedará la hemeroteca."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "Blade Runner",
+    "despues": ", vas a leer cosas que no creerías. Por eso te dejamos las fuentes."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "El club de la lucha",
+    "despues": ", recuerda la primera regla del clic: no te quedes en el titular."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Tiburón",
+    "despues": ", vas a necesitar una pantalla más grande. O bajar un poco más."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Toy Story",
+    "despues": ", hasta el último enlace y más allá. Tú eliges hasta dónde leer."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "El padrino",
+    "despues": ", te haremos una pregunta que no podrás rechazar."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "El club de los poetas muertos",
+    "despues": ", carpe diem. Aprovecha el día para descubrir algo."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Los inmortales",
+    "despues": ", solo puede quedar uno. ¿Con qué titular te quedas hoy?"
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Juego de tronos",
+    "despues": ", se acerca el invierno. Ponte al día antes de que llegue."
+  },
+  {
+    "antes": "No es la isla de ",
+    "titulo": "Lost",
+    "despues": ", pero aquí también vas a hacerte preguntas."
+  },
+  {
+    "antes": "Si esto fuera ",
+    "titulo": "Friends",
+    "despues": ", sería el de las noticias que todavía no has leído. Dale al siguiente episodio."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "E.T., el extraterrestre",
+    "despues": ", teléfono, mi casa. Ya que lo tienes en la mano, lee algo bueno."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Forrest Gump",
+    "despues": ", la actualidad es como una caja de bombones. Abre y descubre qué te toca."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "El mago de Oz",
+    "despues": ", ya no estás en Kansas. Estás a un clic de descubrir algo."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "El equipo A",
+    "despues": ", nos encanta que tus preguntas salgan bien. Empieza por una."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Taxi Driver",
+    "despues": ", ¿me estás leyendo a mí? Entonces sigue, que hay más."
+  },
+  {
+    "antes": "Ponte en modo ",
+    "titulo": "Sherlock",
+    "despues": ": la pista está un poco más abajo."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Terminator",
+    "despues": ", volverás. Pero antes, échale un ojo a esta historia."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "El show de Truman",
+    "despues": ", por si no volvemos a leernos: buenas tardes y buenas noches."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Star Wars",
+    "despues": ", la curiosidad es fuerte en ti. Dale una buena historia."
+  },
+  {
+    "antes": "Al estilo de Yoda en ",
+    "titulo": "El imperio contraataca",
+    "despues": ", lee o no leas, pero no te quedes solo en el titular."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Spider-Man",
+    "despues": ", un gran clic conlleva una gran responsabilidad. Elige qué lees."
+  },
+  {
+    "antes": "Con un guiño a ",
+    "titulo": "Star Wars",
+    "despues": ", descubre el lado luminoso de tu pantalla."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Los juegos del hambre",
+    "despues": ", que la suerte esté siempre de tu parte. Y las fuentes, a tu alcance."
+  },
+  {
+    "antes": "Preséntate al estilo de ",
+    "titulo": "Agente 007 contra el Dr. No",
+    "despues": ": Lector. Lector curioso."
+  },
+  {
+    "antes": "Al estilo de Bond en ",
+    "titulo": "Goldfinger",
+    "despues": ", pide tu actualidad agitada, no manipulada."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "En busca del arca perdida",
+    "despues": ", no son tus años, son tus lecturas. Suma una más."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "El caballero oscuro",
+    "despues": ", ¿por qué tan serio? También puedes disfrutar informándote."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "Trainspotting",
+    "despues": ", elige: seguir deslizando o encontrar algo que merezca la pena."
+  },
+  {
+    "antes": "Con un guiño a ",
+    "titulo": "Algunos hombres buenos",
+    "despues": ", ¿puedes encajar la verdad? Empieza por leerla entera."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "Jerry Maguire",
+    "despues": ", pide que te enseñen los datos. Aquí puedes empezar por ellos."
+  },
+  {
+    "antes": "Como Gollum en ",
+    "titulo": "El señor de los anillos",
+    "despues": ", busca tu tesoro. Tu próximo hallazgo puede estar en esta portada."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "El señor de los anillos",
+    "despues": ", no se entra así como así en Mordor. Aquí puedes pasar sin llamar."
+  },
+  {
+    "antes": "Al estilo de ",
+    "titulo": "El señor de los anillos",
+    "despues": ", un enlace para encontrarlas a todas. Elige tu primera historia."
+  },
+  {
+    "antes": "En ",
+    "titulo": "Juego de tronos",
+    "despues": ", un Lannister siempre paga sus deudas. Tú puedes saldar las tuyas con la actualidad."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Gladiator",
+    "despues": ", lo que leas hoy tendrá su eco en tu próxima conversación."
+  },
+  {
+    "antes": "Asómate a la actualidad: no necesitas subirte a la proa de ",
+    "titulo": "Titanic",
+    "despues": " para descubrir otro horizonte."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Dirty Dancing",
+    "despues": ", que nadie te deje en un rincón. Entra en la conversación."
+  },
+  {
+    "antes": "Como le dirían a Jack en ",
+    "titulo": "Lost",
+    "despues": ", tienes que volver: te has dejado una noticia sin leer."
+  },
+  {
+    "antes": "Al estilo de Desmond en ",
+    "titulo": "Lost",
+    "despues": ", nos vemos en otra pestaña, hermano. Antes, descubre esta historia."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "The Big Bang Theory",
+    "despues": ", ¡bazinga! Ya tienes una excusa para aprender algo nuevo."
+  },
+  {
+    "antes": "Con un guiño a ",
+    "titulo": "The Office",
+    "despues": ": eso es lo que dice… la fuente original. Puedes leerla tú también."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Matrix",
+    "despues": ", elige la pastilla roja. Hoy puedes empezar por una noticia."
+  },
+  {
+    "antes": "Como en ",
+    "titulo": "Toy Story",
+    "despues": ", tienes un amigo en mí. Y unas cuantas historias aquí debajo."
+  },
+  {
+    "antes": "Como dirían en ",
+    "titulo": "Regreso al futuro",
+    "despues": ", para ponerte al día no necesitas un DeLorean."
+  }
 ];
 const zona = 'Europe/Madrid';
 const ahora = new Date();
@@ -61,7 +261,7 @@ const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit'
 <div class="saludo-portada contenedor">
   <div class="bienvenida" data-bienvenida data-frases={JSON.stringify(frases)}>
     <p class="bienvenida-fecha" data-bienvenida-fecha>{saludo}. Hoy es {fecha}, y son las {reloj}.</p>
-    <p class="bienvenida-frase" data-saludo-portada>{frases[0]}</p>
+    <p class="bienvenida-frase" data-saludo-portada>{frases[0].antes}<em>{frases[0].titulo}</em>{frases[0].despues}</p>
   </div>
 </div>
 <style>
@@ -77,16 +277,19 @@ const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit'
     if (!modulo) return;
     const frase = modulo.querySelector<HTMLElement>('[data-saludo-portada]')!;
     const fecha = modulo.querySelector<HTMLElement>('[data-bienvenida-fecha]')!;
-    const frases: string[] = JSON.parse(modulo.dataset.frases || '[]');
+    const frases: { antes: string; titulo: string; despues: string }[] = JSON.parse(modulo.dataset.frases || '[]');
     if (!frases.length) return;
     const elegirFrase = () => {
       let anterior = frase.textContent;
       try {
         anterior = window.localStorage.getItem('nebula-ultima-frase') || anterior;
       } catch { /* el saludo funciona también con el almacenamiento bloqueado */ }
-      const opciones = frases.filter(texto => texto !== anterior);
-      const texto = opciones.length ? opciones[Math.floor(Math.random() * opciones.length)] : frases[0];
-      frase.textContent = texto;
+      const opciones = frases.filter(item => `${item.antes}${item.titulo}${item.despues}` !== anterior);
+      const elegida = opciones.length ? opciones[Math.floor(Math.random() * opciones.length)] : frases[0];
+      const texto = `${elegida.antes}${elegida.titulo}${elegida.despues}`;
+      const titulo = document.createElement('em');
+      titulo.textContent = elegida.titulo;
+      frase.replaceChildren(document.createTextNode(elegida.antes), titulo, document.createTextNode(elegida.despues));
       try {
         window.localStorage.setItem('nebula-ultima-frase', texto);
       } catch { /* la frase sigue visible aunque no se pueda guardar */ }
