@@ -4,7 +4,7 @@ palabraDestacada: "tres estrellas"
 descripcion: "A unos 28 años luz, una enana roja sigue junto al resto de una estrella que pudo engullirla. Los astrónomos aún no saben explicarlo."
 categoria: extra
 fecha: 2026-11-25
-hora: "02:00"
+hora: "12:00"
 fondoPortada: "Tres estrellas, una incógnita"
 mostrarCifraInterior: false
 formato: visual
