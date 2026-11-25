@@ -89,7 +89,18 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
       </div>
       <div class="menu-contenidos">
         {gruposMenu.map((grupo, i) => <div id={`menu-contenido-${grupo.id}`} role="tabpanel" aria-labelledby={`menu-tab-${grupo.id}`} hidden={i !== 0} data-menu-contenido={grupo.id}>
-          {grupo.enlaces.map(enlace => <a href={enlace.ruta} aria-current={activa === enlace.clave ? 'page' : undefined}><strong>{enlace.nombre}</strong><span>{enlace.descripcion}</span></a>)}
+          {grupo.enlaces.map(enlace => enlace.clave === 'correo' ? (
+            <details class="menu-correo">
+              <summary><strong>{enlace.nombre}</strong><span>{enlace.descripcion}</span></summary>
+              <div class="menu-correo-opciones">
+                <p class="menu-correo-direccion">robertocanterogomez@gmail.com</p>
+                <a href={enlace.ruta} data-astro-reload>Abrir mi aplicación de correo</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=robertocanterogomez%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Escribir desde Gmail (se abre en una nueva pestaña)">Escribir desde Gmail</a>
+              </div>
+            </details>
+          ) : (
+            <a href={enlace.ruta} target={enlace.ruta.startsWith('https://') ? '_blank' : undefined} rel={enlace.ruta.startsWith('https://') ? 'noopener noreferrer' : undefined} aria-label={enlace.ruta.startsWith('https://') ? `${enlace.nombre} (se abre en una nueva pestaña)` : undefined} aria-current={activa === enlace.clave ? 'page' : undefined}><strong>{enlace.nombre}</strong><span>{enlace.descripcion}</span></a>
+          ))}
         </div>)}
       </div>
     </div>
@@ -114,6 +125,15 @@ const indiceSeguro = JSON.stringify(indiceBusqueda).replace(/</g, '\\u003c');
   .menu-contenidos a:hover strong { text-decoration:underline; text-underline-offset:4px; }
   .menu-nebula button:focus-visible,.menu-contenidos a:focus-visible { outline:3px solid #446ddf; outline-offset:-3px; }
   @media(max-width:480px) { .menu-panel { grid-template-columns:112px minmax(0,1fr); } .menu-grupos button { font-size:13px; padding:.85rem .65rem; } .menu-contenidos { padding:.4rem .55rem; } .menu-contenidos strong { font-size:16px; } .menu-contenidos a>span { font-size:11px; } }
+  .menu-correo { border-bottom:1px solid #e3dfd5; }
+  .menu-correo summary { cursor:pointer; padding:.85rem .5rem; }
+  .menu-correo summary::marker { color:#3558bd; }
+  .menu-correo summary strong { display:inline; }
+  .menu-correo summary>span { display:block; color:#555363; font:12px/1.5 var(--font-body); margin-top:.25rem; }
+  .menu-correo summary:focus-visible { outline:3px solid #446ddf; outline-offset:-3px; }
+  .menu-correo-opciones { padding:0 .5rem .85rem; }
+  .menu-correo-direccion { overflow-wrap:anywhere; color:#1b1836; font:12px/1.6 var(--font-body); margin:0 0 .5rem; user-select:text; }
+  .menu-correo-opciones a { min-height:44px; display:flex; align-items:center; box-sizing:border-box; padding:.5rem 0; color:#3558bd; font:600 12px/1.5 var(--font-body); text-decoration:underline; text-underline-offset:3px; border:0; }
   .marca-logo { display: block; height: auto; width: clamp(150px, 14vw, 172px); }
 </style>
 
