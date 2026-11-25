@@ -1,34 +1,58 @@
 ---
 const frases = [
-  "Sigue al conejo blanco. O empieza por la primera noticia, que queda más cerca.",
-  "Las carreteras las ponemos nosotros. Tú trae la curiosidad.",
-  "Hemos visto cosas que no creerías. Y hemos comprobado las fuentes.",
-  "Que la curiosidad te acompañe.",
-  "Siempre nos quedará otra historia.",
-  "Tenemos la sensación de que ya no estamos en Kansas. Vamos a comprobarlo.",
-  "La primera regla de Nebula es hacer preguntas. La segunda, comprobar las respuestas.",
-  "Hasta el infinito hay bastante camino. Empecemos por una buena historia.",
-  "Houston, tenemos una pregunta.",
-  "La curiosidad encuentra un camino. Nosotros intentamos seguirle el paso.",
-  "Vamos a necesitar un cuaderno más grande.",
-  "Hay una historia ahí fuera. Y tenemos ganas de encontrarla.",
-  "Carpe diem. Pero antes, un vistazo a lo que está pasando.",
-  "Te haremos una pregunta que no podrás dejar de darle vueltas.",
-  "El mundo es una caja de sorpresas. Aquí miramos qué pone en la etiqueta.",
-  "¿Datos? Donde vamos, sí necesitamos datos.",
-  "Abre bien los ojos. La pista puede estar en el siguiente plano.",
-  "A veces basta con cambiar de plano para entender la historia.",
-  "No hemos venido a salvar el mundo. Hoy nos conformamos con entenderlo un poco mejor.",
-  "La curiosidad ha entrado en el edificio.",
-  "Si esta historia tuviera una escena después de los créditos, nos quedaríamos a verla.",
-  "La respuesta está ahí fuera. Las fuentes, al final del artículo.",
-  "La realidad tiene mejores giros que algunos guiones. Vamos a ver el de hoy.",
-  "Bienvenido al otro lado de la pantalla. Aquí también hay cosas por descubrir."
+  "Que las fuentes te acompañen.",
+  "La verdad está ahí fuera. Las fuentes, al final del artículo.",
+  "Houston, tenemos un bulo.",
+  "Sigue al conejo blanco. Pero comprueba el enlace.",
+  "¿Datos? Donde vamos, necesitamos datos.",
+  "Siempre nos quedará la hemeroteca.",
+  "He visto titulares que vosotros no creeríais.",
+  "La primera regla del clic es leer más allá del titular.",
+  "Vamos a necesitar una base de datos más grande.",
+  "Hasta el último enlace y más allá.",
+  "Le haré una pregunta que no podrá dejar sin responder.",
+  "Carpe diem. Aprovecha el día, contrasta la noticia.",
+  "Solo puede quedar uno. Y que sea el dato comprobado.",
+  "Se acerca el cierre. Y aún queda una fuente por consultar.",
+  "No abras ese enlace. No sabemos nada de él.",
+  "El algoritmo no comparte sus datos.",
+  "¡Mi fuente! Teléfono…",
+  "La vida es como una caja de enlaces. Mira antes de abrir.",
+  "Toto, creo que ya no estamos en la portada.",
+  "Me encanta que los datos salgan bien.",
+  "¿Me estás hablando a mí o a mi algoritmo?",
+  "Elemental, querido lector: falta comprobar la fuente.",
+  "Volveré. Cuando haya leído el artículo entero.",
+  "Buenos días, y por si no volvemos a leernos: buenas tardes y buenas noches.",
+  "La fuente es fuerte en esta noticia.",
+  "Hazlo o no lo hagas. Pero no publiques sin comprobar.",
+  "Un gran titular conlleva una gran responsabilidad.",
+  "Yo soy tu fuente. Y tendrás que contrastarme.",
+  "Que empiecen los clics. Y que la suerte no decida lo que lees.",
+  "Mi nombre es Dato. Dato contrastado.",
+  "Agitado, no manipulado. Así queremos el debate.",
+  "No son los años del artículo, son las actualizaciones.",
+  "¿Por qué tan viral?",
+  "O lees con criterio o haces clic sin parar.",
+  "No puedes manejar la verdad. Pero puedes consultar las fuentes.",
+  "Muéstrame los datos.",
+  "Mi tesoro… es una fuente original.",
+  "No se entra así como así en una base de datos.",
+  "Un enlace para encontrarlos a todos.",
+  "Valar contrastis. Todos los titulares deben comprobarse.",
+  "Un lector siempre comprueba sus fuentes.",
+  "Lo que leemos hoy tiene su eco en el historial.",
+  "Soy el rey del mundo. Según mi perfil.",
+  "Nadie deja a la fuente en un rincón.",
+  "Tenemos que volver, Jack. Al artículo original.",
+  "Nos vemos en otra pestaña, hermano.",
+  "¡Bazinga! Eso era sátira, no una noticia.",
+  "Eso es lo que dice… la fuente original.",
+  "No es un bulo. Es una noticia con un disfraz muy convincente.",
+  "¡Hasta la vista, clickbait!"
 ];
 const zona = 'Europe/Madrid';
 const ahora = new Date();
-const dia = new Intl.DateTimeFormat('sv-SE', { timeZone: zona, year: 'numeric', month: '2-digit', day: '2-digit' }).format(ahora);
-const indice = Math.floor(Date.parse(`${dia}T00:00:00Z`) / 86400000) % frases.length;
 const hora = Number(new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: 'numeric', hourCycle: 'h23' }).format(ahora));
 const saludo = hora >= 6 && hora < 14 ? 'Buenos días' : hora >= 14 && hora < 21 ? 'Buenas tardes' : 'Buenas noches';
 const fecha = new Intl.DateTimeFormat('es-ES', { timeZone: zona, weekday: 'long', day: 'numeric', month: 'long' }).format(ahora);
@@ -36,15 +60,15 @@ const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit'
 ---
 <div class="saludo-portada contenedor">
   <div class="bienvenida" data-bienvenida data-frases={JSON.stringify(frases)}>
-    <p class="bienvenida-frase" data-saludo-portada>{saludo}. {frases[indice]}</p>
-    <p class="bienvenida-fecha" data-bienvenida-fecha>Hoy es {fecha} y son las {reloj}.</p>
+    <p class="bienvenida-fecha" data-bienvenida-fecha>{saludo}. Hoy es {fecha}, y son las {reloj}.</p>
+    <p class="bienvenida-frase" data-saludo-portada>{frases[0]}</p>
   </div>
 </div>
 <style>
   .saludo-portada { padding-top:clamp(.5rem,1vw,.75rem); padding-bottom:clamp(1rem,2vw,1.25rem); }
   .bienvenida { padding:0; text-align:center; }
-  .bienvenida-frase { color:#446ddf; font:600 clamp(1.1rem,1.9vw,1.4rem)/1.45 var(--font-heading); margin:0 auto; max-width:65ch; text-wrap:pretty; }
-  .bienvenida-fecha { color:#446ddf; font:400 clamp(.85rem,1.2vw,.95rem)/1.5 var(--font-body); margin:.6rem 0 0; }
+  .bienvenida-frase { color:#446ddf; font:600 clamp(1.1rem,1.9vw,1.4rem)/1.45 var(--font-heading); margin:.45rem auto 0; max-width:65ch; text-wrap:pretty; }
+  .bienvenida-fecha { color:#446ddf; font:400 clamp(.85rem,1.2vw,.95rem)/1.5 var(--font-body); margin:0; }
 </style>
 <script>
   import { alCargarPagina } from '../scripts/ciclo-pagina';
@@ -54,8 +78,21 @@ const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit'
     const frase = modulo.querySelector<HTMLElement>('[data-saludo-portada]')!;
     const fecha = modulo.querySelector<HTMLElement>('[data-bienvenida-fecha]')!;
     const frases: string[] = JSON.parse(modulo.dataset.frases || '[]');
+    if (!frases.length) return;
+    const elegirFrase = () => {
+      let anterior = frase.textContent;
+      try {
+        anterior = window.localStorage.getItem('nebula-ultima-frase') || anterior;
+      } catch { /* el saludo funciona también con el almacenamiento bloqueado */ }
+      const opciones = frases.filter(texto => texto !== anterior);
+      const texto = opciones.length ? opciones[Math.floor(Math.random() * opciones.length)] : frases[0];
+      frase.textContent = texto;
+      try {
+        window.localStorage.setItem('nebula-ultima-frase', texto);
+      } catch { /* la frase sigue visible aunque no se pueda guardar */ }
+    };
+    elegirFrase();
     const zona = 'Europe/Madrid';
-    const formatoDia = new Intl.DateTimeFormat('sv-SE', { timeZone: zona, year: 'numeric', month: '2-digit', day: '2-digit' });
     const formatoFecha = new Intl.DateTimeFormat('es-ES', { timeZone: zona, weekday: 'long', day: 'numeric', month: 'long' });
     const formatoReloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit', minute: '2-digit', hourCycle: 'h23' });
     const formatoHora = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: 'numeric', hourCycle: 'h23' });
@@ -63,16 +100,16 @@ const reloj = new Intl.DateTimeFormat('es-ES', { timeZone: zona, hour: '2-digit'
       const ahora = new Date();
       const hora = Number(formatoHora.format(ahora));
       const saludo = hora >= 6 && hora < 14 ? 'Buenos días' : hora >= 14 && hora < 21 ? 'Buenas tardes' : 'Buenas noches';
-      const indice = Math.floor(Date.parse(`${formatoDia.format(ahora)}T00:00:00Z`) / 86400000) % frases.length;
-      const texto = `${saludo}. ${frases[indice]}`;
-      const momento = `Hoy es ${formatoFecha.format(ahora)} y son las ${formatoReloj.format(ahora)}.`;
-      if (frase.textContent !== texto) frase.textContent = texto;
+      const momento = `${saludo}. Hoy es ${formatoFecha.format(ahora)}, y son las ${formatoReloj.format(ahora)}.`;
       if (fecha.textContent !== momento) fecha.textContent = momento;
     };
     actualizar();
     const intervalo = window.setInterval(actualizar, 1000);
     alSalir(() => window.clearInterval(intervalo));
     escuchar(window, 'focus', actualizar);
+    escuchar(window, 'pageshow', (evento: PageTransitionEvent) => {
+      if (evento.persisted) { elegirFrase(); actualizar(); }
+    });
     escuchar(document, 'visibilitychange', actualizar);
   });
 </script>
