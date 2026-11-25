@@ -1,5 +1,6 @@
 ---
-titulo: "'Los inmortales' esconde una conexión con 'The Office' en un libro que casi nadie se para a leer"
+imagenPortada: "/imagenes/los_inmortales_the_office.png"
+titulo: "Esta sí que no la has visto venir: 'Los inmortales' esconde una conexión con 'The Office'"
 descripcion: "Una espada, una oficina y diecinueve años de distancia. La pista que une estas dos ficciones está escrita en un rincón de la pantalla."
 tema: "CINE"
 serie: "trama"
