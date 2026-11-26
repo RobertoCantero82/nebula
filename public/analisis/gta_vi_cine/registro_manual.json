@@ -1,0 +1,535 @@
+[
+  {
+    "id": "R01",
+    "titulo": "Bonnie y Clyde",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Pareja a la fuga",
+    "detalle": "Rockstar cita a sus protagonistas al explicar la pareja de GTA VI.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "Es una influencia narrativa reconocida, no una misión identificada.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R02",
+    "titulo": "La huida",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Pareja a la fuga",
+    "detalle": "Rockstar menciona la pareja de McQueen y MacGraw.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "La mención permite identificar The Getaway; no cuento también la novela.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R03",
+    "titulo": "Amor a quemarropa",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Pareja a la fuga",
+    "detalle": "True Romance aparece entre las películas revisitadas por el equipo.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "No implica que se reproduzca una escena concreta.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R04",
+    "titulo": "Thelma & Louise",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Pareja a la fuga",
+    "detalle": "El equipo la incluye entre sus referencias para una pareja que huye.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "Influencia reconocida.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R05",
+    "titulo": "Un romance muy peligroso",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Química entre personajes",
+    "detalle": "Rockstar destaca la dinámica entre Clooney y Jennifer Lopez.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "Identifico Out of Sight por los intérpretes citados.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R06",
+    "titulo": "Arma letal",
+    "formato": "saga",
+    "estado": "declarada",
+    "relacion": "Conversación entre compañeros",
+    "detalle": "El estudio menciona a Riggs y Murtaugh como referencia para el diálogo.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "Asigno la saga por sus personajes; la entrevista no elige entrega.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R07",
+    "titulo": "Dos hombres y un destino",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Conversación entre compañeros",
+    "detalle": "Rockstar cita a Butch y Sundance al hablar de complicidad.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "Identificación de la película por sus personajes.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R08",
+    "titulo": "Dos policías rebeldes",
+    "formato": "saga",
+    "estado": "declarada",
+    "relacion": "Conversación entre compañeros",
+    "detalle": "El estudio menciona a Mike Lowrey y Marcus Burnett.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "Asigno Bad Boys como saga; no invento una entrega concreta.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R09",
+    "titulo": "Pulp Fiction",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Pareja y atraco",
+    "detalle": "Rockstar la cita como inspiración; varios medios señalan además dos guiños visuales.",
+    "fuentes": [
+      "gi",
+      "es",
+      "om",
+      "lp"
+    ],
+    "limite": "La declaración confirma la influencia; los planos y la cafetería siguen atribuidos a sus fuentes.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R10",
+    "titulo": "Asesinos natos",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Manera de vivir el crimen",
+    "detalle": "Rockstar la contrapone a Pulp Fiction al hablar de las decisiones del jugador.",
+    "fuentes": [
+      "gi"
+    ],
+    "limite": "La relación reconocida va más allá de imitar una imagen.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R11",
+    "titulo": "El precio del poder",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Referente del estudio",
+    "detalle": "Rockstar cita Scarface como referente habitual; las guías relacionan un baño con la película.",
+    "fuentes": [
+      "tr",
+      "es",
+      "om",
+      "gc",
+      "lp"
+    ],
+    "limite": "El estudio confirma el referente general, no ese escenario. Las guías discrepan sobre el edificio.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R12",
+    "titulo": "Heat",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Referente del estudio",
+    "detalle": "Rockstar la identifica como referente al comenzar sus proyectos.",
+    "fuentes": [
+      "tr"
+    ],
+    "limite": "No la presento como un guiño concreto descubierto en GTA VI.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R13",
+    "titulo": "Uno de los nuestros",
+    "formato": "cine",
+    "estado": "declarada",
+    "relacion": "Referente del estudio",
+    "detalle": "Goodfellas figura entre los referentes habituales citados por Rockstar.",
+    "fuentes": [
+      "tr"
+    ],
+    "limite": "Contexto creativo del estudio, sin atribuirle una misión concreta.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R14",
+    "titulo": "Corrupción en Miami",
+    "formato": "serie",
+    "estado": "declarada",
+    "relacion": "Referente del estudio",
+    "detalle": "Rockstar menciona Miami Vice y destaca su episodio piloto.",
+    "fuentes": [
+      "tr",
+      "gc"
+    ],
+    "limite": "La entrevista remite a la serie; la ropa señalada por guías sigue sin verificar.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R15",
+    "titulo": "Tiburón",
+    "formato": "cine",
+    "estado": "reportada",
+    "relacion": "Escena y diálogo",
+    "detalle": "Las recopilaciones comparan un regreso a nado con el final de la película.",
+    "fuentes": [
+      "es",
+      "om",
+      "lp"
+    ],
+    "limite": "No he revisado la secuencia completa; enlace al clip recopilado en Omelete.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R16",
+    "titulo": "Jungla de cristal",
+    "formato": "cine",
+    "estado": "reportada",
+    "relacion": "Escena y escenario",
+    "detalle": "Varios medios relacionan una secuencia de Lucía en un conducto con John McClane.",
+    "fuentes": [
+      "es",
+      "om",
+      "lp"
+    ],
+    "limite": "Parecido descrito por esas fuentes; intención no confirmada por el estudio.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R17",
+    "titulo": "Rocky",
+    "formato": "saga",
+    "estado": "reportada",
+    "relacion": "Montaje de entrenamiento",
+    "detalle": "Espinof vincula el entrenamiento de Lucía con Rocky.",
+    "fuentes": [
+      "es",
+      "lp"
+    ],
+    "limite": "No asigno una entrega determinada.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R18",
+    "titulo": "Million Dollar Baby",
+    "formato": "cine",
+    "estado": "reportada",
+    "relacion": "Montaje de entrenamiento",
+    "detalle": "Leonida Players propone también esta película para el mismo entrenamiento.",
+    "fuentes": [
+      "lp"
+    ],
+    "limite": "Una escena puede admitir varias lecturas; no son dos escenas independientes.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R19",
+    "titulo": "A todo gas",
+    "formato": "cine",
+    "estado": "reportada",
+    "relacion": "Vehículo",
+    "detalle": "Las guías relacionan un coche verde con el Eclipse de Brian O’Conner.",
+    "fuentes": [
+      "es",
+      "om",
+      "cb",
+      "gc",
+      "lp",
+      "jw"
+    ],
+    "limite": "No traslado marcas reales como nombre oficial del vehículo del juego.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R20",
+    "titulo": "Dexter",
+    "formato": "serie",
+    "estado": "reportada",
+    "relacion": "Escenario y objetos",
+    "detalle": "Distintas guías relacionan unos apartamentos y utensilios con Dexter Morgan.",
+    "fuentes": [
+      "es",
+      "om",
+      "cb",
+      "gc",
+      "lp",
+      "jw"
+    ],
+    "limite": "Agrupo las variantes en una ficha; no cuento cada utensilio por separado.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R21",
+    "titulo": "Saw",
+    "formato": "saga",
+    "estado": "reportada",
+    "relacion": "Situación de terror",
+    "detalle": "Las fuentes relacionan una captura y una prueba de supervivencia con la saga.",
+    "fuentes": [
+      "es",
+      "om",
+      "gc",
+      "lp",
+      "jw"
+    ],
+    "limite": "El paralelismo no identifica una película concreta ni demuestra una colaboración oficial.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R22",
+    "titulo": "Collateral",
+    "formato": "cine",
+    "estado": "reportada",
+    "relacion": "Encuentro con un personaje",
+    "detalle": "Las guías describen un pasajero armado que obliga al jugador a conducir.",
+    "fuentes": [
+      "om",
+      "cb",
+      "gc",
+      "lp"
+    ],
+    "limite": "La comparación remite al personaje de Tom Cruise; no es un cameo del actor.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R23",
+    "titulo": "Terminator 2: el juicio final",
+    "formato": "cine",
+    "estado": "reportada",
+    "relacion": "Objeto y gesto",
+    "detalle": "Varias recopilaciones señalan una escopeta oculta entre flores.",
+    "fuentes": [
+      "om",
+      "cb",
+      "gc"
+    ],
+    "limite": "La descripción procede de esas fuentes; no he reproducido el clip completo.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R24",
+    "titulo": "Las Tortugas Ninja",
+    "formato": "franquicia",
+    "estado": "reportada",
+    "relacion": "Animales y objetos",
+    "detalle": "Omelete y Leonida Players relacionan tortugas y otros detalles con la franquicia.",
+    "fuentes": [
+      "om",
+      "lp"
+    ],
+    "limite": "Las descripciones difieren; no atribuyo el guiño a una adaptación particular.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R25",
+    "titulo": "It",
+    "formato": "franquicia",
+    "estado": "reportada",
+    "relacion": "Personaje de terror",
+    "detalle": "Dos guías relacionan un payaso y elementos del entorno con Pennywise.",
+    "fuentes": [
+      "gc",
+      "lp"
+    ],
+    "limite": "Las localizaciones descritas difieren. No fijo versión ni coordenadas.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R26",
+    "titulo": "Seinfeld",
+    "formato": "serie",
+    "estado": "reportada",
+    "relacion": "Matrícula",
+    "detalle": "GTA Culture recoge una matrícula que relaciona con un gag de la serie.",
+    "fuentes": [
+      "gc"
+    ],
+    "limite": "Solo una página en mi selección; no he visto el clip completo.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R27",
+    "titulo": "Expediente X",
+    "formato": "serie",
+    "estado": "reportada",
+    "relacion": "Nombre de un trofeo",
+    "detalle": "GTA Culture relaciona un trofeo con la frase característica de la serie.",
+    "fuentes": [
+      "gc"
+    ],
+    "limite": "La frase puede tener otras lecturas; no equivale a confirmación de Rockstar.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R28",
+    "titulo": "Top Gun",
+    "formato": "franquicia",
+    "estado": "pista",
+    "relacion": "Relación por precisar",
+    "detalle": "GTA Culture la enumera entre las referencias reportadas sin verificar.",
+    "fuentes": [
+      "gc"
+    ],
+    "limite": "No hay una escena concreta documentada en el material que he leído.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R29",
+    "titulo": "Dolor y dinero",
+    "formato": "cine",
+    "estado": "pista",
+    "relacion": "Relación por precisar",
+    "detalle": "Pain & Gain aparece en la lista de referencias pendientes de GTA Culture.",
+    "fuentes": [
+      "gc"
+    ],
+    "limite": "No la cuento como un homenaje confirmado ni invento su localización.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R30",
+    "titulo": "Breaking Bad",
+    "formato": "serie",
+    "estado": "pista",
+    "relacion": "Interpretación de un nombre",
+    "detalle": "Leonida Players interpreta W Blanco como un posible juego con Walter White.",
+    "fuentes": [
+      "lp",
+      "gc"
+    ],
+    "limite": "GTA Culture advierte que no ha encontrado una prueba. La lectura del nombre es una hipótesis.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R31",
+    "titulo": "Lost",
+    "formato": "serie",
+    "estado": "pista",
+    "relacion": "Interpretación de un escenario",
+    "detalle": "Leonida Players propone una isla con SOS como referencia a la serie.",
+    "fuentes": [
+      "lp"
+    ],
+    "limite": "SOS e isla no bastan por sí solos para demostrar la conexión.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R32",
+    "titulo": "Better Call Saul",
+    "formato": "serie",
+    "estado": "pista",
+    "relacion": "Interpretación de un personaje",
+    "detalle": "Leonida Players relaciona un abogado junto a un contenedor con la serie.",
+    "fuentes": [
+      "lp"
+    ],
+    "limite": "Falta contraste directo de la secuencia y de la intención.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R33",
+    "titulo": "The Ring / Ringu",
+    "formato": "franquicia",
+    "estado": "pista",
+    "relacion": "Personaje de terror",
+    "detalle": "JustWatch compara una figura de pelo largo en una carretera con esta familia de películas.",
+    "fuentes": [
+      "jw"
+    ],
+    "limite": "La fuente mezcla Sadako y la versión estadounidense: no resuelvo esa ambigüedad inventando una adaptación.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R34",
+    "titulo": "Alien",
+    "formato": "franquicia",
+    "estado": "pista",
+    "relacion": "Criaturas y escenario",
+    "detalle": "JustWatch relaciona una secuencia con huevos alienígenas con la saga.",
+    "fuentes": [
+      "jw"
+    ],
+    "limite": "Solo una fuente en esta selección; semejanza pendiente de revisión directa.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R35",
+    "titulo": "El faro",
+    "formato": "cine",
+    "estado": "pista",
+    "relacion": "Estética de un minijuego",
+    "detalle": "Un usuario de Reddit interpreta un minijuego en blanco y negro junto a un faro como un homenaje.",
+    "fuentes": [
+      "rl"
+    ],
+    "limite": "Es una propuesta de ese usuario, no un hallazgo verificado por Nebula.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R36",
+    "titulo": "Hulk",
+    "formato": "franquicia",
+    "estado": "reportada",
+    "relacion": "Personaje y transformación",
+    "detalle": "Distintas fuentes relacionan un granjero transformado con Hulk o Red Hulk.",
+    "fuentes": [
+      "es",
+      "om",
+      "lp",
+      "jw"
+    ],
+    "limite": "Mantengo la franquicia: las fuentes apuntan a películas distintas y no confirman una entrega concreta.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R37",
+    "titulo": "Los Cazafantasmas",
+    "formato": "franquicia",
+    "estado": "reportada",
+    "relacion": "Vehículo y parodia",
+    "detalle": "Ghostbusters News relaciona el vehículo Ghosts Exposed con una parodia de Cazafantasmas.",
+    "fuentes": [
+      "gb",
+      "lp"
+    ],
+    "limite": "Distingo el vehículo descrito en GTA VI del de GTA Online; no afirmo que sea el Ecto-1 oficial.",
+    "revision_visual_nebula": false
+  },
+  {
+    "id": "R38",
+    "titulo": "Los Soprano",
+    "formato": "serie",
+    "estado": "pista",
+    "relacion": "Canción y ambiente",
+    "detalle": "Un usuario relaciona una canción en un club con el episodio University.",
+    "fuentes": [
+      "rs"
+    ],
+    "limite": "Compartir canción y ambiente no demuestra por sí solo intención de homenaje.",
+    "revision_visual_nebula": false
+  }
+]

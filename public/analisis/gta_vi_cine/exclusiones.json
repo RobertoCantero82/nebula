@@ -1,0 +1,30 @@
+[
+  {
+    "titulo": "Una entrega concreta de Hulk",
+    "motivo": "Registro la franquicia Hulk, pero no asigno película: Espinof remite a Viuda Negra y Hulk y JustWatch lo vincula con Brave New World.",
+    "fuentes": [
+      "es",
+      "om",
+      "jw",
+      "lp"
+    ]
+  },
+  {
+    "titulo": "Ace Ventura",
+    "motivo": "GTA Culture la menciona entre referencias buscadas sin prueba; no registro una ausencia como un guiño.",
+    "fuentes": [
+      "gc"
+    ]
+  },
+  {
+    "titulo": "El rey león / Jungla de cristal: la venganza",
+    "motivo": "JustWatch las nombra al presentar la carrera de Jeremy Irons. La presencia del actor no demuestra homenajes a esas películas.",
+    "fuentes": [
+      "jw"
+    ]
+  },
+  {
+    "titulo": "Videojuegos de Rockstar y referencias literarias",
+    "motivo": "Quedan fuera del alcance de cine y televisión."
+  }
+]

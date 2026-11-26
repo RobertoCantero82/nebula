@@ -1,0 +1,90 @@
+[
+  {
+    "id": "gi",
+    "nombre": "Game Informer · entrevista a Rockstar",
+    "url": "https://gameinformer.com/exclusive-interview/2026/11/19/exclusive-behind-the-romance-rockstar-talks-gtavis-jason-and-lucia",
+    "tipo": "entrevista primaria",
+    "fecha": "2026-11-19",
+    "nota": "Humphries enumera parejas de cine y distingue su relación, sus conversaciones y la manera de vivir el crimen."
+  },
+  {
+    "id": "tr",
+    "nombre": "TechRadar · respuestas de Rockstar",
+    "url": "https://www.techradar.com/gaming/gta-6-dev-shares-how-miami-vice-heat-and-goodfellas-are-touchstones-for-the-latest-game-and-how-it-channeled-a-sense-of-nostalgia-of-gta-vice-city-i-think-the-feeling-of-playing-a-movie-that-you-get-with-gta-is-one-of-the-coolest-things-we-do",
+    "tipo": "entrevista primaria",
+    "fecha": "2026-11-18",
+    "nota": "Humphries cita cuatro referentes habituales del estudio. Su declaración no confirma escenas concretas del juego."
+  },
+  {
+    "id": "es",
+    "nombre": "Espinof",
+    "url": "https://www.espinof.com/listas/gta-6-esta-plagado-referencias-al-cine-television-mejores-homenajes-cinematograficos-que-se-han-colado-videojuego-rockstar",
+    "tipo": "recopilación periodística",
+    "fecha": "2026-11-26",
+    "nota": "Punto de partida del encargo. Reúne escenas y objetos que relaciona con cine y televisión."
+  },
+  {
+    "id": "om",
+    "nombre": "Omelete",
+    "url": "https://www.omelete.com.br/gta-6/gta-6-todos-easter-eggs-cinema-e-tv-encontrados-no-jogo",
+    "tipo": "recopilación con enlaces a clips",
+    "fecha": "2026-11-24",
+    "nota": "Ofrece enlaces a publicaciones de jugadores y recopiladores. No he podido reproducir esos clips con la herramienta de consulta."
+  },
+  {
+    "id": "cb",
+    "nombre": "ComicBook",
+    "url": "https://comicbook.com/gaming/list/5-of-the-best-movie-tv-easter-eggs-in-gta-6-including-a-tribute-to-paul-walker/",
+    "tipo": "recopilación periodística",
+    "fecha": "2026-11-21",
+    "nota": "Describe cinco referencias. Su denominación del coche difiere de otras fuentes; no la traslado como nombre oficial."
+  },
+  {
+    "id": "gc",
+    "nombre": "GTA Culture",
+    "url": "https://gtaculture.com/guides/gta-6-movie-tv-references",
+    "tipo": "guía de comunidad",
+    "fecha": "2026-11-25",
+    "nota": "Distingue vídeos enlazados y referencias solo reportadas. Su etiqueta de verificación corresponde a sus autores, no a Nebula."
+  },
+  {
+    "id": "lp",
+    "nombre": "Leonida Players",
+    "url": "https://leonidaplayers.com/guides/gta-6-movie-and-tv-easter-eggs-every-reference-found",
+    "tipo": "guía de comunidad",
+    "fecha": null,
+    "nota": "Recoge también interpretaciones de nombres, escenarios y objetos. Consultada el 26 de noviembre; no asigno fecha de publicación no comprobada."
+  },
+  {
+    "id": "jw",
+    "nombre": "JustWatch",
+    "url": "https://guides.justwatch.com/es/cameos-huevos-pascua-peliculas-series-gta",
+    "tipo": "recopilación periodística",
+    "fecha": null,
+    "nota": "Incluye The Ring y Alien. La propia descripción mezcla Sadako con la versión estadounidense; conservo la familia de obras sin fijar adaptación."
+  },
+  {
+    "id": "rl",
+    "nombre": "Reddit · propuesta sobre El faro",
+    "url": "https://www.reddit.com/r/roberteggers/comments/1y0frcm/the_lighthouse_reference_in_gta_6/",
+    "tipo": "testimonio de comunidad",
+    "fecha": "2026-11-19",
+    "nota": "Un usuario propone una conexión por un minijuego de terror en blanco y negro; no hay confirmación del estudio."
+  },
+  {
+    "id": "gb",
+    "nombre": "Ghostbusters News",
+    "url": "https://www.patreon.com/ghostbustersnews/posts/grand-theft-auto-176112465",
+    "tipo": "publicación especializada con imágenes",
+    "fecha": null,
+    "nota": "Relaciona el vehículo Ghosts Exposed con una parodia de Cazafantasmas; distingue el coche de GTA VI del de GTA Online."
+  },
+  {
+    "id": "rs",
+    "nombre": "Reddit · propuesta sobre Los Soprano",
+    "url": "https://www.reddit.com/r/thesopranos/comments/1y09mg2/sopranos_homage_in_grand_theft_auto_vi_that_made/",
+    "tipo": "testimonio de comunidad",
+    "fecha": "2026-11-19",
+    "nota": "Un usuario relaciona una canción y un club con el episodio University. No doy por confirmada la intención."
+  }
+]

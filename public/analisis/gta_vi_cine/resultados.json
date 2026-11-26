@@ -1,0 +1,17 @@
+{
+  "total_fichas": 38,
+  "por_estado": {
+    "declarada": 14,
+    "reportada": 15,
+    "pista": 9
+  },
+  "por_formato": {
+    "cine": 19,
+    "saga": 4,
+    "serie": 8,
+    "franquicia": 7
+  },
+  "fichas_una_pagina": 22,
+  "referentes_generales_del_estudio": 4,
+  "revision_visual_completa_nebula": 0
+}
