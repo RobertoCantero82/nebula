@@ -1,0 +1,20 @@
+---
+import '../../styles/global.css';
+import Seo from '../../components/Seo.astro';
+import Cabecera from '../../components/Cabecera.astro';
+import LoQueTePreocupa from '../../components/LoQueTePreocupa.astro';
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#182b51" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
+    <Seo titulo="Lo que te preocupa | Nebula" descripcion="Explora y compara propuestas electorales a partir de situaciones cotidianas, con referencias a sus fuentes oficiales y cobertura visible." />
+  </head>
+  <body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <Cabecera activa="laboratorio" />
+    <main id="contenido"><LoQueTePreocupa /></main>
+  </body>
+</html>

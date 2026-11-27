@@ -114,6 +114,13 @@ const otros = [
         </nav>
       </header>
 
+      <aside style="margin: 0 0 2rem; padding: 1.4rem; border: 1px solid #446ddf; background: #edf1fb;">
+        <p style="margin: 0 0 .4rem; font-size: .75rem; letter-spacing: .08em;">ESPECIAL ELECTORAL · PRIMERA EDICIÓN</p>
+        <h2 style="margin: 0 0 .5rem;">Lo que te preocupa</h2>
+        <p style="margin: 0 0 .8rem;">Tu alquiler, tu trabajo o el tiempo para cuidar. Explora y compara propuestas con sus fuentes oficiales.</p>
+        <a href="/laboratorio/lo-que-te-preocupa/" style="color: #294fae;">Explorar las propuestas →</a>
+      </aside>
+
       <section class="coleccion" aria-label="Proyectos del Laboratorio">
         {proyectos.map((proyecto, i) => (
           <article id={proyecto.id} class:list={['proyecto', { 'proyecto-inverso': i % 2 === 1, 'proyecto-desarrollo': proyecto.id === 'vhs-club' }]} aria-labelledby={`titulo-${proyecto.id}`}>

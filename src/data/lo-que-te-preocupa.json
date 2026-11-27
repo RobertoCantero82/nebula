@@ -1,0 +1,1141 @@
+{
+  "title": "Lo que te preocupa",
+  "edition": "Primera edición documental · 27 de noviembre de 2026",
+  "election": "Generales · 29 de noviembre de 2026",
+  "updated": "2026-11-27",
+  "parties": [
+    {
+      "id": "bng",
+      "name": "BNG",
+      "full": "BNG",
+      "document": "Pendiente de revisión",
+      "url": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+      "scope": "Territorial",
+      "note": "El acceso al documento devolvió un error. No se han extraído propuestas.",
+      "status": "pending"
+    },
+    {
+      "id": "cc",
+      "name": "Coalición Canaria",
+      "full": "Coalición Canaria",
+      "document": "Pendiente de revisión",
+      "url": "https://coalicioncanaria.org/",
+      "scope": "Territorial",
+      "note": "El PDF localizado no pudo recuperarse. No se han extraído propuestas.",
+      "status": "pending"
+    },
+    {
+      "id": "compromis",
+      "name": "Compromís",
+      "full": "Compromís · Front Valencià",
+      "document": "Programa completo",
+      "url": "https://frontvalencia.org/programa-compromis-front-valencia.pdf",
+      "scope": "Comunitat Valenciana",
+      "note": "Resúmenes traducidos del valenciano al castellano.",
+      "status": "reviewed"
+    },
+    {
+      "id": "pnv",
+      "name": "EAJ-PNV",
+      "full": "Partido Nacionalista Vasco",
+      "document": "Programa completo",
+      "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n",
+      "scope": "Euskadi",
+      "note": "Las referencias remiten a apartados del documento.",
+      "status": "reviewed"
+    },
+    {
+      "id": "bildu",
+      "name": "EH Bildu",
+      "full": "Euskal Herria Bildu",
+      "document": "Programa completo",
+      "url": "https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf",
+      "scope": "Euskadi y Navarra",
+      "note": "Documento consultado en castellano.",
+      "status": "reviewed"
+    },
+    {
+      "id": "erc",
+      "name": "ERC",
+      "full": "ERC",
+      "document": "Pendiente de revisión",
+      "url": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+      "scope": "Territorial",
+      "note": "El documento devolvió acceso denegado. No se han extraído propuestas.",
+      "status": "pending"
+    },
+    {
+      "id": "fa",
+      "name": "Frente Amplio",
+      "full": "Frente Amplio",
+      "document": "Programa completo",
+      "url": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+      "scope": "Estatal",
+      "note": "Se identifica el documento por su autoría; no se certifica aquí la composición de las listas.",
+      "status": "reviewed"
+    },
+    {
+      "id": "junts",
+      "name": "Junts",
+      "full": "Junts",
+      "document": "Pendiente de revisión",
+      "url": "https://junts.cat/",
+      "scope": "Territorial",
+      "note": "Programa de esta convocatoria pendiente de localizar y revisar en esta edición.",
+      "status": "pending"
+    },
+    {
+      "id": "podemos",
+      "name": "Podemos",
+      "full": "Podemos",
+      "document": "Programa completo",
+      "url": "https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf",
+      "scope": "Estatal",
+      "note": "PDF consultado; medidas numeradas.",
+      "status": "reviewed"
+    },
+    {
+      "id": "pp",
+      "name": "PP",
+      "full": "Partido Popular",
+      "document": "Programa completo",
+      "url": "https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-LA-RECONSTRUCCION-NACIONAL.pdf",
+      "scope": "Estatal",
+      "note": "PDF consultado; medidas numeradas.",
+      "status": "reviewed"
+    },
+    {
+      "id": "psoe",
+      "name": "PSOE",
+      "full": "Partido Socialista Obrero Español",
+      "document": "Selección oficial de 50 propuestas",
+      "url": "https://lafuerzadelagente.es/programa/propuestas-destacadas-programa-electoral-29n.pdf",
+      "scope": "Estatal",
+      "note": "Revisión parcial: selección oficial, no el programa completo.",
+      "status": "partial"
+    },
+    {
+      "id": "vox",
+      "name": "VOX",
+      "full": "VOX",
+      "document": "Resumen oficial del programa",
+      "url": "https://www.voxespana.es/abascal/es-sentido-comun-estas-son-las-medidas-de-vox-para-el-29n-20261112",
+      "scope": "Estatal",
+      "note": "Revisión parcial: presentación oficial en web; el PDF completo no pudo recuperarse.",
+      "status": "partial"
+    }
+  ],
+  "topics": [
+    {
+      "id": "vivienda",
+      "name": "Vivienda",
+      "situation": "No encuentro una casa que pueda pagar.",
+      "hint": "Alquiler, compra y vivienda asequible.",
+      "icon": "casa",
+      "questions": [
+        [
+          "alquiler",
+          "Vivo de alquiler"
+        ],
+        [
+          "acceso",
+          "Busco mi primera vivienda"
+        ]
+      ]
+    },
+    {
+      "id": "empleo",
+      "name": "Trabajo y bolsillo",
+      "situation": "Trabajo, pero llegar a fin de mes cuesta.",
+      "hint": "Salarios, impuestos y condiciones laborales.",
+      "icon": "cartera",
+      "questions": [
+        [
+          "ingresos",
+          "Quiero mejorar mis ingresos"
+        ],
+        [
+          "jornada",
+          "Me preocupa mi jornada"
+        ]
+      ]
+    },
+    {
+      "id": "sanidad",
+      "name": "Sanidad",
+      "situation": "Necesito atención médica y la espera se alarga.",
+      "hint": "Profesionales, atención primaria y prestaciones.",
+      "icon": "salud",
+      "questions": [
+        [
+          "acceso",
+          "Acceder a la atención"
+        ],
+        [
+          "cobertura",
+          "Qué cubre la sanidad pública"
+        ]
+      ]
+    },
+    {
+      "id": "cuidados",
+      "name": "Cuidados",
+      "situation": "Cuidar de un familiar lo está cambiando todo.",
+      "hint": "Dependencia, apoyos y derechos de quienes cuidan.",
+      "icon": "manos",
+      "questions": [
+        [
+          "apoyo",
+          "Necesito apoyo para cuidar"
+        ],
+        [
+          "derechos",
+          "Mis derechos como cuidador"
+        ]
+      ]
+    },
+    {
+      "id": "familias",
+      "name": "Crianza y tiempo",
+      "situation": "Tengo hijos y conciliar es un rompecabezas.",
+      "hint": "Escuela infantil, permisos y ayudas a la crianza.",
+      "icon": "reloj",
+      "questions": [
+        [
+          "tiempo",
+          "Necesito tiempo y servicios"
+        ],
+        [
+          "ayudas",
+          "Busco apoyos a la crianza"
+        ]
+      ]
+    },
+    {
+      "id": "pensiones",
+      "name": "Jubilación",
+      "situation": "Me preocupa cómo será mi jubilación.",
+      "hint": "Poder adquisitivo, cotización y protección.",
+      "icon": "horizonte",
+      "questions": [
+        [
+          "cuantia",
+          "La cuantía de la pensión"
+        ],
+        [
+          "cotizacion",
+          "Mis años de cotización"
+        ]
+      ]
+    },
+    {
+      "id": "tecnologia",
+      "name": "Vida digital",
+      "situation": "La tecnología cambia mi trabajo y mi día a día.",
+      "hint": "Formación, inteligencia artificial y acceso a servicios.",
+      "icon": "pixel",
+      "questions": [
+        [
+          "trabajo",
+          "Adaptarme en el trabajo"
+        ],
+        [
+          "servicios",
+          "Acceder a servicios y proteger derechos"
+        ]
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "id": "pp-vivienda-1",
+      "party": "pp",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler"
+      ],
+      "title": "Incentivos al alquiler",
+      "summary": "Plantea deducciones para inquilinos y propietarios que renueven tres años con subidas inferiores al IPC.",
+      "audience": "Inquilinos y pequeños propietarios",
+      "reference": "Medida 156",
+      "search": "156",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-vivienda-2",
+      "party": "pp",
+      "topic": "vivienda",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Aval para comprar",
+      "summary": "Propone ampliar el aval de hasta el 20 % a compradores menores de 40 años, ampliable hasta los 50.",
+      "audience": "Compradores de primera vivienda",
+      "reference": "Medida 154",
+      "search": "154",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-empleo-1",
+      "party": "pp",
+      "topic": "empleo",
+      "tags": [
+        "ingresos"
+      ],
+      "title": "Menos IRPF",
+      "summary": "Plantea mínimos mayores, menos IRPF en rentas medias y bajas y exención del salario mínimo.",
+      "audience": "Rentas medias y bajas",
+      "reference": "Medida 177",
+      "search": "177",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-sanidad-1",
+      "party": "pp",
+      "topic": "sanidad",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Refuerzo de primaria",
+      "summary": "Plantea incorporar al menos 4.500 médicos adicionales en atención primaria, coordinándose con las comunidades autónomas.",
+      "audience": "Usuarios del sistema sanitario",
+      "reference": "Medida 220",
+      "search": "220",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-cuidados-1",
+      "party": "pp",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo",
+        "derechos"
+      ],
+      "title": "Flexibilidad para cuidar",
+      "summary": "Propone bancos de horas, horarios flexibles y teletrabajo cuando el puesto lo permita para personas con familiares dependientes.",
+      "audience": "Trabajadores con dependientes",
+      "reference": "Medida 162",
+      "search": "162",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-familias-1",
+      "party": "pp",
+      "topic": "familias",
+      "tags": [
+        "tiempo"
+      ],
+      "title": "Escuela infantil gratuita",
+      "summary": "Plantea gratuidad de cero a tres años, con financiación compartida entre el Estado y las comunidades autónomas.",
+      "audience": "Familias con menores de tres años",
+      "reference": "Medida 163",
+      "search": "163",
+      "deadline": "Al terminar la legislatura",
+      "funding": "Mitad Estado y mitad comunidades autónomas",
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-pensiones-1",
+      "party": "pp",
+      "topic": "pensiones",
+      "tags": [
+        "cuantia"
+      ],
+      "title": "Actualizar las pensiones",
+      "summary": "Propone mantener la actualización anual con el IPC e incentivar fiscalmente la jubilación activa.",
+      "audience": "Pensionistas y futuros jubilados",
+      "reference": "Medida 108",
+      "search": "108",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pp-tecnologia-1",
+      "party": "pp",
+      "topic": "tecnologia",
+      "tags": [
+        "trabajo"
+      ],
+      "title": "Formación en IA",
+      "summary": "Propone un cheque de formación individual que acompañe al trabajador cuando cambie de empresa.",
+      "audience": "Personas trabajadoras",
+      "reference": "Medida 169",
+      "search": "169",
+      "deadline": null,
+      "funding": "Cuotas de formación de empresas y trabajadores",
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-vivienda-1",
+      "party": "psoe",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler"
+      ],
+      "title": "Contratos más largos",
+      "summary": "Propone ampliar la duración de los contratos de alquiler para dar más estabilidad a los inquilinos.",
+      "audience": "Personas inquilinas",
+      "reference": "Selección oficial, propuesta 11",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 4,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-vivienda-2",
+      "party": "psoe",
+      "topic": "vivienda",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Inversión en vivienda",
+      "summary": "Plantea destinar anualmente el 1 % del PIB a vivienda asequible.",
+      "audience": "Solicitantes de vivienda",
+      "reference": "Selección oficial, propuesta 8",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 3,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-empleo-1",
+      "party": "psoe",
+      "topic": "empleo",
+      "tags": [
+        "ingresos"
+      ],
+      "title": "Salario mínimo por ley",
+      "summary": "Propone fijar legalmente el SMI por encima del 60 % del salario medio y evitar absorber subidas con complementos.",
+      "audience": "Perceptores del salario mínimo",
+      "reference": "Selección oficial, propuesta 12",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 4,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-sanidad-1",
+      "party": "psoe",
+      "topic": "sanidad",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Financiación sanitaria",
+      "summary": "Propone financiación pública sanitaria en torno al 7 % del PIB y más inversión preventiva.",
+      "audience": "Usuarios de la sanidad pública",
+      "reference": "Selección oficial, propuesta 16",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 5,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-sanidad-2",
+      "party": "psoe",
+      "topic": "sanidad",
+      "tags": [
+        "cobertura"
+      ],
+      "title": "Atención dental",
+      "summary": "Propone ampliar cobertura dental y ayudas transitorias de hasta 200 euros anuales, empezando por rentas medias y bajas.",
+      "audience": "Adultos",
+      "reference": "Selección oficial, propuesta 17",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 5,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-cuidados-1",
+      "party": "psoe",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo",
+        "derechos"
+      ],
+      "title": "Reconocer los cuidados",
+      "summary": "Propone reforzar servicios y derechos laborales y equiparar al SMI la remuneración de las cuidadoras principales.",
+      "audience": "Personas cuidadoras",
+      "reference": "Selección oficial, propuesta 24",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 6,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-familias-1",
+      "party": "psoe",
+      "topic": "familias",
+      "tags": [
+        "ayudas"
+      ],
+      "title": "Prestación por crianza",
+      "summary": "Plantea una prestación progresiva para hogares con menores y protección adicional para rentas bajas.",
+      "audience": "Hogares con menores",
+      "reference": "Selección oficial, propuesta 22",
+      "search": "",
+      "deadline": null,
+      "funding": "Nueva tributación de patrimonios y rentas del capital",
+      "page": 6,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-familias-2",
+      "party": "psoe",
+      "topic": "familias",
+      "tags": [
+        "tiempo"
+      ],
+      "title": "Educación infantil",
+      "summary": "Propone más plazas públicas de cero a tres años y menos alumnos por aula.",
+      "audience": "Familias con menores",
+      "reference": "Selección oficial, propuesta 21",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 6,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "psoe-tecnologia-1",
+      "party": "psoe",
+      "topic": "tecnologia",
+      "tags": [
+        "trabajo"
+      ],
+      "title": "Acceso y formación en IA",
+      "summary": "Propone un servicio público de herramientas de IA acompañado de formación y apoyo personalizado.",
+      "audience": "Ciudadanía, trabajadores y empresas",
+      "reference": "Selección oficial, propuesta 5",
+      "search": "",
+      "deadline": null,
+      "funding": null,
+      "page": 3,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-vivienda-1",
+      "party": "vox",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler",
+        "acceso"
+      ],
+      "title": "Vivienda y nacionalidad",
+      "summary": "Propone más vivienda protegida y acceso preferente para españoles a esta y a las ayudas al alquiler.",
+      "audience": "Españoles solicitantes de vivienda",
+      "reference": "Resumen oficial, bloque 5",
+      "search": "Vivienda",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-vivienda-2",
+      "party": "vox",
+      "topic": "vivienda",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Impuestos de primera vivienda",
+      "summary": "Plantea IVA cero en vivienda nueva y bonificación íntegra del ITP en usada para la primera vivienda de familias españolas.",
+      "audience": "Familias españolas compradoras",
+      "reference": "Resumen oficial, bloque 5",
+      "search": "Vivienda",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-empleo-1",
+      "party": "vox",
+      "topic": "empleo",
+      "tags": [
+        "ingresos"
+      ],
+      "title": "Cuota de autónomos",
+      "summary": "Propone cuota cero bajo el SMI y, por encima, una cuota progresiva desde 50 euros.",
+      "audience": "Personas autónomas",
+      "reference": "Resumen oficial, bloque 2",
+      "search": "Economía",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-sanidad-1",
+      "party": "vox",
+      "topic": "sanidad",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Primaria y esperas",
+      "summary": "Propone reforzar primaria y pediatría y un plan contra las esperas; limita a urgencias la atención a inmigrantes irregulares.",
+      "audience": "Usuarios del sistema sanitario",
+      "reference": "Resumen oficial, bloque 8",
+      "search": "Sanidad",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-cuidados-1",
+      "party": "vox",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo"
+      ],
+      "title": "Apoyo a la dependencia",
+      "summary": "Anuncia apoyos a la dependencia y medidas frente a la soledad no deseada.",
+      "audience": "Dependientes y personas mayores",
+      "reference": "Resumen oficial, bloque 11",
+      "search": "Familia",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-familias-1",
+      "party": "vox",
+      "topic": "familias",
+      "tags": [
+        "tiempo"
+      ],
+      "title": "Educación infantil gratuita",
+      "summary": "Propone gratuidad de cero a tres años y extender beneficios de familia numerosa desde el primer hijo.",
+      "audience": "Familias con hijos",
+      "reference": "Resumen oficial, bloque 11",
+      "search": "Familia",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-pensiones-1",
+      "party": "vox",
+      "topic": "pensiones",
+      "tags": [
+        "cotizacion"
+      ],
+      "title": "Cotizar durante la crianza",
+      "summary": "Plantea que el Estado financie cotizaciones de quienes se dediquen a cuidar a sus hijos.",
+      "audience": "Personas dedicadas a la crianza",
+      "reference": "Resumen oficial, bloque 11",
+      "search": "Familia",
+      "deadline": null,
+      "funding": "A cargo del Estado; sin importe en el resumen revisado",
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "vox-tecnologia-1",
+      "party": "vox",
+      "topic": "tecnologia",
+      "tags": [
+        "servicios"
+      ],
+      "title": "Trámites sin cita obligatoria",
+      "summary": "Propone retirar la cita previa obligatoria y una ventanilla única administrativa.",
+      "audience": "Personas que realizan trámites",
+      "reference": "Resumen oficial, bloque 6",
+      "search": "Desregulación",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "fa-vivienda-1",
+      "party": "fa",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler"
+      ],
+      "title": "Límite del alquiler",
+      "summary": "Propone limitar alquileres en zonas tensionadas con referencias de renta del barrio y del índice de precios.",
+      "audience": "Inquilinos en zonas tensionadas",
+      "reference": "Apartado 1.3",
+      "search": "1.3",
+      "deadline": null,
+      "funding": null,
+      "page": 13,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "fa-vivienda-2",
+      "party": "fa",
+      "topic": "vivienda",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Parque público",
+      "summary": "Plantea incorporar 1,5 millones de viviendas públicas mediante construcción, compra y otras vías.",
+      "audience": "Solicitantes de vivienda asequible",
+      "reference": "Apartado 1.1",
+      "search": "1.1",
+      "deadline": "Doce años para 1,5 millones",
+      "funding": "Asignación anual del 1 % del PIB",
+      "page": 10,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "fa-empleo-1",
+      "party": "fa",
+      "topic": "empleo",
+      "tags": [
+        "jornada"
+      ],
+      "title": "Reducir la jornada",
+      "summary": "Propone avanzar hacia 32 horas sin rebaja salarial, comenzando por 37,5 horas.",
+      "audience": "Personas asalariadas",
+      "reference": "Introducción, transformación 2",
+      "search": "32 horas",
+      "deadline": null,
+      "funding": null,
+      "page": 7,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "fa-sanidad-1",
+      "party": "fa",
+      "topic": "sanidad",
+      "tags": [
+        "cobertura"
+      ],
+      "title": "Ampliar prestaciones",
+      "summary": "Propone extender la cobertura pública dental, visual y auditiva.",
+      "audience": "Población residente",
+      "reference": "Apartado 2.4, cartera de servicios",
+      "search": "Salud visual",
+      "deadline": null,
+      "funding": null,
+      "page": 27,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "fa-familias-1",
+      "party": "fa",
+      "topic": "familias",
+      "tags": [
+        "ayudas"
+      ],
+      "title": "Ayuda a la crianza",
+      "summary": "Plantea una prestación universal de 200 euros mensuales por menor.",
+      "audience": "Hogares con menores",
+      "reference": "Introducción, transformación 3",
+      "search": "200 euros",
+      "deadline": null,
+      "funding": null,
+      "page": 7,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "fa-pensiones-1",
+      "party": "fa",
+      "topic": "pensiones",
+      "tags": [
+        "cuantia"
+      ],
+      "title": "Protección constitucional",
+      "summary": "Propone blindar constitucionalmente la revalorización de las pensiones públicas.",
+      "audience": "Pensionistas",
+      "reference": "Introducción, transformación 2",
+      "search": "pensiones",
+      "deadline": null,
+      "funding": null,
+      "page": 7,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "podemos-sanidad-1",
+      "party": "podemos",
+      "topic": "sanidad",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Reducir las esperas",
+      "summary": "Propone reforzar recursos públicos, publicar plazos y contar la espera desde la primera indicación clínica.",
+      "audience": "Pacientes de la sanidad pública",
+      "reference": "Medida 304",
+      "search": "304",
+      "deadline": null,
+      "funding": null,
+      "page": 90,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "podemos-familias-1",
+      "party": "podemos",
+      "topic": "familias",
+      "tags": [
+        "ayudas"
+      ],
+      "title": "Prestación hasta los 21",
+      "summary": "Plantea una prestación mensual por hijo hasta los 21 años equivalente al 15 % del SMI.",
+      "audience": "Hogares con hijos",
+      "reference": "Medida 179",
+      "search": "179",
+      "deadline": null,
+      "funding": null,
+      "page": 60,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "podemos-pensiones-1",
+      "party": "podemos",
+      "topic": "pensiones",
+      "tags": [
+        "cotizacion"
+      ],
+      "title": "Largas cotizaciones",
+      "summary": "Propone eliminar retroactivamente penalizaciones por jubilación anticipada con 40 años cotizados.",
+      "audience": "Personas con largas cotizaciones",
+      "reference": "Medida 115",
+      "search": "115",
+      "deadline": null,
+      "funding": null,
+      "page": 41,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "podemos-cuidados-1",
+      "party": "podemos",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo"
+      ],
+      "title": "Residencias públicas",
+      "summary": "Propone revertir contratos al vencer y avanzar hacia residencias de gestión enteramente pública y directa.",
+      "audience": "Usuarios de residencias",
+      "reference": "Medida 196",
+      "search": "196",
+      "deadline": null,
+      "funding": null,
+      "page": 63,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pnv-vivienda-1",
+      "party": "pnv",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler"
+      ],
+      "title": "Alquiler de temporada",
+      "summary": "Propone regular alquileres temporales y turísticos y evitar contratos fraudulentos que eludan garantías de la vivienda habitual.",
+      "audience": "Inquilinos y pequeños propietarios",
+      "reference": "Apartado 1.1, compromisos 03–04",
+      "search": "1.1",
+      "deadline": null,
+      "funding": null,
+      "page": 8,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pnv-empleo-1",
+      "party": "pnv",
+      "topic": "empleo",
+      "tags": [
+        "ingresos"
+      ],
+      "title": "Salario mínimo vasco",
+      "summary": "Reclama competencia para un mínimo vasco superior al estatal, negociado con sindicatos y empresarios.",
+      "audience": "Trabajadores en Euskadi",
+      "reference": "Apartado 1.3, compromiso 01",
+      "search": "1.3",
+      "deadline": null,
+      "funding": null,
+      "page": 9,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pnv-sanidad-1",
+      "party": "pnv",
+      "topic": "sanidad",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Formación sanitaria",
+      "summary": "Propone adaptar plazas MIR y planificación de especialistas a las necesidades de los servicios públicos.",
+      "audience": "Usuarios y profesionales sanitarios",
+      "reference": "Apartado 4.2, compromisos 01–03",
+      "search": "4.2",
+      "deadline": null,
+      "funding": null,
+      "page": 32,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pnv-cuidados-1",
+      "party": "pnv",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo",
+        "derechos"
+      ],
+      "title": "Prestación a cuidadores",
+      "summary": "Propone una prestación para cuidadores no profesionales que abandonen o reduzcan su empleo, tomando el SMI como referencia.",
+      "audience": "Cuidadores de familiares dependientes",
+      "reference": "Apartado 4.3, compromiso 01",
+      "search": "4.3",
+      "deadline": null,
+      "funding": null,
+      "page": 33,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pnv-pensiones-1",
+      "party": "pnv",
+      "topic": "pensiones",
+      "tags": [
+        "cotizacion"
+      ],
+      "title": "Jubilación anticipada",
+      "summary": "Propone suprimir penalizaciones por jubilación anticipada con más de 40 años cotizados.",
+      "audience": "Trabajadores con largas cotizaciones",
+      "reference": "Apartado 4.1, compromiso 03",
+      "search": "4.1",
+      "deadline": null,
+      "funding": null,
+      "page": 31,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "pnv-tecnologia-1",
+      "party": "pnv",
+      "topic": "tecnologia",
+      "tags": [
+        "trabajo"
+      ],
+      "title": "Formación continua",
+      "summary": "Propone facilitar la recualificación de trabajadores ante los cambios tecnológicos y productivos.",
+      "audience": "Personas trabajadoras",
+      "reference": "Apartado 1.3, compromiso 08",
+      "search": "1.3",
+      "deadline": null,
+      "funding": null,
+      "page": 9,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "bildu-vivienda-1",
+      "party": "bildu",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler"
+      ],
+      "title": "Estabilidad del alquiler",
+      "summary": "Propone prórrogas automáticas y limitar la actualización anual al 2 % cuando el IPC supere ese porcentaje.",
+      "audience": "Personas inquilinas",
+      "reference": "Apartado 1.1",
+      "search": "1.1",
+      "deadline": null,
+      "funding": null,
+      "page": 5,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "bildu-empleo-1",
+      "party": "bildu",
+      "topic": "empleo",
+      "tags": [
+        "jornada"
+      ],
+      "title": "Jornada de 32 horas",
+      "summary": "Propone 32 horas sin rebaja salarial, con transición de hasta tres años desde 35 para microempresas y pymes.",
+      "audience": "Personas asalariadas",
+      "reference": "Apartado 1.2",
+      "search": "1.2",
+      "deadline": "Hasta tres años para microempresas y pymes",
+      "funding": null,
+      "page": 6,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "bildu-cuidados-1",
+      "party": "bildu",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo",
+        "derechos"
+      ],
+      "title": "Dependencia desde la solicitud",
+      "summary": "Propone retroactividad de las prestaciones económicas de dependencia desde la fecha de solicitud.",
+      "audience": "Personas solicitantes de dependencia",
+      "reference": "Apartado 1.5.3",
+      "search": "1.5.3",
+      "deadline": null,
+      "funding": null,
+      "page": 12,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "bildu-pensiones-1",
+      "party": "bildu",
+      "topic": "pensiones",
+      "tags": [
+        "cuantia"
+      ],
+      "title": "Pensiones mínimas",
+      "summary": "Plantea elevar las mínimas hasta al menos 1.220 euros y actualizar su cuantía de acuerdo con el SMI.",
+      "audience": "Perceptores de pensiones mínimas",
+      "reference": "Apartado 1.3",
+      "search": "1.3",
+      "deadline": null,
+      "funding": null,
+      "page": 8,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "bildu-tecnologia-1",
+      "party": "bildu",
+      "topic": "tecnologia",
+      "tags": [
+        "servicios"
+      ],
+      "title": "Atención presencial",
+      "summary": "Propone canales presenciales ágiles para realizar trámites mientras exista brecha digital.",
+      "audience": "Ciudadanía que realiza trámites",
+      "reference": "Apartado 1.5.4",
+      "search": "1.5.4",
+      "deadline": null,
+      "funding": null,
+      "page": 12,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "compromis-vivienda-1",
+      "party": "compromis",
+      "topic": "vivienda",
+      "tags": [
+        "alquiler"
+      ],
+      "title": "Alquiler indefinido",
+      "summary": "Propone alquiler indefinido como regla, con recuperación de la vivienda por motivos de uso personal o familiar.",
+      "audience": "Inquilinos y propietarios",
+      "reference": "Apartado Habitatge, página impresa 4",
+      "search": "lloguer indefinit",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "compromis-empleo-1",
+      "party": "compromis",
+      "topic": "empleo",
+      "tags": [
+        "jornada"
+      ],
+      "title": "Cuatro días de trabajo",
+      "summary": "Propone jornada de cuatro días y 32 horas semanales sin reducción salarial.",
+      "audience": "Personas asalariadas",
+      "reference": "Apartado Salaris, página impresa 6",
+      "search": "trenta-dues",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "compromis-sanidad-1",
+      "party": "compromis",
+      "topic": "sanidad",
+      "tags": [
+        "acceso"
+      ],
+      "title": "Primaria y tiempos máximos",
+      "summary": "Propone fijar financiación mínima, ratios y esperas máximas mediante legislación básica.",
+      "audience": "Usuarios de la sanidad pública",
+      "reference": "Apartado Sanitat, página impresa 8",
+      "search": "SANITAT",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "compromis-cuidados-1",
+      "party": "compromis",
+      "topic": "cuidados",
+      "tags": [
+        "apoyo",
+        "derechos"
+      ],
+      "title": "Ayuda a domicilio",
+      "summary": "Propone reconocer la ayuda domiciliaria como servicio público esencial y aprobar un estatuto de las personas cuidadoras.",
+      "audience": "Dependientes y cuidadores",
+      "reference": "Apartado Sistemes de cures, página impresa 10",
+      "search": "CURES",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "compromis-familias-1",
+      "party": "compromis",
+      "topic": "familias",
+      "tags": [
+        "tiempo"
+      ],
+      "title": "Actividades y cuidados",
+      "summary": "Propone ampliar el Plan Corresponsables con actividades extraescolares universales y cuidados profesionales para la infancia.",
+      "audience": "Familias con menores",
+      "reference": "Apartado Oci educatiu, página impresa 14",
+      "search": "Corresponsables",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    },
+    {
+      "id": "compromis-pensiones-1",
+      "party": "compromis",
+      "topic": "pensiones",
+      "tags": [
+        "cotizacion"
+      ],
+      "title": "Cuarenta años cotizados",
+      "summary": "Propone retirar penalizaciones por jubilación anticipada a quienes hayan trabajado 40 años.",
+      "audience": "Personas con largas cotizaciones",
+      "reference": "Apartado Pensions, página impresa 7",
+      "search": "PENSIONS",
+      "deadline": null,
+      "funding": null,
+      "page": null,
+      "reviewed": "2026-11-27"
+    }
+  ]
+}

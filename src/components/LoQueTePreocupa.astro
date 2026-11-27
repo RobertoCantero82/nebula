@@ -1,0 +1,52 @@
+---
+import datos from '../data/lo-que-te-preocupa.json';
+import '../styles/lo-que-te-preocupa.css';
+---
+<div class="preocupa" id="preocupa">
+  <header class="lp-hero">
+    <p class="lp-kicker">NEBULA / LABORATORIO ELECTORAL</p>
+    <p class="lp-edition">PROGRAMAS · GENERALES 29N</p>
+    <h1>Lo que<br>te <em>preocupa.</em></h1>
+    <p class="lp-intro">Tu alquiler. Tu trabajo. El tiempo para cuidar.<br>Entra por una situación y compara qué propone cada partido.</p>
+    <a class="lp-method-link" href="#lp-metodo">Cómo he preparado esta herramienta <span aria-hidden="true">↗</span></a>
+    <div class="lp-stamp"><span aria-hidden="true"></span><span>Primera edición documental · 27 nov 2026</span></div>
+  </header>
+  <nav class="lp-tabs" aria-label="Formas de explorar">
+    <button type="button" data-view="situations" aria-pressed="true">Por situaciones</button>
+    <button type="button" data-view="parties" aria-pressed="false">Por partidos</button>
+    <button type="button" data-view="saved" aria-pressed="false">Mi selección <span id="lp-saved-count">0</span></button>
+  </nav>
+  <p id="lp-visible-status" class="lp-notice" aria-hidden="true"></p>
+  <section id="lp-entry" aria-labelledby="lp-entry-title"></section>
+  <section id="lp-results" class="lp-results" aria-labelledby="lp-results-title" hidden>
+    <div class="lp-results-top"><div><p class="lp-kicker" id="lp-results-kicker"></p><h2 id="lp-results-title" tabindex="-1"></h2></div><button type="button" class="lp-text-button" id="lp-share">Copiar enlace a esta consulta</button></div>
+    <p id="lp-context" class="lp-context"></p>
+    <div id="lp-questions" class="lp-chips" aria-label="Concretar la consulta"></div>
+    <div class="lp-controls"><label for="lp-search">Buscar en las fichas de esta vista<input id="lp-search" type="search" placeholder="Por ejemplo: alquiler, formación…" autocomplete="off"></label><button type="button" class="lp-text-button" id="lp-reset">Limpiar filtros</button></div>
+    <details class="lp-party-filter"><summary>Elegir partidos para esta vista</summary><div id="lp-filters" class="lp-filter-list"></div><button type="button" class="lp-text-button" id="lp-all-parties">Mostrar todos</button></details>
+    <p class="lp-counter" id="lp-counter" role="status" aria-live="polite"></p>
+    <div class="lp-cards" id="lp-cards"></div>
+    <div id="lp-gaps" class="lp-gaps"></div>
+  </section>
+  <section id="lp-compare" class="lp-compare" aria-labelledby="lp-compare-title" hidden>
+    <div class="lp-results-top"><div><p class="lp-kicker">CARA A CARA</p><h2 id="lp-compare-title" tabindex="-1">Las propuestas, con las mismas preguntas.</h2></div><button type="button" class="lp-text-button" id="lp-clear-compare">Cerrar comparación</button></div>
+    <p>No todas las medidas actúan de la misma forma. Estas fichas resumen compromisos electorales: no acreditan su viabilidad ni su efecto.</p>
+    <div class="lp-compare-grid" id="lp-compare-grid"></div>
+  </section>
+  <aside class="lp-tray" id="lp-tray" aria-label="Propuestas para comparar" hidden><span id="lp-tray-count"></span><button type="button" id="lp-do-compare">Comparar</button><button type="button" id="lp-empty-compare" aria-label="Vaciar propuestas para comparar">Vaciar</button></aside>
+  <section class="lp-about" id="lp-metodo" aria-labelledby="lp-method-title">
+    <p class="lp-kicker">EL DOCUMENTO, SIEMPRE A MANO</p><h2 id="lp-method-title">Una ayuda para leer los programas.</h2>
+    <div class="lp-about-grid"><div><h3>Qué estás comparando</h3><p>He organizado una selección de propuestas oficiales por situaciones cotidianas. Los resúmenes están escritos en castellano sencillo y cada ficha remite al documento o apartado consultado.</p><p>Las situaciones son una selección editorial, no una clasificación de las principales preocupaciones de la población. Los partidos se muestran por orden alfabético, sin puntuaciones.</p></div><div><h3>Hasta dónde llega</h3><p>Esta edición contiene <strong id="lp-total"></strong>. No cubre todos los programas ni todas las medidas. Un hueco significa que falta revisión en esta herramienta, no que un partido carezca de propuesta.</p><p>Las medidas son compromisos, no ayudas en vigor. Su aprobación puede exigir acuerdos y participación de otras administraciones. No he verificado costes, viabilidad jurídica ni cumplimiento.</p></div><div><h3>Tu consulta es tuya</h3><p>La herramienta no calcula afinidad política, no pide datos personales y no envía tus consultas. Mi selección se guarda solo en la memoria de esta pestaña y se borra al recargar o salir.</p><p>Al copiar una consulta, el enlace incluye sus filtros. No incluye las propuestas guardadas. La web de Nebula puede mantener su medición general de visitas.</p></div></div>
+    <details class="lp-sources"><summary>Fuentes, cobertura y documentos pendientes</summary><p>Selección inicial de documentos localizados en fuentes oficiales. No es una relación exhaustiva de candidaturas ni certifica dónde se presenta cada formación. Las etiquetas territoriales describen el enfoque del documento, no sustituyen la papeleta de tu circunscripción. PSOE y VOX tienen una revisión parcial de resúmenes oficiales, indicada en sus fichas.</p><div id="lp-source-list"></div><p>En PDF indico la medida o el apartado y, cuando he podido identificarla, la página del archivo. Algunos lectores no respetan los saltos de página: utiliza también la referencia escrita. No reproduzco íntegros los documentos.</p><p><a href="mailto:robertocanterogomez@gmail.com?subject=Correcci%C3%B3n%20en%20Lo%20que%20te%20preocupa">Comunicar un error o proponer un documento</a></p></details>
+  </section>
+  <p class="lp-bottom">Una pregunta cotidiana. Varias respuestas. Las fuentes para contrastarlas.<br><strong>Una herramienta de Roberto Cantero para Nebula.</strong></p>
+  <p id="lp-announcement" class="lp-sr" role="status" aria-live="polite"></p>
+  <noscript><p>Activa JavaScript para filtrar y comparar. Puedes consultar estas fuentes originales:<ul><li><a href="https://www.bng.gal/estaticas/programas-eleitorais.html" target="_blank" rel="noopener noreferrer">BNG: Pendiente de revisión</a></li><li><a href="https://coalicioncanaria.org/" target="_blank" rel="noopener noreferrer">Coalición Canaria: Pendiente de revisión</a></li><li><a href="https://frontvalencia.org/programa-compromis-front-valencia.pdf" target="_blank" rel="noopener noreferrer">Compromís: Programa completo</a></li><li><a href="https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n" target="_blank" rel="noopener noreferrer">EAJ-PNV: Programa completo</a></li><li><a href="https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf" target="_blank" rel="noopener noreferrer">EH Bildu: Programa completo</a></li><li><a href="https://esquerrarepublicana.cat/documents/e2026-programa.pdf" target="_blank" rel="noopener noreferrer">ERC: Pendiente de revisión</a></li><li><a href="https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf" target="_blank" rel="noopener noreferrer">Frente Amplio: Programa completo</a></li><li><a href="https://junts.cat/" target="_blank" rel="noopener noreferrer">Junts: Pendiente de revisión</a></li><li><a href="https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf" target="_blank" rel="noopener noreferrer">Podemos: Programa completo</a></li><li><a href="https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-LA-RECONSTRUCCION-NACIONAL.pdf" target="_blank" rel="noopener noreferrer">PP: Programa completo</a></li><li><a href="https://lafuerzadelagente.es/programa/propuestas-destacadas-programa-electoral-29n.pdf" target="_blank" rel="noopener noreferrer">PSOE: Selección oficial de 50 propuestas</a></li><li><a href="https://www.voxespana.es/abascal/es-sentido-comun-estas-son-las-medidas-de-vox-para-el-29n-20261112" target="_blank" rel="noopener noreferrer">VOX: Resumen oficial del programa</a></li></ul></p></noscript>
+</div>
+
+<script id="lp-data" type="application/json" set:html={JSON.stringify(datos).replace(/</g, '\u003c')}></script>
+<script>
+  import { iniciarPreocupa } from '../scripts/lo-que-te-preocupa';
+  iniciarPreocupa();
+  document.addEventListener('astro:page-load', iniciarPreocupa);
+</script>

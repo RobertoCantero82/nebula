@@ -1,0 +1,13 @@
+﻿id,name,document,url,status,note
+bng,BNG,Pendiente de revisión,https://www.bng.gal/estaticas/programas-eleitorais.html,pending,El acceso al documento devolvió un error. No se han extraído propuestas.
+cc,Coalición Canaria,Pendiente de revisión,https://coalicioncanaria.org/,pending,El PDF localizado no pudo recuperarse. No se han extraído propuestas.
+compromis,Compromís,Programa completo,https://frontvalencia.org/programa-compromis-front-valencia.pdf,reviewed,Resúmenes traducidos del valenciano al castellano.
+pnv,EAJ-PNV,Programa completo,https://www.eaj-pnv.eus/es/adjuntos-documentos/21765/pdf/programa-electoral-29n,reviewed,Las referencias remiten a apartados del documento.
+bildu,EH Bildu,Programa completo,https://ehbildu.eus/media/dokumentuak/posibleegin-programa-cas.pdf,reviewed,Documento consultado en castellano.
+erc,ERC,Pendiente de revisión,https://esquerrarepublicana.cat/documents/e2026-programa.pdf,pending,El documento devolvió acceso denegado. No se han extraído propuestas.
+fa,Frente Amplio,Programa completo,https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf,reviewed,Se identifica el documento por su autoría; no se certifica aquí la composición de las listas.
+junts,Junts,Pendiente de revisión,https://junts.cat/,pending,Programa de esta convocatoria pendiente de localizar y revisar en esta edición.
+podemos,Podemos,Programa completo,https://pazcasaytrabajo.es/programa-electoral/programa-electoral-paz-casa-y-trabajo.pdf,reviewed,PDF consultado; medidas numeradas.
+pp,PP,Programa completo,https://www.pp.es/wp-content/uploads/2026/11/PROGRAMA-ELECTORAL-PP-LA-RECONSTRUCCION-NACIONAL.pdf,reviewed,PDF consultado; medidas numeradas.
+psoe,PSOE,Selección oficial de 50 propuestas,https://lafuerzadelagente.es/programa/propuestas-destacadas-programa-electoral-29n.pdf,partial,"Revisión parcial: selección oficial, no el programa completo."
+vox,VOX,Resumen oficial del programa,https://www.voxespana.es/abascal/es-sentido-comun-estas-son-las-medidas-de-vox-para-el-29n-20261112,partial,Revisión parcial: presentación oficial en web; el PDF completo no pudo recuperarse.
