@@ -29,6 +29,7 @@ const fecha = (f: Date) => new Intl.DateTimeFormat('es-ES', { timeZone: 'Europe/
   <main class="contenedor archivo-tema">
     <header><p>TEMAS</p><h1>{tema.nombre}</h1><span>{tema.descripcion}</span></header>
     <nav class="otros-temas" aria-label="Elegir tema">{temas.map(t => <a href={`/temas/${t.clave}/`} aria-current={tema.clave === t.clave ? 'page' : undefined}>{t.nombre}</a>)}</nav>
+    {tema.clave === 'hazlo-facil' && !historias.some(({ pieza }) => estaPublicada(pieza.data, ahora)) && <p class="tema-vacio">Aquí encontrarás trucos, tutoriales y pequeñas soluciones para tu día a día. La primera guía está por llegar.</p>}
     <div class="historias-tema">
       {historias.map(({ pieza, ruta, seccion }) => <article class="historia-tema" data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)}>
         <div class="historia-meta"><span>{seccion}</span><time datetime={pieza.data.fecha.toISOString()}>{fecha(pieza.data.fecha)}</time></div>

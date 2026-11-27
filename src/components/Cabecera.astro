@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { temas, nombreCategoria } from '../utils/temas';
 import MusicaNebula from './MusicaNebula.astro';
 import VolverPortada from './VolverPortada.astro';
 import { fechaPublicacion, estaPublicada } from '../utils/publicacion';
@@ -13,12 +14,7 @@ const gruposMenu = [
     { nombre: 'Trama', descripcion: 'Conexiones inesperadas entre películas.', ruta: '/trama/', clave: 'trama' },
     { nombre: 'Más Cosme', descripcion: 'Las aventuras del personaje de Nebula.', ruta: '/mas-cosme/', clave: 'cosme' },
   ]},
-  { id: 'temas', nombre: 'Temas', enlaces: [
-    { nombre: 'Tecnología', descripcion: 'Inteligencia artificial, dispositivos y el mundo digital.', ruta: '/temas/tecnologia/', clave: 'tecnologia' },
-    { nombre: 'Ciencia', descripcion: 'Espacio, naturaleza e investigación.', ruta: '/temas/ciencia/', clave: 'ciencia' },
-    { nombre: 'Cine', descripcion: 'Películas, series e historias de la pantalla.', ruta: '/temas/cine/', clave: 'cine' },
-    { nombre: 'Extra', descripcion: 'Cultura, deporte y otras historias.', ruta: '/temas/extra/', clave: 'extra' },
-  ]},
+  { id: 'temas', nombre: 'Temas', enlaces: temas.map(tema => ({ ...tema, ruta: `/temas/${tema.clave}/` })) },
   { id: 'conoce', nombre: 'Conoce Nebula', enlaces: [
     { nombre: 'Sobre Nebula', descripcion: 'El proyecto y su forma de contar historias.', ruta: '/sobre-nebula/', clave: 'sobre' },
     { nombre: 'Roberto Cantero', descripcion: 'Mi perfil profesional y cómo trabajar conmigo.', ruta: '/trabaja-conmigo/', clave: 'perfil' },
@@ -61,7 +57,7 @@ const indiceBusqueda = [
       publicar: fechaPublicacion(pieza.data).getTime(),
       titulo: pieza.data.titulo,
       descripcion: pieza.data.descripcion,
-      tema: `ACTUALIDAD | ${pieza.data.categoria.toUpperCase()}`,
+      tema: `ACTUALIDAD | ${nombreCategoria(pieza.data.categoria).toUpperCase()}`,
       ruta: `/actualidad/${pieza.id}/`,
       texto: limpiarTexto(pieza.body),
     })),

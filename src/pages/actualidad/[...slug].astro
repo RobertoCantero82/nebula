@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Actualidad from '../../layouts/Actualidad.astro';
+import HazloFacil from '../../layouts/HazloFacil.astro';
+import { render } from 'astro:content';
 
 export async function getStaticPaths() {
   const piezas = await getCollection('actualidad');
@@ -12,6 +14,9 @@ export async function getStaticPaths() {
 }
 
 const { pieza } = Astro.props;
+const esGuia = pieza.data.categoria === 'hazlo-facil';
+const contenido = esGuia ? await render(pieza) : undefined;
+const Content = contenido?.Content;
 ---
 
-<Actualidad pieza={pieza} />
+<>{esGuia ? <HazloFacil pieza={pieza}>{Content && <Content />}</HazloFacil> : <Actualidad pieza={pieza} />}</>

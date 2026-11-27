@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { temas } from '../utils/temas';
 import { getCollection } from 'astro:content';
 import { estaPublicada } from '../utils/publicacion';
 
@@ -22,6 +23,7 @@ export const GET: APIRoute = async ({ site }) => {
     (pieza) => estaPublicada(pieza.data, ahora)
   );
   const paginas = [
+    ...temas.map(tema => ({ url: new URL(`temas/${tema.clave}/`, base).href })),
     { url: base.href },
     { url: new URL('trabaja-conmigo/', base).href },
     { url: new URL('laboratorio/', base).href },

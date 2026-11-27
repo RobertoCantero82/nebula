@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { nombreCategoria as obtenerNombreCategoria } from '../utils/temas';
 import { fechaPublicacion } from '../utils/publicacion';
 import RelojActualidad from '../components/RelojActualidad.astro';
 import Seo from '../components/Seo.astro';
@@ -25,8 +26,7 @@ function textoPlano(valor: unknown): string {
 
 const { pieza } = Astro.props;
 const { titulo, descripcion, categoria, fecha, cifraDestacada, etiquetaCifra, fondoPortada, mostrarCifraInterior, formato = 'base', pantallas, fuentes } = pieza.data;
-const nombresCategoria = { tecnologia: 'Tecnología', ciencia: 'Ciencia', cine: 'Cine', cultura: 'Cultura', extra: 'Extra' };
-const nombreCategoria = nombresCategoria[categoria];
+const nombreCategoria = obtenerNombreCategoria(categoria);
 const fechaLarga = new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(fecha);
 const fechaCarpeta = pieza.id.split('/')[0];
 ---

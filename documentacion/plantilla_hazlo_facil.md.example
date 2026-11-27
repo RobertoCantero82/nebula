@@ -1,0 +1,23 @@
+---
+titulo: "Escribe qué va a conseguir el lector"
+palabraDestacada: "lector"
+descripcion: "Explica en una o dos frases para qué sirve la guía."
+categoria: hazlo-facil
+fecha: 2099-01-01
+hora: "12:00"
+antesDeEmpezar:
+  - "Indica el dispositivo, la versión o lo que necesita el lector."
+pasos:
+  - titulo: "Primera acción concreta"
+    texto:
+      - "Explica qué hacer y dónde encontrar la opción."
+    # añade imagen, altImagen y pieImagen cuando tengas una captura
+  - titulo: "Segunda acción concreta"
+    texto:
+      - "Explica el siguiente paso. Puedes añadir los pasos necesarios."
+resultado: "Describe qué debe ver el lector si todo ha salido bien."
+consejo: "Añade una limitación o una solución a un tropiezo habitual. Este campo es opcional."
+fuentes:
+  - nombre: "Sustituye esta fuente por la ayuda oficial correspondiente"
+    url: "https://example.com/"
+---

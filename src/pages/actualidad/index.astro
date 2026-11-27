@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { nombreCategoria } from '../../utils/temas';
 import { fechaPublicacion, estaPublicada } from '../../utils/publicacion';
 import '../../styles/global.css';
 import RelojActualidad from '../../components/RelojActualidad.astro';
@@ -44,7 +45,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=5" />
-    <Seo titulo="Archivo de actualidad | Nebula" descripcion="Las noticias breves de ciencia, tecnología, cine y cultura publicadas en Nebula." />
+    <Seo titulo="Archivo de actualidad | Nebula" descripcion="Tecnología, ciencia, Extra y Hazlo fácil: noticias y pequeñas soluciones para tu día a día." />
   </head>
   <body>
     <Cabecera activa="actualidad" />
@@ -60,7 +61,7 @@ const fecha = (valor: Date) => new Intl.DateTimeFormat('es-ES', {
           <div>
             {publicaciones.map((pieza) => (
               <a data-publicar={fechaPublicacion(pieza.data).getTime()} hidden={!estaPublicada(pieza.data, ahora)} href={`/actualidad/${pieza.id}/`}>
-                <span>{pieza.data.categoria}</span>
+                <span>{nombreCategoria(pieza.data.categoria)}</span>
                 <h3>{(() => { const { antes, palabra, despues } = fragmentarTitular(pieza.data.titulo, pieza.data.palabraDestacada); return <>{antes}<span class="actualidad-palabra">{palabra}</span>{despues}</>; })()}</h3>
               </a>
             ))}
