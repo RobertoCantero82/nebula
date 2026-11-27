@@ -2,7 +2,7 @@
 titulo: "Antes de votar: he organizado 52 propuestas electorales para que compares respuestas a tus problemas"
 descripcion: "He creado una herramienta interactiva para explorar propuestas sobre vivienda, trabajo, sanidad o jubilación, compararlas y consultar sus fuentes oficiales."
 tema: "SOCIEDAD"
-fecha: 2026-11-27T05:00:00+01:00
+fecha: 2026-11-27T15:00:00+01:00
 imagenPortada: "/imagenes/lo_que_te_preocupa_portada.png"
 cifraDestacada: "7 temas clave"
 etiquetaCifra: "explora, compara y comprueba"
